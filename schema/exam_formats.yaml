@@ -6,7 +6,7 @@ toeic:
     - {type: read_aloud,     items: [1, 2],     prep: 45, speak: [45, 45]}
     - {type: describe_photo, items: [3, 4],     prep: 45, speak: [30, 30]}
     - {type: respond_q,      items: [5, 6, 7],  prep: 3,  speak: [15, 15, 30]}
-    - {type: info_based,     items: [8, 9, 10], read: 45, prep: 3, speak: [15, 15, 30]}
+    - {type: info_based,     items: [8, 9, 10], read: 45, prep: 3, speak: [15, 15, 30], repeat_last: 2}   # 마지막 질문은 두 번 들려줘요
     - {type: opinion,        items: [11],       prep: 45, speak: [60]}
   score: {min: 0, max: 200, levels: 8}
 opic:

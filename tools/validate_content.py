@@ -42,10 +42,11 @@ def check_models(errs, warns, where, model, exam, words_key, draft):
     for k in model:
         if k not in spec["levels"]:
             errs.append(f"{where}.model.{k}: 없는 레벨이에요 ({', '.join(spec['levels'])})")
+    short = []
     for lv in spec["levels"]:
         answers = model.get(lv) or []
         if len(answers) < spec["variants_min"]:
-            (warns if draft else errs).append(f"{where}.model.{lv}: 답변 {len(answers)}개 (최소 {spec['variants_min']}개)")
+            short.append(f"{lv} {len(answers)}/{spec['variants_min']}")
         for j, a in enumerate(answers):
             text = a.get("text") if isinstance(a, dict) else a
             if not text:
@@ -54,6 +55,8 @@ def check_models(errs, warns, where, model, exam, words_key, draft):
             n = len(text.split())
             if rng and lv in rng and not (rng[lv][0] <= n <= rng[lv][1]):
                 errs.append(f"{where}.model.{lv}[{j}]: {n}단어 (기준 {rng[lv][0]}~{rng[lv][1]})")
+    if short:
+        (warns if draft else errs).append(f"{where}: 레벨별 답변 가짓수 부족 — {', '.join(short)}")
 
 
 def check_len(errs, where, val, limit):
@@ -89,9 +92,19 @@ def validate_toeic(d, errs, warns):
         check_len(errs, f"{w}.text", it.get("text"), LIM["toeic"]["read_aloud_text"])
         check_len(errs, f"{w}.question", it.get("question"), LIM["toeic"]["question"])
         check_len(errs, f"{w}.tip_ko", it.get("tip_ko"), LIM["toeic"]["tip_ko"])
-    ctx = {it.get("context") for it in items if it.get("type") == "respond_q"}
-    if len(ctx) > 1:
-        errs.append("Q5~7: context가 하나여야 해요")
+    by = {it.get("num"): it for it in items}
+    if 5 in by and not by[5].get("context"):
+        errs.append("Q5: context(Q5~7 공통 상황)가 없어요")
+    if 8 in by:
+        info = by[8].get("info") or {}
+        if not info.get("title") or not info.get("rows"):
+            errs.append("Q8: info.title / info.rows(Q8~10 공통 자료)가 없어요")
+        elif len(info["rows"]) > LIM["toeic"]["info_table_rows"]:
+            errs.append(f"Q8: info.rows {len(info['rows'])}줄 > {LIM['toeic']['info_table_rows']}줄")
+    for it in items:
+        img = it.get("image")
+        if img and not os.path.exists(os.path.join(ROOT, "app", img)):
+            errs.append(f"Q{it.get('num')}: 이미지 파일이 없어요 (app/{img})")
 
 
 def validate_opic(d, errs, warns):

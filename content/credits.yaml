@@ -1,0 +1,11 @@
+# 사진·그림 출처. 상표·로고가 보이는 사진은 쓰지 않아요.
+schema_version: 1
+credits:
+  - id: placeholder-set01-q3
+    file: app/img/toeic/set01_q3.svg
+    source: Speaking Lab 자체 제작 임시 일러스트 (P2에서 실사진으로 교체)
+    license: 자체 제작
+  - id: placeholder-set01-q4
+    file: app/img/toeic/set01_q4.svg
+    source: Speaking Lab 자체 제작 임시 일러스트 (P2에서 실사진으로 교체)
+    license: 자체 제작

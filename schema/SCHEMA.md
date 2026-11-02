@@ -1,5 +1,6 @@
 # 콘텐츠 스키마 (schema_version: 1)
 
+파트 지시문은 `content/toeic/directions.yaml`, 결과 화면 점검표는 `content/toeic/checklists.yaml`.
 시간 값은 `exam_formats.yaml`, 글자 수는 `limits.yaml`, 목표 레벨별 답변 기준(레벨 목록·단어 수·가짓수)은 `answer_levels.yaml`. 검증: `python3 tools/validate_content.py --all`
 
 ## 토익 세트 — `content/toeic/sets/setNN.yaml`
@@ -15,8 +16,8 @@ items:                       # 정확히 11개, num 1~11 순서대로
     tip_ko: "..."
   - num: 3
     type: describe_photo
-    image: img/toeic/set01_q3.webp
-    credit: "..."            # 사진 출처 (credits.yaml id)
+    image: img/toeic/set01_q3.webp   # app/ 기준 경로, 파일이 있어야 해요
+    credit: "..."            # 사진 출처 (content/credits.yaml id)
     model:                   # 목표 레벨마다 답변 목록 (answer_levels.yaml의 levels 전부, 각 variants_min개 이상)
       lv5:
         - text: "This is a picture of an office. A man is ..."
@@ -27,14 +28,15 @@ items:                       # 정확히 11개, num 1~11 순서대로
       lv7: [...]
       lv8: [...]
     tip_ko: "..."
-  - num: 5                    # 5~7은 같은 상황(context) 하나를 같이 써요
+  - num: 5                    # 5~7 공통 상황(context)은 Q5에만 써요
     type: respond_q
     context: "Imagine that a marketing firm is doing research ... about movies."
     question: "..."
     model: {lv5: [...], lv6: [...], lv7: [...], lv8: [...]}
-  - num: 8                    # 8~10은 자료(info) 하나를 같이 써요
+  - num: 8                    # 8~10 공통 자료(info)와 전화 건 사람 첫마디(caller_intro)는 Q8에만 써요
     type: info_based
-    info: {title: "...", rows: [["9:00 a.m.", "Opening remarks"], ...]}
+    caller_intro: "Hi, I signed up for ..."
+    info: {title: "...", subtitle: "날짜 · 장소 · 요금", rows: [["9:00 a.m.", "Opening remarks"], ...]}
     question: "..."          # 음성으로만 나가는 질문 (화면에는 안 보임)
     model: {lv5: [...], lv6: [...], lv7: [...], lv8: [...]}
   - num: 11
