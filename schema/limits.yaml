@@ -1,0 +1,12 @@
+# 필드별 최대 글자 수 (공백 포함). 화면 레이아웃 기준이라 P1에서 실제 화면에 맞춰 다시 정해요.
+toeic:
+  read_aloud_text: 520
+  directions_ko: 80
+  question: 160
+  info_table_rows: 10
+  model_answer: 900
+  tip_ko: 120
+opic:
+  question: 300
+  model_answer: 1400
+  tip_ko: 120

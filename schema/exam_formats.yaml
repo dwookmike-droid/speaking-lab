@@ -1,0 +1,22 @@
+# 시험별 문항 구성·시간(초). 모의테스트 엔진은 이 파일만 기준으로 써요.
+toeic:
+  name: TOEIC Speaking
+  total_items: 11
+  parts:
+    - {type: read_aloud,     items: [1, 2],     prep: 45, speak: [45, 45]}
+    - {type: describe_photo, items: [3, 4],     prep: 45, speak: [30, 30]}
+    - {type: respond_q,      items: [5, 6, 7],  prep: 3,  speak: [15, 15, 30]}
+    - {type: info_based,     items: [8, 9, 10], read: 45, prep: 3, speak: [15, 15, 30]}
+    - {type: opinion,        items: [11],       prep: 45, speak: [60]}
+  score: {min: 0, max: 200, levels: 8}
+opic:
+  name: OPIc
+  total_minutes: 40
+  items: {min: 12, max: 15}
+  replay_per_item: 1
+  recommended_speak: [60, 120]
+  self_assessment_levels: 6
+  readjust_after: 7          # 7번 뒤 난이도 다시 고르기
+  readjust_options: [easier, same, harder]
+  item_types: [self_intro, description, routine, past_experience, roleplay_ask, roleplay_solve, comparison, issue]
+  grades: [NL, NM, NH, IL, IM1, IM2, IM3, IH, AL]
