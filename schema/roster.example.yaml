@@ -1,0 +1,14 @@
+# 선생님 컴퓨터의 students/roster.yaml 양식이에요. 실제 명단은 git에 올리지 않아요.
+students:
+  - id: S001                 # LLM 작업에는 이 번호만 써요
+    name: 홍길동
+    email: student@example.com
+    phone: 010-0000-0000
+    under14: false
+    guardian: null           # 14세 미만이면 {name, relation, phone, method: sms|signature, date}
+    exam: toeic              # toeic | opic
+    target: lv7              # answer_levels.yaml 레벨
+    optional: {exam_date: null, current: null, grade_or_job: null}   # 선택 동의했을 때만
+    consent: {version: 1, required: true, optional: false, overseas: true, at: 2026-11-XXT00:00:00+09:00}
+    started: 2026-11-XX
+    ended: null              # 수업 종료일 → 3개월 뒤 purge 대상

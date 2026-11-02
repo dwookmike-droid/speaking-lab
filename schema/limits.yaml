@@ -4,9 +4,7 @@ toeic:
   directions_ko: 80
   question: 160
   info_table_rows: 10
-  model_answer: 900
   tip_ko: 120
 opic:
   question: 300
-  model_answer: 1400
   tip_ko: 120

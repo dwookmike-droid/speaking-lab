@@ -15,3 +15,12 @@
 - 사진은 출처·라이선스를 `content/credits.yaml`에 적고, 상표가 보이는 사진은 쓰지 않아요.
 - 쓰고 나면 검증기 오류 0을 확인하고 `status: ready`로 바꿔요.
   `python3 tools/validate_content.py --all`
+
+## 목표 레벨별 모범답변
+- 모범답변은 `schema/answer_levels.yaml`의 레벨마다 `variants_min`개 이상 써요. 레벨마다 내용·표현을 따로 써요. 위 레벨 답변을 줄여서 만들지 않아요.
+- 단어 수 범위와 `style_ko`를 지켜요. 낮은 레벨 답변도 그 레벨 학생이 외워서 바로 말할 수 있는 문장으로 써요.
+
+## 학생 개인정보 (가장 중요)
+- `students/`, `submissions/`는 읽기만 하고 절대 커밋하지 않아요(`.gitignore`). 학생 정보를 다른 폴더나 커밋 메시지에 옮겨 적지 않아요.
+- 피드백 작업에는 학생 번호(S001…)만 써요. 이름·이메일·연락처를 피드백 파일이나 대화에 넣지 않아요.
+- 동의서(`docs/legal/`)를 고치면 `consent_version`을 올리고, 예전 버전 파일은 남겨요.
