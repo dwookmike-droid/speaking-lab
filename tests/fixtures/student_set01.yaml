@@ -1,0 +1,14 @@
+# 테스트용 가상 학생 답변(목표 lv7, 실제 수준 lv6 정도). 실제 학생 자료가 아니에요.
+# tests/make_transcript.py가 이 글로 가짜 단어 시간을 붙여 transcript.json(engine: fixture)을 만들어요.
+# "<pause>"는 1.6초 멈춤이에요.
+1: Welcome to the Greenfield Science Museum. Before you begin your tour, please take a moment to review a few guideline. Food, drinks, and flash photography are not allowed in the exhibition hall. Guided tours start every hour at the main entrance, and audio guide are available at the information desk. If you have any question, please ask a member of our staff. We hope you enjoy your visit.
+2: Are you looking for a comfortable place to relax after work? Then visit Sunny Days Cafe on Main Street. We offer fresh coffee, homemade pastries, and light meals at reasonable prices. This month only, customers who bring their own cup will receive a ten percent discount. Sunny Days Cafe is open from seven in the morning until ten at night, um, seven days a week. Come and see us today.
+3: Um, this picture was taken in a office. Two people is sitting at the table. The woman on the left is using a laptop and, uh, the man is holding a cup. In the background there is a whiteboard with chart. They look like, um, they are working.
+4: This picture was taken at a market. On the right, a man is selling fruits. Uh, there are many apple and orange in the boxes. A woman is holding a shopping bag. Um, it is sunny day.
+5: I go to the park, um, two times in a week. I usually go with my friend.
+6: I think spring is best time, because the weather is warm and, uh, there are many flowers.
+7: I prefer a small park near my home. First, it is close, so I can go there every day. Second, uh, I don't need to use bus. Um, so I think small park is better for me.
+8: The conference is on March 14 and, uh, it will be held at City Convention Center, Hall B.
+9: Um, sorry, lunch is not included. Lunch is on your own from 12 to 1.
+10: In the afternoon there is a panel discussion, uh, Marketing on a Small Budget from 1 to 2. And then, um, workshop, Effective Presentation by Sarah Kim, from 2:15 to 3:30. And closing remarks is at 3:30.
+11: I agree that university students should have a part-time job. I have two reasons. First, they can earn money for living. These days, uh, tuition is very expensive. Second, they can get a experience. <pause> For example, when I was a university student, I worked at a cafe. Um, I learned how to talk with customers and, uh, how to manage my time. It was very helpful when I get a job. So, um, I agree with this statement.

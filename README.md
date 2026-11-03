@@ -30,3 +30,18 @@ node tests/e2e_onboarding.js     # 학생 등록·동의·재동의·철회
 ```
 
 처음 접속하면 학생 정보 입력과 개인정보 동의를 거쳐야 시험 화면이 열려요. 동의서 원본은 `content/legal/consent_v1.yaml`이에요.
+
+## 선생님: 녹음 받아서 피드백 보내기
+형식과 흐름은 [`schema/FEEDBACK.md`](schema/FEEDBACK.md)에 있어요. 처음 한 번 설치해요.
+```bash
+pip3 install -r tools/requirements-teacher.txt
+```
+```bash
+python3 tools/intake.py ~/Downloads/speaking-lab_xxx.zip       # 학생 번호 붙여 정리 (이름은 students/에만)
+python3 tools/transcribe.py submissions/S001/<응시ID>          # 로컬 Whisper 전사 (처음엔 모델 내려받기)
+# Claude Code에서: "speaking-feedback 스킬로 submissions/S001/<응시ID> 피드백 써줘"
+python3 tools/validate_feedback.py submissions/S001/<응시ID>  # 형식·전사본 일치·개인정보 검사
+python3 tools/pack_feedback.py submissions/S001/<응시ID>      # 학생에게 보낼 .json
+python3 tools/purge.py                                        # 보유 기간 지난 자료 찾기 (--apply로 삭제)
+```
+테스트: `python3 -m unittest tests/test_teacher_tools.py`, 왕복 전체는 `bash tests/roundtrip.sh`(앱 서버 8765 필요).
