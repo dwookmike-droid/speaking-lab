@@ -1,0 +1,703 @@
+{
+ "format": {
+  "name": "TOEIC Speaking",
+  "total_items": 11,
+  "parts": [
+   {
+    "type": "read_aloud",
+    "items": [
+     1,
+     2
+    ],
+    "prep": 45,
+    "speak": [
+     45,
+     45
+    ]
+   },
+   {
+    "type": "describe_photo",
+    "items": [
+     3,
+     4
+    ],
+    "prep": 45,
+    "speak": [
+     30,
+     30
+    ]
+   },
+   {
+    "type": "respond_q",
+    "items": [
+     5,
+     6,
+     7
+    ],
+    "prep": 3,
+    "speak": [
+     15,
+     15,
+     30
+    ]
+   },
+   {
+    "type": "info_based",
+    "items": [
+     8,
+     9,
+     10
+    ],
+    "read": 45,
+    "prep": 3,
+    "speak": [
+     15,
+     15,
+     30
+    ],
+    "repeat_last": 2
+   },
+   {
+    "type": "opinion",
+    "items": [
+     11
+    ],
+    "prep": 45,
+    "speak": [
+     60
+    ]
+   }
+  ],
+  "score": {
+   "min": 0,
+   "max": 200,
+   "levels": 8
+  }
+ },
+ "levels": {
+  "levels": [
+   "lv5",
+   "lv6",
+   "lv7",
+   "lv8"
+  ],
+  "labels": {
+   "lv5": {
+    "name": "Level 5",
+    "score": "110–120"
+   },
+   "lv6": {
+    "name": "Level 6",
+    "score": "130–150"
+   },
+   "lv7": {
+    "name": "Level 7",
+    "score": "160–180"
+   },
+   "lv8": {
+    "name": "Level 8",
+    "score": "190–200"
+   }
+  },
+  "variants_min": 2,
+  "style_ko": {
+   "lv5": "짧은 현재형 문장. 외운 뼈대 그대로, 이유 하나.",
+   "lv6": "뼈대 + 이유 둘. and/because/so 정도의 연결.",
+   "lv7": "이유마다 짧은 예시. 시제·비교급 섞기, 연결어 다양하게.",
+   "lv8": "구체적인 경험 예시, 관계절·조건문, 자연스러운 마무리 문장."
+  },
+  "words": {
+   "describe_photo_30": {
+    "lv5": [
+     20,
+     35
+    ],
+    "lv6": [
+     35,
+     50
+    ],
+    "lv7": [
+     50,
+     65
+    ],
+    "lv8": [
+     60,
+     85
+    ]
+   },
+   "respond_q_15": {
+    "lv5": [
+     10,
+     20
+    ],
+    "lv6": [
+     18,
+     28
+    ],
+    "lv7": [
+     25,
+     35
+    ],
+    "lv8": [
+     30,
+     45
+    ]
+   },
+   "respond_q_30": {
+    "lv5": [
+     20,
+     35
+    ],
+    "lv6": [
+     35,
+     50
+    ],
+    "lv7": [
+     50,
+     65
+    ],
+    "lv8": [
+     60,
+     85
+    ]
+   },
+   "info_based_15": {
+    "lv5": [
+     10,
+     20
+    ],
+    "lv6": [
+     15,
+     25
+    ],
+    "lv7": [
+     20,
+     32
+    ],
+    "lv8": [
+     25,
+     40
+    ]
+   },
+   "info_based_30": {
+    "lv5": [
+     20,
+     35
+    ],
+    "lv6": [
+     30,
+     45
+    ],
+    "lv7": [
+     40,
+     60
+    ],
+    "lv8": [
+     50,
+     75
+    ]
+   },
+   "opinion_60": {
+    "lv5": [
+     45,
+     70
+    ],
+    "lv6": [
+     75,
+     100
+    ],
+    "lv7": [
+     100,
+     130
+    ],
+    "lv8": [
+     130,
+     165
+    ]
+   }
+  }
+ },
+ "directions": {
+  "read_aloud": {
+   "title": "Questions 1–2 · Read a Text Aloud",
+   "en": "You will read the text on the screen out loud. You have {prep} seconds to get ready, and then {speak} seconds to read.",
+   "ko": "화면의 글을 소리 내어 읽어요. 준비 {prep}초, 읽기 {speak}초예요."
+  },
+  "describe_photo": {
+   "title": "Questions 3–4 · Describe a Picture",
+   "en": "Describe the picture on the screen in as much detail as you can. You have {prep} seconds to get ready, and then {speak} seconds to talk.",
+   "ko": "사진을 최대한 자세히 묘사해요. 준비 {prep}초, 답변 {speak}초예요."
+  },
+  "respond_q": {
+   "title": "Questions 5–7 · Respond to Questions",
+   "en": "You will hear three questions. After each one, you have {prep} seconds to get ready. Answer Questions 5 and 6 in 15 seconds and Question 7 in 30 seconds.",
+   "ko": "질문 세 개에 답해요. 질문마다 준비 {prep}초, 5·6번은 15초, 7번은 30초 동안 답해요."
+  },
+  "info_based": {
+   "title": "Questions 8–10 · Respond Using Information Provided",
+   "en": "Read the information on the screen. You have {read} seconds before the questions start. After each question, you have {prep} seconds to get ready. You will hear Question 10 twice.",
+   "ko": "화면의 자료를 보고 질문 세 개에 답해요. 자료 읽기 {read}초, 질문마다 준비 {prep}초. 10번 질문은 두 번 들려줘요. 질문은 화면에 나오지 않아요."
+  },
+  "opinion": {
+   "title": "Question 11 · Express an Opinion",
+   "en": "Give your opinion on the topic and support it with reasons and examples. You have {prep} seconds to get ready, and then {speak} seconds to talk.",
+   "ko": "주제에 대한 의견을 이유와 예시를 들어 말해요. 준비 {prep}초, 답변 {speak}초예요."
+  }
+ },
+ "checklists": {
+  "read_aloud": [
+   "끊어 읽기 표시(/, //)에서 쉬었어요",
+   "이름·숫자·고유명사를 막히지 않고 읽었어요",
+   "나열(A, B, and C)을 올렸다 내리는 억양으로 읽었어요",
+   "시간 안에 끝까지 읽었어요"
+  ],
+  "describe_photo": [
+   "장소를 먼저 말했어요",
+   "가운데 인물의 동작을 현재진행형으로 말했어요",
+   "주변 사물이나 배경을 하나 이상 말했어요",
+   "느낌이나 추측 한 문장으로 마무리했어요",
+   "30초를 거의 다 채웠어요"
+  ],
+  "respond_q": [
+   "질문의 첫 문장을 그대로 받아 답을 시작했어요",
+   "질문에 나온 내용(빈도·사람·이유)을 빠짐없이 답했어요",
+   "7번은 의견 + 이유 두 개를 말했어요",
+   "시간이 끝나기 전에 문장을 마쳤어요"
+  ],
+  "info_based": [
+   "자료의 숫자·시간·이름을 정확히 말했어요",
+   "틀린 정보를 묻는 질문에서 먼저 바로잡았어요",
+   "10번은 항목 두 개 이상을 시간 순서대로 말했어요",
+   "전화 응대 말투(Sure, I'm afraid…)를 썼어요"
+  ],
+  "opinion": [
+   "첫 문장에 찬반을 분명히 말했어요",
+   "이유 두 개를 First, Second로 나눴어요",
+   "이유 하나에 구체적인 경험 예시를 붙였어요",
+   "마지막에 의견을 한 번 더 말했어요",
+   "60초를 거의 다 채웠어요"
+  ]
+ },
+ "sets": [
+  {
+   "id": "toeic-set01",
+   "title_ko": "모의고사 1",
+   "status": "draft",
+   "items": [
+    {
+     "num": 1,
+     "type": "read_aloud",
+     "text": "Welcome to the Greenfield Science Museum. Before you begin your tour, please take a moment to review a few guidelines. Food, drinks, and flash photography are not allowed in the exhibition halls. Guided tours start every hour at the main entrance, and audio guides are available at the information desk. If you have any questions, please ask a member of our staff. We hope you enjoy your visit.",
+     "marks": "Welcome to the Greenfield **Sci**ence Museum. // Before you begin your **tour**, / please take a moment / to review a few **guide**lines. // **Food**, ↗ / **drinks**, ↗ / and flash pho**tog**raphy ↘ / are not allowed / in the exhi**bi**tion halls. // Guided tours start every **hour** / at the main **en**trance, / and audio guides are available / at the infor**ma**tion desk. // If you have any **ques**tions, / please ask a member of our **staff**. // We hope you enjoy your **vis**it.",
+     "tip_ko": "나열하는 부분은 앞 두 개를 올리고 마지막을 내려 읽어요. 쉼표와 마침표에서 확실히 쉬면 급해 보이지 않아요."
+    },
+    {
+     "num": 2,
+     "type": "read_aloud",
+     "text": "Are you looking for a comfortable place to relax after work? Then visit Sunny Days Café on Main Street. We offer fresh coffee, homemade pastries, and light meals at reasonable prices. This month only, customers who bring their own cup will receive a ten percent discount. Sunny Days Café is open from seven in the morning until ten at night, seven days a week. Come and see us today!",
+     "marks": "Are you looking for a **com**fortable place / to relax after **work**? ↗ // Then visit Sunny Days Ca**fé** / on Main **Street**. // We offer fresh **cof**fee, ↗ / homemade **pas**tries, ↗ / and light **meals** ↘ / at reasonable **pri**ces. // This month **on**ly, / customers who bring their own **cup** / will receive a ten percent **dis**count. // Sunny Days Café is open / from seven in the **mor**ning / until ten at **night**, / seven days a **week**. // Come and see us to**day**!",
+     "tip_ko": "첫 문장은 질문이라 끝을 올려요. 광고 글은 숫자(ten percent, seven, ten)를 또박또박 읽으면 전달력이 좋아져요."
+    },
+    {
+     "num": 3,
+     "type": "describe_photo",
+     "image": "img/toeic/set01_q3.svg",
+     "credit": "placeholder-set01-q3",
+     "model": {
+      "lv5": [
+       {
+        "text": "This is a picture of an office. Two people are sitting at a table. A woman is using a laptop. There is a whiteboard behind them.",
+        "phrases": [
+         "This is a picture of",
+         "There is"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "This picture was taken in an office. In the middle of the picture, two people are having a meeting at a table. The woman on the left is looking at a laptop. In the background, there is a whiteboard with a chart. They look busy.",
+        "phrases": [
+         "This picture was taken in",
+         "In the middle of the picture",
+         "In the background",
+         "They look"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "This picture was taken in a bright meeting room. The first thing I see is two coworkers sitting next to each other at a table. The woman is typing something on her laptop, and the man is holding a cup of coffee. Behind them, there is a whiteboard with a bar chart on it. It seems like they are preparing for a presentation.",
+        "phrases": [
+         "The first thing I see is",
+         "Behind them",
+         "It seems like"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "This picture shows a small meeting room in what looks like a modern office. Two colleagues are sitting at a round table near a large window. The woman on the left is typing on her laptop while the man next to her is holding a coffee cup and listening carefully. On the wall behind them, there's a whiteboard with a bar chart, so I think they're reviewing some sales results before a meeting.",
+        "phrases": [
+         "This picture shows",
+         "in what looks like",
+         "while",
+         "so I think"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "장소 → 가운데 인물 → 옆 인물 → 배경 → 추측 순서로 말하면 30초가 자연스럽게 채워져요."
+    },
+    {
+     "num": 4,
+     "type": "describe_photo",
+     "image": "img/toeic/set01_q4.svg",
+     "credit": "placeholder-set01-q4",
+     "model": {
+      "lv5": [
+       {
+        "text": "This is a picture of a market. A man is selling fruit. A woman is holding a shopping bag. There are many apples and oranges.",
+        "phrases": [
+         "This is a picture of",
+         "There are many"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "This picture was taken at an outdoor market. On the right, a man in an apron is standing behind a fruit stand. A woman is holding a shopping bag and looking at the fruit. There are boxes of apples and oranges. It looks like a sunny day.",
+        "phrases": [
+         "This picture was taken at",
+         "On the right",
+         "It looks like"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "This picture was taken at an outdoor market on a sunny day. On the right side, a vendor wearing an apron is standing behind his stall. He is smiling at a customer. The woman on the left is carrying a shopping bag on her arm. In front of them, there are several boxes full of apples and oranges with small price signs.",
+        "phrases": [
+         "On the right side",
+         "wearing",
+         "In front of them"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "This is a scene from an outdoor market. Under a striped awning, a vendor in a green apron is standing behind his fruit stall and smiling at a customer. The customer, a woman with a shopping bag over her arm, seems to be deciding what to buy. The stall is filled with boxes of fresh apples and oranges, each with a small price sign. Overall, it looks like a pleasant morning at the market.",
+        "phrases": [
+         "This is a scene from",
+         "Under",
+         "seems to be",
+         "Overall"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "사람 옷차림(in a green apron, wearing ~)을 붙이면 문장이 길어지고 묘사가 구체적이 돼요."
+    },
+    {
+     "num": 5,
+     "type": "respond_q",
+     "context": "Imagine that a marketing company is doing research in your area. You have agreed to take part in a telephone interview about parks.",
+     "question": "How often do you go to a park, and who do you usually go with?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I go to a park once a week. I usually go with my dog."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I go to a park about twice a week. I usually go with my younger sister after dinner to take a walk."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I go to a park near my apartment about three times a week. I usually go with my roommate, and we take a walk together after dinner."
+       }
+      ],
+      "lv8": [
+       {
+        "text": "I go to the park near my apartment almost every evening, actually. I usually go with my roommate because we both like to jog after work, and it's a great way to relieve stress after a long day."
+       }
+      ]
+     },
+     "tip_ko": "질문이 두 개(얼마나 자주, 누구와)예요. 둘 다 답해야 해요. 질문 문장을 그대로 받아 시작하면 3초 준비로도 충분해요."
+    },
+    {
+     "num": 6,
+     "type": "respond_q",
+     "question": "What is the best time of year to visit a park in your area, and why?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I think spring is the best time. The weather is warm and there are many flowers."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I think the best time to visit a park in my area is spring. It is not too hot, and cherry blossoms are everywhere."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "In my opinion, the best time to visit a park in my area is in the fall. The weather is cool and dry, and the leaves turn red and yellow, so it's really beautiful."
+       }
+      ],
+      "lv8": [
+       {
+        "text": "I'd say early fall is the best time to visit a park around here. The summer heat is gone, the air is cool and dry, and the leaves start turning red and yellow. It's perfect weather for a picnic or a long walk."
+       }
+      ]
+     },
+     "tip_ko": "계절 하나를 고르고 이유는 날씨 + 볼거리로 두 가지를 말해요."
+    },
+    {
+     "num": 7,
+     "type": "respond_q",
+     "question": "Would you prefer to visit a large park that is far from your home or a small park near your home? Why?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I prefer a small park near my home. First, it is close, so I can go often. Second, I can save time.",
+        "phrases": [
+         "First",
+         "Second"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I prefer to visit a small park near my home. First, it is close, so I can go there anytime, even after work. Second, I don't need to spend money on transportation. So I think a small park near my home is better for me.",
+        "phrases": [
+         "First",
+         "Second",
+         "So I think"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I would prefer to visit a small park near my home. The main reason is convenience. Since it's only a five-minute walk away, I can go there whenever I want, even on busy weekdays. Also, a large park far away takes a lot of time to get to, and it's usually crowded on weekends. For these reasons, I prefer a small park nearby.",
+        "phrases": [
+         "The main reason is",
+         "Since",
+         "Also",
+         "For these reasons"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Personally, I'd much rather go to a small park near my home. The biggest reason is that I can actually use it regularly. For example, there's a little park just five minutes from my apartment, so I can take a quick walk there during my lunch break or after dinner. A large park might have more facilities, but if it takes an hour to get there, I'd probably only go once or twice a year.",
+        "phrases": [
+         "I'd much rather",
+         "The biggest reason is that",
+         "For example",
+         "might ~ but"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "7번은 30초라 의견 한 문장 + 이유 두 개(또는 이유 하나 + 예시)로 구성해요."
+    },
+    {
+     "num": 8,
+     "type": "info_based",
+     "caller_intro": "Hi, I signed up for the business conference next month, but I lost the schedule. I was hoping you could answer a few questions.",
+     "info": {
+      "title": "Riverside Business Conference",
+      "subtitle": "March 14 · City Convention Center, Hall B · Registration fee: $40",
+      "rows": [
+       [
+        "9:00 – 9:30 a.m.",
+        "Registration & Coffee"
+       ],
+       [
+        "9:30 – 10:30 a.m.",
+        "Keynote Speech: The Future of Remote Work — Dr. Lisa Chen"
+       ],
+       [
+        "10:45 a.m. – 12:00 p.m.",
+        "Workshop: Building Better Teams — Mark Davis"
+       ],
+       [
+        "12:00 – 1:00 p.m.",
+        "Lunch (on your own)"
+       ],
+       [
+        "1:00 – 2:00 p.m.",
+        "Panel Discussion: Marketing on a Small Budget"
+       ],
+       [
+        "2:15 – 3:30 p.m.",
+        "Workshop: Effective Presentations — Sarah Kim"
+       ],
+       [
+        "3:30 – 4:00 p.m.",
+        "Closing Remarks"
+       ]
+      ]
+     },
+     "question": "What date is the conference, and where is it being held?",
+     "model": {
+      "lv5": [
+       {
+        "text": "The conference is on March 14. It is in Hall B at the City Convention Center."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "The conference is on March 14, and it starts at 9 a.m. It will be held in Hall B of the City Convention Center."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Sure. The conference will be held on March 14 in Hall B of the City Convention Center. It starts at 9 a.m. with registration and coffee."
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Sure, I can help with that. The conference will be held on March 14 in Hall B at the City Convention Center. Registration and coffee begin at 9 a.m., so I'd recommend arriving a little early."
+       }
+      ]
+     },
+     "tip_ko": "날짜와 장소, 질문이 두 개예요. 자료 맨 위 줄에서 바로 찾아 읽으면 돼요."
+    },
+    {
+     "num": 9,
+     "type": "info_based",
+     "question": "I heard that lunch is included in the registration fee. Is that right?",
+     "model": {
+      "lv5": [
+       {
+        "text": "Sorry, lunch is not included. You have lunch on your own from 12 to 1."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I'm sorry, but lunch is not included in the 40-dollar fee. You need to have lunch on your own from 12 to 1."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Actually, no. The registration fee is 40 dollars, but it doesn't include lunch. The lunch break is from 12 to 1, and you'll need to eat on your own.",
+        "phrases": [
+         "Actually",
+         "no."
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "I'm afraid that's not quite right. The 40-dollar registration fee covers all the sessions and the morning coffee, but lunch isn't included. There's an hour-long break from noon to 1 p.m., so you'll need to find lunch on your own.",
+        "phrases": [
+         "I'm afraid that's not quite right"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "9번은 보통 잘못 알고 있는 정보를 물어요. \"아니에요\"를 먼저 말하고 맞는 정보를 알려 줘요."
+    },
+    {
+     "num": 10,
+     "type": "info_based",
+     "question": "Could you tell me about all the sessions scheduled in the afternoon?",
+     "model": {
+      "lv5": [
+       {
+        "text": "There are two sessions in the afternoon. At 1 p.m., there is a panel discussion on marketing. At 2:15, there is a workshop on presentations."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "Sure. There are two sessions in the afternoon. First, from 1 to 2 p.m., there is a panel discussion called Marketing on a Small Budget. Then, from 2:15 to 3:30, Sarah Kim will lead a workshop on effective presentations.",
+        "phrases": [
+         "First",
+         "Then"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Sure. There are two sessions in the afternoon. First, from 1 to 2 p.m., there will be a panel discussion titled Marketing on a Small Budget. After a short break, Sarah Kim will lead a workshop on effective presentations from 2:15 to 3:30. The conference will then finish with closing remarks at 3:30.",
+        "phrases": [
+         "First",
+         "After a short break",
+         "will then finish with"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Of course. After the lunch break, there are two sessions in the afternoon. The first one is a panel discussion called Marketing on a Small Budget, which runs from 1 to 2 p.m. Then, after a 15-minute break, Sarah Kim will lead a workshop on effective presentations from 2:15 to 3:30. Finally, the day wraps up with closing remarks at 3:30, so you should be finished by 4 o'clock.",
+        "phrases": [
+         "The first one is",
+         "which runs from",
+         "Finally",
+         "wraps up with"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "10번은 항목 두세 개를 시간 순서로 말해요. 시간 → 행사 이름 → 진행자 순서를 지키면 덜 헷갈려요."
+    },
+    {
+     "num": 11,
+     "type": "opinion",
+     "question": "Do you agree or disagree with the following statement? University students should have a part-time job while they are in school. Use specific reasons and examples to support your opinion.",
+     "model": {
+      "lv5": [
+       {
+        "text": "I agree that university students should have a part-time job. I have two reasons. First, they can earn money. They can pay for books and food. Second, they can learn about work. For example, my friend worked at a café. She learned how to talk to customers. So I agree with this statement.",
+        "phrases": [
+         "I have two reasons",
+         "First",
+         "Second",
+         "For example"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I agree that university students should have a part-time job. There are two reasons. First, students can earn their own money. These days, tuition and living costs are very high, so a part-time job can help them pay for books, food, and transportation. Second, they can get real work experience. For example, when I worked at a bakery during university, I learned how to deal with customers and manage my time. This experience helped me a lot when I got my first job. For these reasons, I agree with the statement.",
+        "phrases": [
+         "These days",
+         "For example",
+         "when I",
+         "For these reasons"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I agree that university students should have a part-time job while they are in school. I have two main reasons. First, a part-time job teaches students how to manage money. When students earn their own money, they understand how hard it is to make, so they spend it more carefully. Second, it gives them practical skills that they can't learn in a classroom. For example, during my second year of university, I worked at a convenience store three evenings a week. At first, it was difficult to balance work and study, but I learned how to plan my schedule and handle difficult customers calmly. These skills really helped me later at my internship. Therefore, I strongly believe that working part-time is valuable for university students.",
+        "phrases": [
+         "I have two main reasons",
+         "that they can't learn in",
+         "At first ~ but",
+         "Therefore"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Personally, I agree that university students should have a part-time job, as long as it doesn't take too much time away from their studies. The main reason is that a part-time job helps students become more independent and responsible. When you have a boss, coworkers, and a fixed schedule, you learn very quickly that other people are depending on you. I experienced this myself. In my third year, I worked as an English tutor for a middle school student twice a week. Preparing lessons every week forced me to manage my time much better, and I actually got better grades that semester because I stopped wasting my free time. On top of that, the experience helped me figure out what kind of career I wanted. So overall, I think a part-time job can be one of the most valuable parts of university life.",
+        "phrases": [
+         "as long as",
+         "The main reason is that",
+         "I experienced this myself",
+         "On top of that",
+         "So overall"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "첫 문장에 찬반을 분명히 말해요. 이유 하나에는 내 경험 예시를 붙여야 60초가 채워져요."
+    }
+   ]
+  }
+ ]
+}

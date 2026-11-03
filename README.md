@@ -14,7 +14,16 @@
 python3 -m http.server 8000 -d app
 ```
 
-## 콘텐츠 검증
+확인용 주소 옵션: `index.html?fast=20` (20배 빠르게), `?notts` (문항 음성 대신 글자)
+
+## 콘텐츠 검증 · 빌드
+콘텐츠(`content/`)를 고치면 빌드해서 `app/data/toeic.json`을 다시 만들어요. 빌드는 검증을 먼저 돌려요.
 ```bash
-python3 tools/validate_content.py --all
+python3 tools/build.py
+```
+
+## 끝까지 응시 테스트
+```bash
+python3 -m http.server 8765 -d app &
+node tests/e2e_toeic.js
 ```

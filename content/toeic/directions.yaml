@@ -1,0 +1,23 @@
+# 파트별 지시문. {prep} {speak} {read} 자리는 exam_formats.yaml 값으로 채워요.
+# 공식 지시문을 옮기지 않고 같은 정보를 이 앱 말투로 새로 썼어요.
+schema_version: 1
+read_aloud:
+  title: "Questions 1–2 · Read a Text Aloud"
+  en: "You will read the text on the screen out loud. You have {prep} seconds to get ready, and then {speak} seconds to read."
+  ko: 화면의 글을 소리 내어 읽어요. 준비 {prep}초, 읽기 {speak}초예요.
+describe_photo:
+  title: "Questions 3–4 · Describe a Picture"
+  en: "Describe the picture on the screen in as much detail as you can. You have {prep} seconds to get ready, and then {speak} seconds to talk."
+  ko: 사진을 최대한 자세히 묘사해요. 준비 {prep}초, 답변 {speak}초예요.
+respond_q:
+  title: "Questions 5–7 · Respond to Questions"
+  en: "You will hear three questions. After each one, you have {prep} seconds to get ready. Answer Questions 5 and 6 in 15 seconds and Question 7 in 30 seconds."
+  ko: 질문 세 개에 답해요. 질문마다 준비 {prep}초, 5·6번은 15초, 7번은 30초 동안 답해요.
+info_based:
+  title: "Questions 8–10 · Respond Using Information Provided"
+  en: "Read the information on the screen. You have {read} seconds before the questions start. After each question, you have {prep} seconds to get ready. You will hear Question 10 twice."
+  ko: 화면의 자료를 보고 질문 세 개에 답해요. 자료 읽기 {read}초, 질문마다 준비 {prep}초. 10번 질문은 두 번 들려줘요. 질문은 화면에 나오지 않아요.
+opinion:
+  title: "Question 11 · Express an Opinion"
+  en: "Give your opinion on the topic and support it with reasons and examples. You have {prep} seconds to get ready, and then {speak} seconds to talk."
+  ko: 주제에 대한 의견을 이유와 예시를 들어 말해요. 준비 {prep}초, 답변 {speak}초예요.
