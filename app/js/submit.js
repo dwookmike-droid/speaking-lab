@@ -15,7 +15,7 @@ export async function buildSubmission(attemptId, set) {
     if (!rec?.blob?.size) continue;
     const file = `audio/q${pad(it.num)}.${EXT(rec.blob.type)}`;
     files.push({ name: file, data: rec.blob });
-    items.push({ num: it.num, file, mime: rec.blob.type, ms: rec.ms });
+    items.push({ num: it.num, file, mime: rec.blob.type, ms: rec.ms, ...(it.qid ? { qid: it.qid, type: it.type } : {}) });
   }
   if (!items.length) throw new Error('보낼 녹음이 없어요.');
   const manifest = {
@@ -26,6 +26,7 @@ export async function buildSubmission(attemptId, set) {
       id: attempt.id, exam: attempt.exam, set_id: attempt.setId,
       target: getSetting(`target.${attempt.exam}`, attempt.target),
       started_at: attempt.startedAt, finished_at: attempt.finishedAt, no_mic: !!attempt.noMic,
+      ...(attempt.exam === 'opic' ? { self_assessment: attempt.plan?.sa, readjust: attempt.readjust || null, difficulty: attempt.d, survey_topics: attempt.plan?.survey_topics } : {}),
     },
     items,
   };

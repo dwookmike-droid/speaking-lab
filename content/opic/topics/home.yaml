@@ -1,0 +1,430 @@
+schema_version: 1
+id: home
+kind: survey
+title_ko: 사는 곳
+status: ready
+questions:
+  - id: home-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you live in a house or an apartment. Please describe your home to me. What
+      does it look like, and what rooms does it have? Which room do you like the most, and why?
+    model:
+      il:
+        - text: >-
+            I live in an apartment. It is on the tenth floor. It has two bedrooms and one bathroom. The living room is
+            small. I like my bedroom. It is quiet. My bed is very comfortable. I like my home.
+          phrases: [I live in, I like my bedroom]
+        - text: >-
+            My home is a small house. There is a kitchen, a living room, and three bedrooms. My favorite room is the
+            kitchen. It is big and bright. My family eats dinner there. I love my house.
+          phrases: [My favorite room is, There is]
+      im1:
+        - text: >-
+            I live in an apartment with my family. It is not very big, but it is clean and bright. There are three
+            bedrooms, two bathrooms, a kitchen, and a living room. My favorite room is my bedroom because it is my own
+            space. I have a desk, a bed, and a big window there. At night, I can see the city lights from my window. I
+            feel relaxed when I am in my room.
+          phrases: [My favorite room is, because it is my own space, I feel relaxed]
+        - text: >-
+            I live alone in a studio apartment near my office. It is only one room, so the kitchen, bed, and desk are all
+            together. It is small, but I like it. My favorite place is the corner by the window. I put a small sofa and a
+            plant there. After work, I sit on the sofa and listen to music. It is the most comfortable place for me.
+          phrases: [I live alone in, My favorite place is, 'It is small, but I like it']
+      im2:
+        - text: >-
+            Well, I live in an apartment with two roommates. It's on the fifth floor of an old building, so there's no
+            elevator, which is kind of tiring. When you walk in, there's a long hallway, and on the right side there's a
+            living room with a big gray sofa. We have three bedrooms, one for each of us, and we share a kitchen and a
+            bathroom. My favorite room is actually the living room. In the evening, we often sit there together, watch TV,
+            and talk about our day. It makes the apartment feel like a real home.
+          phrases: [When you walk in, My favorite room is actually, It makes the apartment feel like]
+        - text: >-
+            Okay, I live in a two-story house with my parents. On the first floor, there's a living room, a kitchen, and
+            my parents' bedroom. On the second floor, there are two bedrooms, and one of them is mine. I like my room the
+            most because it has a small balcony. I put some flower pots and a little chair out there. On weekends, I sit
+            on the balcony with a cup of coffee and read a book. It's quiet and peaceful, so it's the best place to relax
+            in my house.
+          phrases: [On the first floor, I like my room the most because, It's quiet and peaceful]
+      im3:
+        - text: >-
+            Sure. I live in a three-bedroom apartment with my parents and my younger sister. It's in a quiet neighborhood,
+            and there's a small park right in front of our building. The apartment is about fifteen years old, but my
+            parents remodeled it a few years ago, so it looks pretty modern now. The living room has white walls, a long
+            wooden table, and a big window that faces south, so it gets a lot of sunlight. To be honest, my favorite room
+            is the kitchen. My mom loves cooking, and the kitchen always smells good. Whenever I come home tired, I go
+            straight there and see what's for dinner. It always cheers me up.
+          phrases: ['To be honest, my favorite room is', so it gets a lot of sunlight, Whenever I come home]
+        - text: >-
+            Let me describe my place. I live by myself in a one-bedroom apartment that I moved into about a year ago. It's
+            not huge, but the layout is really practical. The front door opens into a small kitchen, and then there's a
+            living room with a sofa, a TV, and a bookshelf full of novels. My bedroom is in the back, and it's the
+            quietest part of the apartment. I'd say my favorite spot is the living room, though, because I spend most of
+            my free time there. I recently bought a soft rug and some warm lamps, and now it feels really cozy, especially
+            in the winter. I love it there.
+          phrases: [Let me describe my place, the layout is really practical, I'd say my favorite spot is]
+      ih:
+        - text: >-
+            Sure. I share a fairly old apartment with two friends from college. It's on the third floor of a red brick
+            building, and honestly, the outside doesn't look very impressive. Inside, though, it's much nicer than you'd
+            expect. When you open the door, you walk right into an open living room and kitchen area, which is where we
+            spend most of our time. There are three bedrooms down a short hallway, and we each have our own, which is
+            really important for keeping the peace. My favorite room is definitely the living room. We put a big wooden
+            table in the middle, and on Friday nights we cook something together, play board games, and just catch up.
+            Even though the building is old and the heating isn't great, that table makes the whole place feel warm. I
+            honestly can't imagine living anywhere else right now.
+          phrases: [it's much nicer than you'd expect, which is where we spend most of our time, My favorite room is definitely, Even though]
+        - text: >-
+            Okay, so I live in a house on the edge of the city with my wife and our two kids. It's a two-story house with
+            a small yard, which was the main reason we bought it, because we wanted the kids to have a place to play
+            outside. On the first floor, there's a big kitchen that opens into the living room, and on the second floor,
+            there are three bedrooms and a study. The study is my favorite room by far. It's small and a little messy, but
+            it has a big desk by the window, and I can see the trees in our yard while I work. After the kids go to bed, I
+            usually go up there, make a cup of tea, and either read or catch up on work. It's the only quiet place in the
+            house, so I really value it.
+          phrases: [which was the main reason, The study is my favorite room by far, After the kids go to bed, I really value it]
+      al:
+        - text: >-
+            Sure, I'd love to. I live alone in a studio apartment in a fairly busy part of the city, so it's a bit noisy
+            at night, but the location is perfect for my commute. The apartment itself is a single open space, maybe
+            twenty-five square meters, with a kitchen along one wall, a bed tucked into a corner, and a small desk by the
+            window. When I first moved in, it felt cramped, and I honestly wondered whether I'd made a mistake. Over time,
+            though, I figured out how to make the most of the space. I put up shelves almost to the ceiling, I bought a
+            folding table, and I hung a curtain that separates the bed from the rest of the room. If I had to pick a
+            favorite spot, it would be the window seat I made with a few cushions. On rainy days, I sit there with a book
+            and a cup of coffee and watch people rushing by on the street below. It's not a big home, but it really
+            reflects who I am, and I think that's what makes it special.
+          phrases: [the location is perfect for my commute, When I first moved in, make the most of the space, If I had to pick a favorite spot]
+        - text: >-
+            Of course. I live with my parents in an apartment that we've had for almost twenty years, so it's full of
+            memories. It's a fairly standard layout, with three bedrooms, two bathrooms, a kitchen, and a living room, but
+            what makes it special to me is how it has changed along with our family. For example, my old bedroom used to
+            be covered in posters, but after I started working, I repainted the walls a soft green and turned it into
+            something closer to a small office. My favorite room, though, is the living room. My parents have filled it
+            with plants over the years, so it almost feels like a little indoor garden. In the evenings, my dad waters
+            them while my mom and I talk about our day, and the whole room smells fresh and green. I know I'll probably
+            move out in a couple of years, and to be honest, I think the thing I'll miss most is sitting in that living
+            room with my family after a long day.
+          phrases: [what makes it special to me is, used to be, 'My favorite room, though, is', the thing I'll miss most is]
+    tip_ko: 집 전체 → 방 구성 → 가장 좋아하는 방 → 그 이유 순서로 말해요. 좋아하는 방에서 실제로 하는 일을 하나 덧붙이면 답이 길어져요.
+  - id: home-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about the things you usually do at home on a typical weekday. What do you do in the morning and in the
+      evening? Who are the household chores shared with, and how do you divide them?
+    model:
+      il:
+        - text: >-
+            I wake up at seven. I eat breakfast in the kitchen. Then I go to work. In the evening, I cook dinner. I wash
+            the dishes. I watch TV in the living room. I go to bed at eleven.
+          phrases: [I wake up at, In the evening]
+        - text: >-
+            At home, I clean my room every day. My mom cooks. My dad washes the dishes. I take out the trash. At night, I
+            read a book. Then I sleep. It is a normal day.
+          phrases: [At home, At night]
+      im1:
+        - text: >-
+            On weekdays, I wake up at six thirty and take a shower. Then I make a quick breakfast, usually toast and
+            coffee. I leave home at seven thirty. When I come back in the evening, I cook a simple dinner and watch a
+            drama. I live with my sister, so we share the chores. She does the laundry, and I clean the bathroom and the
+            kitchen. We take out the trash together on Wednesdays.
+          phrases: [On weekdays, When I come back, we share the chores]
+        - text: >-
+            I live with two roommates, so we have a chore schedule on the fridge. This week, I am in charge of cleaning
+            the kitchen. In the morning, I don't have much time, so I just eat cereal and go to school. In the evening, I
+            study in my room for two hours. After that, I wash the dishes and talk with my roommates in the living room.
+            Before bed, I read the news on my phone.
+          phrases: [we have a chore schedule, I am in charge of, After that]
+      im2:
+        - text: >-
+            Well, my weekday routine is pretty simple. I usually wake up around seven, stretch for a few minutes, and make
+            coffee. While the coffee is brewing, I make my bed and open the windows to let in fresh air. After work, I get
+            home around seven in the evening. First, I change my clothes and cook dinner. Since I live with my parents, we
+            divide the chores. My mom does most of the cooking, my dad takes care of the laundry, and I vacuum the whole
+            apartment every other day. It works pretty well for us.
+          phrases: [my weekday routine is pretty simple, While the coffee is brewing, we divide the chores, It works pretty well for us]
+        - text: >-
+            Okay. Because I live alone, I have to do everything by myself, so I try to keep a regular routine. In the
+            morning, I get up at six thirty, do some quick exercises, and eat a bowl of rice with eggs. In the evening, I
+            usually spend about thirty minutes cleaning. On Mondays I do the laundry, on Wednesdays I clean the bathroom,
+            and on Fridays I vacuum. After that, I relax on the sofa and watch a show. Doing a little every day is much
+            easier than cleaning everything on the weekend.
+          phrases: [I have to do everything by myself, On Mondays, Doing a little every day]
+      im3:
+        - text: >-
+            Sure. On a typical weekday, I get up around six forty-five, and the first thing I do is open the curtains and
+            turn on some music. Then I take a quick shower, make a smoothie, and leave for work by seven thirty. Evenings
+            are a little more relaxed. I live with two roommates, and we have a simple rule for chores. Whoever cooks
+            doesn't have to wash the dishes. So if I cook, one of my roommates cleans up, and the other one takes out the
+            trash. On top of that, we do a big cleaning together every Sunday. It sounds strict, but honestly, it has
+            really reduced the arguments in our home.
+          phrases: [the first thing I do is, we have a simple rule for chores, On top of that, 'It sounds strict, but honestly']
+        - text: >-
+            Let me walk you through a normal weekday. Since I work from home three days a week, my routine changes a
+            little depending on the day. On home days, I wake up at eight, make coffee, and start working at my desk in
+            the living room. At lunchtime, I usually cook something simple and take a short walk around the block. In the
+            evening, I share the chores with my husband. He's a much better cook than I am, so he makes dinner, and I wash
+            the dishes and clean the kitchen. Before going to bed, we usually spend some time on the sofa talking about
+            our day, which is my favorite part of the routine.
+          phrases: [Let me walk you through, depending on the day, He's a much better cook than I am, which is my favorite part]
+      ih:
+        - text: >-
+            Sure. My weekday routine at home is pretty structured, mostly because I have two kids. I wake up at six,
+            before anyone else, and I really treasure that quiet half hour with a cup of coffee. Then the chaos begins. I
+            wake the kids up, make breakfast, and get them ready for school while my husband packs their lunches. In the
+            evening, after dinner, we have a rule that everyone in the family has to do at least one chore. The kids set
+            the table and fold the laundry, my husband washes the dishes, and I usually wipe down the kitchen and take out
+            the recycling. It took a while to get everyone used to it, but now it runs pretty smoothly, and the kids
+            actually seem proud of helping out. Before bed, we all read together for twenty minutes, and that's the
+            calmest part of our day.
+          phrases: [I really treasure, Then the chaos begins, we have a rule that, It took a while to get everyone used to it]
+        - text: >-
+            Okay, so my weekdays at home are pretty predictable. I live alone, and I've found that having a routine is the
+            only way to keep my apartment from turning into a mess. In the morning, I get up at seven, make my bed right
+            away, and have a light breakfast while I check the news. I leave for work at eight. When I get home around
+            seven, I don't let myself sit on the sofa right away, because I know I'll never get up again. Instead, I spend
+            fifteen minutes doing one small chore, like cleaning the bathroom sink or sorting the laundry. After that, I
+            cook dinner, usually something quick like pasta or stir-fried vegetables. Later in the evening, I read or
+            watch a documentary, and I try to be in bed by eleven thirty. It's a simple routine, but it keeps me sane.
+          phrases: [I've found that, the only way to keep, I don't let myself, Instead]
+      al:
+        - text: >-
+            Sure. On a typical weekday, my routine at home revolves around the fact that I share a small apartment with
+            two roommates who all have very different schedules. I'm usually the first one up, around six thirty, so I try
+            to be as quiet as possible while I make coffee and get ready. One of my roommates works night shifts at a
+            hospital, so she's often coming home just as I'm leaving. Because our schedules overlap so little, we figured
+            out pretty early on that we needed a clear system for chores. We have a shared calendar on our phones, and
+            each week the tasks rotate, so one person handles the kitchen, another takes care of the bathroom, and the
+            third deals with the trash and recycling. In the evenings, if I'm on kitchen duty, I'll clean up after dinner
+            and wipe everything down before bed. Honestly, it isn't always perfect, and occasionally someone forgets their
+            turn, but compared to my first year of living with roommates, when there was no system at all, it's a huge
+            improvement.
+          phrases: [revolves around the fact that, we figured out pretty early on that, 'Honestly, it isn''t always perfect', compared to]
+        - text: >-
+            Of course. These days, my weekday routine at home is shaped by the fact that I live with my elderly parents. I
+            usually wake up at six, and before I do anything else, I make breakfast for the three of us, usually rice,
+            soup, and a few side dishes. My mom used to do all of the cooking, but since she hurt her back last year, I've
+            taken over most of the kitchen work. After breakfast, I make sure my dad has taken his medicine, and then I
+            head to the office. In the evening, my brother sometimes comes over to help, which makes a big difference. He
+            takes care of the heavier chores, like carrying groceries and taking out the trash, while I do the laundry and
+            clean the bathroom. It can be exhausting, and there are days when I'd love to just collapse on the sofa. But
+            I've come to appreciate this time with my parents, because I know that a few years from now, I'll probably
+            look back on it and miss it.
+          phrases: [is shaped by the fact that, I've taken over, which makes a big difference, I've come to appreciate]
+    tip_ko: '아침 → 저녁 순서로 시간 표현(First, After that, Before bed)을 넣어요. 집안일은 누가 무엇을 맡는지 이름 대신 관계로 말하면 돼요.'
+  - id: home-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Think about a memorable experience you had at home. Maybe you moved into a new place, or something went wrong
+      in your home. What happened, and how did you deal with it? Please tell me the whole story in detail.
+    model:
+      il:
+        - text: >-
+            Last year, I moved to a new apartment. My friends helped me. We carried many boxes. It was very hot. After
+            that, we ate pizza together. I was tired but happy. It was a good day.
+          phrases: [Last year, After that]
+        - text: >-
+            One night, the power went out in my house. It was very dark. I could not see anything. I found a candle. I
+            waited for one hour. Then the light came back. I was scared.
+          phrases: [One night, Then]
+      im1:
+        - text: >-
+            Two years ago, I moved out of my parents' house for the first time. I found a small apartment near my company.
+            On moving day, it rained a lot, so my boxes got wet. My dad helped me carry everything. That night, I sat in
+            my empty room and ate instant noodles. I felt a little lonely, but I was also excited. It was the start of my
+            new life.
+          phrases: [Two years ago, On moving day, 'I felt a little lonely, but']
+        - text: >-
+            Last winter, a pipe in our kitchen broke. Water came out everywhere, and the floor was wet. I didn't know what
+            to do, so I called my landlord. He sent a repairman, but he came three hours later. While I waited, I cleaned
+            the water with towels. It was really stressful. After that day, I learned where the main water valve is.
+          phrases: [Last winter, I didn't know what to do, After that day]
+      im2:
+        - text: >-
+            I remember the day we moved into our current apartment. I was about fifteen years old. We had a lot of
+            furniture, so the moving company came early in the morning. Everything went well until they tried to bring our
+            big sofa through the front door. It didn't fit! We tried for almost an hour, and finally they had to lift it
+            through the balcony window with a special machine. All the neighbors came out to watch. At that time, I was
+            embarrassed, but now my family laughs about it every time we sit on that sofa.
+          phrases: [I remember the day, Everything went well until, At that time, now my family laughs about it]
+        - text: >-
+            One memorable experience happened last summer. I was living with two roommates, and one night the air
+            conditioner suddenly stopped working. It was over thirty degrees, so none of us could sleep. We opened all the
+            windows, but it didn't help. The next morning, we called the repair center, but they said they couldn't come
+            for a week. So we went out and bought three fans and slept in the living room together like a camping trip. It
+            was uncomfortable, but we talked until late, and it actually became a fun memory.
+          phrases: [One memorable experience happened, none of us could sleep, 'It was uncomfortable, but', it actually became a fun memory]
+      im3:
+        - text: >-
+            Sure. A few years ago, I had a pretty scary experience at home. I was living alone at the time, and one night,
+            I came home from work and noticed that my front door was slightly open. I was sure I had locked it in the
+            morning, so I panicked. I didn't go inside. Instead, I called the building manager, and we went in together.
+            It turned out that nothing was missing, and the lock was just broken. The manager replaced it the next day,
+            but for about a week, I couldn't sleep well. Since then, I always check the lock twice before I leave, even
+            when I'm in a hurry.
+          phrases: [A few years ago, It turned out that, Since then]
+        - text: >-
+            Let me tell you about the time I moved into my first apartment with a roommate. We were both college students,
+            and we didn't have much money, so we decided to move everything ourselves. We borrowed a small truck from my
+            uncle, and it took us four trips to carry all our stuff. On the last trip, we realized we had forgotten the
+            keys to the new apartment at the old place! We had to drive all the way back in the rain. By the time we
+            finally finished, it was almost midnight. We were exhausted, but we ordered fried chicken and celebrated on
+            the floor of our empty living room.
+          phrases: [Let me tell you about the time, we realized we had forgotten, By the time we finally finished]
+      ih:
+        - text: >-
+            Okay, one experience that really stands out happened about three years ago, right after I moved into my
+            current apartment. It was my first winter there, and one morning I woke up and the whole place was freezing. I
+            checked the heater, and it wasn't working at all. I called the landlord, but he was on vacation and didn't
+            answer, so I had to find a repair company on my own. The first company said they couldn't come for four days,
+            which was obviously not an option. Finally, a small local shop agreed to come that afternoon. The repairman
+            found out that a part had frozen and cracked, and it took him almost three hours to fix it. In the meantime, I
+            wrapped myself in every blanket I had. Looking back, it was a stressful day, but it taught me to always keep
+            the landlord's backup number and to check the heating system before winter starts.
+          phrases: [one experience that really stands out, which was obviously not an option, In the meantime, Looking back]
+        - text: >-
+            Sure. I'd say the most memorable thing that happened at home was when my family decided to remodel our kitchen
+            while we were still living in the house. I was in high school at the time, and my parents thought it would
+            only take two weeks. Well, it ended up taking almost two months. For the first few days, it was kind of fun.
+            We ate takeout every night and had picnics on the living room floor. But after a while, everyone got really
+            tired of the dust and the noise. Then one day, the workers accidentally hit a water pipe, and water flooded
+            part of the living room. My mom was so upset that she almost cried. In the end, the kitchen turned out
+            beautifully, and we still use it every day, but whenever someone in my family mentions remodeling, we all just
+            laugh and shake our heads.
+          phrases: [I'd say the most memorable thing, it ended up taking, But after a while, In the end]
+      al:
+        - text: >-
+            Sure. The experience that comes to mind right away is the time I moved out of my parents' house to live on my
+            own for the first time. I was twenty-four and had just started my first full-time job, and I was incredibly
+            excited about the idea of having my own place. I spent weeks looking at apartments, and I finally found a
+            small one about twenty minutes from my office. The moving day itself was a bit of a disaster. The moving truck
+            showed up two hours late, it started pouring rain halfway through, and one of the movers dropped a box full of
+            my favorite mugs. By the time everyone left, my apartment was a maze of wet boxes, and I couldn't even find my
+            towels. I remember sitting on the floor, eating cold kimbap from a convenience store, and wondering why I had
+            wanted to leave home so badly. But a few days later, after I unpacked and arranged everything the way I liked,
+            I started to feel genuinely proud. Looking back, that rough first night was actually the beginning of me
+            becoming more independent.
+          phrases: [The experience that comes to mind right away, was a bit of a disaster, By the time everyone left, Looking back]
+        - text: >-
+            Of course. One experience I'll never forget happened a couple of summers ago, when I was living with two
+            roommates in an old apartment. We'd been having small problems with the plumbing for months, but our landlord
+            kept putting off the repairs. Then one Saturday morning, I woke up to the sound of water dripping, and when I
+            walked into the bathroom, there was water pouring out from behind the toilet. Within minutes, it had spread
+            into the hallway. None of us knew where the main valve was, so we were running around grabbing towels and
+            buckets while one of my roommates searched online for instructions. Eventually, we found the valve in a
+            cabinet under the kitchen sink and managed to turn it off. The landlord finally came that afternoon, and to
+            his credit, he paid for everything, including a new hallway carpet. Even though it was chaotic at the time, it
+            brought the three of us closer together, and it taught me to always find out exactly where the shutoff valve
+            is whenever I move into a new place.
+          phrases: [One experience I'll never forget, kept putting off, Within minutes, to his credit, Even though it was chaotic at the time]
+    tip_ko: '언제, 어디서, 무슨 일이 → 어떻게 해결했는지 → 지금 드는 생각 순서로 과거형을 지켜 말해요. 그때 느낀 감정을 한 문장 넣어요.'
+  - id: home-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      Compare the home you live in now with the home you lived in when you were a child. How are they different?
+      What has changed, and which home do you like better? Please explain in detail.
+    model:
+      il:
+        - text: >-
+            When I was a child, I lived in a small house. Now I live in an apartment. My old house had a yard. My
+            apartment has no yard. But my apartment is warm and clean. I like my apartment more.
+          phrases: [When I was a child, Now I live in]
+        - text: >-
+            My old home was in the country. It was big and quiet. Now my home is in the city. It is small and busy. I miss
+            my old home. But the city is convenient.
+          phrases: [My old home was, Now my home is]
+      im1:
+        - text: >-
+            When I was a child, I lived in a house in a small town with my grandparents. It had a big garden, and we grew
+            vegetables there. Now I live in an apartment in Seoul. It is much smaller, and there is no garden. But it is
+            very convenient because there are many stores and a subway station nearby. I think my old house was more
+            peaceful, but my apartment is better for my life now.
+          phrases: [When I was a child, It is much smaller, but my apartment is better for]
+        - text: >-
+            My childhood home was an old apartment with only two rooms. I shared a room with my brother, so I had no
+            privacy. Now I live alone in a studio, so I have my own space. My current home is newer and has a nice
+            kitchen. However, my old home was always full of people and laughter. Sometimes I miss that feeling, but I
+            like my freedom now.
+          phrases: [My childhood home was, However, Sometimes I miss that feeling]
+      im2:
+        - text: >-
+            I grew up in a traditional house with a small yard in a quiet neighborhood. In winter, the house was really
+            cold because it was old, and we used a heater in only one room. Now I live in a modern apartment with my
+            roommates. It has central heating, so it's warm everywhere, and there's an elevator and a security guard. The
+            biggest change is convenience. Everything is easier now. On the other hand, I miss playing in the yard and
+            seeing the stars at night. Overall, I prefer my current home, but my childhood home has more memories.
+          phrases: [I grew up in, The biggest change is, On the other hand, 'Overall, I prefer']
+        - text: >-
+            When I was young, my family lived in a big apartment in the suburbs. We had four bedrooms, so everyone had
+            their own room. Now I live with my husband in a small apartment downtown. It's only half the size of my
+            childhood home, but it's close to our offices, so we save a lot of time. Another difference is the neighbors.
+            In my old apartment, we knew everyone in the building. Now I don't even know who lives next door. I like my
+            current home, but I think people were closer back then.
+          phrases: [When I was young, Another difference is, back then]
+      im3:
+        - text: >-
+            The home I live in now is really different from the one I grew up in. When I was a kid, my family lived in a
+            two-story house in a small city. There was a big yard, and my dad built a little wooden swing for me and my
+            sister. Now I live alone in a one-room apartment in Seoul. Of course, it's much smaller, and I can't have a
+            yard or even a pet. But it has some advantages. Everything is close, the building is safe, and I don't have to
+            spend hours cleaning a big house. If I'm honest, I think I prefer my current place for now, but when I have my
+            own family someday, I'd like to live in a house like the one I grew up in.
+          phrases: [is really different from, 'Of course, it''s much smaller', But it has some advantages, If I'm honest]
+        - text: >-
+            Let me compare the two. As a child, I lived in a crowded apartment with my parents, my grandmother, and two
+            brothers. There was only one bathroom, so every morning was like a battle. Now I share a newer apartment with
+            just one roommate, and we each have our own bathroom, which honestly feels like luxury. The atmosphere has
+            changed, too. My childhood home was always noisy and warm, and someone was always cooking. My current home is
+            quiet and calm, which is great when I need to focus, but sometimes it feels a bit empty. So I'd say each home
+            suits a different stage of my life, and I'm thankful for both of them.
+          phrases: [Let me compare the two, which honestly feels like luxury, 'The atmosphere has changed, too', So I'd say]
+      ih:
+        - text: >-
+            Sure. The biggest difference between my childhood home and my current one is probably the sense of space. I
+            grew up in a farmhouse in the countryside, surrounded by rice fields. We had a huge yard, a small barn, and so
+            much room that I could ride my bike around the house. Now I live with my wife in a two-bedroom apartment on
+            the fifteenth floor of a high-rise in the city. When we first moved in, I honestly felt a little trapped,
+            because I was used to stepping outside and seeing open land. Over time, though, I've gotten used to it, and
+            I've come to appreciate how convenient city life is. We can walk to the subway, the hospital, and the grocery
+            store in ten minutes. Still, if you asked me which one I like better, I'd say my childhood home. Whenever I
+            visit my parents and smell the fields, I realize how much I miss that freedom.
+          phrases: [The biggest difference between, When we first moved in, 'Over time, though, I''ve gotten used to it', if you asked me which one]
+        - text: >-
+            Okay. When I think about it, my current home and the one I grew up in reflect how much my life has changed. As
+            a kid, I lived in a small rented apartment with my mom, and we moved almost every two years because the rent
+            kept going up. Because of that, I never really decorated my room or felt settled. These days, I live in an
+            apartment that my husband and I bought three years ago, and it's the first place that truly feels like ours.
+            We painted the walls, chose our own furniture, and even turned one room into a little library. The funny thing
+            is that my current home is not much bigger than my childhood apartment. The difference is the feeling of
+            stability. So while I have some sweet memories of my old home, especially cooking with my mom in that tiny
+            kitchen, I definitely prefer where I live now.
+          phrases: [When I think about it, Because of that, The funny thing is that, The difference is]
+      al:
+        - text: >-
+            That's an interesting question, because my current home and my childhood home are almost complete opposites. I
+            grew up in a big, old house in a coastal town, with high ceilings, creaky wooden floors, and a garden my
+            grandmother took care of every single day. It was drafty in the winter and full of bugs in the summer, but it
+            had so much character, and there was always something going on. Today, I live alone in a brand-new studio
+            apartment in the middle of the city. Everything is efficient and modern. The heating is automatic, the doors
+            lock with a code, and I can order groceries without leaving my sofa. In terms of comfort and convenience,
+            there's really no comparison; my current place wins easily. However, I've noticed that I spend a lot less time
+            at home now. My apartment feels more like a place to sleep than a place to live. So if I had to choose, I'd
+            probably pick my childhood home, not because it was nicer, but because it was full of people and stories, and
+            that's what made it feel like a real home.
+          phrases: [are almost complete opposites, it had so much character, In terms of comfort and convenience, if I had to choose, 'not because it was nicer, but because']
+        - text: >-
+            Sure. I'd say the main difference between the home I grew up in and the one I live in now isn't really the
+            building itself, but the people and the routines inside it. As a child, I lived in a fairly ordinary apartment
+            with my parents and my younger sister. It wasn't big or fancy, but my parents were very strict about family
+            time, so we always had dinner together and spent Sunday afternoons cleaning the whole place as a team. Now I
+            share a bigger and much nicer apartment with two coworkers. We each have our own bedroom and bathroom, and the
+            kitchen is twice the size of my parents' kitchen. On paper, it's a better home in almost every way. But
+            because all three of us work long hours, we rarely eat together, and the living room is often empty. Honestly,
+            living here has made me appreciate my childhood home a lot more. If I could combine the space of my current
+            apartment with the warmth of the place I grew up in, I think that would be my ideal home.
+          phrases: ['isn''t really the building itself, but', On paper, has made me appreciate, If I could combine]
+    tip_ko: 어릴 때 집과 지금 집을 크기·위치·분위기처럼 기준 두세 개로 나눠 비교해요. 마지막에 어느 쪽이 더 좋은지와 이유로 마무리해요.

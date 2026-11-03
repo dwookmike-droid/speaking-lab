@@ -16,7 +16,9 @@ description: 학생 말하기 제출(submissions/S###/<응시ID>/)의 전사본�
 ## 1. 읽을 것
 1. `<폴더>/attempt.json` — student_id, set_id, exam, target(목표 레벨), 녹음한 문항
 2. `<폴더>/transcript.json` — 문항별 text, words(시간), stats(words, wpm, pauses_over_1s, longest_pause_s, fillers, silent_tail_s)
-3. 세트 원본 `content/<exam>/sets/*.yaml`에서 `id`가 set_id인 파일 — 문항, 지문, 자료표, **목표 레벨과 한 단계 위 모범답변**
+3. 문항과 모범답변(**목표 레벨과 한 단계 아래·위**)
+   - 토익: `content/toeic/sets/*.yaml`에서 `id`가 set_id인 파일
+   - OPIc: 응시마다 문항이 달라요. `attempt.json`의 `items[].qid`를 `content/opic/topics/*.yaml`, `content/opic/roleplays/*.yaml`의 `questions[].id`에서 찾아요. 자가평가(`self_assessment`), 재조정(`readjust`)도 참고해요.
 4. `schema/answer_levels.yaml` — 레벨별 단어 수 범위(`words`)와 문장 스타일(`style_ko`)
 5. `schema/exam_formats.yaml` — 문항별 답변 시간
 
@@ -26,6 +28,7 @@ description: 학생 말하기 제출(submissions/S###/<응시ID>/)의 전사본�
 - **문법·어휘:** 실제로 틀린 곳만 고쳐요. 시제, 주어-동사 일치, 관사, 전치사, 어순 순서로 봐요.
 - **유창성:** stats를 근거로 써요. 단어 수가 목표 레벨 범위보다 적은지, 1초 넘는 멈춤이 잦은지, 군말이 많은지, 시간이 남았는데 일찍 멈췄는지(silent_tail_s)
 - **지문 읽기(Q1–2):** 원문과 전사본을 단어 단위로 비교해서 빠뜨리거나 바꿔 읽은 단어를 찾아요. 레벨(est_level)은 생략해도 돼요.
+- **OPIc:** 답변 시간이 자유라 단어 수가 길이 판단의 핵심이에요(`answer_levels.yaml`의 opic.words, 롤플레이 질문은 `roleplay_ask`). 묘사 → 습관 → 경험 콤보에서 시제를 맞게 바꿨는지, 롤플레이 질문하기는 질문을 3개 이상 했는지, 문제 해결은 대안을 2개 이상 냈는지 봐요.
 - **발음:** 전사본으로는 판단하지 않아요. 기본값 `pronunciation: check`로 두고, 선생님이 녹음을 듣고 `teacher_note_ko`를 써요. Whisper가 엉뚱한 단어로 적은 곳(예: 문맥상 "sheet"인데 "seat")이 있으면 발음 문제일 수 있다고 `next_ko`에 짧게 남길 수 있어요.
 
 ## 3. 레벨 판단 (est_level)

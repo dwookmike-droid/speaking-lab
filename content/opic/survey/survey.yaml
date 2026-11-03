@@ -1,0 +1,49 @@
+# OPIc 배경 설문(Background Survey). 실제 시험 설문을 옮기지 않고, 이 앱이 가진 주제에 맞춰 줄였어요.
+# 각 선택지의 topic은 content/opic/topics/<topic>.yaml의 id예요. topic이 없는 선택지는 문항 조합에 쓰지 않아요.
+schema_version: 1
+parts:
+  - id: work
+    title_ko: 현재 하는 일
+    type: single
+    options:
+      - {key: work_office, ko: 회사에 다녀요}
+      - {key: work_student, ko: 학생이에요}
+      - {key: work_none, ko: 일하지 않아요}
+  - id: residence
+    title_ko: 사는 곳
+    type: single
+    options:
+      - {key: live_alone, ko: 혼자 살아요, topic: home}
+      - {key: live_family, ko: 가족과 함께 살아요, topic: home}
+      - {key: live_roommate, ko: 친구·룸메이트와 살아요, topic: home}
+  - id: leisure
+    title_ko: 여가 활동 (여러 개)
+    type: multi
+    options:
+      - {key: movies, ko: 영화 보기, topic: movies}
+      - {key: park, ko: 공원 가기, topic: park}
+      - {key: cafe, ko: 카페 가기, topic: cafe}
+      - {key: staycation, ko: 집에서 휴가 보내기, topic: staycation}
+  - id: hobbies
+    title_ko: 취미·관심사 (여러 개)
+    type: multi
+    options:
+      - {key: music, ko: 음악 감상하기, topic: music}
+  - id: sports
+    title_ko: 운동 (여러 개)
+    type: multi
+    options:
+      - {key: walking, ko: 걷기·조깅, topic: walking}
+  - id: travel
+    title_ko: 여행 (여러 개)
+    type: multi
+    options:
+      - {key: domestic_travel, ko: 국내 여행, topic: domestic_travel}
+# 자가평가(Self Assessment). 실제 시험 문구를 옮기지 않고 이 앱 말투로 새로 썼어요.
+self_assessment:
+  - {level: 1, ko: 단어 몇 개나 외운 문장 정도로만 말할 수 있어요.}
+  - {level: 2, ko: 아는 주제라면 짧은 문장으로 기본적인 내용을 말할 수 있어요.}
+  - {level: 3, ko: 익숙한 주제는 문장을 이어서 말할 수 있지만 자주 막혀요.}
+  - {level: 4, ko: 익숙한 주제는 꽤 자연스럽게 말하고, 지난 경험도 간단히 이야기할 수 있어요.}
+  - {level: 5, ko: 대부분의 일상 주제를 편하게 말하고, 경험을 자세히 이야기할 수 있어요.}
+  - {level: 6, ko: 낯선 주제도 의견과 근거를 들어 길게 말할 수 있어요.}

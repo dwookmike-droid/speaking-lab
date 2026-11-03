@@ -93,3 +93,7 @@ body.print{background:#fff;color:#111}body.print main{max-width:780px}
 .fix .better{margin:2px 0;font-weight:600}
 .fix .why{margin:0;font-size:14px;color:var(--muted)}
 .fb .next{margin:8px 0 0;font-size:14px}.tnote{margin:6px 0 0;font-size:14px}
+/* opic */
+label.sa{display:block;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0 0 8px;cursor:pointer}
+label.sa:has(input:checked){border-color:var(--accent);background:var(--bg)}
+.listen-only{font-size:20px;text-align:center;padding:40px 0;color:var(--muted)}

@@ -6,7 +6,7 @@
 """
 from __future__ import annotations
 import os, re, sys
-from teacher_common import find_set, levels, load_json, load_roster, load_yaml, resolve_attempt_dir
+from teacher_common import attempt_items, levels, load_json, load_roster, load_yaml, resolve_attempt_dir
 
 HANGUL = re.compile(r"[가-힣]")
 PRON = {"check", "ok", "note"}
@@ -53,9 +53,8 @@ def validate(folder: str) -> tuple[list[str], list[str]]:
     if not tr:
         errs.append("transcript.json이 없어요. 전사본 없이 쓴 피드백은 받지 않아요")
         tr = {"items": []}
-    set_ = find_set(att["set_id"]) or {"items": []}
     lv = levels(att["exam"])
-    types = {it["num"]: it["type"] for it in set_["items"]}
+    types = {n: q.get("type") for n, q in attempt_items(att).items()}
     said_src = {it["num"]: norm(it.get("text", "")) for it in tr["items"]}
 
     if fb.get("schema_version") != 1:

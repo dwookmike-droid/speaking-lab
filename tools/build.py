@@ -15,6 +15,22 @@ def load(rel):
         return yaml.safe_load(f)
 
 
+def build_opic(fmt, lv):
+    """content/opic → app/data/opic.json (주제·롤플레이·자기소개를 id로 묶어요)."""
+    topics = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "content/opic/topics/*.yaml")) +
+                       glob.glob(os.path.join(ROOT, "content/opic/roleplays/*.yaml"))):
+        d = yaml.safe_load(open(path, encoding="utf-8"))
+        topics[d["id"]] = {k: d.get(k) for k in ("id", "kind", "title_ko", "situation_ko", "status", "questions")}
+    survey = load("content/opic/survey/survey.yaml"); survey.pop("schema_version", None)
+    checklists = load("content/opic/checklists.yaml"); checklists.pop("schema_version", None)
+    out = {"exam": "opic", "format": fmt["opic"], "levels": lv["opic"], "survey": survey, "checklists": checklists, "topics": topics}
+    dst = os.path.join(ROOT, "app/data/opic.json")
+    json.dump(out, open(dst, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    n = sum(len(t["questions"]) for t in topics.values())
+    print(f"빌드: app/data/opic.json (주제 {len(topics)}개, 문항 {n}개, {os.path.getsize(dst)//1024}KB)")
+
+
 def build_consent():
     """content/legal/consent_vN.yaml(가장 높은 N) → app/data/consent.json + docs/legal/개인정보_수집이용_동의서_vN.md"""
     files = glob.glob(os.path.join(ROOT, "content/legal/consent_v*.yaml"))
@@ -94,6 +110,7 @@ def main() -> int:
         d = yaml.safe_load(open(path, encoding="utf-8"))
         sets.append({k: d.get(k) for k in ("id", "title_ko", "status", "items")})
     out = {
+        "exam": "toeic",
         "format": fmt["toeic"],
         "levels": lv["toeic"],
         "directions": directions,
@@ -105,6 +122,7 @@ def main() -> int:
     with open(dst, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"빌드: {os.path.relpath(dst, ROOT)} (세트 {len(sets)}개, {os.path.getsize(dst)//1024}KB)")
+    build_opic(fmt, lv)
     levels = {ex: {"levels": lv[ex]["levels"], "labels": lv[ex]["labels"]} for ex in ("toeic", "opic")}
     json.dump(levels, open(os.path.join(ROOT, "app/data/levels.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     cv = build_consent()

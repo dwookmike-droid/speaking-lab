@@ -79,12 +79,14 @@ def main() -> int:
         with open(os.path.join(dst, info.filename), "wb") as f:
             f.write(z.read(info))
         it = wanted[info.filename]
-        items.append({"num": int(mm.group(1)), "file": info.filename, "mime": it.get("mime"), "ms": it.get("ms")})
+        items.append({"num": int(mm.group(1)), "file": info.filename, "mime": it.get("mime"), "ms": it.get("ms"),
+                      **({"qid": it["qid"], "type": it.get("type")} if it.get("qid") else {})})
     items.sort(key=lambda x: x["num"])
     save_json(os.path.join(dst, "attempt.json"), {
         "student_id": sid, "attempt_id": att["id"], "exam": att["exam"], "set_id": att["set_id"], "target": att["target"],
         "started_at": att.get("started_at"), "finished_at": att.get("finished_at"), "submitted_at": m.get("created_at"),
         "received_at": dt.datetime.now().isoformat(timespec="seconds"), "items": items,
+        **{k: att[k] for k in ("self_assessment", "readjust", "difficulty", "survey_topics") if k in att},
     })
     print(f"받았어요: {os.path.relpath(dst)} · 학생 {sid} · {att['set_id']} · 목표 {att['target']} · 녹음 {len(items)}개")
     print(f"다음: python3 tools/transcribe.py {os.path.relpath(dst)}")

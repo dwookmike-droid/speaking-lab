@@ -115,19 +115,57 @@ def validate_toeic(d, errs, warns):
             errs.append(f"Q{it.get('num')}: credit '{it.get('credit')}'이(가) content/credits.yaml에 없어요")
 
 
-def validate_opic(d, errs, warns):
-    types = set(FMT["opic"]["item_types"])
-    for i, q in enumerate(d.get("questions") or []):
+def validate_opic(d, errs, warns, path):
+    O = FMT["opic"]
+    types = set(O["item_types"])
+    kind = d.get("kind")
+    fid = os.path.splitext(os.path.basename(path))[0]
+    if d.get("id") != fid:
+        errs.append(f"id: {d.get('id')} (파일 이름 {fid}와 같아야 해요)")
+    if kind not in O["topic_kinds"]:
+        errs.append(f"kind: {kind} ({', '.join(O['topic_kinds'])} 중 하나)")
+    if kind == "roleplay" and not d.get("situation_ko"):
+        errs.append("situation_ko: 롤플레이 상황 한 줄이 없어요")
+    if not d.get("title_ko"):
+        errs.append("title_ko가 없어요")
+    qs = d.get("questions") or []
+    have = [q.get("type") for q in qs]
+    for t in O["topic_kinds"].get(kind, []):
+        if t not in have:
+            errs.append(f"questions: {t} 문항이 없어요 (kind {kind})")
+    ids = set()
+    for i, q in enumerate(qs):
         w = f"questions[{i}] ({q.get('id')})"
         if q.get("type") not in types:
             errs.append(f"{w}: type={q.get('type')} 은(는) 없는 유형이에요")
+        if q.get("id") in ids:
+            errs.append(f"{w}: id가 겹쳐요")
+        ids.add(q.get("id"))
+        if not str(q.get("id", "")).startswith(f"{fid}-"):
+            errs.append(f"{w}: id는 '{fid}-'로 시작해요")
         if not q.get("question"):
             errs.append(f"{w}: question이 없어요")
         lv = q.get("level") or []
-        if not lv or any(not (1 <= x <= FMT["opic"]["self_assessment_levels"]) for x in lv):
+        if not lv or any(not (1 <= x <= O["self_assessment_levels"]) for x in lv):
             errs.append(f"{w}: level은 1~6 사이 목록이어야 해요")
         check_len(errs, f"{w}.question", q.get("question"), LIM["opic"]["question"])
+        check_len(errs, f"{w}.tip_ko", q.get("tip_ko"), LIM["opic"]["tip_ko"])
+        if not q.get("tip_ko"):
+            warns.append(f"{w}: tip_ko가 없어요")
         check_models(errs, warns, w, q.get("model"), "opic", q.get("type"), d.get("status") == "draft")
+
+
+def validate_survey(errs):
+    """설문 선택지가 가리키는 주제 파일이 있는지."""
+    sp = os.path.join(ROOT, "content/opic/survey/survey.yaml")
+    if not os.path.exists(sp):
+        return
+    sv = yaml.safe_load(open(sp, encoding="utf-8"))
+    for part in sv.get("parts", []):
+        for o in part.get("options", []):
+            t = o.get("topic")
+            if t and not os.path.exists(os.path.join(ROOT, "content/opic/topics", f"{t}.yaml")):
+                errs.append(f"survey {part['id']}.{o['key']}: 주제 파일 content/opic/topics/{t}.yaml이 없어요")
 
 
 def validate(path: str):
@@ -140,8 +178,8 @@ def validate(path: str):
         errs.append(f"status: {d.get('status')} (draft/ready/reviewed)")
     if "/toeic/" in path.replace(os.sep, "/"):
         validate_toeic(d, errs, warns)
-    elif "/opic/topics/" in path.replace(os.sep, "/"):
-        validate_opic(d, errs, warns)
+    elif "/opic/topics/" in path.replace(os.sep, "/") or "/opic/roleplays/" in path.replace(os.sep, "/"):
+        validate_opic(d, errs, warns, path)
     return errs, warns
 
 
@@ -153,7 +191,8 @@ def main():
     files = a.files
     if a.all:
         files = sorted(glob.glob(os.path.join(ROOT, "content/toeic/sets/*.yaml")) +
-                       glob.glob(os.path.join(ROOT, "content/opic/topics/*.yaml")))
+                       glob.glob(os.path.join(ROOT, "content/opic/topics/*.yaml")) +
+                       glob.glob(os.path.join(ROOT, "content/opic/roleplays/*.yaml")))
     if not files:
         print("검사할 파일이 없어요.")
         return 0
@@ -167,6 +206,13 @@ def main():
         for e in warns:
             print("    !", e)
         bad += bool(errs)
+    if a.all:
+        serrs = []
+        validate_survey(serrs)
+        print(f"{'OK ' if not serrs else 'ERR'} content/opic/survey/survey.yaml — 오류 {len(serrs)}")
+        for e in serrs:
+            print("    ✗", e)
+        bad += bool(serrs)
     return 1 if bad else 0
 
 

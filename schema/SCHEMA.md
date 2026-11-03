@@ -68,3 +68,27 @@ questions:
 - `status: draft`일 때는 레벨·가짓수가 모자라도 경고만 나와요. `ready`로 바꾸려면 모든 레벨이 `variants_min`개 이상이어야 해요.
 
 ## 학생 명단 — `students/roster.yaml` (git 제외, 양식: `schema/roster.example.yaml`)
+
+## OPIc 주제 — `content/opic/topics/<id>.yaml`, `content/opic/roleplays/<id>.yaml`
+문항은 시험 때마다 설문·난이도에 따라 조합돼요(`exam_formats.yaml`의 `opic.blueprint`). 주제 파일 하나가 문항 묶음 하나예요.
+```yaml
+schema_version: 1
+id: home                       # 파일 이름과 같아요
+kind: survey                   # self_intro | survey | unexpected | roleplay
+title_ko: 사는 곳
+status: draft
+questions:                     # kind별로 필요한 유형이 하나씩 있어야 해요 (exam_formats.yaml opic.topic_kinds)
+  - id: home-description       # <주제 id>-<유형>
+    type: description
+    level: [1, 2, 3, 4, 5, 6]  # 이 문항이 나올 수 있는 난이도
+    question: >-               # 영어 질문, 시험관이 말하듯 2~4문장 (≤300자). 설문 주제는 "You indicated in the survey that…"처럼 설문을 짚어요
+      ...
+    model:                     # il, im1, im2, im3, ih, al 레벨마다 답변 2개 이상 (answer_levels.yaml opic)
+      il:
+        - text: ...
+          phrases: [...]       # 이 레벨에서 쓴 핵심 표현 (답변 본문에 그대로 있어야 해요)
+      ...
+    tip_ko: ...                # 해요체 한두 문장 (≤120자)
+```
+- 롤플레이(`kind: roleplay`)는 `situation_ko`(상황 한 줄)를 더 써요. `roleplay_ask`는 시험관에게 질문 3~4개를 하는 문항, `roleplay_solve`는 문제가 생겨 상대에게 상황을 설명하고 대안 2~3개를 내는 문항, `roleplay_experience`는 비슷한 문제를 겪은 경험을 말하는 문항이에요.
+- 설문 선택지와 주제 연결은 `content/opic/survey/survey.yaml`에 있어요.

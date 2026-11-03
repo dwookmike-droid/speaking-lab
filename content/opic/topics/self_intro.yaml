@@ -1,0 +1,113 @@
+schema_version: 1
+id: self_intro
+kind: self_intro
+title_ko: 자기소개
+status: ready
+questions:
+  - id: self_intro-self_intro
+    type: self_intro
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Let's start the interview now. Tell me a little bit about yourself. Who are you, and what do you do? You can
+      talk about your work or studies, your family, and how you like to spend your free time.
+    model:
+      il:
+        - text: >-
+            Hi, my name is Jisoo. I am twenty-five years old. I live in Seoul with my family. I work at a small company. I
+            like music and movies. On weekends, I go to the park. I am a little nervous today. Thank you.
+          phrases: [my name is, I live in, On weekends]
+        - text: >-
+            Hello. I am a college student. I study business. I live in a small apartment near my school. I have one
+            sister. I like coffee and walking. In my free time, I watch movies at home. Nice to meet you.
+          phrases: [I am a college student, In my free time, Nice to meet you]
+      im1:
+        - text: >-
+            Hi, nice to meet you. Let me introduce myself. My name is Minho, and I am twenty-eight years old. I work as an
+            office worker at a trading company in Seoul. I live with my parents and my younger brother. After work, I
+            usually go for a walk near my house. On weekends, I like to watch movies or meet my friends at a cafe. I am
+            taking this test because I want to get a better job.
+          phrases: [Let me introduce myself, I work as, After work]
+        - text: >-
+            Hello. I am a university student, and my major is computer science. I am in my third year now. I live alone in
+            a small studio near my school, so I cook for myself most days. In my free time, I listen to music and go
+            jogging in the park. I think I am a friendly and active person. I want to improve my English because I hope to
+            work abroad someday.
+          phrases: [my major is, In my free time, I think I am]
+      im2:
+        - text: >-
+            Okay, let me tell you a little bit about myself. I'm thirty years old, and I work in the marketing department
+            of a food company. My job is pretty busy, so I often stay late at the office. I live with two roommates in an
+            apartment in the city. We get along well and sometimes cook dinner together. In my free time, I enjoy going to
+            cafes and watching movies. I also try to walk for thirty minutes every day to stay healthy. Overall, I'm a
+            pretty easygoing person, and I like trying new things.
+          phrases: [let me tell you a little bit about myself, My job is pretty busy, Overall]
+        - text: >-
+            Hi, I'd like to introduce myself. I'm a graduate student, and I'm studying education. Before I started
+            graduate school, I worked as a tutor for about two years, and that's how I became interested in teaching. I
+            live with my family, including my parents and a very lazy cat. On weekends, I usually visit the park near my
+            home or listen to music in my room. I'm preparing for this test because I want to teach English to children in
+            the future. I think speaking English well will really help me.
+          phrases: [I'd like to introduce myself, that's how I became interested in, On weekends]
+      im3:
+        - text: >-
+            Sure, let me introduce myself. I'm thirty-two years old, and I've been working as an accountant for about six
+            years. To be honest, my job can be stressful, especially at the end of every month, but I really like the
+            people on my team. I live alone in a one-bedroom apartment, which I moved into last year. I love having my own
+            space, although it gets a little lonely sometimes. In my free time, I go jogging along the river or watch
+            movies at home. Recently, I've also started listening to podcasts while I cook, and it has become one of my
+            favorite parts of the day. It helps me relax after work.
+          phrases: [To be honest, I've been working as, 'Recently, I''ve also started']
+        - text: >-
+            Okay, I'll start by telling you about myself. I'm a senior in college, and I'm majoring in design. I'm really
+            busy these days because I'm working on my graduation project and looking for a job at the same time. I share
+            an apartment with a friend from my hometown, so we take turns cleaning and cooking. When I need a break, I
+            usually go to a quiet cafe and sketch for a few hours. I'm a pretty curious person, so I enjoy traveling to
+            small towns and exploring places I've never been to. I'm taking this test because many design companies want
+            people who can communicate with clients in English.
+          phrases: [I'll start by telling you about myself, these days, When I need a break]
+      ih:
+        - text: >-
+            Sure, I'd be happy to tell you about myself. I'm thirty-four years old, and I work as a project manager at a
+            construction company. My job involves a lot of meetings and phone calls, so I'm used to explaining things
+            clearly and solving problems quickly. I live with my wife and our five-year-old son in an apartment on the
+            outskirts of the city. Since my son was born, my weekends have changed completely. I used to sleep in and
+            watch movies all day, but now I spend most of my weekends at the park or the playground. Honestly, I'm more
+            tired than before, but I'm also much happier. When I do get some free time, I like listening to old rock music
+            and going for long walks by myself. I'm preparing for this test because my company is expanding overseas, and
+            I'd like to be part of that team.
+          phrases: [I'd be happy to tell you about myself, My job involves, I used to, Honestly]
+        - text: >-
+            Okay, so let me give you a quick introduction. I'm a twenty-six-year-old office worker, and I've been working
+            at an online education company for almost two years. I'm in charge of planning video lessons, which means I
+            spend a lot of time talking with teachers and editing scripts. I live with two roommates I met in college, and
+            living together has taught me a lot about compromise, especially when it comes to cleaning the kitchen.
+            Outside of work, I'm really into music. I play the guitar a little, and I try to go to small live concerts at
+            least once a month. I also enjoy walking around the city on weekends and finding new cafes. In the long run,
+            I'd love to work with international teams, so improving my speaking skills is really important to me right
+            now. That's why I'm here today.
+          phrases: [let me give you a quick introduction, I'm in charge of, Outside of work, In the long run]
+      al:
+        - text: >-
+            Sure, I'd be glad to. I'm thirty-six, and I've spent most of my career in the hotel industry. I started out at
+            the front desk right after college, and over the past twelve years I've worked my way up to guest services
+            manager. What I enjoy most about my job is that no two days are ever the same. One day I'm dealing with a lost
+            passport, and the next I'm planning a wedding reception for two hundred people. I live with my husband in a
+            fairly small apartment downtown, which we chose mainly because it's close to both of our offices. We don't
+            have much space, but we've made it feel cozy. In my free time, I try to balance things out with quiet hobbies,
+            like reading, cooking, and taking long walks along the river. If I'm being honest, I'm taking this test partly
+            for my career and partly for myself, because I've always wanted to be able to express my thoughts in English
+            as naturally as I do in Korean.
+          phrases: [I've worked my way up to, What I enjoy most about, no two days are ever the same, If I'm being honest]
+        - text: >-
+            Of course. I'm a twenty-nine-year-old software engineer, and I work for a mid-sized company that builds apps
+            for hospitals. I've been there for about four years, and although the work can be demanding, I find it really
+            meaningful because the things we build actually help doctors and patients. I live on my own in a studio
+            apartment. When I first moved out of my parents' house, I thought I'd love the freedom, and I did, but I also
+            realized how much work it takes to run a home by yourself. These days, I've gotten into a pretty good routine.
+            I cook most of my meals on Sunday, I go jogging three times a week, and I spend my evenings either reading or
+            listening to jazz. Looking ahead, I'd really like to work on international projects, and I know that being
+            able to communicate smoothly in English, especially in meetings, would make a huge difference. So I've been
+            practicing a little every day, mostly by talking to myself on my way to work, which probably looks a bit
+            strange to my neighbors.
+          phrases: [although the work can be demanding, When I first moved out, 'These days, I''ve gotten into', Looking ahead]
+    tip_ko: 이름·하는 일·사는 곳·취미 네 가지를 미리 정해 두고 그 순서대로 말해요. 마지막에 시험을 보는 이유를 한 문장 붙이면 자연스럽게 끝나요.
