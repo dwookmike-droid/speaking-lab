@@ -1,0 +1,50 @@
+# main에 병합되면 app/ 폴더를 GitHub Pages로 배포해요.
+# 처음 한 번: 리포 Settings → Pages → Build and deployment → Source를 "GitHub Actions"로 바꿔요.
+name: Deploy app to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+      - name: 콘텐츠 검증
+        run: python3 tools/validate_content.py --all
+      - name: 빌드 결과가 커밋돼 있는지 (app/data가 content와 같아야 해요)
+        run: |
+          python3 tools/build.py
+          git diff --exit-code -- app/data docs/legal || (echo "::error::python3 tools/build.py 를 돌리고 app/data 를 커밋해 주세요" && exit 1)
+      - name: 선생님 도구 테스트
+        run: python3 -m unittest tests/test_teacher_tools.py
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app
+      - id: deployment
+        uses: actions/deploy-pages@v4
