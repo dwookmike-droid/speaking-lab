@@ -1,0 +1,58 @@
+{
+ "toeic": {
+  "levels": [
+   "lv5",
+   "lv6",
+   "lv7",
+   "lv8"
+  ],
+  "labels": {
+   "lv5": {
+    "name": "Level 5",
+    "score": "110–120"
+   },
+   "lv6": {
+    "name": "Level 6",
+    "score": "130–150"
+   },
+   "lv7": {
+    "name": "Level 7",
+    "score": "160–180"
+   },
+   "lv8": {
+    "name": "Level 8",
+    "score": "190–200"
+   }
+  }
+ },
+ "opic": {
+  "levels": [
+   "il",
+   "im1",
+   "im2",
+   "im3",
+   "ih",
+   "al"
+  ],
+  "labels": {
+   "il": {
+    "name": "IL"
+   },
+   "im1": {
+    "name": "IM1"
+   },
+   "im2": {
+    "name": "IM2"
+   },
+   "im3": {
+    "name": "IM3"
+   },
+   "ih": {
+    "name": "IH"
+   },
+   "al": {
+    "name": "AL"
+   }
+  }
+ }
+}

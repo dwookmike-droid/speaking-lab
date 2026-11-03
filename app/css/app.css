@@ -49,3 +49,35 @@ mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 2px}
 .checks{list-style:none;padding:0;margin:0}.checks li{margin:4px 0}
 .up{margin-top:6px}
 @media (max-width:520px){.exam-bar .right{margin-left:0;width:100%}.readtext{font-size:17px}}
+/* onboarding · settings · consent */
+.navlink{margin-left:auto;text-decoration:none}
+.onboard .step{color:var(--muted);font-size:13px;margin:0}
+.facts li{margin:6px 0}
+fieldset{border:1px solid var(--line);border-radius:8px;padding:12px;margin:0 0 14px}
+legend{padding:0 6px;font-weight:700}
+label{display:block;margin:0 0 12px}
+label.inline{display:inline-flex;gap:6px;align-items:center;margin:4px 14px 4px 0}
+.field{margin:0 0 12px}.field>span{display:block;margin-bottom:2px}
+input:not([type=checkbox]):not([type=radio]),select{display:block;width:100%;max-width:420px;font:inherit;padding:8px 10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);margin-top:4px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0 14px}
+.notice{background:var(--mark);border-radius:6px;padding:8px 12px}
+.consent{border-top:1px solid var(--line);margin-top:8px}
+.csec{border-bottom:1px solid var(--line);padding:6px 0 12px}.csec h3{font-size:16px;margin:12px 0 6px}
+.tablewrap{overflow-x:auto}
+.ctable{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+.ctable th,.ctable td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.ctable th{background:var(--bg)}
+.ccheck{display:flex;gap:8px;align-items:flex-start;font-weight:600;margin:10px 0 0}.ccheck input{margin-top:5px}
+.ccheck.all{border:1px solid var(--accent);border-radius:8px;padding:10px 12px}
+.req{color:var(--rec)}.opt{color:var(--muted)}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:0 0 12px}.kv dt{color:var(--muted)}.kv dd{margin:0}
+.danger{border-color:var(--rec)}.btn.warn{border-color:var(--rec);color:var(--rec)}
+body.print{background:#fff;color:#111}body.print main{max-width:780px}
+.sign p{margin:18px 0}
+@media print{.noprint{display:none}.ctable{min-width:0}body{font-size:12px}}
+@media (max-width:560px){
+  .ctable{min-width:0}.ctable thead{display:none}
+  .ctable tr{display:block;border:1px solid var(--line);border-radius:6px;margin:0 0 8px}
+  .ctable td{display:grid;grid-template-columns:5.5em 1fr;gap:8px;border:0;border-bottom:1px solid var(--line)}
+  .ctable td:last-child{border-bottom:0}
+  .ctable td::before{content:attr(data-label);color:var(--muted);font-size:13px}
+}

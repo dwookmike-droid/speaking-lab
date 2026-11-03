@@ -1,6 +1,7 @@
 // 토익 모의테스트 끝까지 응시 확인 (가짜 마이크, 30배 빠르게).
 // 실행: python3 -m http.server 8765 -d app  →  node tests/e2e_toeic.js [스크린샷 폴더]
 const { chromium } = require('playwright');
+const { onboard } = require('./onboard');
 const SP = process.argv[2] || 'test-shots';
 const SET = Number(process.env.SET || 0);   // 응시할 세트 순서(0부터) require('fs').mkdirSync(SP + '/shots', { recursive: true });
 (async () => {
@@ -12,6 +13,7 @@ const SET = Number(process.env.SET || 0);   // 응시할 세트 순서(0부터) 
   page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
   const base = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts';
   await page.goto(base + '#/');
+  await onboard(page);
   await page.waitForSelector('#sets .btn');
   await page.selectOption('#target', 'lv7');
   await page.screenshot({ path: SP + '/shots/1_home.png' });

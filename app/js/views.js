@@ -31,10 +31,11 @@ function levelSelect(data, onChange) {
 const fmtDate = (iso) => { try { return new Date(iso).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }); } catch { return iso; } };
 
 // ── 홈 ──────────────────────────────────────────────
-export async function home(data) {
+export async function home(data, profile) {
   const app = $app();
   app.innerHTML = `
     <section class="panel">
+      ${profile?.name ? `<p class="muted">${esc(profile.name)} 님, 안녕하세요.</p>` : ''}
       <h1>토익스피킹 모의테스트</h1>
       <label class="row">목표 레벨 <span id="lvslot"></span></label>
       <p class="muted">결과 화면에서 이 레벨의 모범답변이 먼저 나와요. 언제든 바꿀 수 있어요.</p>
