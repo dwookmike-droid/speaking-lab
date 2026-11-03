@@ -1,0 +1,425 @@
+schema_version: 1
+id: movies
+kind: survey
+title_ko: 영화 보기
+status: ready
+questions:
+  - id: movies-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you enjoy watching movies. What kind of movies do you like the most?
+      Tell me about your favorite type of movie and why you like it.
+    model:
+      il:
+        - text: >-
+            I like comedy movies. They are funny. I watch them on the weekend. I laugh a lot. Comedy movies make me happy.
+            I usually watch them with my sister. They are not long or difficult, so I like them.
+          phrases: [I like, make me happy]
+        - text: >-
+            My favorite movies are action movies. There are many fights and car chases. They are exciting. I like the music
+            too. I watch action movies at home or at the theater. They are really fun for me.
+          phrases: [My favorite, They are exciting]
+      im1:
+        - text: >-
+            I really like comedy movies. When I watch a comedy, I can forget about my stress. I usually watch them on Friday
+            night after work. My favorite kind is a family comedy, because the stories are simple and warm. Sometimes I watch
+            them with my sister, and we laugh together. I don't like scary movies, because I can't sleep after watching them.
+            So comedy is the best for me.
+          phrases: [I really like, I can forget about, So comedy is the best]
+        - text: >-
+            My favorite type of movie is action. I like action movies because they are exciting and fast. There are a lot of
+            fights, explosions and car chases. I think the special effects are really cool. I usually go to the theater to watch
+            them, because the big screen and loud sound make them more exciting. I watch about two action movies every month,
+            usually with my friends.
+          phrases: [My favorite type of movie is, I think, more exciting]
+      im2:
+        - text: >-
+            Well, I watch many kinds of movies, but my favorite type is comedy. There are a few reasons. First, comedy movies help
+            me relax. My job is pretty stressful, so on Friday nights I just want to laugh and forget about work. Second, comedies
+            are easy to enjoy with other people. I often watch them with my family, and everyone can understand the story. For
+            example, last weekend we watched a comedy about a clumsy dog, and my parents laughed the whole time. So that's why I
+            love comedy movies.
+          phrases: [There are a few reasons, help me relax, For example, So that's why]
+        - text: >-
+            My favorite type of movie is science fiction. I like sci-fi movies because they show a world that doesn't exist yet,
+            like life in space or robots that can think. When I watch them, I start imagining the future, and that's really
+            exciting for me. I usually watch these movies at the theater, because the visual effects look amazing on a big
+            screen. After the movie, I like talking about the story with my friends over coffee. These movies also make me curious
+            about science and technology. That's why sci-fi is my
+            favorite kind of movie.
+          phrases: [I like sci-fi movies because, that's really exciting, That's why]
+      im3:
+        - text: >-
+            Actually, I enjoy almost every kind of movie, but if I had to pick one, I'd say thrillers. What I like most about
+            thrillers is the tension. From the beginning, the story keeps me guessing, and I can never really relax until the end.
+            I also like trying to figure out who the bad guy is before the movie tells me. Sometimes I guess right, and I feel
+            really proud of myself. I usually watch thrillers at home at night with the lights off, because it makes the mood
+            more intense. My friends say thrillers are too stressful, but for me, that's exactly the fun part. So thrillers are
+            definitely my favorite.
+          phrases: [if I had to pick one, What I like most about, keeps me guessing, that's exactly the fun part]
+        - text: >-
+            My favorite type of movie is animation. Some people think animated movies are only for kids, but I don't agree at
+            all. Many animated movies have really deep stories about family, friendship, and growing up. I remember crying at the
+            end of one about an old man and a little boy who went on an adventure together. Also, the colors and the drawings are
+            just beautiful, so it feels like watching a moving painting. In my opinion, some of them are even better than regular
+            movies. These days I watch an animated movie almost every
+            weekend, usually on my laptop in bed. It's a perfect way to end a long week, and I always feel warm afterward.
+          phrases: [Some people think, I don't agree at all, I remember, It's a perfect way to]
+      ih:
+        - text: >-
+            I'd say my favorite kind of movie is the historical drama. I've always been interested in history, and these movies
+            make the past feel real in a way that textbooks never could. What I love most is the detail, like the costumes, the
+            old buildings, and the way people talked back then. When I watch one, I feel like I'm traveling back in time. Usually,
+            after the movie ends, I look up the real events online to see how accurate the story was. Sometimes I find out the
+            director changed quite a lot, which is interesting too. I prefer watching these movies at a theater, because the big
+            screen really shows off the scenery and the battle scenes. Honestly, historical dramas are long, often more than two
+            and a half hours, but I never get bored. They're the kind of movies I keep thinking about for days.
+          phrases: [I've always been interested in, in a way that, What I love most is, I never get bored]
+        - text: >-
+            To be honest, my favorite type of movie is the romantic comedy, even though some of my friends tease me about it. I
+            know the stories are usually predictable. Two people meet, they don't like each other at first, and then they slowly
+            fall in love. But I think that's exactly why I enjoy them. After a long, tiring week, I don't want to think too hard.
+            I just want something light and sweet that makes me smile. I also like the dialogue in good romantic comedies, because
+            the characters are often really witty. I usually watch them on Sunday evenings at home with a bowl of popcorn and a
+            blanket. Recently, I've started watching some older ones from the nineties, and I was surprised by how well they still
+            hold up. So yes, they might be a little cheesy, but they always put me in a good mood.
+          phrases: [To be honest, even though, that's exactly why, put me in a good mood]
+      al:
+        - text: >-
+            If I had to choose just one genre, I'd go with documentaries, which might sound a little unusual for a movie lover.
+            The thing is, I've always been the kind of person who gets curious about how things work, and documentaries feed that
+            curiosity better than anything else. I especially like nature documentaries and the ones about how ordinary people
+            live in different parts of the world. A good documentary doesn't just give you information. It tells a story, and you
+            end up caring about the people or animals on the screen. I remember watching one about a small fishing village where
+            the young people were all moving to the city. By the end, I felt like I knew the families personally, and it made me
+            think about my own grandparents' hometown. I usually watch documentaries alone, late at night, because I like to focus
+            completely. Afterward, I often end up reading more about the topic for an hour or two. In that sense, a documentary is
+            not just entertainment for me. It's a starting point for learning something new.
+          phrases: [If I had to choose just one, The thing is, In that sense, a starting point for]
+        - text: >-
+            My favorite kind of movie would have to be the independent film, the small, low-budget movies that don't usually get
+            shown in big theaters. I started getting into them in university, when a friend took me to a little film festival
+            downtown, and honestly, it completely changed the way I think about movies. Big blockbusters are fun, but they tend to
+            follow the same formula. Independent films, on the other hand, take risks. The stories are often about very ordinary
+            people, and the endings aren't always happy, which actually makes them feel more honest. I also love that the actors
+            are usually people I've never seen before, so I don't have any expectations. These days, I try to watch at least two
+            or three independent films a month, either at a small art theater near my office or online. What I enjoy most is
+            discussing them afterward, because everyone seems to notice something different. If a movie leaves me thinking about
+            it the next morning, I know it was worth watching.
+          phrases: [would have to be, on the other hand, What I enjoy most is, worth watching]
+    tip_ko: 장르 하나를 고르고 좋아하는 이유를 두 가지 말해요. 기억나는 영화 장면 하나를 덧붙이면 답이 자연스럽게 길어져요.
+  - id: movies-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about what you usually do when you go to see a movie. What do you do before the movie starts, and what do you
+      usually do after it ends? Please describe your routine in detail.
+    model:
+      il:
+        - text: >-
+            I go to the movies on Saturday. First, I buy a ticket online. Then I buy popcorn and a coke. I watch the movie.
+            After the movie, I eat dinner with my friend. Then I go home.
+          phrases: [First, After the movie]
+        - text: >-
+            I usually go to the theater with my brother. We meet at the station. We buy snacks. Then we watch the movie. After
+            that, we talk about the movie. It is fun. Then we go home by bus.
+          phrases: [We meet at, After that]
+      im1:
+        - text: >-
+            When I go to the movies, I usually go on Saturday afternoon. First, I check the movie times on my phone and buy a
+            ticket online. I like to arrive about twenty minutes early. Before the movie starts, I buy popcorn and a soda. I
+            always choose a seat in the middle. After the movie, I usually go to a restaurant with my friend, and we talk about
+            the story. Then I go home.
+          phrases: [I like to arrive, I always choose, After the movie]
+        - text: >-
+            I usually go to the theater once or twice a month with my girlfriend. Before the movie, we have a quick dinner near the
+            theater. Then we buy one big popcorn to share. During the movie, I turn off my phone, because I don't want to bother
+            other people. When the movie ends, we walk around the shopping mall and talk about our favorite scenes. It's our
+            regular date course.
+          phrases: [Before the movie, During the movie, When the movie ends]
+      im2:
+        - text: >-
+            My movie routine is pretty simple. Before I go, I usually read a few reviews online, but I try not to read too much,
+            because I don't want any spoilers. I book my ticket a day early so I can get a good seat in the middle. On the day of
+            the movie, I get to the theater about fifteen minutes early and buy a big bucket of popcorn. I always turn off my phone
+            before the movie starts. After the movie, my friends and I go to a café nearby and talk about the ending. That's
+            usually the best part of the day.
+          phrases: [My movie routine is pretty simple, I try not to, That's usually the best part]
+        - text: >-
+            When I watch a movie at the theater, I usually follow the same steps. First, I choose the movie with my friends in our
+            group chat. Then I book the tickets online, because the good seats sell out fast on weekends. Before the movie, we meet
+            in front of the theater and buy snacks. I usually get nachos instead of popcorn. During the movie, I try to stay quiet
+            and focus. When it's over, we rate the movie from one to ten and share our scores. It sounds a little silly, but we
+            always have fun doing it.
+          phrases: [I usually follow the same steps, instead of, It sounds a little silly]
+      im3:
+        - text: >-
+            Going to the movies is kind of a ritual for me. A few days before, I watch the trailer again to get excited, and I
+            book my ticket online so I can choose the perfect seat, usually a few rows from the back in the center. On the day, I
+            try to have a light meal first, because I don't like eating too much during the movie. I still buy a small popcorn,
+            though, because a movie without popcorn feels strange to me. Once the lights go down, I put my phone in my bag so I'm
+            not tempted to check it. After the movie, I usually stay in my seat until the end credits finish, because sometimes
+            there's a hidden scene. Then I head home and read what other people thought about it online.
+          phrases: [is kind of a ritual for me, I try to, so I'm not tempted to, Then I head home]
+        - text: >-
+            My routine depends on who I'm going with, but usually I go with my two closest friends from work. We normally pick a
+            late show on Friday, around nine o'clock, so we have time to eat dinner first. We always go to the same Korean
+            restaurant across from the theater, and that's when we argue about what to expect from the movie. Before going in, we
+            each buy a drink, but we share one large popcorn. During the movie, nobody is allowed to talk, which is our strict
+            rule. Afterward, since it's usually late, we just walk to the station together and share our opinions on the way. By
+            the time I get home, it's almost midnight, but it's a great way to finish the week.
+          phrases: [My routine depends on, We normally, which is our strict rule, it's a great way to]
+      ih:
+        - text: >-
+            I go to the movies about twice a month, and over time I've developed a pretty fixed routine. It starts a couple of days
+            before, when I check which movies are showing and read a few short reviews, just enough to know if it's worth it.
+            Then I book a seat online. I'm a little picky about seats, so I always choose one in the center, about two-thirds of the
+            way back, where the sound is best. On the day, I arrive around twenty minutes early, which gives me time to grab
+            popcorn and use the restroom so I don't have to leave in the middle. Once the movie starts, my phone goes on silent and
+            into my pocket. After it ends, I usually stay through the credits, partly to look for a bonus scene and partly just
+            to let the story sink in. Then, if I'm with friends, we grab a late snack and talk it over. If I'm alone, I write a
+            short review in a note app on my phone.
+          phrases: [over time I've developed, I'm a little picky about, partly to, let the story sink in]
+        - text: >-
+            My movie routine has actually changed a bit since I started working, but these days it goes something like this. I
+            usually go to an early morning showing on Sunday, because the tickets are cheaper and the theater is almost empty. The
+            night before, I pick the movie and book my ticket, so I don't have to rush in the morning. I wake up around eight, grab
+            a coffee at a café near the theater, and get there about ten minutes before it starts. I skip the popcorn in the
+            morning, which probably sounds strange, but coffee is enough for me. Watching a movie in an empty theater feels almost
+            like having a private screening, and I can really concentrate. When it's over, I take a slow walk home along the river,
+            thinking about the story. By noon, I'm back home, and I still have the whole afternoon free.
+          phrases: [has actually changed a bit since, goes something like this, which probably sounds strange, feels almost like]
+      al:
+        - text: >-
+            For me, going to the movies is less about the movie itself and more about the whole experience, so I've ended up with a
+            routine I hardly ever break. It begins a few days in advance. I'll watch the trailer, maybe read one or two reviews from
+            critics I trust, and then reserve a seat. I'm pretty particular about where I sit, so I always book the center of the
+            row, roughly two-thirds of the way back, where the screen fills your view without hurting your neck. On the day itself,
+            I try to arrive early enough to pick up a drink and a small popcorn without feeling rushed, because nothing ruins the
+            mood like running in after the opening scene. Once the lights dim, my phone goes completely off, not just on silent.
+            When the movie ends, I almost always stay until the very last credit rolls. It gives me a few quiet minutes to process
+            what I've just seen. After that, I'll usually meet up with a friend for a drink and argue about the ending, which, to
+            be honest, is sometimes more fun than the movie itself.
+          phrases: [less about ~ and more about, I'm pretty particular about, nothing ruins the mood like, to be honest]
+        - text: >-
+            Since I became a parent, my movie routine has completely changed, so I'll describe what it looks like now. My wife and
+            I only get to go to the theater about once a month, when my mother offers to babysit, so we really try to make it
+            special. A week before, we sit down together and choose a movie, which usually involves a lot of negotiating, because
+            she loves dramas and I'd rather see something with action. Once we agree, I book two seats for an evening show. On the
+            day, we drop our son off at my mother's place, and then we have dinner at a restaurant near the theater. It's one of
+            the few times we can actually talk without being interrupted. At the theater, we share a large popcorn and a drink, and
+            we both switch our phones to vibrate, just in case my mother calls. After the movie, we don't hurry home. We usually
+            take a short walk and talk about the story, and it honestly feels like we're dating again. It's a small routine, but
+            it means a lot to us.
+          phrases: [so I'll describe what it looks like now, which usually involves, just in case, it means a lot to us]
+    tip_ko: 영화 보기 전, 보는 중, 본 뒤로 나눠 순서대로 말해요. First, Before, After 같은 연결어를 쓰면 흐름이 분명해져요.
+  - id: movies-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Think about a movie-watching experience that you still remember well. When was it, who were you with, and what
+      happened? Tell me the whole story and why it was so memorable.
+    model:
+      il:
+        - text: >-
+            Last year, I watched a movie with my father. It was an action movie. The theater was very big. The sound was loud.
+            My father liked the movie. I was happy. We ate dinner after the movie.
+          phrases: [Last year, I was happy]
+        - text: >-
+            I remember my first movie in a theater. I was seven years old. I went with my mom. It was a cartoon movie. I ate
+            popcorn. I was very excited. It was a good day.
+          phrases: [I remember, I was very excited]
+      im1:
+        - text: >-
+            I remember the first time I watched a movie alone. It was two years ago, on my birthday. My friends were all busy, so I
+            went to the theater by myself. At first, I felt a little strange. But the movie was a funny comedy, and I laughed a lot.
+            After the movie, I felt really free and happy. Now I like watching movies alone sometimes.
+          phrases: [I remember the first time, At first, Now I like]
+        - text: >-
+            Last summer, I watched a horror movie with my friends. It was a very scary movie about a haunted house. In the middle of
+            the movie, my friend screamed very loudly, and everyone in the theater looked at us. We were so embarrassed. But after
+            the movie, we laughed about it a lot. It was a fun night. I still remember that day.
+          phrases: [Last summer, In the middle of, I still remember]
+      im2:
+        - text: >-
+            One movie experience I'll never forget happened about three years ago. My friends and I went to see a big action movie
+            on opening night. The theater was completely full, and everyone was really excited. But about thirty minutes into the
+            movie, the screen suddenly went black. Nobody knew what was happening. We waited for about twenty minutes, and finally
+            the staff told us there was a problem with the projector. They gave everyone free tickets for another day. We came back
+            the next week and watched the whole movie. It was a little annoying, but now it's a funny story.
+          phrases: [I'll never forget, But about, Nobody knew, now it's a funny story]
+        - text: >-
+            The most memorable movie experience I had was at an outdoor theater. Last fall, my coworkers and I went to a park where
+            they showed a movie on a big screen at night. We brought blankets, snacks, and some drinks. The movie was an old romantic
+            comedy, and I had already seen it before, but watching it under the stars felt completely different. It got really cold
+            later, so we all shared our blankets. I think that night helped me become closer to my coworkers. I really want to go
+            again this year.
+          phrases: [The most memorable, felt completely different, I think, I really want to]
+      im3:
+        - text: >-
+            The movie experience I remember best was when I took my grandmother to the theater for the first time in many years.
+            It was about two years ago. She hadn't been to a theater since she was young, because she always said it was too
+            expensive. So for her eightieth birthday, I bought two tickets to a family drama. At first, she was surprised by how big
+            the screen was and how loud the sound was. In the middle of the movie, I looked over and saw that she was crying. After
+            the movie, she held my hand and told me it was the best gift she had received in a long time. I felt so proud and happy.
+            Whenever I think about that day, it still warms my heart.
+          phrases: [The movie experience I remember best, At first, I looked over and saw, it still warms my heart]
+        - text: >-
+            One experience that stands out was when I fell asleep during a movie I had been waiting for all year. It was a science
+            fiction movie, and I bought my ticket a month early. Unfortunately, the night before, I had to stay up late to finish a
+            project at work, so I only slept about three hours. The movie started, and for the first hour I was fine, but then the
+            room was dark and the seat was so comfortable. The next thing I knew, the credits were rolling and my friend was laughing
+            at me. I was so disappointed, so I went back the next weekend and watched it again. Since then, I never go to a movie
+            when I'm tired.
+          phrases: [One experience that stands out, Unfortunately, The next thing I knew, Since then]
+      ih:
+        - text: >-
+            The movie experience I remember most clearly happened during my first trip abroad, about four years ago. I was studying
+            English in a small city overseas, and one rainy evening, a few classmates and I decided to go to a local theater. The
+            movie was in English with no subtitles, and I was honestly nervous that I wouldn't understand anything. For the first
+            twenty minutes or so, I was catching maybe half of the dialogue, but then something interesting happened. I stopped
+            trying to translate every word and just followed the story through the acting and the music. By the end, I realized I
+            had understood most of it, and I even laughed at a couple of jokes at the same time as the local audience. Walking back
+            to the dormitory in the rain, I felt incredibly proud. It was the first moment I really believed my English was
+            improving, and that feeling motivated me for the rest of my stay.
+          phrases: [I remember most clearly, something interesting happened, By the end, I realized, that feeling motivated me]
+        - text: >-
+            One movie night I'll never forget is the time I ended up watching a movie with complete strangers. It was a few years
+            ago, during a big snowstorm. I had gone to a late show alone, and when the movie finished, we found out that the subway
+            had stopped running and there were no taxis. The theater manager kindly let about fifteen of us stay in the lobby, and
+            then he decided to play another movie for us, an old comedy, just to pass the time. At first, everyone was a little
+            awkward, but halfway through, people started sharing snacks and laughing together. Afterward, we stayed up talking until
+            the trains started again at five in the morning. I even exchanged numbers with two of them, and we still meet up
+            sometimes. It's funny how a bad situation turned into one of my favorite memories.
+          phrases: [I'll never forget, At first, halfway through, It's funny how]
+      al:
+        - text: >-
+            The movie-watching experience that has stayed with me the longest happened when I was in high school, and it actually
+            changed what I wanted to do with my life. Our class was taken on a field trip to see a documentary about doctors working
+            in rural areas with almost no equipment. Most of my friends treated it as a chance to skip class, and honestly, so did
+            I at first. But about twenty minutes in, there was a scene where a young doctor had to make a difficult decision with
+            very little time, and I couldn't take my eyes off the screen. When the lights came on, the theater was unusually quiet.
+            On the bus back to school, I kept thinking about how much one person could change in a small community. That night, I
+            told my parents I wanted to study medicine, which surprised them, because I had never shown any interest before. I
+            ended up majoring in nursing instead, but I genuinely believe that one afternoon in a dark theater set me on the path
+            I'm on today.
+          phrases: [has stayed with me the longest, I couldn't take my eyes off, I ended up, set me on the path]
+        - text: >-
+            I'd have to say the most memorable time was when my younger brother and I went to see a movie together right before he
+            left for his military service. We hadn't been very close for a few years, mostly because we were both busy and, to be
+            honest, we argued a lot. My mother suggested that we spend his last weekend doing something together, so I reluctantly
+            bought tickets for a superhero movie he had been talking about. Before it started, we barely spoke, but during the
+            movie, we kept glancing at each other and laughing at the same jokes, just like when we were kids. Afterward, instead
+            of going straight home, we ended up sitting in a fast-food restaurant for three hours, talking about everything from
+            our childhood to our plans for the future. It was the first real conversation we'd had in years. When he left a few
+            days later, I felt surprisingly emotional. Looking back, the movie itself was pretty forgettable, but that evening
+            completely changed our relationship.
+          phrases: [I'd have to say, to be honest, just like when, Looking back]
+    tip_ko: 언제, 누구와, 무슨 일이 있었는지를 과거형으로 차례대로 말해요. 마지막에 그때 느낀 점이나 지금 생각을 한 문장 붙여요.
+  - id: movies-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      How has the way people watch movies changed compared to when you were younger? Compare how you watched movies in the
+      past with how you watch them now, and explain what caused these changes.
+    model:
+      il:
+        - text: >-
+            In the past, I watched movies at the theater. Now I watch movies on my phone. It is easy. It is cheap. But the screen
+            is small. I like the theater more, but I go less.
+          phrases: [In the past, Now I watch]
+        - text: >-
+            When I was young, I watched movies on TV with my family. Now I watch movies alone on my laptop. I choose the movie.
+            It is convenient. But I miss my family time.
+          phrases: [When I was young, Now I watch]
+      im1:
+        - text: >-
+            When I was a child, I watched movies at the theater with my family about once a month. It was a special event. Now,
+            I usually watch movies at home on my laptop, because I can watch any movie anytime. It is cheaper and more comfortable.
+            But I think going to the theater was more exciting. I want to go to the theater more often.
+          phrases: [When I was a child, Now, I usually, But I think]
+        - text: >-
+            In the past, people rented DVDs from a store to watch movies at home. I remember going to a rental shop with my father
+            every Friday. Now, we don't need to go anywhere. We just choose a movie online and watch it on TV. It is much easier.
+            But I miss the rental shop, because choosing a movie together was fun.
+          phrases: [In the past, I remember, It is much easier]
+      im2:
+        - text: >-
+            The way I watch movies has changed a lot. When I was in middle school, I went to the theater with my friends almost
+            every weekend, and a movie ticket was quite cheap. These days, tickets are expensive, so I usually watch movies at home
+            on online services. I can pause the movie, eat whatever I want, and watch in my pajamas. I think the biggest reason for
+            this change is the internet. Fast internet made it easy to watch new movies at home. However, I still go to the theater
+            for big action movies, because the experience is different.
+          phrases: [has changed a lot, These days, the biggest reason for this change, However]
+        - text: >-
+            When I was younger, I watched movies on a big TV in the living room with my whole family. We all had to agree on one
+            movie, so we usually watched family movies. Now, everyone in my family has a smartphone, so we watch different movies
+            on our own screens, even in the same room. It's more convenient, because I can watch what I want. In the past, we
+            always talked about the movie after it ended. But I feel a little
+            sad, because we don't talk about movies together anymore. I think smartphones changed how families spend their time.
+          phrases: [When I was younger, Now, everyone, It's more convenient, I think]
+      im3:
+        - text: >-
+            Compared to when I was a teenager, the way I watch movies is completely different. Back then, going to the theater was
+            the only way to see a new movie, so it felt like a big event. My friends and I would plan it days in advance and spend
+            the whole afternoon downtown. Nowadays, I mostly watch movies at home through online streaming. New movies come out
+            online just a few weeks after they're in theaters, so I don't feel the need to rush. I think the main reasons are
+            convenience and price. A monthly subscription costs about the same as one movie ticket. The downside is that I get
+            distracted more easily at home, and I sometimes check my phone in the middle of a movie, which never happened at the
+            theater.
+          phrases: [Compared to when, Back then, Nowadays, The downside is that]
+        - text: >-
+            When I was a kid, watching a movie meant sitting down for two hours and finishing the whole thing. Now, I notice that
+            I watch movies in small pieces. For example, I might watch thirty minutes on the subway in the morning and finish the
+            rest before bed. I think this change happened because of smartphones and busy schedules. People don't have long blocks
+            of free time anymore, so they fit movies into short breaks. Another big change is that I watch a lot of movies with
+            subtitles from other countries now, which was rare when I was young. Overall, I have more choices than ever, but I feel
+            like I enjoy each movie a little less deeply than before.
+          phrases: [When I was a kid, I think this change happened because, Another big change is, Overall]
+      ih:
+        - text: >-
+            Looking back, the way I watch movies has changed in almost every way. When I was in elementary school, watching a movie
+            was a family event. My father would rent a video on Friday night, and all four of us would squeeze onto the sofa
+            together. Then, in high school, going to the theater with friends became the main way to see movies, and it was the
+            center of our weekend plans. These days, though, most of my movie watching happens alone, on a tablet, often late at
+            night in bed. I think there are two main reasons for this. First, streaming services have made almost any movie
+            available instantly, so there's no reason to wait or go out. Second, my schedule is much busier, and it's hard to find
+            a time that works for everyone. Honestly, I enjoy the freedom, but I sometimes miss the feeling of laughing together in
+            a crowded room. That's why I still try to go to the theater with friends at least once a month.
+          phrases: [Looking back, became the main way to, there are two main reasons for this, That's why]
+        - text: >-
+            I'd say the biggest difference between then and now is how I choose movies. When I was younger, I didn't have many
+            options. There were only a few movies playing at the local theater, and we just picked whichever one had the best
+            poster. Sometimes we ended up watching something terrible, but it was part of the fun. Now, I have thousands of movies
+            available on several streaming apps, and I spend a ridiculous amount of time just scrolling through the list. Some
+            nights, I scroll for thirty minutes and then give up and go to sleep. I also rely heavily on ratings and recommendations
+            now, which means I rarely take a chance on something unusual. I think technology is the main cause, since apps suggest
+            movies based on what I've already watched. It's convenient, but I feel like my taste has become narrower. Recently, I've
+            started asking friends for recommendations instead, just to break out of that pattern.
+          phrases: [I'd say the biggest difference, part of the fun, rely heavily on, break out of that pattern]
+      al:
+        - text: >-
+            The change has been huge, and in some ways I think it reflects how society as a whole has changed. When I was growing
+            up, movies were something you experienced with other people. Going to the theater meant dressing up a little, buying
+            tickets at the counter, and sitting in a room full of strangers who laughed and gasped at the same moments. Even at home,
+            the whole family gathered around one television. Today, the experience is much more personal and, honestly, a bit
+            isolated. I usually watch movies alone on my tablet, and I can pause, skip, or quit whenever I feel like it. The main
+            driver, obviously, is streaming technology, but I think lifestyle changes matter just as much. People work longer hours
+            and have less predictable schedules, so watching on demand simply fits better. There are clear advantages, like being
+            able to watch films from all over the world that would never have reached a local theater. Still, I can't help feeling
+            that we've lost something. A movie you watch in a packed theater becomes a shared memory, while one you watch alone on a
+            small screen tends to fade a lot faster.
+          phrases: [in some ways, The main driver, obviously, is, I can't help feeling that, tends to fade]
+        - text: >-
+            If I compare my childhood with today, the biggest difference isn't really where I watch movies but how much attention I
+            give them. As a kid, a movie was a rare treat. My parents allowed us to watch one movie on Saturday night, so I gave it
+            my complete focus, and I'd often watch the same few movies again and again until I knew the lines by heart. Nowadays,
+            movies are everywhere and basically unlimited, so they've become a kind of background activity. I'll have something
+            playing while I cook or answer messages, and sometimes I realize I've missed half the plot. I think this happened
+            partly because of streaming and partly because smartphones have trained us to switch between things constantly. To be
+            fair, the variety today is incredible, and I've discovered amazing films from countries I knew nothing about. But I've
+            recently started a small rule for myself. Once a week, I watch one movie with my phone in another room, the way I did
+            as a child. It's surprising how much more I enjoy it, and how much longer I remember it afterward.
+          phrases: [If I compare, isn't really ~ but, partly because of ~ and partly because, To be fair]
+    tip_ko: 예전에는 어땠는지, 지금은 어떤지, 왜 바뀌었는지 세 부분으로 나눠 말해요. In the past, Nowadays 같은 표현으로 시점을 분명히 해요.
