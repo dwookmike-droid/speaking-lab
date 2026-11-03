@@ -29,11 +29,16 @@ node tests/e2e_toeic.js          # SET=1, SET=2로 다른 세트
 node tests/e2e_onboarding.js     # 학생 등록·동의·재동의·철회
 node tests/e2e_opic.js           # OPIc 설문 → 자가평가 → 15문항 → 재조정 → 제출
 node tests/test_opic_plan.mjs    # OPIc 문항 조합(자가평가 1~6)
+node tests/e2e_cloud.js          # 서버 모드 왕복(가짜 Supabase): 등록 코드 → 제출 → pull → push → 철회
+python3 -m unittest tests/test_supabase_rls.py   # 접근 규칙(로컬 Postgres, PGHOST/PGPORT)
 ```
 
 처음 접속하면 학생 정보 입력과 개인정보 동의를 거쳐야 시험 화면이 열려요. 동의서 원본은 `content/legal/consent_v1.yaml`이에요.
 
-## 선생님: 녹음 받아서 피드백 보내기
+## 서버(Supabase)
+학생 계정·제출·피드백은 R&R archive Supabase로 주고받아요. 설정은 [`supabase/SETUP.md`](supabase/SETUP.md). 주소 뒤에 `?sb=off`를 붙이면 서버 없이 기기 안에서만 동작해요(제출은 zip).
+
+## 선생님: 녹음 받아서 피드백 보내기 (zip 방식)
 형식과 흐름은 [`schema/FEEDBACK.md`](schema/FEEDBACK.md)에 있어요. 처음 한 번 설치해요.
 ```bash
 pip3 install -r tools/requirements-teacher.txt

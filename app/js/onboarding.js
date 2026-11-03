@@ -1,6 +1,7 @@
 // 처음 들어올 때: 안내 → 학생 정보 → 개인정보 동의(14세 미만이면 보호자 동의) → 저장
 // 설정: 내 정보·동의 내역 보기, 정보 고치기, 동의 기록 내려받기, 동의 철회
 import { clearAll, getProfile, putProfile, setSetting } from './store.js';
+import { cloud } from './cloud.js';
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const $app = () => document.getElementById('app');
@@ -83,7 +84,7 @@ export async function welcome({ consent, levels, onDone }) {
     checks: { required: false, optional: false, overseas: false, guardian: false },
     guardian: { name: '', relation: '', phone: '', method: 'sms', ...(prev?.guardian || {}) },
   };
-  if (!st.info.email) st.info.email = await accessEmail();
+  if (!st.info.email && !cloud.enabled) st.info.email = await accessEmail();
 
   const intro = () => {
     $app().innerHTML = `
@@ -111,7 +112,7 @@ export async function welcome({ consent, levels, onDone }) {
         <h1>학생 정보</h1>
         <fieldset><legend>필수</legend>
           <label>이름<input name="name" value="${esc(i.name)}" autocomplete="name" required></label>
-          <label>이메일 <span class="muted">(로그인한 주소)</span><input name="email" type="email" value="${esc(i.email)}" autocomplete="email" required></label>
+          ${cloud.enabled ? `<p class="muted">로그인 아이디: <b>${esc(cloud.loginId)}</b></p>` : `<label>이메일 <span class="muted">(로그인한 주소)</span><input name="email" type="email" value="${esc(i.email)}" autocomplete="email" required></label>`}
           <label>휴대폰 번호<input name="phone" type="tel" inputmode="tel" value="${esc(i.phone)}" placeholder="010-0000-0000" autocomplete="tel" required></label>
           <div class="field"><span>만 14세 미만인가요?</span>
             <label class="inline"><input type="radio" name="under14" value="no" ${i.under14 === false ? 'checked' : ''}> 아니요</label>
@@ -141,17 +142,17 @@ export async function welcome({ consent, levels, onDone }) {
     f.querySelector('#back').onclick = intro;
     f.onsubmit = (e) => {
       e.preventDefault();
-      const v = (n) => f.elements[n].value.trim();
+      const v = (n) => (f.elements[n]?.value || '').trim();
       const exams = [...f.querySelectorAll('input[name=exam]:checked')].map((x) => x.value);
       const u = f.querySelector('input[name=under14]:checked')?.value;
       const errs = [];
       if (!v('name')) errs.push('이름을 써 주세요.');
-      if (!EMAIL_RE.test(v('email'))) errs.push('이메일 주소를 확인해 주세요.');
+      if (!cloud.enabled && !EMAIL_RE.test(v('email'))) errs.push('이메일 주소를 확인해 주세요.');
       if (!PHONE_RE.test(v('phone'))) errs.push('휴대폰 번호를 010-0000-0000 형식으로 써 주세요.');
       if (!u) errs.push('만 14세 미만인지 골라 주세요.');
       if (!exams.length) errs.push('준비하는 시험을 하나 이상 골라 주세요.');
       st.info = {
-        name: v('name'), email: v('email'), phone: v('phone'), under14: u ? u === 'yes' : null, exams,
+        name: v('name'), email: cloud.enabled ? '' : v('email'), phone: v('phone'), under14: u ? u === 'yes' : null, exams,
         targets: { toeic: f.elements.t_toeic.value, opic: f.elements.t_opic.value },
         optional: { exam_date: v('exam_date'), current: v('current'), grade_or_job: v('grade_or_job') },
       };
@@ -218,6 +219,12 @@ export async function welcome({ consent, levels, onDone }) {
         createdAt: prev?.createdAt || now, updatedAt: now,
       };
       delete profile.withdrawn;
+      if (cloud.enabled) {                                   // 서버가 기준이에요. 서버에 먼저 저장하고 기기에 옮겨요.
+        const { name, phone, under14: u14, exams, targets, optional, guardian } = profile;
+        const okBtn = f.querySelector('#ok'); okBtn.disabled = true;
+        try { await cloud.saveProfile({ profile: { name, phone, under14: u14, exams, targets, optional, guardian }, consent: record, consent_history: profile.consent_history }); }
+        catch (ex) { f.querySelector('#err').textContent = `저장하지 못했어요: ${ex.message}`; okBtn.disabled = false; return; }
+      }
       await putProfile(profile);
       setSetting('target.toeic', st.info.targets.toeic);
       setSetting('target.opic', st.info.targets.opic);
@@ -225,7 +232,7 @@ export async function welcome({ consent, levels, onDone }) {
     };
   };
 
-  (prev && !reconsent ? form : intro)();
+  (prev?.name && !reconsent ? form : intro)();   // 서버에서 막 만든 계정은 정보가 비어 있어서 안내부터
 }
 
 // ── 설정 ───────────────────────────────────────────
@@ -248,13 +255,13 @@ export async function settings({ consent, levels }) {
       <h2>내 정보</h2>
       <dl class="kv">
         <dt>이름</dt><dd>${esc(p.name)}</dd>
-        <dt>이메일</dt><dd>${esc(p.email)}</dd>
+        ${p.login_id ? `<dt>아이디</dt><dd>${esc(p.login_id)} <span class="muted">· 학생 번호 ${esc(p.code || '-')}</span></dd>` : `<dt>이메일</dt><dd>${esc(p.email)}</dd>`}
         <dt>휴대폰</dt><dd>${esc(p.phone)}</dd>
         <dt>시험 · 목표</dt><dd>${p.exams.map((ex) => `${EXAM_KO[ex]} ${esc(lvName(ex))}`).join(' · ')}</dd>
         ${p.optional ? `<dt>선택 항목</dt><dd>${esc([p.optional.exam_date && `시험일 ${p.optional.exam_date}`, p.optional.current, p.optional.grade_or_job].filter(Boolean).join(' · ') || '-')}</dd>` : ''}
         ${p.under14 ? `<dt>보호자</dt><dd>${esc(p.guardian?.name)} (${esc(p.guardian?.relation)}) · ${esc(GUARDIAN_METHOD_KO[p.guardian?.method] || '')}</dd>` : ''}
       </dl>
-      <div class="btns"><a class="btn" href="#/welcome">정보 고치기</a></div>
+      <div class="btns"><a class="btn" href="#/welcome">정보 고치기</a>${cloud.enabled ? '<button class="btn ghost" id="logout">로그아웃</button>' : ''}</div>
     </section>
     <section class="panel">
       <h2>동의 내역</h2>
@@ -272,16 +279,30 @@ export async function settings({ consent, levels }) {
     </section>
     <section class="panel danger">
       <h2>동의 철회</h2>
-      <p>철회하면 이 기기에 저장된 학생 정보, 응시 기록, 녹음이 모두 지워지고 앱을 쓸 수 없어요. 선생님께 보낼 철회 확인 파일이 내려받아져요. 선생님 컴퓨터에 있는 자료도 지워 달라고 그 파일과 함께 알려 주세요.</p>
+      <p>${cloud.enabled
+        ? '철회하면 서버와 이 기기에 있는 내 학생 정보, 응시 기록, 녹음, 피드백이 바로 지워지고 앱을 쓸 수 없어요. 선생님께 자동으로 알려지고, 선생님 컴퓨터에 있는 자료도 지워요.'
+        : '철회하면 이 기기에 저장된 학생 정보, 응시 기록, 녹음이 모두 지워지고 앱을 쓸 수 없어요. 선생님께 보낼 철회 확인 파일이 내려받아져요. 선생님 컴퓨터에 있는 자료도 지워 달라고 그 파일과 함께 알려 주세요.'}</p>
+      <p class="err" id="werr" role="alert"></p>
       <label class="ccheck"><input type="checkbox" id="sure"> 위 내용을 확인했어요</label>
       <div class="btns"><button class="btn warn" id="withdraw" disabled>동의 철회하고 모두 지우기</button></div>
     </section>`;
   // 파일 이름은 영문만: 한글·공백 이름은 일부 브라우저에서 'download'로 바뀌어요. 이름은 파일 안에 있어요.
-  const tag = `${(p.email || 'student').split('@')[0].replace(/[^a-z0-9._-]/gi, '') || 'student'}_${new Date().toISOString().slice(0, 10).replaceAll('-', '')}`;
+  const tag = `${(p.login_id || p.email || 'student').split('@')[0].replace(/[^a-z0-9._-]/gi, '') || 'student'}_${new Date().toISOString().slice(0, 10).replaceAll('-', '')}`;
   const record = () => ({ type: 'consent_record', name: p.name, email: p.email, under14: p.under14, guardian: p.guardian, consent: p.consent, history: p.consent_history, exported_at: new Date().toISOString() });
   $app().querySelector('#dl').onclick = () => download(`speaking-lab_consent_${tag}.json`, record());
   $app().querySelector('#sure').onchange = (e) => { $app().querySelector('#withdraw').disabled = !e.target.checked; };
-  $app().querySelector('#withdraw').onclick = async () => {
+  $app().querySelector('#logout')?.addEventListener('click', () => { cloud.signOut(); location.hash = '#/'; location.reload(); });
+  $app().querySelector('#withdraw').onclick = async (e) => {
+    const btn = e.currentTarget;
+    if (cloud.enabled) {
+      btn.disabled = true;
+      try { await cloud.withdraw(); }
+      catch (ex) { $app().querySelector('#werr').textContent = `철회하지 못했어요: ${ex.message} 인터넷 연결을 확인하고 다시 눌러 주세요.`; btn.disabled = false; return; }
+      cloud.signOut();
+      await clearAll();
+      $app().innerHTML = `<section class="panel"><h1>동의를 철회했어요</h1><p>서버와 이 기기의 자료를 모두 지웠어요. 선생님께도 자동으로 알려졌어요.</p></section>`;
+      return;
+    }
     download(`speaking-lab_withdrawal_${tag}.json`, { ...record(), type: 'consent_withdrawal', withdrawn_at: new Date().toISOString() });
     await clearAll();
     $app().innerHTML = `<section class="panel"><h1>동의를 철회했어요</h1><p>이 기기의 자료를 모두 지웠어요. 내려받은 철회 확인 파일을 선생님께 보내 주세요.</p><div class="btns"><a class="btn" href="#/welcome">처음으로</a></div></section>`;

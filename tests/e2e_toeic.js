@@ -11,7 +11,7 @@ const SET = Number(process.env.SET || 0);   // 응시할 세트 순서(0부터) 
   const errors = [];
   page.on('pageerror', e => errors.push('pageerror: ' + e.message));
   page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
-  const base = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts';
+  const base = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts&sb=off';
   await page.goto(base + '#/');
   await onboard(page);
   await page.waitForSelector('#sets .btn');

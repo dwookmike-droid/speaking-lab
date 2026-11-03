@@ -3,7 +3,7 @@
 const { chromium } = require('playwright');
 const assert = require('assert');
 const OUT = process.argv[2] || 'test-shots'; require('fs').mkdirSync(OUT + '/onb', { recursive: true });
-const BASE = (process.env.BASE || 'http://localhost:8765') + '/index.html';
+const BASE = (process.env.BASE || 'http://localhost:8765') + '/index.html?sb=off';
 const profile = (page) => page.evaluate(() => new Promise((res) => {
   const q = indexedDB.open('speaking-lab'); q.onsuccess = () => { const g = q.result.transaction('profile').objectStore('profile').get('me'); g.onsuccess = () => res(g.result || null); };
 }));
@@ -67,7 +67,7 @@ const shot = (page, n) => page.screenshot({ path: `${OUT}/onb/${n}.png`, fullPag
   await page.waitForSelector('#sets');
   let p = await profile(page);
   assert.strictEqual(p.optional, null, '선택 동의를 안 했는데 선택 항목이 저장됐어요');
-  assert.strictEqual(p.consent.version, 1); assert.strictEqual(p.consent.guardian, true);
+  assert.strictEqual(p.consent.version, 2); assert.strictEqual(p.consent.guardian, true);
   assert.strictEqual(p.guardian.method, 'signature');
   assert.deepStrictEqual(p.exams.sort(), ['opic', 'toeic']);
   assert.ok(await page.isVisible('#nav-settings'));
@@ -77,7 +77,7 @@ const shot = (page, n) => page.screenshot({ path: `${OUT}/onb/${n}.png`, fullPag
   await page.click('#nav-settings');
   await page.waitForSelector('.kv');
   const st = await page.textContent('#app');
-  assert.ok(st.includes('동의서 v1') && st.includes('테스트 보호자') && st.includes('동의 안 함'));
+  assert.ok(st.includes('동의서 v2') && st.includes('테스트 보호자') && st.includes('동의 안 함'));
   await shot(page, '4_settings');
   const [dl1] = await Promise.all([page.waitForEvent('download'), page.click('#dl')]);
   console.log('CONSENT_RECORD', dl1.suggestedFilename());
@@ -101,16 +101,16 @@ const shot = (page, n) => page.screenshot({ path: `${OUT}/onb/${n}.png`, fullPag
   await page.click('#ok');
   await page.waitForSelector('#sets');
   p = await profile(page);
-  assert.strictEqual(p.consent.version, 1); assert.strictEqual(p.consent_history.length, 2);
+  assert.strictEqual(p.consent.version, 2); assert.strictEqual(p.consent_history.length, 2);
   assert.strictEqual(p.optional.current, 'OPIc IM1', '선택 동의 후 선택 항목이 저장돼야 해요');
   console.log('RECONSENT ok');
 
   // 6. 인쇄용 동의서
   const pr = await ctx.newPage();
-  await pr.goto((process.env.BASE || 'http://localhost:8765') + '/consent.html');
+  await pr.goto((process.env.BASE || 'http://localhost:8765') + '/consent.html?sb=off');
   await pr.waitForSelector('.csec');
   const secs = await pr.locator('.csec').count();
-  assert.strictEqual(secs, 6);
+  assert.strictEqual(secs, 7);
   await pr.screenshot({ path: `${OUT}/onb/6_print.png`, fullPage: true });
   console.log('PRINT sections', secs);
 

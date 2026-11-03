@@ -4,7 +4,8 @@ import { hasMic, meter, openMic, stopSpeaking } from './media.js';
 import { Aborted, Runner } from './runner.js';
 import { runToeic } from './toeic.js';
 import { findQuestion } from './opic_plan.js';
-import { buildSubmission, importFeedback, markSubmitted, shareOrDownload } from './submit.js';
+import { buildSubmission, cloudSubmit, importFeedback, markSubmitted, shareOrDownload, syncFeedback } from './submit.js';
+import { cloud } from './cloud.js';
 
 const $app = () => document.getElementById('app');
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -75,6 +76,7 @@ export async function home(data, profile, opicData) {
     catch (err) { app.querySelector('#fberr').textContent = err.message; }
     e.target.value = '';
   };
+  if (cloud.enabled) { try { await syncFeedback(); } catch { /* 오프라인이면 다음에 */ } }
   let attempts = [];
   try { attempts = await listAttempts(); } catch { /* 저장소를 못 열면 기록 없이 */ }
   if (attempts.length) {
@@ -265,11 +267,14 @@ export async function result(data, attemptId) {
       ${attempt.finishedAt ? (attempt.timedOut ? '<p class="muted">시험 시간이 끝나서 남은 문항 없이 마쳤어요.</p>' : '') : `<p>아직 다 끝내지 않았어요. <a href="#/${attempt.exam === 'opic' ? 'opic/resume' : 'resume'}/${attempt.id}">Q${attempt.next}부터 이어하기</a></p>`}
       <p class="muted" id="sum"></p>
       <div class="btns"><button class="btn primary" id="submit">${attempt.submittedAt ? '선생님께 다시 보내기' : '선생님께 보내기'}</button></div>
-      <p class="muted" id="submitmsg">${attempt.submittedAt ? `${esc(fmtDate(attempt.submittedAt))}에 보냈어요.` : '녹음 파일을 묶어서 카톡 등으로 보내요. 휴대폰이 아니면 파일로 내려받아져요.'}</p>
+      <p class="muted" id="submitmsg">${attempt.submittedAt ? `${esc(fmtDate(attempt.submittedAt))}에 보냈어요.` : cloud.enabled ? '녹음을 선생님께 바로 올려요. 피드백이 오면 홈에 "피드백 도착"이 떠요.' : '녹음 파일을 묶어서 카톡 등으로 보내요. 휴대폰이 아니면 파일로 내려받아져요.'}</p>
     </section>
     ${attempt.feedback ? overallFeedback(data, attempt.feedback) : ''}
     <div id="cards"></div>`;
   app.querySelector('#lvslot').append(levelSelect(data, () => result(data, attemptId)));
+  if (attempt.feedback?.cloud && !attempt.feedback.read_at) {          // 선생님이 학생이 피드백을 봤는지 알 수 있게
+    cloud.markRead(attempt.id).then(() => { attempt.feedback.read_at = new Date().toISOString(); return putAttempt(attempt); }).catch(() => {});
+  }
   const cards = app.querySelector('#cards');
   let checked = 0, totalChecks = 0;
   const recs = await Promise.all(set.items.map((it) => getRecording(attempt.id, it.num).catch(() => null)));
@@ -310,7 +315,17 @@ export async function result(data, attemptId) {
   app.querySelector('#submit').onclick = async (e) => {
     const btn = e.currentTarget, msg = app.querySelector('#submitmsg');
     if (!attempt.finishedAt && !confirm('아직 다 끝내지 않은 응시예요. 지금까지 녹음한 문항만 보낼까요?')) return;
-    btn.disabled = true; msg.textContent = '파일을 묶는 중이에요…';
+    btn.disabled = true;
+    if (cloud.enabled) {
+      try {
+        const { count } = await cloudSubmit(attempt.id, set, (i, n) => { msg.textContent = `올리는 중이에요… ${i}/${n}`; });
+        attempt.submittedAt = new Date().toISOString();
+        msg.textContent = `녹음 ${count}개를 선생님께 보냈어요. 피드백이 오면 홈에 알려 드려요.`;
+      } catch (err) { msg.textContent = `보내지 못했어요: ${err.message}`; }
+      finally { btn.disabled = false; }
+      return;
+    }
+    msg.textContent = '파일을 묶는 중이에요…';
     try {
       const { blob, name, count, attempt: a } = await buildSubmission(attempt.id, set);
       const how = await shareOrDownload(blob, name);

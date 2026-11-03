@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path'), assert = require('assert');
 const { onboard } = require('./onboard');
 const [mode, OUT, FB] = process.argv.slice(2);
-const BASE = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts';
+const BASE = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts&sb=off';
 const ARGS = ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'];
 
 (async () => {
