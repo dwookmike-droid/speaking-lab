@@ -1,8 +1,9 @@
 // 화면: 홈 · 마이크 확인 · 시험 진행 · 결과
-import { getAttempt, getRecording, getSetting, listAttempts, putAttempt, setSetting } from './store.js';
+import { getAttempt, getProfile, getRecording, getSetting, listAttempts, putAttempt, putProfile, setSetting } from './store.js';
 import { hasMic, meter, openMic, stopSpeaking } from './media.js';
 import { Aborted, Runner } from './runner.js';
 import { runToeic } from './toeic.js';
+import { buildSubmission, importFeedback, markSubmitted, shareOrDownload } from './submit.js';
 
 const $app = () => document.getElementById('app');
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -25,7 +26,12 @@ function levelSelect(data, onChange) {
   sel.id = 'target';
   sel.innerHTML = data.levels.levels.map((lv) => `<option value="${lv}">${esc(levelLabel(data, lv))}</option>`).join('');
   sel.value = target(data);
-  sel.onchange = () => { setSetting('target.toeic', sel.value); onChange?.(sel.value); };
+  sel.onchange = async () => {
+    setSetting('target.toeic', sel.value);
+    const p = await getProfile();                       // 학생 정보의 목표 레벨도 같이 바꿔요(제출 꾸러미에 들어가요)
+    if (p) { p.targets = { ...(p.targets || {}), toeic: sel.value }; await putProfile(p); }
+    onChange?.(sel.value);
+  };
   return sel;
 }
 const fmtDate = (iso) => { try { return new Date(iso).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }); } catch { return iso; } };
@@ -41,19 +47,29 @@ export async function home(data, profile) {
       <p class="muted">결과 화면에서 이 레벨의 모범답변이 먼저 나와요. 언제든 바꿀 수 있어요.</p>
     </section>
     <section class="panel"><h2>세트</h2><div class="list" id="sets"></div></section>
-    <section class="panel"><h2>최근 응시</h2><div class="list" id="recent"><p class="muted">아직 없어요.</p></div></section>`;
+    <section class="panel"><h2>최근 응시</h2><div class="list" id="recent"><p class="muted">아직 없어요.</p></div></section>
+    <section class="panel"><h2>피드백 불러오기</h2>
+      <p class="muted">선생님이 보낸 피드백 파일(.json)을 고르면 그 응시의 결과 화면에 붙어요.</p>
+      <label class="btn" for="fbfile">파일 고르기</label><input type="file" id="fbfile" accept=".json,application/json" hidden>
+      <p class="err" id="fberr" role="alert"></p></section>`;
   app.querySelector('#lvslot').append(levelSelect(data));
   app.querySelector('#sets').innerHTML = data.sets.map((s) => `
     <div class="li"><div><b>${esc(s.title_ko || s.id)}</b>${s.status === 'draft' ? ' <span class="tag">초안</span>' : ''}
     <div class="muted">${s.items.length}문항 · 약 20분</div></div>
     <a class="btn primary" href="#/start/${encodeURIComponent(s.id)}">응시 시작</a></div>`).join('');
+  app.querySelector('#fbfile').onchange = async (e) => {
+    const f = e.target.files?.[0]; if (!f) return;
+    try { location.hash = `#/result/${await importFeedback(f)}`; }
+    catch (err) { app.querySelector('#fberr').textContent = err.message; }
+    e.target.value = '';
+  };
   let attempts = [];
   try { attempts = await listAttempts(); } catch { /* 저장소를 못 열면 기록 없이 */ }
   if (attempts.length) {
     const title = (id) => data.sets.find((s) => s.id === id)?.title_ko || id;
     app.querySelector('#recent').innerHTML = attempts.slice(0, 10).map((a) => `
       <div class="li"><div><b>${esc(title(a.setId))}</b> <span class="muted">${esc(fmtDate(a.startedAt))}</span>
-      <div class="muted">${a.finishedAt ? '완료' : `진행 중 · Q${a.next}부터`}</div></div>
+      <div class="muted">${a.finishedAt ? '완료' : `진행 중 · Q${a.next}부터`}${a.submittedAt ? ' · 보냄' : ''}${a.feedback ? ' · <b class="fbtag">피드백 도착</b>' : ''}</div></div>
       <div class="btns">${a.finishedAt ? '' : `<a class="btn" href="#/resume/${a.id}">이어하기</a>`}
       <a class="btn" href="#/result/${a.id}">결과</a></div></div>`).join('');
   }
@@ -232,7 +248,10 @@ export async function result(data, attemptId) {
       <label class="row">목표 레벨 <span id="lvslot"></span></label>
       ${attempt.finishedAt ? '' : `<p>아직 다 끝내지 않았어요. <a href="#/resume/${attempt.id}">Q${attempt.next}부터 이어하기</a></p>`}
       <p class="muted" id="sum"></p>
+      <div class="btns"><button class="btn primary" id="submit">${attempt.submittedAt ? '선생님께 다시 보내기' : '선생님께 보내기'}</button></div>
+      <p class="muted" id="submitmsg">${attempt.submittedAt ? `${esc(fmtDate(attempt.submittedAt))}에 보냈어요.` : '녹음 파일을 묶어서 카톡 등으로 보내요. 휴대폰이 아니면 파일로 내려받아져요.'}</p>
     </section>
+    ${attempt.feedback ? overallFeedback(data, attempt.feedback) : ''}
     <div id="cards"></div>`;
   app.querySelector('#lvslot').append(levelSelect(data, () => result(data, attemptId)));
   const cards = app.querySelector('#cards');
@@ -260,6 +279,7 @@ export async function result(data, attemptId) {
       <header><b>Q${item.num}</b> <span class="muted">${esc(TYPE_KO[item.type])}</span></header>
       ${prompt}
       <h4>내 답변</h4>${audio}
+      ${itemFeedback(data, attempt.feedback, item)}
       <h4>모범답변</h4>${model}
       ${item.tip_ko ? `<p class="tip">${esc(item.tip_ko)}</p>` : ''}
       <h4>스스로 점검</h4>
@@ -269,6 +289,19 @@ export async function result(data, attemptId) {
   cards.append(frag);
   const sum = () => { app.querySelector('#sum').textContent = `스스로 점검 ${checked}/${totalChecks}개`; };
   sum();
+  app.querySelector('#submit').onclick = async (e) => {
+    const btn = e.currentTarget, msg = app.querySelector('#submitmsg');
+    if (!attempt.finishedAt && !confirm('아직 다 끝내지 않은 응시예요. 지금까지 녹음한 문항만 보낼까요?')) return;
+    btn.disabled = true; msg.textContent = '파일을 묶는 중이에요…';
+    try {
+      const { blob, name, count, attempt: a } = await buildSubmission(attempt.id, set);
+      const how = await shareOrDownload(blob, name);
+      if (how === 'canceled') { msg.textContent = '보내기를 취소했어요.'; return; }
+      await markSubmitted(a); attempt.submittedAt = a.submittedAt;
+      msg.textContent = how === 'shared' ? `녹음 ${count}개를 보냈어요.` : `녹음 ${count}개를 ${name} 파일로 내려받았어요. 이 파일을 선생님께 보내 주세요.`;
+    } catch (err) { msg.textContent = err.message; }
+    finally { btn.disabled = false; }
+  };
   cards.addEventListener('change', async (e) => {
     const el = e.target; if (!el.matches('input[type=checkbox]')) return;
     const n = el.dataset.num, i = Number(el.dataset.i);
@@ -297,6 +330,34 @@ export async function result(data, attemptId) {
     box.querySelector('.pi').textContent = i + 1;
   });
   window.addEventListener('hashchange', () => urls.forEach((u) => URL.revokeObjectURL(u)), { once: true });
+}
+
+// ── 선생님 피드백 ──────────────────────────────────
+function overallFeedback(data, fb) {
+  const o = fb.overall || {};
+  return `<section class="panel fb overall">
+    <h2>선생님 피드백 <small class="muted">${esc(fmtDate(fb.created_at))}</small></h2>
+    ${o.est_level ? `<p class="lvline">지금 예상 레벨 <b>${esc(levelLabel(data, o.est_level))}</b>${fb.target ? ` · 목표 ${esc(levelLabel(data, fb.target))}` : ''}</p>` : ''}
+    ${o.summary_ko ? `<p>${esc(o.summary_ko)}</p>` : ''}
+    ${o.strengths_ko?.length ? `<h4>잘하고 있는 점</h4><ul>${o.strengths_ko.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+    ${o.priorities_ko?.length ? `<h4>다음에 연습할 것</h4><ol>${o.priorities_ko.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
+  </section>`;
+}
+function itemFeedback(data, fb, item) {
+  const f = fb?.items?.find((x) => x.num === item.num);
+  if (!f) return '';
+  const pron = f.teacher_note_ko ? `<p class="tnote">선생님 메모: ${esc(f.teacher_note_ko)}</p>`
+    : f.pronunciation === 'check' ? '<p class="muted">발음은 글로 판단하기 어려워서 선생님이 녹음을 듣고 따로 알려 줘요.</p>' : '';
+  return `<div class="fb">
+    <h4>선생님 피드백${f.est_level ? ` <span class="lvchip">${esc(levelLabel(data, f.est_level))}</span>` : ''}</h4>
+    ${f.good_ko?.length ? `<ul class="good">${f.good_ko.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+    ${(f.fixes || []).map((x) => `<div class="fix">
+      <p class="said">${esc(x.said)}</p>
+      <p class="better">→ ${esc(x.better)} <button class="btn sm" data-act="say" data-text="${esc(x.better)}">▶</button></p>
+      ${x.why_ko ? `<p class="why">${esc(x.why_ko)}</p>` : ''}</div>`).join('')}
+    ${f.next_ko ? `<p class="next">다음 연습: ${esc(f.next_ko)}</p>` : ''}
+    ${pron}
+  </div>`;
 }
 
 function sayOnce(text) {
