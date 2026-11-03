@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>개인정보 동의서 · Speaking Lab</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body class="print">
+<main id="doc"><p class="muted">불러오는 중…</p></main>
+<script type="module">
+  // 인쇄용 동의서: 앱 동의 화면과 같은 data/consent.json으로 그려요. 서명란이 있어요.
+  import { consentHTML } from './js/onboarding.js';
+  const doc = document.getElementById('doc');
+  try {
+    const c = await (await fetch('data/consent.json', { cache: 'no-cache' })).json();
+    doc.innerHTML = `
+      <div class="btns noprint"><button class="btn primary" onclick="print()">인쇄하기</button></div>
+      <h1>${c.title} <small>(v${c.consent_version})</small></h1>
+      ${consentHTML(c, { under14: true, interactive: false })}
+      <section class="sign">
+        <p>동의 일시: ______년 ____월 ____일</p>
+        <p>학생 이름: ____________________ (서명) ____________</p>
+        <p>법정대리인(만 14세 미만): ____________________ (서명) ____________</p>
+      </section>`;
+  } catch (e) {
+    doc.innerHTML = '<p class="err">동의서를 불러오지 못했어요.</p>';
+  }
+</script>
+</body>
+</html>
