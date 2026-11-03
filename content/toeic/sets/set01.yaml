@@ -1,7 +1,7 @@
 schema_version: 1
 id: toeic-set01
 title_ko: 모의고사 1
-status: draft            # P1 엔진 확인용. 레벨마다 답변 1개씩이라 P2에서 2개 이상으로 채워요.
+status: ready
 items:
   - num: 1
     type: read_aloud
@@ -37,17 +37,29 @@ items:
       lv5:
         - text: This is a picture of an office. Two people are sitting at a table. A woman is using a laptop. There is a whiteboard behind them.
           phrases: [This is a picture of, There is]
+        - text: >-
+            I can see a meeting room. A man and a woman are sitting at a table. The man is holding a cup. There is a big window.
+          phrases: [I can see]
       lv6:
         - text: >-
             This picture was taken in an office. In the middle of the picture, two people are having a meeting at a table.
             The woman on the left is looking at a laptop. In the background, there is a whiteboard with a chart. They look busy.
           phrases: [This picture was taken in, In the middle of the picture, In the background, They look]
+        - text: >-
+            This is a picture of two coworkers in a meeting room. On the left, a woman is working on her laptop. Next to her, a man
+            is holding a coffee cup. There is a big window on the right side of the room.
+          phrases: [On the left, Next to her]
       lv7:
         - text: >-
             This picture was taken in a bright meeting room. The first thing I see is two coworkers sitting next to each other at a table.
             The woman is typing something on her laptop, and the man is holding a cup of coffee. Behind them, there is a whiteboard
             with a bar chart on it. It seems like they are preparing for a presentation.
           phrases: [The first thing I see is, Behind them, It seems like]
+        - text: >-
+            What I notice first in this picture is a woman with dark hair. She is sitting at a round table and typing on a laptop.
+            Beside her, a man in a blue shirt is holding a white cup. On the wall, there is a whiteboard with a chart, and there is
+            a large window on the right.
+          phrases: [What I notice first, Beside her, On the wall]
       lv8:
         - text: >-
             This picture shows a small meeting room in what looks like a modern office. Two colleagues are sitting at a round table
@@ -55,6 +67,12 @@ items:
             listening carefully. On the wall behind them, there's a whiteboard with a bar chart, so I think they're reviewing some
             sales results before a meeting.
           phrases: [This picture shows, in what looks like, while, so I think]
+        - text: >-
+            In this picture, I can see two people working together in a bright office. The woman on the left is focused on her
+            laptop screen, and the man beside her seems to be taking a short coffee break while he listens to her. Behind them,
+            there's a whiteboard showing a bar chart, and natural light is coming in through a large window. It looks like a typical
+            workday meeting.
+          phrases: [is focused on, seems to be, It looks like]
     tip_ko: 장소 → 가운데 인물 → 옆 인물 → 배경 → 추측 순서로 말하면 30초가 자연스럽게 채워져요.
   - num: 4
     type: describe_photo
@@ -64,17 +82,29 @@ items:
       lv5:
         - text: This is a picture of a market. A man is selling fruit. A woman is holding a shopping bag. There are many apples and oranges.
           phrases: [This is a picture of, There are many]
+        - text: >-
+            This picture was taken outside. A man is working at a fruit stand. A woman is shopping. The weather is sunny.
+          phrases: [This picture was taken]
       lv6:
         - text: >-
             This picture was taken at an outdoor market. On the right, a man in an apron is standing behind a fruit stand.
             A woman is holding a shopping bag and looking at the fruit. There are boxes of apples and oranges. It looks like a sunny day.
           phrases: [This picture was taken at, On the right, It looks like]
+        - text: >-
+            This is a picture of a fruit market. On the left, a woman in a purple top is standing with a shopping bag. On the right,
+            a man in a green apron is selling apples and oranges. There is a red and white awning above the stand.
+          phrases: [On the left, On the right, in a purple top]
       lv7:
         - text: >-
             This picture was taken at an outdoor market on a sunny day. On the right side, a vendor wearing an apron is standing
             behind his stall. He is smiling at a customer. The woman on the left is carrying a shopping bag on her arm. In front of them,
             there are several boxes full of apples and oranges with small price signs.
           phrases: [On the right side, wearing, In front of them]
+        - text: >-
+            This picture shows a fruit stand at an outdoor market. The first thing I notice is a striped red and white awning over
+            the stand. Under it, a man in a green apron is standing behind boxes of apples and oranges. A woman with a shopping bag
+            is standing on the left. It looks like she is about to buy some fruit.
+          phrases: [The first thing I notice is, is about to]
       lv8:
         - text: >-
             This is a scene from an outdoor market. Under a striped awning, a vendor in a green apron is standing behind his fruit stall
@@ -82,6 +112,12 @@ items:
             The stall is filled with boxes of fresh apples and oranges, each with a small price sign. Overall, it looks like a pleasant
             morning at the market.
           phrases: [This is a scene from, Under, seems to be, Overall]
+        - text: >-
+            This picture captures a quiet moment at a local fruit market on a clear, sunny day. On the right, a friendly-looking
+            vendor in a green apron is waiting behind his stall, which is covered by a red and white striped awning. His boxes are
+            full of bright red apples and oranges, and each box has a price tag. On the left, a woman in a purple top is holding a
+            shopping bag, so I guess she has just finished buying something.
+          phrases: [This picture captures, which is covered by, so I guess]
     tip_ko: 사람 옷차림(in a green apron, wearing ~)을 붙이면 문장이 길어지고 묘사가 구체적이 돼요.
   - num: 5
     type: respond_q
@@ -92,16 +128,28 @@ items:
     model:
       lv5:
         - text: I go to a park once a week. I usually go with my dog.
+        - text: >-
+            I go to a park two times a month. I usually go with my family.
       lv6:
         - text: I go to a park about twice a week. I usually go with my younger sister after dinner to take a walk.
+        - text: >-
+            I go to a park about once a week, usually on Sunday. I go with my parents because they enjoy walking.
       lv7:
         - text: >-
             I go to a park near my apartment about three times a week. I usually go with my roommate, and we take a walk together
             after dinner.
+        - text: >-
+            Honestly, I don't go to parks very often, maybe once or twice a month. When I do, I usually go with my friends to have a
+            picnic on the weekend.
+          phrases: [Honestly, When I do]
       lv8:
         - text: >-
             I go to the park near my apartment almost every evening, actually. I usually go with my roommate because we both like
             to jog after work, and it's a great way to relieve stress after a long day.
+        - text: >-
+            I try to go to a park at least twice a week, mostly on weekend mornings. I usually go with my kids, because they love
+            riding their bikes there, and it gives me a chance to get some fresh air too.
+          phrases: [at least, it gives me a chance to]
     tip_ko: 질문이 두 개(얼마나 자주, 누구와)예요. 둘 다 답해야 해요. 질문 문장을 그대로 받아 시작하면 3초 준비로도 충분해요.
   - num: 6
     type: respond_q
@@ -109,16 +157,28 @@ items:
     model:
       lv5:
         - text: I think spring is the best time. The weather is warm and there are many flowers.
+        - text: >-
+            Fall is the best time. It is cool, and the trees are beautiful.
       lv6:
         - text: I think the best time to visit a park in my area is spring. It is not too hot, and cherry blossoms are everywhere.
+        - text: >-
+            I think fall is the best time of year to visit a park. The weather is cool, so it is good for walking.
       lv7:
         - text: >-
             In my opinion, the best time to visit a park in my area is in the fall. The weather is cool and dry, and the leaves turn
             red and yellow, so it's really beautiful.
+        - text: >-
+            I think late spring, around May, is the best time to visit a park in my area. It's warm but not too hot, and there are
+            lots of flowers, so many families go on picnics.
+          phrases: [warm but not too hot]
       lv8:
         - text: >-
             I'd say early fall is the best time to visit a park around here. The summer heat is gone, the air is cool and dry, and the
             leaves start turning red and yellow. It's perfect weather for a picnic or a long walk.
+        - text: >-
+            For me, it has to be spring, especially early April. That's when the cherry blossoms are in full bloom along the walking
+            paths, and the weather is mild enough to sit outside all afternoon without a jacket.
+          phrases: [it has to be, That's when, mild enough to]
     tip_ko: 계절 하나를 고르고 이유는 날씨 + 볼거리로 두 가지를 말해요.
   - num: 7
     type: respond_q
@@ -127,17 +187,29 @@ items:
       lv5:
         - text: I prefer a small park near my home. First, it is close, so I can go often. Second, I can save time.
           phrases: [First, Second]
+        - text: >-
+            I prefer a large park far from my home. A large park has many things to do. Also, there is more nature, so I can relax.
+          phrases: [Also]
       lv6:
         - text: >-
             I prefer to visit a small park near my home. First, it is close, so I can go there anytime, even after work. Second,
             I don't need to spend money on transportation. So I think a small park near my home is better for me.
           phrases: [First, Second, So I think]
+        - text: >-
+            I prefer to visit a large park, even if it is far from my home. First, a large park has many activities, like bike
+            riding and boating. Second, it is less crowded than a small park, so I can relax better. That's why I like large parks.
+          phrases: [even if, First, Second, That's why]
       lv7:
         - text: >-
             I would prefer to visit a small park near my home. The main reason is convenience. Since it's only a five-minute walk away,
             I can go there whenever I want, even on busy weekdays. Also, a large park far away takes a lot of time to get to, and it's
             usually crowded on weekends. For these reasons, I prefer a small park nearby.
           phrases: [The main reason is, Since, Also, For these reasons]
+        - text: >-
+            I would rather visit a large park, even if it takes some time to get there. A large park usually has more to offer, such
+            as bike paths, a lake, and big open spaces. When I go to a park, I want to spend the whole day there and really get away
+            from the city. So for me, the travel time is worth it.
+          phrases: [I would rather, has more to offer, such as, is worth it]
       lv8:
         - text: >-
             Personally, I'd much rather go to a small park near my home. The biggest reason is that I can actually use it regularly.
@@ -145,6 +217,12 @@ items:
             break or after dinner. A large park might have more facilities, but if it takes an hour to get there, I'd probably only go
             once or twice a year.
           phrases: [I'd much rather, The biggest reason is that, For example, might ~ but]
+        - text: >-
+            I'd actually choose the large park, even though it's farther away. The way I see it, going to a park is something I do
+            on weekends to recharge, not just to take a quick walk. For example, last month my friends and I drove about forty
+            minutes to a big park outside the city. We rented bikes, had a picnic by the lake, and stayed until sunset. A small
+            neighborhood park just can't give you that kind of experience.
+          phrases: [even though, The way I see it, For example, that kind of experience]
     tip_ko: 7번은 30초라 의견 한 문장 + 이유 두 개(또는 이유 하나 + 예시)로 구성해요.
   - num: 8
     type: info_based
@@ -165,16 +243,28 @@ items:
     model:
       lv5:
         - text: The conference is on March 14. It is in Hall B at the City Convention Center.
+        - text: >-
+            It is on March 14. The place is the City Convention Center, Hall B.
       lv6:
         - text: The conference is on March 14, and it starts at 9 a.m. It will be held in Hall B of the City Convention Center.
+        - text: >-
+            The conference will be on March 14. It will take place at the City Convention Center in Hall B.
+          phrases: [will take place at]
       lv7:
         - text: >-
             Sure. The conference will be held on March 14 in Hall B of the City Convention Center. It starts at 9 a.m. with
             registration and coffee.
+        - text: >-
+            Of course. It's on March 14, and it's being held at the City Convention Center, in Hall B. Registration opens at 9 a.m.
+          phrases: [it's being held at]
       lv8:
         - text: >-
             Sure, I can help with that. The conference will be held on March 14 in Hall B at the City Convention Center.
             Registration and coffee begin at 9 a.m., so I'd recommend arriving a little early.
+        - text: >-
+            No problem. The conference is on March 14, and it's taking place in Hall B of the City Convention Center. Things get
+            started with registration and coffee at 9, and the keynote speech begins at 9:30.
+          phrases: [Things get started with]
     tip_ko: 날짜와 장소, 질문이 두 개예요. 자료 맨 위 줄에서 바로 찾아 읽으면 돼요.
   - num: 9
     type: info_based
@@ -182,18 +272,32 @@ items:
     model:
       lv5:
         - text: Sorry, lunch is not included. You have lunch on your own from 12 to 1.
+        - text: >-
+            No, lunch is not included. The fee is 40 dollars. You need to buy your own lunch.
       lv6:
         - text: I'm sorry, but lunch is not included in the 40-dollar fee. You need to have lunch on your own from 12 to 1.
+        - text: >-
+            Sorry, that's not correct. The registration fee is 40 dollars, but lunch is not included. Lunch is on your own from 12
+            to 1.
+          phrases: ['Sorry, that''s not correct.']
       lv7:
         - text: >-
             Actually, no. The registration fee is 40 dollars, but it doesn't include lunch. The lunch break is from 12 to 1,
             and you'll need to eat on your own.
-          phrases: [Actually, no.]
+          phrases: ['Actually, no.']
+        - text: >-
+            I'm sorry, but that's not correct. Lunch isn't included in the 40-dollar fee. There's a lunch break from 12 to 1, so
+            you'll need to buy your own lunch.
+          phrases: ['I''m sorry, but that''s not correct.']
       lv8:
         - text: >-
             I'm afraid that's not quite right. The 40-dollar registration fee covers all the sessions and the morning coffee, but lunch
             isn't included. There's an hour-long break from noon to 1 p.m., so you'll need to find lunch on your own.
           phrases: [I'm afraid that's not quite right]
+        - text: >-
+            Actually, I'm afraid you've been given the wrong information. Your 40-dollar fee only covers registration, coffee, and
+            the sessions. Lunch is on your own from noon to 1 p.m., so you might want to bring something or eat nearby.
+          phrases: [you've been given the wrong information, only covers, you might want to]
     tip_ko: 9번은 보통 잘못 알고 있는 정보를 물어요. "아니에요"를 먼저 말하고 맞는 정보를 알려 줘요.
   - num: 10
     type: info_based
@@ -201,17 +305,29 @@ items:
     model:
       lv5:
         - text: There are two sessions in the afternoon. At 1 p.m., there is a panel discussion on marketing. At 2:15, there is a workshop on presentations.
+        - text: >-
+            In the afternoon, there is a panel discussion from 1 to 2. Then there is a workshop with Sarah Kim from 2:15 to 3:30.
+          phrases: [Then]
       lv6:
         - text: >-
             Sure. There are two sessions in the afternoon. First, from 1 to 2 p.m., there is a panel discussion called Marketing on a
             Small Budget. Then, from 2:15 to 3:30, Sarah Kim will lead a workshop on effective presentations.
           phrases: [First, Then]
+        - text: >-
+            There are two afternoon sessions. The first one is a panel discussion, Marketing on a Small Budget, at 1 p.m. The second
+            one is a workshop, Effective Presentations, by Sarah Kim at 2:15. Closing remarks start at 3:30.
+          phrases: [The first one is, The second one is]
       lv7:
         - text: >-
             Sure. There are two sessions in the afternoon. First, from 1 to 2 p.m., there will be a panel discussion titled Marketing on
             a Small Budget. After a short break, Sarah Kim will lead a workshop on effective presentations from 2:15 to 3:30.
             The conference will then finish with closing remarks at 3:30.
           phrases: [First, After a short break, will then finish with]
+        - text: >-
+            Sure, let me go over the afternoon for you. At 1 p.m., right after lunch, there's a one-hour panel discussion on
+            Marketing on a Small Budget. Then at 2:15, Sarah Kim will run a workshop called Effective Presentations, which lasts
+            until 3:30. After that, there are closing remarks.
+          phrases: [let me go over, right after, which lasts until, After that]
       lv8:
         - text: >-
             Of course. After the lunch break, there are two sessions in the afternoon. The first one is a panel discussion called
@@ -219,6 +335,12 @@ items:
             effective presentations from 2:15 to 3:30. Finally, the day wraps up with closing remarks at 3:30, so you should be
             finished by 4 o'clock.
           phrases: [The first one is, which runs from, Finally, wraps up with]
+        - text: >-
+            Sure. Once lunch is over, the afternoon program starts at 1 p.m. with a panel discussion. It's called Marketing on a
+            Small Budget, and it should be really useful if you work at a small company. After a short break, Sarah Kim is leading a
+            workshop on effective presentations from 2:15 to 3:30. The event then closes with some final remarks, which should
+            finish around 4.
+          phrases: [Once lunch is over, it should be really useful if, After a short break]
     tip_ko: 10번은 항목 두세 개를 시간 순서로 말해요. 시간 → 행사 이름 → 진행자 순서를 지키면 덜 헷갈려요.
   - num: 11
     type: opinion
@@ -232,6 +354,11 @@ items:
             for books and food. Second, they can learn about work. For example, my friend worked at a café. She learned how to talk to
             customers. So I agree with this statement.
           phrases: [I have two reasons, First, Second, For example]
+        - text: >-
+            I disagree with this statement. I think students should focus on studying. First, university classes are difficult.
+            Students need a lot of time to study. Second, a part-time job is tiring. For example, my cousin worked at night. He was
+            always tired in class. So I think students should not work.
+          phrases: [I disagree with this statement, First, Second, For example]
       lv6:
         - text: >-
             I agree that university students should have a part-time job. There are two reasons. First, students can earn their own
@@ -240,6 +367,12 @@ items:
             learned how to deal with customers and manage my time. This experience helped me a lot when I got my first job. For these
             reasons, I agree with the statement.
           phrases: [These days, For example, when I, For these reasons]
+        - text: >-
+            I disagree that university students should have a part-time job. I have two reasons. First, studying is a full-time job
+            for students. Many university classes need a lot of reading and group work, so students don't have enough time to work.
+            Second, working can hurt their grades. For example, when I worked at a restaurant in my first year, I was always tired
+            and my grades went down. After I quit, my grades got much better. So I think students should focus on their studies.
+          phrases: [I have two reasons, For example, when I, After I quit]
       lv7:
         - text: >-
             I agree that university students should have a part-time job while they are in school. I have two main reasons. First, a
@@ -250,6 +383,14 @@ items:
             skills really helped me later at my internship. Therefore, I strongly believe that working part-time is valuable for
             university students.
           phrases: [I have two main reasons, that they can't learn in, At first ~ but, Therefore]
+        - text: >-
+            I disagree with the idea that university students should have a part-time job. In my opinion, university is a short and
+            important period, and students should use it to build their future. First of all, a part-time job takes away time that
+            students could spend on more valuable activities, like internships, club activities, or studying for certificates. Also,
+            most part-time jobs for students, such as serving food or working at a store, are not related to their major. For
+            example, my roommate worked at a fast-food restaurant for two years, but that experience didn't help him at all when he
+            applied for jobs in engineering. For these reasons, I think students should focus on their studies instead.
+          phrases: [I disagree with the idea that, First of all, takes away time, are not related to, For these reasons]
       lv8:
         - text: >-
             Personally, I agree that university students should have a part-time job, as long as it doesn't take too much time away from
@@ -260,4 +401,13 @@ items:
             wasting my free time. On top of that, the experience helped me figure out what kind of career I wanted. So overall, I think
             a part-time job can be one of the most valuable parts of university life.
           phrases: [as long as, The main reason is that, I experienced this myself, On top of that, So overall]
+        - text: >-
+            I can see why some people think a part-time job is a good idea, but personally, I disagree with this statement.
+            University is probably the only time in your life when you can focus completely on learning, and I think students should
+            make the most of it. When students work fifteen or twenty hours a week, something has to give, and it's usually sleep or
+            study time. I saw this happen to a close friend of mine. She worked evening shifts at a hotel front desk during her
+            second year, and by the end of the semester she had dropped one of her major courses because she simply couldn't keep
+            up. Of course, if a student really needs the money, that's a different story. But generally, I believe students are
+            better off investing their time in their education.
+          phrases: [I can see why, make the most of it, something has to give, that's a different story, are better off]
     tip_ko: 첫 문장에 찬반을 분명히 말해요. 이유 하나에는 내 경험 예시를 붙여야 60초가 채워져요.
