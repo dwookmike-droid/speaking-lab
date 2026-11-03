@@ -139,7 +139,7 @@ items:
         - text: >-
             I'd say I eat at a restaurant about twice a week. I usually go with my roommate, since neither of us really enjoys cooking
             after a long day, and there are lots of good places in our neighborhood.
-    tip_ko: 얼마나 자주, 누구와 — 질문 두 개에 모두 답해요. 15초라 숫자 하나, 사람 하나를 말하고 이유를 짧게 붙이면 충분해요.
+    tip_ko: 얼마나 자주, 누구와 가는지 두 가지를 모두 답해요. 15초라 숫자 하나, 사람 하나를 말하고 이유를 짧게 붙이면 충분해요.
   - num: 6
     type: respond_q
     question: When you choose a restaurant, what is the most important thing you consider?

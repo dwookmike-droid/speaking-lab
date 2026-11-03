@@ -282,7 +282,7 @@
   {
    "id": "toeic-set01",
    "title_ko": "모의고사 1",
-   "status": "draft",
+   "status": "ready",
    "items": [
     {
      "num": 1,
@@ -311,6 +311,12 @@
          "This is a picture of",
          "There is"
         ]
+       },
+       {
+        "text": "I can see a meeting room. A man and a woman are sitting at a table. The man is holding a cup. There is a big window.",
+        "phrases": [
+         "I can see"
+        ]
        }
       ],
       "lv6": [
@@ -322,6 +328,13 @@
          "In the background",
          "They look"
         ]
+       },
+       {
+        "text": "This is a picture of two coworkers in a meeting room. On the left, a woman is working on her laptop. Next to her, a man is holding a coffee cup. There is a big window on the right side of the room.",
+        "phrases": [
+         "On the left",
+         "Next to her"
+        ]
        }
       ],
       "lv7": [
@@ -331,6 +344,14 @@
          "The first thing I see is",
          "Behind them",
          "It seems like"
+        ]
+       },
+       {
+        "text": "What I notice first in this picture is a woman with dark hair. She is sitting at a round table and typing on a laptop. Beside her, a man in a blue shirt is holding a white cup. On the wall, there is a whiteboard with a chart, and there is a large window on the right.",
+        "phrases": [
+         "What I notice first",
+         "Beside her",
+         "On the wall"
         ]
        }
       ],
@@ -342,6 +363,14 @@
          "in what looks like",
          "while",
          "so I think"
+        ]
+       },
+       {
+        "text": "In this picture, I can see two people working together in a bright office. The woman on the left is focused on her laptop screen, and the man beside her seems to be taking a short coffee break while he listens to her. Behind them, there's a whiteboard showing a bar chart, and natural light is coming in through a large window. It looks like a typical workday meeting.",
+        "phrases": [
+         "is focused on",
+         "seems to be",
+         "It looks like"
         ]
        }
       ]
@@ -361,6 +390,12 @@
          "This is a picture of",
          "There are many"
         ]
+       },
+       {
+        "text": "This picture was taken outside. A man is working at a fruit stand. A woman is shopping. The weather is sunny.",
+        "phrases": [
+         "This picture was taken"
+        ]
        }
       ],
       "lv6": [
@@ -370,6 +405,14 @@
          "This picture was taken at",
          "On the right",
          "It looks like"
+        ]
+       },
+       {
+        "text": "This is a picture of a fruit market. On the left, a woman in a purple top is standing with a shopping bag. On the right, a man in a green apron is selling apples and oranges. There is a red and white awning above the stand.",
+        "phrases": [
+         "On the left",
+         "On the right",
+         "in a purple top"
         ]
        }
       ],
@@ -381,6 +424,13 @@
          "wearing",
          "In front of them"
         ]
+       },
+       {
+        "text": "This picture shows a fruit stand at an outdoor market. The first thing I notice is a striped red and white awning over the stand. Under it, a man in a green apron is standing behind boxes of apples and oranges. A woman with a shopping bag is standing on the left. It looks like she is about to buy some fruit.",
+        "phrases": [
+         "The first thing I notice is",
+         "is about to"
+        ]
        }
       ],
       "lv8": [
@@ -391,6 +441,14 @@
          "Under",
          "seems to be",
          "Overall"
+        ]
+       },
+       {
+        "text": "This picture captures a quiet moment at a local fruit market on a clear, sunny day. On the right, a friendly-looking vendor in a green apron is waiting behind his stall, which is covered by a red and white striped awning. His boxes are full of bright red apples and oranges, and each box has a price tag. On the left, a woman in a purple top is holding a shopping bag, so I guess she has just finished buying something.",
+        "phrases": [
+         "This picture captures",
+         "which is covered by",
+         "so I guess"
         ]
        }
       ]
@@ -406,21 +464,41 @@
       "lv5": [
        {
         "text": "I go to a park once a week. I usually go with my dog."
+       },
+       {
+        "text": "I go to a park two times a month. I usually go with my family."
        }
       ],
       "lv6": [
        {
         "text": "I go to a park about twice a week. I usually go with my younger sister after dinner to take a walk."
+       },
+       {
+        "text": "I go to a park about once a week, usually on Sunday. I go with my parents because they enjoy walking."
        }
       ],
       "lv7": [
        {
         "text": "I go to a park near my apartment about three times a week. I usually go with my roommate, and we take a walk together after dinner."
+       },
+       {
+        "text": "Honestly, I don't go to parks very often, maybe once or twice a month. When I do, I usually go with my friends to have a picnic on the weekend.",
+        "phrases": [
+         "Honestly",
+         "When I do"
+        ]
        }
       ],
       "lv8": [
        {
         "text": "I go to the park near my apartment almost every evening, actually. I usually go with my roommate because we both like to jog after work, and it's a great way to relieve stress after a long day."
+       },
+       {
+        "text": "I try to go to a park at least twice a week, mostly on weekend mornings. I usually go with my kids, because they love riding their bikes there, and it gives me a chance to get some fresh air too.",
+        "phrases": [
+         "at least",
+         "it gives me a chance to"
+        ]
        }
       ]
      },
@@ -434,21 +512,41 @@
       "lv5": [
        {
         "text": "I think spring is the best time. The weather is warm and there are many flowers."
+       },
+       {
+        "text": "Fall is the best time. It is cool, and the trees are beautiful."
        }
       ],
       "lv6": [
        {
         "text": "I think the best time to visit a park in my area is spring. It is not too hot, and cherry blossoms are everywhere."
+       },
+       {
+        "text": "I think fall is the best time of year to visit a park. The weather is cool, so it is good for walking."
        }
       ],
       "lv7": [
        {
         "text": "In my opinion, the best time to visit a park in my area is in the fall. The weather is cool and dry, and the leaves turn red and yellow, so it's really beautiful."
+       },
+       {
+        "text": "I think late spring, around May, is the best time to visit a park in my area. It's warm but not too hot, and there are lots of flowers, so many families go on picnics.",
+        "phrases": [
+         "warm but not too hot"
+        ]
        }
       ],
       "lv8": [
        {
         "text": "I'd say early fall is the best time to visit a park around here. The summer heat is gone, the air is cool and dry, and the leaves start turning red and yellow. It's perfect weather for a picnic or a long walk."
+       },
+       {
+        "text": "For me, it has to be spring, especially early April. That's when the cherry blossoms are in full bloom along the walking paths, and the weather is mild enough to sit outside all afternoon without a jacket.",
+        "phrases": [
+         "it has to be",
+         "That's when",
+         "mild enough to"
+        ]
        }
       ]
      },
@@ -466,6 +564,12 @@
          "First",
          "Second"
         ]
+       },
+       {
+        "text": "I prefer a large park far from my home. A large park has many things to do. Also, there is more nature, so I can relax.",
+        "phrases": [
+         "Also"
+        ]
        }
       ],
       "lv6": [
@@ -475,6 +579,15 @@
          "First",
          "Second",
          "So I think"
+        ]
+       },
+       {
+        "text": "I prefer to visit a large park, even if it is far from my home. First, a large park has many activities, like bike riding and boating. Second, it is less crowded than a small park, so I can relax better. That's why I like large parks.",
+        "phrases": [
+         "even if",
+         "First",
+         "Second",
+         "That's why"
         ]
        }
       ],
@@ -487,6 +600,15 @@
          "Also",
          "For these reasons"
         ]
+       },
+       {
+        "text": "I would rather visit a large park, even if it takes some time to get there. A large park usually has more to offer, such as bike paths, a lake, and big open spaces. When I go to a park, I want to spend the whole day there and really get away from the city. So for me, the travel time is worth it.",
+        "phrases": [
+         "I would rather",
+         "has more to offer",
+         "such as",
+         "is worth it"
+        ]
        }
       ],
       "lv8": [
@@ -497,6 +619,15 @@
          "The biggest reason is that",
          "For example",
          "might ~ but"
+        ]
+       },
+       {
+        "text": "I'd actually choose the large park, even though it's farther away. The way I see it, going to a park is something I do on weekends to recharge, not just to take a quick walk. For example, last month my friends and I drove about forty minutes to a big park outside the city. We rented bikes, had a picnic by the lake, and stayed until sunset. A small neighborhood park just can't give you that kind of experience.",
+        "phrases": [
+         "even though",
+         "The way I see it",
+         "For example",
+         "that kind of experience"
         ]
        }
       ]
@@ -546,21 +677,42 @@
       "lv5": [
        {
         "text": "The conference is on March 14. It is in Hall B at the City Convention Center."
+       },
+       {
+        "text": "It is on March 14. The place is the City Convention Center, Hall B."
        }
       ],
       "lv6": [
        {
         "text": "The conference is on March 14, and it starts at 9 a.m. It will be held in Hall B of the City Convention Center."
+       },
+       {
+        "text": "The conference will be on March 14. It will take place at the City Convention Center in Hall B.",
+        "phrases": [
+         "will take place at"
+        ]
        }
       ],
       "lv7": [
        {
         "text": "Sure. The conference will be held on March 14 in Hall B of the City Convention Center. It starts at 9 a.m. with registration and coffee."
+       },
+       {
+        "text": "Of course. It's on March 14, and it's being held at the City Convention Center, in Hall B. Registration opens at 9 a.m.",
+        "phrases": [
+         "it's being held at"
+        ]
        }
       ],
       "lv8": [
        {
         "text": "Sure, I can help with that. The conference will be held on March 14 in Hall B at the City Convention Center. Registration and coffee begin at 9 a.m., so I'd recommend arriving a little early."
+       },
+       {
+        "text": "No problem. The conference is on March 14, and it's taking place in Hall B of the City Convention Center. Things get started with registration and coffee at 9, and the keynote speech begins at 9:30.",
+        "phrases": [
+         "Things get started with"
+        ]
        }
       ]
      },
@@ -574,19 +726,33 @@
       "lv5": [
        {
         "text": "Sorry, lunch is not included. You have lunch on your own from 12 to 1."
+       },
+       {
+        "text": "No, lunch is not included. The fee is 40 dollars. You need to buy your own lunch."
        }
       ],
       "lv6": [
        {
         "text": "I'm sorry, but lunch is not included in the 40-dollar fee. You need to have lunch on your own from 12 to 1."
+       },
+       {
+        "text": "Sorry, that's not correct. The registration fee is 40 dollars, but lunch is not included. Lunch is on your own from 12 to 1.",
+        "phrases": [
+         "Sorry, that's not correct."
+        ]
        }
       ],
       "lv7": [
        {
         "text": "Actually, no. The registration fee is 40 dollars, but it doesn't include lunch. The lunch break is from 12 to 1, and you'll need to eat on your own.",
         "phrases": [
-         "Actually",
-         "no."
+         "Actually, no."
+        ]
+       },
+       {
+        "text": "I'm sorry, but that's not correct. Lunch isn't included in the 40-dollar fee. There's a lunch break from 12 to 1, so you'll need to buy your own lunch.",
+        "phrases": [
+         "I'm sorry, but that's not correct."
         ]
        }
       ],
@@ -595,6 +761,14 @@
         "text": "I'm afraid that's not quite right. The 40-dollar registration fee covers all the sessions and the morning coffee, but lunch isn't included. There's an hour-long break from noon to 1 p.m., so you'll need to find lunch on your own.",
         "phrases": [
          "I'm afraid that's not quite right"
+        ]
+       },
+       {
+        "text": "Actually, I'm afraid you've been given the wrong information. Your 40-dollar fee only covers registration, coffee, and the sessions. Lunch is on your own from noon to 1 p.m., so you might want to bring something or eat nearby.",
+        "phrases": [
+         "you've been given the wrong information",
+         "only covers",
+         "you might want to"
         ]
        }
       ]
@@ -609,6 +783,12 @@
       "lv5": [
        {
         "text": "There are two sessions in the afternoon. At 1 p.m., there is a panel discussion on marketing. At 2:15, there is a workshop on presentations."
+       },
+       {
+        "text": "In the afternoon, there is a panel discussion from 1 to 2. Then there is a workshop with Sarah Kim from 2:15 to 3:30.",
+        "phrases": [
+         "Then"
+        ]
        }
       ],
       "lv6": [
@@ -617,6 +797,13 @@
         "phrases": [
          "First",
          "Then"
+        ]
+       },
+       {
+        "text": "There are two afternoon sessions. The first one is a panel discussion, Marketing on a Small Budget, at 1 p.m. The second one is a workshop, Effective Presentations, by Sarah Kim at 2:15. Closing remarks start at 3:30.",
+        "phrases": [
+         "The first one is",
+         "The second one is"
         ]
        }
       ],
@@ -628,6 +815,15 @@
          "After a short break",
          "will then finish with"
         ]
+       },
+       {
+        "text": "Sure, let me go over the afternoon for you. At 1 p.m., right after lunch, there's a one-hour panel discussion on Marketing on a Small Budget. Then at 2:15, Sarah Kim will run a workshop called Effective Presentations, which lasts until 3:30. After that, there are closing remarks.",
+        "phrases": [
+         "let me go over",
+         "right after",
+         "which lasts until",
+         "After that"
+        ]
        }
       ],
       "lv8": [
@@ -638,6 +834,14 @@
          "which runs from",
          "Finally",
          "wraps up with"
+        ]
+       },
+       {
+        "text": "Sure. Once lunch is over, the afternoon program starts at 1 p.m. with a panel discussion. It's called Marketing on a Small Budget, and it should be really useful if you work at a small company. After a short break, Sarah Kim is leading a workshop on effective presentations from 2:15 to 3:30. The event then closes with some final remarks, which should finish around 4.",
+        "phrases": [
+         "Once lunch is over",
+         "it should be really useful if",
+         "After a short break"
         ]
        }
       ]
@@ -658,6 +862,15 @@
          "Second",
          "For example"
         ]
+       },
+       {
+        "text": "I disagree with this statement. I think students should focus on studying. First, university classes are difficult. Students need a lot of time to study. Second, a part-time job is tiring. For example, my cousin worked at night. He was always tired in class. So I think students should not work.",
+        "phrases": [
+         "I disagree with this statement",
+         "First",
+         "Second",
+         "For example"
+        ]
        }
       ],
       "lv6": [
@@ -669,6 +882,15 @@
          "when I",
          "For these reasons"
         ]
+       },
+       {
+        "text": "I disagree that university students should have a part-time job. I have two reasons. First, studying is a full-time job for students. Many university classes need a lot of reading and group work, so students don't have enough time to work. Second, working can hurt their grades. For example, when I worked at a restaurant in my first year, I was always tired and my grades went down. After I quit, my grades got much better. So I think students should focus on their studies.",
+        "phrases": [
+         "I have two reasons",
+         "For example",
+         "when I",
+         "After I quit"
+        ]
        }
       ],
       "lv7": [
@@ -679,6 +901,16 @@
          "that they can't learn in",
          "At first ~ but",
          "Therefore"
+        ]
+       },
+       {
+        "text": "I disagree with the idea that university students should have a part-time job. In my opinion, university is a short and important period, and students should use it to build their future. First of all, a part-time job takes away time that students could spend on more valuable activities, like internships, club activities, or studying for certificates. Also, most part-time jobs for students, such as serving food or working at a store, are not related to their major. For example, my roommate worked at a fast-food restaurant for two years, but that experience didn't help him at all when he applied for jobs in engineering. For these reasons, I think students should focus on their studies instead.",
+        "phrases": [
+         "I disagree with the idea that",
+         "First of all",
+         "takes away time",
+         "are not related to",
+         "For these reasons"
         ]
        }
       ],
@@ -692,10 +924,1332 @@
          "On top of that",
          "So overall"
         ]
+       },
+       {
+        "text": "I can see why some people think a part-time job is a good idea, but personally, I disagree with this statement. University is probably the only time in your life when you can focus completely on learning, and I think students should make the most of it. When students work fifteen or twenty hours a week, something has to give, and it's usually sleep or study time. I saw this happen to a close friend of mine. She worked evening shifts at a hotel front desk during her second year, and by the end of the semester she had dropped one of her major courses because she simply couldn't keep up. Of course, if a student really needs the money, that's a different story. But generally, I believe students are better off investing their time in their education.",
+        "phrases": [
+         "I can see why",
+         "make the most of it",
+         "something has to give",
+         "that's a different story",
+         "are better off"
+        ]
        }
       ]
      },
      "tip_ko": "첫 문장에 찬반을 분명히 말해요. 이유 하나에는 내 경험 예시를 붙여야 60초가 채워져요."
+    }
+   ]
+  },
+  {
+   "id": "toeic-set02",
+   "title_ko": "모의고사 2",
+   "status": "ready",
+   "items": [
+    {
+     "num": 1,
+     "type": "read_aloud",
+     "text": "Good morning, this is Rachel Kim with your morning traffic and weather update. Traffic is moving slowly on Highway 9 because of road repairs near the river bridge, so drivers should allow an extra twenty minutes. Downtown streets are clear. As for the weather, expect cloudy skies, light rain, and strong winds this afternoon. The rain should stop by tomorrow morning. Stay tuned for more news after this short break.",
+     "marks": "Good **mor**ning, / this is Rachel **Kim** / with your morning **traf**fic and **weath**er update. // Traffic is moving **slow**ly on Highway **9** / because of road re**pairs** / near the river **bridge**, / so drivers should allow an extra twenty **min**utes. // Downtown streets are **clear**. // As for the **weath**er, / expect **cloud**y skies, ↗ / light **rain**, ↗ / and strong **winds** ↘ / this after**noon**. // The rain should **stop** / by tomorrow **mor**ning. // Stay tuned for more **news** / after this short **break**.",
+     "tip_ko": "교통·날씨 안내는 숫자와 지명이 많아요. Highway 9처럼 숫자가 붙은 이름은 한 덩어리로 읽고, 날씨 나열은 마지막 항목에서 내려요."
+    },
+    {
+     "num": 2,
+     "type": "read_aloud",
+     "text": "Thank you for calling Maple Grove Dental Clinic. Our office is open from nine a.m. to six p.m., Monday through Friday, and from nine a.m. to one p.m. on Saturdays. To make or change an appointment, press one. For questions about insurance, payments, or billing, press two. If you are having a dental emergency, please press three to speak with a nurse right away. Thank you for your patience.",
+     "marks": "Thank you for calling Maple Grove **Den**tal Clinic. // Our office is open / from nine **a.m.** to six **p.m.**, / Monday through **Fri**day, / and from nine a.m. to one p.m. / on **Sat**urdays. // To make or change an ap**point**ment, / press **one**. // For questions about **in**surance, ↗ / **pay**ments, ↗ / or **bill**ing, ↘ / press **two**. // If you are having a dental e**mer**gency, / please press **three** / to speak with a nurse / right a**way**. // Thank you for your **pa**tience.",
+     "tip_ko": "전화 안내 메시지는 '번호 누르기' 문장이 반복돼요. press one, press two처럼 숫자에 힘을 주고, 문장마다 같은 리듬으로 읽어요."
+    },
+    {
+     "num": 3,
+     "type": "describe_photo",
+     "image": "img/toeic/set02_q3.svg",
+     "credit": "placeholder-set02-q3",
+     "model": {
+      "lv5": [
+       {
+        "text": "This is a picture of a library. A woman is taking a book from a shelf. A man is reading a book at a table.",
+        "phrases": [
+         "This is a picture of"
+        ]
+       },
+       {
+        "text": "I can see a library. On the left, there is a big bookshelf. On the right, a man is wearing headphones. He is reading.",
+        "phrases": [
+         "I can see",
+         "On the left",
+         "On the right"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "This picture was taken in a library. On the left side, a woman with long hair is reaching for a book on the shelf. On the right side, a man is sitting at a table and reading a book. There is a lamp on the table.",
+        "phrases": [
+         "This picture was taken in",
+         "On the left side",
+         "On the right side"
+        ]
+       },
+       {
+        "text": "This is a picture of a quiet library. The first thing I see is a tall bookshelf full of colorful books. A woman is standing in front of it. On the right, a man with headphones is reading at a long table.",
+        "phrases": [
+         "The first thing I see is",
+         "full of",
+         "in front of"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "This picture was taken in a library. On the left, there is a tall wooden bookshelf filled with colorful books. A woman with long dark hair is reaching up to take a book from an upper shelf. On the right, a man wearing headphones is reading a book at a long table. It looks like a calm place to study.",
+        "phrases": [
+         "filled with",
+         "reaching up to",
+         "It looks like"
+        ]
+       },
+       {
+        "text": "The first thing I notice in this picture is a man studying at a table. He is wearing headphones and reading an open book. There is a yellow lamp next to him and a red backpack on a chair. On the other side of the room, a woman is looking for a book on a large bookshelf.",
+        "phrases": [
+         "The first thing I notice",
+         "next to him",
+         "On the other side of the room"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "This picture shows the inside of a library. On the left, a woman in a teal top is standing in front of a tall wooden bookshelf, and she's reaching up to pull out a purple book. On the right, a young man wearing headphones is sitting at a long table, completely focused on the book in front of him. Since there's a desk lamp and a backpack nearby, I think he's been studying here for a while.",
+        "phrases": [
+         "This picture shows",
+         "completely focused on",
+         "Since",
+         "I think"
+        ]
+       },
+       {
+        "text": "This is a scene from a quiet library. What stands out most is the tall bookshelf on the left, which is packed with books of different colors. A woman is stretching her arm toward an upper shelf to grab a book. Meanwhile, a man with headphones is reading at a wooden table with a yellow lamp, and someone's red backpack has been left on a chair at the end of the table.",
+        "phrases": [
+         "What stands out most is",
+         "which is packed with",
+         "Meanwhile"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "공간이 둘로 나뉜 사진은 왼쪽 → 오른쪽 순서로 말하면 빠뜨리는 게 없어요. 동작(reaching, reading)은 현재진행형으로 말해요."
+    },
+    {
+     "num": 4,
+     "type": "describe_photo",
+     "image": "img/toeic/set02_q4.svg",
+     "credit": "placeholder-set02-q4",
+     "model": {
+      "lv5": [
+       {
+        "text": "This is a picture of a bus stop. It is raining. A man is looking at his phone. A woman is holding a red umbrella.",
+        "phrases": [
+         "This is a picture of"
+        ]
+       },
+       {
+        "text": "I can see a street on a rainy day. A yellow bus is coming. Two people are waiting for the bus.",
+        "phrases": [
+         "I can see",
+         "on a rainy day"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "This picture was taken at a bus stop on a rainy day. On the left, a yellow bus is coming down the road. In the middle, a man is standing under the shelter and looking at his phone. On the right, a woman is holding a red umbrella.",
+        "phrases": [
+         "This picture was taken at",
+         "On the left",
+         "In the middle",
+         "On the right"
+        ]
+       },
+       {
+        "text": "This is a picture of a street. The weather looks bad because it is raining. Two people are waiting at a bus stop. The man is wearing a dark jacket, and the woman is wearing a yellow coat. A bus is arriving now.",
+        "phrases": [
+         "The weather looks",
+         "is wearing"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "This picture was taken at a bus stop on a rainy day. On the left side, a yellow city bus is approaching the stop. Under the shelter, a man in a navy jacket is checking his phone, maybe to see the bus schedule. Next to the shelter, a woman in a yellow coat is holding a bright red umbrella.",
+        "phrases": [
+         "is approaching",
+         "Under the shelter",
+         "maybe to"
+        ]
+       },
+       {
+        "text": "The first thing I see in this picture is a bus stop in the rain. A man is standing inside the shelter, and he is looking down at his phone. There is a bench and a timetable behind him. Outside the shelter, a woman is staying dry under a red umbrella. It seems like they are both waiting for the bus.",
+        "phrases": [
+         "The first thing I see",
+         "staying dry",
+         "It seems like"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "This picture shows a city street on a gray, rainy day. On the left, a yellow bus with the number 12 on its sign is pulling up to the stop. A man in a dark navy jacket is standing under the shelter, and he seems to be checking his phone, possibly to see when his bus arrives. Meanwhile, a woman in a yellow coat is waiting just outside the shelter, holding a red umbrella over her head.",
+        "phrases": [
+         "is pulling up to",
+         "seems to be",
+         "possibly to",
+         "Meanwhile"
+        ]
+       },
+       {
+        "text": "This is a rainy scene at a bus stop. What catches my eye first is the woman on the right, whose bright red umbrella really stands out against the gray sky. In the middle of the picture, a man is waiting under the shelter with his eyes on his phone. There's a bench and a timetable board behind him. Since a yellow bus is approaching from the left, I think they won't have to wait much longer.",
+        "phrases": [
+         "What catches my eye first is",
+         "stands out against",
+         "with his eyes on",
+         "Since ~ I think"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "날씨가 보이는 사진은 첫 문장에 넣어요(on a rainy day). 사람마다 옷 색깔이나 소지품을 하나씩 붙이면 묘사가 쉬워져요."
+    },
+    {
+     "num": 5,
+     "type": "respond_q",
+     "context": "Imagine that a research company is doing a telephone survey in your country. You have agreed to answer some questions about smartphones and mobile apps.",
+     "question": "How many hours a day do you use your smartphone, and what do you mostly use it for?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I use my smartphone about four hours a day. I mostly watch videos."
+       },
+       {
+        "text": "I use it for about three hours a day. I usually send messages to my friends."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I use my smartphone for about five hours a day. I mostly use it to watch videos and check the news on the subway."
+       },
+       {
+        "text": "I think I use my phone for about three hours a day. I mainly use it for messaging and listening to music."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I use my smartphone for about four hours a day. Most of the time, I use it to check my email and messages, but I also watch videos before bed.",
+        "phrases": [
+         "Most of the time",
+         "but I also"
+        ]
+       },
+       {
+        "text": "Honestly, I probably use my phone for more than five hours a day. I mostly use it for social media and online banking, especially during my commute.",
+        "phrases": [
+         "Honestly",
+         "especially"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "To be honest, I use my smartphone for around six hours a day, which is probably too much. I mostly use it for work emails during the day, and in the evening I watch short videos to relax.",
+        "phrases": [
+         "To be honest",
+         "which is probably too much"
+        ]
+       },
+       {
+        "text": "I'd say I spend about three hours a day on my smartphone. Most of that time goes to reading news articles and listening to podcasts on my way to work, since my commute takes almost an hour.",
+        "phrases": [
+         "I'd say",
+         "Most of that time goes to",
+         "since"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "시간과 용도, 질문이 두 개예요. 숫자로 먼저 답하고, 용도는 하나만 구체적으로 말해도 충분해요."
+    },
+    {
+     "num": 6,
+     "type": "respond_q",
+     "question": "When was the last time you downloaded a new app, and what kind of app was it?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I downloaded a new app last week. It was a weather app."
+       },
+       {
+        "text": "The last time was two days ago. I downloaded a game app."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "The last time I downloaded a new app was last month. It was a language learning app, because I want to study Japanese."
+       },
+       {
+        "text": "I downloaded a new app three days ago. It was a map app, and I use it to find bus times."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "The last time I downloaded a new app was about a week ago. It was a budgeting app that tracks my spending, and I've been checking it every day since then.",
+        "phrases": [
+         "The last time I ~ was",
+         "I've been ~ since then"
+        ]
+       },
+       {
+        "text": "I downloaded a new app yesterday, actually. It was a photo editing app, because I wanted to make my vacation pictures look a little better.",
+        "phrases": [
+         "actually"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "The last time was just last weekend. My company started using a new messaging app for team communication, so I had to download it. It took a while to get used to, but now I find it really convenient.",
+        "phrases": [
+         "It took a while to get used to",
+         "I find it"
+        ]
+       },
+       {
+        "text": "I think it was about two weeks ago. I downloaded a note-taking app because a coworker recommended it, and it's been surprisingly useful. It even syncs my notes between my phone and my laptop automatically.",
+        "phrases": [
+         "it's been surprisingly useful",
+         "It even"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "언제, 어떤 앱인지 두 가지를 답해요. 지난 일이라 downloaded, was처럼 과거형을 지켜요."
+    },
+    {
+     "num": 7,
+     "type": "respond_q",
+     "question": "Would you prefer to use a free app with advertisements or pay for the same app without any ads? Why?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I prefer a free app with ads. First, I don't want to spend money. Second, the ads are short, so they are okay.",
+        "phrases": [
+         "First",
+         "Second"
+        ]
+       },
+       {
+        "text": "I prefer to pay for the app. Ads are very annoying. Also, I use the app every day, so paying is better.",
+        "phrases": [
+         "Also"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I would prefer to pay for the app without ads. First, ads are really annoying when I am busy. Second, I use some apps every day, so a few dollars is not expensive for me. So I think paying is a better choice.",
+        "phrases": [
+         "First",
+         "Second",
+         "So I think"
+        ]
+       },
+       {
+        "text": "I prefer to use a free app with ads. The main reason is money. I use many different apps, so paying for all of them is too expensive. Also, I can just skip most ads after a few seconds.",
+        "phrases": [
+         "The main reason is",
+         "Also"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I would prefer to pay for an app without any ads. The main reason is that ads interrupt what I'm doing. For example, when I'm studying with a vocabulary app, a long video ad sometimes pops up and I lose my focus. Paying a few dollars is worth it if I can use the app comfortably. That's why I'd choose the paid version.",
+        "phrases": [
+         "The main reason is that",
+         "For example",
+         "is worth it",
+         "That's why"
+        ]
+       },
+       {
+        "text": "Personally, I prefer free apps with advertisements. First of all, I'm a student, so I need to save money wherever I can. Also, I usually try an app for a few weeks and then stop using it, so paying for it would be a waste. Watching a few ads is a small price to pay.",
+        "phrases": [
+         "First of all",
+         "would be a waste",
+         "a small price to pay"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Honestly, I'd much rather pay for the version without ads. The biggest reason is that I value my time. For instance, I use a navigation app almost every day, and when an ad pops up while I'm trying to find my way, it's not just annoying but actually distracting. A few dollars a month is a small cost compared to the stress it saves me, so I'm happy to pay for apps I use regularly.",
+        "phrases": [
+         "I'd much rather",
+         "not just ~ but",
+         "compared to"
+        ]
+       },
+       {
+        "text": "It really depends on the app, but in general I'd go with the free version. Most of the apps on my phone are ones I only open once or twice a week, so the ads don't bother me that much. If I paid for every single app, those small charges would add up quickly. However, if I started using an app every day, I'd probably upgrade to the paid version.",
+        "phrases": [
+         "It really depends on",
+         "would add up",
+         "However",
+         "if I"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "둘 중 하나를 고르는 질문이에요. 첫 문장에서 고르고, 이유 하나에 내 경험을 붙이면 30초가 채워져요."
+    },
+    {
+     "num": 8,
+     "type": "info_based",
+     "caller_intro": "Hi, this is Mark from the marketing team. I'm helping with the interviews tomorrow, but I don't have the schedule with me. Could you answer a few questions?",
+     "info": {
+      "title": "Brightline Media — Interview Schedule",
+      "subtitle": "April 8 · Room 302, Main Office · Interviewer: Karen Lee (HR Manager)",
+      "rows": [
+       [
+        "9:00 – 9:45 a.m.",
+        "Daniel Park",
+        "Graphic Designer"
+       ],
+       [
+        "10:00 – 10:45 a.m.",
+        "Emily Watson",
+        "Marketing Assistant"
+       ],
+       [
+        "11:00 – 11:45 a.m.",
+        "Jason Moore",
+        "Graphic Designer — CANCELED"
+       ],
+       [
+        "12:00 – 1:00 p.m.",
+        "Lunch break",
+        ""
+       ],
+       [
+        "1:00 – 1:45 p.m.",
+        "Sophia Reyes",
+        "Accountant"
+       ],
+       [
+        "2:00 – 2:45 p.m.",
+        "Kevin Hughes",
+        "Marketing Assistant"
+       ],
+       [
+        "3:00 – 3:45 p.m.",
+        "Olivia Grant",
+        "Graphic Designer (moved from April 6)"
+       ]
+      ]
+     },
+     "question": "What time is the first interview, and who is it with?",
+     "model": {
+      "lv5": [
+       {
+        "text": "The first interview is at 9 a.m. It is with Daniel Park."
+       },
+       {
+        "text": "It starts at 9 o'clock. Daniel Park is the first person."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "The first interview starts at 9 a.m. It is with Daniel Park, and he is applying for the graphic designer job."
+       },
+       {
+        "text": "Sure. The first interview is at 9 o'clock in Room 302. It is with Daniel Park for the graphic designer position."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Sure. The first interview begins at 9 a.m. in Room 302. You'll be meeting Daniel Park, who is applying for the graphic designer position.",
+        "phrases": [
+         "You'll be meeting",
+         "who is applying for"
+        ]
+       },
+       {
+        "text": "Let me check. The first interview is scheduled for 9 a.m., and it's with Daniel Park. He's a candidate for the graphic designer position, and it lasts 45 minutes.",
+        "phrases": [
+         "Let me check",
+         "is scheduled for"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Sure, no problem. The first interview is scheduled for 9 a.m. in Room 302 at the main office. It's with Daniel Park, who's applying for the graphic designer position, so you might want to look at his portfolio beforehand.",
+        "phrases": [
+         "is scheduled for",
+         "you might want to"
+        ]
+       },
+       {
+        "text": "Of course. The day starts with Daniel Park at 9 a.m. He's interviewing for the graphic designer position, and his interview runs until 9:45, so there's a short break before the next one at 10.",
+        "phrases": [
+         "The day starts with",
+         "runs until"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "자료 맨 위 줄과 첫 행만 보면 답할 수 있어요. 시간 → 이름 → 지원 직무 순서로 말해요."
+    },
+    {
+     "num": 9,
+     "type": "info_based",
+     "question": "I heard Jason Moore is coming in at 11 for the graphic designer position. Is that right?",
+     "model": {
+      "lv5": [
+       {
+        "text": "Sorry, that is not right. Jason Moore's interview was canceled."
+       },
+       {
+        "text": "No, he is not coming. His 11 o'clock interview is canceled."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I'm sorry, but that's not right. Jason Moore's interview at 11 a.m. was canceled, so you have free time then."
+       },
+       {
+        "text": "Actually, no. Jason Moore was on the schedule for 11, but his interview was canceled. Nobody is coming at that time.",
+        "phrases": [
+         "Actually",
+         "no."
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I'm afraid that's not correct. Jason Moore was scheduled for 11 a.m., but his interview has been canceled. So there's no interview between 11 and lunch.",
+        "phrases": [
+         "I'm afraid that's not correct",
+         "has been canceled"
+        ]
+       },
+       {
+        "text": "Actually, there's been a change. Jason Moore canceled his 11 o'clock interview, so he won't be coming in. You'll have a break until lunch at noon.",
+        "phrases": [
+         "there's been a change"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "I'm afraid that information is out of date. Jason Moore was originally scheduled for 11 a.m., but his interview has been canceled. That means you'll have a free slot from 11 until the lunch break at noon.",
+        "phrases": [
+         "is out of date",
+         "was originally scheduled for",
+         "That means"
+        ]
+       },
+       {
+        "text": "Actually, that's no longer the case. Jason Moore's 11 o'clock interview for the graphic designer position was canceled, so he won't be coming in tomorrow. You can use that time to review the other candidates' applications.",
+        "phrases": [
+         "that's no longer the case"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "잘못 알고 있는 정보를 바로잡는 문제예요. \"I'm afraid…\"로 먼저 아니라고 말하고, 취소됐다는 사실을 알려 줘요."
+    },
+    {
+     "num": 10,
+     "type": "info_based",
+     "question": "Could you tell me about all the interviews for the graphic designer position?",
+     "model": {
+      "lv5": [
+       {
+        "text": "There are two interviews for the graphic designer job. Daniel Park is at 9 a.m. Olivia Grant is at 3 p.m."
+       },
+       {
+        "text": "First, Daniel Park is at 9 o'clock. Jason Moore was at 11, but it is canceled. Last, Olivia Grant is at 3.",
+        "phrases": [
+         "First",
+         "Last"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "Sure. There are two interviews for the graphic designer position. First, Daniel Park has an interview from 9 to 9:45 a.m. Then, Olivia Grant has an interview from 3 to 3:45 p.m. Jason Moore's interview was canceled.",
+        "phrases": [
+         "First",
+         "Then"
+        ]
+       },
+       {
+        "text": "Of course. The first one is with Daniel Park at 9 a.m. There was another one with Jason Moore at 11, but he canceled. The last one is with Olivia Grant at 3 p.m.",
+        "phrases": [
+         "The first one is",
+         "The last one is"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Sure. Two candidates are being interviewed for the graphic designer position. The first is Daniel Park, from 9 to 9:45 in the morning. The second is Olivia Grant, from 3 to 3:45 in the afternoon. Her interview was moved from April 6. Jason Moore was also scheduled, but he canceled.",
+        "phrases": [
+         "are being interviewed",
+         "The first is",
+         "The second is"
+        ]
+       },
+       {
+        "text": "Let me see. For the graphic designer position, you'll meet Daniel Park first at 9 a.m. Jason Moore was supposed to come at 11, but his interview was canceled. Finally, Olivia Grant will come in at 3 p.m. Her interview was originally on April 6, but it was rescheduled.",
+        "phrases": [
+         "was supposed to",
+         "Finally",
+         "was rescheduled"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Sure. Three interviews were originally planned for the graphic designer position, but now there are only two. The first one is with Daniel Park from 9 to 9:45 in the morning. Jason Moore was supposed to come in at 11, but he canceled. The last one is with Olivia Grant from 3 to 3:45 p.m. Her interview was moved here from April 6, so she'll be the final candidate of the day.",
+        "phrases": [
+         "were originally planned",
+         "but now there are only",
+         "was moved here from"
+        ]
+       },
+       {
+        "text": "Of course. You'll be seeing two graphic designer candidates tomorrow. Daniel Park is first, from 9 to 9:45 a.m., right at the start of the day. Then in the afternoon, Olivia Grant comes in from 3 to 3:45. Her interview was originally set for April 6, but it was rescheduled. There was also a third candidate, Jason Moore, but he canceled his 11 o'clock slot.",
+        "phrases": [
+         "right at the start of the day",
+         "was originally set for",
+         "There was also"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "같은 직무 지원자를 시간 순서로 모아 말해요. 취소나 일정 변경 같은 특이 사항도 빠뜨리지 말아요."
+    },
+    {
+     "num": 11,
+     "type": "opinion",
+     "question": "Which do you think is better for completing team projects: working together in the same office, or working remotely from home? Use specific reasons and examples to support your opinion.",
+     "model": {
+      "lv5": [
+       {
+        "text": "I think working together in the office is better. I have two reasons. First, we can talk face to face. It is fast and easy. Second, we can solve problems together. For example, in my team, we had a problem last month. We met in a meeting room and fixed it in one hour. So I prefer the office.",
+        "phrases": [
+         "I have two reasons",
+         "First",
+         "Second",
+         "For example"
+        ]
+       },
+       {
+        "text": "I think working remotely is better for team projects. First, I can save time. I don't need to take the bus to work. Second, I can focus at home. The office is noisy. For example, my friend works at home. She says she finishes her work faster. So I like working remotely.",
+        "phrases": [
+         "First",
+         "Second",
+         "For example"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I think working together in the office is better for team projects. There are two reasons. First, communication is much faster. If I have a question, I can just walk to my coworker's desk and ask. Online, I have to wait for an answer. Second, it is easier to build a good relationship with team members. For example, last year my team worked on a big project in the office. We had lunch together every day, and we became close. Because of that, we worked well as a team. For these reasons, I prefer the office.",
+        "phrases": [
+         "There are two reasons",
+         "Because of that",
+         "For these reasons"
+        ]
+       },
+       {
+        "text": "In my opinion, working remotely is better for team projects. I have two reasons. First, people can work at their best time. Some people focus better in the morning, and some people focus better at night. Second, we don't waste time on long meetings. For example, my team uses an online chat and a shared document. We write our ideas there, so we only meet once a week for thirty minutes. This saves a lot of time. So I think working remotely is better.",
+        "phrases": [
+         "In my opinion",
+         "Some people ~ and some people",
+         "This saves"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I believe working together in the same office is better for team projects. I have two main reasons. First, it's much easier to share ideas when everyone is in the same room. In a face-to-face meeting, people can react right away, and one idea often leads to another. Second, problems can be solved more quickly. For example, when I was working on a product launch last year, our designer noticed a mistake in the plan. Because we were sitting next to each other, we fixed it in ten minutes. If we had been working from home, it probably would have taken a whole day of emails. For these reasons, I think the office is the better choice for team projects.",
+        "phrases": [
+         "I have two main reasons",
+         "one idea often leads to another",
+         "Because we were"
+        ]
+       },
+       {
+        "text": "In my opinion, working remotely is better for team projects. First of all, it gives team members more time to focus. In an office, people are often interrupted by phone calls and small talk. At home, it's quieter, so they can finish their part of the project faster. Second, remote work makes it easier to work with people in different places. For example, last semester I did a group project with classmates who lived in three different cities. We used video calls and a shared online folder, and we finished the project a week early. Without remote tools, that would have been impossible. Therefore, I think working remotely is the better option.",
+        "phrases": [
+         "First of all",
+         "makes it easier to",
+         "Without ~ that would have been",
+         "Therefore"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Personally, I think working together in the same office is better for team projects, even though remote work has become very common. The main reason is that teamwork depends on trust, and trust is much easier to build in person. When you see your coworkers every day, you notice when someone is struggling, and you can offer help before a small problem becomes a big one. I learned this from experience. At my previous job, our team was fully remote for about a year, and although everyone was working hard, we kept missing small details because nobody wanted to bother each other with questions. After we moved back to the office, those misunderstandings almost disappeared, and our projects started finishing on schedule. So overall, I believe sharing the same space makes a team work more smoothly.",
+        "phrases": [
+         "even though",
+         "The main reason is that",
+         "I learned this from experience",
+         "So overall"
+        ]
+       },
+       {
+        "text": "I'd argue that working remotely is actually better for team projects, as long as the team has clear rules. The biggest advantage is flexibility. When people can choose where and when they work, they tend to be more productive and less stressed. For example, my current team is spread across two different cities, and we work almost entirely online. At first, I was worried that communication would suffer, but we set up a simple system: a short video call every morning, and everything else goes into a shared project board. Because every decision is written down, nobody misses important information, and new members can catch up quickly. Honestly, our projects run more smoothly now than when we all shared an office. So I'd say remote work is the better choice.",
+        "phrases": [
+         "I'd argue that",
+         "as long as",
+         "The biggest advantage is",
+         "At first ~ but"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "사무실과 재택 중 한쪽을 분명히 고르고, 팀 프로젝트에서 겪은 일을 예시로 들면 60초가 자연스럽게 채워져요."
+    }
+   ]
+  },
+  {
+   "id": "toeic-set03",
+   "title_ko": "모의고사 3",
+   "status": "ready",
+   "items": [
+    {
+     "num": 1,
+     "type": "read_aloud",
+     "text": "Attention, passengers on Flight 482 to Lisbon. Due to a mechanical inspection, this flight has been delayed by about forty minutes. The new boarding time is ten fifteen, and the flight will now depart from Gate 21 instead of Gate 17. Please keep your boarding pass, passport, and carry-on bags ready. We apologize for the inconvenience and thank you for your patience.",
+     "marks": "Attention, / passengers on Flight four eighty-**two** / to **Lis**bon. // Due to a mechanical in**spec**tion, / this flight has been de**layed** / by about forty **min**utes. // The new boarding time / is ten fif**teen**, / and the flight will now depart / from Gate twenty-**one** / instead of Gate seven**teen**. // Please keep your boarding **pass**, ↗ / **pass**port, ↗ / and carry-on **bags** ↘ / ready. // We apologize for the incon**ven**ience / and thank you for your **pa**tience.",
+     "tip_ko": "편명·시간·게이트 번호가 핵심 정보예요. 숫자는 한 덩어리로 또박또박 읽고, 바뀐 게이트(21)를 조금 힘주어 말해요."
+    },
+    {
+     "num": 2,
+     "type": "read_aloud",
+     "text": "Good evening, and welcome to City Talk. I'm your host, Laura Bennett. On tonight's show, we'll meet a young chef who opened a restaurant at the age of twenty-two, a local musician who teaches free guitar lessons, and a scientist who studies the birds in our city parks. Later, we'll answer your questions about this weekend's weather. Stay with us!",
+     "marks": "Good **eve**ning, / and welcome to City **Talk**. // I'm your **host**, / Laura **Ben**nett. // On tonight's **show**, / we'll meet a young **chef** / who opened a restaurant / at the age of twenty-**two**, ↗ / a local mu**si**cian / who teaches free guitar **les**sons, ↗ / and a **sci**entist / who studies the birds / in our city **parks**. ↘ // **La**ter, / we'll answer your questions / about this weekend's **wea**ther. // Stay with **us**!",
+     "tip_ko": "손님 세 명을 소개하는 나열이에요. 사람마다 설명이 길어서, 사람 단위로 끊고 앞 두 명은 올려 읽고 마지막은 내려 읽어요."
+    },
+    {
+     "num": 3,
+     "type": "describe_photo",
+     "image": "img/toeic/set03_q3.svg",
+     "credit": "placeholder-set03-q3",
+     "model": {
+      "lv5": [
+       {
+        "text": "This is a picture of a café. A man is making coffee. A woman is paying with a card. There is a menu on the wall.",
+        "phrases": [
+         "This is a picture of",
+         "There is"
+        ]
+       },
+       {
+        "text": "This picture shows a coffee shop. On the left, a man is working at a coffee machine. On the right, a woman is buying something.",
+        "phrases": [
+         "This picture shows",
+         "On the left",
+         "On the right"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "This picture was taken in a café. On the left, a man in a black apron is making coffee with a machine. In the middle, there are some pastries in a glass case. On the right, a woman is paying with a card.",
+        "phrases": [
+         "This picture was taken in",
+         "On the left",
+         "In the middle",
+         "On the right"
+        ]
+       },
+       {
+        "text": "This is a picture of a small coffee shop. A barista is standing behind the counter and using an espresso machine. A woman in a blue top is paying at the counter. Above them, there is a menu board.",
+        "phrases": [
+         "This is a picture of",
+         "standing behind",
+         "Above them"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "This picture was taken at the counter of a small café. On the left, a barista wearing a green headband is making coffee at an espresso machine. In front of him, there's a glass case full of pastries. On the right, a woman with a purple bag is paying with her card. It seems like she just ordered a drink.",
+        "phrases": [
+         "wearing",
+         "In front of him",
+         "It seems like"
+        ]
+       },
+       {
+        "text": "The first thing I see is a café counter with a big menu board on the wall. A barista in a white shirt and a black apron is busy preparing a drink. Next to the machine, some pastries are displayed in a glass case. A customer is tapping her card on the card reader to pay.",
+        "phrases": [
+         "The first thing I see is",
+         "busy preparing",
+         "Next to"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "This picture shows a cozy café, probably during a quiet moment of the day. On the left, a barista in a green headband and a black apron is preparing a drink at a silver espresso machine. Right next to him, there's a glass display case filled with pastries. On the other side of the counter, a woman with reddish-brown hair is paying by card, so I guess she's waiting for her order.",
+        "phrases": [
+         "This picture shows",
+         "probably",
+         "Right next to him",
+         "On the other side of",
+         "so I guess"
+        ]
+       },
+       {
+        "text": "What stands out in this picture is a café counter under a large chalkboard menu. Behind the counter, a barista is focused on making coffee with an espresso machine, while a customer in a blue top is paying for her order with a card. There are a few pastries in a display case between them, and two lamps hanging from the ceiling give the place a warm feeling.",
+        "phrases": [
+         "What stands out in this picture is",
+         "is focused on",
+         "while",
+         "give the place a ~ feeling"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "사람이 둘이면 왼쪽 인물 → 가운데 사물 → 오른쪽 인물 순서로 옮겨 가요. 옷차림이나 소지품을 붙이면 문장이 자연스럽게 길어져요."
+    },
+    {
+     "num": 4,
+     "type": "describe_photo",
+     "image": "img/toeic/set03_q4.svg",
+     "credit": "placeholder-set03-q4",
+     "model": {
+      "lv5": [
+       {
+        "text": "This is a picture of a park. A woman is walking a dog. A man is running. Two people are sitting on a bench.",
+        "phrases": [
+         "This is a picture of"
+        ]
+       },
+       {
+        "text": "This picture was taken in a park. It is sunny. A man in a red shirt is jogging. There is a pond on the right.",
+        "phrases": [
+         "This picture was taken in",
+         "There is"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "This picture was taken in a park on a sunny day. On the left, a woman in a yellow coat is walking her dog. In the middle, a man is jogging. On the right, two older people are sitting on a bench.",
+        "phrases": [
+         "On the left",
+         "In the middle",
+         "On the right"
+        ]
+       },
+       {
+        "text": "This is a picture of a big park with many trees. A man in a red shirt is jogging on the path. Behind him, there is a pond with some birds. Two people are resting on a bench next to the pond. It looks peaceful.",
+        "phrases": [
+         "Behind him",
+         "next to",
+         "It looks"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "This picture was taken in a park on a bright, sunny day. On the left side, a woman wearing a yellow coat is walking a small brown dog on a leash. In the center, a man in a red shirt is jogging along the path. On the right, an older couple is sitting on a bench by a pond.",
+        "phrases": [
+         "On the left side",
+         "wearing",
+         "In the center",
+         "by a pond"
+        ]
+       },
+       {
+        "text": "The first thing I notice is a man in a red shirt who is jogging through the park. Not far from him, a woman is taking her dog for a walk. Two people with gray hair are relaxing on a wooden bench next to a pond. It seems like a perfect day to be outside.",
+        "phrases": [
+         "The first thing I notice is",
+         "Not far from him",
+         "It seems like"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "This is a scene from a city park on a clear, sunny day. On the left, a woman in a yellow coat is walking her brown dog along a dirt path. In the middle, a man wearing a white headband is jogging, and he looks pretty focused. On the right, an older couple is sitting on a wooden bench next to a pond with a few white ducks. Overall, everyone seems to be enjoying the nice weather.",
+        "phrases": [
+         "This is a scene from",
+         "he looks",
+         "Overall",
+         "seems to be enjoying"
+        ]
+       },
+       {
+        "text": "This picture captures a typical afternoon in a park. A jogger in a red shirt and a white headband is running across the center of the picture, while a woman behind him is walking a small dog on a red leash. Over by the pond, two older people are sitting together on a bench, and one of them is holding something white. With all the green trees, it looks really relaxing.",
+        "phrases": [
+         "This picture captures",
+         "while",
+         "Over by",
+         "With all the ~",
+         "it looks"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "사람이 셋 이상이면 다 자세히 말하려고 하지 말고, 가장 눈에 띄는 인물 하나를 길게, 나머지는 한 문장씩 말해요."
+    },
+    {
+     "num": 5,
+     "type": "respond_q",
+     "context": "Imagine that a marketing firm is doing research in your country. You have agreed to take part in a telephone interview about eating out at restaurants.",
+     "question": "How often do you eat at a restaurant, and who do you usually go with?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I eat at a restaurant once a week. I usually go with my family."
+       },
+       {
+        "text": "I go to a restaurant about twice a month. I usually go with my friends."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I eat at a restaurant about once a week. I usually go with my parents on Saturday evening."
+       },
+       {
+        "text": "I go out to eat two or three times a month. I usually go with my coworkers after work on Friday."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I eat out at a restaurant about twice a week. I usually go with my coworkers for lunch, because there's no cafeteria in our building."
+       },
+       {
+        "text": "I probably eat at a restaurant once or twice a week. Most of the time, I go with my best friend, and we like to try new places on weekends."
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Honestly, I eat out pretty often, maybe three or four times a week. On weekdays, I usually grab lunch with my coworkers near the office, and on weekends, I go to a nice restaurant with my family."
+       },
+       {
+        "text": "I'd say I eat at a restaurant about twice a week. I usually go with my roommate, since neither of us really enjoys cooking after a long day, and there are lots of good places in our neighborhood."
+       }
+      ]
+     },
+     "tip_ko": "얼마나 자주, 누구와 가는지 두 가지를 모두 답해요. 15초라 숫자 하나, 사람 하나를 말하고 이유를 짧게 붙이면 충분해요."
+    },
+    {
+     "num": 6,
+     "type": "respond_q",
+     "question": "When you choose a restaurant, what is the most important thing you consider?",
+     "model": {
+      "lv5": [
+       {
+        "text": "The most important thing is the price. I don't want to spend too much money."
+       },
+       {
+        "text": "I think the taste is the most important. I like delicious food."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "The most important thing for me is the price. I'm a student, so I look for restaurants with cheap but good food."
+       },
+       {
+        "text": "When I choose a restaurant, I think about the location. I like places that are close to my home or office."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "When I choose a restaurant, the most important thing is the reviews. I always check what other people say online, because good reviews usually mean good food."
+       },
+       {
+        "text": "For me, the most important thing is the atmosphere. If a restaurant is too noisy or crowded, I can't really enjoy my meal or talk with my friends."
+       }
+      ],
+      "lv8": [
+       {
+        "text": "I'd say the most important thing is the quality of the food. I don't mind paying a little more or waiting in line if the ingredients are fresh and the dishes taste great. A bad meal ruins the whole experience for me."
+       },
+       {
+        "text": "For me, it's definitely the location. I usually eat out with coworkers during a short lunch break, so the restaurant has to be within walking distance of our office. Otherwise, we spend most of our break just getting there."
+       }
+      ]
+     },
+     "tip_ko": "기준을 하나만 골라요(가격, 맛, 위치, 분위기). \"The most important thing is ~\"로 시작하고 이유 한 문장을 붙여요."
+    },
+    {
+     "num": 7,
+     "type": "respond_q",
+     "question": "Would you rather eat at a new restaurant you have never tried or at a restaurant you already know well? Why?",
+     "model": {
+      "lv5": [
+       {
+        "text": "I prefer a restaurant I know well. First, I know the food is good. Second, I know the price, so I feel comfortable.",
+        "phrases": [
+         "First",
+         "Second"
+        ]
+       },
+       {
+        "text": "I would rather try a new restaurant. I like new food. Also, I can share pictures with my friends. It is fun.",
+        "phrases": [
+         "I would rather",
+         "Also"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I would rather eat at a restaurant I already know well. First, I know the food is delicious, so I don't worry about the menu. Second, the staff know me, so the service is very friendly. That's why I prefer a familiar place.",
+        "phrases": [
+         "I would rather",
+         "First",
+         "Second",
+         "That's why"
+        ]
+       },
+       {
+        "text": "I prefer to try a new restaurant. First, I like trying different kinds of food from other countries. Second, it's a good way to make special memories with my friends. So I usually look for new places on weekends.",
+        "phrases": [
+         "I prefer to",
+         "First",
+         "Second",
+         "So"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I'd rather go to a new restaurant that I've never tried. The main reason is that I get bored easily, so trying new dishes is part of the fun of eating out. For example, last month my friends and I found a small Vietnamese place near our school, and now it's one of our favorites.",
+        "phrases": [
+         "I'd rather",
+         "The main reason is that",
+         "For example"
+        ]
+       },
+       {
+        "text": "I would choose a restaurant I already know well. When I eat out, I don't want to take any risks. If I go to a new place, the food might be disappointing or more expensive than I expected. At my favorite restaurant, I always know exactly what I'm getting, so I can just relax.",
+        "phrases": [
+         "I would choose",
+         "If ~",
+         "At my favorite restaurant"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Personally, I'd much rather go to a restaurant I already know well, especially when I'm with my family. My parents are pretty picky about food, so trying a new place is always a little risky. At our usual Korean barbecue restaurant, we know the menu, the prices, and even the owner, so everyone feels comfortable and we never end up disappointed.",
+        "phrases": [
+         "I'd much rather",
+         "especially when",
+         "so ~ is always a little risky",
+         "end up"
+        ]
+       },
+       {
+        "text": "I'd definitely choose a new restaurant. For me, eating out isn't just about the food; it's also about having a new experience. For instance, a few weeks ago I tried a small Mexican restaurant that had just opened in my neighborhood, and it turned out to be amazing. If I always went to the same places, I'd never discover spots like that.",
+        "phrases": [
+         "I'd definitely choose",
+         "isn't just about ~; it's also about",
+         "For instance",
+         "turned out to be"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "7번은 둘 중 하나를 고르는 질문이에요. 첫 문장에서 분명히 고르고, 이유 두 개나 이유 하나 + 짧은 경험으로 30초를 채워요."
+    },
+    {
+     "num": 8,
+     "type": "info_based",
+     "caller_intro": "Hi, this is Daniel Park. I'm leaving for my business trip to Toronto soon, but I can't find my itinerary. Could you answer a few questions for me?",
+     "info": {
+      "title": "Business Trip Itinerary — Daniel Park",
+      "subtitle": "Sales Department · Toronto · April 8–10",
+      "rows": [
+       [
+        "Apr 8, 8:15 a.m.",
+        "Flight 207 departs Seattle (arrives Toronto 3:40 p.m.)"
+       ],
+       [
+        "Apr 8, 5:00 p.m.",
+        "Check in: Lakeview Hotel (2 nights)"
+       ],
+       [
+        "Apr 9, 9:30 a.m.",
+        "Meeting with Harbor Supplies — Conference Room A"
+       ],
+       [
+        "Apr 9, 12:30 p.m.",
+        "Lunch with regional sales managers"
+       ],
+       [
+        "Apr 9, 3:00 p.m.",
+        "Factory tour — Westside Plant"
+       ],
+       [
+        "Apr 10, 10:00 a.m.",
+        "Product presentation — Toronto office"
+       ],
+       [
+        "Apr 10, 4:20 p.m.",
+        "Flight 318 departs Toronto (arrives Seattle 6:55 p.m.)"
+       ]
+      ]
+     },
+     "question": "What time does my flight leave on April 8, and when does it arrive in Toronto?",
+     "model": {
+      "lv5": [
+       {
+        "text": "Your flight leaves at 8:15 a.m. on April 8. It arrives in Toronto at 3:40 p.m."
+       },
+       {
+        "text": "Flight 207 leaves Seattle at 8:15 in the morning. You arrive at 3:40 p.m."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "Your flight, Flight 207, leaves Seattle at 8:15 a.m. on April 8. It arrives in Toronto at 3:40 in the afternoon."
+       },
+       {
+        "text": "On April 8, your flight departs at 8:15 in the morning, and you will arrive in Toronto at 3:40 p.m."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Sure. You're on Flight 207, which leaves Seattle at 8:15 a.m. on April 8. It arrives in Toronto at 3:40 p.m., so you'll have time to check in."
+       },
+       {
+        "text": "Of course. Your flight departs from Seattle at 8:15 in the morning on April 8, and it's scheduled to arrive in Toronto at 3:40 in the afternoon."
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Sure, I can help with that. You're booked on Flight 207, which departs from Seattle at 8:15 a.m. on April 8. It's scheduled to land in Toronto at 3:40 p.m., so you'll have plenty of time before hotel check-in."
+       },
+       {
+        "text": "Of course. Your flight on April 8 is Flight 207. It leaves Seattle at 8:15 in the morning and arrives in Toronto at 3:40 in the afternoon. After that, you can head straight to your hotel."
+       }
+      ]
+     },
+     "tip_ko": "출발과 도착, 두 가지를 묻고 있어요. 자료 첫 줄에서 시간 두 개를 정확히 읽어 주면 돼요."
+    },
+    {
+     "num": 9,
+     "type": "info_based",
+     "question": "I believe I'm staying at the hotel for three nights. Is that correct?",
+     "model": {
+      "lv5": [
+       {
+        "text": "No, you are staying for two nights. You check in on April 8."
+       },
+       {
+        "text": "Sorry, that's not right. You stay at the Lakeview Hotel for two nights."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I'm sorry, but that's not correct. You are staying at the Lakeview Hotel for two nights, from April 8 to April 10."
+       },
+       {
+        "text": "Actually, no. You check in at the Lakeview Hotel on April 8 at 5 p.m., and you stay there for two nights."
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Actually, that's not quite right. You'll be staying at the Lakeview Hotel for only two nights. You check in on April 8, and you fly back on April 10."
+       },
+       {
+        "text": "I'm afraid there's a mistake. Your reservation at the Lakeview Hotel is for two nights, not three. Check-in is at 5 p.m. on April 8.",
+        "phrases": [
+         "I'm afraid there's a mistake"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "I'm afraid that's not quite right. You're booked at the Lakeview Hotel for two nights, not three. You check in at 5 p.m. on April 8, and your return flight leaves on the afternoon of April 10.",
+        "phrases": [
+         "I'm afraid that's not quite right"
+        ]
+       },
+       {
+        "text": "Actually, it's only two nights. You'll check in at the Lakeview Hotel at 5 p.m. on April 8 and check out on April 10, since your flight back to Seattle leaves at 4:20 that afternoon."
+       }
+      ]
+     },
+     "tip_ko": "9번은 틀린 정보를 바로잡는 문제예요. \"Actually, no\" 같은 말로 먼저 아니라고 하고, 맞는 숫자(two nights)를 알려 줘요."
+    },
+    {
+     "num": 10,
+     "type": "info_based",
+     "question": "Could you tell me everything I have scheduled on April 9?",
+     "model": {
+      "lv5": [
+       {
+        "text": "On April 9, you have three things. At 9:30, you have a meeting. At 12:30, you have lunch. At 3, you have a factory tour."
+       },
+       {
+        "text": "You have a meeting at 9:30 a.m. Then you have lunch with sales managers at 12:30. At 3 p.m., there is a factory tour."
+       }
+      ],
+      "lv6": [
+       {
+        "text": "Sure. On April 9, you have three things. First, at 9:30 a.m., you have a meeting with Harbor Supplies. Then, at 12:30, you have lunch with sales managers. Finally, at 3 p.m., there is a factory tour.",
+        "phrases": [
+         "First",
+         "Then",
+         "Finally"
+        ]
+       },
+       {
+        "text": "You are busy on April 9. In the morning, you meet Harbor Supplies at 9:30 in Conference Room A. You have lunch at 12:30. In the afternoon, you visit the Westside Plant at 3 p.m.",
+        "phrases": [
+         "In the morning",
+         "In the afternoon"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "Sure. You have a busy day on April 9. First, at 9:30 a.m., you'll have a meeting with Harbor Supplies in Conference Room A. After that, you'll have lunch with the regional sales managers at 12:30. Then, at 3 p.m., you'll take a tour of the Westside Plant.",
+        "phrases": [
+         "First",
+         "After that",
+         "Then"
+        ]
+       },
+       {
+        "text": "Of course. There are three items on April 9. Your day starts with a meeting with Harbor Supplies at 9:30 a.m. At 12:30, you're having lunch with the regional sales managers, and at 3 p.m., you'll visit the Westside Plant for a factory tour.",
+        "phrases": [
+         "Your day starts with"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Of course. April 9 is your busiest day. It starts at 9:30 a.m. with a meeting with Harbor Supplies in Conference Room A. After that, you'll have lunch with the regional sales managers at 12:30. Then, at 3 p.m., you'll head to the Westside Plant for a factory tour, so I'd recommend wearing comfortable shoes.",
+        "phrases": [
+         "It starts at ~ with",
+         "After that",
+         "head to",
+         "I'd recommend"
+        ]
+       },
+       {
+        "text": "Sure, there are three things on your schedule for April 9. In the morning, you have a 9:30 meeting with Harbor Supplies in Conference Room A. At 12:30, you'll join the regional sales managers for lunch. And finally, at 3 p.m., you're scheduled to tour the Westside Plant, so it'll be a full day.",
+        "phrases": [
+         "In the morning",
+         "join ~ for lunch",
+         "And finally",
+         "you're scheduled to"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "같은 날짜 줄을 모두 찾아 시간 순서대로 말해요. 시간 → 일정 → 장소 순서를 지키면 덜 헷갈려요."
+    },
+    {
+     "num": 11,
+     "type": "opinion",
+     "question": "Which is a better way to learn a new skill: watching online videos or taking an in-person class? Give specific reasons and examples to support your opinion.",
+     "model": {
+      "lv5": [
+       {
+        "text": "I think taking an in-person class is better. I have two reasons. First, I can ask the teacher questions. Second, I can meet other students. For example, I took a cooking class last year. The teacher helped me a lot. So I prefer in-person classes.",
+        "phrases": [
+         "I have two reasons",
+         "First",
+         "Second",
+         "For example"
+        ]
+       },
+       {
+        "text": "I think online videos are better. First, they are free. I don't need to pay money. Second, I can watch them anytime. For example, I learned to play the guitar with videos at night. It was easy. I watched them every day after dinner. So I like online videos.",
+        "phrases": [
+         "First",
+         "Second",
+         "For example"
+        ]
+       }
+      ],
+      "lv6": [
+       {
+        "text": "I think taking an in-person class is a better way to learn a new skill. There are two reasons. First, the teacher can check my mistakes right away. Second, I can stay motivated because I study with other people. I don't want to miss class. For example, last year I took a swimming class at a sports center. The coach fixed my arm movements every week, so I improved very quickly. These days, I swim twice a week. For these reasons, I prefer in-person classes.",
+        "phrases": [
+         "There are two reasons",
+         "For example",
+         "For these reasons"
+        ]
+       },
+       {
+        "text": "In my opinion, watching online videos is a better way to learn a new skill. First, there are many free videos, so it's cheaper than a class. Second, I can learn at my own speed. If I don't understand something, I can watch it again. I can also stop and practice. For example, I learned how to edit photos by watching videos after work. It saved me a lot of time and money. So I think online videos are better.",
+        "phrases": [
+         "In my opinion",
+         "at my own speed",
+         "For example"
+        ]
+       }
+      ],
+      "lv7": [
+       {
+        "text": "I believe taking an in-person class is a better way to learn a new skill. The biggest reason is that you can get feedback right away. When you watch a video, nobody tells you what you're doing wrong. For example, I tried to learn yoga from online videos last year, but I hurt my back because my posture was wrong. After I joined a class at a local studio, the instructor corrected my form, and I made much better progress. Also, studying with other people keeps me motivated, because I don't want to fall behind the others. Therefore, I strongly prefer in-person classes for learning new skills.",
+        "phrases": [
+         "The biggest reason is that",
+         "For example",
+         "After I",
+         "Also",
+         "Therefore"
+        ]
+       },
+       {
+        "text": "I think watching online videos is a better way to learn a new skill. First, it's much more flexible. I work full-time, so it's hard for me to attend a class at a fixed time every week. With videos, I can learn whenever I have free time, like late at night or on weekends. Second, there's a huge variety of content. For example, when I wanted to learn basic coding, I found dozens of tutorials for beginners, and I could choose the teacher I liked best. Thanks to those videos, I built my own simple website in two months. For these reasons, I prefer learning with online videos.",
+        "phrases": [
+         "it's much more flexible",
+         "With videos",
+         "a huge variety of",
+         "For these reasons"
+        ]
+       }
+      ],
+      "lv8": [
+       {
+        "text": "Personally, I think taking an in-person class is the better option, especially for skills that involve your body, like sports or cooking. The main reason is that a real teacher can notice small mistakes that you can't see yourself. I learned this when I started taking tennis lessons last spring. I had watched a lot of videos before that, but the coach pointed out in the very first lesson that I was holding the racket the wrong way. Fixing that one habit improved my game more than months of watching videos. On top of that, having a set schedule makes it much harder to give up. When I'm tired, I still go to my lesson because I've already paid for it and my coach is waiting. So overall, I'd recommend an in-person class to anyone who wants to learn a practical skill properly.",
+        "phrases": [
+         "the better option",
+         "especially for",
+         "I learned this when",
+         "On top of that",
+         "So overall"
+        ]
+       },
+       {
+        "text": "In my opinion, online videos are a better way to learn most new skills these days. The biggest advantage is that you can learn at your own pace. In a class, the teacher has to move at the speed of the whole group, but with a video, you can pause, rewind, and practice a difficult part as many times as you need. For instance, I taught myself how to use a spreadsheet program for work by watching short tutorials during my commute. Within a month, I was building reports that used to take my coworkers hours. It also saved me money, because I didn't have to pay for an expensive course. Of course, classes have their benefits, like meeting other learners, but for busy people, videos are simply more practical and much easier to fit into a daily routine.",
+        "phrases": [
+         "The biggest advantage is that",
+         "at your own pace",
+         "For instance",
+         "Of course ~ but"
+        ]
+       }
+      ]
+     },
+     "tip_ko": "첫 문장에서 한쪽을 분명히 고르고, 이유 하나에 직접 해 본 경험을 붙여요. 반대쪽 장점을 한 문장 인정하면 답이 더 설득력 있어 보여요."
     }
    ]
   }

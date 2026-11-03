@@ -1,7 +1,8 @@
 // 토익 모의테스트 끝까지 응시 확인 (가짜 마이크, 30배 빠르게).
 // 실행: python3 -m http.server 8765 -d app  →  node tests/e2e_toeic.js [스크린샷 폴더]
 const { chromium } = require('playwright');
-const SP = process.argv[2] || 'test-shots'; require('fs').mkdirSync(SP + '/shots', { recursive: true });
+const SP = process.argv[2] || 'test-shots';
+const SET = Number(process.env.SET || 0);   // 응시할 세트 순서(0부터) require('fs').mkdirSync(SP + '/shots', { recursive: true });
 (async () => {
   const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', '--autoplay-policy=no-user-gesture-required'] });
   const ctx = await browser.newContext({ permissions: ['microphone'], viewport: { width: 900, height: 900 } });
@@ -14,7 +15,7 @@ const SP = process.argv[2] || 'test-shots'; require('fs').mkdirSync(SP + '/shots
   await page.waitForSelector('#sets .btn');
   await page.selectOption('#target', 'lv7');
   await page.screenshot({ path: SP + '/shots/1_home.png' });
-  await page.click('#sets .btn');
+  await page.click(`#sets .btn >> nth=${SET}`);
   await page.click('#mic');
   await page.waitForSelector('#go:not([disabled])');
   await page.click('#go');
@@ -50,7 +51,7 @@ const SP = process.argv[2] || 'test-shots'; require('fs').mkdirSync(SP + '/shots
   await page.locator('.card[data-num="11"]').screenshot({ path: SP + '/shots/4_q11card.png' });
   // 이어하기: 새 응시를 Q3에서 그만두기
   await page.goto(base + '#/');
-  await page.click('#sets .btn'); await page.click('#mic');
+  await page.click(`#sets .btn >> nth=${SET}`); await page.click('#mic');
   await page.waitForSelector('#go:not([disabled])'); await page.click('#go');
   await page.waitForFunction(() => document.querySelector('#qno')?.textContent.includes('Question 3'), null, { timeout: 60000 });
   await page.click('#quit');
@@ -62,6 +63,7 @@ const SP = process.argv[2] || 'test-shots'; require('fs').mkdirSync(SP + '/shots
   const firstQ = await page.waitForFunction(() => document.querySelector('#qno')?.textContent, null, { timeout: 10000 });
   console.log('RESUME_FIRST', await firstQ.jsonValue());
   await page.waitForFunction(() => location.hash.startsWith('#/result/'), null, { timeout: 90000 });
+  await page.waitForFunction(() => document.querySelectorAll('.card').length === 11, null, { timeout: 10000 });
   console.log('RESUME_DONE', await page.evaluate(() => document.querySelectorAll('.card audio').length));
   // 휴대폰 폭
   await page.setViewportSize({ width: 375, height: 800 });
