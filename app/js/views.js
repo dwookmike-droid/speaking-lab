@@ -294,7 +294,7 @@ export async function result(data, attemptId) {
     card.className = 'card';
     card.dataset.num = item.num;
     card.innerHTML = `
-      <header><b>Q${item.num}</b> <span class="muted">${esc(TYPE_KO[item.type])}${item.topic?.title_ko ? ` · ${esc(item.topic.title_ko)}` : ''}</span></header>
+      <header><b>Q${item.num}</b> <span class="muted">${esc(TYPE_KO[item.type])}${item.topic?.title_ko && item.topic.title_ko !== TYPE_KO[item.type] ? ` · ${esc(item.topic.title_ko)}` : ''}</span></header>
       ${prompt}
       <h4>내 답변</h4>${audio}
       ${itemFeedback(data, attempt.feedback, item)}

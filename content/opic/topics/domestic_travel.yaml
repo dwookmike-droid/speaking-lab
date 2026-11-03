@@ -1,0 +1,447 @@
+schema_version: 1
+id: domestic_travel
+kind: survey
+title_ko: 국내 여행
+status: ready
+questions:
+  - id: domestic_travel-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you like to travel within your country. Tell me about a place in your country
+      that you enjoy visiting. Where is it, and what is it like there?
+    model:
+      il:
+        - text: >-
+            I like to visit Busan. It is a big city by the sea. There are many beaches. The seafood is very fresh and
+            delicious. I go there by train. I visit Busan every summer.
+          phrases: ['by the sea', 'There are many beaches']
+        - text: >-
+            My favorite place is Jeju Island. It is very beautiful. There are many beaches and a big mountain. The weather
+            is warm. I like to drive around the island. I want to go again soon.
+          phrases: ['My favorite place is', 'I want to go again']
+      im1:
+        - text: >-
+            I really like to visit Gangneung. It is a city on the east coast of Korea. It takes about two hours from Seoul
+            by train. Gangneung has beautiful beaches with clear water. There is also a famous coffee street near the
+            beach, so I always drink coffee and look at the ocean. The seafood is also very good there. I like Gangneung
+            because it is relaxing.
+          phrases: ['on the east coast', 'It takes about two hours', 'There is also']
+        - text: >-
+            My favorite place to visit in Korea is Jeonju. It is famous for its traditional Korean houses, called hanok.
+            There is a big hanok village, and many people wear traditional clothes and take pictures there. Jeonju is also
+            famous for bibimbap, and the food is really delicious. The city is not very big, so I can walk everywhere. I
+            visit Jeonju once a year with my friends.
+          phrases: ['It is famous for', 'so I can walk everywhere']
+      im2:
+        - text: >-
+            One place I love to visit in Korea is Jeju Island. It's an island in the south, and it takes about an hour by
+            plane from Seoul. Jeju is famous for its beautiful nature. There's a big mountain called Hallasan in the
+            middle of the island, and there are many beaches with clear blue water. The island also has unique stone walls
+            and lots of tangerine farms. When I go there, I usually rent a car and drive along the coast. The scenery is
+            amazing, especially at sunset. I also like eating black pork barbecue, which is a famous local food. I think
+            Jeju is the best place in Korea to relax.
+          phrases: ['is famous for', 'When I go there', 'especially at sunset']
+        - text: >-
+            I really enjoy visiting Gyeongju. It's a city in the southeast of Korea, and it was the capital of an old
+            kingdom called Silla. Because of that, the city has a lot of history. There are old temples, like Bulguksa,
+            and many royal tombs that look like small green hills. At night, some of the historic places are lit up, so
+            they look really beautiful. The city is quiet and not very crowded compared to Seoul. I usually rent a bike
+            and ride around the old town. Whenever I visit Gyeongju, I feel like I'm traveling back in time.
+          phrases: ['Because of that', 'compared to Seoul', 'I feel like I''m traveling back in time']
+      im3:
+        - text: >-
+            The place I enjoy visiting the most in Korea is Busan. It's the second largest city in the country, and it's
+            on the southeast coast, so it's a nice mix of city life and the ocean. It takes about two and a half hours
+            from Seoul by high-speed train. The most famous spot is Haeundae Beach, which gets really crowded in summer.
+            Personally, though, I prefer the quieter beaches and the small villages on the hills, where the houses are
+            painted in bright colors. Another thing I love is the food. There's a big fish market by the port, and you can
+            choose fresh seafood and eat it right there. Every time I go to Busan, I feel more energetic, maybe because of
+            the sea breeze.
+          phrases: ['a nice mix of', 'Personally, though', 'Another thing I love is']
+        - text: >-
+            I'd like to tell you about Sokcho, a small city on the east coast. It's one of my favorite places because it
+            has both the mountains and the sea. On one side of the city, there's Seoraksan, a famous mountain with amazing
+            rocky peaks, and on the other side, there's a long, sandy beach. In the fall, the leaves on the mountain turn
+            red and yellow, and a lot of people come to hike. The city also has a big seafood market where you can try
+            local dishes. I usually stay at a small guesthouse near the beach and wake up early to watch the sunrise over
+            the ocean. It's quiet and peaceful there, which is exactly what I need after a busy week.
+          phrases: ['both the mountains and the sea', 'On one side of the city', 'which is exactly what I need']
+      ih:
+        - text: >-
+            If I had to pick one place in Korea that I never get tired of, it would definitely be Jeju Island. It's a
+            volcanic island off the southern coast, and you can get there in about an hour by plane from Seoul. What makes
+            Jeju special is how different it feels from the mainland. The island is covered with black volcanic rocks, and
+            people use them to build low stone walls around their fields. Right in the middle of the island stands
+            Hallasan, the highest mountain in South Korea. Along the coast, there are beaches with turquoise water, little
+            cafés with ocean views, and walking trails that go all the way around the island. I usually rent a car and
+            drive along the coastal road with no real plan. Jeju always gives me a sense of freedom that I can't get in
+            the city.
+          phrases: ['If I had to pick one place', 'What makes Jeju special', 'a sense of freedom']
+        - text: >-
+            One place I really enjoy is Jeonju, a city in the southwestern part of Korea. It's best known for its hanok
+            village, which is a large area full of traditional Korean houses with curved tile roofs. Walking through the
+            narrow alleys there feels like stepping into a historical drama. Many visitors rent traditional clothes called
+            hanbok and take photos in front of the old buildings, and honestly, I've done that too. Jeonju is also famous
+            for its food. Bibimbap is the most famous dish, but there are also lots of street food stalls selling things
+            like grilled skewers and sweet snacks. In the evening, the village gets quieter, and the lanterns along the
+            streets make everything look warm and cozy. I think what I like most is that it's a place where old and new
+            Korea exist side by side.
+          phrases: ['It''s best known for', 'feels like stepping into', 'exist side by side']
+      al:
+        - text: >-
+            The place in Korea I find myself going back to again and again is Gyeongju, an old city in the southeast. For
+            almost a thousand years, it was the capital of the Silla kingdom, so the whole city is basically an open-air
+            museum. What surprised me the first time I visited was that there are huge royal tombs right in the middle of
+            town. They look like gentle green hills, and you'll see people walking their dogs or having picnics right next
+            to them. Then there's Bulguksa, a beautiful temple on the side of a mountain, and nearby there's a famous
+            stone Buddha inside a small cave. At night, the old palace pond is lit up, and the reflection of the buildings
+            on the water is honestly one of the most beautiful things I've ever seen in Korea. Besides the history, I love
+            that the historic areas don't have tall apartment blocks everywhere. It feels calm and spacious, and it
+            reminds me to slow down. Every time I visit, I discover something I missed before.
+          phrases: ['I find myself going back to', 'basically an open-air museum', 'What surprised me', 'it reminds me to slow down']
+        - text: >-
+            If you asked me where in Korea I'd go for a perfect weekend, I'd say Gangneung without even thinking. It's a
+            coastal city on the east side of the country, and since the high-speed train line opened, you can get there
+            from Seoul in about two hours, which makes it ideal for a short getaway. The beaches there are wide and clean,
+            and the water is a deep, almost unreal shade of blue. What really sets Gangneung apart, though, is its coffee
+            culture. There's a whole street lined with cafés facing the ocean, and you can spend an entire afternoon just
+            sipping coffee and watching the waves. The city also has a quieter, more traditional side. There's a lovely
+            lake with a walking path around it and a historic house where a famous scholar was born. And of course, you
+            can't leave without trying the local tofu dishes, which are made with seawater. I usually have a bowl for
+            breakfast before heading to the beach. It's the kind of place where you arrive tired and leave completely
+            recharged.
+          phrases: ['without even thinking', 'ideal for a short getaway', 'What really sets Gangneung apart', 'you can''t leave without']
+    tip_ko: >-
+      도시 이름과 위치, 가는 방법을 먼저 말하고 볼거리·먹거리를 하나씩 붙여요. 확실히 아는 사실만 골라 말해도 충분해요.
+  - id: domestic_travel-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      When you plan a trip somewhere in your country, how do you usually get ready? Tell me about the things you do
+      before you leave and on the day of the trip.
+    model:
+      il:
+        - text: >-
+            Before a trip, I find a hotel on the internet. Then I buy train tickets. I pack my bag the night before. I
+            bring clothes and a phone charger. On the day of the trip, I wake up early.
+          phrases: ['Before a trip', 'the night before']
+        - text: >-
+            I plan my trip with my friends. We choose a place together. Then we book a hotel. I make a list of good
+            restaurants. On the day of the trip, we meet at the station in the morning.
+          phrases: ['We choose a place together', 'I make a list of']
+      im1:
+        - text: >-
+            When I plan a trip in Korea, I start about two weeks before. First, I choose the place and check the weather.
+            Then I book a hotel and buy bus or train tickets online. I also look for famous restaurants and places to
+            visit on the internet. The night before the trip, I pack my bag with clothes, a charger, and some snacks. On
+            the day of the trip, I leave home early.
+          phrases: ['I start about two weeks before', 'The night before the trip']
+        - text: >-
+            My family usually travels by car, so I help my parents get ready. A few days before the trip, we decide where
+            to go and book a place to stay. My mom prepares snacks and drinks for the car. My dad checks the car. On the
+            morning of the trip, we leave very early to avoid traffic. I usually listen to music and sleep in the car.
+          phrases: ['A few days before the trip', 'to avoid traffic']
+      im2:
+        - text: >-
+            Well, I'm a pretty organized person, so I prepare a lot before a trip. About a month before, I decide where to
+            go and look at travel blogs to get ideas. Then I book my train tickets and a hotel, because they get expensive
+            if I wait too long. A week before the trip, I make a simple schedule with the places I want to see and the
+            restaurants I want to try. The night before, I pack my bag and check the weather again. On the day of the
+            trip, I always leave early and buy a coffee at the station. I really enjoy this planning process.
+          phrases: ['a pretty organized person', 'if I wait too long', 'this planning process']
+        - text: >-
+            To be honest, I don't plan much for trips in Korea. Usually, my friends and I decide where to go just a few
+            days before. One of us books a guesthouse, and another person checks the bus or train times. I don't make a
+            detailed schedule because I like to be spontaneous. The night before, I just pack some comfortable clothes, my
+            phone charger, and a portable battery. On the day of the trip, we meet at the bus terminal and buy snacks for
+            the ride. When we arrive, we ask local people or search online for good places to eat.
+          phrases: ['To be honest', 'I like to be spontaneous', 'When we arrive']
+      im3:
+        - text: >-
+            Whenever I plan a trip within Korea, I follow pretty much the same steps. First, I pick a destination based on
+            the season. For example, I go to the beach in summer and to the mountains in the fall. Then I check train
+            tickets right away, because popular routes sell out quickly on weekends. After that, I look for a place to
+            stay, and I usually choose a small guesthouse rather than a big hotel. I also save a few restaurants and cafés
+            on my map app, but I don't plan every hour. The night before, I pack light, just one backpack, so I can move
+            around easily. On the day of the trip, I get to the station a bit early and grab a snack for the ride.
+            Honestly, that moment on the train is one of my favorite parts of traveling.
+          phrases: ['based on the season', 'sell out quickly', 'I pack light']
+        - text: >-
+            My family plans trips together, and we've kind of developed a system over the years. My older sister is in
+            charge of finding a place to stay, because she's really good at comparing prices. I'm responsible for making
+            the schedule, so I search for interesting places and good restaurants and put everything into a shared
+            document. My dad takes care of the car, like checking the tires and filling up the gas tank. The night before
+            we leave, we all pack our own bags, and my mom prepares fruit and snacks for the road. On the day of the trip,
+            we leave before sunrise to avoid traffic, and we usually stop at a highway rest area for breakfast. Eating
+            there is honestly one of the highlights of the whole trip.
+          phrases: ['developed a system', 'is in charge of', 'one of the highlights']
+      ih:
+        - text: >-
+            Planning a trip is actually one of my favorite parts of traveling, so I put quite a bit of effort into it.
+            Usually about a month in advance, I choose a destination and then read travel blogs to see what the area is
+            like. Once I've decided, I book my transportation right away. If I'm going somewhere far like Busan or
+            Gangneung, I take the high-speed train, and those tickets can sell out fast on holidays. Next, I look for a
+            place to stay, and I tend to choose places with good reviews about cleanliness rather than fancy facilities.
+            About a week before the trip, I make a rough plan for each day, but I always leave some free time, because the
+            best moments often come from things you don't plan. The night before, I pack light and double-check my
+            tickets. On the morning of the trip, I'm usually so excited that I wake up before my alarm goes off.
+          phrases: ['put quite a bit of effort into it', 'Once I''ve decided', 'I tend to choose']
+        - text: >-
+            My routine before a trip in Korea is pretty relaxed, but there are a few things I always do. First, I check
+            the weather forecast carefully, because it can completely change what I pack and what I can do. For example,
+            if it's going to rain, I look for indoor places like museums or markets. Then I book a place to stay, usually
+            through an app, and I always read the most recent reviews. I don't plan every detail, but I do make a list of
+            a few local foods I want to try, since eating is honestly the main reason I travel. The night before, I pack a
+            small suitcase with comfortable shoes, a power bank, and a light jacket, because evenings near the sea can get
+            chilly. On the day of the trip, I leave early so I have a full day at my destination.
+          phrases: ['there are a few things I always do', 'I don''t plan every detail', 'the main reason I travel']
+      al:
+        - text: >-
+            I'd describe myself as a planner, so my preparation for a trip in Korea starts well before I actually leave.
+            The first step is choosing where to go, and I usually decide based on the season. In spring I like places
+            known for cherry blossoms, in summer the east coast, and in autumn somewhere with mountains and colorful
+            leaves. Once I've settled on a destination, I immediately book train tickets, because if you wait until the
+            last minute, especially around long weekends, you might end up standing in the aisle for hours. Then I look
+            for a place to stay, and I've learned the hard way that a cheap place far from everything isn't really a
+            bargain, so I put location first. After that, I put together a loose plan in a notes app, with a few must-see
+            spots, restaurants, and backup options in case of bad weather. The night before, I pack as light as possible,
+            usually just a backpack, and I charge every device I own. On the day itself, I like to get to the station
+            early, buy a coffee, and just enjoy that feeling of the trip finally beginning.
+          phrases: ['I''d describe myself as a planner', 'Once I''ve settled on', 'I''ve learned the hard way', 'in case of bad weather']
+        - text: >-
+            Funnily enough, my approach to preparing for trips has become much simpler over time. These days, when I
+            travel somewhere in Korea, I really only take care of three things in advance: transportation, a place to
+            stay, and one or two things I definitely want to do. For example, if I'm heading to Jeju, I'll book my flight
+            and a rental car first, since those get expensive quickly, and then find a small guesthouse in an area I
+            haven't explored yet. Beyond that, I leave the schedule open on purpose. I used to plan every hour, but I
+            found that I spent the whole trip checking my watch instead of enjoying myself. Now, I'd rather ask the
+            guesthouse owner for recommendations or just follow a street that looks interesting. As for packing, I keep a
+            checklist on my phone so I don't forget things like chargers, medicine, or a power bank. On the day I leave, I
+            always make sure to eat a proper breakfast, because I know that once I start exploring, I'll probably forget
+            about lunch.
+          phrases: ['Funnily enough', 'Beyond that', 'I''d rather', 'As for packing']
+    tip_ko: >-
+      여행 몇 주 전 → 전날 → 당일 순서로 시간을 나눠 말하면 준비 과정을 빠짐없이 말할 수 있어요.
+  - id: domestic_travel-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a memorable trip you took in your country. Where did you go, who were you with, and what
+      happened that made the trip so special? Give me as many details as you can.
+    model:
+      il:
+        - text: >-
+            Last year, I went to Busan with my friends. We went to the beach. We swam in the sea. At night, we ate
+            seafood. It was very delicious. We took many pictures. It was a great trip.
+          phrases: ['Last year', 'It was a great trip']
+        - text: >-
+            Two years ago, I went to Jeju Island with my family. We rented a car. We climbed a mountain. It was hard but
+            fun. We ate black pork. I want to go there again with my family.
+          phrases: ['Two years ago', 'It was hard but fun']
+      im1:
+        - text: >-
+            Last summer, I went to Gangneung with my two best friends. We took the train from Seoul. When we arrived, we
+            went to the beach right away. The water was cold, but we swam anyway. In the evening, we ate fresh seafood
+            near the beach. The next morning, we woke up early and watched the sunrise. It was so beautiful. It was my
+            favorite trip ever.
+          phrases: ['When we arrived', 'The next morning', 'my favorite trip ever']
+        - text: >-
+            I remember a trip to Gyeongju when I was in high school. It was a school trip, so I went with all my
+            classmates. We visited old temples and museums. Honestly, I was bored during the day. But at night, my friends
+            and I talked and laughed until very late in our room. The teacher got angry at us. Now it is a funny memory
+            for me.
+          phrases: ['It was a school trip', 'Honestly', 'a funny memory']
+      im2:
+        - text: >-
+            One trip I'll never forget is when I went to Jeju Island with my family three years ago. It was the first time
+            we traveled together in a long time, because my brother and I were busy with work. We rented a car and drove
+            around the island for four days. On the second day, we decided to climb Hallasan. It was much harder than we
+            expected, and my dad almost gave up. But we helped each other and finally reached the top. The view was
+            amazing. That evening, we ate black pork barbecue and talked about the climb for hours. It was a really
+            special trip for all of us.
+          phrases: ['One trip I''ll never forget', 'much harder than we expected', 'finally reached the top']
+        - text: >-
+            I had a memorable trip to Busan last fall. I went alone for the first time, so I was a little nervous. On the
+            first day, I visited a fish market and tried raw fish, which was so fresh. In the evening, I walked along the
+            beach and saw a big fireworks festival. I didn't even know about the festival before I went, so it was a lucky
+            surprise. Thousands of people were watching, and the sky was full of colors. After that trip, I realized
+            traveling alone can be really fun, and now I do it once or twice a year.
+          phrases: ['for the first time', 'a lucky surprise', 'After that trip, I realized']
+      im3:
+        - text: >-
+            The most memorable trip I've taken in Korea was a weekend in Jeonju with my college friends. We had planned
+            the trip for months, but when we arrived, it was pouring rain. At first, we were really disappointed, because
+            we had planned to walk around the hanok village all day. Then one of my friends had an idea. We rented
+            traditional clothes anyway and borrowed umbrellas from the shop. Walking through the old alleys in the rain,
+            wearing hanbok, turned out to be really fun, and the photos looked amazing because there were hardly any other
+            tourists. In the evening, we ate bibimbap in a tiny restaurant where the owner told us stories about the city.
+            Looking back, the rain actually made that trip special.
+          phrases: ['it was pouring rain', 'turned out to be', 'Looking back']
+        - text: >-
+            I'd like to talk about a trip to Sokcho that I took with my parents last autumn. It was my dad's sixtieth
+            birthday, so my sister and I planned the whole trip as a surprise. We booked a hotel with an ocean view and
+            made a reservation at a nice seafood restaurant. On the second day, we hiked part of Seoraksan, and the leaves
+            were bright red and orange. My mom kept stopping to take pictures, so it took us twice as long as we planned.
+            In the evening, we gave my dad a small cake and a letter we had written. He didn't say much, but I could see
+            he was really moved. It was the first time I felt like I was giving something back to my parents.
+          phrases: ['as a surprise', 'it took us twice as long', 'giving something back']
+      ih:
+        - text: >-
+            Let me tell you about a trip that didn't go as planned but turned out to be unforgettable. About two years
+            ago, my friend and I visited Jeju Island in early spring. We had everything planned, from our rental car to
+            the restaurants we wanted to try. But on the very first day, a big storm hit the island, and most outdoor
+            places were closed. We were stuck in our guesthouse, feeling pretty miserable. Then the owner, an older woman
+            who had lived on Jeju her whole life, invited us to make dumplings with her family in the kitchen. She told us
+            stories about how the island had changed over the years, and her husband taught us a traditional card game. By
+            the time the storm passed two days later, we felt like part of the family. We still keep in touch, and that
+            trip taught me that the people you meet matter more than the places you see.
+          phrases: ['didn''t go as planned', 'we felt like part of the family', 'We still keep in touch']
+        - text: >-
+            The most memorable trip I've had in Korea was a road trip along the east coast with my college roommate right
+            after we graduated. We borrowed her parents' old car and drove all the way down to Busan over five days,
+            stopping in small towns along the way. We didn't book anything in advance, so every night we had to look for a
+            place to stay, which was a little stressful but also exciting. One night in a tiny fishing village, all the
+            guesthouses were full, and we ended up sleeping in the car near the beach. We woke up to the most incredible
+            sunrise I've ever seen, with fishing boats heading out to sea. When we finally reached Busan, we were
+            exhausted and our clothes smelled terrible, but we were so proud of ourselves. That trip marked the end of our
+            student life, and it still feels like one of the best decisions we ever made.
+          phrases: ['We didn''t book anything in advance', 'we ended up sleeping in the car', 'marked the end of']
+      al:
+        - text: >-
+            I'd have to say the most memorable trip I've taken in Korea was a solo trip to Gyeongju during a really
+            difficult period in my life. I had just quit a job that I'd been unhappy at for a long time, and I was feeling
+            lost and a bit anxious about the future. On a whim, I bought a train ticket and booked a small guesthouse near
+            the old town for three nights. I didn't make any plans at all. Each morning, I rented a bike and just rode
+            around, stopping wherever something caught my eye. One afternoon, I ended up sitting next to one of the huge
+            royal tombs for almost two hours, just watching families having picnics and kids rolling down the grass. It
+            sounds simple, but being surrounded by things that had stood there for over a thousand years made my own
+            worries feel much smaller. On the last evening, I visited the old palace pond when it was lit up, and I
+            remember thinking that everything was going to be okay. A few weeks later, I started a new job that I actually
+            enjoy, and I still think of that trip as a kind of turning point.
+          phrases: ['On a whim', 'something caught my eye', 'It sounds simple, but', 'a kind of turning point']
+        - text: >-
+            One trip that really stands out is a family trip to Busan we took the winter my grandmother turned eighty. She
+            had grown up near the port there but hadn't been back in almost fifty years, so the whole family decided to
+            take her. We rode the high-speed train down together, three generations in one row of seats, and she spent the
+            whole ride telling us stories we'd never heard before. Once we arrived, she wanted to go to the old fish
+            market first. Of course, it had completely changed, and at first she seemed a little disappointed. But then
+            she found a small stall run by a woman who, it turned out, had known her family decades ago. The two of them
+            started crying and laughing at the same time, and we all just stood there in shock. We spent the rest of the
+            afternoon at that tiny stall, eating grilled fish and listening to them catch up. It wasn't the kind of trip
+            with famous sights or perfect photos, but it's the one my family still talks about every holiday.
+          phrases: ['really stands out', 'three generations', 'it turned out', 'It wasn''t the kind of trip']
+    tip_ko: >-
+      누구와 갔는지, 예상과 달랐던 일 하나를 중심으로 이야기해요. 문제가 생겼다가 풀린 이야기는 높은 등급 답변에 특히 잘 어울려요.
+  - id: domestic_travel-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      Compare the trips you took in your country when you were a child with the trips you take now. How are they
+      different, and what do you think caused those changes?
+    model:
+      il:
+        - text: >-
+            When I was a child, I traveled with my parents. We went by car. Now I travel with my friends. We go by train.
+            Before, I went to the beach. Now I like cities more.
+          phrases: ['When I was a child', 'Now I travel']
+        - text: >-
+            In the past, my family went camping a lot. We slept in a tent. Now I stay in a hotel. It is more comfortable.
+            But I miss camping with my family very much.
+          phrases: ['In the past', 'It is more comfortable']
+      im1:
+        - text: >-
+            When I was a child, my family traveled in Korea every summer. We always went to the beach by car, and the
+            traffic was terrible. My parents planned everything. Now I travel with my friends, and we usually take the
+            train because it is fast. I also plan the trips myself. I think the biggest change is that I have more freedom
+            now, but I miss my family trips.
+          phrases: ['When I was a child', 'the biggest change is that', 'I have more freedom now']
+        - text: >-
+            In the past, I traveled only during school vacations. My parents chose the places, and we usually visited my
+            grandparents in the countryside. Now I travel when I want, maybe three or four times a year. I like to visit
+            new cities and try local food. I also use my phone to find places. In the past, we used a paper map. Traveling
+            is much easier now.
+          phrases: ['In the past', 'Now I travel when I want', 'much easier now']
+      im2:
+        - text: >-
+            My trips have changed a lot since I was a child. When I was young, my family went on a trip once a year during
+            summer vacation. We always drove to the beach, and it took a very long time because of traffic. We stayed in a
+            cheap room and ate instant noodles a lot. These days, I travel more often, maybe four or five times a year. I
+            usually take the train and stay at nice guesthouses. I also spend more money on food. I think these changes
+            happened because I have my own income now, and transportation in Korea has become much faster and more
+            convenient.
+          phrases: ['have changed a lot', 'These days', 'I think these changes happened because']
+        - text: >-
+            There are some big differences between my childhood trips and my trips now. When I was a kid, trips were all
+            about playing. I swam at the beach, built sandcastles, and caught bugs in the mountains. I didn't care about
+            history or food at all. Now I'm more interested in culture and local food, so I visit museums, old villages,
+            and traditional markets. Another difference is how I find information. My parents used guidebooks and asked
+            people for directions, but I use my smartphone for everything. I think I've changed because I'm older and more
+            curious about the places I visit.
+          phrases: ['There are some big differences', 'were all about', 'Another difference is']
+      im3:
+        - text: >-
+            Comparing my childhood trips with the trips I take now, I'd say the biggest difference is who makes the
+            decisions. When I was young, my parents decided everything, and we usually went to the same beach town every
+            summer because my dad liked it. I remember sitting in the back seat for hours, fighting with my brother.
+            Nowadays, I plan my own trips, and I prefer going to new places I've never been to, like small towns with
+            interesting history. I also travel by train much more, because it's faster and I can relax instead of driving.
+            Another change is the season. I used to travel only in the summer, but now I actually prefer spring and fall,
+            since it's not as hot or crowded.
+          phrases: ['the biggest difference is', 'Nowadays', 'I used to travel only']
+        - text: >-
+            My trips in Korea used to be completely different. When I was in elementary school, my family went camping
+            almost every month. My dad loved it, so we'd drive to a campsite near a river or a mountain, set up a big
+            tent, and cook meat on a grill. At the time, I thought it was really fun, even though the bugs were terrible.
+            These days, I hardly ever camp. I usually stay in a hotel or a guesthouse, and I spend more time in cafés,
+            museums, and markets than in nature. I think part of the reason is that I'm busier now, so I want my trips to
+            be comfortable and relaxing. Still, every time I smell a campfire, I miss those family weekends.
+          phrases: ['used to be completely different', 'At the time', 'part of the reason is that']
+      ih:
+        - text: >-
+            When I think about the trips I took as a child compared to now, the difference is pretty dramatic. Back then,
+            travel in Korea meant one big trip every summer. My whole family would squeeze into our small car and drive to
+            the east coast, which took about seven or eight hours because of the traffic. We'd stay in a crowded room near
+            the beach and eat simple meals we cooked ourselves to save money. Today, things couldn't be more different.
+            With the high-speed train, I can get to the coast in a couple of hours, so I go on short weekend trips several
+            times a year instead of one long one. I also pay much more attention to food and atmosphere, and I'll happily
+            spend money on a nice meal or a guesthouse with a view. I think these changes come from better transportation
+            and the fact that I'm earning my own money.
+          phrases: ['the difference is pretty dramatic', 'Back then', 'things couldn''t be more different']
+        - text: >-
+            There's a big difference between how I traveled as a kid and how I travel now, mainly in terms of what I look
+            for in a trip. When I was a child, my parents mostly took us to famous tourist spots, like big amusement parks
+            or well-known beaches. Everything was planned around keeping my sister and me entertained, so we spent a lot
+            of time waiting in lines. Now, I actually try to avoid crowded tourist spots. I prefer small towns, quiet
+            hiking trails, and local markets where I can see how people really live. Another big change is technology. My
+            parents relied on road maps and asked gas station workers for directions, but I can find almost everything I
+            need on my phone in seconds. Honestly, I think that has made traveling easier, but maybe also a little less
+            adventurous than it used to be.
+          phrases: ['in terms of', 'Another big change is technology', 'a little less adventurous']
+      al:
+        - text: >-
+            Thinking back, the way I travel around Korea has changed almost completely since I was a kid, and I think it
+            reflects how the country itself has changed. When I was young, a family trip was a major event. We'd go once a
+            year, usually during the peak summer holiday, along with what felt like the entire country. I remember
+            spending entire days stuck on the highway, eating snacks at rest areas, and arriving at a packed beach where
+            it was hard to even find a spot for our umbrella. Our rooms were basic, and my parents carefully planned the
+            cost of every meal. These days, travel feels much more casual and personal. Thanks to the high-speed train
+            network, I can leave Seoul on a Friday evening and be by the sea in a couple of hours, so I take lots of short
+            trips throughout the year, often in the off-season. I also tend to choose experiences over sightseeing, like a
+            cooking class in a small town or a quiet stay in a traditional house. If I had to name the biggest reasons for
+            the change, I'd say faster transportation, having my own income, and the fact that I've learned to value rest
+            more than checking places off a list.
+          phrases: ['Thinking back', 'it reflects how', 'Thanks to', 'If I had to name']
+        - text: >-
+            If I compare the trips I took as a child with the ones I take now, the most obvious difference is the role I
+            play. As a kid, I was basically a passenger. My parents chose where we went, booked everything, and I just
+            tagged along, usually complaining about being bored in the car. Most of our trips were to visit relatives in
+            the countryside during the holidays, so they felt more like family duties than vacations. Now that I'm an
+            adult, I'm the one making the decisions, and I've become a lot more thoughtful about where I go and why. I
+            tend to pick places that have some kind of story, like an old port city or a village known for a traditional
+            craft, and I do a bit of reading before I go so I can appreciate what I'm seeing. Interestingly, I've also
+            started taking my parents on trips, which feels like a complete role reversal. Watching them enjoy a place I
+            chose is probably the most rewarding part of traveling these days.
+          phrases: ['the most obvious difference is', 'I just tagged along', 'Now that I''m an adult', 'a complete role reversal']
+    tip_ko: >-
+      When I was a child와 these days로 두 덩어리를 나눠 말하고, 차이마다 이유를 붙여요. 교통, 돈, 관심사의 변화가 이유로 쓰기 쉬워요.

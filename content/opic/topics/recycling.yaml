@@ -1,0 +1,606 @@
+schema_version: 1
+id: recycling
+kind: unexpected
+title_ko: 재활용
+status: ready
+questions:
+  - id: recycling-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      I'd like to talk about recycling. How does recycling work where you live? Tell me where people put their
+      recyclables, what items they separate, and any rules people need to follow.
+    model:
+      il:
+        - text: >-
+            I live in an apartment. There is a recycling area outside. People put plastic, cans, and paper there. There
+            are many big boxes. We must wash the bottles first. I think it is easy.
+          phrases: ['There is', 'We must']
+        - text: >-
+            In my town, we recycle every week. We use special bags for food waste. We put paper and plastic in different
+            boxes. We take them out at night. The rules are strict.
+          phrases: ['every week', 'The rules are strict']
+      im1:
+        - text: >-
+            I live in a big apartment complex, and recycling is very organized here. There is a recycling area behind my
+            building. It has different bins for plastic, glass, cans, paper, and vinyl. People can take their recyclables
+            there on Wednesday and Sunday. We have to clean plastic containers and take off the labels from bottles. Food
+            waste goes into a separate machine, and we pay by weight. At first it was confusing, but now it's easy.
+          phrases: ['very organized', 'We have to', 'At first']
+        - text: >-
+            I live in a small house, so recycling is a little different. We don't have a recycling room. Instead, we put
+            our recyclables in clear bags in front of our house. The truck comes three times a week in the early morning.
+            We put paper boxes together with a string. Food waste goes into a small yellow bin. If people don't follow the
+            rules, they can get a fine. So everyone is careful.
+          phrases: ['a little different', 'Instead', 'If people don''t follow the rules']
+      im2:
+        - text: >-
+            Recycling is a big part of daily life in my neighborhood. I live in an apartment, and there is a recycling
+            station in the parking lot. It's open every Thursday from morning until night. People bring their recyclables
+            and sort them into large bags and bins. There are separate places for plastic bottles, other plastic, cans,
+            glass, paper, and styrofoam. There's also a security guard who checks that people are sorting correctly. If
+            you put something in the wrong bin, he usually tells you nicely. For food waste, we have a machine that opens
+            with a card, and it weighs the waste. I think the system works pretty well.
+          phrases: ['a big part of daily life', 'There are separate places for', 'works pretty well']
+        - text: >-
+            Let me explain how recycling works where I live. I live in a villa, which is a small apartment building, so
+            there is no big recycling area. Instead, each building has a few bins near the entrance. People put plastic,
+            cans, and glass bottles in one bin and paper in another. General trash has to go into special bags that we buy
+            at convenience stores. The trash truck comes every night except Saturday. The most important rule is to empty
+            and rinse containers before throwing them away. Some people don't follow the rules, so the area sometimes gets
+            messy, but most neighbors try their best.
+          phrases: ['Let me explain', 'The most important rule is', 'try their best']
+      im3:
+        - text: >-
+            Where I live, recycling is taken really seriously, and the rules are quite detailed. I live in an apartment
+            complex with about ten buildings, and each building has its own recycling area. Every Tuesday evening,
+            residents bring down their recyclables, and the area quickly fills with people sorting things into different
+            containers. There are separate spaces for clear plastic bottles, colored plastic, cans, glass, paper,
+            cardboard, and even old clothes. We're supposed to remove labels from bottles, rinse out food containers, and
+            flatten boxes. When I first moved here, I made a lot of mistakes, and an older neighbor kindly showed me what
+            to do. Food waste is separate, and we use a card at the machine so that we pay for how much we throw away.
+            Overall, it's a bit of work, but I think it helps people understand how much waste they produce.
+          phrases: ['taken really seriously', 'We''re supposed to', 'Overall']
+        - text: >-
+            Recycling in my area is pretty well organized, although it's not exactly the same everywhere in my city. I
+            live in an older neighborhood with houses and small shops, so we don't have a big recycling center. Instead,
+            we put our recyclables outside our gate on certain days. Plastic and cans go in transparent bags, so the
+            workers can see what's inside, and paper has to be tied together. Large items, like furniture or old
+            appliances, need a special sticker that you buy from the community center. I once forgot to buy one for an old
+            chair, and it stayed outside my house for a week! Food waste goes into a small bin with a tag on it. I think
+            the system is fair, because people who produce more waste pay more, and that encourages everyone to throw away
+            less.
+          phrases: ['although', 'so the workers can see', 'I think the system is fair']
+      ih:
+        - text: >-
+            Recycling where I live is quite systematic, and I think it's one of the things my neighborhood does really
+            well. I live in a high-rise apartment complex, and every building has a recycling area on the ground floor
+            that's open twenty-four hours a day. It's divided into clearly labeled sections for paper, cardboard, plastic
+            bottles, other plastic containers, glass, cans, styrofoam, and vinyl. There are also signs with pictures
+            showing exactly what belongs where, which is helpful for children and older residents. The rules are pretty
+            strict. For example, plastic bottles should be rinsed, labels have to be removed, and caps should be
+            separated. Food waste is collected in a separate machine that weighs it, and each household pays a monthly fee
+            depending on the amount. A few times a year, the management office also sends out notices reminding people of
+            the rules, especially after holidays, when there's a lot of packaging. Overall, I'd say the system is a bit
+            demanding, but it makes people more aware of their waste.
+          phrases: ['quite systematic', 'It''s divided into', 'depending on', 'a bit demanding']
+        - text: >-
+            Recycling where I live has changed quite a bit over the last few years, so I'll describe how it works now. I
+            live in a mid-sized city, in a building with about twenty apartments. Instead of a recycling room, we have a
+            row of colorful bins in the back yard, and each color is for a different material: blue for paper, yellow for
+            plastic, green for glass, and gray for cans. Recently, the building added a separate bin just for clear
+            plastic bottles, because they can be recycled into higher-quality materials. Every resident got a small guide
+            when they moved in, and there's a bulletin board where the manager posts updates. The trucks come on Monday
+            and Thursday mornings, so most people take their recycling out the night before. What I like about the system
+            is that it's simple to follow. What I don't like is that some neighbors still ignore the rules, and then the
+            manager has to sort everything again. Overall, though, I think people here are becoming more careful every
+            year.
+          phrases: ['Instead of', 'What I like about', 'What I don''t like is']
+      al:
+        - text: >-
+            Recycling in my area is pretty thorough, and I'd say it reflects how seriously people here take waste
+            reduction. I live in a large apartment complex on the outskirts of the city, and each building has a dedicated
+            recycling area beside the parking garage. It's open all day, but most people go in the evening after work.
+            Inside, there are more than ten different containers, each clearly labeled with pictures and short
+            explanations. Paper and cardboard go in one section, cans and metal in another, and plastics are divided into
+            several types, including transparent bottles, colored containers, and plastic film like snack wrappers. Glass
+            bottles are separated by color as well. The basic rules are that everything should be empty, rinsed, and free
+            of labels or tape. Food waste is handled completely separately, through card-operated machines that charge by
+            weight, which honestly made me more conscious of how much food I was wasting. Every few months, the management
+            office posts reminders and sometimes even shares photos of incorrectly sorted items, which is a bit
+            embarrassing for whoever made the mistake. All in all, the system takes some effort, but I think it works
+            because it's consistent, and people know exactly what's expected of them.
+          phrases: ['it reflects how', 'as well', 'All in all', 'what''s expected of them']
+        - text: >-
+            I'd describe the recycling system where I live as strict but surprisingly efficient once you get used to it. I
+            live in a small residential neighborhood with mostly detached houses, so instead of a central recycling
+            station, each household is responsible for putting its own recyclables out on the curb. The local office
+            assigns specific days for each material. For example, plastic and cans go out on Mondays, paper on Wednesdays,
+            and glass on Fridays. Everything has to be placed in transparent bags so the collectors can check the
+            contents, and if something is sorted incorrectly, they simply leave the bag behind with a warning sticker on
+            it. That happened to me once when I first moved here, and it was a little embarrassing to see the sticker on
+            my bag in front of my neighbors. General waste has to go in official bags that are sold at local stores, and
+            since the bags aren't cheap, people naturally try to recycle as much as possible to avoid buying more. There's
+            also a monthly collection for large items and electronics, which you have to register for in advance. It
+            sounds complicated, but after a few months, it became a habit, and now I barely think about it.
+          phrases: ['strict but surprisingly efficient', 'once you get used to it', 'is responsible for', 'It sounds complicated, but']
+    tip_ko: 장소 → 분리하는 품목 → 지켜야 할 규칙 순서로 말해요. separate, rinse, flatten 같은 동사를 미리 외워 두면 묘사가 쉬워져요.
+  - id: recycling-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about how you usually recycle at home. What do you do with things like plastic, paper, and food waste,
+      and when do you take them out?
+    model:
+      il:
+        - text: >-
+            I recycle every Sunday. I put plastic in a bag. I put paper in a box. I wash the bottles. My brother helps me.
+            We take everything downstairs. It takes ten minutes.
+          phrases: ['every Sunday', 'It takes']
+        - text: >-
+            I live with my parents. My mom sorts the trash in the kitchen. I take out the food waste every night. On
+            Wednesday, I take out the recycling. It is my job. It is easy.
+          phrases: ['take out', 'It is my job']
+      im1:
+        - text: >-
+            I usually recycle once a week. In my kitchen, I have three small bins: one for plastic, one for paper, and one
+            for cans. When I finish a drink, I rinse the bottle and take off the label. I fold the paper boxes to save
+            space. On Sunday evening, I take everything to the recycling area in my apartment. Food waste is different. I
+            take it out every two or three days, because it smells bad in summer.
+          phrases: ['once a week', 'to save space', 'every two or three days']
+        - text: >-
+            My roommate and I share the recycling work. She takes care of paper and plastic, and I take care of food waste
+            and glass. We have a big basket next to the refrigerator for recyclables. When the basket is full, we take it
+            to the recycling area together, usually on Tuesday night. It's not hard, but sometimes we forget to wash the
+            containers. Then we have to wash them in the recycling area, which is annoying.
+          phrases: ['takes care of', 'When the basket is full', 'which is annoying']
+      im2:
+        - text: >-
+            My recycling routine is pretty simple, but I try to do it carefully. In my kitchen, I keep a few bags under
+            the sink, one for plastic, one for cans and glass, and one for paper. Whenever I finish something, like a
+            yogurt cup or a juice bottle, I rinse it right away, so it doesn't smell. I also remove labels and flatten
+            plastic bottles to save space. Every Thursday night, which is recycling day in my apartment, I carry
+            everything downstairs and put each item in the right bin. Food waste goes in a separate container in my
+            freezer, so it doesn't smell, and I take it out every weekend.
+          phrases: ['pretty simple', 'Whenever I finish something', 'right away']
+        - text: >-
+            I live alone, so I don't produce a lot of trash, but I still have a routine. Most of my recyclables are
+            delivery boxes and plastic containers from food delivery. After I eat, I wash the containers and leave them to
+            dry on the counter. I also remove the tape and labels from the boxes, because the rules in my building say we
+            have to. Usually on Saturday morning, I collect everything in a big shopping bag and take it to the recycling
+            area. It takes about fifteen minutes. Recently, I've been trying to order less delivery food, because I
+            realized how much plastic I was throwing away.
+          phrases: ['I still have a routine', 'Usually on Saturday morning', 'I''ve been trying to']
+      im3:
+        - text: >-
+            Since I live with my family of four, we produce quite a lot of recyclables, so we have a clear routine. In our
+            kitchen, we have a recycling cabinet with four drawers labeled plastic, paper, cans, and glass. My parents
+            made the labels so that even my little brother could sort things correctly. Everyone is responsible for
+            rinsing their own containers right after using them, which keeps the kitchen from smelling. On Monday and
+            Thursday evenings, my brother and I take turns carrying everything down to the recycling area. Honestly, I
+            used to complain about it a lot when I was younger, but now it's just a normal part of the week. Food waste is
+            my mom's job, because she's the one who cooks most of the time. She keeps it in a small bin with a lid and
+            empties it every morning before work.
+          phrases: ['Since I live with', 'take turns', 'I used to complain']
+        - text: >-
+            I have to admit that my recycling routine wasn't very good until last year. I used to throw everything into
+            one big bag and sort it at the recycling area, which took forever and made a mess. Then my friend showed me
+            how she organizes her recycling at home, and I decided to copy her system. Now I have three stackable bins
+            next to my door, so I sort items as soon as I'm done with them. I rinse containers right after using them, and
+            I cut cardboard boxes into small pieces so they fit easily. Every Sunday evening, I take the bins downstairs,
+            empty them, and wash them if they're dirty. The whole process takes less than ten minutes now. It's much more
+            efficient, and I actually feel a little proud when I see how neatly everything is sorted.
+          phrases: ['I have to admit', 'as soon as', 'much more efficient']
+      ih:
+        - text: >-
+            My recycling routine has become pretty automatic over the years, so let me walk you through it. First of all,
+            I try to reduce the amount of waste before it even enters my home. For example, I bring my own bags to the
+            supermarket and buy refills for things like shampoo and laundry detergent. Still, there's always some
+            packaging, so I keep a small sorting station in my utility room with separate bins for plastic, paper, cans,
+            and glass. Whenever I finish using something, I rinse it, remove any labels, and put it in the right bin
+            straight away. That way, I never have a huge pile to deal with at the end of the week. Every Wednesday night,
+            I take everything down to the recycling area, and I usually chat with my neighbors while we're sorting. As for
+            food waste, I compost some of it in a small container on my balcony for my plants, and the rest goes into the
+            food waste machine. It's a small effort, but it makes me feel like I'm doing my part.
+          phrases: ['let me walk you through it', 'That way', 'As for', 'doing my part']
+        - text: >-
+            To be honest, my recycling routine changed a lot after I moved in with my partner last year, because she's
+            much more careful about it than I was. Before, I used to throw almost everything into the general trash, and I
+            only recycled bottles when I remembered. Now we have a whole system. Under the kitchen sink, there are four
+            bins, and next to the front door, there's a box for cardboard. Every time we get a delivery, we remove the
+            tape and labels and flatten the box right away. We also wash takeout containers immediately, because if you
+            wait, the food dries and it's really hard to clean. On Sunday mornings, we take everything to the recycling
+            station together, which has actually become a little weekly ritual for us, followed by coffee at a café
+            nearby. I have to say, I've learned a lot from her. I've realized how much waste I used to produce without
+            even thinking about it, and now I feel uncomfortable throwing a plastic bottle into the regular trash.
+          phrases: ['To be honest', 'Every time we get a delivery', 'I have to say']
+      al:
+        - text: >-
+            I'd say my recycling routine is fairly disciplined, partly because I live in a building with strict rules and
+            partly because I've become more aware of environmental issues over the past few years. The routine actually
+            starts at the store. I try to choose products with less packaging, and I always bring reusable bags and
+            containers when I buy things like tofu or meat at the local market. At home, I've set up a small system in the
+            corner of my kitchen with labeled bins for plastic, paper, glass, and cans. The key to making it work is doing
+            things immediately. As soon as I finish a product, I rinse it, peel off the label, and drop it into the
+            correct bin, so recycling never feels like a big chore. For plastics, I also separate clear bottles from other
+            containers, since they're recycled differently. Twice a week, on Tuesday and Friday evenings, I take
+            everything down to the recycling area. Food waste is the trickiest part, so I keep it in a sealed container in
+            the freezer until collection day, which completely solves the smell problem in summer. It probably sounds like
+            a lot of effort, but once it became a habit, it honestly takes no more than ten minutes a week.
+          phrases: ['partly because', 'The key to making it work is', 'the trickiest part', 'once it became a habit']
+        - text: >-
+            My recycling routine is something I've gradually refined, mostly through trial and error, and I think it
+            reflects the fact that I work from home and have a fairly flexible schedule. During the week, I collect
+            recyclables in a large drawer next to the kitchen, which I've divided into sections with cardboard dividers.
+            Paper and cardboard go in the back, plastics in the middle, and cans and glass in the front, since they're the
+            heaviest. I'm pretty strict about cleaning things properly, because I once read that a single dirty container
+            can ruin a whole batch of recyclable material, and that stuck with me. Every Saturday morning, I go through
+            the drawer, double-check everything, and carry it to the recycling station on my way to the gym. I've also
+            started paying attention to items that can't go into regular recycling, like batteries, light bulbs, and old
+            electronics. I keep those in a separate box and drop them off at special collection points every couple of
+            months. On top of that, I've cut down on disposable items as much as possible; for example, I carry a tumbler
+            and use cloth towels instead of paper ones. Overall, my routine isn't perfect, but it's consistent, and that's
+            what I think matters most.
+          phrases: ['through trial and error', 'that stuck with me', 'On top of that', 'that''s what I think matters most']
+    tip_ko: 집에서 모으는 방법 → 씻고 나누는 과정 → 내놓는 요일 순서로 말해요. usually, every, as soon as로 습관이라는 걸 드러내요.
+  - id: recycling-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Have you ever had a problem or a memorable moment related to recycling? Maybe you made a mistake or saw
+      something that surprised you. Tell me what happened from beginning to end.
+    model:
+      il:
+        - text: >-
+            One day, I put a dirty bottle in the recycling bin. The security guard saw it. He told me to wash it. I was
+            embarrassed. I went home and washed it. Now I always wash bottles.
+          phrases: ['One day', 'I was embarrassed']
+        - text: >-
+            Last year, I joined a clean-up event at the beach. We picked up a lot of plastic. There were many bottles and
+            bags. I was surprised. After that, I used less plastic.
+          phrases: ['Last year', 'After that']
+      im1:
+        - text: >-
+            I remember my first time recycling alone. I moved into a new apartment last year. I didn't know the rules, so
+            I put everything in one bag. The next day, the bag was back in front of my door with a note. It said I had to
+            sort the items. I was really embarrassed. I asked my neighbor about the rules, and she explained everything
+            kindly. Now I sort everything correctly.
+          phrases: ['I remember', 'The next day', 'Now I']
+        - text: >-
+            When I was in high school, our school had a recycling competition. Each class collected cans and paper for one
+            month. My class worked very hard. We even asked our parents to bring old newspapers. In the end, we won first
+            place, and we got pizza as a prize. It was really fun, and I learned that recycling can be fun too.
+          phrases: ['When I was in high school', 'In the end', 'I learned that']
+      im2:
+        - text: >-
+            I have a funny memory about recycling from when I was living in Japan as an exchange student. The rules there
+            were very different from the rules in Korea, and I didn't understand them well at first. One week, I put my
+            plastic bottles out on the wrong day. The next morning, they were still there with a big yellow sticker on the
+            bag. My neighbor, an old lady, saw me and kindly explained the schedule with a paper calendar. She even drew
+            pictures for me. After that, we said hello every morning. So my mistake actually helped me make a new friend.
+          phrases: ['I have a funny memory about', 'very different from', 'So my mistake actually']
+        - text: >-
+            A memorable experience was when I volunteered at a recycling center last summer. My university club organized
+            it, and I thought it would be easy. But when I got there, I was shocked by the amount of trash. We had to
+            separate items on a moving belt for four hours. Many things were dirty or in the wrong place, like food mixed
+            with plastic. It was hot and smelly, and I was exhausted. But after that day, I started to wash and sort my
+            recyclables much more carefully, because I know how hard the workers' job is.
+          phrases: ['A memorable experience was', 'I was shocked by', 'after that day']
+      im3:
+        - text: >-
+            I'd like to talk about a time I made a pretty embarrassing mistake with recycling. A couple of years ago, I
+            cleaned out my closet and found a lot of old clothes and shoes. I thought it would be fine to put them in the
+            recycling area with the other items, so I left a huge bag there late at night. The next day, the building
+            manager posted a notice in the elevator that said someone had thrown away clothes in the wrong place, and he
+            included a photo of my bag! Nobody knew it was mine, but I felt so guilty that I went down and took it back.
+            Then I found out there was a special clothing collection box near the subway station. I took everything there
+            that weekend. Since then, I always check the rules before throwing away anything unusual.
+          phrases: ['I''d like to talk about', 'I felt so guilty that', 'Since then']
+        - text: >-
+            One of my most memorable experiences with recycling happened when I took part in a zero-waste challenge with
+            my coworkers last year. For one month, we tried not to produce any trash at all. At first, I thought it would
+            be easy, but on the very first day, I realized almost everything I bought came in plastic. My lunch, my
+            coffee, even the snacks in the office. I had to completely change my habits. I started bringing my own lunch
+            box and tumbler, and I bought vegetables at a traditional market where I could use my own bags. By the end of
+            the month, I had reduced my trash by more than half. I didn't completely succeed, but the challenge really
+            opened my eyes, and I still keep some of those habits today.
+          phrases: ['took part in', 'By the end of the month', 'opened my eyes']
+      ih:
+        - text: >-
+            The experience that comes to mind happened a few years ago when I organized a recycling campaign at my
+            company. Our office had a big problem with waste. Every day, people threw away dozens of disposable cups and
+            delivery containers, and nobody really sorted anything. I suggested to my manager that we try to improve the
+            situation, and she asked me to lead the project. First, I set up proper recycling bins on every floor with
+            clear signs. Then I made a short presentation explaining why sorting matters and what happens to waste that
+            isn't recycled properly. At first, people weren't very interested, and some even complained that it was too
+            much trouble. So I added a fun element: each team got points for correct recycling, and the winning team got a
+            free lunch at the end of the month. Surprisingly, that made a huge difference. Within two months, the amount
+            of general trash dropped noticeably, and people started bringing their own mugs. It was rewarding to see how a
+            small idea could change people's habits.
+          phrases: ['The experience that comes to mind', 'Surprisingly', 'It was rewarding to see']
+        - text: >-
+            Something I'll never forget happened during a family trip to a small island a few summers ago. On our second
+            day, we went to a beautiful beach that we'd seen in travel photos, but when we got there, we were shocked to
+            see how much plastic was on the sand. There were bottles, fishing nets, and even old shoes that had obviously
+            washed in from the sea. My kids, who were eight and ten at the time, asked me why there was so much garbage,
+            and honestly, I didn't know how to answer. Then a local woman walked by with a big bag and told us that a
+            group of residents cleaned the beach every morning. My kids immediately wanted to help, so we joined them for
+            about an hour. Afterward, the woman thanked us and gave the kids small shells as a gift. That day changed how
+            my family thinks about plastic. Since then, we've tried to use fewer disposable products, and my kids are now
+            the strictest recyclers in our house.
+          phrases: ['Something I''ll never forget', 'we were shocked to see', 'That day changed']
+      al:
+        - text: >-
+            The experience that really changed my attitude toward recycling happened when I visited a waste processing
+            facility on a school field trip with my students last year. I'm a middle school science teacher, and I thought
+            it would be a useful lesson for the kids, but I ended up learning just as much as they did. The facility
+            manager showed us how recyclables are sorted, partly by machines and partly by hand, and then he showed us a
+            huge pile of items that couldn't be recycled. He explained that much of it was perfectly recyclable material
+            that had been contaminated with food or sorted incorrectly, so it had to be burned or buried instead. Seeing
+            that mountain of wasted material was honestly shocking. One of my students asked whether recycling at home was
+            pointless, and the manager said something I still remember: recycling only works if people do it properly at
+            the very beginning. When we got back to school, my students started a project to teach the rest of the school
+            how to sort correctly, and they even made posters for the cafeteria. It was one of the most meaningful
+            projects of my teaching career, and it made me much more careful with my own recycling as well.
+          phrases: ['changed my attitude toward', 'I ended up', 'something I still remember', 'one of the most meaningful']
+        - text: >-
+            I'd like to share a slightly frustrating but ultimately positive experience I had when I moved into my current
+            apartment about three years ago. The previous tenant had left behind an enormous amount of stuff, including
+            old furniture, broken electronics, and boxes full of papers and plastic containers. The landlord said it was
+            my responsibility to get rid of it, which honestly annoyed me at first. I had no idea how to dispose of large
+            items properly, so I spent an entire weekend researching the rules. It turned out that furniture needed
+            special stickers from the local office, electronics could be picked up for free if I booked in advance, and
+            the rest had to be carefully sorted. I made several trips to the recycling area, and at one point, a neighbor
+            who'd been watching me came over and offered to help. We ended up talking for an hour, and she later became
+            one of my closest friends in the neighborhood. Looking back, what started as a stressful chore turned into a
+            valuable experience. Not only did I learn the recycling system inside and out, but I also realized how much
+            waste a single household can accumulate without anyone noticing.
+          phrases: ['slightly frustrating but ultimately positive', 'It turned out that', 'Looking back', 'Not only did I']
+    tip_ko: 실수했던 일이나 놀랐던 일을 하나 골라 처음부터 끝까지 과거형으로 말해요. 끝에 그 뒤로 바뀐 습관을 한 문장 덧붙여요.
+  - id: recycling-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      How has recycling changed compared to when you were younger? Describe how people dealt with trash in the past
+      and what is different now.
+    model:
+      il:
+        - text: >-
+            In the past, people did not recycle much. They put all trash in one bag. Now, we sort plastic, paper, and
+            cans. It is more work. But it is good for the earth.
+          phrases: ['In the past', 'It is more work']
+        - text: >-
+            When I was young, we used a lot of plastic bags. Stores gave them for free. Now, stores do not give free bags.
+            I bring my own bag. I think it is better now.
+          phrases: ['When I was young', 'I bring my own bag']
+      im1:
+        - text: >-
+            Recycling is very different now. When I was a child, my family didn't sort trash very carefully. We put most
+            things in one big trash bag. Only newspapers were collected separately. Now, there are many rules. We have to
+            separate plastic, cans, glass, paper, and food waste. We also have to wash containers. It takes more time, but
+            I think it is better for the environment. People are more careful now than before.
+          phrases: ['very different now', 'It takes more time, but', 'than before']
+        - text: >-
+            When I was in elementary school, many things were disposable. We used paper cups and plastic spoons all the
+            time. Cafés gave plastic cups even when people drank inside. These days, things have changed. Many cafés use
+            real cups for customers who stay inside, and some people bring their own tumblers. Also, supermarkets don't
+            give free plastic bags anymore. I think people care more about the environment now.
+          phrases: ['These days, things have changed', 'anymore', 'care more about']
+      im2:
+        - text: >-
+            I think recycling has changed a lot since I was younger. When I was a child in the nineties, my parents threw
+            almost everything into one trash bag, and nobody really checked. We only separated newspapers and glass
+            bottles, because some people collected them for money. These days, the rules are much stricter. We have to
+            sort plastic, glass, cans, paper, and food waste, and we even need to remove labels from bottles. At first,
+            people complained, but now it's a normal part of life. I think the biggest change is in people's attitudes.
+            Young people today really care about the environment, and that makes me hopeful.
+          phrases: ['much stricter', 'a normal part of life', 'the biggest change is']
+        - text: >-
+            Compared to the past, I think recycling has become more organized but also more complicated. When I was in
+            middle school, we had only two bins in our apartment: one for general trash and one for recyclables. It was
+            very simple. Now, my apartment has about ten different bins, and I sometimes have to check the signs
+            carefully. Another big change is food waste. In the past, we threw it away with other trash, but now it has to
+            be separated and we pay by weight. Overall, I think the changes are good, because the amount of trash has gone
+            down, even if it takes more effort.
+          phrases: ['Compared to the past', 'Another big change is', 'even if']
+      im3:
+        - text: >-
+            Looking back, I'm surprised by how much recycling has changed in my lifetime. When I was a little kid, my
+            grandmother used to burn some of our trash in the backyard of her house in the countryside. Nobody thought it
+            was strange back then. In the city, we had general trash bags and maybe a box for paper, but there weren't
+            many rules. Now, the system is very detailed. We separate plastic, cans, glass, paper, styrofoam, vinyl, and
+            food waste, and there are even special collection points for batteries and old clothes. Technology has also
+            changed things. For example, my apartment has a machine that weighs food waste and charges us by the amount. I
+            think these changes are definitely positive. They force people to think about how much they throw away, and
+            I've noticed that I buy less unnecessary stuff because of it.
+          phrases: ['Looking back', 'Nobody thought it was strange', 'definitely positive']
+        - text: >-
+            The biggest difference I've noticed is how much attention people pay to plastic now. When I was in high
+            school, nobody really worried about plastic. We bought bottled water every day, used plastic straws without
+            thinking, and got free plastic bags at every store. Nowadays, it's completely different. Many cafés have
+            switched to paper straws, supermarkets charge for bags, and a lot of my friends carry reusable bottles and
+            tumblers. I've also seen more shops where you can refill things like shampoo and detergent with your own
+            container. Of course, there's still a lot of plastic waste, especially from food delivery, which has increased
+            a lot in recent years. So I'd say people's awareness has improved a lot, but our habits haven't completely
+            caught up yet. Hopefully, that will change over the next few years.
+          phrases: ['The biggest difference I''ve noticed', 'Nowadays', 'haven''t completely caught up']
+      ih:
+        - text: >-
+            Recycling has changed dramatically compared to when I was growing up, both in terms of rules and people's
+            attitudes. When I was a child in the late nineties, recycling was something people did only if they felt like
+            it. My family had one big trash can, and my mom would occasionally put newspapers and bottles aside, mostly
+            because an old man in our neighborhood collected them to sell. There wasn't much awareness about the
+            environment, and using disposable products was just normal. Nowadays, the situation is completely different.
+            The rules are detailed and strictly enforced, and if you don't follow them, your trash might not even get
+            collected. People's mindset has changed too. Many of my friends try to avoid single-use plastics, choose
+            products with less packaging, and even shop at zero-waste stores. On the other hand, the amount of packaging
+            has exploded because of online shopping and food delivery. So in a way, we're recycling much better than
+            before, but we're also producing far more waste, which makes me think recycling alone isn't enough.
+          phrases: ['both in terms of', 'the situation is completely different', 'in a way', 'isn''t enough']
+        - text: >-
+            When I compare recycling now to when I was younger, I'd say the biggest change is that it's become everyone's
+            responsibility rather than something only certain people did. When I was in elementary school, recycling was
+            mostly an activity we did at school on special days. Our teacher would ask us to bring old newspapers or milk
+            cartons, and the class that collected the most got a prize. At home, though, my family didn't really sort
+            anything. Today, recycling is a part of everyday life for almost everyone. My apartment building has a
+            recycling station with more than ten categories, and even my seventy-year-old father carefully peels labels
+            off bottles every week. There's also much more information available now. If I'm not sure where something
+            goes, I can just look it up on my phone in a few seconds. One thing that hasn't changed, though, is that some
+            people still don't take it seriously, and their mistakes create extra work for others. Overall, though, I
+            think we've made huge progress compared to twenty years ago.
+          phrases: ['rather than', 'One thing that hasn''t changed', 'made huge progress']
+      al:
+        - text: >-
+            If I compare recycling today with what I remember from my childhood, the difference is quite striking, not
+            only in the systems we use but also in how people think about waste. Growing up in the early two thousands, I
+            remember that recycling was fairly basic. My family separated newspapers and bottles, but most other things,
+            including food scraps and plastic packaging, went into the same trash bag. Honestly, we didn't think twice
+            about it, and neither did most of our neighbors. Over the years, though, the rules became much more detailed,
+            and I think that gradually changed people's habits. Today, sorting waste into a dozen categories feels
+            completely normal, and there's a real social expectation to do it properly. Another big shift is that the
+            conversation has moved beyond recycling to reducing waste in the first place. When I was young, nobody talked
+            about reusable cups or refill stores, but now these things are mainstream, at least among people my age. That
+            said, I think we still have a long way to go. Online shopping and food delivery have created a huge amount of
+            new packaging, and much of it is difficult to recycle. So while our recycling habits have improved enormously,
+            the overall amount of waste is still a serious challenge.
+          phrases: ['quite striking', 'not only in', 'That said', 'a long way to go']
+        - text: >-
+            The way recycling has evolved over the years is actually something I find quite fascinating, because it shows
+            how quickly social norms can change. When I was in elementary school, my family lived in a small town, and
+            there wasn't really a formal recycling system. Most trash was collected all together, and I remember people
+            sometimes burning paper and leaves in their yards, which would be unthinkable today. Disposable products were
+            seen as convenient and even modern, so nobody felt guilty about using them. Fast forward to today, and
+            everything looks different. Recycling is highly organized, with clear rules about what goes where, and people
+            who ignore those rules can actually be fined. What's even more interesting is that attitudes have shifted,
+            especially among younger people. My teenage niece, for instance, refuses to use plastic straws and lectures
+            the whole family when we order too much takeout. When I was her age, I wouldn't have even known what she was
+            talking about. Of course, the system isn't perfect. There are still questions about how much of what we sort
+            actually gets recycled. But overall, I think the change in mindset over just one generation has been
+            remarkable, and it gives me some hope for the future.
+          phrases: ['which would be unthinkable today', 'Fast forward to today', 'What''s even more interesting is', 'gives me some hope']
+    tip_ko: when I was young과 these days로 과거와 지금을 나눠 말해요. 바뀐 규칙 하나와 바뀐 사람들의 태도 하나를 들면 충분해요.
+  - id: recycling-issue
+    type: issue
+    level: [4, 5, 6]
+    question: >-
+      Many people are worried about the amount of plastic waste these days. What concerns do people around you have
+      about this problem, and what do you think should be done about it?
+    model:
+      il:
+        - text: >-
+            Many people worry about plastic. We use too many plastic cups and bags. It is bad for the ocean. I think we
+            should use less plastic. I use my own cup at cafés.
+          phrases: ['worry about', 'I think we should']
+        - text: >-
+            People order a lot of delivery food. It comes in many plastic boxes. That is a problem. I think restaurants
+            should use paper boxes. We can also cook at home more.
+          phrases: ['That is a problem', 'We can also']
+      im1:
+        - text: >-
+            Many people around me are worried about plastic waste. These days, people order food delivery a lot, and every
+            meal comes in many plastic containers. My friends say the ocean is full of plastic, and sea animals are in
+            danger. I agree that it's a big problem. I think we should use less plastic in our daily lives. For example, I
+            bring my own tumbler to cafés and use cloth shopping bags.
+          phrases: ['are worried about', 'I agree that', 'For example']
+        - text: >-
+            My parents are worried about plastic waste because there is so much packaging these days. When we buy one
+            small thing online, it comes in a big box with a lot of plastic inside. I think companies should use less
+            packaging. The government should also make stronger rules. And people like me should try to buy products with
+            less plastic. Small changes can make a big difference.
+          phrases: ['so much packaging', 'should also', 'make a big difference']
+      im2:
+        - text: >-
+            Plastic waste is a serious concern for a lot of people I know. My friends and I often talk about how much
+            plastic we use every day without even thinking about it. For example, when I buy a coffee, I get a plastic
+            cup, a lid, and a straw, and I throw them all away after ten minutes. Also, food delivery has become really
+            popular, so the amount of plastic containers has increased a lot. In my opinion, both companies and
+            individuals need to change. Companies should develop better packaging, and people like me should use reusable
+            products as much as possible.
+          phrases: ['a serious concern', 'without even thinking about it', 'In my opinion', 'as much as possible']
+        - text: >-
+            One concern that people around me have is that recycling doesn't actually solve the plastic problem. My cousin
+            works at an environmental organization, and she told me that a lot of plastic can't be recycled because it's
+            dirty or made of mixed materials. That surprised me, because I thought sorting my trash was enough. Now I
+            think the most important thing is to use less plastic in the first place. For example, I try to buy fruit and
+            vegetables without packaging and avoid ordering delivery food too often. I also think the government should
+            encourage companies to use simpler, more recyclable packaging.
+          phrases: ['One concern that', 'That surprised me', 'in the first place']
+      im3:
+        - text: >-
+            These days, a lot of people around me are worried about plastic waste, and I think it's become a common topic
+            of conversation. My mother, for example, always complains when we receive online orders, because even a small
+            item comes wrapped in several layers of plastic. My friends who have children worry about microplastics, which
+            are tiny pieces of plastic that can end up in our food and water. Personally, I think the problem is that
+            plastic is just too convenient and cheap, so companies keep using it. In my opinion, we need changes at
+            different levels. The government should make stricter rules about packaging, companies should look for
+            alternatives like paper or reusable containers, and individuals should change their habits too. I've started
+            carrying a tumbler and refusing straws, and although it's a small step, I feel better about it.
+          phrases: ['a common topic of conversation', 'Personally', 'at different levels', 'although it''s a small step']
+        - text: >-
+            One issue I hear about a lot is the plastic waste from food delivery. Since the pandemic, many people in my
+            city order delivery several times a week, and each order comes with plastic containers, plastic bags, and
+            disposable spoons. My roommate and I realized that our recycling bin was full of delivery containers every
+            week, and honestly, we felt a little guilty. Some restaurants now let customers choose not to receive
+            disposable utensils, which I think is a good start. A few delivery services even offer reusable containers in
+            some areas. In my opinion, these kinds of options should be much more common. At the same time, I think it's
+            up to each of us to change our habits. Since we noticed the problem, we've been cooking at home more often,
+            and we only order delivery once a week.
+          phrases: ['One issue I hear about', 'a good start', 'it''s up to each of us']
+      ih:
+        - text: >-
+            Plastic waste is probably one of the environmental issues people around me talk about most, and I think
+            there's good reason for that. Everywhere I look, there's plastic. Supermarkets wrap vegetables in plastic,
+            online orders come with layers of bubble wrap, and many cafés still use disposable cups for takeout. A few of
+            my friends have become really passionate about this issue. One of them even organizes beach clean-ups every
+            month, and she says the amount of plastic they collect never seems to decrease. People also worry about what
+            plastic does to our health, since tiny pieces can end up in the food chain. In my opinion, recycling alone
+            won't solve this problem, because only part of the plastic we throw away actually gets recycled. I think the
+            real solution is to produce less plastic in the first place. That means governments need to set stricter
+            limits on packaging, and companies need to take responsibility for the waste their products create. As
+            consumers, we can also make a difference by choosing products with less packaging and supporting businesses
+            that make an effort.
+          phrases: ['there''s good reason for that', 'won''t solve this problem', 'the real solution is', 'take responsibility for']
+        - text: >-
+            The concern I hear most often is that individuals are doing their best to recycle, but large companies aren't
+            doing enough. A lot of people in my generation feel a bit frustrated about this. We carefully wash our
+            containers and carry reusable bags, but then we see huge amounts of packaging in stores and wonder whether our
+            efforts really matter. I understand that feeling, and to some extent, I share it. For example, last month I
+            ordered a single phone case online, and it arrived in a box three times its size, filled with plastic air
+            bags. Situations like that make me think the biggest changes need to come from businesses and governments.
+            That said, I don't think individual actions are meaningless. When enough consumers demand change, companies
+            usually respond. I've noticed that some brands have started advertising eco-friendly packaging, which shows
+            that customer pressure works. So in my opinion, we should keep doing our part while also pushing companies and
+            policymakers to take bigger steps.
+          phrases: ['to some extent', 'That said', 'customer pressure works', 'keep doing our part']
+      al:
+        - text: >-
+            Plastic waste is a topic that comes up quite often among my friends and coworkers, and I think people's
+            concerns have become more specific over the past few years. At first, most people were worried about the
+            visible problem, like plastic bags floating in the ocean or bottles piling up on beaches. Now, many people are
+            also concerned about less visible issues, such as microplastics in drinking water and seafood, and the fact
+            that much of what we sort for recycling doesn't actually get recycled. A friend of mine who works in the
+            environmental field explained that mixed or contaminated plastic is often burned instead, which honestly made
+            me question how effective our current system is. In my view, the solution has to involve several layers.
+            First, governments should set clear limits on unnecessary packaging and make producers responsible for
+            collecting and recycling what they sell. Second, companies should invest in packaging that's genuinely
+            recyclable or reusable, rather than just labeling things as eco-friendly for marketing purposes. And finally,
+            consumers like me need to rethink our convenience-driven habits. I've started small, by carrying a reusable
+            bottle and choosing stores with refill options, but I know it's not enough on its own. Real progress will only
+            come when all three groups move in the same direction.
+          phrases: ['comes up quite often', 'In my view', 'rather than', 'move in the same direction']
+        - text: >-
+            I think the biggest concern people have about plastic waste is that the problem feels too big for any one
+            person to solve, and that sense of helplessness can actually make people give up. I've heard friends say
+            things like, why should I bother recycling when companies produce millions of plastic bottles every day? I
+            understand that frustration, but I strongly disagree with that conclusion. In my opinion, individual actions
+            matter, not because one person can fix everything, but because they shape social norms and influence what
+            businesses do. A good example is how quickly cafés in my neighborhood started offering discounts for people
+            who bring their own cups once enough customers began doing it. That said, I also think we can't rely on
+            individuals alone. The production of plastic needs to be reduced at the source, and that requires strong
+            policies, such as limits on single-use packaging and incentives for companies that develop alternatives.
+            Education is also important, especially for children, so that the next generation grows up seeing waste
+            reduction as normal. Personally, I've tried to lead by example. I avoid single-use items whenever possible,
+            and I talk about these issues with my family without being preachy. If everyone does a little and keeps
+            pushing for systemic change, I genuinely believe the situation can improve.
+          phrases: ['I strongly disagree with', 'not because', 'A good example is', 'lead by example']
+    tip_ko: 사람들이 걱정하는 점을 먼저 말하고 내 의견과 해결 방법을 이어요. 정부·회사·개인으로 나눠 말하면 높은 등급 답변처럼 들려요.

@@ -1,0 +1,438 @@
+schema_version: 1
+id: walking
+kind: survey
+title_ko: 걷기·조깅
+status: ready
+questions:
+  - id: walking-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you enjoy walking or jogging. Where do you usually go to walk or jog?
+      Describe that place for me in as much detail as you can.
+    model:
+      il:
+        - text: >-
+            I usually walk in a park near my home. The park is not big. There is a walking path and many trees. There are
+            some benches too. I like this park because it is quiet. I go there in the evening.
+          phrases: ['near my home', 'There is a walking path']
+        - text: >-
+            I go jogging by the river. It is close to my apartment. There is a long path for walking and running. Many
+            people exercise there. At night, there are lights, so it is safe. I really like it.
+          phrases: ['It is close to', 'so it is safe']
+      im1:
+        - text: >-
+            I usually go walking at a small park near my apartment. It takes only five minutes to get there on foot. The
+            park has a walking path around a pond, and there are lots of tall trees. There are also some benches and an
+            outdoor exercise area. In the morning, many older people exercise there. I like this park because it is quiet
+            and the air is fresh.
+          phrases: ['It takes only five minutes', 'There are also', 'I like this park because']
+        - text: >-
+            My favorite place for jogging is the path along the river in my neighborhood. It is about ten minutes from my
+            house. The path is long and flat, so it is good for running. On one side there is the river, and on the other
+            side there are flowers and grass. In the evening, the lights are on, so I feel safe. I go there almost every
+            day.
+          phrases: ['My favorite place for jogging is', 'On one side', 'on the other side']
+      im2:
+        - text: >-
+            Let me tell you about the place where I usually walk. It's a riverside park about ten minutes from my
+            apartment. The park is long and narrow, and it follows the river for several kilometers. There's a walking
+            path and a separate bike lane, so walkers and cyclists don't bump into each other. Along the path, there are
+            benches, small playgrounds, and some convenience stores. In the evening, a lot of people come out to walk
+            their dogs or jog. I like this place because I can see the water and feel the cool wind. That's why I go there
+            whenever I need some fresh air.
+          phrases: ['Let me tell you about', 'Along the path', 'That''s why']
+        - text: >-
+            The place I go jogging most often is a big park in the middle of my neighborhood. It's about a fifteen-minute
+            walk from my home. In the center of the park, there's a large field, and a running track goes around it. The
+            track is soft, so my knees don't hurt when I run. There are also tall trees, flower beds, and a small pond
+            with fish. On weekends, families have picnics on the grass. I really like this park because it's clean and it
+            never feels too crowded, even in the evening.
+          phrases: ['In the center of the park', 'so my knees don''t hurt', 'it never feels too crowded']
+      im3:
+        - text: >-
+            I usually walk along a trail on a small mountain behind my apartment complex. It's not a high mountain, so it
+            only takes about forty minutes to get to the top and come back down. The trail starts right next to a bus
+            stop, and at the beginning there are wooden stairs. After that, it becomes a dirt path with pine trees on both
+            sides. Halfway up, there's a little rest area with benches and some exercise equipment. From the top, I can
+            see my whole neighborhood, and at night the city lights look really beautiful. When I first moved here, I
+            didn't even know this trail existed, but now it's my favorite place to clear my head after work.
+          phrases: ['Halfway up', 'When I first moved here', 'clear my head']
+        - text: >-
+            My go-to place for jogging is the path along the Han River, which is about ten minutes from my place by bike.
+            What I love about it is how wide and open it is. On one side you have the river, and on the other side there
+            are big grassy areas where people set up tents and have picnics. The path is divided into a walking lane and a
+            bike lane, so it feels pretty safe. There are also public restrooms, water fountains, and convenience stores
+            every few kilometers. In the summer evenings, it gets really lively, with street musicians and people eating
+            fried chicken on the grass. Honestly, jogging there never feels boring.
+          phrases: ['My go-to place', 'What I love about it is', 'it gets really lively']
+      ih:
+        - text: >-
+            Sure, let me describe the place where I usually go walking. It's a lake park on the edge of my city, and it
+            takes me about fifteen minutes to get there by bus. The lake is surrounded by a walking trail that's roughly
+            three kilometers long, so one full lap is perfect for an evening walk. The trail is covered with a soft rubber
+            surface, which is nice because it's easy on your knees. Along the way, there are willow trees, wooden decks
+            where you can stand and look out over the water, and a small café near the entrance. What makes this place
+            special for me is the atmosphere around sunset. The water turns orange, and you can hear birds everywhere.
+            Even when I'm stressed out after a long day, walking around that lake calms me down almost right away. To be
+            honest, I can't imagine living somewhere without a place like this nearby.
+          phrases: ['is surrounded by', 'What makes this place special', 'calms me down']
+        - text: >-
+            The place I jog most often is actually just my neighborhood, but there's a specific route I always follow. I
+            start at the front gate of my apartment complex, go down a quiet street lined with cherry trees, and then join
+            a stream-side path that runs through the middle of town. The stream itself is pretty narrow, but the city
+            cleaned it up a few years ago, so now the water is clear and you can sometimes see ducks and even small fish.
+            The path has stepping stones in a few spots, so you can cross to the other side. There are also outdoor
+            exercise machines and little sitting areas under the bridges, where older people like to chat. I like this
+            route because it's only about four kilometers, and it feels peaceful even though I'm in the middle of the
+            city.
+          phrases: ['a specific route I always follow', 'lined with cherry trees', 'even though I''m in the middle of the city']
+      al:
+        - text: >-
+            I'd love to tell you about it. The place I walk the most is a forest trail on a hill right behind my
+            neighborhood. It's one of those places you'd never notice from the main road, but once you step onto the
+            trail, it feels like you've left the city completely. The trail starts with a steep set of wooden stairs,
+            which is honestly the hardest part, and then it levels out into a winding dirt path shaded by pine and oak
+            trees. About halfway up, there's an open area with a few benches and some simple exercise equipment, and
+            that's where most of the regulars stop to catch their breath. If you keep going, you reach a small lookout
+            point where you can see the whole city spread out below you. On clear days, you can even see the mountains far
+            in the distance. What I appreciate most is how the trail changes with the seasons. In spring it's full of
+            flowers, in summer it's cool and shady, and in the fall the leaves turn bright red and yellow. It never really
+            gets old.
+          phrases: ['one of those places you''d never notice', 'catch their breath', 'What I appreciate most is', 'It never really gets old']
+        - text: >-
+            Well, the place I usually go jogging is the riverside park in my neighborhood, and I'd say it's one of the
+            best things about living here. The park stretches for several kilometers along the river, and it has separate
+            lanes for runners, walkers, and cyclists, so even when it's busy, you don't really have to worry about
+            crashing into someone. The running lane is marked every hundred meters, which is great because I can keep
+            track of my distance without using an app. Along the way there are big lawns, basketball courts, and a few
+            outdoor stages where local bands sometimes perform on weekends. Personally, I prefer to go in the early
+            morning, right around sunrise. At that time, the air is cool, the light on the water is beautiful, and the
+            only people around are other runners, so there's this quiet sense that everyone is doing their own thing
+            together. On the way home, I usually grab a coffee and sit on the steps by the water for a few minutes. By the
+            time the park gets crowded, I'm already back home taking a shower.
+          phrases: ['one of the best things about living here', 'keep track of my distance', 'By the time the park gets crowded']
+    tip_ko: >-
+      장소를 위치 → 길과 시설 → 분위기 → 좋아하는 이유 순서로 말해요. bench, bike lane처럼 시설 이름을 두세 개 넣으면 묘사가 구체적이에요.
+  - id: walking-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about your usual routine when you go walking or jogging. What do you do before you start, while you
+      are out, and after you finish? Please describe it step by step.
+    model:
+      il:
+        - text: >-
+            I walk after dinner. First, I put on my sneakers. Then I walk for about one hour. I listen to music. After
+            that, I go home and take a shower. Then I drink some water.
+          phrases: ['First,', 'After that,']
+        - text: >-
+            I go jogging in the morning. Before jogging, I stretch for five minutes. Then I jog for thirty minutes. I
+            don't take my phone. After jogging, I eat breakfast. I feel really good.
+          phrases: ['Before jogging', 'After jogging']
+      im1:
+        - text: >-
+            I usually go walking three times a week after work. Before I leave, I change into comfortable clothes and put
+            on my running shoes. I also bring a small bottle of water. When I start, I walk slowly for a few minutes, and
+            then I walk faster. I usually listen to podcasts or music. I walk for about an hour. When I get home, I
+            stretch a little and take a warm shower.
+          phrases: ['Before I leave', 'When I start', 'When I get home']
+        - text: >-
+            My jogging routine is very simple. I go jogging on Saturday and Sunday mornings. First, I drink a glass of
+            water and do some stretching at home. Then I jog to the park near my house. I run about five kilometers.
+            Sometimes I stop and rest on a bench. After jogging, I buy a cup of coffee and walk home slowly. Then I have a
+            big breakfast at home.
+          phrases: ['My jogging routine is very simple', 'Sometimes I stop']
+      im2:
+        - text: >-
+            Well, I have a pretty regular routine for walking. I usually go out around eight in the evening, after I
+            finish dinner. Before I leave, I check the weather, and if it's cold, I wear a light jacket. I always bring my
+            phone and wireless earphones because I like listening to music while I walk. First, I walk slowly for about
+            ten minutes to warm up. After that, I walk quickly for about forty minutes. On my way back home, I sometimes
+            stop at a convenience store to buy a drink. When I get home, I take a shower and stretch my legs. It really
+            helps me sleep better.
+          phrases: ['a pretty regular routine', 'to warm up', 'On my way back home']
+        - text: >-
+            I usually go jogging on weekday mornings before work. I wake up at six, drink a glass of water, and do some
+            simple stretching for about five minutes. Then I put on my running clothes and go to the river path near my
+            house. I don't run very fast. I just jog at a comfortable speed for about thirty minutes. I use a running app
+            to check my distance and time. After I finish, I walk for a few minutes to cool down. Then I go home, take a
+            quick shower, and eat a light breakfast like toast and a banana.
+          phrases: ['at a comfortable speed', 'to cool down', 'After I finish']
+      im3:
+        - text: >-
+            My walking routine has become a big part of my day. I usually go out right after dinner, around seven thirty.
+            Before I head out, I put on comfortable clothes and my favorite sneakers, and I fill a small bottle with
+            water. I always choose a playlist or a podcast, because walking alone can get a little boring. For the first
+            ten minutes, I walk slowly to warm up, and then I speed up and walk as fast as I can for about thirty minutes.
+            If the weather is nice, I take a longer route along the stream. On my way home, I slow down again and stretch
+            at a bench near my apartment. After that, I take a shower, and honestly, I feel so much lighter and more
+            relaxed.
+          phrases: ['has become a big part of my day', 'Before I head out', 'If the weather is nice']
+        - text: >-
+            On weekends, I go jogging, and I try to follow the same routine every time. First, I check the weather on my
+            phone the night before so I can decide what to wear. In the morning, I eat something small, like half a
+            banana, because running on an empty stomach makes me dizzy. Then I do some stretching in front of my apartment
+            building. I usually jog for about forty minutes, and I use a running app to record my pace. In the middle, I
+            take a short break to drink water. When I'm done, I walk the last five minutes to cool down. Back home, I
+            check my record on the app, and it feels great when I've improved a little.
+          phrases: ['the same routine every time', 'on an empty stomach', 'it feels great when']
+      ih:
+        - text: >-
+            Let me walk you through my typical routine. I go jogging four times a week, usually early in the morning
+            before work, because once the day starts, I never find the time. The night before, I lay out my running
+            clothes and charge my earphones, so I don't have to think about anything when I wake up. In the morning, I
+            drink a glass of water and spend about five minutes stretching, mainly my legs and lower back. Then I jog to
+            the river, which takes about ten minutes, and run along the path for another thirty minutes. I usually run at
+            an easy pace, but once a week I try to go faster to challenge myself. When I get back, I do a few more
+            stretches in the parking lot, take a quick shower, and eat breakfast. By the time I get to the office, I feel
+            much more awake than my coworkers.
+          phrases: ['Let me walk you through', 'The night before', 'By the time I get to the office']
+        - text: >-
+            My walking routine is pretty relaxed, but I stick to it most days. I usually head out after dinner, around
+            eight, because walking right after eating helps with digestion. Before leaving, I put on comfortable shoes and
+            grab a light jacket, since it can get chilly near the stream at night. I don't bring much, just my phone and
+            keys. While I'm walking, I usually call my parents or a friend, so it doesn't feel like exercise at all. I
+            walk for about an hour, and I try to reach at least eight thousand steps, which I check on my phone. On the
+            way back, I sometimes pick up some fruit at a small market near my apartment. After I get home, I take a warm
+            shower and stretch on the living room floor. It's a simple routine, but it really helps me unwind.
+          phrases: ['I stick to it most days', 'it doesn''t feel like exercise at all', 'helps me unwind']
+      al:
+        - text: >-
+            Honestly, my jogging routine is something I've built up slowly over the past couple of years, and now it's
+            pretty much automatic. I run three or four mornings a week, usually around six thirty, before the streets get
+            busy. The night before, I check the weather and set out my clothes, because if I have to look for my socks in
+            the dark, I'll probably just go back to bed. When I wake up, I drink a full glass of water and do about ten
+            minutes of dynamic stretching, things like leg swings and lunges, instead of just standing and stretching.
+            Then I start with a slow jog for the first kilometer to let my body warm up. Most days, I run around six
+            kilometers at a steady pace, but on Fridays I do short intervals, where I sprint for one minute and then jog
+            for two. I always finish with a five-minute walk to cool down. After that, I record my run in an app, take a
+            shower, and make a smoothie. I've found that having a fixed routine makes it much harder to skip a day.
+          phrases: ['pretty much automatic', 'instead of just standing and stretching', 'I''ve found that']
+        - text: >-
+            My walking routine is actually less about exercise and more about clearing my head, so it's pretty flexible. I
+            usually go out in the evening, once I've finished work and had something light to eat. Before I leave, I
+            change into comfortable clothes and put my phone on silent, because I really don't want work messages
+            following me around. I don't use a fixed route. Some days I walk along the stream, and other days I wander
+            through side streets I haven't explored yet, which is surprisingly fun. I typically walk for about an hour,
+            and I try to keep a brisk pace for at least the middle thirty minutes so my heart rate goes up a bit. Every
+            now and then, I stop at a small bakery or a bookstore on the way. When I get home, I stretch my legs, drink a
+            big glass of water, and write a few lines in my journal about how the day went. That last part has become my
+            favorite way to wrap up the day.
+          phrases: ['less about exercise and more about', 'Every now and then', 'wrap up the day']
+    tip_ko: >-
+      First, Then, After that 같은 순서 표현으로 하기 전 → 하는 동안 → 끝난 뒤를 나눠 말하면 길게 말해도 흐름이 흐트러지지 않아요.
+  - id: walking-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Think about a memorable experience you had while walking or jogging. When was it, where were you, and what
+      happened? Tell me the whole story and why you still remember it.
+    model:
+      il:
+        - text: >-
+            Last summer, I went jogging in the rain. I did not have an umbrella. My clothes got very wet. But it was fun.
+            I laughed a lot. Then I went home and took a hot shower.
+          phrases: ['Last summer', 'But it was fun']
+        - text: >-
+            One day, I walked in the park with my friend. We saw a small cat. It was very cute. We gave it some water.
+            Then we walked again. It was a really happy day for me.
+          phrases: ['One day', 'It was very cute']
+      im1:
+        - text: >-
+            I remember one day last fall. I went jogging along the river after work. Suddenly, it started to rain very
+            hard. I didn't have an umbrella, so I ran under a bridge. Many other people were there too. We waited for
+            about twenty minutes and talked to each other. When the rain stopped, I saw a beautiful rainbow over the
+            river. I still remember it.
+          phrases: ['Suddenly', 'When the rain stopped', 'I still remember it']
+        - text: >-
+            Last year, I joined a five-kilometer running event in my city. It was my first race. I was very nervous before
+            the race. At the start, many people ran very fast, so I followed them. After two kilometers, I was very tired.
+            But I didn't stop. I finished the race in thirty-five minutes. I was so proud of myself, and I got a medal.
+          phrases: ['It was my first race', 'But I didn''t stop', 'I was so proud of myself']
+      im2:
+        - text: >-
+            I have a funny memory about walking. Last winter, I went for a walk at night in a park near my house. It had
+            snowed a lot during the day, so everything was white. I was walking and listening to music, and I didn't see
+            the ice on the path. Suddenly, I slipped and fell down in front of a group of high school students. I was so
+            embarrassed, but they asked me if I was okay and helped me stand up. Luckily, I wasn't hurt. After that day, I
+            always wear shoes with good grip in winter, and I walk much more carefully.
+          phrases: ['I have a funny memory', 'I was so embarrassed', 'Luckily', 'After that day']
+        - text: >-
+            One memorable experience was when I got lost while jogging. A few months ago, I decided to try a new route in
+            a different neighborhood. At first, everything was fine, but after about thirty minutes, I realized I didn't
+            know where I was. My phone battery was almost dead, so I couldn't use the map. I asked an older man for
+            directions, and he kindly showed me the way back to the main road. In the end, I jogged almost ten kilometers
+            that day, which was twice my usual distance. I was exhausted, but it was a good lesson.
+          phrases: ['At first, everything was fine', 'I realized', 'In the end']
+      im3:
+        - text: >-
+            The most memorable time I went jogging was during my first half marathon two years ago. I had trained for
+            about three months, but on the day of the race, it was much hotter than I expected. For the first ten
+            kilometers, I felt great, and I was actually running faster than my plan. But around the fifteen-kilometer
+            mark, my legs started to cramp, and I had to walk for a while. Honestly, I almost gave up. Then a stranger
+            running next to me said, let's finish this together. We ran the last five kilometers side by side, and I
+            finished in about two hours and ten minutes. I never even learned his name, but I'll never forget him.
+          phrases: ['much hotter than I expected', 'I almost gave up', 'side by side']
+        - text: >-
+            I'll never forget a walk I took with my grandfather when I was in high school. He lived in a small town in the
+            countryside, and one evening he asked me to walk with him to the rice fields behind his house. At first, I
+            didn't really want to go because I just wanted to play games on my phone. But as we walked, he started telling
+            me stories about his childhood and how the town used to look. The sky turned pink and orange, and we could
+            hear frogs everywhere. We walked for almost two hours without noticing the time. He passed away a few years
+            later, so now that walk feels really special to me.
+          phrases: ['I''ll never forget', 'used to look', 'without noticing the time']
+      ih:
+        - text: >-
+            Let me tell you about something that happened last spring. I was jogging along the river early in the morning,
+            like I usually do, when I noticed an older woman sitting on a bench looking really pale. At first, I just ran
+            past her, but something felt wrong, so I turned around and asked if she was okay. She told me she felt dizzy
+            and couldn't remember the way home. I stayed with her, gave her my water, and called an ambulance. While we
+            were waiting, I found her daughter's number in her bag and called her too. The ambulance arrived in about ten
+            minutes, and it turned out her blood sugar was very low. A week later, her daughter contacted me to say thank
+            you. Since then, I've tried to pay a little more attention to people around me, even when I'm focused on my
+            run.
+          phrases: ['something felt wrong', 'it turned out', 'Since then']
+        - text: >-
+            The most memorable walk I've ever taken was during a power outage in my neighborhood a couple of years ago. It
+            was a hot summer night, and suddenly every light on the street went out. Since there was no air conditioning,
+            a lot of people came outside, including me. I decided to walk to the park, and it was such a strange
+            experience. Without the streetlights, I could actually see the stars, which almost never happens in the city.
+            Neighbors I had never talked to were sitting outside, sharing snacks and chatting with each other. Some kids
+            were running around with flashlights. The power came back about two hours later, and everything went back to
+            normal pretty quickly. But I still remember how calm and friendly everything felt that night, and it made me
+            realize how little I know the people living around me.
+          phrases: ['such a strange experience', 'went back to normal', 'it made me realize']
+      al:
+        - text: >-
+            One run that really sticks with me is a night race I did along the Han River about three years ago. I had
+            signed up mostly because a friend dragged me into it, and to be honest, I hadn't trained nearly as much as I
+            should have. The race started at nine at night, and there were thousands of runners wearing glowing bracelets,
+            so the whole riverside looked like a river of light. For the first few kilometers, I was having the time of my
+            life, chatting with my friend and enjoying the view of the bridges lit up over the water. But around the
+            seventh kilometer, I hit a wall. My legs felt like stone, and I seriously considered dropping out. My friend
+            could have run ahead, but she slowed down and stayed with me the whole way, making jokes to keep me going. We
+            crossed the finish line together, almost an hour slower than we had planned, but laughing the entire time.
+            That night taught me that finishing something with someone can matter more than the time on the clock.
+          phrases: ['really sticks with me', 'I hit a wall', 'could have run ahead', 'That night taught me']
+        - text: >-
+            I'd have to say the most memorable walk I've had was the day I found out I'd gotten my first job. I had been
+            waiting for the result for almost two weeks, and I was so anxious that I couldn't sit still at home, so I went
+            out for a walk along the stream near my apartment. About twenty minutes into the walk, my phone buzzed, and it
+            was an email from the company. I remember stopping in the middle of the path, too nervous to open it. When I
+            finally read that I had been accepted, I actually shouted out loud, and a couple walking their dog turned
+            around and stared at me. I was a little embarrassed, but I couldn't stop smiling. Instead of going home, I
+            kept walking for another hour, calling my parents and my best friend one by one. My mom actually cried on the
+            phone, which made me tear up a little too. Even now, whenever I walk past that particular bridge, I remember
+            exactly how I felt in that moment.
+          phrases: ['I couldn''t sit still', 'too nervous to open it', 'I couldn''t stop smiling', 'Even now']
+    tip_ko: >-
+      언제·어디서를 먼저 말하고, 무슨 일이 있었는지 과거형으로 이어 가요. 마지막에 그 일로 느낀 점이나 바뀐 점을 한 문장 붙이면 마무리가 깔끔해요.
+  - id: walking-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      How has the way you walk or jog changed since you first started? Compare how you used to do it with how you do
+      it now, and explain what caused those changes.
+    model:
+      il:
+        - text: >-
+            Before, I walked only on weekends. Now I walk every day. Before, I walked alone. Now I walk with my sister. I
+            like walking now more than before. It is good for my health.
+          phrases: ['Before,', 'Now I walk']
+        - text: >-
+            When I started jogging, I ran only ten minutes. It was very hard. Now I run thirty minutes. It is easy now.
+            Before, I had cheap shoes. Now I have good running shoes.
+          phrases: ['When I started jogging', 'Now I run']
+      im1:
+        - text: >-
+            When I first started jogging, I was really slow. I could only run for about ten minutes without stopping. I
+            also didn't stretch, so my legs hurt a lot. Now, I can run for forty minutes, and I always stretch before and
+            after running. In the past, I ran alone, but now I sometimes run with a running club on weekends. I think I
+            enjoy jogging more now than before.
+          phrases: ['When I first started', 'In the past', 'but now']
+        - text: >-
+            In the past, I walked only to go somewhere, like to the bus stop or to school. I didn't think it was exercise.
+            But now I walk for my health. I walk for one hour almost every evening. I also check my steps on my phone.
+            Before, I didn't care about my health, but now I care a lot because I sit at my desk all day.
+          phrases: ['In the past', 'But now', 'I didn''t care about']
+      im2:
+        - text: >-
+            My jogging style has changed a lot since I started. Three years ago, when I first began, I just put on any old
+            sneakers and ran as fast as I could. Because of that, I got tired very quickly, and my knees often hurt. These
+            days, I'm much smarter about it. I bought proper running shoes, and I always warm up and cool down. I also run
+            at a slower, steady pace, so I can run much longer than before. Another big change is that I used to run only
+            when I felt like it, but now I have a regular schedule. I think the biggest reason for these changes is that I
+            learned a lot from online videos.
+          phrases: ['has changed a lot', 'These days', 'I used to', 'the biggest reason']
+        - text: >-
+            When I was in college, I walked a lot, but only because I didn't have a car. I walked to class, to my
+            part-time job, and to my friends' houses. It wasn't for exercise at all. Now I drive to work, so I don't walk
+            much during the day. That's why I started taking walks in the evening on purpose. Another difference is that I
+            used to walk quickly because I was always late, but now I walk slowly and enjoy the scenery. I think walking
+            has changed from something I had to do into something I want to do.
+          phrases: ['When I was in college', 'Another difference is that', 'on purpose']
+      im3:
+        - text: >-
+            Compared to when I first started, the way I walk has changed quite a bit. A few years ago, I only went walking
+            when I felt stressed, maybe once or twice a month. I didn't plan anything. I just walked around the block and
+            came home. These days, walking is part of my daily schedule. I go out almost every evening, and I usually walk
+            for about an hour along the stream. I also use a smartwatch to check my steps and heart rate, which I never
+            did before. The main reason for this change was a health checkup two years ago. The doctor told me my blood
+            pressure was a little high, and he said walking every day would help. Since then, I've taken it much more
+            seriously.
+          phrases: ['Compared to when I first started', 'These days', 'The main reason for this change']
+        - text: >-
+            My jogging habits are really different now compared to when I was younger. In my early twenties, I used to run
+            with my friends late at night, and it was more of a social thing than exercise. We'd run for twenty minutes
+            and then go eat chicken together, so I don't think it was very healthy. Now that I'm in my thirties, I jog
+            alone in the early morning, and I focus on my breathing and my pace. I also pay attention to things like
+            stretching and getting enough sleep. I think the biggest reason is that my body doesn't recover as quickly as
+            before, so I have to be more careful. Still, I miss those fun late-night runs sometimes.
+          phrases: ['I used to run', 'Now that I''m in my thirties', 'doesn''t recover as quickly as before']
+      ih:
+        - text: >-
+            There's actually a big difference between how I used to walk and how I walk now. When I first started walking
+            for exercise, about five years ago, I saw it as something boring that I had to do to lose weight. I'd walk the
+            same short route every day, constantly checking the time and counting down the minutes until I could go home.
+            These days, it's completely different. I walk because I genuinely enjoy it, and I often go much farther than I
+            planned. I explore new neighborhoods, take photos of interesting buildings, and sometimes stop at small cafés
+            along the way. I think the turning point was when I started listening to audiobooks while walking. Suddenly,
+            the time flew by, and I actually looked forward to going out. Now, if I skip a day, I feel like something's
+            missing.
+          phrases: ['a big difference between', 'These days, it''s completely different', 'the turning point was']
+        - text: >-
+            When I first started jogging, I was honestly pretty bad at it. I'd run as fast as I could for the first few
+            minutes and then end up walking, completely out of breath. I didn't have proper shoes, I never stretched, and
+            after a couple of weeks I hurt my ankle and had to stop for a month. These days, I approach jogging in a much
+            more careful way. I start slowly, keep a steady pace, and I increase my distance only a little each week. I
+            also joined a small running group in my neighborhood, and the members taught me a lot about breathing and
+            posture. The biggest change, though, is my mindset. In the past, I only cared about losing weight quickly, but
+            now I care more about staying healthy for the long term, so I don't push myself too hard.
+          phrases: ['out of breath', 'The biggest change, though, is', 'for the long term']
+      al:
+        - text: >-
+            The way I jog now is almost unrecognizable compared to how I started. Back when I first got into it, I was a
+            university student, and I'd basically go out whenever I felt guilty about eating too much. There was no plan
+            at all. I'd run until I got tired, which usually didn't take very long, and then I'd walk home feeling a bit
+            defeated. Over the years, though, things have changed quite a lot. I now follow a weekly plan with easy runs,
+            one long run on the weekend, and a short session of faster intervals. I track everything with an app, and I've
+            learned to listen to my body, so if my knees feel sore, I take a rest day instead of pushing through. Another
+            big difference is the reason I run. In the past, it was mostly about appearance, but now it's about my mental
+            health. After a stressful day at work, a run is the one thing that reliably clears my head. If I had to pick
+            the main cause of this change, I'd say it was getting older and realizing that health isn't something you can
+            take for granted.
+          phrases: ['almost unrecognizable', 'Over the years', 'If I had to pick', 'take for granted']
+        - text: >-
+            If I compare how I walked when I was a kid with how I walk now, the difference is pretty huge, and I think it
+            says a lot about how my neighborhood has changed too. When I was little, I walked everywhere, mostly because
+            there was nothing else to do. My friends and I would wander around the alleys after school, stopping at small
+            stationery shops and playing in empty lots until dinner time. Back then, walking was just part of life, not
+            something you planned. Nowadays, I live in a big apartment complex, and most of my daily trips are by car or
+            subway, so if I don't make an effort, I barely walk at all. That's why I now schedule walks the same way I'd
+            schedule a meeting. I go out three or four evenings a week, and I try to choose routes with parks or streams
+            rather than busy roads. In a way, I've had to rediscover walking as an adult. It's less spontaneous than it
+            used to be, but I probably appreciate it more now than I did as a kid.
+          phrases: ['it says a lot about', 'Back then', 'Nowadays', 'In a way']
+    tip_ko: >-
+      used to로 예전 모습을, these days나 now로 지금 모습을 말해요. 바뀐 이유를 하나 꼭 넣어야 비교 문제의 답이 완성돼요.

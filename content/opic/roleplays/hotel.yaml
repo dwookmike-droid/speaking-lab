@@ -1,0 +1,411 @@
+schema_version: 1
+id: hotel
+kind: roleplay
+title_ko: 호텔 예약
+situation_ko: 여행 갈 호텔에 전화해서 방과 서비스를 물어보고, 도착했을 때 방이 중복 예약된 문제를 해결해요.
+status: ready
+questions:
+- id: hotel-roleplay_ask
+  type: roleplay_ask
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    I'd like to give you a situation and ask you to act it out. You are planning a weekend trip and want to stay
+    at a hotel. Call the hotel and ask three or four questions about the rooms and services.
+  model:
+    il:
+    - text: >-
+        Hi. I want to book a room this weekend. How much is a room? Is breakfast free? Do you have parking? Thank
+        you.
+      phrases:
+      - I want to book a room
+      - Is breakfast free
+    - text: >-
+        Hello. I have some questions. Do you have a room for two people on Saturday? What time is check-in? Is there
+        a pool? Thanks.
+      phrases:
+      - Do you have a room for
+      - What time is check-in
+    im1:
+    - text: >-
+        Hi, I'm calling about a room. I want to stay at your hotel this weekend with my wife. Do you have a double
+        room for Friday and Saturday? How much is it per night? Is breakfast included? And is there free Wi-Fi in
+        the room? Thank you.
+      phrases:
+      - I'm calling about
+      - How much is it per night
+      - Is breakfast included
+    - text: >-
+        Hello, I have a few questions. I'm planning a trip with my friend next month. Do you have a room with two
+        beds? What time is check-in and check-out? Is there a restaurant in the hotel? Also, how far is the hotel
+        from the beach? Thank you.
+      phrases:
+      - I'm planning a trip
+      - how far is the hotel from
+    im2:
+    - text: >-
+        Hi, I'm calling because I want to book a room for a weekend trip. My family is coming with me, so we need
+        a room for four people. First, do you have a family room available next Saturday? Second, how much does
+        it cost for one night? Also, is breakfast included in the price? And is there a parking lot for guests?
+        Thank you very much.
+      phrases:
+      - I'm calling because
+      - First
+      - is breakfast included in the price
+    - text: >-
+        Hello, I'm planning to visit your city for a business trip next week, and I'm looking for a hotel. Can I
+        ask you some questions? Do you have a single room from Monday to Wednesday? Is there a desk in the room?
+        I need to work at night. Also, is there a shuttle bus to the train station? Finally, can I check in late,
+        around eleven at night? Thanks.
+      phrases:
+      - I'm looking for a hotel
+      - Can I ask you some questions
+      - can I check in late
+    im3:
+    - text: >-
+        Hi there, I'm planning a short trip to the coast with my best friend, and I found your hotel online, so
+        I have a few questions. First of all, do you have any rooms with an ocean view for next Friday and Saturday?
+        If so, how much would that be per night? Also, does the price include breakfast? Is there a pool? Lastly,
+        is it possible to check out a little late on Sunday? Thank you.
+      phrases:
+      - I found your hotel online
+      - If so
+      - is it possible to check out a little late
+    - text: >-
+        Hello, I'm calling because my parents are visiting me next month, and I'd like to book a comfortable hotel
+        for them. They're in their sixties, so I have some questions. Is there an elevator in the building? Do you
+        have rooms with two beds on a lower floor? How much is it for three nights? And is there a restaurant nearby
+        where they can have dinner easily? Thanks for your help.
+      phrases:
+      - They're in their sixties
+      - Do you have rooms with
+      - Thanks for your help
+    ih:
+    - text: >-
+        Hi, how are you doing? I'm organizing a weekend getaway for my wife's birthday next month, and your hotel
+        looks perfect, so I just wanted to ask a few questions before I make a reservation. To begin with, do you
+        have any rooms with a balcony available on the fourteenth and fifteenth? Next, what's the total price for
+        two nights, including tax? I'm also wondering if you offer any special packages for birthdays, like flowers
+        or a cake in the room. Finally, would you recommend a good restaurant nearby? Thanks a lot.
+      phrases:
+      - I'm organizing a weekend getaway
+      - before I make a reservation
+      - I'm also wondering if
+    - text: >-
+        Hello, I hope you can help me. I'm attending a conference near your hotel at the end of this month, and
+        a few of my coworkers will be coming too. So first, I'd like to know if you have four single rooms from
+        the twenty-fifth to the twenty-eighth. Second, do you offer a corporate discount for group bookings? We'd
+        also need a quiet place to work, so is there a business center we could use? And lastly, how long does it
+        take to get from the hotel to the convention center? Thank you.
+      phrases:
+      - I'd like to know if
+      - do you offer a corporate discount
+      - how long does it take to get
+    al:
+    - text: >-
+        Hi, thanks for taking my call. I'm planning a trip with a group of friends from college next month, and
+        we're trying to decide between a couple of hotels, so I'd love to ask you a few things. First of all, we're
+        looking at three rooms from the ninth to the twelfth. Do you have availability for those dates, and could
+        the rooms be on the same floor? Second, what's your cancellation policy? A couple of my friends aren't sure
+        about their schedules yet. Also, is your rooftop bar open to guests every night? And finally, is there an
+        easy way to get downtown without renting a car? Thanks so much for your time.
+      phrases:
+      - we're trying to decide between
+      - what's your cancellation policy
+      - Thanks so much for your time
+    - text: >-
+        Hello, I hope I'm not calling at a bad time. My husband and I are planning a quiet getaway for our tenth
+        anniversary, and a friend highly recommended your hotel, so I wanted to check a few details. To start with,
+        do you have any rooms with a mountain view for the last weekend of next month? We'd prefer somewhere away
+        from the elevator, since we're both light sleepers. Next, is breakfast served in the room or only in the
+        restaurant? I'm also curious whether we need to book spa treatments in advance. And lastly, is there free
+        parking on site? Thank you so much.
+      phrases:
+      - a friend highly recommended
+      - We'd prefer somewhere
+      - I'm also curious whether
+  tip_ko: 날짜와 인원을 먼저 말하고 질문으로 넘어가요. 가격, 조식, 위치처럼 서로 다른 주제로 질문을 고르면 덜 겹쳐요.
+- id: hotel-roleplay_solve
+  type: roleplay_solve
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    I'm sorry, but there's a problem. When you arrive at the hotel, the clerk tells you that your room was double-booked
+    and there is no room for you tonight. Explain the situation and suggest two or three ways to solve it.
+  model:
+    il:
+    - text: >-
+        Excuse me. There is a problem. You don't have a room for me. But I booked a room. Can you find another room?
+        Or another hotel? Thank you. Please help me.
+      phrases:
+      - There is a problem
+      - Can you find another room
+    - text: >-
+        Hi. I booked a room for tonight. But you say there is no room. I am very tired. Can I get a room in another
+        hotel? Or can I get my money back?
+      phrases:
+      - I am very tired
+      - Or can I get my money back
+    im1:
+    - text: >-
+        Excuse me, I have a problem. I booked a room online two weeks ago, and I paid for it. But you say my room
+        was double-booked, and there are no rooms tonight. I'm really tired after a long trip. Could you find me
+        a room at another hotel nearby? Or maybe you have a different type of room? If not, I need a full refund.
+        Thank you.
+      phrases:
+      - I paid for it
+      - Could you find me a room
+      - If not, I need a full refund
+    - text: >-
+        Hi, I'm sorry, but this is a big problem for me. I reserved a double room for two nights, and here is my
+        confirmation email. Now you're telling me there's no room for me tonight. It's very late, and I don't know
+        this city. Can you call another hotel for me? Or can I stay in a bigger room and pay the same price? Please
+        help me. Thank you.
+      phrases:
+      - this is a big problem for me
+      - here is my confirmation email
+      - pay the same price
+    im2:
+    - text: >-
+        Excuse me, I'm sorry, but I think there's a serious problem. I booked a double room at this hotel a month
+        ago for tonight and tomorrow, and I already paid for it. Here's my confirmation number. But you just told
+        me that the room was double-booked and that there are no rooms available. My wife and I just finished a
+        five-hour drive, so we're really tired. Could you please help us in one of these ways? First, maybe you
+        could upgrade us to a suite if one is free. Second, you could find us a room at a hotel nearby and pay for
+        the taxi. Or third, please give us a full refund. Thank you.
+      phrases:
+      - there's a serious problem
+      - Here's my confirmation number
+      - upgrade us to a suite
+    - text: >-
+        Hi, I'm afraid there's been a mistake. I made a reservation for a single room for three nights, and I got
+        an email from your hotel last week. But now you're saying someone else is already in my room and there are
+        no other rooms. I have an important meeting early tomorrow morning, so I really need a place to sleep tonight.
+        Could you check again for any room, even a small one? If there's really nothing, could you book me a room
+        at a hotel close to here? And of course, I'd like a refund for tonight. Thanks for your help.
+      phrases:
+      - I'm afraid there's been a mistake
+      - even a small one
+      - And of course
+    im3:
+    - text: >-
+        Excuse me, I'm really sorry to bother you, but I think there's a problem with my reservation. I booked a
+        room with two beds for my kids and me about three weeks ago, and I even got a confirmation email. But now
+        you're telling me that the room has been double-booked and there's nothing left for tonight. It's almost
+        eleven, and my kids are falling asleep in the lobby, so I really need your help. I have a few ideas. First,
+        could you check if there's any other type of room available, even a more expensive one? If there's really
+        nothing, could you find us a room at another hotel nearby and arrange a taxi? And if neither is possible,
+        I'd need a full refund. Thank you.
+      phrases:
+      - I really need your help
+      - I have a few ideas
+      - if neither is possible
+    - text: >-
+        Hi, sorry, but I have a pretty big problem here. I booked a room at this hotel for my business trip, and
+        the reservation was made by my company. I have the confirmation right here on my phone. But the clerk just
+        told me that the room was given to someone else by mistake. I flew in from Seoul today, and I have a presentation
+        tomorrow at nine, so I really can't spend the night looking for a hotel. Would it be possible to put me
+        in a different room, maybe a suite, for the same price? If not, could you contact one of your partner hotels
+        and book a room for me? Of course, I'd also like you to cover the cost of getting there. Thanks a lot.
+      phrases:
+      - I have a pretty big problem here
+      - Would it be possible to
+      - cover the cost of
+    ih:
+    - text: >-
+        Excuse me, I'm really sorry to bother you when you're this busy, but I think there's been a serious mix-up
+        with my booking. I reserved an ocean-view room here about two months ago for my parents' anniversary trip,
+        and I paid the full amount in advance. Here's the confirmation email, if you'd like to see it. But the clerk
+        just told me that the room has been double-booked and that the hotel is completely full tonight. As you
+        can imagine, this is really disappointing, because my parents have been looking forward to this for weeks.
+        So I'd like to suggest a few options. Ideally, you could upgrade us to another room, even if it doesn't
+        have an ocean view. If that's impossible, could you book us a similar room at a nearby hotel and pay for
+        the transportation? And finally, I think a refund for tonight would be fair either way. Thank you for understanding.
+      phrases:
+      - a serious mix-up
+      - As you can imagine
+      - would be fair either way
+    - text: >-
+        Hi, I'm sorry, but I've just run into a pretty frustrating problem, and I really need your help. I booked
+        a single room here for three nights through your website, and I got a confirmation email right away. But
+        when I tried to check in a few minutes ago, the clerk told me that my room had been given to another guest
+        because of a system error, and that there's nothing left tonight. To be honest, I'm exhausted. My flight
+        was delayed for four hours, and I have a job interview tomorrow morning. So here's what I'd like to ask.
+        First, could you double-check whether any room has been canceled tonight? Second, if not, could you find
+        me a room at a hotel within walking distance and cover the difference in price? And third, I'd appreciate
+        a refund for tonight, or at least a discount for the next two nights. Thank you.
+      phrases:
+      - I've just run into
+      - To be honest, I'm exhausted
+      - So here's what I'd like to ask
+    al:
+    - text: >-
+        Excuse me, I'm sorry to interrupt, but I'm afraid we have a bit of a situation here, and I'm hoping you
+        can help me sort it out. About two months ago, I booked a deluxe room at this hotel for three nights. It's
+        my wife's fortieth birthday this weekend, and I've been planning this trip as a surprise for quite a while.
+        I've got the confirmation email right here, and I paid the full amount when I booked. However, the gentleman
+        at the front desk just told me that the room was double-booked and that the hotel is completely full tonight.
+        Honestly, I'm pretty upset, because my wife is waiting in the car and I really don't want to ruin her birthday.
+        So let me suggest a few possible solutions. First, if any suite or higher-category room is still available,
+        could you upgrade us at no extra charge? If not, could you arrange a similar room at a nearby hotel and
+        cover the taxi fare? And regardless of which option works out, I'd really appreciate some kind of refund
+        for the trouble. Thank you.
+      phrases:
+      - help me sort it out
+      - let me suggest a few possible solutions
+      - regardless of which option works out
+    - text: >-
+        Hi there, I'm really sorry to bother you this late, but I've just been told something rather alarming, and
+        I'd like to see what we can do about it. I reserved a twin room here for my mother and me about a month
+        ago, and I received a confirmation email the very same day. Unfortunately, when we arrived, the night manager
+        told us that the room had been double-booked and that there's simply nothing available. My mother is in
+        her seventies and she's exhausted after a long flight, so spending the next hour driving around looking
+        for a place really isn't an option for us. With that in mind, I'd like to propose a few alternatives. First
+        of all, perhaps there's a room being held for late arrivals that could be released to us. If that's not
+        possible, would you be willing to book us into a comparable hotel nearby and arrange a taxi? Finally, I
+        think it would only be fair to refund the full cost of tonight's stay. I'd really appreciate your help.
+      phrases:
+      - With that in mind
+      - would you be willing to
+      - it would only be fair to
+  tip_ko: 예약 확인 메일이나 번호가 있다고 먼저 말하면 설명이 짧아져요. 대안은 다른 방, 다른 호텔, 환불 순서로 말해요.
+- id: hotel-roleplay_experience
+  type: roleplay_experience
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    That's the end of the situation. Have you ever had a problem while staying at a hotel or another place during
+    a trip? Tell me what happened and how it was resolved.
+  model:
+    il:
+    - text: >-
+        Yes, I had a problem in a hotel. The air conditioner didn't work. It was very hot. I called the front desk.
+        They gave me a new room. I was happy.
+      phrases:
+      - I had a problem in a hotel
+      - I called the front desk
+    - text: >-
+        Last year, I stayed at a hotel in Busan. My room was very dirty. I told the staff. They cleaned the room
+        again. After that, it was okay. I slept well.
+      phrases:
+      - Last year
+      - After that
+    im1:
+    - text: >-
+        Yes, I had a problem during a trip to Gangneung last summer. When I checked into my hotel room, the shower
+        didn't have hot water. I was so tired, and I really wanted to take a hot shower. I called the front desk,
+        and they sent someone to fix it. But he couldn't fix it, so they moved me to another room. The new room
+        was bigger, so I was happy in the end.
+      phrases:
+      - When I checked into
+      - they moved me to another room
+      - in the end
+    - text: >-
+        I remember a problem I had in Japan two years ago. I stayed at a small hotel with my sister. In the middle
+        of the night, the people in the next room were very loud. We couldn't sleep at all. In the morning, I told
+        the staff about it. They said sorry and gave us a free breakfast. It wasn't perfect, but I liked that they
+        tried to help.
+      phrases:
+      - In the middle of the night
+      - We couldn't sleep at all
+      - It wasn't perfect
+    im2:
+    - text: >-
+        Yes, I had a problem like that during a family trip to Jeju Island about three years ago. We booked two
+        rooms next to each other because my parents wanted to stay close to us. But when we arrived, the hotel gave
+        us rooms on different floors. My mom was really disappointed. I went back to the front desk and explained
+        the situation politely. At first, the staff said there were no other rooms. But after a while, the manager
+        found two rooms next to each other on the top floor. They even had a great view of the sea. In the end,
+        it turned out even better than we expected.
+      phrases:
+      - explained the situation politely
+      - But after a while
+      - it turned out even better than we expected
+    - text: >-
+        I had a bad experience at a guesthouse in Gyeongju last spring. I booked a private room online, but when
+        I arrived, they said my room was given to someone else. I was really upset because it was late at night.
+        The owner apologized and called a few places nearby, and finally she found a room at another guesthouse.
+        She also drove me there and refunded my money. I was tired and annoyed that night, but I appreciated her
+        kindness. Now, I always call the place one day before I arrive to check my reservation.
+      phrases:
+      - I had a bad experience
+      - I appreciated her kindness
+      - Now, I always
+    im3:
+    - text: >-
+        Actually, something similar happened to me last winter when I went on a business trip to Daegu. I booked
+        a hotel near the office through a travel website, and I paid for three nights in advance. But when I arrived
+        after a long train ride, the front desk couldn't find my reservation at all. It turned out that the website
+        had a technical problem, and my booking never reached the hotel. I was so frustrated because I had an important
+        meeting the next morning. Fortunately, the clerk was very helpful. She gave me the last room they had, which
+        was a suite, for the price of a normal room. After the trip, I contacted the website, and they refunded
+        my money. It ended up being a pretty lucky mistake.
+      phrases:
+      - It turned out that
+      - Fortunately
+      - It ended up being
+    - text: >-
+        Yes, I remember one time when I stayed at a hotel in Hong Kong with my friends. On our second night, we
+        came back to our room and found that the door lock didn't work. We couldn't get into the room, and all of
+        our bags were inside. It was almost midnight, so we were really tired and a little scared. We went down
+        to the front desk, and they sent a staff member to help us. It took almost an hour to open the door. The
+        hotel apologized and gave us free breakfast for the rest of the trip. It was annoying at the time, but now
+        it's a funny memory.
+      phrases:
+      - I remember one time when
+      - It was annoying at the time
+      - now it's a funny memory
+    ih:
+    - text: >-
+        Yes, I've actually had a pretty memorable problem at a hotel. It happened about two years ago, when I went
+        to Osaka with three of my friends from university. We had booked two twin rooms months in advance, and we
+        were all really excited. But when we arrived late at night, the clerk told us that only one room was available
+        because of an overbooking issue. At first, we didn't know what to do, since we were in a foreign country
+        and couldn't speak much Japanese. Luckily, one of my friends stayed calm and explained the situation in
+        English. The manager apologized many times and offered us a large family room with four beds for the same
+        price. On top of that, he gave us vouchers for breakfast. It turned out to be one of the best parts of the
+        trip, because we all stayed up talking every night.
+      phrases:
+      - a pretty memorable problem
+      - On top of that
+      - It turned out to be
+    - text: >-
+        I had a really frustrating experience during a road trip with my family last summer. We stopped at a small
+        hotel in the countryside, and I had booked a room with three beds online. When we got there, the room they
+        gave us only had one bed, and the air conditioner wasn't working, even though it was over thirty degrees
+        outside. I went to the front desk and explained the problem, but the young man working there said he couldn't
+        do anything because the manager had gone home. I didn't want to argue, so I asked him to call the manager.
+        About twenty minutes later, the manager arrived, apologized, and moved us to a much bigger room on the top
+        floor. He also gave us a discount for the night. Since then, I've learned that staying polite but firm is
+        the best way to solve these kinds of problems.
+      phrases:
+      - even though
+      - I didn't want to argue
+      - staying polite but firm
+    al:
+    - text: >-
+        Oh, I've definitely had my share of hotel problems, but the one that sticks out happened in Vietnam a couple
+        of years ago. My wife and I had booked a beach resort for our honeymoon, and we'd specifically requested
+        an ocean-view villa. When we arrived after a long flight, though, they put us in a standard room facing
+        the parking lot. On top of that, the bathroom had a leak, so the floor was constantly wet. I was really
+        disappointed, because we'd paid quite a lot for that trip. Instead of getting angry, I went to the front
+        desk the next morning, showed them our original booking, and calmly explained that this wasn't what we'd
+        paid for. The manager checked the system and admitted they'd made a mistake. Not only did they move us to
+        the villa we'd originally booked, but they also gave us a free dinner for two at their lovely seaside restaurant.
+        Looking back, I think staying calm and having the paperwork ready made all the difference.
+      phrases:
+      - I've definitely had my share of
+      - Not only did they
+      - made all the difference
+    - text: >-
+        Yes, I remember one experience very clearly, because it happened on the first night of a business trip to
+        Singapore last year. I'd booked a room close to the client's office, and since I had an early meeting, I
+        wanted to get a good night's sleep. Unfortunately, the moment I lay down, I realized the room was right
+        next to a busy construction site that was apparently working through the night. It was so loud that I couldn't
+        sleep at all. I called the front desk around midnight, and while the clerk was polite, she said the hotel
+        was fully booked. Rather than give up, I asked whether she could at least move me to a room on the opposite
+        side as soon as one became available. The next morning, they moved me to a quiet room on a higher floor
+        and took one night off my bill. It wasn't a perfect stay, but I was impressed by how they handled it, and
+        I've actually stayed there again since then.
+      phrases:
+      - the moment I lay down
+      - Rather than give up
+      - I was impressed by how they handled it
+  tip_ko: 롤플레이 상황과 비슷한 경험을 하나 골라요. 문제, 내가 한 일, 결과를 시간 순서로 말하고 지금 생각을 덧붙여요.

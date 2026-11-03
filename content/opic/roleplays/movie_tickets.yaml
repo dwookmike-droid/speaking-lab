@@ -1,0 +1,408 @@
+schema_version: 1
+id: movie_tickets
+kind: roleplay
+title_ko: 영화표 예매
+situation_ko: 주말에 볼 영화표를 예매하려고 영화관에 전화하고, 예매 날짜가 잘못된 문제를 해결해요.
+status: ready
+questions:
+- id: movie_tickets-roleplay_ask
+  type: roleplay_ask
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    I'd like to give you a situation and ask you to act it out. You want to see a movie this weekend. Call the movie
+    theater and ask three or four questions to get the information you need to buy tickets.
+  model:
+    il:
+    - text: >-
+        Hi. I want to see a movie tonight. What movies are playing? What time is the last show? How much is a ticket?
+        Thank you.
+      phrases:
+      - What movies are playing
+      - How much is a ticket
+    - text: >-
+        Hello. I have some questions. What time does the action movie start? Is there a student discount? Can I
+        buy popcorn there? Thanks.
+      phrases:
+      - I have some questions
+      - Is there a student discount
+    im1:
+    - text: >-
+        Hi, I'm calling about movie tickets. I want to watch a movie this Saturday with my friend. What movies are
+        showing this weekend? What time do they start? How much are the tickets? And can I book online? Thank you
+        so much.
+      phrases:
+      - I'm calling about
+      - What time do they start
+      - can I book online
+    - text: >-
+        Hello, I'd like to ask some questions. I'm planning to see a movie on Friday night. Is the new comedy still
+        playing? What is the last show time? Do you have any discounts for students? Thank you for your help.
+      phrases:
+      - I'd like to ask some questions
+      - I'm planning to
+      - Do you have any discounts
+    im2:
+    - text: >-
+        Hi, I'm calling because I want to buy movie tickets for this Saturday. I'm going with two friends, so I
+        need three tickets. First, what movies are playing in the evening? Second, what time does the last show
+        start? Also, how much is each ticket? Finally, can we choose our seats now? Thanks a lot.
+      phrases:
+      - I'm calling because
+      - First
+      - Finally
+    - text: >-
+        Hello, I have a few questions about your theater. My family wants to see a movie on Sunday afternoon. Are
+        there any family movies playing this weekend? What times are the shows? Is there a discount for children?
+        And is there a parking lot near the theater? I really appreciate your help.
+      phrases:
+      - I have a few questions about
+      - Is there a discount for
+      - I really appreciate your help
+    im3:
+    - text: >-
+        Hi there, I'm thinking about seeing a movie with my coworkers this Friday after work, so I have a few questions.
+        First of all, which movies are playing around seven in the evening? Also, how long is the new science fiction
+        movie? I heard it's almost three hours. Do you offer any group discounts? Lastly, can I reserve seats in
+        the middle of the theater? Thank you so much.
+      phrases:
+      - I'm thinking about
+      - First of all
+      - Lastly
+    - text: >-
+        Hello, I'm calling because I'd like to take my parents to a movie this weekend. They don't like loud action
+        movies, so I'm wondering if there are any dramas or comedies playing on Saturday. What time do the afternoon
+        shows start? Is there a discount for seniors? And one more thing, can I pick up the tickets at the counter
+        when we arrive? Thanks a lot.
+      phrases:
+      - I'm wondering if
+      - And one more thing
+      - Is there a discount for seniors
+    ih:
+    - text: >-
+        Hi, how are you? I'm planning a little movie night for my friend's birthday this Saturday, so I wanted to
+        check a few things before I book. First, which movies are playing around seven? We're mostly into comedies,
+        but we're open to anything. Second, how much does a ticket cost on weekends, and is there a discount if
+        we buy five or more? Also, do you have reclining seats? And finally, can we bring a small birthday cake
+        inside? Thanks for your help.
+      phrases:
+      - I wanted to check a few things
+      - We're open to anything
+      - And finally
+    - text: >-
+        Hello, I hope you're not too busy. I'd like to see the new animated movie with my niece and nephew next
+        Sunday, and I have some questions. To begin with, what time are the morning shows? The kids get tired easily,
+        so earlier would be better. Next, how much are children's tickets? I'm also wondering whether the movie
+        is dubbed or has subtitles, because the kids can't read very fast. Lastly, if we arrive a little late, can
+        we still get in? Thank you so much.
+      phrases:
+      - I hope you're not too busy
+      - To begin with
+      - I'm also wondering whether
+    al:
+    - text: >-
+        Hi, thanks for picking up. I'm putting together a small outing for my team this Friday, and we'd love to
+        see a movie together after work, so I just want to go over a few details. First of all, what's showing between
+        seven and eight in the evening? We were hoping for something light, maybe a comedy. Second, do you offer
+        group rates? There'll be about eight of us. Also, could we reserve seats together in one row, preferably
+        toward the back? And lastly, do you sell actual meals inside, or should we eat before the show? I really
+        appreciate it.
+      phrases:
+      - I'm putting together
+      - I just want to go over a few details
+      - preferably toward the back
+    - text: >-
+        Hello, I hope I'm calling the right number. My wife and I are celebrating our anniversary next Saturday,
+        and we were thinking of catching a late movie after dinner, so I have a handful of questions. To start with,
+        what's the latest show that night, and roughly when does it end? Next, I heard you recently added premium
+        seats with extra space. How much more do those cost? On top of that, is there any package with drinks or
+        snacks included? And finally, if dinner runs long, can we change our tickets without paying a fee? Thanks
+        so much.
+      phrases:
+      - we were thinking of
+      - I have a handful of questions
+      - On top of that
+  tip_ko: 처음에 왜 전화했는지 한 문장으로 밝히고, 질문 3~4개를 First, Also, Lastly로 이어 가요.
+- id: movie_tickets-roleplay_solve
+  type: roleplay_solve
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    I'm sorry, but there's a problem. When you arrive at the theater, you find out that the tickets you booked are
+    for the wrong date. Explain the problem to the person at the ticket counter and offer two or three ways to solve
+    it.
+  model:
+    il:
+    - text: >-
+        Excuse me. I have a problem. I booked two tickets for today, but the tickets are for tomorrow. I'm sorry.
+        Can I change them to today? Or can I get a refund? Thank you.
+      phrases:
+      - I have a problem
+      - Can I change them
+      - Or can I get a refund
+    - text: >-
+        Hi. There is a problem with my tickets. The date is wrong. I want to see the movie today. Can you change
+        my tickets? If not, can I watch a later show? Thanks.
+      phrases:
+      - There is a problem with
+      - If not
+    im1:
+    - text: >-
+        Excuse me, I'm sorry to bother you, but I have a problem. I booked two tickets online for the seven o'clock
+        show, but I just checked, and the tickets are for tomorrow, not today. It was my mistake. Can I change them
+        to tonight's show? If the seven o'clock show is full, the nine o'clock show is fine too. Or maybe I can
+        get a refund. Thank you very much.
+      phrases:
+      - I'm sorry to bother you
+      - It was my mistake
+      - is fine too
+    - text: >-
+        Hi, I have a problem with my movie tickets. My friend and I came here to see the new comedy tonight, but
+        the tickets say Saturday, and today is Friday. I think I chose the wrong date on the website. Is it possible
+        to change the date? If there are no seats tonight, we can come back tomorrow. Or could you give us a refund?
+        Thanks for your help.
+      phrases:
+      - I chose the wrong date
+      - Is it possible to
+      - Or could you give us a refund
+    im2:
+    - text: >-
+        Excuse me, I'm sorry, but I think there's a problem with my booking. I reserved two tickets for the eight
+        o'clock show online yesterday, but the staff at the entrance said they're for next Friday. I must have clicked
+        the wrong date. My friend came all the way here to see this movie with me, so I really want to watch it
+        tonight. Could you change our tickets to tonight's show? If that show is sold out, we could watch the ten
+        o'clock show instead. Or, if that's not possible, could you give me a full refund? Thank you for understanding.
+      phrases:
+      - I must have clicked the wrong date
+      - If that show is sold out
+      - Thank you for understanding
+    - text: >-
+        Hi, I hope you can help me. I booked three tickets for my family for the afternoon show, but I just noticed
+        the tickets are for the wrong date. They're for next week. My kids are really excited, so we don't want
+        to go home without seeing the movie. Here are some options. First, could you move our tickets to today's
+        three o'clock show? Second, if there are no three seats together, we can sit separately. Third, if both
+        options don't work, I'd like a refund, and we'll just buy tickets for another movie today. Thanks a lot.
+      phrases:
+      - I hope you can help me
+      - Here are some options
+      - if both options don't work
+    im3:
+    - text: >-
+        Excuse me, I'm really sorry to bother you, but I just realized I made a mistake with my booking. I reserved
+        two seats for tonight's seven-thirty show, or at least I thought I did. But when I checked the tickets on
+        my phone, they're actually for next Tuesday. My friend and I both took the evening off to see this movie,
+        so we were really disappointed. I was wondering if you could help us in one of a few ways. First, could
+        you change the date to tonight? We don't mind sitting in the front row. If the show is completely sold out,
+        maybe we could watch the late show at ten instead. And if none of that works, could you refund the tickets?
+        Thank you so much.
+      phrases:
+      - or at least I thought I did
+      - I was wondering if you could
+      - if none of that works
+    - text: >-
+        Hi, I'm sorry, but I have a bit of a problem. Last night I booked four tickets for the new action movie
+        for me and my cousins, and I paid with my credit card. But today, when we got here, I noticed the tickets
+        are for Sunday, not Saturday. It was totally my fault because I was booking in a hurry. Anyway, we're here
+        now, and we'd really love to see the movie. Would it be possible to switch the tickets to today's two o'clock
+        show? If that show is full, the four-thirty show would also work for us. Otherwise, could you cancel the
+        tickets and give me a refund? Then we'll just watch something else. Thanks for your help.
+      phrases:
+      - It was totally my fault
+      - Would it be possible to switch
+      - Otherwise
+    ih:
+    - text: >-
+        Excuse me, I'm so sorry to bother you when you're busy, but I've got a small problem with my tickets. A
+        few days ago I booked two seats for tonight's eight o'clock show of the new mystery movie. At least, that's
+        what I thought. But when I opened the tickets on my phone just now, I saw that I'd actually booked them
+        for next Saturday. I guess I picked the wrong date on the calendar. The thing is, my girlfriend has been
+        waiting for this movie for weeks. So I was hoping you could help me out. Could you possibly swap the tickets
+        for tonight's show? If there aren't two seats together, we're fine sitting apart. If the eight o'clock show
+        is completely full, the ten-fifteen show would also be okay. And if neither works, I'd just like a refund,
+        and we'll try again next week. Thank you so much for your help.
+      phrases:
+      - The thing is
+      - I was hoping you could help me out
+      - if neither works
+    - text: >-
+        Hi, sorry, do you have a minute? I think I messed up my booking, and I'm hoping you can help me fix it.
+        I bought three tickets online for the animated movie this afternoon, because I promised my nephews we'd
+        see it during their school break. When we got here, the staff at the entrance told me the tickets were for
+        tomorrow. I double-checked, and they were right. I must have tapped the wrong day. Now the boys look really
+        disappointed, so I'd love to find a way to make this work. Would you be able to change the tickets to the
+        one-thirty show today? If that one's sold out, the three-forty show would be fine as well. Or, if all the
+        shows today are full, could you just refund the tickets? Then we'll grab some lunch and come back tomorrow.
+        I really appreciate it.
+      phrases:
+      - I think I messed up my booking
+      - I'd love to find a way to make this work
+      - Would you be able to
+    al:
+    - text: >-
+        Excuse me, I'm really sorry to interrupt, but I'm in a bit of a bind and I was hoping you could help. Earlier
+        this week, I booked two tickets for tonight's seven-thirty showing of the new historical drama. I was planning
+        to surprise my mother, since she's been talking about this movie for ages. But when I pulled up the tickets
+        on my phone just now, I noticed they're actually for the same time next Thursday. I must have scrolled one
+        week too far when I was choosing the date. Anyway, my mom's already on her way in, so I'd really love to
+        sort this out quickly. Here's what I was thinking. Ideally, you could just move the booking to tonight,
+        even if the seats aren't as good. If tonight's show is fully booked, we'd be happy to wait for the nine
+        forty-five showing instead. And if neither of those is possible, I'd appreciate a refund, or maybe a credit
+        I could use next time. I completely understand it was my mistake, so whatever you can do would be great.
+      phrases:
+      - I'm in a bit of a bind
+      - Here's what I was thinking
+      - whatever you can do would be great
+    - text: >-
+        Hi there, sorry to bother you. I've run into a problem with my booking, and I'm hoping there's something
+        you can do. So, a couple of days ago, I reserved four tickets for this evening's six o'clock show for me
+        and some friends from work. We all rushed here straight from the office, but when we tried to get in, the
+        staff told us the tickets were for last Friday, not today. Apparently, I booked them a week ago and never
+        noticed the date. To be honest, that's pretty embarrassing, since I organized the whole thing. I know the
+        tickets probably can't be used anymore, but I wanted to ask about a few options. First, is there any way
+        you could exchange them for tonight's show, maybe for a small fee? If not, could you at least give us a
+        discount on four new tickets? And if neither is possible, we'll just buy new ones for the eight-fifteen
+        show, as long as there are four seats together. Thanks for hearing me out.
+      phrases:
+      - I've run into a problem
+      - To be honest
+      - Thanks for hearing me out
+  tip_ko: 먼저 사과하고 무슨 일이 생겼는지 설명해요. 대안은 두세 개를 If not, Or로 이어서 말하면 돼요.
+- id: movie_tickets-roleplay_experience
+  type: roleplay_experience
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    That's the end of the situation. Have you ever had a problem when you booked tickets or made a reservation?
+    Tell me what happened, how you dealt with it, and how it turned out.
+  model:
+    il:
+    - text: >-
+        Yes, I had a problem last year. I bought concert tickets online. But I chose the wrong day. I called the
+        company. They changed my tickets. I was very happy. It was okay.
+      phrases:
+      - I had a problem
+      - I called the company
+    - text: >-
+        One time I booked a restaurant for my mom's birthday. But when we went there, there was no reservation.
+        We waited thirty minutes. Then we got a table. The food was good.
+      phrases:
+      - One time
+      - there was no reservation
+    im1:
+    - text: >-
+        I remember one problem last summer. I booked train tickets to Busan for my family vacation. But when we
+        got to the station, I saw the tickets were for the next day. I was so embarrassed. I talked to the staff
+        at the counter, and they were very kind. They changed the tickets to a later train that day. We waited one
+        hour, but we arrived safely. Now I always check the date twice.
+      phrases:
+      - I remember one problem
+      - I was so embarrassed
+      - Now I always
+    - text: >-
+        A few months ago, I had a problem with a hotel reservation. I booked a room online for a weekend trip with
+        my friends. When we arrived, the hotel said they didn't have our reservation. I showed them the email on
+        my phone. After about twenty minutes, they found the problem and gave us a room. It was a little stressful,
+        but in the end, everything was fine.
+      phrases:
+      - A few months ago
+      - It was a little stressful
+      - in the end
+    im2:
+    - text: >-
+        Yes, I had a similar problem about two years ago. I wanted to see a famous musical with my sister, so I
+        bought two tickets online. On the day of the show, we got dressed up and went to the theater. But when we
+        showed our tickets, the staff told us they were for the afternoon show, not the evening show. We had already
+        missed it! I was so upset. I explained the situation, and the manager was really kind. She found two seats
+        for the evening show, but we had to pay a small fee. After that, I learned to read my tickets carefully.
+      phrases:
+      - I had a similar problem
+      - I explained the situation
+      - After that, I learned to
+    - text: >-
+        I had a problem like that when I booked a camping site last fall. I reserved a spot for my family on a website,
+        and I paid in advance. But when we arrived at the campsite, another family was already in our spot. The
+        staff checked the system and said the website made a mistake. At first, I was really angry because it was
+        getting dark. But the staff apologized and gave us a better spot near the lake. They also gave us a discount.
+        In the end, we had a great time, but I still remember how stressed I was.
+      phrases:
+      - I paid in advance
+      - At first
+      - In the end
+    im3:
+    - text: >-
+        Actually, something like that happened to me last winter. I was planning a ski trip with my college friends,
+        so I booked a cabin near a ski resort about a month in advance. On the day we arrived, we were really excited,
+        but the owner told us the cabin was double-booked. Another group had already checked in. I was shocked,
+        and honestly, I was pretty angry because it was snowing and we had nowhere to go. I asked him to find us
+        another place nearby, and luckily, he called his friend who had a small guesthouse. It wasn't as nice as
+        the cabin, but it was warm, and he gave us half of our money back. Looking back, it's a funny story now.
+      phrases:
+      - something like that happened to me
+      - was double-booked
+      - Looking back
+    - text: >-
+        Yes, I remember a problem I had with concert tickets about three years ago. My favorite band was coming
+        to Korea, and the tickets sold out in five minutes. I was lucky to get two tickets, and I was so happy.
+        But a week later, I got an email saying my payment didn't go through. I was really worried, so I called
+        the ticket office right away. The staff said they could keep my seats for one hour if I paid again. I quickly
+        paid with a different card, and it worked. On the day of the concert, I enjoyed every minute. Since then,
+        I always check my payment right after I buy tickets.
+      phrases:
+      - sold out in five minutes
+      - right away
+      - Since then
+    ih:
+    - text: >-
+        Yes, I've had a few problems like that, but the one I remember most happened during a trip to Jeju Island
+        two years ago. My friends and I had booked a rental car online, and we were supposed to pick it up at the
+        airport. When we got to the rental counter, though, the staff couldn't find our reservation anywhere. Apparently,
+        I'd made the booking for the following month by mistake. It was peak season, so they didn't have a single
+        car left. At first, I panicked, because our whole plan depended on that car. But I stayed calm and asked
+        the staff if they could recommend another company. They made a couple of phone calls for us and found a
+        small local company with one car available. It was more expensive and kind of old, but it got us around
+        the island just fine. Since then, I always double-check every date before I click the payment button.
+      phrases:
+      - the one I remember most
+      - Apparently
+      - I stayed calm
+    - text: >-
+        That reminds me of something that happened when I tried to book a table for my parents' thirtieth wedding
+        anniversary. I chose a nice Italian restaurant downtown and made a reservation by phone about two weeks
+        in advance. On the night of the dinner, we all dressed up and arrived right on time, but the host said there
+        was no reservation under my name. I was so embarrassed, especially because my whole family was standing
+        behind me. I showed him the confirmation text I had received, and he realized that a new employee had written
+        the wrong date. The manager came out and apologized several times. They set up a table for us by the window
+        in about fifteen minutes, and they even gave us free dessert. In the end, my parents said it was one of
+        the best dinners they'd ever had, so it all worked out.
+      phrases:
+      - That reminds me of
+      - especially because
+      - it all worked out
+    al:
+    - text: >-
+        Oh, definitely. The most memorable one was a couple of years ago, when I was planning a trip to Busan with
+        my college roommates to watch the fireworks festival. Since the festival is incredibly popular, I booked
+        a hotel room near the beach almost three months in advance and even paid the full amount up front. When
+        we finally arrived that evening, exhausted after a five-hour drive, the front desk clerk told us they'd
+        overbooked and didn't have a room for us. I was honestly furious at first, because there was no way we'd
+        find another room nearby on festival night. Still, I tried to stay polite and asked what they could do to
+        make it right. After talking with the manager for a while, they arranged a room at their sister hotel about
+        ten minutes away, paid for our taxi, and refunded half of what we'd paid. It wasn't the ocean view we'd
+        hoped for, but we still watched the fireworks from the beach. Looking back, it taught me that staying calm
+        usually gets you a better result than losing your temper.
+      phrases:
+      - The most memorable one was
+      - to make it right
+      - it taught me that
+    - text: >-
+        I actually went through something pretty similar last spring. I'd bought tickets for a big baseball game,
+        the opening game of the season, for my dad and me. He's a huge fan, so I wanted it to be a special day for
+        him. A few days before the game, though, I got a message saying the game had been moved to a different stadium
+        because of construction, and that our seats might not be available. I was really worried, so I called the
+        ticket office right away. The first person I talked to wasn't very helpful, and I was getting pretty frustrated.
+        However, I called back later, explained the situation more clearly, and asked to speak to a supervisor.
+        She was much more understanding and patient. She moved us to seats that were even closer to the field and
+        didn't charge us anything extra. On the day of the game, my dad couldn't stop smiling the whole time. That
+        experience taught me that being persistent, but still polite, can really pay off.
+      phrases:
+      - I actually went through something pretty similar
+      - asked to speak to a supervisor
+      - can really pay off
+  tip_ko: 언제, 무슨 일, 어떻게 해결, 결과 순서로 과거 시제를 지켜 말해요. 마지막에 배운 점 한 문장을 붙이면 마무리가 깔끔해요.

@@ -27,11 +27,11 @@ opic:
     roleplay: [roleplay_ask, roleplay_solve, roleplay_experience]
   # 시험 구성: 자가평가 난이도(1~6)에 따라 고르고, 7번 뒤 재조정한 난이도(d)는 8번부터 적용해요.
   #   survey_combo: 설문 주제 하나에서 description → routine → past_experience
-  #   unexpected_combo: 돌발 주제 하나에서 같은 순서 (low는 앞의 2문항만)
+  #   unexpected_combo: 돌발 주제 하나에서 같은 순서
   #   roleplay: 롤플레이 하나에서 ask → solve → experience (low는 ask → solve)
   #   final: d가 4 이상이면 comparison(설문 주제) + issue(돌발 주제), 아니면 다른 설문 주제의 routine + past_experience
   blueprint:
-    low:  {levels: [1, 2], slots: [self_intro, survey_combo, survey_combo, unexpected_combo_short, roleplay_short]}          # 12문항
+    low:  {levels: [1, 2], slots: [self_intro, survey_combo, survey_combo, unexpected_combo, roleplay_short]}                # 12문항
     mid:  {levels: [3, 4], slots: [self_intro, survey_combo, survey_combo, unexpected_combo, roleplay, final]}              # 15문항
     high: {levels: [5, 6], slots: [self_intro, survey_combo, survey_combo, unexpected_combo, roleplay, final]}              # 15문항
   grades: [NL, NM, NH, IL, IM1, IM2, IM3, IH, AL]

@@ -1,0 +1,456 @@
+schema_version: 1
+id: staycation
+kind: survey
+title_ko: 집에서 휴가 보내기
+status: ready
+questions:
+  - id: staycation-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you like to spend your vacations at home. Tell me about the place where you
+      relax during your time off. What does it look like, and why do you like spending your vacation there?
+    model:
+      il:
+        - text: >-
+            I like my home on vacation. My room is small but cozy. I have a soft bed and a big window. I watch movies on
+            my bed. It is quiet and comfortable. So I like to stay at home.
+          phrases: ['small but cozy', 'So I like to']
+        - text: >-
+            I spend my vacation at home. My living room is my favorite place. There is a big sofa and a TV. I lie on the
+            sofa and rest. It is warm and quiet. I feel really relaxed there.
+          phrases: ['my favorite place', 'I feel really relaxed']
+      im1:
+        - text: >-
+            I usually spend my vacations at home, and my favorite place is my bedroom. It's not very big, but it's really
+            cozy. There is a soft bed, a desk, and a big window. In the morning, the sunlight comes in, so the room is
+            bright. I like to read books and watch dramas there. I don't need to go anywhere, and I can rest as much as I
+            want. That's why I love my room.
+          phrases: ['not very big, but', 'That''s why']
+        - text: >-
+            When I have a vacation, I just stay home. I like my living room the most. We have a long gray sofa, a TV, and
+            some plants near the window. I usually lie on the sofa with a blanket and watch movies. My family is busy, so
+            the house is quiet during the day. It's very comfortable, and I don't have to spend money. So I think home is
+            the best place to relax.
+          phrases: ['I like my living room the most', 'I don''t have to']
+      im2:
+        - text: >-
+            Well, I really enjoy spending my vacation at home, and the place I like most is my bedroom. Let me describe
+            it. When you open the door, you can see my bed on the left and a big window on the right. There is also a
+            small desk with a lamp, and I put some plants on the shelf. My room is not fancy, but it's very cozy. During
+            vacation, I sleep in, read comic books, and watch movies on my laptop. I can relax without worrying about
+            anything. So for me, my room is the perfect vacation spot.
+          phrases: ['Let me describe it', 'not fancy, but', 'the perfect vacation spot']
+        - text: >-
+            Actually, I'm a homebody, so I spend most of my vacations at home. My favorite spot is our living room. It's
+            pretty bright because it has a big window facing the park. There's a comfortable sofa, a big TV, and a small
+            table where I put snacks. During my vacation, I order food, play video games, and watch the dramas I missed.
+            It's quiet in the afternoon because everyone is out. Honestly, I don't need an expensive trip to feel
+            refreshed. A few lazy days on that sofa are enough for me.
+          phrases: ['I''m a homebody', 'Honestly', 'enough for me']
+      im3:
+        - text: >-
+            Okay, let me tell you about the place where I relax during my vacations, which is my own room. I live in an
+            apartment with my family, and my room is at the end of the hallway, so it's the quietest place in the house.
+            It's a little small, but I decorated it myself last year. I put fairy lights on the wall, hung a few posters
+            of my favorite movies, and bought a big bean bag chair. When I'm on vacation, I spend hours in that chair
+            reading novels or watching movies. I also love opening the window and listening to the rain. I feel totally
+            free there, and that's exactly why I prefer staying home to traveling.
+          phrases: ['let me tell you about', 'I decorated it myself', 'that''s exactly why']
+        - text: >-
+            Well, when I get time off, I usually stay home, and the place I enjoy the most is our living room. It's the
+            biggest room in our apartment, and it gets a lot of sunlight in the afternoon. We have an L-shaped sofa, a big
+            TV on the wall, and a bookshelf full of old photo albums. On vacation days, I make a cup of coffee, sit on the
+            sofa, and binge-watch a whole drama series. Sometimes my sister joins me, and we order fried chicken and talk
+            for hours. It might sound boring to some people, but after a busy semester, nothing feels better than this.
+            That's why my living room is my favorite vacation spot.
+          phrases: ['It might sound boring', 'nothing feels better than', 'That''s why']
+      ih:
+        - text: >-
+            Sure. These days, I prefer spending my vacations at home rather than traveling, and the place where I relax
+            the most is my bedroom. It's on the sunny side of our apartment, so it's bright and warm most of the day. When
+            you walk in, the first thing you notice is a big window with light curtains, and next to it there's a
+            comfortable reading chair I bought last winter. On the other side, I have a desk, a small speaker, and a shelf
+            full of books I keep saying I'll read someday. What I love most is that it's completely mine. During my
+            vacation, I wake up whenever I want, make a simple breakfast, and spend the morning reading in that chair. In
+            the evening, I turn off the main light, turn on a small lamp, and watch movies. It's simple, but it's the most
+            peaceful place I know, and I come back to work feeling recharged.
+          phrases: ['rather than traveling', 'What I love most is that', 'the most peaceful place I know']
+        - text: >-
+            Well, I'm the kind of person who gets tired from traveling, so I usually spend my vacations at home, mostly in
+            our living room. Our apartment isn't big, but the living room is pretty open, with a large window that looks
+            out over a small park. We have a soft gray sofa, a wooden coffee table, and a few big plants that my mom takes
+            care of. During my vacation, that room becomes my little resort. I put a blanket on the sofa, make iced tea,
+            and play music while I read or just look outside. In the afternoon, I sometimes take a short nap with the
+            window open, and I can hear kids playing in the park. To be honest, it feels more relaxing than any hotel,
+            because I don't have to pack, plan, or worry about money. That's why my living room is my favorite place to
+            spend my time off.
+          phrases: ['I''m the kind of person who', 'becomes my little resort', 'To be honest']
+      al:
+        - text: >-
+            Sure, I'd be happy to talk about that. For me, the best vacation spot is actually my own bedroom, which
+            probably sounds a bit funny. Let me explain. A couple of years ago, I redecorated it completely, because I
+            realized I was spending most of my free time there anyway. I painted one wall a soft green, put a wide desk by
+            the window, and replaced my old bed with a bigger, much more comfortable one. I also added a reading corner
+            with a floor lamp and a small rug, which has become my favorite part of the room. When I'm on vacation, I
+            don't set an alarm at all. I wake up naturally, open the curtains, and let the morning light fill the room.
+            Then I usually spend a few hours reading or working on a puzzle, and in the evening I watch a movie with the
+            lights off. What makes it special is that I can completely control my own time there. Nobody is rushing me,
+            and I don't have to deal with crowds or traffic. Honestly, after a stressful few months, that kind of freedom
+            is exactly what I need.
+          phrases: ['Let me explain', 'What makes it special is that', 'that kind of freedom is exactly what I need']
+        - text: >-
+            Well, I used to think a real vacation meant going somewhere far away, but these days I genuinely prefer
+            staying home, and my favorite spot is our living room. It's the brightest room in the apartment, with floor-
+            to-ceiling windows that face a row of trees, so in summer it almost feels like I'm in a cabin. There's a big,
+            slightly worn-out sofa that everyone in my family fights over, a low table, and a corner where we keep board
+            games and a small record player. When I'm on vacation, I treat that room like a private café. I make a proper
+            pour-over coffee in the morning, put on an old record, and read for hours without checking my phone. If it
+            rains, even better, because I can open the window and listen to it. In the evening, my family often gathers
+            there, and we end up playing board games until midnight. I think the reason I love it is that it's familiar
+            but still feels special when I have no schedule. I don't have to plan anything, and yet I always come back to
+            work feeling more rested than after a trip.
+          phrases: ['I used to think', 'I treat that room like', 'the reason I love it is that']
+    tip_ko: 설문을 짚고 시작해요. 공간을 눈에 보이듯 위치 순서로 묘사하고, 그곳이 좋은 이유 한 가지로 마무리하면 돼요.
+  - id: staycation-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me what you usually do when you spend a vacation at home. Walk me through a typical day, from the time
+      you wake up until you go to bed.
+    model:
+      il:
+        - text: >-
+            I wake up late on vacation. I eat breakfast at ten. Then I watch TV. In the afternoon, I take a nap. At night,
+            I play games on my phone. I go to bed late.
+          phrases: ['Then', 'In the afternoon']
+        - text: >-
+            On vacation, I sleep a lot. I get up at eleven. I eat ramen for lunch. I read comic books in the afternoon. In
+            the evening, I eat dinner with my family. Then I watch a movie.
+          phrases: ['On vacation', 'In the evening']
+      im1:
+        - text: >-
+            On a vacation day at home, I usually wake up around ten. First, I make toast and coffee and eat breakfast
+            slowly. After that, I clean my room a little and do some laundry. In the afternoon, I watch dramas or read a
+            book on the sofa. Sometimes I take a short nap. In the evening, I cook a simple dinner, like pasta. Then I
+            talk with my friends on the phone and go to bed after midnight.
+          phrases: ['First', 'After that', 'Sometimes']
+        - text: >-
+            When I stay home on vacation, my day is very relaxed. I don't set an alarm, so I usually get up late. I eat
+            brunch with my mom and watch the news together. Then I play video games for a few hours. In the afternoon, I
+            go for a short walk in my neighborhood. At night, I order chicken and watch a movie. I usually go to bed very
+            late, around two.
+          phrases: ['I don''t set an alarm', 'At night']
+      im2:
+        - text: >-
+            Well, my vacation days at home are pretty simple. I usually wake up around ten without an alarm. First, I open
+            the window to get some fresh air and make a big breakfast, like eggs and toast. After breakfast, I spend a few
+            hours on my hobbies. For example, I read novels or practice the guitar. In the afternoon, I often take a nap
+            because I'm always tired from work. Then, in the evening, I cook dinner and watch a movie or a drama. Before
+            bed, I take a long shower and listen to music. It's not exciting, but it's really relaxing.
+          phrases: ['First', 'For example', 'It''s not exciting, but']
+        - text: >-
+            When I spend my vacation at home, I try not to plan anything. In the morning, I sleep in until about eleven
+            and then eat a late breakfast. After that, I usually do some light housework, like cleaning my room or doing
+            the dishes, because I don't have time for it on weekdays. In the afternoon, I watch YouTube videos or play
+            games with my brother. Around six, we order food or cook together. In the evening, I like to sit by the window
+            and read. I go to bed pretty late, but that's okay because I don't have to work the next day.
+          phrases: ['I try not to plan anything', 'After that', 'that''s okay because']
+      im3:
+        - text: >-
+            Okay, so a typical vacation day at home goes like this. I usually wake up naturally around nine or ten, which
+            feels amazing because I'm always rushing on weekdays. I start the day with a slow breakfast, usually coffee
+            and fruit, while I check the news. After that, I do something I enjoy but never have time for, like baking
+            cookies or organizing my photos. Around lunchtime, I make something simple, like kimchi fried rice. In the
+            afternoon, I often watch a movie or take a nap on the sofa. When the sun goes down, I take a walk around my
+            apartment complex to stretch my legs. Then I have dinner with my family and spend the rest of the night
+            reading in bed. It's a slow day, but that's exactly the point.
+          phrases: ['goes like this', 'which feels amazing', 'that''s exactly the point']
+        - text: >-
+            Well, when I stay home on vacation, I have a kind of lazy routine. First of all, I turn off my alarm the night
+            before, so I usually wake up around ten. Then I make a big brunch, like pancakes or an omelet, because I never
+            eat breakfast on workdays. After eating, I spend a couple of hours catching up on dramas or webtoons. In the
+            afternoon, I try to do at least one productive thing, such as cleaning out my closet or studying English a
+            little. Around five, I usually get hungry again, so I either cook or order delivery food. In the evening, I
+            call a friend or play online games. By the time I go to bed, I feel completely relaxed and ready for the next
+            lazy day.
+          phrases: ['First of all', 'I try to do at least one productive thing', 'By the time']
+      ih:
+        - text: >-
+            Sure. When I spend my vacation at home, I follow a pretty relaxed routine, but I still try not to waste the
+            whole day. I usually wake up around nine without an alarm, open all the windows, and do some light stretching
+            to wake up my body. Then I make breakfast, which is a big deal for me because on workdays I just grab a
+            sandwich on the way. I take my time, cook eggs and sausages, and eat while listening to a podcast. After
+            breakfast, I spend the late morning on a small project, like reorganizing my bookshelf or trying a new recipe.
+            In the afternoon, I usually lie on the sofa and watch a movie, and to be honest, I often fall asleep halfway
+            through. In the evening, I cook dinner with my family, and after that we sometimes play cards or just chat.
+            Before going to bed, I take a long bath and read a few chapters of a novel. It's simple, but by the end of the
+            day I feel completely recharged.
+          phrases: ['which is a big deal for me', 'to be honest', 'by the end of the day']
+        - text: >-
+            Well, a vacation day at home is really different from a normal day for me. On weekdays, I get up at six and
+            rush to the subway, but on vacation I let myself sleep until I wake up naturally, usually around ten. The
+            first thing I do is make a nice cup of coffee and sit by the window for a while without looking at my phone.
+            Then I usually do a bit of housework, like laundry or cleaning the bathroom, so the rest of the day feels
+            free. For lunch, I often try cooking something new that I saw online, like a Thai curry. In the afternoon, I
+            either read, play video games, or watch a series I've been saving. When it gets dark, I take a walk along the
+            stream near my apartment, because staying inside all day makes me feel a little lazy. After dinner, I spend
+            some time journaling about what I want to do after the vacation. It's a quiet routine, but it helps me reset
+            both my body and my mind.
+          phrases: ['is really different from', 'The first thing I do is', 'It''s a quiet routine, but']
+      al:
+        - text: >-
+            Sure. To be honest, my vacation days at home follow a routine that I've slowly built over the years, because I
+            realized that doing absolutely nothing actually made me feel worse. So I try to find a balance between resting
+            and doing something meaningful. I usually wake up around nine, which is late for me, and the first thing I do
+            is open the curtains and drink a big glass of water. Then I make a proper breakfast, something I never have
+            time for during the week, like French toast with fruit. After breakfast, I spend about two hours on a personal
+            project. Lately, it's been learning to draw with a tablet, which I find really calming. Around noon, I go out
+            for a short walk to get some sunlight, and then I come back and have a light lunch. The afternoon is
+            completely free. I might watch a movie, read, or take a nap without feeling guilty about it. In the evening, I
+            cook dinner with my partner, and we usually end the day by watching a show together. If I'm honest, this kind
+            of day recharges me more than a busy trip ever could.
+          phrases: ['find a balance between', 'without feeling guilty about it', 'If I''m honest']
+        - text: >-
+            Well, I think people imagine a vacation at home as lying in bed all day, and I'll admit that's how my first
+            day usually goes. But after that, I actually settle into a pretty nice routine. I wake up without an alarm,
+            usually around eight or nine, and I start the morning with a short workout, just some yoga or a quick jog
+            around the neighborhood. Then I shower and make a slow breakfast while listening to the radio. Late morning is
+            when I deal with the small chores I've been putting off for months, like fixing a loose cabinet door or
+            sorting old clothes to donate. Once that's done, the rest of the day is mine. In the afternoon, I often bake
+            something, because the smell of bread in the apartment makes it feel like a holiday. Sometimes a friend comes
+            over, and we spend hours talking over coffee. In the evening, I cook dinner, open the windows, and watch the
+            sunset from the balcony. Before bed, I read for an hour and go to sleep without thinking about work. Honestly,
+            that slow rhythm is exactly what I miss once my vacation is over.
+          phrases: ['I''ll admit', 'Once that''s done', 'that slow rhythm is exactly what I miss']
+    tip_ko: 하루를 아침 → 오후 → 저녁 순서로 말해요. First, After that, In the evening 같은 연결어로 시간 흐름을 분명히 보여 주면 좋아요.
+  - id: staycation-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a memorable vacation you spent at home. When was it, what did you do, and why was it so
+      memorable for you?
+    model:
+      il:
+        - text: >-
+            Last summer, I stayed home for my vacation. It was very hot. I watched many movies. My friend came to my
+            house. We ate pizza together. It was fun. I was happy.
+          phrases: ['Last summer', 'It was fun']
+        - text: >-
+            Last winter, I had a vacation. I did not travel. I stayed home with my family. We made dumplings together. We
+            played board games. It was very warm and happy. I still remember it.
+          phrases: ['Last winter', 'I still remember it']
+      im1:
+        - text: >-
+            Last summer, I had a one-week vacation, and I decided to stay home. The weather was really hot, so I didn't
+            want to go outside. I turned on the air conditioner and watched a whole drama series in three days. On the
+            weekend, my best friend came over, and we cooked spaghetti together. We talked until late at night. It was a
+            simple vacation, but I felt very relaxed. That's why I still remember it.
+          phrases: ['I decided to', 'It was a simple vacation, but']
+        - text: >-
+            Two years ago, during the New Year holiday, I stayed home because I had a bad cold. At first, I was sad
+            because I wanted to go skiing. But my mom made me hot soup every day, and my sister brought me comic books. We
+            watched old family videos together and laughed a lot. I didn't go anywhere, but it was a really warm vacation.
+            I still remember it very clearly.
+          phrases: ['At first', 'I didn''t go anywhere, but']
+      im2:
+        - text: >-
+            I remember one vacation from last winter. I had planned a trip to Busan with my friends, but it was canceled
+            because of a heavy snowstorm. I was really disappointed, so I decided to make my home vacation special
+            instead. I bought some nice snacks, cleaned my room, and made a list of movies I wanted to watch. For three
+            days, I watched movies, read books, and tried baking bread for the first time. The bread was a little burned,
+            but my family still ate it. In the end, it was more relaxing than a trip. It taught me that I don't always
+            need to go somewhere to have a good vacation.
+          phrases: ['I was really disappointed, so', 'In the end', 'It taught me that']
+        - text: >-
+            One of my most memorable vacations was actually at home, during the summer two years ago. I had just finished
+            a really stressful project at work, so I took a week off and decided to do nothing. On the first day, I slept
+            for almost twelve hours. After that, I spent my days reading on the balcony and cooking new recipes. One
+            evening, there was a big thunderstorm, and the power went out. My family lit candles, and we talked for hours
+            without our phones. It was a little scary but also really cozy. That night is the reason I still remember that
+            vacation.
+          phrases: ['I took a week off', 'One evening', 'is the reason I still remember']
+      im3:
+        - text: >-
+            Let me tell you about a vacation I had at home about three years ago. It was during the Chuseok holiday, and I
+            had planned to visit my grandparents in the countryside. Unfortunately, I caught the flu the day before we
+            left, so I had to stay home alone while my family went. At first, I felt lonely and a little bored. But after
+            a day or two, I started to enjoy it. I watched a whole series I had wanted to see for years, ordered my
+            favorite food, and even started a journal. When my family came back, they brought me rice cakes my grandmother
+            made, which made me really emotional. Looking back, it was one of the most peaceful holidays I've ever had,
+            even though I was sick.
+          phrases: ['Unfortunately', 'Looking back', 'even though I was sick']
+        - text: >-
+            Okay, the most memorable vacation I spent at home was last summer. My company gave everyone an extra week off,
+            but all the flights were too expensive, so I decided to have a staycation. I didn't want to waste it, so I
+            made a little plan. Every day, I tried one new thing at home. One day I learned to make homemade noodles,
+            another day I rearranged all the furniture in my room, and on the last day I had a movie marathon with my
+            cousins. The funniest part was the noodles, because they turned out way too thick, and we laughed so hard
+            eating them. It wasn't fancy at all, but I felt refreshed and closer to my family. Honestly, I enjoyed it more
+            than some of my actual trips.
+          phrases: ['I didn''t want to waste it, so', 'The funniest part was', 'Honestly']
+      ih:
+        - text: >-
+            Sure. The most memorable vacation I've spent at home was during the winter holidays about two years ago. I had
+            originally planned to travel to Jeju Island with my college friends, but two days before the trip, one of them
+            got sick, and we decided to cancel everything. I was pretty upset at first, because I had been looking forward
+            to it for months. So I thought, why not turn my home into a little vacation spot instead? I cleaned my whole
+            room, bought some candles and nice snacks, and made a schedule just like a trip. In the mornings, I went to a
+            sauna near my house, and in the afternoons I tried new recipes, like Japanese curry and cream pasta. On the
+            last night, my friends came over, and we had a small party with the food I made. We laughed about the canceled
+            trip and ended up staying up until three in the morning. Looking back, I think that vacation was even better
+            than the trip we had planned, because it was so relaxing and personal.
+          phrases: ['I was pretty upset at first, because', 'So I thought, why not', 'Looking back']
+        - text: >-
+            Well, one home vacation I'll never forget happened last August. That summer was extremely hot, and I was
+            exhausted from work, so I took five days off and decided not to leave my apartment unless I really had to. On
+            the first day, I slept for most of the afternoon and felt a little guilty. But on the second day, I came up
+            with a fun idea. I decided to cook food from a different country every day, as if I were traveling around the
+            world. I made Vietnamese spring rolls, Spanish paella, and even Mexican tacos from scratch. Some dishes turned
+            out great, and some were a complete disaster, especially the paella, which was way too salty. In the evenings,
+            I watched movies set in the same country I had cooked for. By the end of the week, I felt like I had actually
+            been somewhere. It was creative, cheap, and really relaxing, and it made me realize that a good vacation is
+            more about your mindset than the place.
+          phrases: ['I came up with a fun idea', 'as if I were', 'it made me realize that']
+      al:
+        - text: >-
+            Sure, one home vacation that really stands out for me happened about three years ago, right after I finished a
+            very demanding project at work. For almost six months, I had been working late nearly every night, and by the
+            end, I was completely burned out. My original plan was to fly to Vietnam, but when I sat down to book the
+            tickets, I realized I didn't have the energy to pack, deal with airports, or plan anything at all. So I made a
+            slightly unusual decision: I stayed home for ten days and did whatever my body wanted. For the first few days,
+            I mostly slept and watched comfort movies. Then, slowly, I started to feel like myself again. I went on long
+            walks along the river, started reading a novel I had abandoned years ago, and even called old friends I had
+            lost touch with. One of them came over with homemade kimchi, and we talked for hours about how much our lives
+            had changed. What made that vacation memorable wasn't any single event. It was the feeling of finally slowing
+            down. Since then, I've been much better at noticing when I need a break, which I think is a lesson I needed to
+            learn.
+          phrases: ['I made a slightly unusual decision', 'What made that vacation memorable wasn''t', 'Since then']
+        - text: >-
+            Well, the home vacation I remember most clearly was during the Lunar New Year holiday a couple of years ago.
+            Normally, my whole family travels to my grandparents' house, which means spending hours stuck in traffic. That
+            year, though, my grandparents decided to come to our apartment instead, and for the first time, we hosted
+            everyone at home. At first, I wasn't thrilled, because it meant a lot of cleaning and cooking. My mom gave
+            everyone a job, and mine was making the dumplings, which turned out to be much harder than I expected. My
+            first few looked terrible, and my cousins teased me about it all afternoon. But by the evening, my grandmother
+            sat next to me and showed me her way of folding them, and I finally got it right. That night, we all ate
+            together, played traditional games, and my grandfather told stories about his childhood that I had never heard
+            before. I didn't go anywhere, and yet it felt like a real holiday. If anything, being at home made it feel
+            more personal, and those stories are something I'm really glad I got to hear.
+          phrases: ['At first, I wasn''t thrilled, because', 'which turned out to be', 'If anything']
+    tip_ko: 과거 경험은 언제 → 무슨 일 → 어떻게 끝났는지 → 느낀 점 순서로 말해요. 과거형을 끝까지 지키는 게 중요해요.
+  - id: staycation-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      Compare the way you spend your vacations now with the way you spent them when you were younger. What has
+      changed, and why do you think these changes happened?
+    model:
+      il:
+        - text: >-
+            When I was young, I traveled a lot with my family. We went to the beach. Now I stay home on vacation. I am
+            tired from work. I want to rest. So now I like home more.
+          phrases: ['When I was young', 'Now I']
+        - text: >-
+            In the past, I went out with friends on vacation. We played outside all day. Now I am busy. I stay home and
+            sleep. I watch movies. It is different now, but I like it.
+          phrases: ['In the past', 'It is different now']
+      im1:
+        - text: >-
+            When I was a child, my family went camping every summer vacation. We went to the mountains or the beach, and
+            it was very exciting. But now I usually stay home on my vacations. I work every day, so I feel tired, and I
+            just want to rest. Also, traveling is expensive these days. So I think my vacations changed because my life
+            changed. I miss camping sometimes, but I like relaxing at home too.
+          phrases: ['When I was a child', 'But now', 'So I think']
+        - text: >-
+            In my high school days, my vacations were very busy. I went to academies, and I studied almost every day. I
+            didn't have time to rest. Now, I am a university student, and my vacations are much more free. I can sleep
+            late and watch movies at home. I think it changed because I don't have big exams now. I like my vacations now
+            much better.
+          phrases: ['In my high school days', 'much more free', 'much better']
+      im2:
+        - text: >-
+            My vacations have changed a lot over the years. When I was in elementary school, my parents always planned
+            family trips. We drove to the beach or visited my grandparents in the countryside, and the car was always full
+            of snacks and noise. These days, I usually spend my vacations at home. I have a full-time job now, so when I
+            get a few days off, I just want to rest and sleep. Another reason is money. Traveling has become really
+            expensive, so staying home feels smarter. I sometimes miss those noisy family trips, but I also enjoy the
+            quiet time I have now.
+          phrases: ['When I was in elementary school', 'These days', 'Another reason is']
+        - text: >-
+            Well, when I was younger, I thought a vacation meant going somewhere far away. In my twenties, I traveled
+            abroad almost every year with my friends, and we tried to see as many places as possible. But now, I prefer
+            simple vacations at home. One reason is that I get tired more easily than before. Another reason is that I
+            live alone now, so my home finally feels like my own space. I can decorate it, cook what I want, and rest
+            without any schedule. I think getting older changed what I want from a vacation. Now I care more about rest
+            than adventure.
+          phrases: ['I thought a vacation meant', 'One reason is that', 'Now I care more about']
+      im3:
+        - text: >-
+            When I compare my vacations now with my vacations as a kid, the difference is huge. Back then, my parents
+            planned everything. Every summer, we went to the same beach town, stayed in a small guesthouse, and spent all
+            day swimming and eating watermelon. I loved it, but I never had any choice. Now, as an adult, I usually stay
+            home on my vacations. I think there are two main reasons. First, my job is really stressful, so I need real
+            rest, not a busy schedule. Second, I enjoy my own space more than I used to. I have hobbies I can do at home,
+            like baking and drawing. Of course, I still travel sometimes, but home vacations have become my favorite.
+          phrases: ['the difference is huge', 'Back then', 'I think there are two main reasons']
+        - text: >-
+            Well, the way I spend my vacations has changed quite a bit. When I was a teenager, I always wanted to be
+            outside. I met my friends at the PC room, went to karaoke, or walked around downtown until late. Staying home
+            felt boring. But these days, it's the opposite. I actually look forward to staying home during my time off. I
+            think this change happened because my daily life is much busier now. I commute for almost two hours a day, so
+            my home has become the place where I can finally relax. Also, home entertainment is much better than before.
+            With streaming services and online games, I never get bored. So, I'd say my priorities shifted from fun to
+            rest.
+          phrases: ['it''s the opposite', 'I think this change happened because', 'my priorities shifted']
+      ih:
+        - text: >-
+            Sure. If I compare my vacations now with the ones I had when I was younger, the biggest difference is that
+            I've gone from always being on the move to really enjoying staying still. When I was in college, I spent every
+            vacation traveling on a tight budget. I took overnight buses, stayed in cheap hostels, and tried to visit as
+            many cities as possible. It was exciting, but honestly, I always came back more tired than before. These days,
+            I'd much rather spend my vacation at home. I think there are a few reasons for this. First, my job is mentally
+            exhausting, so I need time to truly rest. Second, I finally have a comfortable apartment that I've decorated
+            the way I like, so being home feels like a treat. And lastly, I've just become more of a homebody as I've
+            gotten older. I still travel once in a while, but now I see home vacations as a way to recharge rather than a
+            second choice.
+          phrases: ['the biggest difference is that', 'I think there are a few reasons for this', 'rather than a second choice']
+        - text: >-
+            Well, my vacations have changed a lot, mostly because my life situation has changed. When I was a kid,
+            vacations meant visiting relatives. Every summer and every holiday, we drove to my grandparents' farm, and I
+            spent the days running around with my cousins and catching insects. As a teenager, I spent most of my
+            vacations at study academies, which honestly didn't feel like vacations at all. Now that I'm working, I
+            finally have control over my own time off, and I've found that I prefer staying home. A big reason is that my
+            weekdays are so packed that I rarely have a quiet moment. Another reason is that technology has made home
+            vacations much more enjoyable. I can watch almost any movie, take online classes, or video chat with friends
+            abroad. Of course, part of me misses the freedom of those childhood summers on the farm. But I think the way I
+            spend my vacations now fits who I am today much better.
+          phrases: ['mostly because my life situation has changed', 'Now that I''m working', 'fits who I am today']
+      al:
+        - text: >-
+            That's an interesting question, because my idea of a good vacation has really changed over the years. When I
+            was growing up, vacations were all about going somewhere. My parents believed that we should see as much of
+            the country as possible, so every summer we packed the car and drove to a different region, whether it was the
+            east coast, the southern islands, or the mountains. Looking back, I'm grateful for those trips, but at the
+            time I mostly remember being carsick and bored in traffic. In my twenties, I kept that habit and traveled
+            abroad whenever I could, often with very packed itineraries. These days, though, I find myself choosing to
+            stay home more and more. I think part of it is simply age. I value sleep and quiet in a way I never did
+            before. But I also think it's about how stressful modern work has become. When you spend all week answering
+            messages and attending meetings, the idea of rushing through airports doesn't sound relaxing at all. Staying
+            home lets me slow down, cook properly, and spend time with the people close to me. So I'd say the change
+            reflects a shift in what I need, rather than a loss of curiosity.
+          phrases: ['Looking back, I''m grateful for', 'I think part of it is simply', 'rather than a loss of curiosity']
+        - text: >-
+            Well, if I compare my vacations now with the ones I had as a student, they're almost completely different, and
+            I think the reasons say a lot about how my life has changed. Back in high school, a vacation was never really
+            a break, because I spent most of it at cram schools preparing for exams. Then in university, I swung the other
+            way and tried to fill every vacation with something exciting, like backpacking trips, music festivals, or
+            volunteering abroad. I was afraid of wasting my free time. Now that I've been working for several years, I've
+            realized that resting is not the same as wasting time. So these days, I usually spend at least part of my
+            vacation at home, and I plan it carefully. I'll set aside a few days to read, cook, and catch up with family,
+            and maybe one or two days for a short trip nearby. I think the biggest reason for the change is that my energy
+            is more limited than it used to be, and I've learned to protect it. Another reason is that I simply enjoy my
+            home more now that I've made it comfortable. In a way, I feel like I've finally learned how to take a real
+            vacation.
+          phrases: ['they''re almost completely different', 'resting is not the same as wasting time', 'In a way']
+    tip_ko: 비교 문제는 예전 → 지금 → 바뀐 이유 두 가지 순서로 정리해요. used to, these days처럼 시점을 알려 주는 표현을 꼭 넣어요.

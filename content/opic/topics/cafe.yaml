@@ -1,0 +1,450 @@
+schema_version: 1
+id: cafe
+kind: survey
+title_ko: 카페 가기
+status: ready
+questions:
+  - id: cafe-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you enjoy going to cafés. Describe a café you like to visit. Where is it, what
+      does it look like inside, and what makes it special to you?
+    model:
+      il:
+        - text: >-
+            I like a small café near my office. It is on the second floor. Inside, there are wooden tables and many
+            plants. The music is quiet. The coffee is good and not expensive. I go there often.
+          phrases: [I like a small café, Inside, there are, I go there often]
+        - text: >-
+            My favorite café is in my neighborhood. It is very bright. It has big windows. There are comfortable
+            sofas. They sell cake and cookies. The staff are kind. I love this café.
+          phrases: [My favorite café is, It has big windows, I love this café]
+      im1:
+        - text: >-
+            I want to talk about a small café near my office. It is on the second floor of an old building, so it is
+            quiet. When you go inside, you can see wooden tables, warm lights, and a lot of green plants. There is a
+            big window, and you can see the street. The music is soft, so I can read or study there. The coffee is
+            good, and the price is not bad. I go there about three times a week.
+          phrases: [I want to talk about, When you go inside, The music is soft]
+        - text: >-
+            My favorite café is in my neighborhood, about five minutes from my house. It is not very big, but it is
+            very bright because it has large windows. Inside, there are comfortable sofas and some long tables for
+            people who work on laptops. The owner bakes cakes and cookies every morning, so the café always smells
+            sweet. The staff are very friendly. I feel comfortable there, like it is my second home.
+          phrases: [about five minutes from my house, Inside, there are, like it is my second home]
+      im2:
+        - text: >-
+            I'd like to tell you about a small café near my office. It's on the second floor of an old brick building,
+            so most people don't even know it's there. When you walk in, you see wooden tables, warm yellow lights,
+            and lots of green plants hanging from the ceiling. There's a big window seat where you can look down at
+            the street. The music is always soft jazz, so it's a great place to read or think. The coffee is really
+            good, and the owner remembers my order. That's why I keep going back.
+          phrases: [I'd like to tell you about, When you walk in, That's why I keep going back]
+        - text: >-
+            The café I visit most is in my neighborhood, just five minutes from my apartment. It's not very big, but
+            it feels open and bright because the front wall is all glass. Inside, there are a few comfortable sofas
+            and a long wooden table where people work on their laptops. The owner bakes everything herself, so every
+            morning the café smells like fresh bread and cookies. What makes it special is the atmosphere. It's quiet
+            and relaxing, and the staff are always friendly. For me, it's like a second living room.
+          phrases: [The café I visit most is, What makes it special is, 'For me, it''s like']
+      im3:
+        - text: >-
+            The café I'd like to describe is a small place near my office. It's hidden on the second floor of an old
+            brick building, so if you don't know about it, you'll walk right past it. As soon as you go up the stairs,
+            you smell fresh coffee. Inside, there are mismatched wooden tables, warm yellow lights, and so many plants
+            that it almost feels like a greenhouse. My favorite spot is the window seat, because I can watch people
+            walking down the street. The owner always plays soft jazz, and she remembers what everyone usually orders.
+            It's the kind of place that makes you slow down for a while.
+          phrases: [so if you don't know about it, As soon as, My favorite spot is, It's the kind of place that]
+        - text: >-
+            I'd like to talk about the café in my neighborhood, because I practically live there on weekends. It's
+            only five minutes from my apartment. The café isn't big, but the whole front is made of glass, so it's
+            always full of natural light. There are a few deep sofas by the window and a long shared table in the back
+            where people study or work on laptops. The owner bakes all the desserts herself, so the place smells like
+            butter and cinnamon every morning. More than the coffee, though, I love the atmosphere. It's calm, cozy,
+            and nobody rushes you to leave. I usually stay there for a few hours with a book and a cup of coffee.
+          phrases: [I practically live there, the whole front is made of glass, 'More than the coffee, though', nobody rushes you]
+      ih:
+        - text: >-
+            The café I want to describe is a tiny place near my office that I discovered almost by accident. It's on
+            the second floor of an old brick building, and the only sign is a small chalkboard by the entrance, so
+            most people walk right past it. As soon as you climb the narrow stairs, the smell of freshly roasted
+            coffee hits you. Inside, nothing matches. The wooden tables and chairs all look like they came from
+            different flea markets, and there are hanging plants everywhere, so it almost feels like a greenhouse. My
+            favorite seat is by the big window, where I can look down at the busy street while everything inside stays
+            calm. The owner plays old jazz records and remembers every regular's order. Honestly, it feels more like
+            visiting a friend's apartment than going to a café.
+          phrases: [almost by accident, As soon as you climb, 'Inside, nothing matches', 'Honestly, it feels more like']
+        - text: >-
+            The café I'd like to talk about is the one in my neighborhood, about a five-minute walk from my apartment,
+            and I spend most of my Saturday mornings there. It's a small place, but the front wall is made entirely of
+            glass, so it's always bright and airy, even in winter. On one side, there are a few soft, deep sofas that
+            are perfect for reading, and in the back there's a long communal table where students and freelancers work
+            quietly on their laptops. The owner bakes all the cakes and scones herself early in the morning, so the
+            whole café smells like butter and cinnamon when it opens. What really makes it special, though, is the
+            feeling of the place. The music is low, people speak softly, and nobody ever makes you feel like you've
+            stayed too long. That's why I keep going back almost every week.
+          phrases: [I spend most of my Saturday mornings there, On one side, 'What really makes it special, though']
+      al:
+        - text: >-
+            The café I'd love to describe is a tiny, almost secret place near my office that I stumbled upon about two
+            years ago while looking for somewhere to escape the lunch crowds. It's tucked away on the second floor of
+            an old brick building, and the only clue it exists is a small chalkboard sign by the front door, so most
+            people walk right by without noticing. The moment you climb the narrow staircase, the smell of freshly
+            roasted beans greets you. Inside, nothing really matches, and that's the charm of it. The tables and
+            chairs look like they were collected from different flea markets, and there are hanging plants in every
+            corner, which makes the room feel like a little greenhouse. I always try to grab the window seat, because
+            I can watch the chaos of the street below while sitting in complete calm. The owner plays old jazz records
+            and somehow remembers every regular's usual order. To me, it doesn't feel like a business at all. It feels
+            like a friend's living room that happens to serve excellent coffee.
+          phrases: [I stumbled upon, and that's the charm of it, 'To me, it doesn''t feel like', happens to serve]
+        - text: >-
+            If I had to choose one café that sums up my weekends, it would definitely be the little place in my
+            neighborhood, just a five-minute walk from my apartment. From the outside, it doesn't look like much, but
+            the entire front wall is glass, so the inside is flooded with natural light, even on gloomy winter
+            mornings. The space is cleverly divided. Near the window, there are a few deep, worn-in sofas that
+            practically swallow you when you sit down, which makes them perfect for reading. In the back, there's a
+            long communal table where students and freelancers quietly work on their laptops, so it has a productive
+            but relaxed feel. The owner bakes everything herself at dawn, which means that when the doors open at
+            eight, the whole café smells like butter and cinnamon. But what truly sets it apart is the atmosphere.
+            People talk in low voices, the music never gets in the way, and nobody ever hints that you've overstayed
+            your welcome, even if you've been nursing one latte for three hours.
+          phrases: [If I had to choose one café, The space is cleverly divided, what truly sets it apart is, overstayed your welcome]
+    tip_ko: 위치 → 들어갔을 때 첫인상 → 내부 모습 → 좋아하는 자리 → 특별한 이유 순서로 말해요. 냄새나 음악처럼 감각 표현을 하나 넣으면 묘사가 살아나요.
+  - id: cafe-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      What do you usually do when you go to a café? When do you go, who do you go with, and what do you usually order?
+      Walk me through a typical visit.
+    model:
+      il:
+        - text: >-
+            I go to a café on Sunday afternoon. I usually go alone. I order an iced latte. I read a book or study
+            English. I stay for two hours. It is my favorite time of the week.
+          phrases: [on Sunday afternoon, I usually go alone, I stay for two hours]
+        - text: >-
+            I go to a café with my friends after work. We go on Friday. I order a hot americano and a piece of cake.
+            We talk about our week. We laugh a lot. It is very fun.
+          phrases: [after work, I order a hot americano, We talk about our week]
+      im1:
+        - text: >-
+            I usually go to a café on Sunday afternoons, and I go by myself. When I get there, I order an iced latte
+            and sometimes a small cookie. Then I find a seat by the window. First, I read a book for about an hour.
+            After that, I study English or plan my week in my notebook. I usually stay for two or three hours. It is
+            quiet time for me, and I really need it.
+          phrases: [by myself, When I get there, After that, I really need it]
+        - text: >-
+            I go to a café with my coworkers almost every day after lunch. It is right next to our office building. I
+            always order a hot americano because it is cheap and it helps me wake up. My coworkers usually get lattes.
+            We sit together for about twenty minutes and talk about work or our weekend plans. Then we go back to the
+            office. It is a short but important break for us.
+          phrases: [almost every day after lunch, I always order, It is a short but important break]
+      im2:
+        - text: >-
+            On Sunday afternoons, I usually go to a café by myself. I leave home around two, and it takes about ten
+            minutes to walk there. I almost always order an iced latte, and if I'm hungry, I get a cookie too. Then I
+            look for a seat by the window, because I like the natural light. For the first hour, I read a book. After
+            that, I study English or write my plans for the next week in my notebook. I usually stay for about three
+            hours. It's my way of getting ready for a busy week.
+          phrases: [I almost always order, For the first hour, It's my way of]
+        - text: >-
+            I go to a café with my coworkers almost every weekday after lunch. There's a small café right next to our
+            office, so it's very convenient. I usually order a hot americano because I need the caffeine to stay awake
+            in the afternoon. My coworkers usually get lattes or tea. We sit at the same table by the door every day,
+            and we chat for about twenty minutes. We talk about work, our weekend plans, or funny things that
+            happened. Then we go back to the office. This short break helps me relax and focus again.
+          phrases: [almost every weekday, There's a small café right next to, This short break helps me]
+      im3:
+        - text: >-
+            My café routine is pretty much the same every Sunday. Around two in the afternoon, I grab my bag with a
+            book and my notebook and walk to the café near my house. I almost always order an iced latte, even in
+            winter, and sometimes a chocolate chip cookie if they have fresh ones. Then I try to get the window seat,
+            because the sunlight makes me feel calm. I spend the first hour reading, and after that I switch to
+            studying English or planning my week. I usually stay until about five. By the time I leave, I feel
+            organized and ready for Monday, so I really look forward to it.
+          phrases: [pretty much the same, even in winter, I spend the first hour, By the time I leave]
+        - text: >-
+            On weekdays, going to the café with my coworkers after lunch is kind of a ritual. Right after we finish
+            eating, the four of us walk to the small café next to our building. I always order a hot americano, no
+            matter the weather, because otherwise I get really sleepy at around three. The others usually get lattes,
+            and one of them always tries the new seasonal drink. We grab the same table near the door and chat for
+            about twenty minutes. Honestly, it's the only time we talk about things other than work. That little break
+            makes the afternoon go much faster. We even celebrate birthdays there with a small cake sometimes.
+          phrases: [is kind of a ritual, no matter the weather, 'Honestly, it''s the only time', That little break makes]
+      ih:
+        - text: >-
+            Going to a café on Sunday afternoons has become one of my favorite routines, and I almost always go alone.
+            Around two o'clock, I pack a book, my notebook, and some earphones, and walk to the little café about ten
+            minutes from my house. I'm pretty predictable when it comes to ordering. It's an iced latte every time,
+            even in the middle of winter, and if the cookies look fresh, I'll get one of those too. The first thing I
+            do is try to grab the window seat, because the afternoon sunlight makes the whole place feel warm. I
+            usually spend the first hour reading just for fun. After that, I open my notebook and plan out the week
+            ahead, or I study English for a bit. I normally stay until five or so. By the time I walk home, I feel
+            calm and organized, which makes Monday a lot less scary.
+          phrases: [has become one of my favorite routines, I'm pretty predictable when it comes to, The first thing I do is, which makes Monday a lot less scary]
+        - text: >-
+            On weekdays, my café routine is all about my coworkers. There are four of us who sit near each other, and
+            right after lunch we walk over to the small café next to our office building. It's become such a habit
+            that the barista starts making our drinks when she sees us coming. I always order a hot americano,
+            whatever the weather, because without it I'm half asleep by three o'clock. Two of my coworkers stick to
+            lattes, and the youngest one always orders whatever new seasonal drink is on the menu, even if it sounds
+            strange. We sit at the same table by the door and chat for about twenty minutes. The rule is that we don't
+            talk about work, so we end up discussing movies, weekend plans, or office gossip. I think those short
+            breaks have actually made our team a lot closer.
+          phrases: [is all about my coworkers, It's become such a habit that, The rule is that, have actually made our team]
+      al:
+        - text: >-
+            My Sunday afternoons at the café have turned into a small ritual that I protect pretty fiercely. Around
+            two o'clock, I pack a novel, my planner, and a pair of earphones, and stroll over to the little café about
+            ten minutes from my place. When it comes to ordering, I'm embarrassingly predictable. It's an iced latte
+            every single time, even in the middle of January, and if the chocolate chip cookies have just come out of
+            the oven, I can't resist grabbing one. My first goal is always to claim the window seat, since the
+            afternoon sun pours in there and makes everything feel warm and slow. I spend the first hour reading
+            purely for pleasure, without checking my phone at all. Once that hour is up, I switch to planning mode. I
+            map out the week ahead, sort out my to-do list, and sometimes squeeze in some English practice. I usually
+            linger until about five. By the time I walk home, my head feels clear, and I'm genuinely ready to face
+            Monday.
+          phrases: [I protect pretty fiercely, 'When it comes to ordering, I''m embarrassingly predictable', I can't resist, I switch to planning mode]
+        - text: >-
+            During the workweek, my café routine revolves entirely around three of my coworkers. Right after lunch,
+            the four of us walk to the tiny café next to our office building, and we've been doing it for so long that
+            the barista starts preparing our drinks the moment she spots us through the window. My order never
+            changes: a hot americano, no matter how hot it is outside, because without that caffeine I'm practically
+            asleep at my desk by three o'clock. Two of the others stay loyal to lattes, while our youngest teammate
+            insists on trying every new seasonal drink, even the ones that sound bizarre, like lavender honey cream.
+            We always take the same table by the door and spend about twenty minutes there. There's an unspoken rule
+            that work topics are off-limits, so we end up talking about movies, travel plans, or harmless office
+            gossip. It sounds trivial, but I'm convinced those short breaks are the reason our team gets along so well
+            and handles stressful deadlines without falling apart.
+          phrases: [revolves entirely around, My order never changes, There's an unspoken rule that, 'It sounds trivial, but I''m convinced']
+    tip_ko: 언제 가는지, 누구와 가는지, 무엇을 주문하는지, 거기서 무엇을 하는지 질문 순서대로 답해요. usually, always 같은 빈도 표현을 꼭 넣어요.
+  - id: cafe-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a memorable experience you had at a café. When did it happen, who were you with, and what exactly
+      happened? Please describe it in detail.
+    model:
+      il:
+        - text: >-
+            Last year, I met my old friend at a café. I did not see her for five years. We were very happy. We talked
+            for four hours. We forgot the time. The café closed, so we left. It was a great day.
+          phrases: [Last year, We talked for four hours, It was a great day]
+        - text: >-
+            One day, I spilled coffee at a café. It was on my laptop. I was very surprised. The staff helped me. They
+            gave me many napkins. My laptop was okay. I was lucky.
+          phrases: [One day, I was very surprised, I was lucky]
+      im1:
+        - text: >-
+            I remember a special day last year. I met my high school friend at a café. We had not seen each other for
+            five years because she lived in another country. When I saw her, I was so happy that I almost cried. We
+            ordered coffee and cake, and we talked about everything. We talked for about four hours. Finally, the
+            staff told us the café was closing. It was one of the best days of my year.
+          phrases: [I remember a special day, We had not seen each other, 'Finally, the staff told us']
+        - text: >-
+            About two years ago, I had a funny accident at a café. I was working on my laptop, and I had a big iced
+            coffee next to it. When I reached for my phone, I knocked the cup over. The coffee went all over my laptop
+            and my notes. I was really shocked. Luckily, the staff ran over with lots of napkins and helped me clean
+            up. My laptop still worked, so I was very relieved.
+          phrases: [About two years ago, I knocked the cup over, 'Luckily, the staff', I was very relieved]
+      im2:
+        - text: >-
+            One of my most memorable café experiences happened last spring. My best friend from high school came back
+            to Korea after living abroad for five years, and we decided to meet at a café near my house. When she
+            walked in, I recognized her right away, and we both screamed a little. We ordered coffee and a big piece
+            of cheesecake, but we were so busy talking that we forgot to eat it. We talked about our jobs, our
+            families, and our old school memories. Before we knew it, four hours had passed and the café was closing.
+            I'll never forget that day.
+          phrases: [One of my most memorable café experiences, I recognized her right away, Before we knew it]
+        - text: >-
+            A memorable thing happened to me at a café about two years ago. I was preparing for an important
+            presentation, so I was working on my laptop with a large iced coffee next to it. When I reached for my
+            phone, I accidentally knocked the cup over, and the coffee spilled all over my keyboard and my notes. I
+            panicked because my presentation was the next morning. Fortunately, the staff came over quickly with
+            towels and helped me dry everything. My laptop survived, and the presentation went well. Since then, I
+            never put drinks next to my laptop.
+          phrases: [A memorable thing happened to me, I panicked because, Fortunately, Since then]
+      im3:
+        - text: >-
+            The café experience I remember best was last spring, when my best friend from high school came back to
+            Korea. She had been living in Canada for five years, so we hadn't seen each other in person for a long
+            time. We decided to meet at a quiet café near my house. When she walked through the door, I recognized her
+            instantly, and we hugged for a long time. We ordered lattes and a slice of cheesecake, but honestly, we
+            were so busy talking that the cake just sat there. We caught up on everything, from work and relationships
+            to silly stories from school. Before we realized it, four hours had gone by, and the staff had started
+            stacking the chairs. It felt like no time had passed between us.
+          phrases: [The café experience I remember best, She had been living, but honestly, It felt like no time had passed]
+        - text: >-
+            I had a really stressful but memorable experience at a café about two years ago. I was preparing for a big
+            presentation at work, and I had spent the whole afternoon in a café working on my slides. I had a huge
+            iced coffee right next to my laptop, which was a terrible idea. When I reached over to answer my phone, I
+            knocked the cup over, and coffee went everywhere, all over the keyboard, my notes, and my bag. I
+            completely froze. Thankfully, two staff members rushed over with towels, turned my laptop upside down, and
+            helped me dry it. Amazingly, it still worked, and my presentation the next day went fine.
+          phrases: [stressful but memorable, which was a terrible idea, I completely froze, 'Amazingly, it still worked']
+      ih:
+        - text: >-
+            The most memorable café experience I've had was last spring, when I reunited with my best friend from high
+            school. She had moved to Canada right after graduation, and although we texted all the time, we hadn't
+            seen each other in person for five years. When she finally came back for a visit, we decided to meet at a
+            quiet café near my apartment. I got there early and kept staring at the door. The moment she walked in, I
+            recognized her laugh before I even saw her face, and we hugged for so long that people started looking at
+            us. We ordered lattes and a slice of cheesecake to share, but we were so caught up in talking that we
+            didn't touch the cake for an hour. We talked about her life abroad, my job, and all our embarrassing
+            school memories. Eventually, the staff started putting chairs on the tables, and we realized we'd been
+            there for four hours.
+          phrases: [The most memorable café experience I've had, I recognized her laugh, we were so caught up in, Eventually]
+        - text: >-
+            A café experience I'll never forget happened about two years ago, the night before a really important
+            presentation at work. I'd spent the entire afternoon at a café near my office fixing my slides, and I had
+            a giant iced coffee sitting right next to my laptop, which, looking back, was a terrible idea. At around
+            six, my phone rang, and when I reached for it, I knocked the cup right over. Coffee spread across the
+            keyboard, soaked my printed notes, and even dripped into my bag. For a few seconds, I just stared at it in
+            shock. Then two of the staff members rushed over with a pile of towels. One of them told me to turn the
+            laptop upside down right away, and they helped me dry everything. I was sure the laptop was dead, but
+            after an hour it turned on again. The presentation went well, and now I never put drinks near my computer.
+          phrases: [A café experience I'll never forget, 'which, looking back, was a terrible idea', For a few seconds, I was sure the laptop was dead]
+      al:
+        - text: >-
+            The café memory that means the most to me is from last spring, when I finally reunited with my best friend
+            from high school. She moved to Canada right after we graduated, and even though we messaged each other
+            constantly, five whole years went by without us seeing each other in person. When she told me she was
+            coming back for a short visit, we chose a quiet little café near my apartment. I was so nervous that I
+            arrived twenty minutes early and kept glancing at the door like I was waiting for a blind date. The second
+            she walked in, I actually recognized her laugh before I saw her face, and we hugged for so long that the
+            other customers started smiling at us. We ordered lattes and a slice of cheesecake to share, but we were
+            so absorbed in catching up that the cake sat untouched for nearly an hour. We went from her life abroad to
+            my job to every embarrassing thing we'd done as teenagers. Eventually, the staff began stacking chairs,
+            and we were shocked to realize four hours had flown by. It felt as if those five years had never happened.
+          phrases: [The café memory that means the most to me, like I was waiting for a blind date, we were so absorbed in, It felt as if]
+        - text: >-
+            One café experience that still makes me cringe, but also makes me grateful, happened about two years ago,
+            the night before one of the biggest presentations of my career. I had camped out at a café near my office
+            all afternoon to polish my slides, and, in hindsight, foolishly, I had a giant iced coffee sitting right
+            beside my laptop. Around six o'clock, my phone started ringing, and as I reached across to grab it, my
+            elbow caught the cup. Within seconds, coffee had flooded the keyboard, soaked through my printed notes,
+            and dripped into my bag. I just sat there frozen, watching months of preparation possibly disappear. Then
+            two staff members came running with a stack of towels. One of them calmly told me to flip the laptop
+            upside down and unplug it immediately, and they stayed with me until everything was as dry as possible. I
+            was convinced the computer was finished, but an hour later it miraculously turned back on. The
+            presentation went smoothly the next day, and I went back to thank them with a box of cookies. Needless to
+            say, my drinks now stay on the other side of the table.
+          phrases: [still makes me cringe, 'in hindsight, foolishly', I was convinced the computer was finished, Needless to say]
+    tip_ko: 배경(언제, 어디서, 누구와) → 사건 → 내 감정 → 결과 순서로 말해요. 과거형을 지키고, Suddenly, Luckily 같은 말로 이야기의 흐름을 보여 줘요.
+  - id: cafe-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      Cafés have changed a lot over the years. How are the cafés you go to now different from cafés you remember from
+      the past? How have the way people use cafés and what they order changed?
+    model:
+      il:
+        - text: >-
+            In the past, cafés were small. People just drank coffee and talked. Now, cafés are big and pretty. Many
+            people study or work there. There are many kinds of drinks now. I like cafés now more.
+          phrases: [In the past, Many people study or work there, I like cafés now more]
+        - text: >-
+            Ten years ago, there were not many cafés. Coffee was cheap. Now there are cafés everywhere. Coffee is more
+            expensive. People take many pictures in cafés now. It is very different.
+          phrases: [Ten years ago, Now there are cafés everywhere, It is very different]
+      im1:
+        - text: >-
+            Cafés are very different now. When I was in high school, cafés were small and a little dark, and people
+            went there just to meet friends and drink coffee. These days, cafés are big, bright, and beautiful. Many
+            people go there alone to study or work on their laptops. Also, menus are different. In the past, there
+            were only a few kinds of coffee, but now there are many special drinks and desserts. I think cafés are
+            more fun now.
+          phrases: [Cafés are very different now, These days, 'Also, menus are different']
+        - text: >-
+            I think the biggest change is the number of cafés. About ten years ago, there were only a few cafés in my
+            neighborhood. Now, there are cafés on almost every street. Another change is the price. Coffee was cheaper
+            before, but now a latte is quite expensive. Also, people use cafés differently. In the past, people just
+            talked, but now many people take pictures of their drinks and post them online.
+          phrases: [I think the biggest change is, Another change is, 'In the past, people just talked']
+      im2:
+        - text: >-
+            Cafés have changed a lot since I was a teenager. Back then, most cafés were small, a little dark, and
+            pretty simple. People went there mainly to meet friends and have a conversation. Nowadays, cafés are much
+            bigger and brighter, and many of them have unique interior designs. The biggest difference is how people
+            use them. A lot of people go to cafés alone to study, work on their laptops, or even have online meetings.
+            The menus have changed too. In the past, there were only a few basic coffees, but now there are dozens of
+            drinks and fancy desserts.
+          phrases: [since I was a teenager, Nowadays, The biggest difference is, The menus have changed too]
+        - text: >-
+            When I compare cafés now with cafés ten years ago, I notice three big changes. First, there are so many
+            more cafés. In my neighborhood, there used to be only two or three, but now there's one on almost every
+            corner. Second, coffee has become much more expensive, and some drinks cost almost as much as a meal.
+            Third, people use cafés in different ways. In the past, people mostly sat and talked, but now many people
+            take photos of their drinks for social media or spend the whole day studying. I think cafés have become
+            part of daily life.
+          phrases: [I notice three big changes, there used to be only, have become part of daily life]
+      im3:
+        - text: >-
+            Cafés today are really different from the ones I remember from my teenage years. Back then, cafés were
+            mostly small, slightly dark places with simple furniture, and people went there for one reason, to meet
+            friends and chat over coffee. Nowadays, cafés compete with each other on design. Some look like art
+            galleries, and others are full of plants or have rooftop terraces. The biggest change, though, is how
+            people use them. Many people go alone and stay for hours, studying, working on laptops, or even joining
+            video meetings. The menu has also exploded. Instead of a few basic coffees, there are seasonal drinks,
+            plant-based milk options, and desserts that look like works of art.
+          phrases: [Back then, compete with each other on design, 'The biggest change, though, is', has also exploded]
+        - text: >-
+            If I compare cafés now with cafés ten years ago, the first thing I notice is how many there are. When I
+            was in high school, my neighborhood had just a couple of cafés, but now there's one on nearly every block.
+            Another big change is the price. A latte used to be a cheap treat, but these days it can cost almost as
+            much as lunch. The way people use cafés has changed too. In the past, people mostly sat and talked for an
+            hour. Now, a lot of people treat cafés as offices or study rooms, and others go mainly to take photos for
+            social media. In my opinion, cafés have turned into places for everything, not just coffee.
+          phrases: [the first thing I notice is, A latte used to be, 'In my opinion, cafés have turned into']
+      ih:
+        - text: >-
+            Cafés today are almost unrecognizable compared to the ones I remember from my teenage years. Back then,
+            most cafés were small and a little dim, with plain wooden chairs and a short menu written on the wall.
+            People went there for basically one reason, which was to meet friends and talk over a cup of coffee. These
+            days, cafés seem to compete on design. Some look like art galleries, some are filled with plants, and
+            others have rooftop terraces with city views. But the biggest change, I think, is in how people use them.
+            It's completely normal now to see people sitting alone for four or five hours, studying, working on
+            laptops, or even joining video calls with headphones on. The menus have also changed dramatically. Instead
+            of three or four basic coffees, you now see seasonal specials, oat milk and almond milk options, and
+            desserts so pretty that people photograph them before eating.
+          phrases: [almost unrecognizable compared to, seem to compete on design, 'But the biggest change, I think, is', have also changed dramatically]
+        - text: >-
+            When I think about how cafés have changed over the last ten years, three things come to mind right away.
+            The first is simply the number of them. When I was in high school, there were maybe two cafés in my whole
+            neighborhood, and now it feels like there's one on every corner, sometimes two right next to each other.
+            The second is the price. A latte used to be a cheap little treat, but these days some specialty drinks
+            cost almost as much as a full lunch, which still surprises me. The third, and probably the most
+            interesting, is the role cafés play in people's lives. In the past, people dropped by for an hour to chat.
+            Now, cafés double as offices, study halls, and photo studios. Some people go purely to take pictures for
+            social media. Personally, I have mixed feelings, but I can't deny I use them that way too.
+          phrases: [three things come to mind right away, A latte used to be, 'The third, and probably the most interesting', I have mixed feelings]
+      al:
+        - text: >-
+            Honestly, the cafés I go to now are almost unrecognizable compared to the ones I remember from my teenage
+            years. Back then, a typical café was small and a bit dim, with plain wooden chairs, a few old posters, and
+            a short menu handwritten on a board behind the counter. People went there for pretty much one purpose,
+            which was to sit with friends and talk for an hour or so. Today, cafés seem to compete with each other
+            mainly on design and atmosphere. Some look like minimalist art galleries, others are practically indoor
+            jungles, and the trendier ones have rooftop terraces with views of the whole city. However, what's changed
+            the most, in my view, is the way people actually use these spaces. It's perfectly normal now to see
+            someone sitting alone for five hours, working on a laptop, studying for an exam, or even leading a video
+            meeting with headphones on. The menus have evolved just as dramatically. Instead of a handful of basic
+            coffees, you'll find seasonal specials, several kinds of plant-based milk, and desserts so elaborate that
+            people photograph them from every angle before taking a single bite.
+          phrases: [almost unrecognizable compared to, compete with each other mainly on, 'However, what''s changed the most, in my view', have evolved just as dramatically]
+        - text: >-
+            Looking at how cafés have evolved over the past decade, I'd point to three major changes. The first is
+            sheer quantity. When I was in high school, my neighborhood had maybe two cafés in total, whereas now it
+            feels like there's one on every corner, and sometimes two competing ones right across the street from each
+            other. The second change is price. A latte used to be an affordable little treat, but nowadays some
+            specialty drinks cost nearly as much as a decent lunch, which I still find a bit hard to accept. The third
+            change, and probably the most significant, is the role cafés play in everyday life. In the past, people
+            would drop in for an hour to catch up with a friend and then leave. These days, cafés have become
+            multipurpose spaces. They serve as offices for freelancers, study rooms for students, and even photo
+            studios for people who mainly come to take pictures for social media. To be honest, I have mixed feelings
+            about it, because cafés feel less social than before. Still, I'd be lying if I said I didn't spend whole
+            Saturdays working in one myself.
+          phrases: [I'd point to three major changes, The first is sheer quantity, cafés have become multipurpose spaces, I'd be lying if I said]
+    tip_ko: 예전과 지금을 항목별로 나눠 비교해요. 숫자, 가격, 쓰는 방식처럼 기준을 먼저 말하고 used to, these days로 대비를 분명히 보여 줘요.

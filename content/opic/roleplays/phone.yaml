@@ -1,0 +1,317 @@
+schema_version: 1
+id: phone
+kind: roleplay
+title_ko: 새 휴대폰 사기
+situation_ko: 새 휴대폰을 사려고 매장에 전화해 묻고, 산 휴대폰이 켜지지 않는 문제를 해결해요.
+status: ready
+questions:
+  - id: phone-roleplay_ask
+    type: roleplay_ask
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      I'd like to give you a situation and ask you to act it out. You want to buy a new phone. Call the electronics
+      store and ask three or four questions to get the information you need before you buy one.
+    model:
+      il:
+        - text: >-
+            Hello. I want a new phone. Do you have new phones? How much are they? Can I pay by card? What time do you
+            close? Thank you.
+          phrases: [I want a new phone, How much are they]
+        - text: >-
+            Hi. I need a new phone. Is it expensive? Do you have a black one? Can I buy it today? Thank you very much.
+          phrases: [I need a new phone, Can I buy it today]
+      im1:
+        - text: >-
+            Hello, I'm calling because I want to buy a new phone. First, what phones do you have now? And how much is the
+            newest one? Also, do you have any discounts this month? Lastly, what time does the store close today? I want
+            to visit after work. Thank you.
+          phrases: [I'm calling because, First, Lastly]
+        - text: >-
+            Hi, I'm thinking about buying a new phone. Can I ask you a few questions? Do you sell phones with a big
+            screen? How long does the battery last? Can I pay in monthly payments? And can I try the phone in the store?
+            Thanks a lot.
+          phrases: [I'm thinking about buying, Can I ask you a few questions]
+      im2:
+        - text: >-
+            Hi, I'm calling about buying a new phone. My old phone is really slow. Could you tell me which models you have
+            right now? I'm especially interested in a phone with a good camera. How much is the cheapest one? Do you have
+            any special deals? And one more thing, can you move my data from my old phone? Thank you so much.
+          phrases: [I'm calling about, Could you tell me, I'm especially interested in, And one more thing]
+        - text: >-
+            Hello, I'd like to ask a few questions about phones. I'm planning to buy a new one this week. First, which
+            phone is the most popular these days? Second, is there a difference in price if I buy it online or in the
+            store? Third, does the phone come with a case and a charger? Finally, how long is the warranty? I want to make
+            a good choice, so thank you for your help.
+          phrases: [I'd like to ask a few questions, I'm planning to, I want to make a good choice]
+      im3:
+        - text: >-
+            Hi there, I'm calling because I'm thinking about getting a new phone, and I have a few questions before I come
+            in. My current phone is about four years old, and the battery dies really fast. First, could you recommend a
+            model with a long battery life? Second, what's the price range for that kind of phone? I'd like to keep it
+            under about eight hundred dollars. Third, do you offer any trade-in program for old phones? And lastly, are
+            you open on Sunday? Thanks.
+          phrases: [I have a few questions before I come in, could you recommend, I'd like to keep it under, do you offer any]
+        - text: >-
+            Hello, I saw your store's ad, and I'm interested in buying a new phone. Could I ask you a couple of things? To
+            begin with, I'd like to know what models are on sale right now. I heard there's a holiday discount, so how
+            much can I save? Also, I'm not very good with technology, so would someone at the store help me set up the
+            phone? And finally, if I don't like it, can I return it within a week? Thank you so much for your time.
+          phrases: [I'm interested in buying, To begin with, I'm not very good with, Thank you so much for your time]
+      ih:
+        - text: >-
+            Hi. I'm calling because I'm planning to buy a new phone soon, and I'd like to get some information before I
+            visit your store. First of all, could you tell me which models you'd recommend for someone who takes a lot of
+            photos? Second, I'm on a bit of a budget, so I'm wondering what the price difference is between the latest
+            model and last year's model. Also, do you have a trade-in program? I'd love to get some money back for my old
+            phone. And lastly, if I buy one, how long would it take to transfer my contacts and photos? Thanks a lot for
+            your help.
+          phrases: [I'd like to get some information before, I'm on a bit of a budget, I'm wondering what the price difference is, I'd love to get some money back]
+        - text: >-
+            Hello, is this the electronics store on Main Street? Great. I'm thinking about buying a new phone, and I was
+            hoping you could help me with a few questions. To start with, do you have the newest models in stock right
+            now, or would I need to order one? I've heard they sell out quickly. Next, I'd like to know whether there are
+            any discounts if I pay the full price at once instead of monthly. I'm also curious about the warranty. If the
+            screen breaks, is that covered? Finally, could I come in this evening to try a few phones before deciding?
+            Thank you, that's really helpful.
+          phrases: [I was hoping you could help me with, To start with, I'm also curious about, that's really helpful]
+      al:
+        - text: >-
+            Hi, good morning. I'm calling because I'm in the market for a new phone, and I'd like to narrow down my
+            options before I come in. First, could you tell me which models you'd recommend for someone who uses their
+            phone for work emails, video calls, and a lot of photos? Second, I'm trying to stick to a reasonable budget,
+            so I'd like to know if last year's models are being sold at a discount now that the new ones are out. I'm also
+            wondering whether you offer a trade-in program, and if so, roughly how much I could get for an older phone.
+            Lastly, if I buy something today, is there someone who can help me transfer all my data? I really appreciate
+            your help.
+          phrases: [I'm in the market for, I'd like to narrow down my options, I'm trying to stick to a reasonable budget, I really appreciate your help]
+        - text: >-
+            Hello there. I'm planning to replace my phone soon, and since I'd rather not spend an hour wandering around
+            the store, I thought I'd call ahead with a few questions. To begin with, could you tell me which phones you
+            currently have in stock? Assuming you have them, I'd also like to know how the prices compare between buying
+            the phone outright and paying in monthly installments, because I want to see which option ends up cheaper in
+            the long run. Another thing I'm curious about is the return policy. If I use the phone for a few days and
+            realize it's not right for me, can I exchange it? And finally, what are your hours this weekend? I'd like to
+            drop by on Saturday morning. Thanks.
+          phrases: [I thought I'd call ahead, To begin with, in the long run, Another thing I'm curious about is]
+    tip_ko: 인사 → 전화한 이유 → 질문 3~4개 → 감사 인사 순서로 해요. First, Also, Lastly로 질문을 나누면 듣기 편해요.
+  - id: phone-roleplay_solve
+    type: roleplay_solve
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      I'm sorry, but there is a problem I need you to resolve. You bought the phone, but when you got home, you
+      found that the screen does not turn on. Call the store, explain the situation, and suggest two or three ways
+      to solve the problem.
+    model:
+      il:
+        - text: >-
+            Hello. I bought a phone today. But the screen does not work. It does not turn on. Can I change it? Or can you
+            fix it? Or can I get my money back? Please help me.
+          phrases: [But the screen does not work, Can I change it]
+        - text: >-
+            Hi. I have a problem. I bought a new phone at your store. The phone is broken. The screen is black. I want a
+            new one. Or please give me my money. Thank you.
+          phrases: [I have a problem, I want a new one]
+      im1:
+        - text: >-
+            Hello, I bought a phone at your store this afternoon. When I got home, I tried to turn it on, but the screen
+            stayed black. I charged it for one hour, but it still doesn't work. So I have some ideas. First, can I come
+            back and change it for a new one? Or, if you don't have the same phone, can I get a refund? Please let me
+            know. Thank you.
+          phrases: [When I got home, but it still doesn't work, So I have some ideas]
+        - text: >-
+            Hi, I'm calling about a problem with my new phone. I bought it today, but the screen doesn't turn on at all. I
+            tried everything, but nothing happened. I'm very disappointed. Can you send someone to check it? If not, I can
+            visit the store tomorrow and get a new phone. Or you can give me a different model. What do you think?
+          phrases: [I'm calling about a problem with, 'I tried everything, but', What do you think]
+      im2:
+        - text: >-
+            Hello, this is the customer who bought a phone at your store about two hours ago. I'm sorry to bother you, but
+            I have a problem. When I got home and pressed the power button, the screen didn't turn on. I charged it and
+            tried again, but it's still completely black. I think the phone might be broken. I have a few suggestions.
+            First, I can bring it back tomorrow morning and exchange it for a new one. Second, if you don't have the same
+            model in stock, I'd like a full refund. Or maybe you could check it at the service center today. Please let me
+            know what's possible.
+          phrases: ['I''m sorry to bother you, but', I think the phone might be broken, I have a few suggestions, Please let me know what's possible]
+        - text: >-
+            Hi, I bought a new phone from your store this afternoon, and unfortunately there's a problem with it. The
+            screen won't turn on, even after I charged it fully. I also tried restarting it, but nothing happened. Since
+            it's a brand-new phone, I don't think I should have to pay for repairs. So I'd like to ask for one of these
+            options. Could I exchange it for a new phone? If that's not possible, could you give me a refund? Another
+            option is to lend me a phone while you fix mine. Thank you for understanding.
+          phrases: [and unfortunately there's a problem with it, I don't think I should have to, Another option is to, Thank you for understanding]
+      im3:
+        - text: >-
+            Hi, I'm calling because there's a problem with the phone I bought from your store earlier today. I was really
+            excited to set it up, but when I pressed the power button, nothing happened. The screen stayed completely
+            black. I plugged it in for about an hour and tried again, and I even held down the buttons to restart it, but
+            it still won't turn on. I think it's a defect, so I'd like to solve this as quickly as possible. I have a
+            couple of ideas. First, I could come back to the store tomorrow and exchange it for a new one. If you don't
+            have one in stock, I'd prefer a full refund. Or, if you think it can be fixed easily, maybe a technician could
+            look at it today. Which option works best for you?
+          phrases: [I was really excited to, I think it's a defect, I have a couple of ideas, Which option works best for you]
+        - text: >-
+            Hello, I bought a phone from you this afternoon, and I'm afraid it isn't working. When I got home, I took it
+            out of the box and tried to turn it on, but the screen didn't light up at all. I tried charging it with a
+            different cable too, just in case, but there was no change. I need my phone for work tomorrow, so this is
+            pretty urgent for me. Could we try a few things? Maybe you could walk me through some steps over the phone to
+            see if it's a simple setting. If that doesn't work, I'd like to exchange it tonight before you close. And if
+            there's no stock left, a refund would be fine. Thanks for your help.
+          phrases: [and I'm afraid it isn't working, just in case, this is pretty urgent for me, If that doesn't work]
+      ih:
+        - text: >-
+            Hi, good evening. My name is on the receipt, but basically I bought a new phone from your store this
+            afternoon, and I'm calling because there's a serious problem with it. When I got home and opened the box,
+            everything looked fine, but when I pressed the power button, the screen didn't turn on. I assumed the battery
+            was empty, so I charged it for over an hour. After that, I tried restarting it by holding both buttons, like
+            the manual says, but the screen is still completely black. I can hear a small sound when I plug it in, so I
+            think the phone is on, but the screen itself might be broken. Since it's brand new, I'd really like to get
+            this fixed quickly. Would it be possible to exchange it for a new one tomorrow morning? If not, I could also
+            accept a full refund. Or, if you have a repair center nearby, maybe they could check it today while I wait.
+            Please let me know which option is best.
+          phrases: [basically, I assumed the battery was empty, the screen itself might be broken, Would it be possible to]
+        - text: >-
+            Hello, I'm calling about the phone I bought at your store around three o'clock today. I hate to say this, but
+            it seems to be defective. I set it up as soon as I got home, and everything was fine for about ten minutes.
+            Then the screen suddenly went black, and now it won't turn back on no matter what I do. I've tried charging
+            it, using a different outlet, and restarting it, but nothing works. To be honest, I'm a little frustrated,
+            because I paid quite a lot for this phone and I was really looking forward to using it. I can think of a few
+            ways we could solve this. The simplest would be for me to bring it back and swap it for a new one. If that
+            model is sold out, I'd like either a full refund or a similar model at the same price. Or, if you'd prefer,
+            you could send it to the service center, as long as you lend me a phone in the meantime.
+          phrases: ['I hate to say this, but', no matter what I do, 'To be honest, I''m a little frustrated', I can think of a few ways]
+      al:
+        - text: >-
+            Hi, good evening. I'm sorry to call so close to closing time, but I bought a phone from your store this
+            afternoon, and unfortunately it seems to be defective. Let me explain what happened. As soon as I got home, I
+            unboxed it and pressed the power button, but the screen didn't respond at all. At first I assumed the battery
+            was simply empty, so I left it on the charger for over an hour. When that didn't help, I tried a forced
+            restart, following the instructions in the manual, and I even switched to a different cable and outlet in case
+            the charger was the problem. The phone vibrates slightly when I plug it in, so it seems to have power, but the
+            display stays completely black. I suspect it's a hardware issue with the screen. Since the phone is less than
+            a day old, I'd rather not wait weeks for a repair. Ideally, I'd like to exchange it for a new one tomorrow
+            morning. If the same model isn't available, I'd be happy with a comparable phone or a full refund. Which of
+            those would work for you?
+          phrases: [I'm sorry to call so close to closing time, Let me explain what happened, I suspect it's a hardware issue, 'Ideally, I''d like to']
+        - text: >-
+            Hello, I'm hoping you can help me with a problem. I picked up a new phone at your store earlier today, and I'm
+            afraid it isn't working properly. The moment I got home, I tried to turn it on, and the screen stayed
+            completely dark. Thinking the battery might be drained, I charged it for a good hour and then tried again, but
+            there was still nothing. I also searched online and tried a couple of troubleshooting tips, like holding down
+            the volume and power buttons together, but none of them made any difference. I have to say I'm pretty
+            disappointed, because I chose your store specifically for its good reviews. That said, I'm sure we can sort
+            this out. I see three possible solutions. The first, and easiest for me, would be a straight exchange for a
+            new unit. The second would be a full refund, in case you're out of stock. And the third would be a repair, but
+            only if you could provide a loaner phone, since I rely on mine for work. Could you let me know which option
+            you can offer?
+          phrases: [I'm hoping you can help me with a problem, Thinking the battery might be drained, 'That said, I''m sure we can sort this out', I see three possible solutions]
+    tip_ko: 문제 상황을 언제, 무엇이, 어떻게 안 되는지 구체적으로 설명하고, 대안을 First, Or, If not으로 두세 개 내요.
+  - id: phone-roleplay_experience
+    type: roleplay_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      That's the end of the situation. Have you ever had a problem with something you bought, like an electronic
+      device? Tell me what happened and how you solved the problem.
+    model:
+      il:
+        - text: >-
+            Yes, I had a problem. Last year, I bought headphones. They did not work. One side had no sound. I went back to
+            the store. They gave me new headphones. I was happy.
+          phrases: [I had a problem, They gave me new]
+        - text: >-
+            Two years ago, I bought a laptop online. It was very slow. I called the company. They said send it back. I
+            sent it. They fixed it. It took two weeks.
+          phrases: [Two years ago, They fixed it]
+      im1:
+        - text: >-
+            Yes, I had a similar problem last year. I bought wireless earbuds online. When they arrived, the left earbud
+            didn't work. I was really upset because I wanted to use them on my trip. I called the customer center and
+            explained the problem. They told me to send them back. About one week later, I got new earbuds. They worked
+            well. After that, I always check things right away.
+          phrases: [I had a similar problem, I was really upset because, After that]
+        - text: >-
+            I remember a problem with my first laptop. A few months after I bought it, the keyboard stopped working. Some
+            keys didn't type at all. I took it to the service center near my house. The staff checked it and said it was a
+            small problem. They fixed it in one day, and it was free because of the warranty. I was very relieved.
+          phrases: [I remember a problem with, The staff checked it, I was very relieved]
+      im2:
+        - text: >-
+            Yes, actually, something similar happened to me about two years ago. I bought a new tablet for my online
+            classes. On the first day, it worked fine, but on the second day, it suddenly stopped charging. I tried a
+            different charger, but it still didn't work. I was really stressed because I had an important class that week.
+            So I went back to the store with the receipt and explained everything. At first, the staff wanted to send it
+            for repair, but I said I needed it right away. Luckily, they agreed to give me a new one. Since then, I always
+            keep my receipts.
+          phrases: [something similar happened to me, I was really stressed because, 'Luckily, they agreed to', Since then]
+        - text: >-
+            I had a bad experience with a washing machine a few years ago. My family bought a new one, but after a week,
+            it started making a really loud noise. It also stopped in the middle of washing. We called the company, and
+            they sent a technician to our house. He said one part was broken, but he didn't have the part with him. So we
+            had to wait another week. During that time, I washed my clothes at a laundromat. It was annoying, but in the
+            end, the machine was fixed for free.
+          phrases: [I had a bad experience with, So we had to wait, 'It was annoying, but in the end']
+      im3:
+        - text: >-
+            Yes, I actually had a pretty frustrating experience with a laptop last year. I ordered it online because the
+            price was much cheaper than in stores. When it arrived, it looked perfect, but after a few days, the screen
+            started flickering whenever I opened a video. At first, I thought it was a software problem, so I updated
+            everything, but it kept happening. I contacted the online shop, and they told me to send it to the
+            manufacturer's service center. That took almost three weeks, and I had to borrow my brother's old computer for
+            my assignments. When I finally got it back, they had replaced the whole screen, and it's been fine since. The
+            experience taught me that cheaper isn't always better, and now I prefer buying expensive things in person.
+          phrases: [I actually had a pretty frustrating experience, 'At first, I thought', When I finally got it back, The experience taught me that]
+        - text: >-
+            I remember one time when I bought a smartwatch as a birthday gift for my dad. I was really excited to give it
+            to him, but when he opened the box, the watch wouldn't connect to his phone. We spent almost an hour trying
+            different settings, and my dad started to feel bad because he thought he was doing something wrong. The next
+            day, I took it back to the store and showed the staff the problem. They tested it with another phone and found
+            that the watch was defective. They apologized and gave me a new one right away, plus a small discount coupon.
+            My dad has been using it every day since then. I was glad the store handled it so quickly.
+          phrases: [I remember one time when, I was really excited to, They apologized and, I was glad the store handled it]
+      ih:
+        - text: >-
+            Yes, I've had a few problems like that, but the one I remember most happened about a year ago with a robot
+            vacuum cleaner. I'd saved up for a while to buy it, and for the first two weeks, it was amazing. Then one day,
+            it started spinning in circles in the middle of the living room and wouldn't return to its charging station. I
+            tried resetting it and cleaning the sensors, but nothing changed. When I called the customer service center, I
+            had to wait on hold for almost forty minutes, which was really frustrating. The agent finally told me to send
+            it in for repair, but it would take two weeks. I explained that it was still brand new and asked for an
+            exchange instead. At first she said that wasn't possible, but after I mentioned that I'd bought it less than a
+            month ago, she checked their policy and agreed. A new one arrived a few days later. Since then, I always read
+            the return policy carefully before buying anything expensive.
+          phrases: [the one I remember most happened, I'd saved up for a while, 'At first she said that wasn''t possible, but', 'Since then, I always']
+        - text: >-
+            Actually, something very similar happened to me last spring. I bought a new pair of noise-canceling headphones
+            before a long business trip. The night before my flight, I opened the box and found that the noise-canceling
+            function didn't work at all. It just made a strange buzzing sound. I didn't have time to go back to the store,
+            so I had to use my old earphones on the plane, which was disappointing. When I got back a week later, I went
+            straight to the store with the headphones and the receipt. The manager tested them and agreed that they were
+            defective, but they didn't have the same model in stock anymore. He offered me two choices: wait for a new
+            shipment or choose a slightly better model for the same price. Of course, I took the better model. In the end,
+            it worked out well, but I learned to test new electronics right away instead of waiting until the last minute.
+          phrases: [something very similar happened to me, I didn't have time to, He offered me two choices, 'In the end, it worked out well, but']
+      al:
+        - text: >-
+            I've had a few issues with electronics over the years, but the one that really sticks with me involved a
+            laptop I bought right before my final exams in university. I'd been using an old, painfully slow computer for
+            years, so I finally treated myself to a decent model. For about a week, everything was perfect. Then, two days
+            before a major deadline, the laptop started shutting down without warning, sometimes in the middle of typing.
+            Naturally, I panicked, because my entire thesis was on it. Fortunately, I'd been backing up my files, so I
+            didn't lose anything, but I still needed a working computer immediately. I took it to the store where I'd
+            bought it, and the staff initially wanted to send it off for a repair that would take ten days. I calmly
+            explained my situation, showed them a video I'd recorded of the problem, and pointed out that it was well
+            within the exchange period. After a short discussion with the manager, they agreed to replace it on the spot.
+            Looking back, I think staying calm and having clear evidence made all the difference.
+          phrases: [the one that really sticks with me, I finally treated myself to, 'Naturally, I panicked', made all the difference]
+        - text: >-
+            Yes, and it was a bit of a saga, to be honest. A couple of years ago, I ordered a new phone online during a
+            big sale. The price was great, but when the package arrived, the phone inside had a tiny crack in the corner
+            of the screen. At first, I wasn't sure whether it had happened during delivery or before it was shipped, and
+            that turned out to be the main problem. The online store said it was the delivery company's responsibility,
+            and the delivery company said it was the store's. I spent almost a week going back and forth between them,
+            which was incredibly frustrating. Eventually, I realized I needed to be more organized. I took clear photos of
+            the box and the crack, wrote down the dates and names of everyone I'd talked to, and sent one detailed email
+            to the store's customer service team. Within two days, they apologized and sent me a replacement, along with a
+            gift card for the trouble. That experience taught me that being persistent and keeping records is the best way
+            to deal with these kinds of problems.
+          phrases: [it was a bit of a saga, that turned out to be the main problem, going back and forth, 'Eventually, I realized']
+    tip_ko: 롤플레이 마지막 문항은 비슷한 경험을 묻는 질문이에요. 무슨 물건이었는지, 어떤 문제였는지, 어떻게 해결했는지를 과거형으로 말해요.
