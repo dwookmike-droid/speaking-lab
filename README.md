@@ -1,5 +1,7 @@
 # Speaking Lab
 
+학생 주소: https://dwookmike-droid.github.io/speaking-lab/ (배포 방법: [`docs/DEPLOY.md`](docs/DEPLOY.md))
+
 토익스피킹 · OPIc 모의테스트와 유형별 학습을 한 곳에서 하는 웹앱이에요.
 
 - 실제 시험처럼 준비 시간 → 신호음 → 녹음으로 자동 진행
