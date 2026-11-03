@@ -54,6 +54,20 @@ def find_set(set_id: str) -> dict | None:
     return None
 
 
+def attempt_items(att: dict) -> dict:
+    """문항 번호 → 문항 정보. 토익은 세트 파일에서, OPIc는 응시 때 조합된 문항 ID(qid)로 주제 파일에서 찾아요."""
+    if att["exam"] == "opic":
+        import glob
+        qs = {}
+        for p in glob.glob(os.path.join(ROOT, "content/opic/*/*.yaml")):
+            d = load_yaml(p) or {}
+            for q in d.get("questions") or []:
+                qs[q["id"]] = {**q, "topic_id": d.get("id"), "topic_title": d.get("title_ko")}
+        return {it["num"]: qs.get(it.get("qid"), {"type": it.get("type")}) for it in att["items"]}
+    s = find_set(att["set_id"]) or {"items": []}
+    return {it["num"]: it for it in s["items"]}
+
+
 def resolve_attempt_dir(arg: str) -> str:
     """submissions/S001/a123 또는 응시 ID만 줘도 폴더를 찾아요."""
     if os.path.isdir(arg):

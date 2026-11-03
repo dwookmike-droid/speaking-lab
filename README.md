@@ -27,6 +27,8 @@ python3 tools/build.py
 python3 -m http.server 8765 -d app &
 node tests/e2e_toeic.js          # SET=1, SET=2로 다른 세트
 node tests/e2e_onboarding.js     # 학생 등록·동의·재동의·철회
+node tests/e2e_opic.js           # OPIc 설문 → 자가평가 → 15문항 → 재조정 → 제출
+node tests/test_opic_plan.mjs    # OPIc 문항 조합(자가평가 1~6)
 ```
 
 처음 접속하면 학생 정보 입력과 개인정보 동의를 거쳐야 시험 화면이 열려요. 동의서 원본은 `content/legal/consent_v1.yaml`이에요.

@@ -1,0 +1,596 @@
+schema_version: 1
+id: weather
+kind: unexpected
+title_ko: 날씨·계절
+status: ready
+questions:
+  - id: weather-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Let's talk about the weather in your country. What are the seasons like where you live? Describe the weather
+      in each season in as much detail as possible.
+    model:
+      il:
+        - text: >-
+            Korea has four seasons. Spring is warm. Summer is very hot and rainy. Fall is cool and nice. Winter is cold
+            and dry. Sometimes it snows. I like fall the most.
+          phrases: ['four seasons', 'I like fall the most']
+        - text: >-
+            In Korea, there are four seasons. In spring, there are many flowers. In summer, it is hot and humid. In fall,
+            the sky is blue. In winter, it is very cold. My favorite is spring.
+          phrases: ['there are four seasons', 'My favorite is']
+      im1:
+        - text: >-
+            Korea has four clear seasons. Spring starts in March, and it's warm and sunny. There are cherry blossoms
+            everywhere. Summer is really hot and humid, and we have a rainy season in July. Fall is my favorite season
+            because the weather is cool and the leaves turn red and yellow. Winter is very cold and dry, and sometimes it
+            snows a lot. Each season is different, so it's never boring.
+          phrases: ['four clear seasons', 'my favorite season because', 'it''s never boring']
+        - text: >-
+            Where I live, we have four seasons. In spring, the weather is mild, but sometimes there is a lot of fine dust.
+            Summer is long and very hot. It rains a lot in July, too. In fall, the air is cool and fresh, so it's great
+            for hiking. Winter is cold, and the wind is strong. I don't like winter much because I get cold easily. But I
+            love the snow.
+          phrases: ['the weather is mild, but', 'it''s great for hiking', 'But I love']
+      im2:
+        - text: >-
+            Well, Korea has four distinct seasons, and each one feels very different. Spring comes in March and April.
+            It's warm during the day but still chilly at night, and cherry blossoms are everywhere. Summer is hot and
+            sticky, and there's a rainy season called jangma, usually in July. After that, fall arrives, and honestly,
+            it's the best time of the year. The sky is clear and blue, and the mountains turn red and orange. Finally,
+            winter is long and cold, especially in January, and it often snows. Because the seasons change so much, people
+            here change their clothes and food with every season.
+          phrases: ['four distinct seasons', 'honestly, it''s the best time of the year', 'Because the seasons change so much']
+        - text: >-
+            Sure. In my country, we have spring, summer, fall, and winter. Spring is short but beautiful, with lots of
+            flowers, although yellow dust sometimes makes the sky gray. Summer is my least favorite season. It's extremely
+            humid, and the temperature often goes over thirty degrees. Fall is cool and dry, so many people go hiking or
+            have picnics. Winter is freezing, and the wind can be really strong. I always wear a long padded coat when I
+            go out. Even though the weather can be extreme, I like having four seasons because there's always something to
+            look forward to.
+          phrases: ['my least favorite season', 'Even though', 'there''s always something to look forward to']
+      im3:
+        - text: >-
+            Okay, so Korea is known for having four clear seasons, and I think each one has its own charm. Spring usually
+            starts in late March. The weather gets warmer, and the streets are full of cherry blossoms and yellow
+            forsythia, although we sometimes have fine dust, so people wear masks. Summer starts in June, and it gets
+            really hot and humid. In July, we have the monsoon season, which means it rains almost every day for a few
+            weeks. Then fall comes, and the weather becomes cool and dry. It's perfect for hiking because the mountains
+            are covered in colorful leaves. Finally, winter is cold, windy, and dry. In January, the temperature often
+            drops below minus ten degrees. Personally, I like fall the most, but I enjoy watching the seasons change.
+          phrases: ['each one has its own charm', 'which means', 'Personally']
+        - text: >-
+            Well, where I live, the four seasons are very clear, and the weather changes a lot during the year. In spring,
+            it's warm and pleasant, but the temperature changes a lot between morning and afternoon, so people often catch
+            colds. Summer is the hardest season for me. It's not just hot, it's really humid, so you sweat even when
+            you're just walking. There's also a rainy season in the middle of summer, and sometimes typhoons come in
+            August. Fall is short but wonderful. The air is crisp, and the sky looks higher and bluer. Winter is long and
+            cold, and when the wind blows from the north, it feels freezing. I've noticed that the seasons feel different
+            than before, though. Spring and fall are getting shorter every year.
+          phrases: ['It''s not just hot, it''s', 'I''ve noticed that', 'getting shorter every year']
+      ih:
+        - text: >-
+            Sure. Korea has four very distinct seasons, and honestly, the weather shapes a lot of our daily life. Spring
+            begins around March. It's mild and sunny, and by early April, the cherry blossoms are in full bloom, so parks
+            get really crowded. The downside is fine dust, which can make the sky look gray and hazy for days. Summer
+            starts in June and gets more intense every week. By July, we're in the rainy season, and it can pour for days
+            without stopping. Then August is just hot and sticky, and air conditioners run all day. Fall is my favorite
+            season by far. From late September, the air becomes cool and dry, the sky is clear, and the mountains turn red
+            and gold. Winter is the opposite of summer. It's dry and bitterly cold, especially when the wind comes from
+            the north, and it often snows in January. What I find interesting is that each season has its own food,
+            clothes, and activities, so the year always feels like it's changing.
+          phrases: ['the weather shapes a lot of our daily life', 'The downside is', 'What I find interesting is that']
+        - text: >-
+            Well, the weather in Korea is pretty dramatic, because we have four clear seasons and big temperature
+            differences between them. In spring, the weather is warm and gentle, and it's the season when everyone wants
+            to go outside to see the flowers. However, the temperature can drop suddenly at night, so you always need a
+            light jacket. Summer, on the other hand, is long and tough. It's hot, the humidity is really high, and in July
+            we get the monsoon rains. Some years we also get typhoons, which bring strong winds and heavy rain. Fall is
+            short, but it's probably the most comfortable season. It's cool and clear, and people go hiking to see the
+            autumn leaves. Winter is dry and freezing, and the cold wind can feel painful on your face. Personally, I
+            think the changes between seasons are what make life here interesting. But to be honest, I've noticed that
+            summers are getting longer and hotter, and spring and fall seem to pass by faster than they used to.
+          phrases: ['on the other hand', 'the changes between seasons are what make', 'pass by faster than they used to']
+      al:
+        - text: >-
+            Sure, I'd love to talk about that. In Korea, we have four distinct seasons, and I think living here makes you
+            very aware of how weather affects your mood and routine. Spring usually begins in March, and for a few weeks
+            the whole country seems to come alive. The cherry blossoms bloom, people go on picnics, and cafés open their
+            windows. That said, spring isn't perfect, because we often have fine dust that comes with the wind, so on some
+            days you have to wear a mask and stay inside. Summer is a completely different story. It's hot and extremely
+            humid, and in July we have the monsoon season, when it can rain heavily for weeks. By August, it's so sticky
+            that most people just move from one air-conditioned place to another. Then, almost overnight, fall arrives.
+            The air turns cool and crisp, the sky becomes incredibly clear, and the mountains are covered in red and
+            yellow leaves. Honestly, it's the season I look forward to all year. Winter, finally, is long, dry, and
+            bitterly cold, especially when the wind comes down from the north. Even so, I like how each season has its own
+            food, festivals, and atmosphere.
+          phrases: ['That said', 'is a completely different story', 'Even so']
+        - text: >-
+            Well, the weather where I live is defined by four clear seasons, and each one is so different that it almost
+            feels like living in four different places during the year. Spring is mild and bright, and it's the time when
+            everyone suddenly wants to be outdoors. Rivers and parks fill up with people taking photos of the flowers. The
+            only real problem is the air quality, because there are days when fine dust turns the sky a dull yellow.
+            Summer, by contrast, is intense. The temperature regularly goes above thirty degrees, the humidity is
+            exhausting, and the monsoon in July brings days of heavy rain, sometimes with flooding in low areas. Fall is
+            the reward for surviving summer. It's cool, dry, and sunny, and I think the autumn leaves in the mountains are
+            one of the most beautiful sights in the country. Winter is harsh, with dry, freezing air and occasional heavy
+            snow. One thing I've really noticed in recent years, though, is that the balance between the seasons is
+            shifting. Summers seem to start earlier and last longer, while spring and fall feel shorter. It makes me a
+            little worried about what the seasons will be like in the future.
+          phrases: ['it almost feels like', 'by contrast', 'One thing I''ve really noticed in recent years']
+    tip_ko: 계절 네 개를 순서대로 말하고, 계절마다 기온·하늘·하는 일 중 두 가지를 붙여요. 마지막에 좋아하는 계절 한 문장이면 충분해요.
+  - id: weather-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      How does the weather affect what you do every day? Tell me about the things you usually do to prepare for the
+      weather, for example in summer or winter.
+    model:
+      il:
+        - text: >-
+            I check the weather every morning. In summer, I wear a T-shirt. I carry an umbrella. In winter, I wear a long
+            coat and gloves. I drink hot tea. I stay inside a lot.
+          phrases: ['every morning', 'In winter']
+        - text: >-
+            The weather is important to me. When it rains, I take the bus. When it is sunny, I walk. In summer, I use a
+            fan. In winter, I wear a hat. I check the app every day.
+          phrases: ['When it rains', 'I check the app every day']
+      im1:
+        - text: >-
+            Every morning, I check the weather app on my phone before I get dressed. In summer, I wear light clothes and
+            always carry a small umbrella because it rains suddenly. I also drink a lot of water. In winter, I wear a
+            thick padded coat, a scarf, and gloves. I also check the fine dust level, and if it's bad, I wear a mask. The
+            weather really changes my daily plans.
+          phrases: ['before I get dressed', 'if it''s bad', 'really changes my daily plans']
+        - text: >-
+            The weather changes my routine a lot. When it's hot in summer, I go to the gym in the early morning, not in
+            the afternoon. I also bring a portable fan. In winter, I don't like going out, so I exercise at home. I always
+            put hand warmers in my pocket. On rainy days, I leave home earlier because the traffic is bad. So I always
+            check the weather first.
+          phrases: ['changes my routine a lot', 'On rainy days', 'So I always']
+      im2:
+        - text: >-
+            Well, the weather affects my day quite a lot, so the first thing I do in the morning is check the weather app.
+            I look at the temperature, the chance of rain, and the fine dust level. In summer, I wear thin, light clothes,
+            use sunscreen, and carry a small umbrella in my bag, because sudden showers are common. I also try to stay
+            inside during the hottest part of the day. In winter, I dress in layers, like a sweater under a long padded
+            coat, and I never forget my gloves. On days with bad air, I wear a mask and skip my evening jog. So my plans
+            really depend on the weather.
+          phrases: ['the first thing I do in the morning is', 'I also try to', 'my plans really depend on the weather']
+        - text: >-
+            I'd say the weather decides a lot of my daily choices. For example, on hot summer days, I take the subway
+            instead of riding my bike to work, because I don't want to arrive sweaty. I also keep a towel and a water
+            bottle in my bag. During the rainy season, I wear sandals and carry a long umbrella. In winter, I change my
+            routine completely. I wake up a little earlier because it takes time to put on all my warm clothes, and I
+            usually drink hot coffee before leaving. On weekends, if the weather is nice, I go hiking, but if it's bad, I
+            just stay home.
+          phrases: ['the weather decides a lot of my daily choices', 'instead of', 'I change my routine completely']
+      im3:
+        - text: >-
+            Honestly, the weather affects almost everything I do, from what I wear to how I get to work. Every morning,
+            before I even get out of bed, I check the weather and the air quality on my phone. In summer, the biggest
+            challenge is the heat and humidity. I wear breathable clothes, put on sunscreen, and always keep a small
+            umbrella in my bag, because a sunny morning can turn into a heavy shower by lunch. I also try to do errands
+            early in the morning or after sunset. In winter, my routine is the opposite. I dress in layers, wear thermal
+            underwear, and use hand warmers. I also take the bus instead of walking because the wind is really strong. On
+            days with heavy fine dust, I wear a mask and cancel any outdoor exercise.
+          phrases: ['affects almost everything I do', 'the biggest challenge is', 'my routine is the opposite']
+        - text: >-
+            Well, living in a place with extreme seasons means I have to adjust my routine a lot. In the summer, I start
+            my day earlier than usual. I go jogging around six in the morning, because after nine it's simply too hot to
+            run. I also carry a handheld fan and a water bottle everywhere I go. When the rainy season starts, I keep rain
+            boots at my office and an extra pair of socks in my bag, which has saved me many times. Winter is a different
+            story. I spend less time outside, so I usually work out at a gym near my house. I also use a humidifier at
+            home because the air gets so dry. Basically, I check the forecast every night and plan the next day around it.
+          phrases: ['means I have to adjust my routine', 'which has saved me many times', 'Basically']
+      ih:
+        - text: >-
+            Sure. The weather has a big influence on my daily routine, mostly because the seasons here are so extreme. My
+            habit is to check the forecast every night before bed, so I can decide what to wear and how to get to work the
+            next day. In summer, I try to avoid the heat as much as possible. I leave home a bit earlier to catch a less
+            crowded subway, I always carry a small umbrella and a portable fan, and I wear light, loose clothes that dry
+            quickly. During the rainy season, I keep an extra pair of shoes at my office, because walking in wet sneakers
+            all day is miserable. In winter, I change almost everything. I wear thermal layers under my clothes, put on a
+            long padded coat, and keep hand warmers in my pockets. On days when the fine dust level is high, I wear a mask
+            and cancel any outdoor plans. It may sound like a lot of work, but after so many years, it's become second
+            nature.
+          phrases: ['has a big influence on', 'I change almost everything', 'it''s become second nature']
+        - text: >-
+            Well, I'd say I plan my days around the weather much more than people in other countries probably do. The
+            first thing I do every morning is open my weather app, and I check three things: the temperature, the chance
+            of rain, and the fine dust level. Based on that, I decide pretty much everything. For example, in summer, if
+            it's going to be over thirty degrees, I wear short sleeves, bring a water bottle, and schedule my errands for
+            the evening. If there's a chance of showers, I pack a foldable umbrella, because summer storms here come out
+            of nowhere. In winter, I go into full protection mode. I wear a long padded coat, a scarf, gloves, and
+            sometimes two pairs of socks. I also switch my workouts from outdoor running to an indoor gym. And during
+            spring, when the dust is bad, I keep the windows closed and turn on an air purifier at home. It sounds
+            complicated, but honestly, everyone here does something similar, so it just feels normal.
+          phrases: ['much more than', 'Based on that, I decide pretty much everything', 'I go into full protection mode']
+      al:
+        - text: >-
+            Well, to be honest, the weather probably affects my daily life more than I'd like to admit. Because the
+            seasons here are so extreme, I've developed a kind of routine for each one. Every night before bed, I check
+            the next day's forecast, and in recent years I've also started checking the air quality index, because fine
+            dust has become a real concern, especially in spring. In summer, my main goal is simply to avoid the heat. I
+            wake up early to go for a run before the sun gets too strong, I wear loose cotton or quick-dry clothes, and I
+            always carry a small umbrella, since a clear sky can turn into a downpour within an hour. During the monsoon
+            season, I even keep a spare set of clothes at my office, which sounds extreme, but it has saved me more than
+            once. Winter requires a completely different strategy. I layer up with thermal underwear, a thick sweater, and
+            a long padded coat, and I move my workouts indoors. At home, I run a humidifier because the air gets
+            incredibly dry. I guess what I've learned is that you can't control the weather, but if you prepare well, it
+            doesn't have to control you.
+          phrases: ['more than I''d like to admit', 'requires a completely different strategy', 'what I''ve learned is that']
+        - text: >-
+            That's a good question, because I think people who live with four strong seasons naturally become pretty good
+            at planning around the weather. For me, it starts the night before. I check the forecast and decide what I'm
+            going to wear, how I'm going to commute, and whether I can do anything outdoors. In the summer, I basically
+            try to outsmart the heat. I schedule meetings and errands for the morning, stay in air-conditioned places in
+            the afternoon, and carry sunscreen, a water bottle, and an umbrella almost everywhere. When the rainy season
+            hits, I switch to waterproof shoes and leave home earlier, because the traffic gets much worse when it pours.
+            Winter is almost the opposite. I don't mind the cold itself, but the dry air and the wind really bother me, so
+            I wear a scarf and a mask, use lip balm constantly, and run a humidifier at home. On weekends, the weather
+            also decides my plans. If it's clear, I go hiking or meet friends at a park, but if the fine dust level is
+            high, I usually cancel and stay in. It might sound like a lot of effort, but for most people here, it's just
+            part of normal life.
+          phrases: ['I basically try to outsmart the heat', 'When the rainy season hits', 'it''s just part of normal life']
+    tip_ko: 날씨 확인 → 계절별로 하는 준비 순서로 말해요. 여름 하나, 겨울 하나만 골라 구체적인 물건(우산, 패딩, 마스크)을 넣으면 쉬워요.
+  - id: weather-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a time when the weather caused you a problem or surprised you. What happened, and how did you
+      deal with the situation?
+    model:
+      il:
+        - text: >-
+            Last summer, it rained a lot. I did not have an umbrella. I got very wet. I went into a store. I bought an
+            umbrella there. Then I went home. It was a bad day.
+          phrases: ['Last summer', 'It was a bad day']
+        - text: >-
+            Two years ago, it snowed a lot in winter. The road was very slippery. The bus did not come. I walked to
+            school. It took one hour. I was late. My feet were very cold.
+          phrases: ['Two years ago', 'I was late']
+      im1:
+        - text: >-
+            Last July, I went to the beach with my friends. In the morning, the weather was sunny. But in the afternoon, a
+            big storm came suddenly. It rained very hard, and there was thunder. We ran to a café near the beach and
+            waited for two hours. We were wet and cold, but we drank hot chocolate and talked. In the end, it was a funny
+            memory.
+          phrases: ['But in the afternoon', 'In the end', 'a funny memory']
+        - text: >-
+            Last winter, it snowed a lot one night. The next morning, I had an important exam. The roads were covered in
+            snow, and the buses were very late. I was really worried. So I called a taxi, but there were no taxis.
+            Finally, I walked to the subway station carefully. I arrived just on time. I was so tired, but I passed the
+            exam.
+          phrases: ['I was really worried', 'Finally', 'just on time']
+      im2:
+        - text: >-
+            One time, the weather really ruined my plans. It was last August, and I was going to Jeju Island for a family
+            vacation. But the day before our flight, a typhoon came, and all the flights were canceled. At first, I was
+            really upset because we had booked the hotel and a rental car. We called the airline and the hotel, and
+            luckily we could change the dates. We went two weeks later instead. The weather was perfect that time, so it
+            worked out well. Since then, I always check the weather forecast before I book a trip.
+          phrases: ['At first, I was really upset because', 'luckily', 'Since then']
+        - text: >-
+            I remember a day last winter when the weather surprised me. In the morning, it wasn't very cold, so I just
+            wore a light jacket and went to work. But in the evening, the temperature dropped suddenly, and it started to
+            snow heavily. My bus was stuck in traffic for more than an hour, and I was freezing. I finally got off and
+            walked to the subway. When I got home, I had a fever. I stayed in bed for two days. After that, I learned to
+            always check the evening weather, too.
+          phrases: ['the weather surprised me', 'But in the evening', 'After that, I learned to']
+      im3:
+        - text: >-
+            Let me tell you about something that happened during a hiking trip two years ago. My friends and I went to a
+            mountain near Seoul in late October. The forecast said it would be sunny, so we didn't bring rain jackets. But
+            when we were near the top, dark clouds came in quickly, and it started to pour. The trail became really
+            slippery, and we were soaked in just a few minutes. We were a little scared, so we decided to go down slowly
+            and carefully instead of trying to reach the top. Luckily, we found a small shelter halfway down and waited
+            there for about an hour until the rain stopped. When we finally got down, we went to a restaurant and had hot
+            noodle soup. Now we always pack rain jackets, no matter what the forecast says.
+          phrases: ['The forecast said', 'we decided to', 'no matter what the forecast says']
+        - text: >-
+            Okay, I had a pretty stressful experience with the weather last summer. I was supposed to give a big
+            presentation at a client's office across town. That morning, there was a heavy monsoon rain, and some roads
+            near my house were flooded. My usual bus route was closed, so I didn't know what to do. I called my manager
+            and explained the situation, and then I looked for another way. In the end, I took two subway lines and walked
+            the last part in the rain. I arrived fifteen minutes late and completely wet. I was so embarrassed, but the
+            client was very understanding because many people were late that day. Since then, I always leave much earlier
+            when heavy rain is in the forecast.
+          phrases: ['I was supposed to', 'I didn''t know what to do', 'I was so embarrassed, but']
+      ih:
+        - text: >-
+            Sure. One experience I'll never forget happened a few winters ago, during a business trip to Gangwon Province.
+            I was supposed to drive back to Seoul on a Friday evening, but that afternoon a huge snowstorm hit the area.
+            Within a couple of hours, the roads were completely covered, and the police closed part of the highway. At
+            first, I panicked a little, because I had an important family event the next morning. I tried to find a bus or
+            a train, but everything was either canceled or fully booked. So I decided to stay one more night. I called a
+            small guesthouse near the station, and luckily they had one room left. The owner was really kind. She made me
+            hot tea and even lent me some dry socks, because my shoes were soaked. The next morning, the snow had stopped,
+            and the mountains looked absolutely beautiful. I took the first train back and made it to the family event
+            just in time. Looking back, it was stressful, but it taught me to always have a backup plan in winter.
+          phrases: ['At first, I panicked a little, because', 'So I decided to', 'it taught me to always have a backup plan']
+        - text: >-
+            Well, the weather once completely changed a trip I had been planning for months. A couple of years ago, my
+            friends and I booked a camping trip on the east coast in early September. We checked the forecast the week
+            before, and everything looked fine. But on the second night, a typhoon changed direction and started moving
+            toward the coast. Around midnight, the wind got so strong that our tent started shaking, and the rain was
+            coming in from every side. We realized it wasn't safe to stay, so we packed up as fast as we could in the dark
+            and drove to a nearby town. Every motel was full, so we ended up sleeping in the car in a convenience store
+            parking lot. It was cramped and uncomfortable, and nobody really slept. The next morning, we found out that
+            several trees near our campsite had fallen. That's when we realized how lucky we were. Since then, I pay a lot
+            more attention to typhoon news before any trip near the sea.
+          phrases: ['We realized it wasn''t safe to stay', 'we ended up', 'That''s when we realized']
+      al:
+        - text: >-
+            Sure, the most memorable weather problem I've had was during my first summer working in Seoul. I lived in a
+            small semi-basement apartment at the time, which was cheap but not ideal, as I soon found out. One evening in
+            late July, there was an incredibly heavy monsoon rain, the kind where you can barely see across the street. I
+            was at work and didn't think much of it until my neighbor called me and said water was coming into the
+            building. I rushed home, and by the time I got there, there were a few centimeters of water on my floor.
+            Honestly, I was shocked and didn't know where to start. My neighbor and I used buckets and towels to get the
+            water out, and we moved my laptop, books, and clothes up onto the bed and the desk. Some things were ruined,
+            like my rug and a few boxes of old letters, but most of my important stuff was fine. The next day, I called my
+            landlord, and he helped me fix the drain and the door seal. A few months later, I moved to an apartment on a
+            higher floor. It was a tough experience, but it made me take heavy rain warnings much more seriously.
+          phrases: ['which was cheap but not ideal, as I soon found out', 'didn''t think much of it until', 'made me take heavy rain warnings much more seriously']
+        - text: >-
+            Well, one experience that really stands out happened last winter, and it actually ended up being a good story.
+            I had planned a long weekend in Busan with my sister, and we were supposed to take the train on Friday
+            evening. That afternoon, though, a cold wave hit the whole country, and the temperature dropped to almost
+            minus fifteen degrees in Seoul. On top of that, it started snowing heavily, and there were reports of delays
+            on almost every train line. When we got to the station, the departure board was full of red messages, and our
+            train was delayed by two hours. At first, we were annoyed, because we had a dinner reservation in Busan. But
+            instead of complaining, we decided to make the best of it. We canceled the reservation, found a warm café
+            inside the station, and spent the time planning the rest of our trip and talking about things we hadn't
+            discussed in years. By the time our train finally left, the snow outside the window looked magical. We arrived
+            late, but the city was quiet and covered in white, which we rarely see in Busan. In a strange way, the bad
+            weather made the trip more memorable, and it reminded me that flexibility can turn a problem into an
+            adventure.
+          phrases: ['On top of that', 'we decided to make the best of it', 'In a strange way']
+    tip_ko: 날씨 때문에 생긴 일 하나를 정해 언제 → 무슨 문제 → 어떻게 해결 → 배운 점 순서로 말해요. 감정 표현(I was worried)을 한두 번 넣어요.
+  - id: weather-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      Compare the weather in your country now with the weather when you were a child. Have you noticed any changes?
+      How have these changes affected people's lives?
+    model:
+      il:
+        - text: >-
+            When I was a child, winter was very cold. It snowed a lot. Now winter is not so cold. Summer is hotter now.
+            People use air conditioners more. I think the weather changed.
+          phrases: ['When I was a child', 'I think the weather changed']
+        - text: >-
+            In the past, spring was long. Now spring is very short. Summer comes fast. It is very hot now. Many people
+            stay inside. I miss the old spring. It was nice.
+          phrases: ['In the past', 'I miss']
+      im1:
+        - text: >-
+            When I was young, we had four clear seasons. Spring and fall were long, and winter had a lot of snow. But now,
+            the weather is different. Summer is much hotter and longer, and spring and fall are very short. Also, we have
+            more fine dust these days. Because of this, people use air conditioners and air purifiers a lot. I think life
+            is more uncomfortable now.
+          phrases: ['When I was young', 'Because of this', 'I think']
+        - text: >-
+            I think the weather has changed a lot since I was a kid. In my childhood, it snowed almost every winter, and I
+            made snowmen with my friends. Now it doesn't snow much in my city. Also, the summers are really hot now. In
+            the past, a fan was enough, but now everyone needs an air conditioner. My electricity bill is very high in
+            August. I really miss the old winters.
+          phrases: ['has changed a lot since', 'In the past', 'I really miss']
+      im2:
+        - text: >-
+            Well, I've definitely noticed some changes in the weather since I was a child. Back then, the four seasons
+            felt clear and balanced. Spring lasted for a few months, and winter was long and snowy. These days, summer
+            seems to start in May and end in late September, and it's much hotter than before. Spring and fall pass so
+            quickly that I barely have time to wear a light jacket. These changes affect people's lives a lot. For
+            example, people use air conditioners almost all summer, and electricity bills go up. Also, heavy rains cause
+            more flooding than before. It worries me a little.
+          phrases: ['Back then', 'I barely have time to', 'These changes affect people''s lives a lot']
+        - text: >-
+            Compared to my childhood, the weather now feels much more extreme. When I was in elementary school, summer was
+            hot, but it wasn't dangerous. Now, there are heat wave warnings almost every summer, and the news tells old
+            people to stay inside. Winter has changed, too. It's not as snowy as before, but sometimes there are sudden
+            cold waves. Another big change is the air. When I was a kid, I never heard about fine dust, but now I check
+            the air quality every day. Because of these changes, people's daily habits have changed. Masks and air
+            purifiers are normal now.
+          phrases: ['feels much more extreme', 'Another big change is', 'Because of these changes']
+      im3:
+        - text: >-
+            Yes, I've noticed quite a few changes, and I think most people in Korea would say the same. When I was a
+            child, the seasons felt very regular. We had a warm spring, a hot but manageable summer, a long and colorful
+            fall, and a snowy winter. These days, summer has become much longer and hotter. Heat waves happen almost every
+            year, and some nights it's so hot that it's hard to sleep. On the other hand, spring and fall have gotten
+            shorter, so it feels like we jump from winter straight to summer. These changes have affected people in many
+            ways. Older people and outdoor workers are at risk during heat waves, and farmers have a harder time because
+            crops are damaged by sudden heavy rain. Personally, I just miss the long, cool autumns I remember from my
+            childhood.
+          phrases: ['most people in Korea would say the same', 'On the other hand', 'These changes have affected people in many ways']
+        - text: >-
+            Well, when I think back to my childhood, I remember winters with lots of snow and summers that were hot but
+            not unbearable. My friends and I used to play outside until dinner even in August. Now, though, things feel
+            very different. Summers are noticeably hotter, and there are more days when the government sends heat warning
+            messages to everyone's phone. The rainy season is also less predictable. Sometimes it barely rains, and other
+            times it pours so heavily that streets flood. And of course, fine dust has become a daily concern. Because of
+            all this, people's lifestyles have changed. Parents keep their kids indoors on bad air days, and many people
+            now plan their weekends around the weather app. I think we've had to adapt quite a lot.
+          phrases: ['when I think back to my childhood', 'Now, though', 'I think we''ve had to adapt quite a lot']
+      ih:
+        - text: >-
+            Definitely. When I compare the weather now with the weather I remember from my childhood, the differences are
+            pretty clear. Growing up, I remember four balanced seasons. Spring and fall each lasted a couple of months,
+            summer was hot but bearable, and winter almost always brought several days of heavy snow. These days, though,
+            the pattern seems to have changed. Summer starts earlier, ends later, and the heat is much more intense. Some
+            summers, we have weeks where the temperature doesn't drop below twenty-five degrees even at night, which makes
+            it really hard to sleep. Meanwhile, spring and fall have become so short that people joke we only have two
+            seasons now. These changes have had a real impact on daily life. Electricity use goes up sharply in summer,
+            heat-related illnesses have become more common, and outdoor workers have a much harder time. On top of that,
+            sudden heavy rains seem to cause flooding more often. I think it shows that the climate really is changing,
+            and it's not just something we read about in the news.
+          phrases: ['the differences are pretty clear', 'people joke we only have two seasons now', 'it''s not just something we read about in the news']
+        - text: >-
+            Well, I've noticed quite a big difference, and I think it's one of the things people my age talk about a lot.
+            When I was little, the seasons came and went almost like clockwork. The cherry blossoms bloomed in April, the
+            rainy season started in late June, and the first snow usually fell in December. Now, everything feels less
+            predictable. The flowers sometimes bloom in March, the rainy season can be short and dry one year and
+            extremely heavy the next, and winters are generally milder, but with sudden, intense cold waves. Summer is the
+            biggest change for me. It's not just hotter, it also lasts much longer. These changes have affected people in
+            several ways. For example, many families now have air conditioners in every room, which wasn't common when I
+            was a kid. Schools sometimes shorten outdoor activities because of heat or poor air quality. And farmers, like
+            some of my relatives, worry a lot about how the weather will affect their crops. Overall, I think people have
+            adapted, but it comes with higher costs and more stress.
+          phrases: ['almost like clockwork', 'Summer is the biggest change for me', 'it comes with higher costs and more stress']
+      al:
+        - text: >-
+            Yes, absolutely, and I think it's one of the most noticeable changes in my lifetime. When I was growing up,
+            the four seasons felt balanced and dependable. Spring arrived gently in March, summer was hot but you could
+            still play outside in the evening, autumn lasted long enough to enjoy the changing leaves, and winter reliably
+            brought snow. I have very clear memories of sledding on a small hill near my school every January. Today, the
+            rhythm feels quite different. Summers have become longer and more intense, with heat waves that last for weeks
+            and nights so warm that many people can't sleep without air conditioning. At the same time, spring and autumn
+            seem to shrink every year, and the transition between seasons is much more abrupt. Rainfall has also become
+            less predictable, swinging between dry spells and sudden, intense downpours that cause flooding in low-lying
+            areas. These changes affect people's lives in ways that aren't always obvious. Elderly people and outdoor
+            workers face real health risks in the heat, energy bills rise, and farmers struggle with unpredictable
+            harvests. Even small things, like how often kids can play outside, have changed. So for me, climate change
+            isn't an abstract idea anymore. It's something I can feel in my daily life.
+          phrases: ['one of the most noticeable changes in my lifetime', 'in ways that aren''t always obvious', 'isn''t an abstract idea anymore']
+        - text: >-
+            That's an interesting question, because the weather is something everyone in my generation seems to have
+            strong memories about. When I was a child, I remember the seasons being very distinct and quite predictable.
+            Winters were cold and snowy, and my parents would wake me up early on snow days so we could clear the path in
+            front of our building together. Summers were hot, but they didn't feel dangerous, and the rainy season came
+            and went at roughly the same time each year. Nowadays, I'd say the weather is both more extreme and less
+            predictable. Summers start earlier and stretch well into September, and there are heat warning messages on our
+            phones almost every week in August. Winters are generally milder, yet every so often a sudden cold wave hits
+            and the temperature plunges below minus fifteen. On top of that, fine dust has become a constant topic, which
+            simply wasn't the case when I was young. As a result, people's habits have shifted quite a bit. We check air
+            quality as routinely as the temperature, many households run air purifiers year-round, and outdoor events are
+            often canceled because of heat or rain. I think we've adapted reasonably well, but it does make me wonder what
+            the weather will be like for the next generation.
+          phrases: ['Nowadays, I''d say', 'which simply wasn''t the case when I was young', 'it does make me wonder']
+    tip_ko: 어릴 때 날씨 → 요즘 날씨 → 사람들 생활이 어떻게 바뀌었는지 순서로 말해요. 여름 더위나 미세먼지처럼 예를 하나 골라 깊게 말하면 좋아요.
+  - id: weather-issue
+    type: issue
+    level: [4, 5, 6]
+    question: >-
+      These days, many people are worried about extreme weather, such as heat waves and heavy rain. What do people
+      in your country think about this issue, and what do you think should be done about it?
+    model:
+      il:
+        - text: >-
+            Many people worry about the hot summer. It is very hot now. Some people get sick. I think it is a big problem.
+            We should save energy. We should use less plastic. I want to help too.
+          phrases: ['I think it is a big problem', 'We should']
+        - text: >-
+            People in Korea talk about heavy rain a lot. Some houses get flooded. It is very sad. The government should
+            help these people. I think we should plant more trees. It is important for everyone.
+          phrases: ['The government should', 'I think we should']
+      im1:
+        - text: >-
+            These days, many people in Korea are worried about extreme weather. Summers are very hot, and some old people
+            get sick from the heat. Also, heavy rain causes floods in some areas. People talk about it on the news a lot.
+            I think the government should make more shelters with air conditioning. Also, people should save energy and
+            use public transportation. Small actions can help a lot.
+          phrases: ['are worried about', 'I think the government should', 'Small actions can help a lot']
+        - text: >-
+            I think most people in my country are worried about extreme weather now. Last summer, there was a heat wave
+            for weeks, and many people couldn't sleep. In some places, heavy rain damaged houses and roads. I think this
+            is a serious problem. First, the government should prepare better for floods. Second, each person should try
+            to save electricity and recycle more. If everyone helps, things can get better.
+          phrases: ['I think this is a serious problem', 'First', 'If everyone helps']
+      im2:
+        - text: >-
+            Well, extreme weather has become a big issue in Korea recently. Every summer, there are heat wave warnings,
+            and the news reports that elderly people and outdoor workers are getting sick. Heavy rain is also a problem. A
+            few years ago, some areas in Seoul were badly flooded, and people were really shocked. So I think most people
+            now take this issue seriously. In my opinion, the government should improve drainage systems and build more
+            cooling centers for people who don't have air conditioners. At the same time, we should change our own habits,
+            like using less energy and taking public transportation. Both are important.
+          phrases: ['has become a big issue', 'In my opinion', 'At the same time']
+        - text: >-
+            I think people in my country have different opinions about this issue. Many people are worried because heat
+            waves and heavy rains seem to happen more often than before. They see flooded streets and hot summers and feel
+            that something is changing. But some people think it's just normal weather and don't worry much. Personally, I
+            believe it's a serious problem. I think the most important thing is preparation. For example, cities should
+            check old buildings and roads before the rainy season. Also, companies should let workers rest during the
+            hottest hours. These changes can protect many people.
+          phrases: ['have different opinions about this issue', 'Personally, I believe', 'the most important thing is']
+      im3:
+        - text: >-
+            Well, I think extreme weather is one of the topics people in Korea talk about the most these days. Every
+            summer, the news is full of reports about heat waves, and a lot of people are worried about their elderly
+            parents or grandparents who live alone. Heavy rain has also become a big concern since some neighborhoods in
+            big cities were badly flooded a few years ago. Most people I know agree that the weather is getting more
+            extreme, but they don't always agree on what to do about it. In my opinion, we need action on two levels.
+            First, the government should invest in better flood prevention and cooling centers. Second, individuals should
+            try to reduce energy use, for example by turning off unused devices and using public transportation. It won't
+            solve everything overnight, but I think it's a good start.
+          phrases: ['one of the topics people in Korea talk about the most', 'we need action on two levels', 'It won''t solve everything overnight']
+        - text: >-
+            Honestly, I think people in my country are much more aware of extreme weather than they were ten years ago.
+            When I was younger, people just complained about hot days, but now there's real concern. During heat waves,
+            the government sends emergency text messages, and hospitals see more patients with heat-related illnesses.
+            Floods during the rainy season have also caused serious damage in recent years. Because of this, many people
+            feel that extreme weather is no longer a distant problem. Personally, I think the most urgent thing is
+            protecting people who are most at risk, like the elderly, outdoor workers, and people living in semi-basement
+            homes. In the long term, though, we also need to cut down on carbon emissions by using more renewable energy.
+            I think both short-term and long-term efforts are necessary.
+          phrases: ['much more aware of', 'no longer a distant problem', 'In the long term, though']
+      ih:
+        - text: >-
+            Sure. In my country, extreme weather has become a serious topic of conversation, especially in the past few
+            years. People used to treat heat waves and heavy rain as just part of summer, but attitudes have changed a
+            lot. After some terrible floods in big cities, where people were trapped in underground parking lots and semi-
+            basement apartments, the public started to see this as a matter of safety, not just discomfort. Still, I don't
+            think we're doing enough. In my opinion, the government needs to focus on two things. First, it should upgrade
+            old drainage systems and make sure vulnerable housing, like semi-basement homes, is safer or replaced over
+            time. Second, it should support outdoor workers, for example by requiring breaks during the hottest hours of
+            the day. At the same time, individuals can't just wait for the government. We can reduce our energy use,
+            recycle properly, and choose public transportation more often. I believe real change happens when both
+            policies and personal habits move in the same direction.
+          phrases: ['attitudes have changed a lot', 'as a matter of safety, not just discomfort', 'move in the same direction']
+        - text: >-
+            Well, I'd say most people in Korea now see extreme weather as a real problem, although they react to it in
+            different ways. Some people are very worried and try to change their lifestyle, for example by buying fewer
+            things or avoiding single-use plastic. Others feel that one person can't really make a difference, so they
+            just focus on protecting themselves, like buying a better air conditioner. And some older people say the
+            weather has always been unpredictable, so they don't think it's anything new. Personally, I think the evidence
+            is pretty clear that extreme weather is happening more often, and we need to prepare for it seriously. In the
+            short term, cities should improve their warning systems and drainage, and make sure elderly people living
+            alone get checked on during heat waves. In the long term, I think the country has to rely less on fossil fuels
+            and invest more in renewable energy. I also think schools should teach kids about climate issues, so the next
+            generation grows up understanding why it matters. It's a huge problem, but I don't think it's hopeless.
+          phrases: ['although they react to it in different ways', 'the evidence is pretty clear that', 'I don''t think it''s hopeless']
+      al:
+        - text: >-
+            That's a really important issue, and I think public opinion in Korea has shifted quite dramatically over the
+            last decade. Not long ago, heat waves and heavy rain were mostly seen as seasonal inconveniences, something to
+            complain about and then forget. But after several severe floods, including ones where people lost their lives
+            in semi-basement homes, and summers with record-breaking heat, there's a much stronger sense that this is a
+            safety issue and, frankly, a fairness issue. The people who suffer most are usually those with the fewest
+            resources, like elderly people living alone, outdoor laborers, and low-income families in poorly built
+            housing. So when people talk about extreme weather now, it's often connected to questions about who is
+            protected and who isn't. In my opinion, the response has to happen on several levels. Governments should
+            invest seriously in infrastructure, such as modern drainage systems and early warning alerts, and they should
+            gradually replace dangerous housing. Companies should adjust working conditions, for example by allowing
+            breaks during peak heat. And as individuals, we can make choices that reduce emissions, even if they seem
+            small. I don't think there's a single solution, but if everyone takes some responsibility, the impact can be
+            significant.
+          phrases: ['public opinion in Korea has shifted quite dramatically', 'frankly, a fairness issue', 'the response has to happen on several levels']
+        - text: >-
+            Well, I think extreme weather has gone from being an abstract environmental issue to something people in my
+            country experience personally, and that has changed the conversation. A lot of my friends, for example, now
+            plan their summer around heat warnings, and after the major floods in recent years, many people realized that
+            even a modern city can be surprisingly vulnerable. That said, opinions are still divided on what should be
+            done. Some people believe the government should take the lead with bold policies, like moving faster toward
+            renewable energy and stricter rules for big polluters. Others worry that those policies might hurt the economy
+            or raise electricity prices, so they prefer a slower approach. Personally, I lean toward stronger action,
+            mainly because the cost of doing nothing seems much higher in the long run. That doesn't mean ignoring the
+            economic concerns, though. I think the government could support industries during the transition and help low-
+            income households with energy costs. At the same time, we need practical adaptation measures right now, such
+            as better flood barriers, more urban trees to reduce heat, and community systems to check on vulnerable
+            neighbors. In the end, I believe this is a problem we can still manage, but only if we treat it as urgent
+            rather than optional.
+          phrases: ['has gone from being', 'I lean toward stronger action', 'treat it as urgent rather than optional']
+    tip_ko: 사회 이슈는 사람들 생각 → 내 의견 → 해결 방법 두 가지 순서로 말해요. 정부가 할 일과 개인이 할 일을 하나씩 나누면 정리돼요.

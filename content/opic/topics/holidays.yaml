@@ -1,0 +1,562 @@
+schema_version: 1
+id: holidays
+kind: unexpected
+title_ko: 명절·휴일
+status: ready
+questions:
+  - id: holidays-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Let's talk about holidays. What are some of the biggest holidays in your country? Tell me about one of them.
+      When is it, and what does it mean to people?
+    model:
+      il:
+        - text: >-
+            The biggest holidays in Korea are Seollal and Chuseok. Seollal is the Lunar New Year. It is in winter. People
+            visit their family. We eat rice cake soup. It is a happy day.
+          phrases: [The biggest holidays, It is in winter]
+        - text: >-
+            Chuseok is a big holiday in Korea. It is in fall. People go to their hometown. We eat songpyeon. Songpyeon is
+            a rice cake. I like Chuseok because I can rest.
+          phrases: [is a big holiday, I like Chuseok because]
+      im1:
+        - text: >-
+            In Korea, we have two big holidays, Seollal and Chuseok. I want to talk about Seollal. Seollal is the Lunar
+            New Year, so it is usually in January or February. On Seollal, families get together and eat tteokguk, rice
+            cake soup. People say eating tteokguk makes you one year older. It is a very important day for families, and I
+            always look forward to it.
+          phrases: [I want to talk about, get together, It is a very important day]
+        - text: >-
+            There are many holidays in Korea, but the biggest one is Chuseok. It is a harvest holiday in the fall. Many
+            people travel to their hometown to see their family. The roads are very busy at that time. We make songpyeon
+            and share food together. For many Koreans, Chuseok means family and thanks. I usually stay with my
+            grandparents for two or three days.
+          phrases: [the biggest one is, Many people travel to, For many Koreans]
+      im2:
+        - text: >-
+            Korea has a few big holidays, but I think the most important one is Chuseok. It's in September or October, and
+            it's kind of like Thanksgiving. Long ago, people celebrated the harvest and thanked their ancestors. These
+            days, most families still get together, make songpyeon, and share a big meal. The holiday usually lasts three
+            days, so a lot of people travel to their hometowns. For me, Chuseok is a time to slow down and spend time with
+            my grandparents. That's why it's special to me, and I never miss it.
+          phrases: [it's kind of like, These days, That's why it's special]
+        - text: >-
+            Let me tell you about Seollal, the Lunar New Year. It's one of the two biggest holidays in Korea, and it
+            usually falls in January or February. On the morning of Seollal, people wear nice clothes and bow to their
+            parents and grandparents. Then the elders give them some money and good wishes for the new year. After that,
+            everyone eats tteokguk together. I think Seollal is meaningful because it's a fresh start, and the whole
+            family is together. Also, many families play traditional games like yunnori in the afternoon. It's always
+            noisy but fun.
+          phrases: [Let me tell you about, usually falls in, I think Seollal is meaningful because]
+      im3:
+        - text: >-
+            Well, in Korea there are two really big holidays, Seollal and Chuseok, and I'd like to talk about Chuseok. It
+            comes in early fall, around September, when the weather is cool and clear. Traditionally, it was a festival to
+            celebrate the harvest and remember our ancestors. On Chuseok, families gather at the oldest relative's house,
+            prepare food together, and hold a small memorial ceremony. Children usually enjoy songpyeon, which are small
+            half-moon rice cakes. Honestly, the traffic is terrible because everyone goes home at the same time. But I
+            still love Chuseok, because it's one of the few times a year when my whole family is in one place. I really
+            look forward to it every year.
+          phrases: [I'd like to talk about, Traditionally, Honestly, I still love]
+        - text: >-
+            One of the biggest holidays in my country is Seollal, which is the Lunar New Year. It usually comes in January
+            or February, and the date changes every year because it follows the lunar calendar. Seollal is all about
+            family and new beginnings. In the morning, younger people bow deeply to their elders, and the elders give them
+            pocket money and words of advice. Then we sit down and eat tteokguk, rice cake soup. In the afternoon, we
+            often play traditional games like yunnori. When I was a kid, I waited all year for Seollal because of the
+            pocket money, but now I enjoy the relaxed time with my relatives more.
+          phrases: [is all about, the date changes every year, When I was a kid]
+      ih:
+        - text: >-
+            Sure. Korea has several national holidays, but the two that really matter to most people are Seollal and
+            Chuseok. I'd like to focus on Chuseok because I think it shows Korean culture well. Chuseok falls on the
+            fifteenth day of the eighth lunar month, so it's usually in September or early October. Historically, it was a
+            harvest festival, a time to thank our ancestors for good crops. Even now, many families visit their ancestors'
+            graves, clean the area, and hold a memorial ceremony with fresh fruit and rice cakes. Of course, things have
+            changed a lot. In the past, the women in the family did almost all of the cooking, but these days more
+            families share the work or just buy prepared food. Some people even use the long holiday to travel abroad.
+            Still, for most Koreans, Chuseok is about being grateful and reconnecting with family.
+          phrases: [I'd like to focus on, Historically, 'Of course, things have changed a lot', 'Still, for most Koreans']
+        - text: >-
+            I'd say the biggest holiday in Korea is Seollal, the Lunar New Year. Most people get three days off, and the
+            date moves around every year, but it's always in January or February. The heart of Seollal is a custom called
+            sebae. Younger family members put on their best clothes, sometimes even hanbok, and bow to their elders to
+            wish them a healthy new year. In return, the elders give them a little money and some advice. After that comes
+            the food. Every family eats tteokguk, and there's a saying that you only get one year older after you finish
+            your bowl. What I like about Seollal is that it feels like a second chance. If my January didn't go well,
+            Seollal gives me another opportunity to start the year over with a clear mind. That's why I always try to make
+            a new plan on that day.
+          phrases: [The heart of Seollal is, In return, there's a saying that, What I like about Seollal is]
+      al:
+        - text: >-
+            Korea has quite a few public holidays, but if you ask anyone which ones matter most, they'll say Seollal and
+            Chuseok without hesitation. I'd like to talk about Chuseok, which people often call Korean Thanksgiving. It's
+            celebrated on the fifteenth day of the eighth month of the lunar calendar, so it usually lands in late
+            September or early October, when the weather is at its best. At its core, Chuseok is a harvest festival.
+            Families set up a table with newly harvested rice, fruit, and songpyeon to honor their ancestors, and many
+            people visit family graves to clean them and pay their respects. What makes the holiday interesting, though,
+            is how much it's changing. A generation ago, almost everyone squeezed onto crowded highways to reach their
+            hometowns. Nowadays, it's not unusual for parents to come to their children's apartments in the city instead,
+            or for young couples to spend the holiday traveling. So while the traditions are still there, I'd say the
+            meaning of Chuseok is slowly shifting from duty toward simply spending quality time together.
+          phrases: [without hesitation, At its core, 'What makes the holiday interesting, though', it's not unusual for]
+        - text: >-
+            If I had to pick the most important holiday in my country, I'd go with Seollal, the Lunar New Year. Since it
+            follows the lunar calendar, the date changes every year, but it always comes somewhere between late January
+            and mid-February. For most families, the day begins early in the morning with a memorial ceremony for the
+            ancestors, followed by sebae, where children and younger adults bow to their elders. The elders then hand out
+            pocket money along with a few words of wisdom, which, to be honest, kids care much less about than the money.
+            Then comes tteokguk, the rice cake soup that supposedly makes you one year older. Beyond the rituals, Seollal
+            has a deeper meaning for Koreans. It's a moment to pause, look back on the previous year, and reconnect with
+            relatives you might not have seen for months. In a society where people work such long hours, I think that
+            pause is actually what makes the holiday so valuable. For me, it's the most meaningful day of the whole year,
+            even more than my birthday.
+          phrases: [If I had to pick, followed by, to be honest, Beyond the rituals]
+    tip_ko: 명절 이름을 말한 뒤 언제인지, 무엇을 하는지, 나에게 어떤 의미인지 순서로 말해요. Seollal, Chuseok은 한 문장으로 영어 설명을 붙여요.
+  - id: holidays-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      What do you usually do during the holidays? Walk me through a typical holiday for you, from the time you get
+      up until the end of the day.
+    model:
+      il:
+        - text: >-
+            On holidays, I get up late. I eat breakfast with my family. Then I watch TV. In the afternoon, I meet my
+            friends. At night, I play games. I go to bed late.
+          phrases: [I get up late, In the afternoon]
+        - text: >-
+            During Chuseok, I go to my grandmother's house. We cook food together. We eat a lot. Then we talk and watch
+            movies. I sleep there. It is fun but tiring.
+          phrases: [I go to my grandmother's house, It is fun but tiring]
+      im1:
+        - text: >-
+            On a typical holiday, I wake up later than usual, maybe around ten. First, I have a big breakfast with my
+            family. After that, we usually visit my grandparents. My mom and aunts cook a lot of food, and I help a
+            little. In the evening, my cousins and I play board games or watch a movie. I usually go to bed very late, so
+            the next day I am always tired.
+          phrases: [On a typical holiday, After that, In the evening]
+        - text: >-
+            During long holidays like Seollal, my day is usually the same. In the morning, I put on nice clothes and bow
+            to my parents. Then we eat rice cake soup together. In the afternoon, we visit my uncle's house. We talk, eat
+            fruit, and play cards. At night, I come home and relax in my room. I like this routine because it is calm and
+            easy.
+          phrases: [my day is usually the same, In the afternoon, I like this routine because]
+      im2:
+        - text: >-
+            On holidays, my routine changes a lot from my normal weekday routine. First of all, I don't set an alarm, so I
+            usually sleep until about ten. After a slow breakfast, my family drives to my grandparents' house, which takes
+            about two hours. When we arrive, everyone starts preparing food. I'm in charge of making jeon, the Korean
+            pancakes, because my grandmother says I'm good at it. In the afternoon, we eat together and talk about what
+            happened during the year. In the evening, my cousins and I usually go out for coffee. Honestly, it's tiring,
+            but I enjoy it.
+          phrases: [First of all, I'm in charge of, 'Honestly, it''s tiring, but']
+        - text: >-
+            To be honest, my holiday routine is pretty simple. Since my family lives nearby, I don't have to travel far.
+            In the morning, I have breakfast with my parents and help them clean the house. Around lunchtime, my relatives
+            come over, and we eat a big meal together. After lunch, the adults talk and the younger people play games on
+            their phones. Later in the afternoon, I usually take a walk around the neighborhood because I eat too much. At
+            night, I watch a holiday movie on TV. It's a quiet routine, but I like it.
+          phrases: [To be honest, Since my family lives nearby, 'It''s a quiet routine, but']
+      im3:
+        - text: >-
+            Well, I usually spend the holidays at my parents' house, so my routine is pretty fixed. I get up a bit earlier
+            than I'd like, around eight, because my mom starts cooking early. After a quick breakfast, I help her prepare
+            dishes for the family meal. My job is usually chopping vegetables and frying jeon, which takes almost the
+            whole morning. Around noon, my aunts and uncles arrive, and the house suddenly becomes really loud. We eat
+            lunch together and catch up on each other's news. In the afternoon, the older relatives take a nap, and my
+            cousins and I go for a walk or play yunnori. By evening, everyone leaves, and I finally collapse on the sofa.
+            It's exhausting, but I'd miss it if I didn't do it.
+          phrases: [my routine is pretty fixed, My job is usually, By evening, I'd miss it if I didn't]
+        - text: >-
+            These days, my holiday routine is quite different from when I was younger. Now that I live alone, I usually
+            spend the first day of the holiday resting. I sleep in, order delivery food, and catch up on dramas I missed.
+            On the second day, I take the train to my hometown, which is about three hours away. When I get there, I spend
+            time with my parents, help with the cooking, and visit my grandparents' graves with them. On the last day, I
+            go back to the city a little early to avoid the traffic. I think this routine works well for me, because I can
+            rest and still see my family.
+          phrases: [is quite different from, Now that I live alone, On the last day, works well for me]
+      ih:
+        - text: >-
+            My holiday routine depends a little on which holiday it is, but for Chuseok it's almost always the same. The
+            day before the holiday, my family drives to my grandmother's house in the countryside. We leave very early in
+            the morning, around five, because otherwise we'd be stuck in traffic for hours. As soon as we arrive, the
+            kitchen turns into a busy restaurant. My mother and aunts make the main dishes, and my cousins and I are in
+            charge of frying pancakes and making songpyeon. On the morning of Chuseok, we hold a short memorial ceremony
+            for our ancestors, and then we have a huge breakfast together. In the afternoon, we usually visit the family
+            graves on a hill nearby. After that, the rest of the day is pretty relaxed. We play cards, watch TV, and eat
+            leftovers. It's tiring, but it's also the only time I really feel connected to my extended family.
+          phrases: [depends a little on, As soon as we arrive, 'After that, the rest of the day', 'It''s tiring, but it''s also']
+        - text: >-
+            Honestly, over the last few years my holiday routine has changed quite a bit. When I was in school, holidays
+            meant long car trips and lots of cooking at my grandparents' house. But since my grandmother moved in with my
+            uncle in Seoul, our family gatherings have become much shorter and simpler. Now, on a typical holiday, I wake
+            up around nine and have breakfast with my parents. Around eleven, we drive to my uncle's apartment, which is
+            only thirty minutes away. We eat lunch together, and instead of cooking everything from scratch, we buy some
+            dishes from a local market. In the afternoon, we take a walk along the river, which has become a new family
+            tradition. Then I usually go home in the early evening and spend the rest of the holiday on my own, reading or
+            meeting friends. I actually prefer this routine because everyone is less stressed.
+          phrases: [has changed quite a bit, But since, instead of, I actually prefer this routine because]
+      al:
+        - text: >-
+            My holidays tend to follow a pretty predictable pattern, and I've come to appreciate that. The night before, I
+            pack a small bag and set my alarm for some ridiculous hour like four-thirty, because the only way to beat
+            holiday traffic is to leave before everyone else does. By the time the sun comes up, we're usually halfway to
+            my grandparents' village. Once we arrive, there's no time to rest. My grandmother hands out jobs the moment we
+            walk in, and mine has been the same for about ten years: frying fish and vegetable pancakes in a giant pan on
+            the floor of the veranda. That takes most of the morning, and by lunchtime I smell like cooking oil. The
+            afternoon is more relaxed. We eat together, and then the adults drink tea and talk about relatives I've never
+            met, while the younger cousins disappear to the convenience store. In the evening, we play yunnori, which
+            always gets surprisingly competitive. It's exhausting, but if I skipped it, the holiday just wouldn't feel
+            like a holiday.
+          phrases: [tend to follow a pretty predictable pattern, By the time, 'Once we arrive, there''s no time to rest', if I skipped it]
+        - text: >-
+            For me, holidays are split into two very different parts, and I plan them that way on purpose. The first half
+            belongs to my family. On the first morning, I go to my parents' place, and we follow the usual customs. We
+            prepare a simple table for our ancestors, bow to my grandparents, and then sit down for a long breakfast. My
+            parents always ask about my job and whether I'm eating properly, which I've learned to answer with a smile.
+            After lunch, we usually go to a nearby park or a café, just to get out of the house. The second half of the
+            holiday, though, is for me. I go back to my apartment, turn off my work notifications, and do things I never
+            have time for during the year. Sometimes that means finishing a novel in one sitting, and sometimes it's a
+            long bike ride along the river. I've found that balancing family time with some time alone makes me feel much
+            more rested when I go back to work.
+          phrases: [are split into two very different parts, on purpose, 'The second half of the holiday, though', I've found that]
+    tip_ko: 아침 → 점심 → 오후 → 저녁 순서로 시간 표현(In the morning, After that)을 붙이면 길게 말해도 흐름이 끊기지 않아요.
+  - id: holidays-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a memorable holiday you had. When was it, who were you with, and what happened? Why do you still
+      remember it?
+    model:
+      il:
+        - text: >-
+            Last Chuseok was special. I went to Busan with my family. We ate seafood. We walked on the beach. The weather
+            was very good. I was very happy. I remember it well.
+          phrases: [Last Chuseok was special, I remember it well]
+        - text: >-
+            Two years ago, I was alone on Seollal. I had to work. I ate ramen at home. I called my parents on the phone. I
+            was sad. So I remember this holiday.
+          phrases: [Two years ago, So I remember]
+      im1:
+        - text: >-
+            I remember the Chuseok when I was ten years old. My whole family went to my grandmother's house in the
+            countryside. There was a big full moon that night. My grandmother told us to make a wish. I wished for a new
+            bike. A few weeks later, my dad bought me a bike. It was just luck, but I still remember that night.
+          phrases: [I remember the Chuseok when, A few weeks later, 'It was just luck, but']
+        - text: >-
+            My most memorable holiday was Seollal three years ago. That year, I traveled to Japan with my friends instead
+            of going home. It was my first holiday without my family. We ate a lot of good food and went to a hot spring.
+            It was fun, but I missed my mom's rice cake soup. Since then, I always go home for Seollal.
+          phrases: [My most memorable holiday was, 'It was fun, but', Since then]
+      im2:
+        - text: >-
+            I still remember the Seollal when I was in high school. That year, it snowed a lot, and my family couldn't
+            drive to my grandparents' house. At first, everyone was disappointed. My mom was worried because she bought a
+            lot of food for the whole family. So we decided to have a video call with my grandparents and bow to them
+            through the screen. It felt strange, but also really funny. After that, we cooked all the food ourselves and
+            invited our neighbors. It became one of the warmest holidays I've ever had, and that's why I can't forget it.
+          phrases: [I still remember, At first, 'It felt strange, but also', that's why I can't forget it]
+        - text: >-
+            The most memorable holiday for me was Chuseok last year, because it was the first time I cooked for my family.
+            My mom hurt her wrist a week before the holiday, so she couldn't cook. I watched a lot of cooking videos and
+            made jeon, japchae, and soup. Honestly, some dishes were too salty, and the kitchen was a mess. But my
+            grandparents said it was delicious, and my mom looked really proud. I felt like I grew up a little that day.
+            That's why that Chuseok is still special to me.
+          phrases: [because it was the first time, Honestly, I felt like, is still special to me]
+      im3:
+        - text: >-
+            Let me tell you about the Chuseok I spent in Canada about four years ago. I was an exchange student there, so
+            I couldn't go home for the holiday. I felt pretty lonely at first, because I could see photos of my family's
+            dinner on social media. Then a few other Korean students and I decided to have our own Chuseok party. We found
+            rice cake powder at an Asian market and tried to make songpyeon, but they all looked terrible. We also invited
+            our Canadian roommates and explained what Chuseok means. They loved the food, even the ugly rice cakes. That
+            night, I realized that a holiday is really about the people around you, not the place. I still keep in touch
+            with those friends.
+          phrases: [Let me tell you about, I felt pretty lonely at first, 'That night, I realized that', I still keep in touch]
+        - text: >-
+            The holiday I remember most is a Seollal from when I was about twelve. Early in the morning, my cousins and I
+            bowed to our grandparents, and we got more pocket money than ever before. We were so excited that we went to a
+            big stationery store together and spent almost all of it in one hour. When we came back, our parents were
+            really upset, and they made us write down everything we bought. It was embarrassing, but it actually taught me
+            a lesson about money. Since then, I always save at least half of my holiday money. Whenever my family gets
+            together, someone still brings up that story and we all laugh about it.
+          phrases: [The holiday I remember most, We were so excited that, 'It was embarrassing, but', Since then]
+      ih:
+        - text: >-
+            One holiday I'll never forget happened about five years ago during Chuseok. My family was driving to my
+            grandparents' house, which normally takes three hours. But that year, there was a big accident on the highway,
+            and we were stuck in traffic for almost nine hours. At first, everyone was annoyed, and my younger brother
+            kept complaining that he was hungry. Then my dad suggested that we get off the highway and take the small
+            country roads instead. It took longer, but we drove past rice fields and little villages, and we even stopped
+            at a local market to buy roasted chestnuts. By the time we arrived, it was almost midnight, but my grandmother
+            was waiting outside with a flashlight. Looking back, that long trip turned out to be one of my favorite family
+            memories. It taught me that the unplanned parts of a holiday are often the best.
+          phrases: [One holiday I'll never forget, At first, By the time we arrived, Looking back]
+        - text: >-
+            The most memorable holiday for me was the first Seollal after my grandfather passed away, which was about
+            three years ago. Our family was nervous about it because he had always been the center of every holiday. He
+            used to give the longest speeches during sebae and tell the same old stories every year. That morning, the
+            house felt really quiet. But then my grandmother took out an old photo album, and we started looking at
+            pictures from past holidays. Soon everyone was sharing funny stories about him, and we were laughing and
+            crying at the same time. Instead of feeling empty, the day felt warm. Ever since then, we've made it a
+            tradition to look at that album every Seollal. I remember that holiday because it showed me how strong my
+            family is when we're together. I'm still really grateful for that day, even though it was sad.
+          phrases: [which was about three years ago, He used to, Instead of feeling empty, Ever since then]
+      al:
+        - text: >-
+            A holiday that really stands out in my memory is the Chuseok when my family decided, for the first time ever,
+            not to go to my grandparents' house. My grandparents had moved into a smaller apartment, and they suggested
+            that we all meet at a beach town on the east coast instead. My parents were a little uneasy about breaking
+            tradition, and honestly, so was I. We still prepared a simple memorial table in the guesthouse, but the rest
+            of the trip was completely different from any holiday we'd had before. Instead of spending hours in a hot
+            kitchen, we ate grilled fish at a small restaurant by the harbor, and in the evening the whole family sat on
+            the beach and watched the full moon rise over the water. My grandfather, who almost never talks about his
+            feelings, said it was the most relaxing Chuseok of his life. That moment changed the way I think about
+            traditions. I used to believe they had to be followed exactly, but now I think the real point is simply to
+            keep the family together, however you choose to do it.
+          phrases: [really stands out in my memory, for the first time ever, Instead of spending hours, That moment changed the way I think about]
+        - text: >-
+            I'd have to say the most memorable holiday I've had was last Seollal, mainly because almost nothing went
+            according to plan. I'd volunteered to host my family at my new apartment for the first time, and I was
+            determined to make everything perfect. The night before, I spent hours preparing tteokguk broth and pancakes.
+            Then, early on the morning of Seollal, the power went out in my entire building. No stove, no heating,
+            nothing. For a moment, I honestly thought the whole day was ruined. But my relatives handled it surprisingly
+            well. My uncle went out and bought a portable gas burner, my cousins brought blankets, and we ended up eating
+            rice cake soup in our coats by candlelight. It sounds miserable, but it was actually the most fun we'd had
+            together in years, because everyone was joking and helping out. Looking back, I realize I'd been so focused on
+            making things perfect that I'd forgotten what the holiday is really about. Now, whenever I host a family
+            event, I try to relax and remember that the people matter more than the plan.
+          phrases: [I'd have to say, nothing went according to plan, 'For a moment, I honestly thought', 'Looking back, I realize']
+    tip_ko: 언제, 누구와, 무슨 일이 있었는지 과거형으로 말하고, 마지막에 왜 기억에 남는지 한 문장으로 정리해요.
+  - id: holidays-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      How have holidays in your country changed compared to when you were a child? What do people do differently
+      now, and why do you think things have changed?
+    model:
+      il:
+        - text: >-
+            When I was a child, holidays were big. Many people came to my grandma's house. Now, we are small. We buy food.
+            We do not cook a lot. People are busy now.
+          phrases: [When I was a child, Now]
+        - text: >-
+            Before, people went to their hometown. The roads were busy. Now, many people travel. Some people go to other
+            countries. I think it is because people want to rest and relax more.
+          phrases: [Before, I think it is because]
+      im1:
+        - text: >-
+            When I was young, holidays were very busy. All my relatives came to my grandmother's house, and we cooked for
+            two days. Now, things are different. My family is smaller, and we buy some food from the store. Also, many
+            young people travel during the holidays. I think things changed because people are busy and want to rest. I
+            miss the old holidays a little.
+          phrases: [When I was young, 'Now, things are different', I think things changed because]
+        - text: >-
+            Holidays in Korea changed a lot. In the past, everyone went to their hometown, and the roads were full of
+            cars. These days, many parents visit their children in the city. Some families even go on a trip together.
+            Also, people use video calls to say hello. I think technology and busy lives changed our holidays. I like the
+            new way better.
+          phrases: [In the past, These days, I like the new way better]
+      im2:
+        - text: >-
+            Compared to when I was a child, holidays have become much simpler. Back then, my grandmother cooked for days,
+            and around twenty relatives came to her house. Everyone had to follow the traditions exactly. Now, my family
+            usually meets for just one meal, and we buy a lot of the food. Many of my friends even go abroad during long
+            holidays. I think the biggest reason is that families are smaller and people are busier. Also, younger people
+            care more about rest than tradition. Personally, I think the change is natural, but I hope we don't lose the
+            meaning of the holidays.
+          phrases: [Compared to when I was a child, Back then, I think the biggest reason is, Personally]
+        - text: >-
+            Holidays have changed a lot since I was little. When I was a child, the whole country seemed to move at the
+            same time, and highways were completely full. These days, traffic is still bad, but many people choose to stay
+            home or travel instead. Another big change is the food. In the past, women in the family did almost all the
+            cooking, but now men help more, and many families order dishes. I think these changes happened because
+            people's values changed. Now, people think holidays should be relaxing for everyone, not just some people.
+          phrases: [have changed a lot since, Another big change is, I think these changes happened because]
+      im3:
+        - text: >-
+            I'd say holidays in Korea have changed quite a lot since I was a kid. When I was young, Seollal and Chuseok
+            were all about big family gatherings. We'd spend hours in traffic, and once we arrived, the women would cook
+            all day while the men talked. Nowadays, families are smaller, and a lot of people live far from their
+            hometowns, so gatherings are shorter. Many families buy prepared food or eat at restaurants. Some people even
+            take the long holiday as a chance to travel overseas. I think there are two main reasons. First, people are
+            much busier and more tired than before. Second, younger generations think holidays should be fair and relaxing
+            for everyone. I think it's a positive change overall.
+          phrases: [have changed quite a lot since, Nowadays, I think there are two main reasons, it's a positive change overall]
+        - text: >-
+            Compared to my childhood, holidays today feel more flexible. Back then, there was one right way to celebrate,
+            and every family followed it. My grandfather was very strict about the memorial ceremony, and we had to
+            prepare more than twenty dishes. These days, my family still does the ceremony, but it's much simpler, with
+            just a few dishes. Also, instead of everyone traveling to my grandparents' house, they sometimes come to Seoul
+            to see us. Another change is that people share holiday greetings online instead of visiting every relative. I
+            think the main reason for these changes is that society has become more individual, and people respect each
+            other's time more. Honestly, I like the new style better.
+          phrases: [holidays today feel more flexible, there was one right way, Another change is that, 'Honestly, I like the new style better']
+      ih:
+        - text: >-
+            When I compare holidays now with the holidays I remember from my childhood, the biggest difference is how much
+            smaller and more flexible they've become. When I was little, Chuseok meant a long trip to the countryside, a
+            house packed with relatives, and a mountain of food that took two full days to prepare. The rules were strict,
+            and nobody would ever think of skipping the memorial ceremony. These days, my extended family rarely gathers
+            all at once. Some relatives come for lunch and leave early, and a few of my cousins spend the holiday
+            traveling abroad instead. Even the food has changed, since many families now order holiday dishes online. In
+            my opinion, there are a few reasons for this. Families are smaller, more people live alone, and younger
+            generations question traditions that put too much work on certain family members. I don't think the holidays
+            have lost their meaning. They've just adapted to the way people live now.
+          phrases: [When I compare, the biggest difference is, 'In my opinion, there are a few reasons for this', They've just adapted to]
+        - text: >-
+            Holidays in Korea have gone through a big transformation over the last twenty years or so. When I was a child,
+            I remember everything being about obligation. You had to go to your hometown, you had to bow to every
+            relative, and the women in the family had to cook nonstop. People complained, but nobody really questioned it.
+            Nowadays, the atmosphere is completely different. Many families divide the cooking evenly or simply buy
+            prepared food, and it's common to visit the in-laws on one holiday and your own parents on the next. There are
+            even people who spend the entire holiday on a trip with friends. I think this change comes from two things.
+            First, younger Koreans value equality and personal time much more. Second, the population has moved to big
+            cities, so hometown visits feel less natural. Personally, I think the new style is healthier for families.
+          phrases: [have gone through a big transformation, 'Nowadays, the atmosphere is completely different', I think this change comes from two things, Personally]
+      al:
+        - text: >-
+            Looking back, I'd say holidays in Korea have changed more in the last twenty years than in the previous
+            hundred. When I was a child, a holiday like Chuseok followed a very fixed script. Everyone traveled to the
+            eldest son's house, no matter how far it was, and the day revolved around the ancestral ceremony, which
+            required an enormous amount of food. The work was rarely shared equally, and honestly, a lot of people,
+            especially women, dreaded the holidays. Today, the picture is much more varied. Some families still keep every
+            tradition, but many have simplified the ceremony or dropped it entirely. It's become common to order the
+            holiday food, to meet at a restaurant instead of someone's home, or to use the long break for a vacation. I
+            think the changes come from a mix of factors. Families are smaller and more scattered, people are more aware
+            of gender equality, and the younger generation doesn't feel that tradition alone is a good enough reason to do
+            something. Personally, I see it as a healthy evolution, as long as people still make time for their families.
+          phrases: ['Looking back, I''d say', followed a very fixed script, 'Today, the picture is much more varied', I see it as a healthy evolution]
+        - text: >-
+            The way Koreans spend their holidays has shifted dramatically since I was a kid, and you can see it almost
+            everywhere. Back then, the main image of Chuseok on the news was endless traffic jams and train stations
+            packed with people carrying gift boxes. The whole country seemed to be heading home at once, and families
+            followed the same routine: cook, perform the ceremony, eat, and repeat. Nowadays, the news is just as likely
+            to show crowded airports, because a huge number of people treat the holiday as a chance to travel. Even
+            families that stay home have adjusted things. My aunt, for example, used to insist on making everything from
+            scratch, but a few years ago she announced that we'd be ordering half of the dishes, and nobody complained. In
+            my view, these changes reflect larger trends in society. People work longer hours, they live farther from
+            their parents, and they're more willing to question customs that cause stress. I don't think we've lost
+            anything essential, though. If anything, holidays feel more relaxed and genuine now.
+          phrases: [has shifted dramatically, Back then, 'In my view, these changes reflect', If anything]
+    tip_ko: '''예전에는 → 요즘은 → 바뀐 이유'' 순서로 말해요. Back then, These days처럼 시간 대비 표현을 꼭 넣어요.'
+  - id: holidays-issue
+    type: issue
+    level: [4, 5, 6]
+    question: >-
+      Some people say holiday travel and family gatherings cause a lot of stress, and many people now skip them.
+      What do you think about this issue? Why do people feel this way, and what could be done about it?
+    model:
+      il:
+        - text: >-
+            I think holidays are stressful. People drive a long time. They cook a lot. Some people fight. So some people
+            stay home and rest. I think families should cook less and talk more.
+          phrases: [I think holidays are stressful, So some people stay home]
+        - text: >-
+            Many people do not like holidays now. They are tired. The traffic is bad. Relatives ask many questions. I
+            think we can meet for a short time. That is better.
+          phrases: [Many people do not like, I think we can]
+      im1:
+        - text: >-
+            I think many people feel stress during holidays. First, the traffic is terrible, so traveling takes a long
+            time. Second, there is a lot of cooking, and usually only some family members do it. Also, relatives often ask
+            personal questions about jobs or marriage. Because of this, some people stay home. I think families should
+            share the work and not ask too many personal questions.
+          phrases: [I think many people feel stress, Because of this, I think families should]
+        - text: >-
+            These days, many young people skip family gatherings, and I understand why. Holidays are supposed to be
+            relaxing, but they are often very tiring. People spend many hours on the road. They also feel pressure from
+            older relatives. I think the solution is to make holidays simple. For example, families can meet for one meal
+            and order food. Then everyone can enjoy the time together.
+          phrases: [and I understand why, are supposed to be, I think the solution is]
+      im2:
+        - text: >-
+            I think holiday stress is a real problem in Korea. There are a few reasons. First, traveling to your hometown
+            can take many hours because everyone goes at the same time. Second, preparing traditional food is a lot of
+            work, and in many families, the women still do most of it. Third, some relatives ask personal questions, like
+            when you will get married or how much money you make. Because of all this, more people are skipping family
+            gatherings. In my opinion, families should talk openly and decide together how to celebrate. For example, they
+            can share the cooking or meet in a restaurant.
+          phrases: [is a real problem in Korea, There are a few reasons, Because of all this, In my opinion]
+        - text: >-
+            To be honest, I can understand why many people find holidays stressful. Holidays should be a time to rest, but
+            for a lot of people, they feel like extra work. You have to drive for hours, cook all day, and answer
+            uncomfortable questions from relatives. On top of that, some people feel guilty if they don't follow every
+            tradition. I think the answer is not to stop meeting family, but to change the way we celebrate. My family
+            started meeting for just one day and buying some of the food. Since then, everyone has been much happier.
+          phrases: ['To be honest, I can understand why', On top of that, I think the answer is not to, Since then]
+      im3:
+        - text: >-
+            Holiday stress has become a pretty common topic in Korea, and I think it's a serious issue. Every year, you
+            see news stories about family arguments and even divorces after long holidays. I think there are several
+            reasons. First, the traditional way of celebrating requires a huge amount of work, and it's often not shared
+            fairly. Second, holiday travel is exhausting because the whole country moves at once. Third, many young people
+            feel pressure from relatives who compare them with others. Because of this, a lot of people now choose to stay
+            home or travel alone. To solve this, I think families need to update their traditions. For example, they could
+            simplify the ceremony, share the cooking, and avoid sensitive questions. Holidays should be enjoyable for
+            everyone.
+          phrases: [has become a pretty common topic, I think there are several reasons, To solve this, should be enjoyable for everyone]
+        - text: >-
+            I personally think it's natural that more people are skipping holiday gatherings. Many traditions were created
+            when most people lived in the same village and families were much bigger. Now, people live far away from their
+            hometowns and work long hours, so a long trip during a short holiday can be really tiring. Also, younger
+            people don't like being asked about their grades, jobs, or marriage plans in front of everyone. However, I
+            don't think skipping family completely is the best answer. Instead, families could try new ways to get
+            together, like meeting in the middle, or choosing a different weekend when traffic is lighter. If everyone is
+            a little flexible, holidays can become something people look forward to again.
+          phrases: [I personally think it's natural that, 'However, I don''t think', 'Instead, families could try', If everyone is a little flexible]
+      ih:
+        - text: >-
+            Holiday stress is definitely a real issue in Korea, and I think it has become more visible in recent years. On
+            paper, holidays are about rest and family, but for many people, they mean long hours in traffic, endless
+            cooking, and awkward conversations. A big part of the problem is that the traditional way of celebrating was
+            designed for large families living close together, and it doesn't fit modern life very well. Another issue is
+            fairness. In many households, the cooking and cleaning still fall mostly on women, which naturally creates
+            tension. And for younger people, being questioned about their jobs or relationships in front of the whole
+            family can be really uncomfortable. That's why more and more people are skipping gatherings or traveling
+            instead. In my opinion, the solution isn't to abandon family holidays but to redesign them. Families could
+            simplify the ceremonies, divide the work fairly, and agree to avoid sensitive topics. Small changes like that
+            could make a big difference.
+          phrases: [is definitely a real issue, A big part of the problem is that, That's why more and more people, 'In my opinion, the solution isn''t to']
+        - text: >-
+            I think it's important to talk about this issue honestly, because holiday stress affects a lot of families.
+            From what I've seen, there are three main causes. The first is physical exhaustion. Traveling across the
+            country on the same day as millions of other people is tiring before the holiday even starts. The second is
+            the workload. Traditional holiday meals involve dozens of dishes, and the person who does most of the work
+            often ends up resenting the whole event. The third is emotional pressure, especially for young adults who get
+            compared with their cousins. Personally, I don't blame people for skipping gatherings, but I also think
+            something valuable gets lost when they do. A better approach would be for families to openly discuss what they
+            actually want from the holiday. In my family, we did that a few years ago, and we decided to cut the number of
+            dishes in half and take turns hosting. Since then, holidays have become something we actually look forward to.
+          phrases: ['From what I''ve seen, there are three main causes', 'Personally, I don''t blame people for', A better approach would be, Since then]
+      al:
+        - text: >-
+            Holiday stress is a topic that comes up every single year in Korea, and I think it reflects a deeper gap
+            between tradition and modern life. The customs we follow on Seollal and Chuseok developed when most people
+            lived in farming villages with large extended families nearby. In that context, gathering at the eldest son's
+            house and preparing a big ceremony made sense. Today, though, families are scattered across the country, most
+            people work long hours, and the idea that certain family members should do all the cooking is increasingly
+            seen as unfair. When you put all that together, it's no surprise that many people associate holidays with
+            exhaustion rather than rest. Personally, I understand why some choose to skip gatherings altogether, but I
+            think that's more of a symptom than a solution. What families really need is an honest conversation about
+            which traditions still matter to them and which ones are just habits. For instance, some families have kept
+            the memorial ceremony but stopped preparing dozens of dishes, while others have started rotating who hosts. If
+            more people were willing to adapt like that, I think holidays could become meaningful again rather than
+            something to survive.
+          phrases: [reflects a deeper gap between, In that context, it's no surprise that, more of a symptom than a solution]
+        - text: >-
+            I think this issue is more complicated than it first appears. On one hand, the complaints about holiday stress
+            are completely valid. Spending eight hours on the highway, cooking from dawn until night, and fielding
+            personal questions about your salary or marriage plans is not most people's idea of a vacation. It's also
+            worth noting that the burden has never been shared equally, and younger generations are much less willing to
+            accept that. On the other hand, holidays are one of the few times when families actually sit down together,
+            and in a society where everyone is so busy, that time is hard to replace. So rather than seeing it as a choice
+            between keeping traditions and abandoning them, I think we should look for a middle ground. The government and
+            companies could help by encouraging people to spread their vacation days around the holidays, which would ease
+            traffic. Families, meanwhile, could agree on simpler meals and fairer roles. In the end, a holiday should
+            leave people feeling closer to each other, not more exhausted, and I believe that's achievable with a bit of
+            flexibility.
+          phrases: [more complicated than it first appears, On one hand, It's also worth noting that, rather than seeing it as a choice between]
+    tip_ko: 이슈 문항은 '내 입장 → 이유 두세 개 → 해결 방법' 순서로 말해요. In my opinion, That's why 같은 연결어로 논리를 이어요.

@@ -3,57 +3,69 @@ import { getAttempt, getProfile, getRecording, getSetting, listAttempts, putAtte
 import { hasMic, meter, openMic, stopSpeaking } from './media.js';
 import { Aborted, Runner } from './runner.js';
 import { runToeic } from './toeic.js';
+import { findQuestion } from './opic_plan.js';
 import { buildSubmission, importFeedback, markSubmitted, shareOrDownload } from './submit.js';
 
 const $app = () => document.getElementById('app');
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-const TYPE_KO = { read_aloud: '지문 읽기', describe_photo: '사진 묘사', respond_q: '듣고 답하기', info_based: '자료 보고 답하기', opinion: '의견 말하기' };
+export const TYPE_KO = { read_aloud: '지문 읽기', describe_photo: '사진 묘사', respond_q: '듣고 답하기', info_based: '자료 보고 답하기', opinion: '의견 말하기',
+  self_intro: '자기소개', description: '묘사', routine: '습관·일상', past_experience: '과거 경험', comparison: '비교', issue: '사회 이슈',
+  roleplay_ask: '롤플레이 · 질문하기', roleplay_solve: '롤플레이 · 문제 해결', roleplay_experience: '롤플레이 · 관련 경험' };
 const PHASE_KO = { directions: '안내를 들어요', listen: '질문을 들어요', read: '자료 읽는 시간', prep: '준비 시간', beep: '삐 소리 뒤에 말해요', speak: '답변 시간' };
 
 let current = null;   // 진행 중인 Runner
+export function setCurrent(r) { stopCurrent(); current = r; }
 export function stopCurrent() { if (current) { current.abort(); current = null; stopSpeaking(); } }
 
 export const target = (data) => {
-  const t = getSetting('target.toeic', 'lv6');
+  const t = getSetting(`target.${data.exam}`, data.exam === 'opic' ? 'im2' : 'lv6');
   return data.levels.levels.includes(t) ? t : data.levels.levels[0];
 };
-const levelLabel = (data, lv) => {
+export const levelLabel = (data, lv) => {
   const l = data.levels.labels[lv] || {};
   return `${l.name || lv}${l.score ? ` (${l.score})` : ''}`;
 };
-function levelSelect(data, onChange) {
+export function levelSelect(data, onChange) {
   const sel = document.createElement('select');
-  sel.id = 'target';
+  sel.id = data.exam === 'opic' ? 'target-opic' : 'target';
   sel.innerHTML = data.levels.levels.map((lv) => `<option value="${lv}">${esc(levelLabel(data, lv))}</option>`).join('');
   sel.value = target(data);
   sel.onchange = async () => {
-    setSetting('target.toeic', sel.value);
+    setSetting(`target.${data.exam}`, sel.value);
     const p = await getProfile();                       // 학생 정보의 목표 레벨도 같이 바꿔요(제출 꾸러미에 들어가요)
-    if (p) { p.targets = { ...(p.targets || {}), toeic: sel.value }; await putProfile(p); }
+    if (p) { p.targets = { ...(p.targets || {}), [data.exam]: sel.value }; await putProfile(p); }
     onChange?.(sel.value);
   };
   return sel;
 }
-const fmtDate = (iso) => { try { return new Date(iso).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }); } catch { return iso; } };
+export const fmtDate = (iso) => { try { return new Date(iso).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }); } catch { return iso; } };
 
 // ── 홈 ──────────────────────────────────────────────
-export async function home(data, profile) {
+export async function home(data, profile, opicData) {
   const app = $app();
+  const exams = profile?.exams?.length ? profile.exams : ['toeic'];
   app.innerHTML = `
-    <section class="panel">
-      ${profile?.name ? `<p class="muted">${esc(profile.name)} 님, 안녕하세요.</p>` : ''}
+    ${profile?.name ? `<p class="muted">${esc(profile.name)} 님, 안녕하세요.</p>` : ''}
+    ${exams.includes('toeic') ? `<section class="panel">
       <h1>토익스피킹 모의테스트</h1>
       <label class="row">목표 레벨 <span id="lvslot"></span></label>
       <p class="muted">결과 화면에서 이 레벨의 모범답변이 먼저 나와요. 언제든 바꿀 수 있어요.</p>
-    </section>
-    <section class="panel"><h2>세트</h2><div class="list" id="sets"></div></section>
+      <h2>세트</h2><div class="list" id="sets"></div>
+    </section>` : ''}
+    ${exams.includes('opic') && opicData ? `<section class="panel" id="opic-panel">
+      <h1>OPIc 모의고사</h1>
+      <label class="row">목표 등급 <span id="lvslot-opic"></span></label>
+      <p class="muted">설문과 자가평가로 매번 다른 문항이 조합돼요. 약 40분, 문항마다 답하고 '다음 문제'를 눌러요.</p>
+      <div class="btns"><a class="btn primary" href="#/opic/start">응시 시작</a></div>
+    </section>` : ''}
     <section class="panel"><h2>최근 응시</h2><div class="list" id="recent"><p class="muted">아직 없어요.</p></div></section>
     <section class="panel"><h2>피드백 불러오기</h2>
       <p class="muted">선생님이 보낸 피드백 파일(.json)을 고르면 그 응시의 결과 화면에 붙어요.</p>
       <label class="btn" for="fbfile">파일 고르기</label><input type="file" id="fbfile" accept=".json,application/json" hidden>
       <p class="err" id="fberr" role="alert"></p></section>`;
-  app.querySelector('#lvslot').append(levelSelect(data));
-  app.querySelector('#sets').innerHTML = data.sets.map((s) => `
+  app.querySelector('#lvslot')?.append(levelSelect(data));
+  if (opicData) app.querySelector('#lvslot-opic')?.append(levelSelect(opicData));
+  if (app.querySelector('#sets')) app.querySelector('#sets').innerHTML = data.sets.map((s) => `
     <div class="li"><div><b>${esc(s.title_ko || s.id)}</b>${s.status === 'draft' ? ' <span class="tag">초안</span>' : ''}
     <div class="muted">${s.items.length}문항 · 약 20분</div></div>
     <a class="btn primary" href="#/start/${encodeURIComponent(s.id)}">응시 시작</a></div>`).join('');
@@ -66,11 +78,11 @@ export async function home(data, profile) {
   let attempts = [];
   try { attempts = await listAttempts(); } catch { /* 저장소를 못 열면 기록 없이 */ }
   if (attempts.length) {
-    const title = (id) => data.sets.find((s) => s.id === id)?.title_ko || id;
+    const title = (id) => (id === 'opic' ? 'OPIc 모의고사' : data.sets.find((s) => s.id === id)?.title_ko || id);
     app.querySelector('#recent').innerHTML = attempts.slice(0, 10).map((a) => `
       <div class="li"><div><b>${esc(title(a.setId))}</b> <span class="muted">${esc(fmtDate(a.startedAt))}</span>
       <div class="muted">${a.finishedAt ? '완료' : `진행 중 · Q${a.next}부터`}${a.submittedAt ? ' · 보냄' : ''}${a.feedback ? ' · <b class="fbtag">피드백 도착</b>' : ''}</div></div>
-      <div class="btns">${a.finishedAt ? '' : `<a class="btn" href="#/resume/${a.id}">이어하기</a>`}
+      <div class="btns">${a.finishedAt ? '' : `<a class="btn" href="#/${a.exam === 'opic' ? 'opic/resume' : 'resume'}/${a.id}">이어하기</a>`}
       <a class="btn" href="#/result/${a.id}">결과</a></div></div>`).join('');
   }
 }
@@ -239,14 +251,18 @@ export async function result(data, attemptId) {
   const app = $app();
   const attempt = await getAttempt(attemptId);
   if (!attempt) { app.innerHTML = `<p class="panel">기록을 찾지 못했어요.</p>`; return; }
-  const set = data.sets.find((s) => s.id === attempt.setId);
+  // 토익은 세트 문항, OPIc는 응시 때 조합한 문항 목록이에요
+  const set = data.exam === 'opic'
+    ? { id: 'opic', title_ko: 'OPIc 모의고사', items: (attempt.questions || []).filter((it) => it.num < attempt.next || attempt.finishedAt)
+        .map((it) => ({ ...findQuestion(data, it.qid), num: it.num, qid: it.qid })) }
+    : data.sets.find((s) => s.id === attempt.setId);
   const lv = target(data);
   const urls = [];
   app.innerHTML = `
     <section class="panel">
       <h1>${esc(set?.title_ko || attempt.setId)} 결과 <small class="muted">${esc(fmtDate(attempt.startedAt))}</small></h1>
       <label class="row">목표 레벨 <span id="lvslot"></span></label>
-      ${attempt.finishedAt ? '' : `<p>아직 다 끝내지 않았어요. <a href="#/resume/${attempt.id}">Q${attempt.next}부터 이어하기</a></p>`}
+      ${attempt.finishedAt ? (attempt.timedOut ? '<p class="muted">시험 시간이 끝나서 남은 문항 없이 마쳤어요.</p>' : '') : `<p>아직 다 끝내지 않았어요. <a href="#/${attempt.exam === 'opic' ? 'opic/resume' : 'resume'}/${attempt.id}">Q${attempt.next}부터 이어하기</a></p>`}
       <p class="muted" id="sum"></p>
       <div class="btns"><button class="btn primary" id="submit">${attempt.submittedAt ? '선생님께 다시 보내기' : '선생님께 보내기'}</button></div>
       <p class="muted" id="submitmsg">${attempt.submittedAt ? `${esc(fmtDate(attempt.submittedAt))}에 보냈어요.` : '녹음 파일을 묶어서 카톡 등으로 보내요. 휴대폰이 아니면 파일로 내려받아져요.'}</p>
@@ -265,7 +281,9 @@ export async function result(data, attemptId) {
     const list = data.checklists[item.type] || [];
     const mine = attempt.checks?.[item.num] || [];
     checked += mine.length; totalChecks += list.length;
-    const prompt = item.type === 'read_aloud' ? `<p class="readtext sm">${esc(item.text)}</p>`
+    const prompt = data.exam === 'opic'
+      ? `${item.topic?.situation_ko ? `<p class="context sm">${esc(item.topic.situation_ko)}</p>` : ''}<p class="question">${esc(item.question)}</p>`
+      : item.type === 'read_aloud' ? `<p class="readtext sm">${esc(item.text)}</p>`
       : item.type === 'describe_photo' ? `<img class="photo sm" src="${esc(item.image)}" alt="">`
       : `${item.context ? `<p class="context sm">${esc(item.context)}</p>` : ''}${item.info ? infoTable(item.info) : ''}<p class="question">${esc(item.question)}</p>`;
     const model = item.type === 'read_aloud'
@@ -276,7 +294,7 @@ export async function result(data, attemptId) {
     card.className = 'card';
     card.dataset.num = item.num;
     card.innerHTML = `
-      <header><b>Q${item.num}</b> <span class="muted">${esc(TYPE_KO[item.type])}</span></header>
+      <header><b>Q${item.num}</b> <span class="muted">${esc(TYPE_KO[item.type])}${item.topic?.title_ko && item.topic.title_ko !== TYPE_KO[item.type] ? ` · ${esc(item.topic.title_ko)}` : ''}</span></header>
       ${prompt}
       <h4>내 답변</h4>${audio}
       ${itemFeedback(data, attempt.feedback, item)}

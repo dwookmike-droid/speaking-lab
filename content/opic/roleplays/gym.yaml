@@ -1,0 +1,415 @@
+schema_version: 1
+id: gym
+kind: roleplay
+title_ko: 헬스장 등록
+situation_ko: 집 근처 헬스장에 전화해서 등록 정보를 묻고, 등록하자마자 헬스장이 공사로 문을 닫는 문제를 해결해요.
+status: ready
+questions:
+- id: gym-roleplay_ask
+  type: roleplay_ask
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    I'd like to give you a situation and ask you to act it out. You want to join a new gym near your home. Call
+    the gym and ask three or four questions to get the information you need.
+  model:
+    il:
+    - text: >-
+        Hi. I want to join your gym. How much is it for one month? What time do you open? Do you have showers? Thank
+        you.
+      phrases:
+      - I want to join your gym
+      - What time do you open
+    - text: >-
+        Hello. I live near your gym. Can I exercise in the morning? Do you have yoga classes? How much is it? Thanks.
+      phrases:
+      - I live near your gym
+      - Do you have yoga classes
+    im1:
+    - text: >-
+        Hi, I'm calling because I want to join a gym near my house. I have some questions. How much is the membership
+        for three months? What time do you open in the morning? I usually work out before work. Also, do you have
+        personal trainers? Thank you.
+      phrases:
+      - I usually work out
+      - do you have personal trainers
+    - text: >-
+        Hello, I just moved to this area, and I'm looking for a gym. Can I ask a few questions? Do you have group
+        classes like yoga or spinning? Are you open on weekends? And is there a parking lot? Thank you for your
+        help.
+      phrases:
+      - I just moved to this area
+      - Can I ask a few questions
+      - Are you open on weekends
+    im2:
+    - text: >-
+        Hi, I'm calling because I'm interested in joining your gym. I want to get in shape before summer, so I have
+        a few questions. First, how much does it cost for one month and for six months? Second, what are your opening
+        hours on weekdays? Also, do you have a personal training program for beginners? And finally, can I use the
+        gym once for free before I sign up? Thank you.
+      phrases:
+      - I'm interested in joining
+      - I want to get in shape
+      - before I sign up
+    - text: >-
+        Hello, I'm looking for a gym for my wife and me. We both work late, so I want to ask some questions. Are
+        you open until midnight? Do you have a discount for couples? Also, are there lockers and towels for members?
+        And how crowded is the gym in the evening? Thanks so much for your help.
+      phrases:
+      - We both work late
+      - Do you have a discount for couples
+      - how crowded is the gym
+    im3:
+    - text: >-
+        Hi there, I'm thinking about joining a gym for the first time, and a friend recommended yours, so I'd like
+        to ask a few questions. First of all, how much are your memberships? I'd probably go three or four times
+        a week. Also, I've never used gym machines before, so is there someone who can show me how to use them?
+        Do you have group classes for beginners? And lastly, when is the gym the least busy? Thanks.
+      phrases:
+      - for the first time
+      - a friend recommended yours
+      - when is the gym the least busy
+    - text: >-
+        Hello, I'm calling because I recently hurt my back, and my doctor told me to start exercising regularly.
+        So I'm looking for a gym that's good for beginners. Do you have trainers who work with people with back
+        problems? How much are personal training sessions? Also, is there a swimming pool? I heard swimming is good
+        for your back. And finally, are there any special prices for new members this month? Thank you.
+      phrases:
+      - my doctor told me to
+      - I heard swimming is good for
+      - special prices for new members
+    ih:
+    - text: >-
+        Hi, how's it going? I'm calling because I just moved into the apartment complex across the street, and I'm
+        looking for a gym that's close to home. I've been working out for a few years, so I have some specific questions.
+        First, I mostly do weight training, so do you have enough squat racks and free weights? Second, how much
+        is a twelve-month membership, and is there a discount if I pay all at once? I'm also curious about how crowded
+        it gets around seven. And lastly, do you offer a trial period? Thanks a lot.
+      phrases:
+      - I have some specific questions
+      - is there a discount if I pay all at once
+      - I'm also curious about
+    - text: >-
+        Hello, I hope you can help me. My daughter and I want to start exercising together, so we're looking for
+        a gym that's good for both of us. She's sixteen, so first of all, do you allow teenagers to join? Second,
+        do you have family memberships, and how much do they cost? We're also interested in group classes, especially
+        dance or yoga, so could you tell me what classes are available on weekends? Finally, is there a women's
+        locker room with showers and hair dryers? Thank you so much.
+      phrases:
+      - do you allow teenagers to join
+      - We're also interested in
+      - could you tell me what classes
+    al:
+    - text: >-
+        Hi, thanks for picking up. I've been meaning to get back into shape for a while now, and your gym came up
+        when I was searching for places near my office. Before I commit, I'd love to ask you a few things. To begin
+        with, what are your opening hours on weekdays? Some days I'd like to come in before work, around six. Next,
+        is there a cheaper plan if I only come on weekdays? I'm also wondering about personal training. Is the first
+        session free, and how are trainers matched with members? Lastly, can I freeze my membership if I travel
+        for work? Thank you.
+      phrases:
+      - I've been meaning to
+      - Before I commit
+      - can I freeze my membership
+    - text: >-
+        Hello, I hope I'm not catching you at a busy time. My husband and I are planning to join a gym together,
+        and a coworker said great things about yours, so I'd like to ask a handful of questions. First of all, do
+        you offer couple memberships, and how much would we save compared to two individual ones? Second, we're
+        both pretty new to working out, so do you run any orientation sessions for beginners? On top of that, are
+        there set hours for lap swimming in the pool? And finally, what's your cancellation policy if one of us
+        moves away? Thanks so much.
+      phrases:
+      - I hope I'm not catching you at a busy time
+      - how much would we save
+      - what's your cancellation policy
+  tip_ko: 내 상황(초보, 아침 운동, 가족과 함께)을 먼저 말하면 질문이 자연스럽게 이어져요. 질문은 가격, 시간, 시설로 나눠요.
+- id: gym-roleplay_solve
+  type: roleplay_solve
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    I'm sorry, but there's a problem. Right after you paid for a three-month membership, the gym announces that
+    it will close for a month for repairs. Call the gym manager, explain the situation, and suggest two or three
+    ways to solve the problem.
+  model:
+    il:
+    - text: >-
+        Hi. I paid for three months. But now the gym is closed for one month. I can't exercise. Can I get one more
+        month free? Or my money back? Thank you.
+      phrases:
+      - I paid for three months
+      - Or my money back
+    - text: >-
+        Hello. I have a problem. Your gym is closed. I paid a lot of money. Can I use another gym? Or can you give
+        me a refund? Please call me back.
+      phrases:
+      - Can I use another gym
+      - Please call me back
+    im1:
+    - text: >-
+        Hi, this is Minsu. I'm a member of your gym. I paid for a three-month membership last week, but today I
+        saw a notice that the gym will close for one month because of repairs. I'm a little upset because I just
+        started exercising. Can you add one more month to my membership? Or maybe I can use another gym nearby?
+        If not, I want a refund for one month. Thank you.
+      phrases:
+      - I'm a little upset
+      - Can you add one more month
+      - If not
+    - text: >-
+        Hello, I'm calling about my gym membership. I signed up for three months, and I paid two hundred thousand
+        won. But now the gym is closing for a month for repairs, and I didn't know about this. It's not fair. Could
+        you give me back the money for one month? Or you can make my membership one month longer. Please let me
+        know. Thanks.
+      phrases:
+      - I'm calling about
+      - It's not fair
+      - Please let me know
+    im2:
+    - text: >-
+        Hi, my name is Jiyoung, and I'm a member of your gym. I signed up for a three-month membership just two
+        weeks ago, and I paid for everything in advance. But yesterday, I saw a sign on the door saying the gym
+        will be closed for a whole month for repairs. Nobody told me about this when I registered, so I'm pretty
+        disappointed. I have a few ideas to solve this. First, you could extend my membership by one month. Second,
+        maybe I could use one of your other branches during the repairs. Or third, you could refund one month of
+        the fee. Please call me back. Thank you.
+      phrases:
+      - Nobody told me about this
+      - I have a few ideas to solve this
+      - extend my membership
+    - text: >-
+        Hello, I'm calling because I have a problem with my membership. I just paid for three months of personal
+        training and gym use, and now I hear that the gym is closing for four weeks because of construction. I was
+        planning to lose weight before my sister's wedding, so this is really bad timing for me. Could my trainer
+        meet me at a park or another place for our sessions? If that's not possible, could you add the four weeks
+        at the end of my membership? Or I'd like to get a partial refund. I hope we can find a good solution. Thanks.
+      phrases:
+      - this is really bad timing for me
+      - If that's not possible
+      - I hope we can find a good solution
+    im3:
+    - text: >-
+        Hi, this is Daniel Cho. I'm calling about my membership. I signed up for a three-month plan about ten days
+        ago, and I paid the full amount at the front desk. But when I went to the gym this morning, I found a notice
+        saying it'll be closed for a whole month starting next week because of repairs. Honestly, I'm pretty frustrated,
+        because nobody mentioned this when I registered. I have a regular workout routine, and taking a month off
+        would really set me back. So I'd like to suggest a few options. First, is there any chance I could use a
+        partner gym nearby during the repairs? If not, could you extend my membership by a month? Otherwise, I'd
+        like a refund for the month the gym is closed. Thanks.
+      phrases:
+      - Honestly, I'm pretty frustrated
+      - would really set me back
+      - is there any chance
+    - text: >-
+        Hello, my name is Sora, and I'm a member at your downtown location. I paid for three months last week, mostly
+        because I wanted to take the morning yoga classes. Today, though, I got a text message saying the whole
+        building will be closed for a month for repairs, and that all classes are canceled. I was really surprised,
+        because I had just paid. I understand repairs are necessary, but I think I should get something for the
+        month I lose. Could the yoga teacher hold classes online during the repairs? Or could you add one month
+        to my membership? If neither is possible, I'd like you to refund part of my payment. Please call me back
+        when you get a chance. Thank you.
+      phrases:
+      - I understand repairs are necessary
+      - If neither is possible
+      - when you get a chance
+    ih:
+    - text: >-
+        Hi, this is Kevin Park calling. I'm a member at your gym, and I'm calling because of the closure notice
+        I just received. I signed up for a three-month membership about two weeks ago, and I paid the full amount
+        up front, which was quite a lot of money for me. But now I've been told that the gym will be closed for
+        an entire month for renovations. I completely understand that repairs need to be done, but I really wish
+        someone had told me before I signed up, because I probably would have waited. Anyway, I'd like to suggest
+        a few ways we could solve this. First, if you have another branch or a partner gym in the area, I'd be happy
+        to use that temporarily. Second, you could simply extend my membership by one month. And finally, if neither
+        option works, I think a partial refund would be fair. Please let me know which option works best.
+      phrases:
+      - I really wish someone had told me
+      - I'd be happy to
+      - a partial refund would be fair
+    - text: >-
+        Hello, I hope you're doing well. My name is Eunji, and I've been a member at your gym for a couple of years
+        now. I just renewed my membership for three months, along with ten personal training sessions, and I paid
+        for everything last Monday. This morning, however, the front desk staff told me that the gym is going to
+        close for about a month because of repair work on the pipes. To be honest, I'm a bit frustrated, because
+        my trainer and I had just started a new program, and I'm preparing for a half marathon in the fall. So I'd
+        like to ask about a few options. Could my trainer and I continue our sessions at another location, maybe
+        outdoors? If that's not possible, could you freeze my membership and training sessions until the gym reopens?
+        Or, as a last option, I'd like a refund for the unused month. Thank you.
+      phrases:
+      - I've been a member
+      - freeze my membership
+      - as a last option
+    al:
+    - text: >-
+        Hi, my name is Jason Lee, and I'm calling about my membership. I'm sorry to bother you, but I've just found
+        out about the upcoming closure, and I'd like to talk about how it affects me. About two weeks ago, I signed
+        up for a three-month membership and paid the entire amount at once, partly because the staff told me it
+        was the best deal. Then yesterday, I got an email saying the gym will be completely closed for a month starting
+        next week, due to repairs on the locker rooms and the air conditioning. Now, I understand that these things
+        happen, but frankly, it's a little disappointing that no one mentioned it when I was signing up, especially
+        since the repairs must have been planned in advance. So, I'd like to propose a few solutions. First of all,
+        if there's a partner gym nearby, I'd be willing to work out there during the closure. Alternatively, you
+        could extend my membership by a month at no extra cost. And if neither of those is possible, I'd like a
+        refund for the month the gym is closed. I hope we can work something out.
+      phrases:
+      - I understand that these things happen
+      - Alternatively
+      - I hope we can work something out
+    - text: >-
+        Hello, this is Mina Kang. I've been a member at your gym for almost three years, and I've always been really
+        happy with the service, so I'm a little surprised to be making this call. Last week, I renewed my membership
+        for another three months, and I also signed up for the small-group strength classes that start this month.
+        However, I just saw the notice on the front door saying that the entire facility will be closed for a month
+        while you replace the floors. I completely understand that the floors needed work, but the timing is pretty
+        frustrating, since I'd planned my whole training schedule around these classes. With that in mind, I'd like
+        to suggest a few things. Ideally, the classes could move to another space, like a community center or even
+        a park, at least on weekends. If that doesn't work, could you put my membership on hold and restart it once
+        you reopen? And if that's not possible either, I think a partial refund would be the fairest solution. Thanks
+        for listening, and I look forward to hearing from you.
+      phrases:
+      - the timing is pretty frustrating
+      - put my membership on hold
+      - I look forward to hearing from you
+  tip_ko: 이름과 회원 정보를 먼저 밝히고, 언제 얼마를 냈는지 말해요. 대안은 다른 지점, 기간 연장, 환불처럼 서로 다른 것으로 골라요.
+- id: gym-roleplay_experience
+  type: roleplay_experience
+  level: [1, 2, 3, 4, 5, 6]
+  question: >-
+    That's the end of the situation. Have you ever had a problem with a service you paid for, such as a gym, a class,
+    or a delivery? Tell me what happened and how the problem was solved.
+  model:
+    il:
+    - text: >-
+        Yes. Last year I ordered a jacket online. But it was the wrong size. I called the store. They sent a new
+        jacket. It was okay. I was happy. The new one was perfect.
+      phrases:
+      - I ordered a jacket online
+      - It was the wrong size
+    - text: >-
+        I took a cooking class last month. But the teacher was sick. The class was canceled two times. I asked for
+        my money. They gave me a refund. It was fine.
+      phrases:
+      - The class was canceled
+      - They gave me a refund
+    im1:
+    - text: >-
+        Yes, I had a problem with a swimming class last year. I paid for two months, but after two weeks, the pool
+        closed because of a problem with the water. I was disappointed because I really liked the class. I called
+        the sports center, and they said they would add two weeks to my class. In the end, I could finish the class,
+        so it was okay.
+      phrases:
+      - I was disappointed because
+      - they said they would
+      - In the end
+    - text: >-
+        I had a problem with a food delivery last month. I ordered fried chicken for my family, but it took almost
+        two hours to arrive. When it came, it was cold. I called the restaurant and told them about the problem.
+        The owner said sorry and gave me a coupon for my next order. I was still a little upset, but I liked that
+        he said sorry.
+      phrases:
+      - it took almost two hours
+      - I was still a little upset
+      - I liked that
+    im2:
+    - text: >-
+        Yes, I had a similar problem with an English academy about two years ago. I signed up for a three-month
+        speaking course and paid for it in advance. But after one month, my teacher suddenly quit, and the academy
+        didn't have a new teacher for three weeks. I was really frustrated because I was preparing for a job interview.
+        I called the manager and explained the situation. At first, she just said sorry. But I asked for a refund
+        for the missed classes, and she finally agreed. She also gave me a free online class. In the end, I was
+        satisfied with the result.
+      phrases:
+      - suddenly quit
+      - At first
+      - I was satisfied with the result
+    - text: >-
+        I had a problem with a moving company when I moved to a new apartment last year. I booked the company two
+        weeks before, and I paid a deposit. But on moving day, the workers came three hours late, and they broke
+        one of my chairs. I was really upset because I had to wait all morning. I called the company and told them
+        what happened. They apologized and paid for a new chair. They also gave me a small discount. It was a stressful
+        day, but they solved the problem well.
+      phrases:
+      - I paid a deposit
+      - It was a stressful day
+      - they solved the problem well
+    im3:
+    - text: >-
+        Actually, something like that happened to me last year with a yoga studio near my office. I bought a six-month
+        membership because it was on sale, and I went three times a week. But after about two months, the studio
+        suddenly closed without any notice. When I went there one evening, the door was locked, and there was just
+        a small sign on the door. I was really shocked, and I was worried that I'd lose all my money. I called the
+        owner many times, but she didn't answer. Finally, I contacted the consumer protection center, and they helped
+        me get most of my money back. It took almost two months, but I learned to be careful about paying for a
+        long time in advance.
+      phrases:
+      - without any notice
+      - I was worried that
+      - I learned to be careful
+    - text: >-
+        Yes, I remember a problem with an online shopping order last winter. I ordered a new laptop for school,
+        and the website said it would arrive in three days. But a week later, it still hadn't arrived. I checked
+        the tracking information, and it said the laptop was delivered, but I never got it. I was so worried because
+        it was really expensive. I called the customer service center, and at first they said I should check with
+        my neighbors. But I explained that I had already checked everywhere. In the end, they found out the driver
+        had delivered it to the wrong building, and they sent me a new one. It was stressful, but it worked out.
+      phrases:
+      - it still hadn't arrived
+      - In the end, they found out
+      - it worked out
+    ih:
+    - text: >-
+        Yes, I've had a few problems like that, but the one I remember most clearly happened with a gym, actually.
+        About three years ago, I signed up for a one-year membership at a gym near my old apartment, because it
+        was much cheaper than paying every month. For the first few months, everything was great. But then the gym
+        changed owners, and the new owner started cutting back on everything. They reduced the opening hours, canceled
+        most of the group classes, and stopped cleaning the showers properly. I complained to the staff several
+        times, but nothing changed. Eventually, I wrote a detailed email to the new owner explaining that the service
+        wasn't what I'd paid for. To my surprise, he called me the next day, apologized, and offered me a refund
+        for the remaining months. I took the refund and joined a different gym, and I've been much happier since
+        then.
+      phrases:
+      - cutting back on
+      - Eventually
+      - To my surprise
+    - text: >-
+        I had a pretty frustrating experience with a furniture delivery about a year ago. I'd just moved into a
+        new apartment, and I ordered a sofa and a dining table from an online store. They promised to deliver everything
+        within a week, so I took a day off work to wait for them. But on the delivery day, nobody showed up, and
+        nobody called me either. When I finally reached customer service, they told me the items were still at the
+        warehouse because of a scheduling mistake. I was really annoyed, since I'd wasted a whole day off. I explained
+        that I couldn't take another day off, and I asked them to deliver on a weekend instead. After some back
+        and forth, they agreed, and they also gave me a discount for the trouble. It wasn't a great experience,
+        but at least they tried to make it right.
+      phrases:
+      - nobody showed up
+      - After some back and forth
+      - at least they tried to make it right
+    al:
+    - text: >-
+        Oh, absolutely. The one that comes to mind happened about two years ago, when I signed up for an intensive
+        coding bootcamp. It was a twelve-week course, and it wasn't cheap, but I was hoping it would help me switch
+        careers. For the first few weeks, everything went smoothly, but then our main instructor suddenly left,
+        and the replacement clearly didn't know the material very well. The quality of the lessons dropped dramatically,
+        and a lot of us felt like we were wasting our time and money. At first, I just complained to my classmates,
+        but eventually I realized that wasn't going to change anything. So I organized a short meeting with a few
+        other students, and we wrote a polite but firm letter to the director, listing specific problems and suggesting
+        solutions. To their credit, the school responded within a week. They brought in an experienced instructor
+        for the rest of the course and offered everyone a partial refund. Looking back, it taught me that complaining
+        is much more effective when you're organized and propose realistic solutions.
+      phrases:
+      - The one that comes to mind
+      - To their credit
+      - Looking back, it taught me
+    - text: >-
+        Yes, I actually had a frustrating experience with a cooking class last spring. I'd paid for an eight-week
+        course on Korean home cooking, mostly because I wanted to learn how to make the dishes my grandmother used
+        to cook. However, after the third week, the classes started getting canceled at the last minute, usually
+        with a text message about an hour before we were supposed to start. At first, I tried to be understanding,
+        since the teacher said she had family issues. But after the fourth cancellation, I'd already wasted several
+        evenings rearranging my schedule, so I decided to call the cooking studio directly. I explained the situation
+        calmly and pointed out that I'd paid for eight classes but had only attended three. The manager was apologetic
+        and offered two options: either join a different teacher's class on weekends or get a refund for the remaining
+        sessions. I chose the weekend class, and it turned out to be even better than the original one. In the end,
+        things worked out, but it reminded me to speak up early rather than just waiting.
+      phrases:
+      - at the last minute
+      - I tried to be understanding
+      - speak up early
+  tip_ko: 꼭 헬스장 이야기가 아니어도 돼요. 돈을 냈는데 서비스가 약속과 달랐던 일 하나를 골라 문제, 대처, 결과 순서로 말해요.

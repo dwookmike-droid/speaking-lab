@@ -1,0 +1,443 @@
+schema_version: 1
+id: park
+kind: survey
+title_ko: 공원 가기
+status: ready
+questions:
+  - id: park-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you like going to parks. Tell me about a park you often visit. Where is it, and
+      what does it look like? Please describe it in as much detail as you can.
+    model:
+      il:
+        - text: >-
+            I often go to a park near my home. It is not very big. There are many trees and a small pond. There is
+            also a walking path. I like this park because it is quiet and clean.
+          phrases: [near my home, There are many trees, I like this park because]
+        - text: >-
+            My favorite park is in the center of my town. It has a big field and many benches. There is a playground
+            for kids. In spring, there are a lot of flowers. It is very pretty.
+          phrases: [My favorite park is, There is a playground, In spring]
+      im1:
+        - text: >-
+            I usually go to a park that is about ten minutes from my apartment. It is a medium-sized park with a lot
+            of tall trees. In the middle, there is a small lake, and some ducks live there. There is a long walking
+            path around the lake, and there are benches everywhere. On the weekend, many families come with their
+            kids. I like it because it is peaceful.
+          phrases: [about ten minutes from my apartment, In the middle, there is, I like it because]
+        - text: >-
+            The park I visit most is next to the river. It is very long and narrow. There is a bike path and a walking
+            path along the river. There are also some sports areas, like basketball courts. At night, the lights are
+            on, so it is safe. I go there two or three times a week. My family and I love walking there in the
+            evening.
+          phrases: [The park I visit most is, along the river, At night]
+      im2:
+        - text: >-
+            Let me tell you about the park I go to most often. It's a neighborhood park about ten minutes from my
+            apartment on foot. When you walk in, the first thing you see is a big grass field. People sit there and
+            have picnics. On the left side, there's a small pond with ducks, and there's a walking path around it.
+            There are also some exercise machines for older people. The best thing about this park is that it's never
+            too crowded, so I can really relax there. I usually go there with my dog on Saturday mornings.
+          phrases: [Let me tell you about, the first thing you see is, The best thing about this park is]
+        - text: >-
+            I often go to a riverside park in my city. It's quite big, and it stretches for several kilometers along
+            the river. There's a bike lane and a separate walking path, so it's safe for everyone. Along the path,
+            there are convenience stores, public restrooms, and lots of benches. In the evening, the bridges light up,
+            and the view is really beautiful. That's why many couples go there for a walk. I think it's one of the
+            best places in my city. On weekends, there are also many people riding bikes and flying kites. It is free,
+            too.
+          phrases: [It's quite big, That's why, I think it's one of the best]
+      im3:
+        - text: >-
+            The park I visit most often is a small neighborhood park right behind my apartment complex. It isn't
+            famous or anything, but I really love it. As you enter, there's a wide open lawn where kids play soccer
+            and people lie on blankets. Around the lawn, there's a walking path lined with cherry trees, so in April
+            the whole park turns pink. On the far side, there's a little pond with a wooden bridge. What I like most
+            is the atmosphere. It's calm, and I can hear birds instead of cars, which is rare in a big city. I've
+            lived near it for five years, and I still find new spots to sit and relax every season.
+          phrases: [It isn't famous or anything, lined with cherry trees, What I like most is]
+        - text: >-
+            I'd like to talk about the riverside park in my city, because I go there almost every week. It's a long
+            park that runs along the river, so it feels very open. There are separate paths for bikes and for people
+            who walk, which is really convenient. You can also find basketball courts, a small outdoor stage, and
+            grassy areas where people set up tents. When the weather is nice, the park gets lively with music and food
+            trucks. Even so, it never feels too crowded because it's so large. Honestly, it's my favorite place to
+            clear my head. Whenever I feel stressed after work, I just walk there for twenty minutes and feel much
+            better.
+          phrases: [I'd like to talk about, which is really convenient, 'Honestly, it''s my favorite place']
+      ih:
+        - text: >-
+            The park I go to most often is a neighborhood park just behind my apartment complex. It's not a famous
+            tourist spot, but for me it's kind of a hidden gem. When you walk through the main gate, you see a wide
+            lawn first. On weekends it's full of kids kicking balls and families on picnic mats. A walking path goes
+            all the way around the lawn, and it's lined with cherry trees, so in early April the whole place is
+            covered in pink petals. At the far end, there's a small pond with a wooden bridge and a few turtles
+            sunbathing on the rocks. There are also exercise machines and a little library box where people share
+            books. What I appreciate the most is how quiet it is. Even though it's in the middle of the city, I can
+            barely hear any traffic there.
+          phrases: [kind of a hidden gem, it's lined with cherry trees, What I appreciate the most is, Even though]
+        - text: >-
+            I'd like to describe the riverside park in my city, since I spend a lot of my free time there. It
+            stretches along the river for miles, so no matter where you live, there's an entrance nearby. The park is
+            divided into different zones. Near the water, there's a bike lane and a walking path, and they're
+            separated by a line of trees, so it feels safe. A little further up, there are basketball courts, soccer
+            fields, and wide grassy areas where people set up small tents. In summer, there are food trucks and street
+            performers, so it gets really lively in the evening. My favorite part, though, is the view at sunset, when
+            the sky turns orange and the bridges light up one by one. It honestly looks like a postcard. Even after
+            living here for years, I still never get tired of that view.
+          phrases: [It stretches along the river, The park is divided into, 'My favorite part, though, is']
+      al:
+        - text: >-
+            The park I visit most often is a small neighborhood park tucked behind my apartment complex, and I'd
+            honestly call it my second living room. It isn't the kind of place tourists would ever look for, but
+            that's exactly why I like it. As soon as you walk through the main gate, there's a wide, open lawn that's
+            usually full of kids chasing balls and parents relaxing on picnic mats. A gravel walking path loops around
+            the lawn, and it's lined with old cherry trees, so for about two weeks in April the entire path turns into
+            a pink tunnel. At the far end, there's a little pond with a wooden bridge, and if you look closely, you
+            can spot turtles sunbathing on the rocks. Someone also set up a small book-sharing box near the benches,
+            which says a lot about the neighborhood. What strikes me every time is how quiet it is. You're in the
+            middle of a crowded city, yet all you hear are birds and kids laughing.
+          phrases: [I'd honestly call it, that's exactly why I like it, which says a lot about, What strikes me every time is]
+        - text: >-
+            If I had to pick one park that really represents my lifestyle, it would be the riverside park in my city.
+            It runs along the river for what feels like endless miles, so wherever you live, you're never far from an
+            entrance. The layout is surprisingly well planned. Right by the water, there's a bike lane and a separate
+            walking path, divided by a row of trees, so cyclists and walkers don't get in each other's way. Further up
+            the bank, you'll find basketball courts, soccer fields, and big grassy areas where people pitch small
+            tents on weekends. During the summer, food trucks and street musicians show up in the evening, and the
+            whole place feels like a festival. But the moment I treasure the most is sunset. The sky turns orange, the
+            bridges light up one by one, and for a few minutes everyone seems to slow down and just watch. Whenever
+            friends visit from out of town, it's the first place I take them, and every single one of them has asked
+            when we can go back.
+          phrases: [If I had to pick one park, The layout is surprisingly well planned, the moment I treasure the most is]
+    tip_ko: 입구에서 안쪽으로 걸어 들어가듯 순서를 정해 말해요. 잔디밭, 산책로, 연못처럼 장소를 하나씩 짚으면 빠뜨리지 않아요.
+  - id: park-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      What do you usually do when you go to the park? Who do you go with, and when do you usually go? Tell me about
+      your typical visit from beginning to end.
+    model:
+      il:
+        - text: >-
+            I go to the park on Saturday morning. I go with my dog. First, I walk around the lake. Then I sit on a
+            bench and drink water. I stay there for one hour. Then I go home.
+          phrases: [on Saturday morning, First, Then I go home]
+        - text: >-
+            I usually go to the park after dinner. I go with my mom. We walk for thirty minutes. We talk about our
+            day. Sometimes we buy ice cream. It is fun.
+          phrases: [after dinner, We walk for thirty minutes, Sometimes]
+      im1:
+        - text: >-
+            I usually go to the park on weekend mornings, around eight o'clock. Most of the time I go with my dog,
+            Coco. First, we walk around the lake two times. After that, I let her play on the grass for a while. Then
+            I sit on a bench and listen to music. I usually stay for about an hour. When I get home, I feel very fresh
+            and ready for the day.
+          phrases: [on weekend mornings, After that, When I get home]
+        - text: >-
+            I go to the park two or three times a week, usually after dinner. I go with my mother because she wants to
+            exercise. We walk along the river for about forty minutes and talk about many things. Sometimes we stop at
+            a convenience store and buy some drinks. Then we sit on a bench and look at the river. I like this time
+            because I can talk with my mom.
+          phrases: [two or three times a week, Sometimes we stop at, I like this time because]
+      im2:
+        - text: >-
+            I usually go to the park on Saturday mornings, because it's quiet and the air is fresh. Most of the time,
+            I go with my dog. We leave home around eight. First, we walk around the pond two or three times, which
+            takes about thirty minutes. After that, I let my dog run on the grass and play with other dogs. When she
+            gets tired, I sit on a bench, drink some coffee, and read a few pages of a book. I usually come home
+            around ten. It's the best way to start my weekend.
+          phrases: [Most of the time, After that, It's the best way to start my weekend]
+        - text: >-
+            I go to the riverside park about three times a week, usually in the evening after dinner. I normally go
+            with my mom, because she started walking for her health last year. We walk for about forty minutes along
+            the river. While we're walking, we talk about our day, our family, or the TV shows we watch. On the way
+            back, we usually stop at a convenience store and buy some cold drinks. Then we sit on a bench by the river
+            for a while. These walks have become a really important part of our week.
+          phrases: [because she started, While we're walking, have become a really important part]
+      im3:
+        - text: >-
+            My park routine is pretty much the same every Saturday. I wake up around seven thirty, grab a quick
+            coffee, and head out with my dog. We start by walking two laps around the pond, which takes about half an
+            hour. After that, I take off her leash in the dog area so she can run around with her friends. While she's
+            playing, I usually chat with the other dog owners. We've become kind of close, actually. Once she's tired,
+            I find a bench in the shade and read for a bit. By ten, we're back home, and I always feel refreshed for
+            the rest of the weekend. It's simple, but I really enjoy it.
+          phrases: [pretty much the same, We start by, 'We''ve become kind of close, actually', By ten]
+        - text: >-
+            I go to the riverside park three or four times a week, usually after dinner, and almost always with my
+            mom. It started last year when her doctor told her to walk more, and now it's become our routine. We
+            usually leave home around eight, when it's cooler. We walk for about forty minutes along the river, and we
+            talk the whole time, about work, our family, or whatever is on our minds. On the way back, we stop at a
+            convenience store for something cold to drink. Then we sit by the water for ten minutes before going home.
+            I honestly look forward to it every day. It's a small thing, but it means a lot to both of us.
+          phrases: [It started last year when, now it's become our routine, I honestly look forward to it]
+      ih:
+        - text: >-
+            Every Saturday morning, I follow almost the same routine at the park. I usually wake up around seven
+            thirty, make a coffee in a travel mug, and head out with my dog before the park gets crowded. We start
+            with two laps around the pond, which takes about half an hour, and I use that time to just enjoy the
+            quiet. After that, we go to the off-leash area so she can run around with the other dogs. While she's
+            playing, I chat with the regulars. We've seen each other every weekend for about two years, so we're
+            almost like neighbors now. When she finally gets tired, I find a shady bench, finish my coffee, and read a
+            chapter of whatever book I'm into. We're usually home by ten, and that calm morning sets the mood for my
+            whole weekend.
+          phrases: [I follow almost the same routine, I use that time to, we're almost like neighbors now, sets the mood for]
+        - text: >-
+            I go to the riverside park three or four evenings a week, and nine times out of ten, I go with my mom. It
+            all started last spring when her doctor told her she needed to walk more. At first, I went with her just
+            to keep her company, but now I enjoy it as much as she does. We usually leave around eight, after the sun
+            goes down and it cools off. We walk for about forty minutes along the river, and the conversation never
+            really stops. We talk about work, my brother, or the drama we're both watching. On the way back, we always
+            grab something cold from a convenience store and sit by the water for a few minutes. It's a simple
+            routine, but it's become one of my favorite parts of the day. I think it's good for both our health and
+            our relationship.
+          phrases: [nine times out of ten, It all started, At first, 'It''s a simple routine, but']
+      al:
+        - text: >-
+            My Saturday mornings at the park have turned into a kind of ritual, and I rarely skip them. I'm usually up
+            by seven thirty, and I fill a travel mug with coffee before heading out with my dog, ideally before the
+            families and joggers take over. We always begin with two slow laps around the pond. That half hour is
+            honestly the quietest part of my week, so I don't even put in earphones. Then we move to the off-leash
+            area, where she runs around with the same group of dogs she's known for years. Meanwhile, I catch up with
+            their owners. It's funny, because I barely know my actual neighbors, but I know these people's jobs, their
+            kids' names, even their vacation plans. Once my dog is worn out, I settle on a shady bench and read a
+            chapter or two. By ten, we're heading home, and I feel like I've already had a full, satisfying day before
+            most people have even had breakfast. Honestly, I can't imagine my weekends without it anymore, and my dog
+            clearly feels the same way.
+          phrases: [have turned into a kind of ritual, 'It''s funny, because', I feel like I've already had]
+        - text: >-
+            Going to the riverside park with my mom has gradually become the backbone of my evenings. It began last
+            spring, when her doctor warned her that she needed to be more active. Honestly, I tagged along at first
+            just so she wouldn't go alone, but within a few weeks I was the one reminding her to put on her sneakers.
+            We head out three or four nights a week, usually around eight, once the heat of the day has faded. The
+            walk itself takes about forty minutes, and we spend the whole time talking about anything from work
+            problems to the drama we're both hooked on. On the way back, we always stop at the same convenience store
+            for something cold, and then we sit on the steps by the water for a while. Looking back, I think those
+            walks have brought us closer than anything else in the last few years. It's a small habit, but I genuinely
+            believe it has done more for our relationship than any family trip we've ever taken together. My mom says
+            the same thing.
+          phrases: [has gradually become the backbone of, 'Honestly, I tagged along at first', 'Looking back, I think']
+    tip_ko: 시간 순서대로 말해요. 언제 출발하는지, 거기서 무엇을 하는지, 언제 돌아오는지 차례로 짚고, 함께 가는 사람은 이유와 같이 말해요.
+  - id: park-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a memorable experience you had at a park. When was it, who were you with, and what happened? Why
+      was it so special to you?
+    model:
+      il:
+        - text: >-
+            Last spring, I went to the park with my friends. We had a picnic. We ate sandwiches and fruit. Then it
+            started to rain. We ran to a big tree. It was funny. I still remember that day.
+          phrases: [Last spring, Then it started to rain, I still remember]
+        - text: >-
+            Two years ago, I lost my dog in the park. I was very scared. I looked for her for one hour. Then a girl
+            found her. I was very happy. I said thank you many times.
+          phrases: [Two years ago, I was very scared, I was very happy]
+      im1:
+        - text: >-
+            I remember a picnic I had last spring. I went to the park with three of my college friends. We brought
+            sandwiches, fruit, and drinks, and we sat on the grass under the cherry trees. We talked and laughed for
+            hours. Suddenly, it started to rain very hard. We grabbed our things and ran under a big tree, but we got
+            wet anyway. It was really funny, and we still talk about it.
+          phrases: [I remember, 'Suddenly, it started to rain', we still talk about it]
+        - text: >-
+            About two years ago, something scary happened at the park. I was walking my dog, and she suddenly ran
+            after a cat. The leash fell from my hand, and she disappeared. I looked for her everywhere for almost an
+            hour. I was so worried. Then a little girl came to me with my dog. She was very kind. I was so happy and
+            thankful.
+          phrases: [About two years ago, I looked for her everywhere, I was so happy and thankful]
+      im2:
+        - text: >-
+            One of my most memorable days at the park was last spring. My college friends and I decided to have a
+            picnic under the cherry trees. We prepared sandwiches, fruit, and some snacks, and we found a perfect spot
+            on the grass. Everything was great. We were talking and taking pictures. But in the middle of the
+            afternoon, the sky suddenly got dark, and it started pouring. We grabbed everything and ran under a big
+            tree, but we were completely soaked. Instead of getting upset, we just laughed. It's still one of our
+            favorite memories.
+          phrases: [One of my most memorable days, But in the middle of the afternoon, Instead of getting upset]
+        - text: >-
+            The most memorable thing that happened to me at the park was when I lost my dog. It was about two years
+            ago. I was walking her in the evening, and she suddenly saw a cat and pulled really hard. The leash
+            slipped out of my hand, and she ran into the bushes. I called her name and searched everywhere for almost
+            an hour. I was about to call the police when a little girl walked toward me with my dog in her arms. I
+            thanked her about ten times. Since then, I always hold the leash really tightly.
+          phrases: [The most memorable thing, I was about to, Since then]
+      im3:
+        - text: >-
+            I'll never forget a picnic I had with my college friends last spring. We hadn't seen each other for
+            months, so we decided to meet at the park when the cherry blossoms were at their best. Everyone brought
+            something, like sandwiches, strawberries, and homemade cookies, and we spread a big blanket under the
+            trees. For a couple of hours, it was perfect. Then, all of a sudden, the sky turned gray and it started
+            pouring. We ran under a huge tree, laughing like kids, but we got completely soaked anyway. Even though
+            the picnic was ruined, it ended up being the most fun day we'd had in a long time.
+          phrases: [I'll never forget, 'Then, all of a sudden', it ended up being]
+        - text: >-
+            A really memorable thing happened to me at the park about two years ago. I was walking my dog one evening
+            when she spotted a cat and took off. The leash slipped right out of my hand, and in a second she was gone.
+            I panicked. I ran around the whole park shouting her name, and I asked everyone I saw if they had seen a
+            small white dog. After almost an hour, I was ready to give up. Just then, a little girl came up to me
+            holding my dog. I was so relieved that I almost cried. Since that day, I've always wrapped the leash
+            around my wrist.
+          phrases: [A really memorable thing happened, I was ready to give up, Just then, so relieved that]
+      ih:
+        - text: >-
+            The experience that comes to mind first is a picnic with my college friends last spring. We hadn't all
+            been together for almost a year, so we picked a Saturday when the cherry blossoms were supposed to be at
+            their peak. Everyone was in charge of something. I brought sandwiches, one friend made cookies, and
+            another brought a portable speaker. We set up a big blanket under the trees, and for a couple of hours it
+            was honestly perfect. We were catching up, playing music, and taking way too many photos. Then, out of
+            nowhere, the sky went dark and it started pouring. We grabbed everything and sprinted to a huge tree,
+            laughing the whole way, but we still got soaked. The funny thing is, that rainstorm is exactly why we
+            remember the day so clearly. Whenever we get together now, someone always brings up the day we got caught
+            in the rain.
+          phrases: [The experience that comes to mind first, Everyone was in charge of something, 'Then, out of nowhere', The funny thing is]
+        - text: >-
+            The most stressful but also most heartwarming experience I've had at a park happened about two years ago.
+            I was walking my dog on a weekday evening when she suddenly spotted a cat and bolted. The leash slipped
+            out of my hand, and within seconds she had disappeared into the bushes. I completely panicked. I ran up
+            and down the paths calling her name and showing her photo to everyone I passed. After almost an hour, it
+            was getting dark, and I was starting to imagine the worst. Then a girl, maybe ten years old, came walking
+            toward me with my dog in her arms. She'd found her hiding under a slide. I was so relieved that I couldn't
+            stop thanking her. Ever since then, I've been really careful with the leash. I still feel grateful to that
+            girl whenever I walk past the playground with my dog.
+          phrases: [happened about two years ago, I completely panicked, I was starting to imagine the worst, Ever since then]
+      al:
+        - text: >-
+            One experience that really stands out is a picnic I had with my college friends last spring. We'd been
+            talking about getting together for months, but everyone's schedules kept clashing, so when we finally
+            found a free Saturday, we chose the week the cherry blossoms were supposed to peak. We divided everything
+            up. I made sandwiches, one friend baked cookies, and another brought a little speaker for music. We spread
+            a huge blanket under the trees, and for a couple of hours it felt like we were back in our student days,
+            catching up and taking far too many photos. Then, out of nowhere, dark clouds rolled in and it started
+            pouring. We scrambled to save the food and dashed under a massive tree, laughing hysterically, but we were
+            drenched within seconds. Looking back, if it had been a perfect sunny day, I probably wouldn't remember it
+            at all. The rain is what turned an ordinary picnic into a story we still tell. Every time cherry blossom
+            season comes around, one of us sends a photo of that tree to our group chat.
+          phrases: [One experience that really stands out, it felt like we were back in, 'Looking back, if it had been', The rain is what turned]
+        - text: >-
+            The park experience I remember most vividly was both terrifying and heartwarming, and it happened about
+            two years ago. I was walking my dog on an ordinary weekday evening when she caught sight of a cat and
+            bolted. The leash flew out of my hand, and before I could even react, she had vanished into the bushes. I
+            went into full panic mode. I raced up and down every path, calling her name and showing her photo to
+            anyone who would listen. As it got darker, I started imagining every possible worst-case scenario. Just
+            when I was about to call my family for help, a girl who looked about ten walked toward me, carrying my dog
+            like it was the most natural thing in the world. She'd found her hiding under a slide on the playground. I
+            was so overwhelmed that I could barely speak. To this day, I wrap the leash around my wrist twice.
+            Whenever I walk past that playground now, I can't help thinking about how kind that little girl was and
+            how lucky I got that night.
+          phrases: [I remember most vividly, I went into full panic mode, Just when I was about to, To this day]
+    tip_ko: 언제, 누구와, 무슨 일이 있었는지, 그때 기분이 어땠는지 순서로 과거형을 지켜 말해요. 마지막에 지금 그 일을 어떻게 기억하는지 한 문장 붙여요.
+  - id: park-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      How have parks in your area changed over the years? Compare the parks you remember from when you were younger
+      with the parks today. What is different, and how do people use them differently now?
+    model:
+      il:
+        - text: >-
+            When I was young, the park near my house was small. It had only a playground. Now it is bigger. There are
+            more trees and a walking path. Many old people exercise there now. I like it more now.
+          phrases: [When I was young, Now it is bigger, I like it more now]
+        - text: >-
+            In the past, parks were not very clean. There was a lot of trash. Now parks are very clean. There are many
+            trash cans. Also, there are lights at night. So I feel safe now.
+          phrases: [In the past, Now parks are very clean, So I feel safe now]
+      im1:
+        - text: >-
+            Parks in my area have changed a lot. When I was a child, the park near my house was very simple. It had a
+            small playground and some benches, and that's it. Now the same park is much bigger and nicer. There is a
+            walking path, exercise machines, and many flowers. Also, in the past, mostly kids played there, but now
+            people of all ages use it. I think the change is very good.
+          phrases: [have changed a lot, When I was a child, but now people of all ages]
+        - text: >-
+            I think parks are very different now. In the past, parks were a little dirty and dark at night, so I
+            didn't go there after dinner. These days, parks are clean and bright. There are lights, cameras, and clean
+            restrooms. Also, people use parks differently. Before, people just walked, but now they exercise, ride
+            bikes, and even camp. I think parks are much better now.
+          phrases: [I think parks are very different now, These days, 'Before, people just walked']
+      im2:
+        - text: >-
+            Parks in my neighborhood have changed a lot since I was a kid. Back then, the park near my house was just
+            a small playground with a sandbox and a few old benches. Only children and their moms went there. Now, the
+            same park has a long walking path, outdoor exercise machines, and lots of flowers and trees. Because of
+            these changes, people of all ages use it. In the morning, older people exercise, and in the evening,
+            office workers go jogging. I think the park has become a real community space.
+          phrases: [since I was a kid, Back then, Because of these changes, has become a real community space]
+        - text: >-
+            Compared to when I was younger, parks today are much safer and more convenient. When I was in elementary
+            school, the park was pretty dark at night, and there was trash everywhere, so my parents didn't let me go
+            there in the evening. Now, there are bright lights, security cameras, and clean public restrooms. People
+            also use parks in different ways. In the past, they just took walks, but now people do yoga, ride bikes,
+            and even set up small tents. Overall, I think parks have improved a lot. I'm happy about these changes.
+          phrases: [Compared to when I was younger, 'In the past, they just took walks', 'Overall, I think']
+      im3:
+        - text: >-
+            The parks in my area have changed so much that sometimes I can hardly recognize them. When I was a kid,
+            the park near my home was basically a playground with a sandbox, a slide, and a couple of rusty benches.
+            It was mostly for children, and adults rarely spent time there. These days, that same park has a walking
+            trail, outdoor exercise machines, flower gardens, and even free Wi-Fi. As a result, it's used by everyone.
+            Older people exercise there in the morning, parents bring their babies in the afternoon, and office
+            workers jog after work. In my opinion, it's become the center of the neighborhood. I'm really glad about
+            these changes, and so are my neighbors.
+          phrases: [so much that, When I was a kid, As a result, 'In my opinion, it''s become']
+        - text: >-
+            If I compare the parks I remember from childhood with the parks today, the biggest difference is safety.
+            Back then, parks were poorly lit and often messy, so most people avoided them after dark. Nowadays, they
+            have bright lights, security cameras, and clean restrooms, so I feel comfortable walking there even at
+            eleven at night. Another big change is how people use them. In the past, people mostly just strolled
+            around. Now, you'll see people doing yoga, riding rental bikes, or camping in small tents on the grass.
+            Parks have become places where people actually spend their whole day. I think these changes have made
+            people's lives a lot healthier and more relaxed than before.
+          phrases: [the biggest difference is, Nowadays, Another big change is, Parks have become places where]
+      ih:
+        - text: >-
+            The parks in my area have changed so dramatically that I sometimes feel nostalgic about the old ones. When
+            I was in elementary school, the park near my house was really just a playground. It had a sandbox, a metal
+            slide that got burning hot in summer, and a few rusty benches. Adults hardly ever used it; it was
+            basically a place for kids to kill time after school. Today, that same space has been completely
+            redesigned. There's a walking trail around the edge, outdoor gym equipment, flower beds, and even a small
+            stage for events. Because of that, the park is used by every age group. In the morning, retirees do
+            stretching exercises, in the afternoon, young parents push strollers, and at night, office workers jog.
+            Honestly, it's become the heart of the neighborhood, although I do miss that old metal slide a little.
+          phrases: [so dramatically that, it was basically a place for kids, has been completely redesigned, although I do miss]
+        - text: >-
+            When I compare the parks from my childhood with the parks today, two big differences come to mind: safety
+            and the way people use them. Back in the day, parks were dark and a little messy after sunset, so most
+            people, especially women and kids, stayed away at night. My parents never let me go there after dinner.
+            These days, though, parks are brightly lit, there are security cameras everywhere, and the restrooms are
+            actually clean. I feel completely safe walking there at eleven at night. As for how people use them, it
+            used to be just walking or sitting on a bench. Now, people do yoga on the grass, ride shared bikes, play
+            pickleball, and some even set up tents for the whole day. In a way, parks have changed from places people
+            pass through to places people actually stay.
+          phrases: [two big differences come to mind, Back in the day, As for how people use them, 'In a way, parks have changed from']
+      al:
+        - text: >-
+            Parks in my area have transformed so much over the past twenty years that I sometimes get nostalgic for
+            the old, slightly shabby versions. When I was in elementary school, the park near my home was really just
+            a playground: a sandbox, a metal slide that got dangerously hot in summer, and a handful of rusty benches.
+            It was essentially a kid zone, and adults would only show up to drag their children home for dinner.
+            Today, that same piece of land has been completely redesigned. There's a looping walking trail, outdoor
+            fitness equipment, carefully planned flower beds, and even a small stage where the neighborhood holds
+            concerts in the fall. The result is that the park now serves every generation. Retirees stretch there at
+            dawn, young parents push strollers in the afternoon, and office workers jog after dark. I definitely think
+            the change is for the better, because the park has turned into a real gathering place. Still, part of me
+            misses that burning metal slide. Even so, I'm grateful for what the park has become.
+          phrases: [have transformed so much, It was essentially a kid zone, The result is that, 'Still, part of me misses']
+        - text: >-
+            Comparing the parks I grew up with and the parks today, I'd say the two biggest shifts are in safety and
+            in how people actually spend their time there. When I was younger, parks became a bit sketchy once the sun
+            went down. They were poorly lit, often littered, and most people simply avoided them at night. My parents
+            had a strict rule that I couldn't go after dinner. Nowadays, that's almost unthinkable. Parks are brightly
+            lit, there are security cameras on nearly every path, and the restrooms are surprisingly clean, so I don't
+            think twice about walking there late at night. The way people use parks has changed even more. It used to
+            be all about taking a short stroll. Now, people practice yoga on the lawn, ride shared bikes, play
+            pickleball, and some families pitch tents and stay from morning until sunset. In other words, parks have
+            gone from being places you pass through to places you plan your day around. Personally, I think that's a
+            really positive change, and I hope it continues.
+          phrases: [I'd say the two biggest shifts are, 'Nowadays, that''s almost unthinkable', The way people use parks has changed even more, In other words]
+    tip_ko: 예전 모습 → 지금 모습 → 달라진 이유나 내 생각 순서로 말해요. Back then, These days처럼 시점을 알려 주는 말로 문장을 시작하면 비교가 분명해져요.

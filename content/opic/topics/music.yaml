@@ -1,0 +1,419 @@
+schema_version: 1
+id: music
+kind: survey
+title_ko: 음악 감상하기
+status: ready
+questions:
+  - id: music-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      You indicated in the survey that you like listening to music. What kind of music do you enjoy? Tell me about your
+      favorite type of music and the singers or musicians you like, and explain why.
+    model:
+      il:
+        - text: >-
+            I like pop music. Pop songs are easy and fun. I listen to pop music every day. I like female singers. Their voices are
+            beautiful. When I listen to pop music, I feel good.
+          phrases: [I like, I feel good]
+        - text: >-
+            My favorite music is ballad. Ballads are slow and quiet. I listen to them at night. The songs are about love. I like a
+            Korean singer with a soft voice. Ballads help me relax.
+          phrases: [My favorite music is, help me relax]
+      im1:
+        - text: >-
+            I like many kinds of music, but my favorite is pop music. Pop songs have catchy melodies, so I can sing along easily. I
+            usually listen to pop music on my phone when I go to work. My favorite singer is a female pop singer with a strong
+            voice. Her songs always give me energy in the morning. I also like dance music, because it makes me want to move.
+          phrases: [my favorite is, give me energy, I also like]
+        - text: >-
+            My favorite type of music is jazz. I started listening to jazz in university. Jazz is relaxing, and it is good when I
+            study or read. I like the sound of the piano and the saxophone. I usually listen to jazz at a café or at home in the
+            evening. It makes me calm. I don't know many jazz musicians, but I enjoy the music.
+          phrases: [My favorite type of music is, I started, It makes me calm]
+      im2:
+        - text: >-
+            I enjoy listening to many kinds of music, but my favorite is hip-hop. I like hip-hop because the lyrics are very honest.
+            Many rappers talk about their real lives, their problems, and their dreams. When I listen carefully, I feel like they
+            are telling me a story. I also like the strong beat, because it gives me energy when I work out at the gym. My favorite
+            rapper is a young Korean artist who writes all of his own songs. I think his lyrics are really smart. So hip-hop is the
+            music I listen to the most.
+          phrases: [I like hip-hop because, I feel like, I also like, So hip-hop is]
+        - text: >-
+            I usually listen to classical music. Many people think classical music is boring, but I think it's very peaceful. I
+            started listening to it in high school when I was studying for exams, because songs with lyrics made it hard to
+            concentrate. Now I listen to classical music almost every day, especially piano music. My favorite composer is from the
+            eighteenth century, and his music is bright and happy. When I feel stressed, I put on my headphones, close my eyes, and
+            listen for a while. Then I feel much better.
+          phrases: [Many people think, I started listening to it, When I feel stressed, Then I feel much better]
+      im3:
+        - text: >-
+            I listen to all kinds of music, but if I had to choose one, it would be indie rock. I like indie music because it feels
+            more personal than the songs on the top charts. The bands are usually small, and they write their own songs about
+            everyday life, like missing a friend or feeling tired after work. I found my favorite band by chance about three years
+            ago, when a friend played one of their songs in the car. I immediately asked her for the name of the band. Since then,
+            I've listened to all of their albums, and I even went to one of their small concerts last year. Their music always
+            makes me feel like I'm not alone, which is why I love it so much.
+          phrases: [if I had to choose one, I found my favorite band by chance, Since then, which is why]
+        - text: >-
+            My favorite kind of music is movie soundtracks, which might sound a little unusual. I love them because they bring back
+            the feeling of the movie. For example, when I hear the main theme from an adventure movie I watched as a kid, I
+            immediately feel excited, like I'm about to go on a journey. I also find soundtracks really useful when I study or work,
+            because most of them don't have lyrics, but they still have a lot of emotion. My favorite composer writes music for big
+            fantasy movies, and his songs are dramatic, with lots of strings and drums. I usually listen to soundtracks on long bus
+            rides. It makes the trip feel like a scene from a movie.
+          phrases: [which might sound a little unusual, bring back the feeling of, For example, I also find]
+      ih:
+        - text: >-
+            I'd describe myself as a pretty big fan of R&B. I first got into it in high school, when my older brother kept playing
+            R&B songs in the room we shared. At first, I thought it was too slow, but after a while, I started to notice how smooth
+            and emotional the singing was. What I love most about R&B is the voice. Good R&B singers can change the mood of a whole
+            song with just a small change in their tone. I also like that the songs are often about relationships, so it's easy to
+            connect them to my own life. My favorite singer is a male vocalist with a really warm, deep voice, and I've probably
+            listened to his latest album a hundred times. These days, I mostly listen to R&B at night when I'm winding down after
+            work. It helps me slow down and clear my head before going to bed.
+          phrases: [I'd describe myself as, I first got into it, What I love most about, winding down]
+        - text: >-
+            Honestly, my music taste is a bit old-fashioned. My favorite type of music is classic rock from the seventies and
+            eighties. I got into it because of my father, who used to play his old records every Sunday morning while he cleaned the
+            house. Back then, I didn't really pay attention, but when I was in university, I found one of his old albums and
+            listened to it properly for the first time. I was surprised by how powerful the guitar sounded and how meaningful the
+            lyrics were. Compared to a lot of music today, classic rock feels more raw and real, because the bands played their
+            instruments live without much editing. Now I have my own collection of records, and whenever I visit my parents, my
+            father and I listen to music together. It's become a special way for us to connect.
+          phrases: [my music taste is a bit old-fashioned, I got into it because of, Compared to, It's become a special way]
+      al:
+        - text: >-
+            My taste in music is pretty wide, but the genre I keep coming back to is acoustic folk music, the kind with just a
+            guitar, maybe a violin, and a singer telling a story. I think what draws me to it is the simplicity. There's nothing to
+            hide behind, no heavy effects or complicated production, so the quality of the songwriting and the voice really comes
+            through. A lot of folk songs are basically short stories about ordinary people, like a farmer who loses his land or two
+            old friends meeting again after many years, and I find those stories surprisingly moving. My favorite musician is a
+            singer-songwriter who performs mostly in small venues. I discovered her at a street festival a few years ago, and I was
+            so impressed that I bought her album right there. I usually listen to folk music on quiet weekend mornings with a cup of
+            coffee, and it sets a calm tone for the whole day. In a world that feels noisy and fast most of the time, this kind of
+            music reminds me to slow down.
+          phrases: [the genre I keep coming back to, what draws me to it, comes through, reminds me to slow down]
+        - text: >-
+            I'd say my favorite type of music is electronic music, although that's a pretty broad category, so let me explain what
+            I mean. I'm not really into the loud club music that most people imagine. What I enjoy is the more atmospheric kind,
+            with layered synthesizers and steady beats that slowly build up over several minutes. I started listening to it while I
+            was preparing for a big exam, because I needed something without lyrics that could keep me focused for hours, and it
+            worked better than anything else I tried. Over time, I became genuinely interested in how the music is made, so I even
+            downloaded a free music program and tried creating a few simple tracks myself. They were pretty terrible, but it gave me
+            a lot more respect for the artists. These days, I listen to electronic music almost every day, mostly when I'm working
+            or running. It has this way of blocking out distractions and putting me in a kind of flow state, which is exactly what I
+            need on busy days.
+          phrases: [let me explain what I mean, I'm not really into, Over time, which is exactly what I need]
+    tip_ko: 장르 하나와 좋아하는 가수의 특징(목소리, 가사)을 말해요. 언제 처음 좋아하게 됐는지 짧은 이야기를 붙이면 좋아요.
+  - id: music-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      When and where do you usually listen to music? Tell me about your typical day and how music fits into it. What devices
+      do you use, and how do you find new songs?
+    model:
+      il:
+        - text: >-
+            I listen to music every morning. I use my phone and earphones. I listen on the bus. I also listen at night. I find new
+            songs on music apps. I like this routine.
+          phrases: [every morning, I also listen]
+        - text: >-
+            I listen to music at home. I use a small speaker. I listen when I cook and clean. Music makes cleaning fun. My friends
+            tell me new songs. I listen to them on the weekend.
+          phrases: [I listen to music at home, makes cleaning fun]
+      im1:
+        - text: >-
+            I listen to music almost all day. In the morning, I listen to music on my phone while I go to work by subway. At work, I
+            can't listen to music, but at lunchtime I sometimes listen to a few songs. In the evening, I play music on a speaker
+            while I cook dinner. I usually find new songs from the music app's recommendations. It's very easy.
+          phrases: [almost all day, In the morning, In the evening]
+        - text: >-
+            I usually listen to music when I exercise. I go to the gym three times a week, and I always wear my wireless earphones.
+            I listen to fast songs, because they help me run longer. I also listen to music before I go to sleep, but I choose slow
+            songs at night. To find new songs, I check the music chart every Monday.
+          phrases: [I usually listen to music when, because they help me, To find new songs]
+      im2:
+        - text: >-
+            Music is a big part of my daily routine. When I wake up, I turn on the radio while I get ready for work. I like the
+            morning radio show because the host plays different songs every day. On my way to work, I listen to my own playlist
+            with my earphones. At the office, I sometimes listen to quiet music without lyrics when I need to focus. After work, I
+            usually relax with music on my sofa. I find most of my new songs through the radio or from my friends, who send me links
+            in our group chat.
+          phrases: [is a big part of my daily routine, When I wake up, On my way to work, I find most of my new songs]
+        - text: >-
+            I listen to music mostly when I'm moving from one place to another. I take the bus for about forty minutes to get to
+            school, so music helps the time pass quickly. I use my smartphone and a pair of headphones that block outside noise. I
+            usually make a different playlist for each season. For example, in winter I listen to more calm and warm songs. On
+            weekends, I like to listen to music at a café while I study. To find new songs, I watch music videos online, and when I
+            like a song, I add it to my playlist right away.
+          phrases: [mostly when, helps the time pass quickly, For example, right away]
+      im3:
+        - text: >-
+            My day pretty much has a soundtrack. The first thing I do after I wake up is play an upbeat playlist on my bedroom
+            speaker, because it helps me get out of bed. While I commute, I usually switch to podcasts or calm music, depending on
+            my mood. During the workday, I can't really listen to music since I'm in meetings a lot, but I listen during my lunch
+            walk. The evening is my favorite time for music. I put on a record, make a simple dinner, and just enjoy it. As for
+            finding new music, I mostly rely on the recommendation lists in my music app, but honestly, my best discoveries usually
+            come from my coworker, who has amazing taste. She sends me a new song almost every week.
+          phrases: [My day pretty much has a soundtrack, depending on my mood, As for, my best discoveries]
+        - text: >-
+            I don't listen to music all day like some people, but I have a few special times for it. The first is in the morning
+            when I'm running in the park. I always use my sports earphones and play a high-energy playlist, which keeps me going.
+            The second is when I'm doing housework on the weekend. I connect my phone to a speaker and play music loudly, and
+            somehow cleaning doesn't feel so boring anymore. The last one is late at night, when I listen to soft songs before
+            sleeping. When it comes to new songs, I often discover them in coffee shops. If I hear something I like, I use an app on
+            my phone to find out the title. I've found many of my favorite songs that way.
+          phrases: [I have a few special times for it, which keeps me going, When it comes to, that way]
+      ih:
+        - text: >-
+            Music is pretty much always playing in my life, but the type changes depending on the time of day. In the morning, I
+            listen to something light and positive while I make breakfast, usually through a small speaker in my kitchen. My
+            commute is about an hour by subway, so that's when I do most of my serious listening. I put on noise-canceling headphones
+            and listen to full albums from start to finish, because I think that's how artists want their music to be heard. At
+            work, I keep instrumental music on low volume when I'm writing reports. In the evening, I often have music playing in
+            the background while I cook or chat with my roommate. To find new music, I follow a few music critics online and check
+            their weekly recommendations. I also go to small live shows about once a month, and I've discovered some great local
+            bands there.
+          phrases: [depending on the time of day, that's when I do most of, from start to finish, I've discovered]
+        - text: >-
+            To be honest, I've become a bit more intentional about music recently. I used to have music playing all day without
+            really listening to it, but I realized it was just background noise. So now I set aside specific times. On weekday
+            mornings, I listen to one new album during my commute, and I actually pay attention to the lyrics and the arrangement.
+            At night, I spend about twenty minutes listening to vinyl records on an old record player I bought from a secondhand
+            shop. It forces me to sit still and focus, since I have to flip the record halfway through. On weekends, I sometimes
+            go to a record store just to browse. The staff there are really knowledgeable, and they often recommend albums I'd
+            never find online. This new routine has made listening to music feel like a real hobby again, not just something that
+            fills the silence.
+          phrases: [I've become a bit more intentional about, I used to, So now I set aside, not just something that]
+      al:
+        - text: >-
+            Music runs through basically my entire day, though the role it plays changes a lot from morning to night. As soon as I
+            wake up, I ask the smart speaker in my bedroom to play a morning playlist, mostly upbeat pop, which honestly does more
+            to wake me up than coffee does. During my commute, I switch to headphones and use that time for new releases, because
+            it's the one part of the day when I can give music my full attention. Once I get to the office, things change. I need
+            to concentrate, so I stick to instrumental tracks at a very low volume, things like lo-fi beats or quiet piano. In the
+            evening, music becomes more social. My roommate and I take turns choosing songs while we cook, and it often turns into a
+            friendly argument about whose taste is better. As for discovering new music, I've learned not to rely only on app
+            algorithms, since they tend to recommend the same style over and over. Instead, I listen to a weekly radio show hosted
+            by a music journalist, and I make a point of trying at least one genre I don't normally listen to every month.
+          phrases: [runs through basically my entire day, does more to ~ than, Once I get to the office, I make a point of]
+        - text: >-
+            My relationship with music is pretty structured, partly because I play the piano myself, so listening is connected to
+            practicing. I usually start the day by listening to a piece I'm learning, ideally a few different recordings of it, so
+            I can compare how various pianists interpret the same notes. I do that on the train with good headphones, and I often
+            take short notes on my phone about the tempo or the mood. During the day, I mostly avoid music, because I find it
+            distracting at work. Then, after dinner, I practice for about an hour, and once I'm done, I reward myself by listening
+            to something completely different, like jazz or soul, just for pleasure. When it comes to finding new music, I rely a
+            lot on live performances. I try to attend at least one concert a month, often small ones at local music schools, which
+            are surprisingly good and usually cheap. I've also joined an online community where people share recordings and
+            discuss them, and that's become my main source of recommendations. For me, music isn't just entertainment. It's
+            something I study, enjoy, and share at the same time.
+          phrases: [My relationship with music is, partly because, When it comes to, isn't just entertainment]
+    tip_ko: 아침, 이동할 때, 저녁처럼 시간 순서로 말하고, 어떤 기기를 쓰는지와 새 노래를 찾는 방법까지 빠뜨리지 말고 답해요.
+  - id: music-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Tell me about a memorable experience you had related to music. It could be a concert you went to or a special moment
+      with a song. What happened, and why do you still remember it?
+    model:
+      il:
+        - text: >-
+            Last year, I went to a concert. It was in a big stadium. There were many people. The singer was very good. I sang
+            along. I was so happy. I want to go again.
+          phrases: [Last year, I sang along]
+        - text: >-
+            I remember my school music festival. I was fifteen. I played the guitar with my friends. I was nervous. But we did a
+            good job. Everyone clapped. I was proud.
+          phrases: [I remember, I was proud]
+      im1:
+        - text: >-
+            Two years ago, I went to my first concert with my best friend. It was an outdoor concert in summer. We waited in line
+            for three hours, and it was very hot. But when the singer came on stage, everyone screamed. I sang along to every song.
+            After the concert, my voice was gone, but I was really happy. It was an amazing night.
+          phrases: [Two years ago, But when, It was an amazing night]
+        - text: >-
+            I remember a special song from my high school graduation. My class sang a song together at the ceremony. We practiced
+            for one month. On the day, many students cried while we were singing, because we were sad to say goodbye. Now, when I
+            hear that song, I remember my friends and teachers. It is still my favorite song, and I sing it sometimes.
+          phrases: [I remember, On the day, Now, when I hear]
+      im2:
+        - text: >-
+            The most memorable music experience I had was at a jazz festival last fall. My friend had an extra ticket, so she
+            invited me, even though I didn't know much about jazz. The festival was on an island, and we had to take a ferry to get
+            there. We sat on the grass and listened to many bands all day. In the evening, a band played a slow song while the sun
+            was going down, and everyone became quiet. It was so beautiful. After that day, I started listening to jazz, and now
+            it's one of my favorite types of music.
+          phrases: [The most memorable, even though, After that day, now it's one of]
+        - text: >-
+            I remember when I sang at my older sister's wedding. It was about three years ago. My sister asked me to sing a song for
+            her, and I said yes, but I was really nervous because I'm not a good singer. I practiced every night for a month. On the
+            wedding day, my hands were shaking, and I forgot some of the words in the middle of the song. But everyone clapped
+            loudly, and my sister cried. Later, she told me it was the best part of the wedding. I'll never forget that moment.
+          phrases: [I remember when, I was really nervous, But everyone, I'll never forget]
+      im3:
+        - text: >-
+            One music experience I'll never forget was a concert I went to by myself in another city. It was about two years ago.
+            My favorite band only had one show in my country, and none of my friends liked them, so I decided to go alone. I took
+            an early train and arrived four hours before the show. While I was waiting in line, I started talking with the people
+            around me, and we found out we liked the same songs. By the time the concert started, we were like old friends, and we
+            sang together all night. After the concert, we went out for late-night noodles. I was worried about going alone, but it
+            turned out to be one of the best days of my life.
+          phrases: [I'll never forget, so I decided to, By the time, it turned out to be]
+        - text: >-
+            A memorable music moment for me happened in a very ordinary place, a small coffee shop near my old apartment. It was a
+            rainy evening, and I was feeling really down because I had just failed an important job interview. While I was sitting
+            there, the café played an old song that my grandmother used to sing to me when I was little. I hadn't heard it in more
+            than ten years. Suddenly, I remembered her warm voice and how she always told me not to give up. I actually started
+            crying a little in the café. After the song ended, I felt much calmer. A month later, I got a different job, and I still
+            think of that song as a lucky charm.
+          phrases: [happened in a very ordinary place, I was feeling really down, Suddenly, A month later]
+      ih:
+        - text: >-
+            The music experience that stands out most for me happened when I was volunteering at a nursing home during university.
+            Every Saturday, a few students and I visited to spend time with the elderly residents, and one week, someone suggested
+            we play some old songs for them. I could play the guitar a little, so I learned a few classic songs from the sixties.
+            Honestly, I didn't expect much of a reaction. But when I started playing, an old man who almost never spoke began
+            singing along, and he knew every single word. The staff told me he hadn't been that lively in months. After that, I
+            brought my guitar every week, and it became a small concert that everyone looked forward to. That experience taught me
+            that music can reach people in a way that words sometimes can't. It's still one of the most meaningful things I've
+            ever done.
+          phrases: [stands out most for me, Honestly, I didn't expect, After that, That experience taught me]
+        - text: >-
+            I'd have to say my most memorable experience with music was my very first time performing on stage. It was at a small
+            open-mic night in a bar near my university about four years ago. I had been teaching myself the keyboard for a year,
+            and my friends kept pushing me to perform in front of people. I finally agreed and chose a slow song I had written
+            myself. When my name was called, my heart was beating so fast that I could barely hear the music. Halfway through, I
+            made a big mistake and played a completely wrong chord. I almost stopped, but I took a breath and kept going. When I
+            finished, the audience clapped and a stranger came up to say the song had touched her. That night gave me so much
+            confidence, and I've performed about ten more times since then.
+          phrases: [I'd have to say, I finally agreed, I almost stopped, but, since then]
+      al:
+        - text: >-
+            The one that immediately comes to mind is a concert I went to with my father a few years ago, which ended up being much
+            more meaningful than either of us expected. He had loved a particular rock band since he was a teenager, but he had
+            never seen them live, because back then he couldn't afford tickets, and later he was too busy raising a family. When I
+            found out the band was doing a reunion tour, I secretly bought two tickets for his sixtieth birthday. I still remember
+            the look on his face when I gave him the envelope. He tried to act calm, but his hands were shaking. At the concert, the
+            man I'd always known as quiet and serious was jumping, shouting, and singing every lyric. Near the end, the band played
+            the song he used to sing in the car when I was little, and he turned to me with tears in his eyes. On the drive home, he
+            told me stories about his youth that I had never heard before. That night didn't just give him a concert. It gave me a
+            completely new side of my father.
+          phrases: [The one that immediately comes to mind, ended up being, I still remember, didn't just ~ It gave me]
+        - text: >-
+            One experience that genuinely changed how I think about music happened during a trip abroad about three years ago. I
+            was walking through an old town late in the evening when I heard a group of street musicians playing traditional folk
+            music in a small square. There were maybe five of them, with violins, an accordion, and a drum, and a crowd had gathered
+            around. What struck me was that people of all ages were dancing together, from little kids to elderly couples, even
+            though most of them clearly didn't know each other. I didn't understand a single word of the songs, but the energy was
+            impossible to resist, and before I knew it, an old woman grabbed my hands and pulled me into the circle. I ended up
+            dancing for almost an hour. Looking back, I think it showed me that music doesn't need a shared language to bring people
+            together. Since that night, I've made a habit of looking for local live music wherever I travel, and it's become my
+            favorite way to get to know a place.
+          phrases: [genuinely changed how I think about, What struck me was that, before I knew it, I've made a habit of]
+    tip_ko: 장소와 상황을 먼저 설명하고, 일어난 일을 시간 순서대로 과거형으로 말해요. 그 경험이 나에게 남긴 것으로 마무리해요.
+  - id: music-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      Think about the music you listened to when you were a teenager and the music you listen to now. How has your taste in
+      music changed? Compare the two and explain what led to the change.
+    model:
+      il:
+        - text: >-
+            When I was a teenager, I listened to dance music. It was fast. Now I listen to slow music. It is relaxing. I am older
+            now. I like quiet songs more.
+          phrases: [When I was a teenager, Now I listen to]
+        - text: >-
+            In the past, I liked idol groups. I bought their albums. Now I like ballads. I listen to music on my phone. I don't buy
+            albums now. My taste changed.
+          phrases: [In the past, Now I like]
+      im1:
+        - text: >-
+            When I was a teenager, I listened to idol music all the time. I liked dancing to their songs with my friends. Now, I
+            listen to more calm music like acoustic songs and ballads. I think I changed because my life is busier now, and I need
+            music to relax. Also, I listen to music on my phone now, not on an MP3 player.
+          phrases: [When I was a teenager, Now, I think I changed because]
+        - text: >-
+            In my teens, I only listened to Korean pop music. I didn't listen to foreign songs because I couldn't understand the
+            lyrics. Now, I listen to many English songs, because my English is better. I also like songs from other countries. My
+            taste is much wider than before. I think studying English changed my music taste. Music also helps me study English.
+          phrases: [In my teens, Now, I think]
+      im2:
+        - text: >-
+            My taste in music has changed a lot since I was a teenager. Back then, I loved loud rock music. I listened to it really
+            loudly in my room, and my mom always told me to turn it down. These days, I prefer jazz and soft pop. I think the main
+            reason is my job. I work in a busy office, and after work I just want something calm. Another reason is that my friends
+            changed. In high school, my friends liked rock, but now my coworkers like jazz, so I learned about it from them.
+          phrases: [has changed a lot since, Back then, These days, I think the main reason is]
+        - text: >-
+            When I was a teenager, I listened to whatever was popular on the music charts. I just wanted to know the same songs as
+            my friends. Now, I care more about my own taste. I listen to small indie bands that most people don't know. I think this
+            changed because of music apps. The apps recommend songs based on what I like, so I discover new artists every week.
+            Also, I care less about what other people think now. I'm happy that I found my own style, and I enjoy music more than
+            before.
+          phrases: [When I was a teenager, Now, I care more about, I think this changed because of]
+      im3:
+        - text: >-
+            Comparing my teenage years to now, my music taste has become much more relaxed. When I was in high school, I was really
+            into heavy metal. I loved the fast guitar and the screaming vocals, and I think it helped me let out my stress from
+            studying. I even dyed my hair red once to look like a metal singer. Now, in my thirties, I mostly listen to acoustic
+            music and jazz. I think the biggest reason is that my lifestyle changed. I don't have exam stress anymore, but I'm tired
+            after work, so I need music that calms me down. Also, I live in an apartment with thin walls, so playing loud music
+            isn't really an option. Sometimes I still listen to metal, though, especially when I need energy at the gym.
+          phrases: [Comparing ~ to now, I was really into, I think the biggest reason is, isn't really an option]
+        - text: >-
+            My taste in music has actually become more open over the years. As a teenager, I was pretty narrow-minded about music.
+            I only listened to hip-hop, and I used to think other genres were boring. Now, I listen to almost everything, including
+            classical, country, and even old trot songs that my parents like. I think a few things caused this change. First, I
+            lived abroad for a year, and I met people from many countries who introduced me to their music. Second, streaming
+            services made it easy to try new genres for free. Finally, I think I just became more curious as I got older. Looking
+            back, I feel like I missed a lot of great music when I was young.
+          phrases: [has actually become more open, I used to think, I think a few things caused this change, Looking back]
+      ih:
+        - text: >-
+            There's a big difference between the music I listened to as a teenager and what I listen to now, and I think it mirrors
+            how I've changed as a person. In middle and high school, I was obsessed with boy bands. I knew every member's name and
+            birthday, and I spent most of my allowance on albums and posters. For me, music was really about belonging, because
+            being a fan connected me with my friends. These days, I'm much more drawn to singer-songwriters, especially those who
+            write about real-life struggles like work, loneliness, or getting older. I care much more about lyrics now than about
+            how a singer looks. I'd say the main reason is simply growing up. Once I started working and living on my own, those
+            songs about everyday life started to feel much more relatable. That said, I still have a soft spot for my old favorite
+            band, and when one of their songs comes on, I instantly feel sixteen again.
+          phrases: [it mirrors how I've changed, I was obsessed with, I'd say the main reason is, That said]
+        - text: >-
+            My music taste has changed in a direction I never would have expected. When I was a teenager, I couldn't stand
+            classical music. My parents made me take piano lessons, and I hated practicing, so I associated classical music with
+            boredom and pressure. I listened mostly to electronic dance music instead, because it felt modern and exciting. But
+            about five years ago, I watched a documentary about a famous orchestra, and something clicked. I started listening to
+            the pieces I used to play on the piano, and I realized how beautiful they actually were. Now, classical music is
+            probably half of what I listen to. I think the change happened because I finally had the freedom to choose it myself,
+            instead of being forced. Funnily enough, I've even started taking piano lessons again, and this time I'm actually
+            enjoying them.
+          phrases: [in a direction I never would have expected, I couldn't stand, something clicked, Funnily enough]
+      al:
+        - text: >-
+            If I compare my teenage self to who I am now, the biggest shift isn't so much the genres I like, but the way I relate to
+            music in general. As a teenager, music was almost part of my identity. I listened mainly to punk rock, and I
+            deliberately chose music that my parents and teachers disliked, because it made me feel independent and a little
+            rebellious. I'd play the same few albums over and over, and I took it very personally if someone criticized my favorite
+            band. Nowadays, my taste is much broader. I listen to soul, jazz, some classical, and still a bit of punk on the
+            weekends, but none of it really defines me anymore. I think a couple of things led to this. Growing older made me less
+            concerned about how others see me, so I don't need music to make a statement. Also, having access to almost any song
+            through streaming made it easy to explore without any risk. If anything, I've become more of a listener than a fan. I
+            appreciate a good song regardless of who made it or what genre it belongs to, and honestly, I think that's made music
+            even more enjoyable for me.
+          phrases: [the biggest shift isn't so much ~ but, I took it very personally, If anything, regardless of]
+        - text: >-
+            Looking back, my taste in music has gone through a kind of full circle. As a teenager, I mainly listened to whatever was
+            trending on the charts, mostly upbeat pop and dance songs. To be honest, I chose music based on what my friends were
+            listening to, because I didn't want to feel left out at school. In my twenties, I went through a phase where I rejected
+            pop completely and only listened to underground hip-hop and experimental music, partly because I wanted to feel
+            different from everyone else. These days, though, I've come back to pop, but with a different attitude. I listen to it
+            because I genuinely enjoy well-made melodies, not because I'm following anyone. I think what changed is that I became
+            more confident in my own preferences. I no longer use music to fit in or to stand out. On top of that, my job is
+            mentally exhausting, so I value music that's easy and fun. It's funny, because the teenager in me would probably think
+            I'm boring now, but I feel like I finally listen to music for the right reasons.
+          phrases: [has gone through a kind of full circle, I went through a phase, I no longer, On top of that]
+    tip_ko: 10대 때 즐겨 들은 음악과 지금 듣는 음악을 짝지어 비교하고, 왜 바뀌었는지 이유를 한두 가지 붙여요.

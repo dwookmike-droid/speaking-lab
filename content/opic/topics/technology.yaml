@@ -1,0 +1,571 @@
+schema_version: 1
+id: technology
+kind: unexpected
+title_ko: 기술·인터넷
+status: ready
+questions:
+  - id: technology-description
+    type: description
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      I'd like to ask you about the technology people use these days. What kinds of devices or online services do
+      you use most often? Please describe them in as much detail as you can.
+    model:
+      il:
+        - text: >-
+            I use a smartphone and a laptop. I use my smartphone every day. I send messages to my friends. I also watch
+            videos. My laptop is old, but it is okay. I use it for school work. I like my smartphone the most.
+          phrases: ['I use', 'I also']
+        - text: >-
+            I have a smartphone, a tablet, and a computer. My smartphone is black and small. I use it for music and maps.
+            My tablet is for reading. My computer is at home. I use it for work. Technology is very useful for me.
+          phrases: ['I have', 'very useful']
+      im1:
+        - text: >-
+            The device I use most is my smartphone. I use it for almost everything. In the morning, I check the news and
+            the weather. I also use it for messages, music, and online banking. At home, I have a laptop too. I use it
+            when I write reports or watch movies, because the screen is bigger. I also have wireless earphones. They are
+            really convenient when I take the subway. Without these devices, my life would be very hard.
+          phrases: ['The device I use most is', 'really convenient']
+        - text: >-
+            I use a lot of technology at home and at work. At work, I use a desktop computer with two monitors. I write
+            emails and make documents all day. At home, I mostly use my tablet. I watch dramas on it in bed. I also have a
+            smart speaker in my living room. I ask it about the weather or play music. These devices make my life easier,
+            but sometimes I use them too much.
+          phrases: ['At work', 'make my life easier']
+      im2:
+        - text: >-
+            Well, I'd say I use technology all day long. The most important device for me is my smartphone. I use it to
+            check my schedule, read the news, and talk with my friends and family. I also use it to pay for things, so I
+            don't carry my wallet very often these days. Besides my phone, I have a laptop that I use for work and online
+            classes. It's a little heavy, but it's fast and has a big screen. Lastly, I have a smartwatch. It counts my
+            steps and shows my messages. Overall, these devices help me a lot in my daily life.
+          phrases: ['The most important device for me is', 'Besides my phone', 'Overall']
+        - text: >-
+            Let me tell you about the technology I use most. First of all, there's my laptop. I'm a university student, so
+            I use it every day for assignments, presentations, and video lectures. I bought it two years ago, and it still
+            works well. Second, I use the internet a lot. I search for information, watch videos to learn new things, and
+            shop online because it's cheaper. And of course, I use my phone for messaging and taking pictures. I think I
+            can't live without the internet now. When the Wi-Fi stops working at home, I feel really frustrated.
+          phrases: ['Let me tell you about', 'First of all', 'I can''t live without']
+      im3:
+        - text: >-
+            Okay, so the technology I use the most is definitely my smartphone, and I'd like to describe it a little. It's
+            about two years old, and it has a large screen and a really good camera. I take a lot of pictures with it,
+            especially when I travel or eat at a nice restaurant. I also use it for my bank account, my bus card, and even
+            my ID at the gym, so it's like my whole life is inside this small device. Honestly, it makes me a little
+            nervous sometimes. When I left it at a friend's house last month, I felt completely lost for a whole day.
+            Apart from my phone, I use a laptop for work, but my phone is the one I really can't live without.
+          phrases: ['definitely', 'it''s like', 'Apart from']
+        - text: >-
+            There are a few devices I use every day, but the most interesting one is probably the smart speaker in my
+            kitchen. My sister gave it to me as a birthday present last year. At first, I didn't use it much because I
+            thought it was a toy. But now I talk to it every morning. I ask it about the weather, set timers when I'm
+            cooking, and play the radio while I'm getting ready for work. It's really handy when my hands are busy. Of
+            course, I also have a smartphone and a laptop like everyone else. I use my phone for messages and my laptop
+            for work. But if you ask me which device surprised me the most, I'd say the speaker.
+          phrases: ['At first', 'But now', 'really handy']
+      ih:
+        - text: >-
+            Sure. These days I'm surrounded by technology, but I'd like to focus on the two things I rely on most: my
+            smartphone and my home Wi-Fi. My phone is basically my office, my wallet, and my entertainment center all in
+            one. I use it to answer work emails on the subway, pay for my lunch, and watch short videos before I fall
+            asleep. What I like most about it is the camera, because I've been learning photography as a hobby, and it
+            takes surprisingly sharp pictures at night. As for the Wi-Fi, I upgraded my internet plan last year when I
+            started working from home two days a week. Before that, my video calls kept freezing, which was really
+            embarrassing in meetings. Now everything runs smoothly. To be honest, I sometimes feel I depend on these
+            things a bit too much, but I can't imagine my daily routine without them anymore.
+          phrases: ['I''d like to focus on', 'all in one', 'As for', 'To be honest']
+        - text: >-
+            Well, I'm not really a tech person, but I still use quite a lot of technology every day. The first thing is my
+            laptop, which I use for my job as an accountant. I spend most of the day working on spreadsheets, so I need a
+            fast computer with a comfortable keyboard. My company gave me a new one this year, and it's much lighter than
+            my old one, so I can easily bring it home. The second thing is my smartphone. I mainly use it for messaging
+            and checking the news, but recently I've started using a language learning app to study Japanese for twenty
+            minutes every day. I also have a fitness band that tracks how many hours I sleep. Interestingly, it showed me
+            that I sleep less than I thought, so now I try to go to bed earlier. So even though I'm not an expert,
+            technology really shapes my daily life.
+          phrases: ['I''m not really a tech person', 'much lighter than', 'Interestingly']
+      al:
+        - text: >-
+            That's an interesting question, because I think the technology I use says a lot about my lifestyle. The center
+            of everything is my smartphone. It's not the newest model, but it does everything I need: I manage my
+            calendar, pay bills, read e-books on the subway, and stay in touch with friends who live abroad. Then there's
+            my laptop, which I use for freelance design work in the evenings. I chose a model with a high-quality display
+            because colors matter a lot in my job, and honestly, it was the most expensive thing I bought last year. I
+            also rely heavily on cloud storage. All my files are saved online automatically, so even if my laptop broke
+            tomorrow, I wouldn't lose anything. That gives me real peace of mind. If I had to describe my relationship
+            with technology in one word, I'd say practical. I'm not the kind of person who lines up for the latest gadget,
+            but I'm happy to pay for tools that genuinely save me time or make my work better.
+          phrases: ['The center of everything is', 'even if', 'peace of mind', 'If I had to describe']
+        - text: >-
+            Let me start with the device that probably changed my life the most, which is my tablet. I bought it about
+            three years ago when I started graduate school, mainly because I was tired of printing hundreds of pages of
+            research papers. Now I read and take notes directly on the screen with a digital pen, and all my notes are
+            organized by subject, so I can find anything in seconds. It's honestly made me a much more organized student.
+            Other than that, I use my smartphone constantly, like most people, and I have a pair of noise-cancelling
+            headphones that I wear in the library. They block out almost all the background noise, which helps me
+            concentrate for hours. At home, my family also uses a smart TV, and my parents, who used to be afraid of
+            technology, now watch cooking shows and video-call my aunt overseas on it every weekend. Watching them enjoy
+            it is actually one of my favorite things about technology. It shows how these tools can bring people closer,
+            not just make work faster.
+          phrases: ['Let me start with', 'Other than that', 'who used to be', 'bring people closer']
+    tip_ko: 기기 두세 개를 정하고 각각 무엇에 쓰는지 하나씩 붙여요. 마지막에 내 생각 한 문장으로 마무리하면 답이 정리돼 보여요.
+  - id: technology-routine
+    type: routine
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Now tell me how you use technology on a typical day. When do you use your devices, and what do you mainly use
+      them for, from the moment you wake up until you go to bed?
+    model:
+      il:
+        - text: >-
+            I use my phone every morning. I check messages first. On the bus, I listen to music. At work, I use a
+            computer. At night, I watch videos on my phone in bed. I use my phone a lot every day.
+          phrases: ['every morning', 'At night']
+        - text: >-
+            I wake up with my phone alarm. I read the news on my phone. In the afternoon, I study with my laptop. In the
+            evening, I play games. I go to bed at twelve. I put my phone next to my bed.
+          phrases: ['In the afternoon', 'In the evening']
+      im1:
+        - text: >-
+            My day starts with technology. My phone alarm wakes me up at seven, and the first thing I do is check my
+            messages and the weather. On the subway, I usually listen to music or watch short videos. At the office, I use
+            my computer all day for emails and documents. After work, I sometimes order food with my phone. Before I go to
+            sleep, I watch a drama on my tablet for about an hour.
+          phrases: ['the first thing I do is', 'Before I go to sleep']
+        - text: >-
+            I use technology from morning to night. In the morning, I listen to the radio on my smart speaker while I eat
+            breakfast. Then I take online classes on my laptop because I'm a student. In the afternoon, I search for
+            information for my homework. In the evening, I video-call my parents because they live in another city. I try
+            to stop using my phone after eleven, but it's not easy.
+          phrases: ['from morning to night', 'I try to']
+      im2:
+        - text: >-
+            On a typical day, I use technology almost every hour. Right after I wake up, I check my phone for messages and
+            look at my schedule for the day. While I'm commuting, I usually read news articles or listen to podcasts about
+            economics, because I want to learn something on the way. At work, I'm in front of my computer for about eight
+            hours. I write reports, join video meetings, and send a lot of emails. When I get home, I try to take a break
+            from screens, but honestly, I usually end up watching videos on my phone until midnight. I know it's a bad
+            habit.
+          phrases: ['Right after I wake up', 'While I''m commuting', 'end up']
+        - text: >-
+            Let me walk you through my usual day. I'm a university student, so my laptop is the center of my routine. In
+            the morning, I check my class schedule and any announcements from my professors online. During the day, I take
+            notes on my laptop in class and use the library's online database for my research. Between classes, I chat
+            with my friends in group chats to plan our team projects. In the evening, I usually play online games with my
+            high school friends for about an hour. It's the easiest way for us to keep in touch. Then I set my alarm and
+            go to sleep.
+          phrases: ['Let me walk you through', 'Between classes', 'keep in touch']
+      im3:
+        - text: >-
+            Well, my routine with technology is pretty regular. I wake up at around six thirty with my phone alarm, and
+            before I even get out of bed, I check my messages and the news headlines. That's probably not a healthy habit,
+            but it's hard to stop. During my commute, which takes about forty minutes, I usually study English with an app
+            or listen to a podcast. At work, I use two monitors, and I have video meetings almost every afternoon, so my
+            headset is always on my desk. After dinner, I try to do something without screens, like reading a paper book
+            or going for a walk. But I have to admit, I usually pick up my phone again before bed and scroll through
+            videos for a while. Lately, I've been trying to leave my phone in the living room at night.
+          phrases: ['before I even get out of bed', 'I have to admit', 'Lately']
+        - text: >-
+            Since I work from home three days a week, technology is a big part of my daily routine. On those days, I start
+            working at nine by turning on my laptop and joining a short online meeting with my team. We use a shared
+            calendar and a chat program, so I can talk to my coworkers anytime without calling them. Around lunchtime, I
+            usually order groceries online, because it saves me a trip to the supermarket. In the afternoon, I focus on my
+            projects and send files through cloud storage. When I finish work, I close my laptop and go to the gym, where
+            I listen to music on my wireless earphones. At night, I sometimes watch a movie with my husband. Honestly, I
+            can't remember how people worked from home before all these tools existed.
+          phrases: ['Since I work from home', 'Around lunchtime', 'I can''t remember how']
+      ih:
+        - text: >-
+            Honestly, my whole day is organized around technology, from the moment I wake up until I fall asleep. My phone
+            alarm goes off at six forty-five, and I immediately check my calendar to see what meetings I have. While I'm
+            having breakfast, I listen to a news podcast on my smart speaker, which saves me from looking at a screen too
+            early. On the subway, I use a language app to review Spanish vocabulary for about fifteen minutes, because I'm
+            planning a trip to South America next year. At work, I'm a marketing manager, so I spend hours analyzing
+            online data, editing presentations, and joining video calls with clients in other countries. After work, I try
+            to set limits. For example, I turn on a focus mode on my phone at nine p.m., so only calls from my family come
+            through. That small change has actually helped me sleep better. So while I use technology constantly, I've
+            been trying to use it more deliberately.
+          phrases: ['organized around', 'which saves me from', 'set limits']
+        - text: >-
+            My daily routine with technology is a little different from most people's, because I'm a nurse and I work
+            night shifts. When I wake up in the early afternoon, the first thing I do is check my messages, since my
+            friends usually text me while I'm sleeping. Then I check the hospital's online system to see my schedule and
+            any updates about my patients. At the hospital, technology is everywhere. We use computers to record patient
+            information, and the monitors beside each bed send alarms to our station if something changes. It can be
+            stressful, but it really helps us respond quickly. During my break, I usually video-call my mom for a few
+            minutes. When I get home in the morning, I put on a sleep mask and play white noise on my phone, which helps
+            me fall asleep while it's bright outside. Without these small tools, working nights would be much harder.
+          phrases: ['a little different from', 'It can be stressful, but', 'Without these small tools']
+      al:
+        - text: >-
+            My daily routine is pretty much built around technology, though I've become more careful about how I use it
+            over the past year. I start the day at six thirty, and instead of grabbing my phone right away, I let my smart
+            speaker read me the weather and my schedule while I make coffee. I made that change because I noticed that
+            scrolling first thing in the morning made me anxious before the day had even started. During my commute, I
+            usually listen to audiobooks; I've finished about twenty this year, which I never would have managed with
+            paper books. At the office, I work in software development, so I'm basically coding, reviewing my colleagues'
+            work, and attending online meetings all day. In the evening, I try to separate work and personal life by
+            turning off work notifications at seven. Then I might cook with a recipe on my tablet or play an online board
+            game with friends who live in different cities. Before bed, I put my phone on a charger in the kitchen, not in
+            my bedroom. It sounds like a small thing, but it's made a real difference in how well I sleep.
+          phrases: ['instead of', 'I made that change because', 'It sounds like a small thing']
+        - text: >-
+            If I describe a typical weekday, you'll see that technology shows up in almost every hour, sometimes in ways I
+            don't even notice. I'm a high school teacher, so my mornings begin with checking the school's online platform
+            for messages from students and parents. Some of them send questions late at night, so I try to answer before
+            first period. In class, I use a digital board to show videos, maps, and student work, which makes lessons much
+            more interactive than when I was a student. Between classes, I grade assignments online, and the system
+            automatically calculates averages, which saves me a huge amount of time. After school, I usually go for a run
+            with a smartwatch that tracks my pace and heart rate. I've become a little obsessed with improving my numbers,
+            to be honest. In the evening, I relax by watching documentaries or reading the news on my tablet. The only
+            time I really disconnect is on Sunday mornings, when I leave my phone at home and go hiking. I've realized
+            that I need at least a few hours a week completely offline to feel rested.
+          phrases: ['shows up in', 'much more interactive than', 'The only time I really disconnect']
+    tip_ko: 아침 → 출근길 → 낮 → 저녁 → 잠들기 전처럼 시간 순서로 말하면 빠뜨리는 게 없어요. usually, after that 같은 연결어를 섞어요.
+  - id: technology-past_experience
+    type: past_experience
+    level: [1, 2, 3, 4, 5, 6]
+    question: >-
+      Have you ever had a problem with a device or with the internet? Tell me what happened, how you dealt with it,
+      and how the situation was finally resolved.
+    model:
+      il:
+        - text: >-
+            Last year, my phone broke. I dropped it on the street. The screen was broken. I could not call my mom. I went
+            to a repair shop. It was expensive. Now I use a phone case.
+          phrases: ['Last year', 'Now I']
+        - text: >-
+            One time, the internet stopped at my house. I could not do my homework. I was very worried. I called my
+            brother. He fixed the router. It was okay after one hour.
+          phrases: ['One time', 'I was very worried']
+      im1:
+        - text: >-
+            I remember a problem I had last winter. I was writing a long report on my laptop, and suddenly the screen
+            turned black. I didn't save my file, so I was really scared. I called my friend who is good at computers. He
+            came to my house and fixed it. Luckily, the program saved my file automatically, so I didn't lose everything.
+            After that, I always save my work every ten minutes.
+          phrases: ['I remember', 'Luckily', 'After that']
+        - text: >-
+            A few months ago, I lost my phone on the bus. I didn't notice it until I got home. I felt terrible because all
+            my photos and contacts were in it. I used my laptop to find the location of my phone. It was at the bus
+            station. The next morning, I went there and the staff gave it back to me. I was so happy. Since then, I always
+            check my pocket when I get off the bus.
+          phrases: ['A few months ago', 'The next morning', 'Since then']
+      im2:
+        - text: >-
+            I'd like to talk about a problem I had during an online job interview last year. I was really nervous, so I
+            prepared for a long time. But about five minutes after the interview started, my internet connection suddenly
+            stopped. I couldn't hear the interviewer, and the screen froze. I panicked and tried to reconnect, but it
+            didn't work. So I quickly turned on the hotspot on my phone and joined the meeting again. I explained what
+            happened and said sorry. Luckily, the interviewer was very kind and said it was no problem. I actually got the
+            job. Now I always prepare a backup plan.
+          phrases: ['I''d like to talk about', 'I panicked', 'backup plan']
+        - text: >-
+            One memorable problem happened when I was traveling in Jeju Island with my friends. We used my phone for
+            everything, like maps, hotel information, and restaurant reservations. On the second day, my phone suddenly
+            stopped charging. We were in the middle of the countryside, and we didn't know where to go. At first, we were
+            really stressed. Then we went into a small store and asked the owner for help. She lent us her charger and
+            even told us about a great restaurant nearby. In the end, it became one of our favorite memories of the trip.
+            I learned that I shouldn't depend on one device too much.
+          phrases: ['One memorable problem', 'In the end', 'I learned that']
+      im3:
+        - text: >-
+            I had a really stressful experience with technology about two years ago. I was a senior in university, and I
+            had to submit my graduation project online by midnight. Around ten p.m., when I was almost finished, my laptop
+            suddenly made a strange noise and shut down. I tried to turn it on again, but it wouldn't start. I was so
+            shocked that I almost cried. Fortunately, I remembered that I had saved an earlier version of my file in cloud
+            storage that afternoon. I rushed to a twenty-four-hour internet café near my house, downloaded the file, and
+            finished the last part as fast as I could. I submitted it at eleven fifty-five, just five minutes before the
+            deadline. Since that night, I back up my files every single day, and I never wait until the last minute
+            anymore.
+          phrases: ['I was so shocked that', 'Fortunately', 'Since that night']
+        - text: >-
+            Something funny but also embarrassing happened to me last spring. My company had an important video meeting
+            with a new client, and I was the one presenting. I was working from home, and I thought I had turned off my
+            camera while I was waiting for the meeting to start. So I was eating a sandwich and singing along to some
+            music. Then my manager sent me a message that said my camera was on. I was so embarrassed that my face turned
+            completely red. I quickly apologized, and luckily everyone just laughed. The client even said it made the
+            meeting feel more relaxed. The presentation went well in the end, but now I always check my camera and
+            microphone twice before every meeting. It was a good lesson, and my coworkers still joke about it.
+          phrases: ['funny but also embarrassing', 'I thought I had', 'It was a good lesson']
+      ih:
+        - text: >-
+            One experience I'll never forget happened when I was studying in Canada as an exchange student. About a week
+            before my final exams, someone hacked into my email account. I found out because my friends started getting
+            strange messages from me asking them to send money. At first, I didn't understand what was going on, and I
+            felt really scared and embarrassed. I immediately changed my password, but the hacker had already changed my
+            security settings, so I couldn't get back into my account. I went to the university's IT help desk, and a
+            staff member spent almost two hours helping me recover it. She also showed me how to turn on two-step
+            verification, which I had never heard of before. After that, I sent a message to all my contacts to explain
+            what had happened. Thankfully, nobody had sent any money. Since then, I've been much more careful. I use
+            different passwords for each account and never click on links in suspicious messages.
+          phrases: ['I''ll never forget', 'I found out because', 'Since then, I''ve been']
+        - text: >-
+            The most memorable problem I've had with technology was actually with my grandmother's phone, not mine. Last
+            year, my family bought her a smartphone so she could video-call us. A few weeks later, she called me in a
+            panic and said the phone was broken because the screen was showing everything in a foreign language. I drove
+            to her house that weekend and found out that she had accidentally changed the language setting to Arabic. It
+            took me almost half an hour to find the right menu, because I couldn't read anything on the screen. Finally, I
+            changed it back to Korean, and she was so relieved that she made me a huge dinner. After that, I wrote a
+            simple guide for her on paper with big letters, showing how to make calls, take pictures, and open her
+            messages. Now she sends us photos of her garden almost every day. That experience made me realize how
+            confusing technology can be for older people.
+          phrases: ['in a panic', 'found out that', 'made me realize']
+      al:
+        - text: >-
+            I'd like to tell you about a problem that turned into a pretty valuable lesson. A couple of years ago, I was
+            in charge of organizing an online conference for my company, with about two hundred participants from five
+            countries. We had tested everything the day before, and it all worked perfectly. But on the morning of the
+            event, just ten minutes before it started, the video platform we were using went down for some reason, and
+            nobody could log in. My phone started ringing nonstop, and I could feel my heart racing. I had to make a quick
+            decision, so I set up a meeting on a different platform, sent the new link to all participants by email, and
+            asked my coworkers to call the speakers personally. We started about twenty-five minutes late, which was
+            embarrassing, but the conference went smoothly after that. Afterwards, several participants actually thanked
+            us for handling it so calmly. Looking back, the biggest lesson was that you should always have a backup plan
+            when you rely on technology. Now, whenever I organize an online event, I prepare a second platform and a
+            contact list in advance.
+          phrases: ['turned into', 'I had to make a quick decision', 'Looking back']
+        - text: >-
+            The experience that comes to mind is a time when technology failed me at the worst possible moment. I was
+            traveling alone in Europe a few years ago, and I'd planned my entire trip on my phone: train tickets, hotel
+            bookings, maps, everything. On my third day, I was at a crowded train station in Italy when I realized my
+            phone was gone. I don't know if someone stole it or if I dropped it, but either way, I suddenly had no
+            tickets, no map, and no way to contact anyone. I remember standing there feeling completely helpless.
+            Eventually, I calmed down and went to the ticket office, where a kind staff member let me use her computer to
+            log into my email and print my train tickets. Then I bought a cheap phone at a nearby shop and spent the
+            evening restoring my information from cloud backups. It cost me a whole day and quite a bit of money, but it
+            taught me something important. Now I always carry printed copies of essential documents and keep a little
+            emergency cash separate from my wallet. Ironically, losing my phone made me a much more confident traveler.
+          phrases: ['at the worst possible moment', 'either way', 'Ironically']
+    tip_ko: 언제·어디서 → 무슨 문제 → 어떻게 해결 → 배운 점 순서로 말해요. 이야기 중간에 현재형으로 바뀌지 않게 과거형을 끝까지 지켜요.
+  - id: technology-comparison
+    type: comparison
+    level: [3, 4, 5, 6]
+    question: >-
+      How has the technology people use changed compared to when you were a child? Describe what it was like back
+      then and how things are different today.
+    model:
+      il:
+        - text: >-
+            When I was a child, we had a big computer at home. It was very slow. We did not have smartphones. Now,
+            everyone has a smartphone. The internet is very fast now. I think now is better.
+          phrases: ['When I was a child', 'Now, everyone']
+        - text: >-
+            In the past, I called my friends with the home phone. I sent letters too. Now, I send messages on my phone. It
+            is very fast and easy. But I miss letters sometimes.
+          phrases: ['In the past', 'I miss']
+      im1:
+        - text: >-
+            Technology has changed a lot since I was young. When I was in elementary school, my family had one desktop
+            computer, and we shared it. The internet was slow, so it took a long time to download one song. Now, I have my
+            own smartphone and laptop, and the internet is super fast. I can watch movies anytime. I think life is more
+            convenient now, but people talk to each other less than before.
+          phrases: ['has changed a lot', 'more convenient', 'less than before']
+        - text: >-
+            When I was a kid, I used to take pictures with a film camera. We had to wait a few days to see the photos.
+            Also, I used a map book when we traveled by car. These days, I take pictures with my phone and see them right
+            away. I also use a map app, so I never get lost. Technology made many things easier, but I think we are always
+            busy now.
+          phrases: ['I used to', 'These days', 'right away']
+      im2:
+        - text: >-
+            Technology is very different now compared to when I was a child. Back then, my family had a heavy TV and a
+            desktop computer that made a lot of noise. If someone used the phone, we couldn't use the internet at the same
+            time, which was really annoying. To find information, I usually went to the library and read books. These
+            days, everything is much faster and smaller. I carry a smartphone that is more powerful than our old computer,
+            and I can find almost any information in a few seconds. I think the biggest change is that we're always
+            connected now, for better or worse.
+          phrases: ['Back then', 'the biggest change is', 'for better or worse']
+        - text: >-
+            I think the biggest change is how people communicate. When I was in middle school, we used flip phones, and we
+            could only send short text messages. Each message cost money, so we tried to write as few words as possible.
+            If I wanted to talk to my friends for a long time, I had to call them on the home phone. Now, we use group
+            chats, send photos and videos for free, and even have video calls with people in other countries. It's
+            amazing, but sometimes I feel that conversations were more meaningful when we couldn't talk all the time.
+          phrases: ['the biggest change is', 'as few words as possible', 'more meaningful']
+      im3:
+        - text: >-
+            When I compare technology now with technology from my childhood, the change feels huge. I grew up in the
+            nineties, and I remember that our family computer was in the living room, so everyone could see what I was
+            doing. My parents only let me use it for one hour a day. To listen to music, I recorded songs from the radio
+            onto cassette tapes, and I was so proud of my collection. Now, kids have their own tablets from a very young
+            age, and they can watch or listen to almost anything in their own rooms. In some ways, it's great because they
+            can learn a lot by themselves. But I also worry because parents can't really see what their children are doing
+            online. Personally, I'm glad I grew up with fewer devices, but I wouldn't want to go back.
+          phrases: ['When I compare', 'In some ways', 'I wouldn''t want to go back']
+        - text: >-
+            There's a big difference between the technology I used as a student and what students use today. When I was in
+            high school, we wrote our reports by hand, and only a few students had laptops. If we needed information, we
+            went to the library or used an encyclopedia at home. Our teachers used chalkboards, and sometimes they showed
+            us videos on an old TV. Nowadays, my younger brother does everything on his tablet. He submits homework
+            online, watches lectures on video, and even uses AI tools to check his grammar. On one hand, it's much more
+            efficient, and he can study anywhere. On the other hand, I think he gets distracted more easily, because games
+            and videos are always just one click away. So technology has made studying easier, but maybe not more focused.
+          phrases: ['There''s a big difference between', 'Nowadays', 'On one hand', 'On the other hand']
+      ih:
+        - text: >-
+            Technology today is almost unrecognizable compared to when I was a kid. When I was about ten, my family got
+            our first internet connection. I still remember the strange noise the modem made when it connected, and how a
+            single picture took almost a minute to load. We could only go online when nobody was using the home phone, so
+            my mom and I used to argue about it. Back then, the computer was something you sat down to use for a specific
+            purpose, like doing homework or playing a game. Today, technology isn't something we sit down to use anymore.
+            It's with us all the time, in our pockets and on our wrists. I can pay for things, check my health, and talk
+            to friends abroad without even thinking about it. Personally, I think the biggest change is not speed but how
+            invisible technology has become. It's so built into our daily lives that we only notice it when it stops
+            working.
+          phrases: ['almost unrecognizable', 'I still remember', 'not speed but']
+        - text: >-
+            When I compare the past and the present, I think shopping is where technology has changed the most for me.
+            When I was a child, my mom and I used to go to the traditional market every weekend. We would walk from shop
+            to shop, compare prices, and talk with the owners, who all knew our family. If something was sold out, we just
+            had to come back another day. Now, I do almost all my shopping online. I can compare dozens of products in a
+            few minutes, read reviews from other customers, and get things delivered to my door the next morning. It's
+            incredibly convenient, especially because I work long hours. However, I sometimes miss the personal side of
+            shopping. Nobody at an online store knows my name or asks how my mom is doing. So I'd say technology has made
+            shopping faster and cheaper, but it has also made it a little lonelier.
+          phrases: ['When I compare the past and the present', 'We would', 'However']
+      al:
+        - text: >-
+            If I think about how technology has changed since my childhood, the first thing that strikes me is how much
+            more personal it has become. When I was growing up in the early two thousands, technology was something the
+            whole family shared. We had one computer in the living room, one TV, and one landline phone, and we had to
+            negotiate who got to use them and when. Those negotiations were annoying at the time, but looking back, they
+            made us spend a lot of time together. Today, in my own family, everyone has their own phone, tablet, and
+            laptop, and it's not unusual for the four of us to sit in the same room, each looking at a different screen.
+            Of course, the benefits are enormous. My kids can video-chat with their grandparents in another city, and they
+            can learn almost anything online. Still, I've noticed that I have to make a conscious effort to create shared
+            moments, like a no-phone dinner rule. So while technology has given us far more freedom and convenience, I
+            think it has also quietly changed the way families connect, and that's something we need to be thoughtful
+            about.
+          phrases: ['the first thing that strikes me is', 'looking back', 'Of course', 'Still']
+        - text: >-
+            The difference between then and now is honestly enormous, and I think the change has been both exciting and a
+            little overwhelming. When I was in elementary school, if I wanted to learn about something, say dinosaurs, I'd
+            go to the school library, find a book, and maybe wait a week if someone else had borrowed it. Information was
+            limited, but whatever I found, I trusted completely. Nowadays, the situation is the opposite. You can find a
+            million pages about dinosaurs in a second, but you also have to figure out which of them are accurate. I see
+            this with my nephew, who's twelve. He's incredibly quick at finding information, much quicker than I ever was,
+            but he sometimes believes things just because they appear in a popular video. Another big change is that
+            technology has become much easier to use. My grandparents, who never touched a computer, now send me voice
+            messages and photos every week. So I'd say that technology has become far more powerful and accessible, but
+            the skills we need have shifted from finding information to judging it carefully.
+          phrases: ['both exciting and a little overwhelming', 'the situation is the opposite', 'Another big change is']
+    tip_ko: back then, these days처럼 과거와 지금을 나누는 표현으로 시작해요. 달라진 점 하나를 골라 예시와 함께 자세히 말해요.
+  - id: technology-issue
+    type: issue
+    level: [4, 5, 6]
+    question: >-
+      Some people worry that we depend too much on technology, for example by spending too many hours looking at
+      screens. What concerns do people around you have about technology, and what is your opinion?
+    model:
+      il:
+        - text: >-
+            Many people use their phones too much. My friends look at their phones at dinner. I don't like it. I think we
+            need to talk more. I try to use my phone less.
+          phrases: ['too much', 'I think']
+        - text: >-
+            Some people worry about children and phones. Kids play games for many hours. It is bad for their eyes. I think
+            parents should make rules. One or two hours a day is enough.
+          phrases: ['Some people worry about', 'should make rules']
+      im1:
+        - text: >-
+            People around me worry that we use our phones too much. For example, my mom always says I look at my phone
+            even when we eat together. I think she is right. When I use my phone for a long time, my eyes hurt and I can't
+            sleep well. So these days, I try not to use my phone after eleven at night. I think everyone needs some time
+            without screens.
+          phrases: ['For example', 'I think she is right', 'without screens']
+        - text: >-
+            One big concern is personal information. Many websites ask for our phone number and address. My friend got a
+            lot of spam calls after she shopped online. I think companies should protect our information better. Also, we
+            need to be careful. I don't share my personal information on websites I don't know. I think technology is
+            useful, but we should use it carefully.
+          phrases: ['One big concern is', 'should protect', 'we should use it carefully']
+      im2:
+        - text: >-
+            I think the biggest concern people around me have is that we depend too much on our smartphones. For example,
+            my coworkers check their phones even during meetings, and my friends often look at their screens instead of
+            talking to each other at cafés. Some people also worry about children, because many kids watch videos for
+            hours every day. In my opinion, technology itself isn't the problem. The problem is how we use it. I think we
+            should make simple rules, like no phones at the dinner table or turning off notifications at night. That way,
+            we can enjoy technology without losing important time with people.
+          phrases: ['depend too much on', 'In my opinion', 'That way']
+        - text: >-
+            A lot of people I know are worried about privacy. Every time we use an app or a website, it collects
+            information about us, like where we go and what we buy. My father, for example, refuses to use mobile banking
+            because he thinks someone might steal his money. I understand his concerns, but I think it's impossible to
+            avoid technology completely these days. Instead, we should learn how to protect ourselves. For instance, I use
+            strong passwords and don't click on strange links. I also think companies and the government should have
+            stricter rules to protect people's personal information.
+          phrases: ['are worried about', 'I understand his concerns, but', 'For instance']
+      im3:
+        - text: >-
+            One issue that people around me talk about a lot is screen time, especially for young children. My sister has
+            a five-year-old son, and she says it's really hard to keep him away from her tablet. If she gives it to him,
+            he's quiet for hours, but if she takes it away, he gets really upset. A lot of parents feel the same way, and
+            many of them worry that too much screen time can affect children's sleep and attention. Personally, I think
+            tablets are not completely bad, because there are some good educational programs. But I believe parents need
+            to set clear limits and spend time playing with their kids outside. In my opinion, the key is balance.
+            Technology should be a tool for kids, not a babysitter.
+          phrases: ['One issue that', 'Personally', 'the key is balance']
+        - text: >-
+            These days, many people worry about fake news and false information online. For example, during a big storm
+            last summer, my parents received a message saying that the subway would close for three days. They believed it
+            and canceled all their plans, but it turned out to be completely false. Situations like this happen a lot,
+            because anyone can post anything online, and false stories spread really fast. I think this is a serious
+            problem, especially for older people and children, who might not be able to tell what's true. In my opinion,
+            we should teach people how to check information, for example by looking at a few different news sources. I
+            also think online platforms should do more to stop fake stories from spreading so quickly.
+          phrases: ['it turned out to be', 'I think this is a serious problem', 'should do more to']
+      ih:
+        - text: >-
+            One concern I hear all the time, both at work and from my friends, is that we've become addicted to our
+            phones. Honestly, I think there's some truth to that. I once checked my screen time and found out I was using
+            my phone for almost six hours a day, which shocked me. A lot of that time was spent scrolling through short
+            videos that I don't even remember now. People also say it's affecting how we communicate. When I go to a
+            restaurant, I often see whole families sitting together, each looking at their own phone without talking. Some
+            of my coworkers also complain that they can't focus on long tasks anymore. In my opinion, the solution isn't
+            to stop using technology, because it's too useful. Instead, we need to set personal rules. For example, I
+            started leaving my phone in another room while I read, and I deleted some apps that I used too much. It's a
+            small change, but I already feel calmer and more focused.
+          phrases: ['there''s some truth to that', 'the solution isn''t', 'It''s a small change, but']
+        - text: >-
+            Recently, a lot of people around me have been worried about artificial intelligence. My friends who work in
+            design and translation are especially concerned that AI might replace their jobs. One of them told me her
+            company is already using AI to translate simple documents, so there's less work for human translators. Others
+            worry that students will use AI to write their essays instead of learning how to think and write by
+            themselves. I understand these concerns, and I think some jobs will definitely change. However, I'm not
+            completely pessimistic. In my experience, AI is very good at simple tasks, but it still needs people to check
+            its work and add creativity. I think the most important thing is to learn how to use these tools well, rather
+            than being afraid of them. Schools and companies should also create clear guidelines, so that people use AI to
+            support their work, not to replace their own thinking.
+          phrases: ['are especially concerned that', 'I''m not completely pessimistic', 'rather than']
+      al:
+        - text: >-
+            The issue that comes up most often among the people I know is privacy, and I think it's a much bigger problem
+            than most of us realize. Almost every service we use collects data about us, such as our location, our
+            shopping habits, and even how long we look at certain videos. Most of the time, we agree to this without
+            reading the terms, because they're long and complicated. A friend of mine who works in IT once explained how
+            much information a single app can gather, and honestly, it made me rethink a lot of my habits. On the other
+            hand, I don't think the answer is to avoid technology altogether. That's simply not realistic, and these
+            services do make our lives easier. In my view, the responsibility should be shared. Companies need to be more
+            transparent about what they collect and why, and there should be strong rules with real penalties for misuse.
+            At the same time, users like me need to be more careful, for example by checking app permissions and not
+            sharing more than necessary. If both sides do their part, I think we can enjoy the benefits of technology
+            without giving up our privacy completely.
+          phrases: ['comes up most often', 'In my view', 'At the same time', 'If both sides do their part']
+        - text: >-
+            There's an ongoing debate in my circle about whether technology is making us more isolated, and I find myself
+            somewhere in the middle. On one side, people point out that we spend hours on social media but feel lonelier
+            than ever. I've definitely experienced that myself. After scrolling through friends' vacation photos late at
+            night, I sometimes feel worse rather than better, as if everyone else is living a more exciting life. My older
+            relatives also complain that young people would rather text than call, and that real conversations are
+            disappearing. On the other hand, technology has kept me connected with people in ways that weren't possible
+            before. When I lived abroad for two years, weekly video calls with my family genuinely kept me going during
+            difficult times. I also have an online book club with members from four different countries, and those
+            discussions are some of the most meaningful conversations I have. So my opinion is that technology itself is
+            neutral; it's how we use it that matters. If we use it to replace real relationships, it isolates us, but if
+            we use it to support and extend them, it can bring us closer than ever.
+          phrases: ['somewhere in the middle', 'On one side', 'On the other hand', 'it''s how we use it that matters']
+    tip_ko: 사람들이 걱정하는 점 → 내 경험 → 내 의견 → 해결 방법 순서로 말해요. 장점도 한 문장 인정하면 높은 등급 답변에 가까워져요.
