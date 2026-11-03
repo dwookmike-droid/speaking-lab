@@ -1,0 +1,406 @@
+schema_version: 1
+id: toeic-set02
+title_ko: 모의고사 2
+status: ready
+items:
+  - num: 1
+    type: read_aloud
+    text: >-
+      Good morning, this is Rachel Kim with your morning traffic and weather update. Traffic is moving slowly on Highway 9
+      because of road repairs near the river bridge, so drivers should allow an extra twenty minutes. Downtown streets are clear.
+      As for the weather, expect cloudy skies, light rain, and strong winds this afternoon. The rain should stop by tomorrow morning.
+      Stay tuned for more news after this short break.
+    marks: >-
+      Good **mor**ning, / this is Rachel **Kim** / with your morning **traf**fic and **weath**er update. //
+      Traffic is moving **slow**ly on Highway **9** / because of road re**pairs** / near the river **bridge**, /
+      so drivers should allow an extra twenty **min**utes. // Downtown streets are **clear**. //
+      As for the **weath**er, / expect **cloud**y skies, ↗ / light **rain**, ↗ / and strong **winds** ↘ / this after**noon**. //
+      The rain should **stop** / by tomorrow **mor**ning. // Stay tuned for more **news** / after this short **break**.
+    tip_ko: 교통·날씨 안내는 숫자와 지명이 많아요. Highway 9처럼 숫자가 붙은 이름은 한 덩어리로 읽고, 날씨 나열은 마지막 항목에서 내려요.
+  - num: 2
+    type: read_aloud
+    text: >-
+      Thank you for calling Maple Grove Dental Clinic. Our office is open from nine a.m. to six p.m., Monday through Friday,
+      and from nine a.m. to one p.m. on Saturdays. To make or change an appointment, press one. For questions about insurance,
+      payments, or billing, press two. If you are having a dental emergency, please press three to speak with a nurse right away.
+      Thank you for your patience.
+    marks: >-
+      Thank you for calling Maple Grove **Den**tal Clinic. // Our office is open / from nine **a.m.** to six **p.m.**, /
+      Monday through **Fri**day, / and from nine a.m. to one p.m. / on **Sat**urdays. //
+      To make or change an ap**point**ment, / press **one**. // For questions about **in**surance, ↗ / **pay**ments, ↗ / or **bill**ing, ↘ /
+      press **two**. // If you are having a dental e**mer**gency, / please press **three** / to speak with a nurse / right a**way**. //
+      Thank you for your **pa**tience.
+    tip_ko: 전화 안내 메시지는 '번호 누르기' 문장이 반복돼요. press one, press two처럼 숫자에 힘을 주고, 문장마다 같은 리듬으로 읽어요.
+  - num: 3
+    type: describe_photo
+    image: img/toeic/set02_q3.svg
+    credit: placeholder-set02-q3
+    model:
+      lv5:
+        - text: This is a picture of a library. A woman is taking a book from a shelf. A man is reading a book at a table.
+          phrases: [This is a picture of]
+        - text: I can see a library. On the left, there is a big bookshelf. On the right, a man is wearing headphones. He is reading.
+          phrases: [I can see, On the left, On the right]
+      lv6:
+        - text: >-
+            This picture was taken in a library. On the left side, a woman with long hair is reaching for a book on the shelf.
+            On the right side, a man is sitting at a table and reading a book. There is a lamp on the table.
+          phrases: [This picture was taken in, On the left side, On the right side]
+        - text: >-
+            This is a picture of a quiet library. The first thing I see is a tall bookshelf full of colorful books. A woman is
+            standing in front of it. On the right, a man with headphones is reading at a long table.
+          phrases: [The first thing I see is, full of, in front of]
+      lv7:
+        - text: >-
+            This picture was taken in a library. On the left, there is a tall wooden bookshelf filled with colorful books.
+            A woman with long dark hair is reaching up to take a book from an upper shelf. On the right, a man wearing headphones
+            is reading a book at a long table. It looks like a calm place to study.
+          phrases: [filled with, reaching up to, It looks like]
+        - text: >-
+            The first thing I notice in this picture is a man studying at a table. He is wearing headphones and reading an open
+            book. There is a yellow lamp next to him and a red backpack on a chair. On the other side of the room, a woman is
+            looking for a book on a large bookshelf.
+          phrases: [The first thing I notice, next to him, On the other side of the room]
+      lv8:
+        - text: >-
+            This picture shows the inside of a library. On the left, a woman in a teal top is standing in front of a tall wooden
+            bookshelf, and she's reaching up to pull out a purple book. On the right, a young man wearing headphones is sitting at
+            a long table, completely focused on the book in front of him. Since there's a desk lamp and a backpack nearby, I think
+            he's been studying here for a while.
+          phrases: [This picture shows, completely focused on, Since, I think]
+        - text: >-
+            This is a scene from a quiet library. What stands out most is the tall bookshelf on the left, which is packed with books
+            of different colors. A woman is stretching her arm toward an upper shelf to grab a book. Meanwhile, a man with headphones
+            is reading at a wooden table with a yellow lamp, and someone's red backpack has been left on a chair at the end of the
+            table.
+          phrases: [What stands out most is, which is packed with, Meanwhile]
+    tip_ko: 공간이 둘로 나뉜 사진은 왼쪽 → 오른쪽 순서로 말하면 빠뜨리는 게 없어요. 동작(reaching, reading)은 현재진행형으로 말해요.
+  - num: 4
+    type: describe_photo
+    image: img/toeic/set02_q4.svg
+    credit: placeholder-set02-q4
+    model:
+      lv5:
+        - text: This is a picture of a bus stop. It is raining. A man is looking at his phone. A woman is holding a red umbrella.
+          phrases: [This is a picture of]
+        - text: I can see a street on a rainy day. A yellow bus is coming. Two people are waiting for the bus.
+          phrases: [I can see, on a rainy day]
+      lv6:
+        - text: >-
+            This picture was taken at a bus stop on a rainy day. On the left, a yellow bus is coming down the road. In the middle,
+            a man is standing under the shelter and looking at his phone. On the right, a woman is holding a red umbrella.
+          phrases: [This picture was taken at, On the left, In the middle, On the right]
+        - text: >-
+            This is a picture of a street. The weather looks bad because it is raining. Two people are waiting at a bus stop.
+            The man is wearing a dark jacket, and the woman is wearing a yellow coat. A bus is arriving now.
+          phrases: [The weather looks, is wearing]
+      lv7:
+        - text: >-
+            This picture was taken at a bus stop on a rainy day. On the left side, a yellow city bus is approaching the stop.
+            Under the shelter, a man in a navy jacket is checking his phone, maybe to see the bus schedule. Next to the shelter,
+            a woman in a yellow coat is holding a bright red umbrella.
+          phrases: [is approaching, Under the shelter, maybe to]
+        - text: >-
+            The first thing I see in this picture is a bus stop in the rain. A man is standing inside the shelter, and he is looking
+            down at his phone. There is a bench and a timetable behind him. Outside the shelter, a woman is staying dry under a red
+            umbrella. It seems like they are both waiting for the bus.
+          phrases: [The first thing I see, staying dry, It seems like]
+      lv8:
+        - text: >-
+            This picture shows a city street on a gray, rainy day. On the left, a yellow bus with the number 12 on its sign is
+            pulling up to the stop. A man in a dark navy jacket is standing under the shelter, and he seems to be checking his phone,
+            possibly to see when his bus arrives. Meanwhile, a woman in a yellow coat is waiting just outside the shelter, holding
+            a red umbrella over her head.
+          phrases: [is pulling up to, seems to be, possibly to, Meanwhile]
+        - text: >-
+            This is a rainy scene at a bus stop. What catches my eye first is the woman on the right, whose bright red umbrella
+            really stands out against the gray sky. In the middle of the picture, a man is waiting under the shelter with his eyes
+            on his phone. There's a bench and a timetable board behind him. Since a yellow bus is approaching from the left, I think
+            they won't have to wait much longer.
+          phrases: [What catches my eye first is, stands out against, with his eyes on, Since ~ I think]
+    tip_ko: 날씨가 보이는 사진은 첫 문장에 넣어요(on a rainy day). 사람마다 옷 색깔이나 소지품을 하나씩 붙이면 묘사가 쉬워져요.
+  - num: 5
+    type: respond_q
+    context: >-
+      Imagine that a research company is doing a telephone survey in your country. You have agreed to answer some questions
+      about smartphones and mobile apps.
+    question: How many hours a day do you use your smartphone, and what do you mostly use it for?
+    model:
+      lv5:
+        - text: I use my smartphone about four hours a day. I mostly watch videos.
+        - text: I use it for about three hours a day. I usually send messages to my friends.
+      lv6:
+        - text: I use my smartphone for about five hours a day. I mostly use it to watch videos and check the news on the subway.
+        - text: I think I use my phone for about three hours a day. I mainly use it for messaging and listening to music.
+      lv7:
+        - text: >-
+            I use my smartphone for about four hours a day. Most of the time, I use it to check my email and messages, but I also
+            watch videos before bed.
+          phrases: [Most of the time, but I also]
+        - text: >-
+            Honestly, I probably use my phone for more than five hours a day. I mostly use it for social media and online banking,
+            especially during my commute.
+          phrases: [Honestly, especially]
+      lv8:
+        - text: >-
+            To be honest, I use my smartphone for around six hours a day, which is probably too much. I mostly use it for work
+            emails during the day, and in the evening I watch short videos to relax.
+          phrases: [To be honest, which is probably too much]
+        - text: >-
+            I'd say I spend about three hours a day on my smartphone. Most of that time goes to reading news articles and listening
+            to podcasts on my way to work, since my commute takes almost an hour.
+          phrases: [I'd say, Most of that time goes to, since]
+    tip_ko: 시간과 용도, 질문이 두 개예요. 숫자로 먼저 답하고, 용도는 하나만 구체적으로 말해도 충분해요.
+  - num: 6
+    type: respond_q
+    question: When was the last time you downloaded a new app, and what kind of app was it?
+    model:
+      lv5:
+        - text: I downloaded a new app last week. It was a weather app.
+        - text: The last time was two days ago. I downloaded a game app.
+      lv6:
+        - text: The last time I downloaded a new app was last month. It was a language learning app, because I want to study Japanese.
+        - text: I downloaded a new app three days ago. It was a map app, and I use it to find bus times.
+      lv7:
+        - text: >-
+            The last time I downloaded a new app was about a week ago. It was a budgeting app that tracks my spending, and I've been
+            checking it every day since then.
+          phrases: [The last time I ~ was, I've been ~ since then]
+        - text: >-
+            I downloaded a new app yesterday, actually. It was a photo editing app, because I wanted to make my vacation pictures
+            look a little better.
+          phrases: [actually]
+      lv8:
+        - text: >-
+            The last time was just last weekend. My company started using a new messaging app for team communication, so I had to
+            download it. It took a while to get used to, but now I find it really convenient.
+          phrases: [It took a while to get used to, I find it]
+        - text: >-
+            I think it was about two weeks ago. I downloaded a note-taking app because a coworker recommended it, and it's been
+            surprisingly useful. It even syncs my notes between my phone and my laptop automatically.
+          phrases: [it's been surprisingly useful, It even]
+    tip_ko: 언제, 어떤 앱인지 두 가지를 답해요. 지난 일이라 downloaded, was처럼 과거형을 지켜요.
+  - num: 7
+    type: respond_q
+    question: Would you prefer to use a free app with advertisements or pay for the same app without any ads? Why?
+    model:
+      lv5:
+        - text: I prefer a free app with ads. First, I don't want to spend money. Second, the ads are short, so they are okay.
+          phrases: [First, Second]
+        - text: I prefer to pay for the app. Ads are very annoying. Also, I use the app every day, so paying is better.
+          phrases: [Also]
+      lv6:
+        - text: >-
+            I would prefer to pay for the app without ads. First, ads are really annoying when I am busy. Second, I use some apps
+            every day, so a few dollars is not expensive for me. So I think paying is a better choice.
+          phrases: [First, Second, So I think]
+        - text: >-
+            I prefer to use a free app with ads. The main reason is money. I use many different apps, so paying for all of them is
+            too expensive. Also, I can just skip most ads after a few seconds.
+          phrases: [The main reason is, Also]
+      lv7:
+        - text: >-
+            I would prefer to pay for an app without any ads. The main reason is that ads interrupt what I'm doing. For example,
+            when I'm studying with a vocabulary app, a long video ad sometimes pops up and I lose my focus. Paying a few dollars is
+            worth it if I can use the app comfortably. That's why I'd choose the paid version.
+          phrases: [The main reason is that, For example, is worth it, That's why]
+        - text: >-
+            Personally, I prefer free apps with advertisements. First of all, I'm a student, so I need to save money wherever I can.
+            Also, I usually try an app for a few weeks and then stop using it, so paying for it would be a waste. Watching a few ads
+            is a small price to pay.
+          phrases: [First of all, would be a waste, a small price to pay]
+      lv8:
+        - text: >-
+            Honestly, I'd much rather pay for the version without ads. The biggest reason is that I value my time. For instance,
+            I use a navigation app almost every day, and when an ad pops up while I'm trying to find my way, it's not just annoying
+            but actually distracting. A few dollars a month is a small cost compared to the stress it saves me, so I'm happy to pay
+            for apps I use regularly.
+          phrases: [I'd much rather, not just ~ but, compared to]
+        - text: >-
+            It really depends on the app, but in general I'd go with the free version. Most of the apps on my phone are ones I only
+            open once or twice a week, so the ads don't bother me that much. If I paid for every single app, those small charges
+            would add up quickly. However, if I started using an app every day, I'd probably upgrade to the paid version.
+          phrases: [It really depends on, would add up, However, if I]
+    tip_ko: 둘 중 하나를 고르는 질문이에요. 첫 문장에서 고르고, 이유 하나에 내 경험을 붙이면 30초가 채워져요.
+  - num: 8
+    type: info_based
+    caller_intro: >-
+      Hi, this is Mark from the marketing team. I'm helping with the interviews tomorrow, but I don't have the schedule with me.
+      Could you answer a few questions?
+    info:
+      title: Brightline Media — Interview Schedule
+      subtitle: "April 8 · Room 302, Main Office · Interviewer: Karen Lee (HR Manager)"
+      rows:
+        - ["9:00 – 9:45 a.m.", "Daniel Park", "Graphic Designer"]
+        - ["10:00 – 10:45 a.m.", "Emily Watson", "Marketing Assistant"]
+        - ["11:00 – 11:45 a.m.", "Jason Moore", "Graphic Designer — CANCELED"]
+        - ["12:00 – 1:00 p.m.", "Lunch break", ""]
+        - ["1:00 – 1:45 p.m.", "Sophia Reyes", "Accountant"]
+        - ["2:00 – 2:45 p.m.", "Kevin Hughes", "Marketing Assistant"]
+        - ["3:00 – 3:45 p.m.", "Olivia Grant", "Graphic Designer (moved from April 6)"]
+    question: What time is the first interview, and who is it with?
+    model:
+      lv5:
+        - text: The first interview is at 9 a.m. It is with Daniel Park.
+        - text: It starts at 9 o'clock. Daniel Park is the first person.
+      lv6:
+        - text: The first interview starts at 9 a.m. It is with Daniel Park, and he is applying for the graphic designer job.
+        - text: Sure. The first interview is at 9 o'clock in Room 302. It is with Daniel Park for the graphic designer position.
+      lv7:
+        - text: >-
+            Sure. The first interview begins at 9 a.m. in Room 302. You'll be meeting Daniel Park, who is applying for the graphic
+            designer position.
+          phrases: [You'll be meeting, who is applying for]
+        - text: >-
+            Let me check. The first interview is scheduled for 9 a.m., and it's with Daniel Park. He's a candidate for the graphic
+            designer position, and it lasts 45 minutes.
+          phrases: [Let me check, is scheduled for]
+      lv8:
+        - text: >-
+            Sure, no problem. The first interview is scheduled for 9 a.m. in Room 302 at the main office. It's with Daniel Park,
+            who's applying for the graphic designer position, so you might want to look at his portfolio beforehand.
+          phrases: [is scheduled for, you might want to]
+        - text: >-
+            Of course. The day starts with Daniel Park at 9 a.m. He's interviewing for the graphic designer position, and his
+            interview runs until 9:45, so there's a short break before the next one at 10.
+          phrases: [The day starts with, runs until]
+    tip_ko: 자료 맨 위 줄과 첫 행만 보면 답할 수 있어요. 시간 → 이름 → 지원 직무 순서로 말해요.
+  - num: 9
+    type: info_based
+    question: I heard Jason Moore is coming in at 11 for the graphic designer position. Is that right?
+    model:
+      lv5:
+        - text: Sorry, that is not right. Jason Moore's interview was canceled.
+        - text: No, he is not coming. His 11 o'clock interview is canceled.
+      lv6:
+        - text: I'm sorry, but that's not right. Jason Moore's interview at 11 a.m. was canceled, so you have free time then.
+        - text: Actually, no. Jason Moore was on the schedule for 11, but his interview was canceled. Nobody is coming at that time.
+          phrases: [Actually, no.]
+      lv7:
+        - text: >-
+            I'm afraid that's not correct. Jason Moore was scheduled for 11 a.m., but his interview has been canceled. So there's no
+            interview between 11 and lunch.
+          phrases: [I'm afraid that's not correct, has been canceled]
+        - text: >-
+            Actually, there's been a change. Jason Moore canceled his 11 o'clock interview, so he won't be coming in. You'll have a
+            break until lunch at noon.
+          phrases: [there's been a change]
+      lv8:
+        - text: >-
+            I'm afraid that information is out of date. Jason Moore was originally scheduled for 11 a.m., but his interview has been
+            canceled. That means you'll have a free slot from 11 until the lunch break at noon.
+          phrases: [is out of date, was originally scheduled for, That means]
+        - text: >-
+            Actually, that's no longer the case. Jason Moore's 11 o'clock interview for the graphic designer position was canceled,
+            so he won't be coming in tomorrow. You can use that time to review the other candidates' applications.
+          phrases: [that's no longer the case]
+    tip_ko: 잘못 알고 있는 정보를 바로잡는 문제예요. "I'm afraid…"로 먼저 아니라고 말하고, 취소됐다는 사실을 알려 줘요.
+  - num: 10
+    type: info_based
+    question: Could you tell me about all the interviews for the graphic designer position?
+    model:
+      lv5:
+        - text: There are two interviews for the graphic designer job. Daniel Park is at 9 a.m. Olivia Grant is at 3 p.m.
+        - text: First, Daniel Park is at 9 o'clock. Jason Moore was at 11, but it is canceled. Last, Olivia Grant is at 3.
+          phrases: [First, Last]
+      lv6:
+        - text: >-
+            Sure. There are two interviews for the graphic designer position. First, Daniel Park has an interview from 9 to 9:45 a.m.
+            Then, Olivia Grant has an interview from 3 to 3:45 p.m. Jason Moore's interview was canceled.
+          phrases: [First, Then]
+        - text: >-
+            Of course. The first one is with Daniel Park at 9 a.m. There was another one with Jason Moore at 11, but he canceled.
+            The last one is with Olivia Grant at 3 p.m.
+          phrases: [The first one is, The last one is]
+      lv7:
+        - text: >-
+            Sure. Two candidates are being interviewed for the graphic designer position. The first is Daniel Park, from 9 to 9:45
+            in the morning. The second is Olivia Grant, from 3 to 3:45 in the afternoon. Her interview was moved from April 6.
+            Jason Moore was also scheduled, but he canceled.
+          phrases: [are being interviewed, The first is, The second is]
+        - text: >-
+            Let me see. For the graphic designer position, you'll meet Daniel Park first at 9 a.m. Jason Moore was supposed to come
+            at 11, but his interview was canceled. Finally, Olivia Grant will come in at 3 p.m. Her interview was originally on
+            April 6, but it was rescheduled.
+          phrases: [was supposed to, Finally, was rescheduled]
+      lv8:
+        - text: >-
+            Sure. Three interviews were originally planned for the graphic designer position, but now there are only two. The first
+            one is with Daniel Park from 9 to 9:45 in the morning. Jason Moore was supposed to come in at 11, but he canceled.
+            The last one is with Olivia Grant from 3 to 3:45 p.m. Her interview was moved here from April 6, so she'll be the final
+            candidate of the day.
+          phrases: [were originally planned, but now there are only, was moved here from]
+        - text: >-
+            Of course. You'll be seeing two graphic designer candidates tomorrow. Daniel Park is first, from 9 to 9:45 a.m., right at
+            the start of the day. Then in the afternoon, Olivia Grant comes in from 3 to 3:45. Her interview was originally set for
+            April 6, but it was rescheduled. There was also a third candidate, Jason Moore, but he canceled his 11 o'clock slot.
+          phrases: [right at the start of the day, was originally set for, There was also]
+    tip_ko: 같은 직무 지원자를 시간 순서로 모아 말해요. 취소나 일정 변경 같은 특이 사항도 빠뜨리지 말아요.
+  - num: 11
+    type: opinion
+    question: >-
+      Which do you think is better for completing team projects: working together in the same office, or working remotely
+      from home? Use specific reasons and examples to support your opinion.
+    model:
+      lv5:
+        - text: >-
+            I think working together in the office is better. I have two reasons. First, we can talk face to face. It is fast and
+            easy. Second, we can solve problems together. For example, in my team, we had a problem last month. We met in a meeting
+            room and fixed it in one hour. So I prefer the office.
+          phrases: [I have two reasons, First, Second, For example]
+        - text: >-
+            I think working remotely is better for team projects. First, I can save time. I don't need to take the bus to work.
+            Second, I can focus at home. The office is noisy. For example, my friend works at home. She says she finishes her work
+            faster. So I like working remotely.
+          phrases: [First, Second, For example]
+      lv6:
+        - text: >-
+            I think working together in the office is better for team projects. There are two reasons. First, communication is much
+            faster. If I have a question, I can just walk to my coworker's desk and ask. Online, I have to wait for an answer.
+            Second, it is easier to build a good relationship with team members. For example, last year my team worked on a big
+            project in the office. We had lunch together every day, and we became close. Because of that, we worked well as a team.
+            For these reasons, I prefer the office.
+          phrases: [There are two reasons, Because of that, For these reasons]
+        - text: >-
+            In my opinion, working remotely is better for team projects. I have two reasons. First, people can work at their best
+            time. Some people focus better in the morning, and some people focus better at night. Second, we don't waste time on
+            long meetings. For example, my team uses an online chat and a shared document. We write our ideas there, so we only
+            meet once a week for thirty minutes. This saves a lot of time. So I think working remotely is better.
+          phrases: [In my opinion, Some people ~ and some people, This saves]
+      lv7:
+        - text: >-
+            I believe working together in the same office is better for team projects. I have two main reasons. First, it's much
+            easier to share ideas when everyone is in the same room. In a face-to-face meeting, people can react right away, and one
+            idea often leads to another. Second, problems can be solved more quickly. For example, when I was working on a product
+            launch last year, our designer noticed a mistake in the plan. Because we were sitting next to each other, we fixed it in
+            ten minutes. If we had been working from home, it probably would have taken a whole day of emails. For these reasons,
+            I think the office is the better choice for team projects.
+          phrases: [I have two main reasons, one idea often leads to another, Because we were]
+        - text: >-
+            In my opinion, working remotely is better for team projects. First of all, it gives team members more time to focus.
+            In an office, people are often interrupted by phone calls and small talk. At home, it's quieter, so they can finish their
+            part of the project faster. Second, remote work makes it easier to work with people in different places. For example,
+            last semester I did a group project with classmates who lived in three different cities. We used video calls and a
+            shared online folder, and we finished the project a week early. Without remote tools, that would have been impossible.
+            Therefore, I think working remotely is the better option.
+          phrases: [First of all, makes it easier to, Without ~ that would have been, Therefore]
+      lv8:
+        - text: >-
+            Personally, I think working together in the same office is better for team projects, even though remote work has become
+            very common. The main reason is that teamwork depends on trust, and trust is much easier to build in person. When you
+            see your coworkers every day, you notice when someone is struggling, and you can offer help before a small problem
+            becomes a big one. I learned this from experience. At my previous job, our team was fully remote for about a year, and
+            although everyone was working hard, we kept missing small details because nobody wanted to bother each other with
+            questions. After we moved back to the office, those misunderstandings almost disappeared, and our projects started
+            finishing on schedule. So overall, I believe sharing the same space makes a team work more smoothly.
+          phrases: [even though, The main reason is that, I learned this from experience, So overall]
+        - text: >-
+            I'd argue that working remotely is actually better for team projects, as long as the team has clear rules. The biggest
+            advantage is flexibility. When people can choose where and when they work, they tend to be more productive and less
+            stressed. For example, my current team is spread across two different cities, and we work almost entirely online.
+            At first, I was worried that communication would suffer, but we set up a simple system: a short video call every
+            morning, and everything else goes into a shared project board. Because every decision is written down, nobody misses
+            important information, and new members can catch up quickly. Honestly, our projects run more smoothly now than when we
+            all shared an office. So I'd say remote work is the better choice.
+          phrases: [I'd argue that, as long as, The biggest advantage is, At first ~ but]
+    tip_ko: 사무실과 재택 중 한쪽을 분명히 고르고, 팀 프로젝트에서 겪은 일을 예시로 들면 60초가 자연스럽게 채워져요.

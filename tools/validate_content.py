@@ -17,6 +17,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FMT = yaml.safe_load(open(os.path.join(ROOT, "schema/exam_formats.yaml"), encoding="utf-8"))
 LIM = yaml.safe_load(open(os.path.join(ROOT, "schema/limits.yaml"), encoding="utf-8"))
 LVL = yaml.safe_load(open(os.path.join(ROOT, "schema/answer_levels.yaml"), encoding="utf-8"))
+_cred = os.path.join(ROOT, "content/credits.yaml")
+CREDIT_IDS = {c["id"] for c in (yaml.safe_load(open(_cred, encoding="utf-8")) or {}).get("credits", [])} if os.path.exists(_cred) else set()
 STATUS = {"draft", "ready", "reviewed"}
 
 
@@ -52,6 +54,10 @@ def check_models(errs, warns, where, model, exam, words_key, draft):
             if not text:
                 errs.append(f"{where}.model.{lv}[{j}]: text가 없어요")
                 continue
+            if isinstance(a, dict):
+                for ph in a.get("phrases") or []:
+                    if "~" not in str(ph) and str(ph).lower() not in text.lower():
+                        warns.append(f"{where}.model.{lv}[{j}]: 핵심 표현 '{ph}'이(가) 답변에 없어요")
             n = len(text.split())
             if rng and lv in rng and not (rng[lv][0] <= n <= rng[lv][1]):
                 errs.append(f"{where}.model.{lv}[{j}]: {n}단어 (기준 {rng[lv][0]}~{rng[lv][1]})")
@@ -105,6 +111,8 @@ def validate_toeic(d, errs, warns):
         img = it.get("image")
         if img and not os.path.exists(os.path.join(ROOT, "app", img)):
             errs.append(f"Q{it.get('num')}: 이미지 파일이 없어요 (app/{img})")
+        if img and it.get("credit") not in CREDIT_IDS:
+            errs.append(f"Q{it.get('num')}: credit '{it.get('credit')}'이(가) content/credits.yaml에 없어요")
 
 
 def validate_opic(d, errs, warns):

@@ -1,0 +1,374 @@
+schema_version: 1
+id: toeic-set03
+title_ko: 모의고사 3
+status: ready
+items:
+  - num: 1
+    type: read_aloud
+    text: >-
+      Attention, passengers on Flight 482 to Lisbon. Due to a mechanical inspection, this flight has been delayed by about forty minutes.
+      The new boarding time is ten fifteen, and the flight will now depart from Gate 21 instead of Gate 17. Please keep your boarding pass,
+      passport, and carry-on bags ready. We apologize for the inconvenience and thank you for your patience.
+    marks: >-
+      Attention, / passengers on Flight four eighty-**two** / to **Lis**bon. // Due to a mechanical in**spec**tion, / this flight has been
+      de**layed** / by about forty **min**utes. // The new boarding time / is ten fif**teen**, / and the flight will now depart / from Gate
+      twenty-**one** / instead of Gate seven**teen**. // Please keep your boarding **pass**, ↗ / **pass**port, ↗ / and carry-on **bags** ↘ /
+      ready. // We apologize for the incon**ven**ience / and thank you for your **pa**tience.
+    tip_ko: 편명·시간·게이트 번호가 핵심 정보예요. 숫자는 한 덩어리로 또박또박 읽고, 바뀐 게이트(21)를 조금 힘주어 말해요.
+  - num: 2
+    type: read_aloud
+    text: >-
+      Good evening, and welcome to City Talk. I'm your host, Laura Bennett. On tonight's show, we'll meet a young chef who opened a
+      restaurant at the age of twenty-two, a local musician who teaches free guitar lessons, and a scientist who studies the birds in our
+      city parks. Later, we'll answer your questions about this weekend's weather. Stay with us!
+    marks: >-
+      Good **eve**ning, / and welcome to City **Talk**. // I'm your **host**, / Laura **Ben**nett. // On tonight's **show**, / we'll meet a
+      young **chef** / who opened a restaurant / at the age of twenty-**two**, ↗ / a local mu**si**cian / who teaches free guitar
+      **les**sons, ↗ / and a **sci**entist / who studies the birds / in our city **parks**. ↘ // **La**ter, / we'll answer your questions /
+      about this weekend's **wea**ther. // Stay with **us**!
+    tip_ko: 손님 세 명을 소개하는 나열이에요. 사람마다 설명이 길어서, 사람 단위로 끊고 앞 두 명은 올려 읽고 마지막은 내려 읽어요.
+  - num: 3
+    type: describe_photo
+    image: img/toeic/set03_q3.svg
+    credit: placeholder-set03-q3
+    model:
+      lv5:
+        - text: This is a picture of a café. A man is making coffee. A woman is paying with a card. There is a menu on the wall.
+          phrases: [This is a picture of, There is]
+        - text: This picture shows a coffee shop. On the left, a man is working at a coffee machine. On the right, a woman is buying something.
+          phrases: [This picture shows, On the left, On the right]
+      lv6:
+        - text: >-
+            This picture was taken in a café. On the left, a man in a black apron is making coffee with a machine. In the middle,
+            there are some pastries in a glass case. On the right, a woman is paying with a card.
+          phrases: [This picture was taken in, On the left, In the middle, On the right]
+        - text: >-
+            This is a picture of a small coffee shop. A barista is standing behind the counter and using an espresso machine. A woman
+            in a blue top is paying at the counter. Above them, there is a menu board.
+          phrases: [This is a picture of, standing behind, Above them]
+      lv7:
+        - text: >-
+            This picture was taken at the counter of a small café. On the left, a barista wearing a green headband is making coffee at
+            an espresso machine. In front of him, there's a glass case full of pastries. On the right, a woman with a purple bag is
+            paying with her card. It seems like she just ordered a drink.
+          phrases: [wearing, In front of him, It seems like]
+        - text: >-
+            The first thing I see is a café counter with a big menu board on the wall. A barista in a white shirt and a black apron is
+            busy preparing a drink. Next to the machine, some pastries are displayed in a glass case. A customer is tapping her card on
+            the card reader to pay.
+          phrases: [The first thing I see is, busy preparing, Next to]
+      lv8:
+        - text: >-
+            This picture shows a cozy café, probably during a quiet moment of the day. On the left, a barista in a green headband and a
+            black apron is preparing a drink at a silver espresso machine. Right next to him, there's a glass display case filled with
+            pastries. On the other side of the counter, a woman with reddish-brown hair is paying by card, so I guess she's waiting for
+            her order.
+          phrases: [This picture shows, probably, Right next to him, On the other side of, so I guess]
+        - text: >-
+            What stands out in this picture is a café counter under a large chalkboard menu. Behind the counter, a barista is focused on
+            making coffee with an espresso machine, while a customer in a blue top is paying for her order with a card. There are a few
+            pastries in a display case between them, and two lamps hanging from the ceiling give the place a warm feeling.
+          phrases: [What stands out in this picture is, is focused on, while, give the place a ~ feeling]
+    tip_ko: 사람이 둘이면 왼쪽 인물 → 가운데 사물 → 오른쪽 인물 순서로 옮겨 가요. 옷차림이나 소지품을 붙이면 문장이 자연스럽게 길어져요.
+  - num: 4
+    type: describe_photo
+    image: img/toeic/set03_q4.svg
+    credit: placeholder-set03-q4
+    model:
+      lv5:
+        - text: This is a picture of a park. A woman is walking a dog. A man is running. Two people are sitting on a bench.
+          phrases: [This is a picture of]
+        - text: This picture was taken in a park. It is sunny. A man in a red shirt is jogging. There is a pond on the right.
+          phrases: [This picture was taken in, There is]
+      lv6:
+        - text: >-
+            This picture was taken in a park on a sunny day. On the left, a woman in a yellow coat is walking her dog. In the middle,
+            a man is jogging. On the right, two older people are sitting on a bench.
+          phrases: [On the left, In the middle, On the right]
+        - text: >-
+            This is a picture of a big park with many trees. A man in a red shirt is jogging on the path. Behind him, there is a pond
+            with some birds. Two people are resting on a bench next to the pond. It looks peaceful.
+          phrases: [Behind him, next to, It looks]
+      lv7:
+        - text: >-
+            This picture was taken in a park on a bright, sunny day. On the left side, a woman wearing a yellow coat is walking a small
+            brown dog on a leash. In the center, a man in a red shirt is jogging along the path. On the right, an older couple is
+            sitting on a bench by a pond.
+          phrases: [On the left side, wearing, In the center, by a pond]
+        - text: >-
+            The first thing I notice is a man in a red shirt who is jogging through the park. Not far from him, a woman is taking her dog
+            for a walk. Two people with gray hair are relaxing on a wooden bench next to a pond. It seems like a perfect day to be outside.
+          phrases: [The first thing I notice is, Not far from him, It seems like]
+      lv8:
+        - text: >-
+            This is a scene from a city park on a clear, sunny day. On the left, a woman in a yellow coat is walking her brown dog along
+            a dirt path. In the middle, a man wearing a white headband is jogging, and he looks pretty focused. On the right, an older
+            couple is sitting on a wooden bench next to a pond with a few white ducks. Overall, everyone seems to be enjoying the nice
+            weather.
+          phrases: [This is a scene from, he looks, Overall, seems to be enjoying]
+        - text: >-
+            This picture captures a typical afternoon in a park. A jogger in a red shirt and a white headband is running across the
+            center of the picture, while a woman behind him is walking a small dog on a red leash. Over by the pond, two older people are
+            sitting together on a bench, and one of them is holding something white. With all the green trees, it looks really relaxing.
+          phrases: [This picture captures, while, Over by, With all the ~, it looks]
+    tip_ko: 사람이 셋 이상이면 다 자세히 말하려고 하지 말고, 가장 눈에 띄는 인물 하나를 길게, 나머지는 한 문장씩 말해요.
+  - num: 5
+    type: respond_q
+    context: >-
+      Imagine that a marketing firm is doing research in your country. You have agreed to take part in a telephone interview about
+      eating out at restaurants.
+    question: How often do you eat at a restaurant, and who do you usually go with?
+    model:
+      lv5:
+        - text: I eat at a restaurant once a week. I usually go with my family.
+        - text: I go to a restaurant about twice a month. I usually go with my friends.
+      lv6:
+        - text: I eat at a restaurant about once a week. I usually go with my parents on Saturday evening.
+        - text: I go out to eat two or three times a month. I usually go with my coworkers after work on Friday.
+      lv7:
+        - text: >-
+            I eat out at a restaurant about twice a week. I usually go with my coworkers for lunch, because there's no cafeteria in our
+            building.
+        - text: >-
+            I probably eat at a restaurant once or twice a week. Most of the time, I go with my best friend, and we like to try new places
+            on weekends.
+      lv8:
+        - text: >-
+            Honestly, I eat out pretty often, maybe three or four times a week. On weekdays, I usually grab lunch with my coworkers near
+            the office, and on weekends, I go to a nice restaurant with my family.
+        - text: >-
+            I'd say I eat at a restaurant about twice a week. I usually go with my roommate, since neither of us really enjoys cooking
+            after a long day, and there are lots of good places in our neighborhood.
+    tip_ko: 얼마나 자주, 누구와 가는지 두 가지를 모두 답해요. 15초라 숫자 하나, 사람 하나를 말하고 이유를 짧게 붙이면 충분해요.
+  - num: 6
+    type: respond_q
+    question: When you choose a restaurant, what is the most important thing you consider?
+    model:
+      lv5:
+        - text: The most important thing is the price. I don't want to spend too much money.
+        - text: I think the taste is the most important. I like delicious food.
+      lv6:
+        - text: The most important thing for me is the price. I'm a student, so I look for restaurants with cheap but good food.
+        - text: When I choose a restaurant, I think about the location. I like places that are close to my home or office.
+      lv7:
+        - text: >-
+            When I choose a restaurant, the most important thing is the reviews. I always check what other people say online, because good
+            reviews usually mean good food.
+        - text: >-
+            For me, the most important thing is the atmosphere. If a restaurant is too noisy or crowded, I can't really enjoy my meal or
+            talk with my friends.
+      lv8:
+        - text: >-
+            I'd say the most important thing is the quality of the food. I don't mind paying a little more or waiting in line if the
+            ingredients are fresh and the dishes taste great. A bad meal ruins the whole experience for me.
+        - text: >-
+            For me, it's definitely the location. I usually eat out with coworkers during a short lunch break, so the restaurant has to be
+            within walking distance of our office. Otherwise, we spend most of our break just getting there.
+    tip_ko: 기준을 하나만 골라요(가격, 맛, 위치, 분위기). "The most important thing is ~"로 시작하고 이유 한 문장을 붙여요.
+  - num: 7
+    type: respond_q
+    question: >-
+      Would you rather eat at a new restaurant you have never tried or at a restaurant you already know well? Why?
+    model:
+      lv5:
+        - text: I prefer a restaurant I know well. First, I know the food is good. Second, I know the price, so I feel comfortable.
+          phrases: [First, Second]
+        - text: I would rather try a new restaurant. I like new food. Also, I can share pictures with my friends. It is fun.
+          phrases: [I would rather, Also]
+      lv6:
+        - text: >-
+            I would rather eat at a restaurant I already know well. First, I know the food is delicious, so I don't worry about the menu.
+            Second, the staff know me, so the service is very friendly. That's why I prefer a familiar place.
+          phrases: [I would rather, First, Second, That's why]
+        - text: >-
+            I prefer to try a new restaurant. First, I like trying different kinds of food from other countries. Second, it's a good way
+            to make special memories with my friends. So I usually look for new places on weekends.
+          phrases: [I prefer to, First, Second, So]
+      lv7:
+        - text: >-
+            I'd rather go to a new restaurant that I've never tried. The main reason is that I get bored easily, so trying new dishes
+            is part of the fun of eating out. For example, last month my friends and I found a small Vietnamese place near our school,
+            and now it's one of our favorites.
+          phrases: [I'd rather, The main reason is that, For example]
+        - text: >-
+            I would choose a restaurant I already know well. When I eat out, I don't want to take any risks. If I go to a new place,
+            the food might be disappointing or more expensive than I expected. At my favorite restaurant, I always know exactly what I'm
+            getting, so I can just relax.
+          phrases: [I would choose, If ~, At my favorite restaurant]
+      lv8:
+        - text: >-
+            Personally, I'd much rather go to a restaurant I already know well, especially when I'm with my family. My parents are pretty
+            picky about food, so trying a new place is always a little risky. At our usual Korean barbecue restaurant, we know the menu,
+            the prices, and even the owner, so everyone feels comfortable and we never end up disappointed.
+          phrases: [I'd much rather, especially when, so ~ is always a little risky, end up]
+        - text: >-
+            I'd definitely choose a new restaurant. For me, eating out isn't just about the food; it's also about having a new experience.
+            For instance, a few weeks ago I tried a small Mexican restaurant that had just opened in my neighborhood, and it turned out to be
+            amazing. If I always went to the same places, I'd never discover spots like that.
+          phrases: [I'd definitely choose, isn't just about ~; it's also about, For instance, turned out to be]
+    tip_ko: 7번은 둘 중 하나를 고르는 질문이에요. 첫 문장에서 분명히 고르고, 이유 두 개나 이유 하나 + 짧은 경험으로 30초를 채워요.
+  - num: 8
+    type: info_based
+    caller_intro: >-
+      Hi, this is Daniel Park. I'm leaving for my business trip to Toronto soon, but I can't find my itinerary. Could you answer a few
+      questions for me?
+    info:
+      title: "Business Trip Itinerary — Daniel Park"
+      subtitle: "Sales Department · Toronto · April 8–10"
+      rows:
+        - ["Apr 8, 8:15 a.m.", "Flight 207 departs Seattle (arrives Toronto 3:40 p.m.)"]
+        - ["Apr 8, 5:00 p.m.", "Check in: Lakeview Hotel (2 nights)"]
+        - ["Apr 9, 9:30 a.m.", "Meeting with Harbor Supplies — Conference Room A"]
+        - ["Apr 9, 12:30 p.m.", "Lunch with regional sales managers"]
+        - ["Apr 9, 3:00 p.m.", "Factory tour — Westside Plant"]
+        - ["Apr 10, 10:00 a.m.", "Product presentation — Toronto office"]
+        - ["Apr 10, 4:20 p.m.", "Flight 318 departs Toronto (arrives Seattle 6:55 p.m.)"]
+    question: What time does my flight leave on April 8, and when does it arrive in Toronto?
+    model:
+      lv5:
+        - text: Your flight leaves at 8:15 a.m. on April 8. It arrives in Toronto at 3:40 p.m.
+        - text: Flight 207 leaves Seattle at 8:15 in the morning. You arrive at 3:40 p.m.
+      lv6:
+        - text: Your flight, Flight 207, leaves Seattle at 8:15 a.m. on April 8. It arrives in Toronto at 3:40 in the afternoon.
+        - text: On April 8, your flight departs at 8:15 in the morning, and you will arrive in Toronto at 3:40 p.m.
+      lv7:
+        - text: >-
+            Sure. You're on Flight 207, which leaves Seattle at 8:15 a.m. on April 8. It arrives in Toronto at 3:40 p.m., so you'll have
+            time to check in.
+        - text: >-
+            Of course. Your flight departs from Seattle at 8:15 in the morning on April 8, and it's scheduled to arrive in Toronto at 3:40
+            in the afternoon.
+      lv8:
+        - text: >-
+            Sure, I can help with that. You're booked on Flight 207, which departs from Seattle at 8:15 a.m. on April 8. It's scheduled to
+            land in Toronto at 3:40 p.m., so you'll have plenty of time before hotel check-in.
+        - text: >-
+            Of course. Your flight on April 8 is Flight 207. It leaves Seattle at 8:15 in the morning and arrives in Toronto at 3:40 in the
+            afternoon. After that, you can head straight to your hotel.
+    tip_ko: 출발과 도착, 두 가지를 묻고 있어요. 자료 첫 줄에서 시간 두 개를 정확히 읽어 주면 돼요.
+  - num: 9
+    type: info_based
+    question: I believe I'm staying at the hotel for three nights. Is that correct?
+    model:
+      lv5:
+        - text: No, you are staying for two nights. You check in on April 8.
+        - text: Sorry, that's not right. You stay at the Lakeview Hotel for two nights.
+      lv6:
+        - text: I'm sorry, but that's not correct. You are staying at the Lakeview Hotel for two nights, from April 8 to April 10.
+        - text: Actually, no. You check in at the Lakeview Hotel on April 8 at 5 p.m., and you stay there for two nights.
+      lv7:
+        - text: >-
+            Actually, that's not quite right. You'll be staying at the Lakeview Hotel for only two nights. You check in on April 8, and you
+            fly back on April 10.
+        - text: >-
+            I'm afraid there's a mistake. Your reservation at the Lakeview Hotel is for two nights, not three. Check-in is at 5 p.m. on
+            April 8.
+          phrases: [I'm afraid there's a mistake]
+      lv8:
+        - text: >-
+            I'm afraid that's not quite right. You're booked at the Lakeview Hotel for two nights, not three. You check in at 5 p.m. on
+            April 8, and your return flight leaves on the afternoon of April 10.
+          phrases: [I'm afraid that's not quite right]
+        - text: >-
+            Actually, it's only two nights. You'll check in at the Lakeview Hotel at 5 p.m. on April 8 and check out on April 10, since
+            your flight back to Seattle leaves at 4:20 that afternoon.
+    tip_ko: 9번은 틀린 정보를 바로잡는 문제예요. "Actually, no" 같은 말로 먼저 아니라고 하고, 맞는 숫자(two nights)를 알려 줘요.
+  - num: 10
+    type: info_based
+    question: Could you tell me everything I have scheduled on April 9?
+    model:
+      lv5:
+        - text: >-
+            On April 9, you have three things. At 9:30, you have a meeting. At 12:30, you have lunch. At 3, you have a factory tour.
+        - text: >-
+            You have a meeting at 9:30 a.m. Then you have lunch with sales managers at 12:30. At 3 p.m., there is a factory tour.
+      lv6:
+        - text: >-
+            Sure. On April 9, you have three things. First, at 9:30 a.m., you have a meeting with Harbor Supplies. Then, at 12:30, you
+            have lunch with sales managers. Finally, at 3 p.m., there is a factory tour.
+          phrases: [First, Then, Finally]
+        - text: >-
+            You are busy on April 9. In the morning, you meet Harbor Supplies at 9:30 in Conference Room A. You have lunch at 12:30.
+            In the afternoon, you visit the Westside Plant at 3 p.m.
+          phrases: [In the morning, In the afternoon]
+      lv7:
+        - text: >-
+            Sure. You have a busy day on April 9. First, at 9:30 a.m., you'll have a meeting with Harbor Supplies in Conference Room A.
+            After that, you'll have lunch with the regional sales managers at 12:30. Then, at 3 p.m., you'll take a tour of the Westside
+            Plant.
+          phrases: [First, After that, Then]
+        - text: >-
+            Of course. There are three items on April 9. Your day starts with a meeting with Harbor Supplies at 9:30 a.m. At 12:30, you're
+            having lunch with the regional sales managers, and at 3 p.m., you'll visit the Westside Plant for a factory tour.
+          phrases: [Your day starts with]
+      lv8:
+        - text: >-
+            Of course. April 9 is your busiest day. It starts at 9:30 a.m. with a meeting with Harbor Supplies in Conference Room A. After
+            that, you'll have lunch with the regional sales managers at 12:30. Then, at 3 p.m., you'll head to the Westside Plant for a
+            factory tour, so I'd recommend wearing comfortable shoes.
+          phrases: [It starts at ~ with, After that, head to, I'd recommend]
+        - text: >-
+            Sure, there are three things on your schedule for April 9. In the morning, you have a 9:30 meeting with Harbor Supplies in
+            Conference Room A. At 12:30, you'll join the regional sales managers for lunch. And finally, at 3 p.m., you're scheduled to tour
+            the Westside Plant, so it'll be a full day.
+          phrases: [In the morning, join ~ for lunch, And finally, you're scheduled to]
+    tip_ko: 같은 날짜 줄을 모두 찾아 시간 순서대로 말해요. 시간 → 일정 → 장소 순서를 지키면 덜 헷갈려요.
+  - num: 11
+    type: opinion
+    question: >-
+      Which is a better way to learn a new skill: watching online videos or taking an in-person class? Give specific reasons and
+      examples to support your opinion.
+    model:
+      lv5:
+        - text: >-
+            I think taking an in-person class is better. I have two reasons. First, I can ask the teacher questions. Second, I can meet
+            other students. For example, I took a cooking class last year. The teacher helped me a lot. So I prefer in-person classes.
+          phrases: [I have two reasons, First, Second, For example]
+        - text: >-
+            I think online videos are better. First, they are free. I don't need to pay money. Second, I can watch them anytime. For
+            example, I learned to play the guitar with videos at night. It was easy. I watched them every day after dinner. So I like online videos.
+          phrases: [First, Second, For example]
+      lv6:
+        - text: >-
+            I think taking an in-person class is a better way to learn a new skill. There are two reasons. First, the teacher can check
+            my mistakes right away. Second, I can stay motivated because I study with other people. I don't want to miss class. For example, last year I took a
+            swimming class at a sports center. The coach fixed my arm movements every week, so I improved very quickly. These days, I swim twice a week. For these reasons,
+            I prefer in-person classes.
+          phrases: [There are two reasons, For example, For these reasons]
+        - text: >-
+            In my opinion, watching online videos is a better way to learn a new skill. First, there are many free videos, so it's
+            cheaper than a class. Second, I can learn at my own speed. If I don't understand something, I can watch it again. I can also stop and practice. For
+            example, I learned how to edit photos by watching videos after work. It saved me a lot of time and money. So I think online videos are better.
+          phrases: [In my opinion, at my own speed, For example]
+      lv7:
+        - text: >-
+            I believe taking an in-person class is a better way to learn a new skill. The biggest reason is that you can get feedback
+            right away. When you watch a video, nobody tells you what you're doing wrong. For example, I tried to learn yoga from online
+            videos last year, but I hurt my back because my posture was wrong. After I joined a class at a local studio, the instructor
+            corrected my form, and I made much better progress. Also, studying with other people keeps me motivated, because I don't want to fall behind the others. Therefore, I
+            strongly prefer in-person classes for learning new skills.
+          phrases: [The biggest reason is that, For example, After I, Also, Therefore]
+        - text: >-
+            I think watching online videos is a better way to learn a new skill. First, it's much more flexible. I work full-time, so it's
+            hard for me to attend a class at a fixed time every week. With videos, I can learn whenever I have free time, like late at night or on weekends. Second, there's
+            a huge variety of content. For example, when I wanted to learn basic coding, I found dozens of tutorials for beginners, and I
+            could choose the teacher I liked best. Thanks to those videos, I built my own simple website in two months. For these reasons, I prefer learning with online videos.
+          phrases: [it's much more flexible, With videos, a huge variety of, For these reasons]
+      lv8:
+        - text: >-
+            Personally, I think taking an in-person class is the better option, especially for skills that involve your body, like sports or
+            cooking. The main reason is that a real teacher can notice small mistakes that you can't see yourself. I learned this when I
+            started taking tennis lessons last spring. I had watched a lot of videos before that, but the coach pointed out in the very first
+            lesson that I was holding the racket the wrong way. Fixing that one habit improved my game more than months of watching videos.
+            On top of that, having a set schedule makes it much harder to give up. When I'm tired, I still go to my lesson because I've already paid for it and my coach is waiting.
+            So overall, I'd recommend an in-person class to anyone who wants to learn a practical skill properly.
+          phrases: [the better option, especially for, I learned this when, On top of that, So overall]
+        - text: >-
+            In my opinion, online videos are a better way to learn most new skills these days. The biggest advantage is that you can learn at
+            your own pace. In a class, the teacher has to move at the speed of the whole group, but with a video, you can pause, rewind, and
+            practice a difficult part as many times as you need. For instance, I taught myself how to use a spreadsheet program for work by
+            watching short tutorials during my commute. Within a month, I was building reports that used to take my coworkers hours. It also saved me money, because I didn't have to pay for an expensive course. Of
+            course, classes have their benefits, like meeting other learners, but for busy people, videos are simply more practical
+            and much easier to fit into a daily routine.
+          phrases: [The biggest advantage is that, at your own pace, For instance, Of course ~ but]
+    tip_ko: 첫 문장에서 한쪽을 분명히 고르고, 이유 하나에 직접 해 본 경험을 붙여요. 반대쪽 장점을 한 문장 인정하면 답이 더 설득력 있어 보여요.

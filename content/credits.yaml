@@ -9,3 +9,19 @@ credits:
     file: app/img/toeic/set01_q4.svg
     source: Speaking Lab 자체 제작 임시 일러스트 (P2에서 실사진으로 교체)
     license: 자체 제작
+  - id: placeholder-set02-q3
+    file: app/img/toeic/set02_q3.svg
+    source: Speaking Lab 자체 제작 임시 일러스트 (실사진으로 교체 예정)
+    license: 자체 제작
+  - id: placeholder-set02-q4
+    file: app/img/toeic/set02_q4.svg
+    source: Speaking Lab 자체 제작 임시 일러스트 (실사진으로 교체 예정)
+    license: 자체 제작
+  - id: placeholder-set03-q3
+    file: app/img/toeic/set03_q3.svg
+    source: Speaking Lab 자체 제작 임시 일러스트 (실사진으로 교체 예정)
+    license: 자체 제작
+  - id: placeholder-set03-q4
+    file: app/img/toeic/set03_q4.svg
+    source: Speaking Lab 자체 제작 임시 일러스트 (실사진으로 교체 예정)
+    license: 자체 제작

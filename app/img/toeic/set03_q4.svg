@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="A park with a jogger, a woman walking a dog, and two people sitting on a bench by a pond">
+  <rect width="800" height="600" fill="#cde8f5"/>
+  <rect y="250" width="800" height="350" fill="#8cc271"/>
+  <!-- trees -->
+  <rect x="60" y="150" width="20" height="130" fill="#5d4029"/><circle cx="70" cy="140" r="65" fill="#4e8a4a"/>
+  <rect x="640" y="140" width="20" height="140" fill="#5d4029"/><circle cx="650" cy="130" r="70" fill="#4e8a4a"/>
+  <rect x="300" y="180" width="16" height="90" fill="#5d4029"/><circle cx="308" cy="170" r="45" fill="#5a9a52"/>
+  <!-- pond -->
+  <ellipse cx="620" cy="360" rx="160" ry="45" fill="#6fb3d6"/>
+  <ellipse cx="590" cy="355" rx="14" ry="8" fill="#fff"/><circle cx="600" cy="348" r="6" fill="#fff"/>
+  <!-- path -->
+  <path d="M0 520 q300 -120 520 -100 q180 20 280 -10 v60 q-120 30 -280 10 q-220 -20 -520 100z" fill="#d9c9a5"/>
+  <!-- bench with two people (right) -->
+  <rect x="560" y="440" width="170" height="14" fill="#7a5638"/><rect x="560" y="410" width="170" height="10" fill="#7a5638"/>
+  <rect x="570" y="454" width="10" height="40" fill="#5d4029"/><rect x="710" y="454" width="10" height="40" fill="#5d4029"/>
+  <rect x="585" y="380" width="56" height="70" rx="18" fill="#7b5ea7"/><circle cx="613" cy="358" r="24" fill="#f0c9a5"/><path d="M590 356 q23 -34 46 0 q-4 -22 -23 -24 q-19 2 -23 24z" fill="#ccc"/>
+  <rect x="650" y="380" width="56" height="70" rx="18" fill="#3f6fa6"/><circle cx="678" cy="358" r="24" fill="#d9a77f"/><path d="M655 352 q23 -28 46 0 q-4 -18 -23 -18 q-19 0 -23 18z" fill="#aaa"/>
+  <rect x="640" y="410" width="20" height="14" fill="#fff"/>
+  <!-- jogger (center) -->
+  <g transform="translate(330 330)">
+    <rect x="0" y="40" width="50" height="80" rx="16" fill="#d23b2f" transform="rotate(10 25 80)"/>
+    <circle cx="30" cy="20" r="22" fill="#d9a77f"/>
+    <path d="M10 16 q20 -28 40 0" fill="#222"/>
+    <path d="M18 116 l-24 50" stroke="#333" stroke-width="14" stroke-linecap="round"/><path d="M36 116 l30 44" stroke="#333" stroke-width="14" stroke-linecap="round"/>
+    <path d="M10 60 l-24 30" stroke="#d9a77f" stroke-width="10" stroke-linecap="round"/><path d="M46 62 l24 -20" stroke="#d9a77f" stroke-width="10" stroke-linecap="round"/>
+    <rect x="18" y="-6" width="26" height="8" rx="3" fill="#fff"/>
+  </g>
+  <!-- woman walking a dog (left) -->
+  <rect x="140" y="370" width="60" height="120" rx="20" fill="#e0b84b"/>
+  <circle cx="170" cy="345" r="26" fill="#f0c9a5"/>
+  <path d="M144 344 q26 -44 52 0 l2 34 q-8 -40 -28 -44 q-20 4 -28 44z" fill="#3b2a20"/>
+  <rect x="148" y="486" width="18" height="50" fill="#334"/><rect x="176" y="486" width="18" height="50" fill="#334"/>
+  <path d="M198 420 q40 20 62 70" stroke="#c0504d" stroke-width="3" fill="none"/>
+  <ellipse cx="275" cy="505" rx="30" ry="16" fill="#a0703a"/><circle cx="302" cy="492" r="12" fill="#a0703a"/>
+  <rect x="255" y="515" width="8" height="20" fill="#a0703a"/><rect x="285" y="515" width="8" height="20" fill="#a0703a"/>
+  <text x="790" y="590" text-anchor="end" font-family="sans-serif" font-size="14" fill="#2f4f2f">illustration placeholder</text>
+</svg>
