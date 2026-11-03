@@ -1,6 +1,7 @@
 // 선생님께 보내기(제출 꾸러미) · 피드백 불러오기. 형식은 schema/FEEDBACK.md.
 import { makeZip } from './zip.js';
-import { getAttempt, getProfile, getRecording, getSetting, putAttempt } from './store.js';
+import { getAttempt, getProfile, getRecording, getSetting, listAttempts, putAttempt } from './store.js';
+import { cloud } from './cloud.js';
 
 const EXT = (mime = '') => (mime.includes('mp4') ? 'mp4' : mime.includes('ogg') ? 'ogg' : 'webm');
 const pad = (n) => String(n).padStart(2, '0');
@@ -64,4 +65,49 @@ export async function importFeedback(file) {
   attempt.feedback = { ...fb, imported_at: new Date().toISOString() };
   await putAttempt(attempt);
   return attempt.id;
+}
+
+// ── 서버 모드: 녹음을 Supabase에 올리고 응시 기록을 남겨요 ──────────────
+export async function cloudSubmit(attemptId, set, onProgress = () => {}) {
+  const attempt = await getAttempt(attemptId);
+  if (!attempt) throw new Error('응시 기록을 찾지 못했어요.');
+  const recs = [];
+  for (const it of set.items) {
+    const rec = await getRecording(attempt.id, it.num).catch(() => null);
+    if (rec?.blob?.size) recs.push({ it, rec });
+  }
+  if (!recs.length) throw new Error('보낼 녹음이 없어요.');
+  const items = [];
+  for (const [i, { it, rec }] of recs.entries()) {
+    const file = `audio/q${pad(it.num)}.${EXT(rec.blob.type)}`;
+    onProgress(i, recs.length);
+    await cloud.uploadAudio(`${cloud.uid}/${attempt.id}/${file.slice(6)}`, rec.blob);
+    items.push({ num: it.num, file, mime: rec.blob.type, ms: rec.ms, ...(it.qid ? { qid: it.qid, type: it.type } : {}) });
+  }
+  onProgress(recs.length, recs.length);
+  const meta = attempt.exam === 'opic'
+    ? { self_assessment: attempt.plan?.sa, readjust: attempt.readjust || null, difficulty: attempt.d, survey_topics: attempt.plan?.survey_topics, no_mic: !!attempt.noMic }
+    : { no_mic: !!attempt.noMic };
+  const now = new Date().toISOString();
+  await cloud.saveAttempt({
+    id: attempt.id, exam: attempt.exam, set_id: attempt.setId, target: getSetting(`target.${attempt.exam}`, attempt.target),
+    meta, items, started_at: attempt.startedAt, finished_at: attempt.finishedAt, submitted_at: now,
+  });
+  attempt.submittedAt = now;
+  await putAttempt(attempt);
+  return { count: items.length, attempt };
+}
+
+// 서버에 도착한 피드백을 기기의 응시 기록에 붙여요. 새로 붙은 수를 돌려줘요.
+export async function syncFeedback() {
+  if (!cloud.enabled || !cloud.session()) return 0;
+  const rows = await cloud.feedbackList();
+  let n = 0;
+  for (const r of rows || []) {
+    const a = await getAttempt(r.attempt_id);
+    if (!a || a.feedback?.created_at === r.feedback?.created_at) continue;
+    a.feedback = { ...r.feedback, imported_at: new Date().toISOString(), cloud: true, read_at: r.read_at };
+    await putAttempt(a); n++;
+  }
+  return n;
 }

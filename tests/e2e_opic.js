@@ -3,7 +3,7 @@
 const { chromium } = require('playwright');
 const assert = require('assert'), fs = require('fs'), path = require('path');
 const OUT = process.argv[2] || 'test-shots/opic'; fs.mkdirSync(OUT, { recursive: true });
-const BASE = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts';
+const BASE = (process.env.BASE || 'http://localhost:8765') + '/index.html?fast=30&notts&sb=off';
 
 (async () => {
   const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'] });
