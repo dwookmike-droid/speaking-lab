@@ -1,0 +1,26 @@
+# 사진 창고 검색어. tools/collect_photos.py가 이 파일을 읽어 파트·장면별로 사진을 모아요.
+# 파트를 늘리려면 parts 아래에 하나 더 적어요. 장면 폴더 이름은 영어 소문자·밑줄만 써요.
+schema_version: 1
+defaults:
+  licenses: [cc0, pdm]            # 출처 표시 없이 상업적으로 쓸 수 있는 것만 (과외 수업료를 받으니 NC 금지)
+  sources: [stocksnap]            # 워터마크·상표가 적은 곳부터. 늘리려면 wikimedia, flickr 등을 추가하고 검수를 더 꼼꼼히 해요
+  max_width: 1280                 # 저장할 때 줄이는 가로 크기(px)
+parts:
+  toeic_q3q4:
+    title_ko: 토익 Q3–4 사진 묘사
+    need: 사람이 2명 이상 보이고 동작이 분명한 실제 장면. 상표·로고·읽히는 간판 금지
+    scenes:
+      office:        ["coworkers meeting office", "people working desk office", "business meeting laptop"]
+      street:        ["people walking city street", "pedestrians crosswalk", "busy sidewalk people"]
+      kitchen:       ["people cooking together kitchen", "family baking kitchen", "chef cooking restaurant kitchen"]
+      market:        ["outdoor market people", "farmers market vendor", "street food stall"]
+      cafe:          ["people coffee shop", "barista making coffee", "friends cafe table"]
+      restaurant:    ["people eating restaurant", "waiter serving food", "family dinner table"]
+      park:          ["people park bench", "people walking dog park", "picnic park friends"]
+      library_study: ["students studying library", "people reading books", "classroom students teacher"]
+      transport:     ["people waiting train station", "bus passengers", "airport travelers luggage"]
+      shopping:      ["people shopping store", "customer cashier", "clothing store shopping"]
+      work_outdoor:  ["construction workers", "gardener working", "delivery worker boxes"]
+      leisure:       ["people beach", "people hiking trail", "people riding bicycles"]
+      home:          ["family living room", "people cleaning house", "friends sofa talking"]
+      fitness:       ["people gym workout", "yoga class people", "people jogging"]
