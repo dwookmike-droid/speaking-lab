@@ -1,0 +1,150 @@
+# tools/collect_photos.py가 관리해요. status·note·used_in만 손으로 고쳐도 돼요.
+schema_version: 1
+part: toeic_q3q4
+state:
+  office:
+    query: 1
+    page:
+      coworkers meeting office: 1
+  street:
+    query: 1
+    page:
+      people walking city street: 2
+  kitchen:
+    query: 1
+    page:
+      people cooking together kitchen: 1
+  market:
+    query: 0
+    page: {}
+photos:
+- id: 2d4b99d9
+  openverse_id: 2d4b99d9-9959-4c66-b537-7cfe92adc88b
+  scene: kitchen
+  file: assets/photos/toeic_q3q4/kitchen/2d4b99d9.webp
+  title: Grandmother Children
+  creator: PS Imaging
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/grandmother-children-YN7HDBKGZH
+  width: 960
+  height: 640
+  query: (수동)
+  added: '2026-11-09'
+  status: used
+  note: app/img/toeic/set04_q3.webp
+  used_in:
+  - set04 Q3
+- id: '34882699'
+  openverse_id: 34882699-1dd1-4b2d-9af1-fc76b80bf0ea
+  scene: kitchen
+  file: assets/photos/toeic_q3q4/kitchen/34882699.webp
+  title: Couple Love
+  creator: Direct Media
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/couple-love-AFCR9IPWBS
+  width: 960
+  height: 640
+  query: people cooking together kitchen
+  added: '2026-11-09'
+  status: approved
+  note: ''
+  used_in: []
+- id: 7f387b84
+  openverse_id: 7f387b84-6450-4bca-bfce-6bb8f2abc1e9
+  scene: kitchen
+  file: assets/photos/toeic_q3q4/kitchen/7f387b84.webp
+  title: Couple Cooking
+  creator: Direct Media
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/couple-cooking-FEGFELL9EP
+  width: 960
+  height: 640
+  query: people cooking together kitchen
+  added: '2026-11-09'
+  status: rejected
+  note: 34882699와 같은 촬영(중복)
+  used_in: []
+- id: 0a070352
+  openverse_id: 0a070352-4341-4f02-b90b-078dda791fc4
+  scene: office
+  file: assets/photos/toeic_q3q4/office/0a070352.webp
+  title: Working Women
+  creator: Kristin Hardwick
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/working-women-DC7JUJKYTQ
+  width: 960
+  height: 640
+  query: coworkers meeting office
+  added: '2026-11-09'
+  status: rejected
+  note: 뒷모습뿐이라 묘사할 동작이 적음
+  used_in: []
+- id: 32c985ae
+  openverse_id: 32c985ae-c027-4754-9893-3193f93dac5d
+  scene: office
+  file: assets/photos/toeic_q3q4/office/32c985ae.webp
+  title: Business Meeting
+  creator: Direct Media
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/business-meeting-Z1ZIMB54UM
+  width: 960
+  height: 640
+  query: coworkers meeting office
+  added: '2026-11-09'
+  status: approved
+  note: ''
+  used_in: []
+- id: 38400a7c
+  openverse_id: 38400a7c-f4c4-49cc-8aeb-b41c86c92ea4
+  scene: street
+  file: assets/photos/toeic_q3q4/street/38400a7c.webp
+  title: England Europe
+  creator: David Marcu
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/england-europe-E61C806107
+  width: 960
+  height: 638
+  query: people walking city street
+  added: '2026-11-09'
+  status: rejected
+  note: 오른쪽에 커피 체인 로고 간판
+  used_in: []
+- id: 836178d4
+  openverse_id: 836178d4-5dcc-4bc8-aeff-c2823fae0682
+  scene: street
+  file: assets/photos/toeic_q3q4/street/836178d4.webp
+  title: City People
+  creator: Gabriel Santiago
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/city-people-57D943298D
+  width: 960
+  height: 640
+  query: (수동)
+  added: '2026-11-09'
+  status: used
+  note: app/img/toeic/set04_q4.webp
+  used_in:
+  - set04 Q4
+- id: b092959a
+  openverse_id: b092959a-484f-4f77-b576-260432a9a629
+  scene: street
+  file: assets/photos/toeic_q3q4/street/b092959a.webp
+  title: Couple Love
+  creator: Vladimir Kudinov
+  license: CC0 1.0
+  source: stocksnap
+  landing_url: https://stocksnap.io/photo/couple-love-FP4R72OQII
+  width: 960
+  height: 640
+  query: people walking city street
+  added: '2026-11-09'
+  status: approved
+  note: ''
+  used_in: []

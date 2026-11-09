@@ -13,6 +13,7 @@
 - 영어 모범답변은 실제로 말하는 길이와 속도에 맞춰요(토익 Q11 60초 ≈ 120~150단어).
 - 한국어 해설·팁은 해요체, **humanizer-kr** 스킬로 다듬어요. 번역투·과장 금지.
 - 사진은 출처·라이선스를 `content/credits.yaml`에 적고, 상표가 보이는 사진은 쓰지 않아요.
+- 사진은 `assets/photos/` 창고에 파트·장면별로 모아요(`tools/collect_photos.py`). 검수해서 approved인 사진만 문항에 써요.
 - 쓰고 나면 검증기 오류 0을 확인하고 `status: ready`로 바꿔요.
   `python3 tools/validate_content.py --all`
 
