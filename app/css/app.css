@@ -30,7 +30,8 @@ select{font:inherit;padding:6px 8px;border-radius:6px;border:1px solid var(--lin
 .ring circle{fill:none;stroke-width:8}.ring .bg{stroke:var(--line)}.ring .fg{stroke:var(--accent);transition:stroke-dashoffset .1s linear}
 .ring span{position:absolute;inset:0;display:grid;place-items:center;font-weight:700;font-size:18px}
 .phase{font-weight:700}.phase[data-kind="speak"]{color:var(--rec)}
-.rec{color:var(--rec);font-size:14px;animation:blink 1s infinite}@keyframes blink{50%{opacity:.35}}
+.rec{color:var(--rec);font-size:14px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}.rec[hidden]{display:none}.rec .dot{animation:blink 1s infinite}@keyframes blink{50%{opacity:.35}}
+.meter.sm{width:72px;height:8px}.rec .meter i{background:var(--rec)}.rec .quiet{display:none;flex-basis:100%;font-weight:700}.rec.silent .quiet{display:block}
 .directions .en{font-size:18px}
 .readtext{font-size:19px;line-height:1.8}.readtext.sm{font-size:15px}
 .question{font-size:18px;font-weight:600}.context{font-style:italic}.context.sm{font-size:14px}

@@ -1,6 +1,6 @@
 // OPIc 화면: 설문 → 자가평가 → 마이크 확인 → 시험(질문 듣기 → 5초 다시 듣기 → 답변 → 다음 문제) → 7번 뒤 난이도 재조정
 import { getAttempt, putAttempt } from './store.js';
-import { hasMic, meter, openMic } from './media.js';
+import { hasMic, meter, openMic, recIndicator, REC_HTML } from './media.js';
 import { Aborted, Runner } from './runner.js';
 import { planExam, planFirst, runOpic } from './opic.js';
 import { esc, setCurrent, stopCurrent, target, TYPE_KO } from './views.js';
@@ -127,7 +127,7 @@ async function exam(data, attempt) {
       <div class="exam-body" id="body"></div>
       <div class="exam-bar">
         <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="bg"/><circle cx="50" cy="50" r="44" class="fg" id="arc"/></svg><span id="sec"></span></div>
-        <div><div id="phase" class="phase"></div><div id="rec" class="rec" hidden>● 녹음 중</div></div>
+        <div><div id="phase" class="phase"></div>${REC_HTML}</div>
         <div class="btns right"><button class="btn" id="replay" hidden>다시 듣기</button><button class="btn primary" id="skip">다음</button><button class="btn ghost" id="quit">그만두기</button></div>
       </div>
     </section>`;
@@ -154,7 +154,7 @@ async function exam(data, attempt) {
       arc.style.strokeDashoffset = C * (1 - left / tot);
     },
     clock(left) { q('#clock').textContent = Number.isFinite(left) ? mmss(left) : ''; },
-    recording(on) { q('#rec').hidden = !on; },
+    recording: recIndicator(q('#rec')),
     replay(on, fn) { q('#replay').hidden = !on; if (fn) replayFn = fn; },
     readjust() {
       return new Promise((res) => {

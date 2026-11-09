@@ -1,6 +1,6 @@
 // 화면: 홈 · 마이크 확인 · 시험 진행 · 결과
 import { getAttempt, getProfile, getRecording, getSetting, listAttempts, putAttempt, putProfile, setSetting } from './store.js';
-import { hasMic, meter, openMic, stopSpeaking } from './media.js';
+import { hasMic, meter, openMic, recIndicator, REC_HTML, stopSpeaking } from './media.js';
 import { Aborted, Runner } from './runner.js';
 import { runToeic } from './toeic.js';
 import { findQuestion } from './opic_plan.js';
@@ -144,7 +144,7 @@ function examUI(app, data, set) {
       <div class="exam-body" id="body"></div>
       <div class="exam-bar">
         <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="bg"/><circle cx="50" cy="50" r="44" class="fg" id="arc"/></svg><span id="sec"></span></div>
-        <div><div id="phase" class="phase"></div><div id="rec" class="rec" hidden>● 녹음 중</div></div>
+        <div><div id="phase" class="phase"></div>${REC_HTML}</div>
         <div class="btns right"><button class="btn" id="skip">건너뛰기</button><button class="btn ghost" id="quit">그만두기</button></div>
       </div>
     </section>`;
@@ -178,7 +178,7 @@ function examUI(app, data, set) {
       q('#sec').textContent = Math.ceil(left);
       arc.style.strokeDashoffset = C * (1 - left / totalSec);
     },
-    recording(on) { q('#rec').hidden = !on; },
+    recording: recIndicator(q('#rec')),
   };
   return ui;
 }
