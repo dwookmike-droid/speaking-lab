@@ -101,3 +101,7 @@ label.sa{display:block;border:1px solid var(--line);border-radius:8px;padding:10
 label.sa:has(input:checked){border-color:var(--accent);background:var(--bg)}
 .listen-only{font-size:20px;text-align:center;padding:40px 0;color:var(--muted)}
 .tabs{display:flex;gap:8px;margin:0 0 16px}
+.timer{min-width:150px;border:2px solid var(--fg);border-radius:6px;padding:6px 10px;text-align:center;background:var(--card)}
+.timer .phase{font-size:12px;letter-spacing:.04em}.timer .tval{font:700 22px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;min-height:1.2em}
+.checklist{padding-left:20px;line-height:1.6}.checklist li{margin:10px 0}.checklist .mic{margin:6px 0}
+.listen-only{font-size:56px;text-align:center;padding:40px 0}

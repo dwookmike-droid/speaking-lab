@@ -1,7 +1,8 @@
 // 화면: 홈 · 마이크 확인 · 시험 진행 · 결과
 import { getAttempt, getProfile, getRecording, getSetting, listAttempts, putAttempt, putProfile, setSetting } from './store.js';
-import { hasMic, meter, openMic, recIndicator, REC_HTML, stopSpeaking } from './media.js';
-import { Aborted, Runner } from './runner.js';
+import { hasMic, recIndicator, REC_HTML, stopSpeaking } from './media.js';
+import { SOUNDCHECK_HTML, wireSoundCheck } from './soundcheck.js';
+import { Aborted, DEV, Runner } from './runner.js';
 import { runToeic } from './toeic.js';
 import { findQuestion } from './opic_plan.js';
 import { buildSubmission, cloudSubmit, importFeedback, markSubmitted, shareOrDownload, syncFeedback } from './submit.js';
@@ -12,7 +13,9 @@ export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&a
 export const TYPE_KO = { read_aloud: '지문 읽기', describe_photo: '사진 묘사', respond_q: '듣고 답하기', info_based: '자료 보고 답하기', opinion: '의견 말하기',
   self_intro: '자기소개', description: '묘사', routine: '습관·일상', past_experience: '과거 경험', comparison: '비교', issue: '사회 이슈',
   roleplay_ask: '롤플레이 · 질문하기', roleplay_solve: '롤플레이 · 문제 해결', roleplay_experience: '롤플레이 · 관련 경험' };
-const PHASE_KO = { directions: '안내를 들어요', listen: '질문을 들어요', read: '자료 읽는 시간', prep: '준비 시간', beep: '삐 소리 뒤에 말해요', speak: '답변 시간' };
+// 시험 화면은 실제 시험처럼 영어로만 보여 줘요.
+const PHASE_EN = { directions: 'Directions', listen: 'Listen', read: 'READING TIME', prep_cue: 'Begin preparing now.', prep: 'PREPARATION TIME', beep: 'Begin speaking now.', speak: 'RESPONSE TIME' };
+export const hms = (sec) => { const t = Math.max(0, Math.ceil(sec)); return `00:${String(Math.floor(t / 60)).padStart(2, '0')}:${String(t % 60).padStart(2, '0')}`; };
 
 let current = null;   // 진행 중인 Runner
 export function setCurrent(r) { stopCurrent(); current = r; }
@@ -98,31 +101,15 @@ export async function prepareExam(data, { setId, attemptId }) {
   app.innerHTML = `
     <section class="panel">
       <h1>${esc(set.title_ko)} ${attempt ? `<small>· Q${attempt.next}부터 이어하기</small>` : ''}</h1>
-      <p>시작하면 실제 시험처럼 시간에 맞춰 자동으로 넘어가요. 조용한 곳에서 이어폰을 끼고 해 주세요.</p>
-      <div class="mic">
-        <button class="btn" id="mic">마이크 켜기</button>
-        <div class="meter"><i id="lvl"></i></div>
-        <span id="micmsg" class="muted"></span>
-      </div>
+      <p>실제 시험과 똑같이 진행해요. 시작하면 안내·질문이 영어로만 나오고, 시간이 되면 자동으로 넘어가요. 중간에 건너뛸 수 없어요.</p>
+      ${SOUNDCHECK_HTML}
       <div class="btns">
         <button class="btn primary" id="go" disabled>시작</button>
         <button class="btn ghost" id="nomic">녹음 없이 진행</button>
       </div>
     </section>`;
-  let stopMeter = () => {};
-  const go = app.querySelector('#go'), msg = app.querySelector('#micmsg');
-  const enable = async () => {
-    try {
-      await openMic();
-      msg.textContent = '말해 보세요. 막대가 움직이면 돼요.';
-      stopMeter = meter((v) => { const el = document.getElementById('lvl'); if (el) el.style.width = `${Math.min(100, v * 250)}%`; });
-      go.disabled = false;
-    } catch {
-      msg.textContent = '마이크를 쓸 수 없어요. 브라우저 주소창의 마이크 권한을 확인해 주세요.';
-    }
-  };
-  app.querySelector('#mic').onclick = enable;
-  if (hasMic()) enable();
+  const go = app.querySelector('#go');
+  const stopMeter = wireSoundCheck(app, () => { go.disabled = false; });
   const start = async () => {
     stopMeter();
     if (!attempt) {
@@ -140,44 +127,36 @@ function examUI(app, data, set) {
   const total = data.format.total_items;
   app.innerHTML = `
     <section class="exam">
-      <div class="exam-top"><b id="qno"></b><span id="ptitle" class="muted"></span></div>
+      <div class="exam-top"><b id="qno"></b></div>
       <div class="exam-body" id="body"></div>
       <div class="exam-bar">
-        <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="bg"/><circle cx="50" cy="50" r="44" class="fg" id="arc"/></svg><span id="sec"></span></div>
-        <div><div id="phase" class="phase"></div>${REC_HTML}</div>
-        <div class="btns right"><button class="btn" id="skip">건너뛰기</button><button class="btn ghost" id="quit">그만두기</button></div>
+        <div class="timer"><div id="phase" class="phase"></div><div id="sec" class="tval"></div></div>
+        <div>${REC_HTML}</div>
+        <div class="btns right"><button class="btn" id="skip" ${DEV ? '' : 'hidden'}>건너뛰기</button><button class="btn ghost" id="quit">Exit</button></div>
       </div>
     </section>`;
   const q = (s) => app.querySelector(s);
-  const C = 2 * Math.PI * 44;
-  const arc = q('#arc'); arc.style.strokeDasharray = C;
   const ui = {
     part(part, dir) {
       q('#qno').textContent = dir.title || part.type;
-      q('#ptitle').textContent = '';
-      q('#body').innerHTML = `<div class="directions"><p class="en">${esc(dir.en)}</p><p class="ko muted">${esc(dir.ko)}</p></div>`;
+      q('#body').innerHTML = `<div class="directions"><p class="en">${esc(dir.en)}</p></div>`;
     },
     item(item, { part, context, info, showQuestion }) {
       q('#qno').textContent = `Question ${item.num} of ${total}`;
-      q('#ptitle').textContent = TYPE_KO[part.type] || '';
       let html = '';
       if (context) html += `<p class="context">${esc(context)}</p>`;
       if (info) html += infoTable(info);
       if (item.type === 'read_aloud') html += `<p class="readtext">${esc(item.text)}</p>`;
       if (item.type === 'describe_photo') html += `<img class="photo" src="${esc(item.image)}" alt="Question ${item.num} picture">`;
       if (showQuestion && item.question) html += `<p class="question">${esc(item.question)}</p>`;
-      if (info && !showQuestion) html += `<p class="muted">질문은 소리로만 나와요.</p>`;
       q('#body').innerHTML = html;
     },
     phase(kind, sec) {
-      q('#phase').textContent = PHASE_KO[kind] || kind;
+      q('#phase').textContent = PHASE_EN[kind] || kind;
       q('#phase').dataset.kind = kind;
-      if (!sec) { q('#sec').textContent = ''; arc.style.strokeDashoffset = 0; }
+      q('#sec').textContent = sec ? hms(sec) : '';
     },
-    tick(left, totalSec) {
-      q('#sec').textContent = Math.ceil(left);
-      arc.style.strokeDashoffset = C * (1 - left / totalSec);
-    },
+    tick(left) { q('#sec').textContent = hms(left); },
     recording: recIndicator(q('#rec')),
   };
   return ui;

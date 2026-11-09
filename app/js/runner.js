@@ -2,6 +2,7 @@
 const params = new URLSearchParams(location.search);
 export const FAST = Math.max(1, Number(params.get('fast')) || 1);
 export const NO_TTS = params.has('notts');
+export const DEV = FAST > 1 || params.has('dev');   // 확인용일 때만 건너뛰기 버튼을 보여 줘요
 
 export class Aborted extends Error {}
 

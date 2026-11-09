@@ -1,12 +1,14 @@
 // OPIc 화면: 설문 → 자가평가 → 마이크 확인 → 시험(질문 듣기 → 5초 다시 듣기 → 답변 → 다음 문제) → 7번 뒤 난이도 재조정
 import { getAttempt, putAttempt } from './store.js';
-import { hasMic, meter, openMic, recIndicator, REC_HTML } from './media.js';
-import { Aborted, Runner } from './runner.js';
+import { hasMic, recIndicator, REC_HTML } from './media.js';
+import { SOUNDCHECK_HTML, wireSoundCheck } from './soundcheck.js';
+import { Aborted, DEV, Runner } from './runner.js';
 import { planExam, planFirst, runOpic } from './opic.js';
 import { esc, setCurrent, stopCurrent, target, TYPE_KO } from './views.js';
 
 const $app = () => document.getElementById('app');
-const PHASE_KO = { listen: '질문을 들어요', replay_window: '다시 들으려면 5초 안에 누르세요', speak: '답변하세요', readjust: '난이도 다시 고르기' };
+// 시험 화면은 실제 시험처럼 영어로만 보여 줘요.
+const PHASE_EN = { listen: 'Listen to the question.', replay_window: 'You can replay the question once.', speak: 'Answer now. Click Next when you finish.', readjust: 'Choose the difficulty' };
 const mmss = (s) => { s = Math.max(0, Math.round(s)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
 
 // ── 설문 ─────────────────────────────────────────
@@ -97,22 +99,12 @@ function mic(onStart, note = '') {
       <p class="step">3 / 3 · 마이크 확인</p>
       <h1>시작하기 전에</h1>
       ${note ? `<p>${esc(note)}</p>` : ''}
-      <p>질문은 소리로만 나와요. 질문이 끝나고 5초 안에 한 번 다시 들을 수 있어요. 답을 다 하면 '다음 문제'를 눌러요.</p>
-      <div class="mic"><button class="btn" id="mic">마이크 켜기</button><div class="meter"><i id="lvl"></i></div><span id="micmsg" class="muted"></span></div>
+      <p>실제 시험과 똑같이 진행해요. 질문은 영어 음성으로만 나오고 화면에 글자로 보이지 않아요. 질문이 끝나고 5초 안에 한 번 다시 들을 수 있어요. 답을 다 하면 Next를 눌러요.</p>
+      ${SOUNDCHECK_HTML}
       <div class="btns"><button class="btn primary" id="go" disabled>시작</button><button class="btn ghost" id="nomic">녹음 없이 진행</button></div>
     </section>`;
-  let stopMeter = () => {};
-  const go = $app().querySelector('#go'), msg = $app().querySelector('#micmsg');
-  const enable = async () => {
-    try {
-      await openMic();
-      msg.textContent = '말해 보세요. 막대가 움직이면 돼요.';
-      stopMeter = meter((v) => { const el = document.getElementById('lvl'); if (el) el.style.width = `${Math.min(100, v * 250)}%`; });
-      go.disabled = false;
-    } catch { msg.textContent = '마이크를 쓸 수 없어요. 브라우저 주소창의 마이크 권한을 확인해 주세요.'; }
-  };
-  $app().querySelector('#mic').onclick = enable;
-  if (hasMic()) enable();
+  const go = $app().querySelector('#go');
+  const stopMeter = wireSoundCheck($app(), () => { go.disabled = false; });
   const start = () => { stopMeter(); onStart(); };
   go.onclick = start; $app().querySelector('#nomic').onclick = start;
 }
@@ -123,12 +115,12 @@ async function exam(data, attempt) {
   setCurrent(runner);
   $app().innerHTML = `
     <section class="exam">
-      <div class="exam-top"><b id="qno"></b><span class="muted">남은 시간 <b id="clock"></b></span></div>
+      <div class="exam-top"><b id="qno"></b><span class="muted">Time remaining <b id="clock"></b></span></div>
       <div class="exam-body" id="body"></div>
       <div class="exam-bar">
         <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="bg"/><circle cx="50" cy="50" r="44" class="fg" id="arc"/></svg><span id="sec"></span></div>
         <div><div id="phase" class="phase"></div>${REC_HTML}</div>
-        <div class="btns right"><button class="btn" id="replay" hidden>다시 듣기</button><button class="btn primary" id="skip">다음</button><button class="btn ghost" id="quit">그만두기</button></div>
+        <div class="btns right"><button class="btn" id="replay" hidden>Replay</button><button class="btn primary" id="skip">다음</button><button class="btn ghost" id="quit">Exit</button></div>
       </div>
     </section>`;
   const q = (s) => $app().querySelector(s);
@@ -140,12 +132,12 @@ async function exam(data, attempt) {
   const ui = {
     question(n, total, qq, { showText }) {
       q('#qno').textContent = `Question ${n} of ${total}`;
-      q('#body').innerHTML = `<p class="muted">${esc(TYPE_KO[qq.type] || '')}${qq.topic?.kind === 'roleplay' ? ' · 롤플레이' : ''}</p>
-        ${showText ? `<p class="question">${esc(qq.question)}</p>` : '<div class="listen-only">🔊 질문은 소리로만 나와요</div>'}`;
+      q('#body').innerHTML = showText ? `<p class="question">${esc(qq.question)}</p>` : '<div class="listen-only">🔊</div>';
     },
     phase(kind, sec) {
-      q('#phase').textContent = PHASE_KO[kind] || kind; q('#phase').dataset.kind = kind;
-      q('#skip').textContent = kind === 'speak' ? '다음 문제' : '건너뛰기';
+      q('#phase').textContent = PHASE_EN[kind] || kind; q('#phase').dataset.kind = kind;
+      q('#skip').textContent = kind === 'speak' ? 'Next' : 'Skip';
+      q('#skip').hidden = kind !== 'speak' && !DEV;            // 실제 시험처럼 답변 중에만 Next
       if (!sec) { q('#sec').textContent = ''; arc.style.strokeDashoffset = 0; }
     },
     tick(left, tot) {
