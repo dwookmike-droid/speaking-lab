@@ -99,3 +99,14 @@ label.sa{display:block;border:1px solid var(--line);border-radius:8px;padding:10
 label.sa:has(input:checked){border-color:var(--accent);background:var(--bg)}
 .listen-only{font-size:20px;text-align:center;padding:40px 0;color:var(--muted)}
 .tabs{display:flex;gap:8px;margin:0 0 16px}
+/* teacher */
+.row.between{justify-content:space-between}
+a.tli{text-decoration:none;color:inherit}a.tli:hover{background:var(--bg)}
+.chip.st-new{border-color:var(--rec);color:var(--rec)}.chip.st-pulled{border-color:var(--accent);color:var(--accent)}
+.chip.st-sent{color:var(--fg)}.chip.st-ok{color:var(--muted)}
+.code{font-family:ui-monospace,Menlo,monospace;letter-spacing:.08em}.code.big{font-size:20px}
+textarea{width:100%;font:inherit;font-size:14px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);padding:8px}
+#newinv input{flex:1;min-width:200px;margin:0}
+tr.withdrawn td{color:var(--muted)}
+.right-link{text-align:right}
+.question.sm{font-size:15px}
