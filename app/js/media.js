@@ -17,14 +17,37 @@ export function meter(cb) {
   const c = ac(), src = c.createMediaStreamSource(stream), an = c.createAnalyser();
   an.fftSize = 512; src.connect(an);
   const buf = new Uint8Array(an.fftSize);
-  let raf;
+  let raf, on = true;
   const loop = () => {
+    if (!on) return;
     an.getByteTimeDomainData(buf);
     let m = 0; for (const v of buf) m = Math.max(m, Math.abs(v - 128));
-    cb(m / 128); raf = requestAnimationFrame(loop);
+    cb(m / 128);
+    if (on) raf = requestAnimationFrame(loop);
   };
   loop();
-  return () => { cancelAnimationFrame(raf); src.disconnect(); };
+  return () => { if (!on) return; on = false; cancelAnimationFrame(raf); src.disconnect(); };
+}
+
+// 시험 중 녹음 표시: 레벨 막대가 움직이고, 몇 초 동안 소리가 안 잡히면 경고를 띄워요.
+export const REC_HTML = `<div id="rec" class="rec" hidden><span class="dot">● 녹음 중</span><span class="meter sm"><i></i></span><span class="quiet">소리가 안 잡혀요. 마이크를 확인해 주세요.</span></div>`;
+const QUIET_LEVEL = 0.03, QUIET_SEC = 4;
+export function recIndicator(el) {
+  let stop = () => {};
+  return (on) => {
+    stop(); stop = () => {};
+    el.hidden = !on; el.classList.remove('silent');
+    if (!on || !stream) return;
+    const bar = el.querySelector('i');
+    let lastSound = performance.now();
+    stop = meter((v) => {
+      if (!el.isConnected) return stop();           // 그만두기 등으로 화면이 바뀌면 멈춰요
+      bar.style.width = `${Math.min(100, v * 250)}%`;
+      const now = performance.now();
+      if (v > QUIET_LEVEL) lastSound = now;
+      el.classList.toggle('silent', now - lastSound > QUIET_SEC * 1000);
+    });
+  };
 }
 
 export function beep() {

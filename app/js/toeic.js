@@ -14,10 +14,13 @@ export async function runToeic({ data, set, attempt, ui, runner }) {
 
   async function respond(item, prep, speakSec) {
     if (prep > 0) {
+      if (prep >= 10) { ui.phase('prep_cue'); await speak('Begin preparing now.', runner); runner.check(); }
       ui.phase('prep', prep);
       await runner.wait(prep, ui.tick); runner.check();
     }
-    ui.phase('beep'); await beep(); runner.check();
+    ui.phase('beep');
+    if (prep >= 10) { await speak('Begin speaking now.', runner); runner.check(); }
+    await beep(); runner.check();
     ui.phase('speak', speakSec);
     const rec = startRecording();
     ui.recording(!!rec);

@@ -24,6 +24,8 @@ const SET = Number(process.env.SET || 0);   // 응시할 세트 순서(0부터) 
   // Q8 화면 캡처
   await page.waitForFunction(() => document.querySelector('#qno')?.textContent.includes('Question 8'), null, { timeout: 60000 });
   await page.waitForSelector('#rec:not([hidden])', { timeout: 20000 });
+  // 녹음 중 레벨 막대가 움직이는지 (가짜 마이크는 삐 소리를 계속 내요)
+  await page.waitForFunction(() => parseFloat(document.querySelector('#rec .meter i')?.style.width) > 0, null, { timeout: 5000 });
   await page.screenshot({ path: SP + '/shots/2_q8.png' });
   await page.waitForFunction(() => location.hash.startsWith('#/result/'), null, { timeout: 90000 });
   await page.waitForSelector('.card');
