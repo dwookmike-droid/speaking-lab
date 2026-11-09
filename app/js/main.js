@@ -3,7 +3,8 @@
 import { home, prepareExam, result, stopCurrent, esc } from './views.js';
 import { consentValid, settings, welcome } from './onboarding.js';
 import { clearAll, getAttempt, getProfile, putProfile } from './store.js';
-import { cloud } from './cloud.js';
+import { cloud, teacherCloud } from './cloud.js';
+import { teacherAttempt, teacherHome, teacherLogin } from './teacher.js';
 import { loginView } from './login.js';
 import { opicResume, opicStart } from './opic_views.js';
 
@@ -42,6 +43,14 @@ async function cloudGate() {
 async function route() {
   stopCurrent();
   document.getElementById('nav-settings').hidden = true;
+  const [, v0, a0, a1] = (location.hash || '#/').slice(1).split('/');
+  if (v0 === 'teacher') {                                    // 선생님 모드: 학생 로그인·동의와 따로 가요
+    window.scrollTo(0, 0);
+    if (!teacherCloud.enabled) { document.getElementById('app').innerHTML = '<p class="panel">선생님 모드는 서버에 연결됐을 때만 써요.</p>'; return; }
+    if (!teacherCloud.session()) return teacherLogin({ onDone: route });
+    if (a0 === 'attempt' && a1) return teacherAttempt({ id: decodeURIComponent(a1), toeic: data, opic, levels });
+    return teacherHome({ consent });
+  }
   if (!(await cloudGate())) return;
   const [, view, arg, arg2] = (location.hash || '#/').slice(1).split('/');
   const id = arg ? decodeURIComponent(arg) : '';

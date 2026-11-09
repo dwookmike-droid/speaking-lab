@@ -34,7 +34,10 @@ export function levelSelect(data, onChange) {
   sel.onchange = async () => {
     setSetting(`target.${data.exam}`, sel.value);
     const p = await getProfile();                       // 학생 정보의 목표 레벨도 같이 바꿔요(제출 꾸러미에 들어가요)
-    if (p) { p.targets = { ...(p.targets || {}), [data.exam]: sel.value }; await putProfile(p); }
+    if (p) {
+      p.targets = { ...(p.targets || {}), [data.exam]: sel.value }; await putProfile(p);
+      if (cloud.enabled && cloud.session()) cloud.saveTargets(p.targets).catch(() => {});   // 선생님 화면에도 보이게 (오프라인이면 다음 제출 때 attempt.target으로 남아요)
+    }
     onChange?.(sel.value);
   };
   return sel;

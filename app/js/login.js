@@ -21,7 +21,7 @@ export function loginView({ onDone, mode = 'login', notice = '' }) {
       <p class="err" id="err" role="alert"></p>
       <div class="btns"><button class="btn primary" id="go">${mode === 'login' ? '로그인' : '시작하기'}</button>
         ${claimOnly ? '<button type="button" class="btn ghost" id="out">다른 아이디로 로그인</button>' : ''}</div>
-      ${mode === 'login' ? '<p class="muted">PIN을 잊어버렸으면 선생님께 말씀해 주세요.</p>' : ''}
+      ${mode === 'login' ? '<p class="muted">PIN을 잊어버렸으면 선생님께 말씀해 주세요.</p><p class="muted right-link"><a href="#/teacher">선생님 입장</a></p>' : ''}
     </form>`;
   const f = $app().querySelector('#f');
   const err = (m) => { f.querySelector('#err').textContent = m; };
