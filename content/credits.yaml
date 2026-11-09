@@ -25,3 +25,11 @@ credits:
     file: app/img/toeic/set03_q4.svg
     source: Speaking Lab 자체 제작 임시 일러스트 (실사진으로 교체 예정)
     license: 자체 제작
+  - id: stocksnap-grandmother-children-yn7hdbkgzh
+    file: app/img/toeic/set04_q3.webp
+    source: "StockSnap — \"Grandmother Children\" by PS Imaging (https://stocksnap.io/photo/grandmother-children-YN7HDBKGZH), Openverse 경유"
+    license: CC0 1.0 (출처 표시 없이 상업적 이용 가능)
+  - id: stocksnap-city-people-57d943298d
+    file: app/img/toeic/set04_q4.webp
+    source: "StockSnap — \"City People\" by Gabriel Santiago (https://stocksnap.io/photo/city-people-57D943298D), Openverse 경유"
+    license: CC0 1.0 (출처 표시 없이 상업적 이용 가능)

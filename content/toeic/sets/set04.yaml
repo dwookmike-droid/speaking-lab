@@ -1,0 +1,490 @@
+schema_version: 1
+id: toeic-set04
+title_ko: 모의고사 4
+status: draft
+items:
+  - num: 1
+    type: read_aloud
+    text: >-
+      Thank you for choosing Riverside Fitness Center. We are happy to announce that our new yoga studio on the second floor will open
+      next Monday. To celebrate, members can join any morning, afternoon, or evening yoga class for free during the first week. Please
+      note that the swimming pool will be closed this weekend for regular cleaning. For more information, visit the front desk or check
+      our website.
+    marks: >-
+      Thank you for choosing / Riverside **Fit**ness Center. // We are happy to an**nounce** / that our new **yo**ga studio / on the
+      second **floor** / will open next **Mon**day. // To **cel**ebrate, / members can join any **mor**ning, ↗ / **af**ternoon, ↗ /
+      or **eve**ning yoga class ↘ / for **free** / during the first **week**. // Please **note** / that the swimming **pool** / will be
+      **closed** this weekend / for regular **clean**ing. // For more infor**ma**tion, / visit the front **desk** / or check our
+      **web**site.
+    tip_ko: morning, afternoon, or evening처럼 셋을 나열할 때는 앞의 둘은 올리고 마지막은 내려요. free, closed처럼 바뀐 소식에 힘을 줘요.
+  - num: 2
+    type: read_aloud
+    text: >-
+      In local news, the new Westbrook Bridge will finally open to traffic this Friday morning. The bridge connects the downtown area,
+      the harbor, and the university campus. City officials say it will shorten travel times by about fifteen minutes during rush hour.
+      A free walking tour of the bridge will be held on Saturday at ten a.m. Stay tuned for sports and weather after this short break.
+    marks: >-
+      In local **news**, / the new **West**brook Bridge / will finally open to **traf**fic / this Friday **mor**ning. // The bridge
+      con**nects** / the **down**town area, ↗ / the **har**bor, ↗ / and the uni**ver**sity campus. ↘ // City of**fi**cials say / it
+      will **short**en travel times / by about **fif**teen minutes / during **rush** hour. // A free **walk**ing tour of the bridge /
+      will be held on **Sat**urday / at ten **a.m.** // Stay **tuned** / for **sports** and **wea**ther / after this short **break**.
+    tip_ko: 뉴스는 고유명사(Westbrook Bridge)와 숫자(fifteen, ten a.m.)를 또박또박 읽어요. 마지막 문장은 다음 순서를 알리는 말이라 밝게 끝내요.
+  - num: 3
+    type: describe_photo
+    image: img/toeic/set04_q3.webp
+    credit: stocksnap-grandmother-children-yn7hdbkgzh
+    model:
+      lv5:
+        - text: >-
+            This is a picture of a kitchen. An old woman and a girl are cooking. The girl is breaking an egg. There is a jug of milk on
+            the table.
+          frame: [장소, 인물, 동작, 물건]
+          phrases: [This is a picture of, There is]
+        - text: I can see two people in a kitchen. A grandmother is helping a little girl. They are making something. The girl is wearing a red sweater.
+          frame: [장소·인물, 동작, 옷차림]
+          phrases: [I can see, is wearing]
+      lv6:
+        - text: >-
+            This picture was taken in a kitchen. In the middle of the picture, an older woman and a young girl are baking together. The
+            girl is cracking an egg into a glass bowl. In the background, there is a green wreath on the wall.
+          frame: [장소, 중심 인물, 동작, 배경]
+          phrases: [This picture was taken in, In the middle of the picture, In the background]
+        - text: >-
+            This is a picture of a grandmother and her granddaughter in a kitchen. The grandmother is wearing a green sweater, and the girl
+            is wearing a red one. On the table, there are a rolling pin and a jug of milk. They look happy.
+          frame: [장소·인물, 옷차림, 탁자 위, 느낌]
+          phrases: [On the table, They look]
+      lv7:
+        - text: >-
+            This picture was taken in a cozy kitchen during the holidays. The first thing I see is a grandmother and a little girl baking
+            together. The girl is carefully cracking an egg into a bowl of flour, and the grandmother is helping her. Behind them, there
+            are a Christmas tree, a wreath, and some candles.
+          frame: [장소, 중심 인물, 동작, 배경]
+          phrases: [The first thing I see is, Behind them]
+        - text: >-
+            What I notice first in this picture is a girl with two little buns in her hair. She is standing at a kitchen table and
+            breaking an egg with her grandmother's help. In front of them, I can see a rolling pin, some dough, and a jug of milk. It
+            seems like they are making cookies.
+          frame: [눈에 띄는 인물, 동작, 앞쪽 물건, 추측]
+          phrases: [What I notice first, In front of them, It seems like]
+      lv8:
+        - text: >-
+            This picture shows a warm family moment in a kitchen decorated for Christmas. A grandmother in a green holiday sweater is
+            leaning over a little girl and guiding her hands as she cracks an egg into a glass bowl. On the table in front of them,
+            there's a rolling pin, a ball of dough, and a jug of milk, so I think they're baking cookies for the holidays.
+          frame: [장면 요약, 인물·동작, 탁자 위, 추측]
+          phrases: [This picture shows, as she, so I think]
+        - text: >-
+            In this picture, I can see a grandmother and her granddaughter baking together at home. The girl, who's wearing a bright red
+            sweater, looks focused as she breaks an egg, while her grandmother smiles and watches closely. In the background, there's a
+            wreath on the wall and some candles glowing on the counter. It looks like they're preparing something special for a holiday.
+          frame: [장면 요약, 인물·표정, 배경, 추측]
+          phrases: ["who's wearing", while, It looks like]
+    tip_ko: 가운데 두 사람의 동작(cracking an egg)부터 말하고, 탁자 위 물건 → 뒤쪽 장식 순서로 넓혀 가요. 장식을 보고 '명절 같아요'처럼 추측하며 끝내요.
+  - num: 4
+    type: describe_photo
+    image: img/toeic/set04_q4.webp
+    credit: stocksnap-city-people-57d943298d
+    model:
+      lv5:
+        - text: This is a picture of a city street. Some people are crossing the road. There is a bus on the right. There are many tall buildings.
+          frame: [장소, 인물, 오른쪽, 배경]
+          phrases: [This is a picture of, There are]
+        - text: I can see a busy street. It is sunny. Many cars are on the road. A man in a green jacket is walking.
+          frame: [장소, 날씨, 차, 인물]
+          phrases: [I can see, It is sunny]
+      lv6:
+        - text: >-
+            This picture was taken on a busy street in a big city. In the front, some people are crossing the street. On the right side,
+            there is a white bus. In the background, I can see many tall buildings and traffic lights.
+          frame: [장소, 앞쪽 인물, 오른쪽, 배경]
+          phrases: [This picture was taken on, On the right side, In the background]
+        - text: >-
+            This is a picture of a downtown street on a sunny day. A man with a cap and a green jacket is walking across the road. Next to
+            him, a woman is wearing sunglasses. There are a lot of cars behind them.
+          frame: [장소·날씨, 인물1, 인물2, 뒤쪽]
+          phrases: [on a sunny day, Next to him]
+      lv7:
+        - text: >-
+            This picture was taken on a busy city street on a sunny day. The first thing I see is a group of people crossing the road. A
+            man in a green jacket and a cap is walking next to a woman with sunglasses. On the right, there's a city bus, and many cars
+            are waiting at the traffic lights.
+          frame: [장소·날씨, 중심 인물, 인물 묘사, 오른쪽·뒤쪽]
+          phrases: [The first thing I see is, On the right]
+        - text: >-
+            What I notice first in this picture is how busy the street is. Several people are walking across the crosswalk, and a woman on
+            the right is holding some papers. Behind them, the road is full of cars and trucks. Tall buildings line both sides of the
+            street, so it seems like a downtown area.
+          frame: [첫인상, 인물, 뒤쪽, 추측]
+          phrases: [What I notice first, Behind them, it seems like]
+      lv8:
+        - text: >-
+            This picture shows a busy downtown street on a bright, sunny afternoon. In the foreground, several pedestrians are crossing the
+            road, including an older man in a cap and a woman wearing sunglasses. A large city bus is passing on the right, while a long
+            line of cars is waiting at the traffic lights. With tall office buildings on both sides, it looks like the middle of a big
+            city's business district.
+          frame: [장면 요약, 앞쪽 인물, 오른쪽·뒤쪽, 추측]
+          phrases: [This picture shows, In the foreground, including, while]
+        - text: >-
+            In this picture, I can see a crowded street in the city center. Some people are hurrying across the crosswalk, and one woman is
+            carrying a few papers, so she might be on her way to work. Traffic seems heavy, with cars, a delivery truck, and a bus all
+            sharing the road. The trees along the sidewalk are bright green, so I think it was taken in late spring or summer.
+          frame: [장소, 인물·추측, 교통, 계절 추측]
+          phrases: [she might be, Traffic seems heavy, so I think]
+    tip_ko: 사람이 많은 거리 사진은 가까운 사람 → 오른쪽 버스 → 뒤쪽 차와 건물 순서로 말해요. 나무 색이나 햇빛으로 계절·시간을 추측하면 끝맺기 쉬워요.
+  - num: 5
+    type: respond_q
+    context: >-
+      Imagine that a clothing company is doing research in your country. You have agreed to take part in a telephone interview about
+      shopping for clothes.
+    question: When was the last time you bought clothes, and what did you buy?
+    model:
+      lv5:
+        - text: The last time I bought clothes was last weekend. I bought a black jacket.
+          frame: [언제, 무엇]
+          phrases: [The last time I bought clothes was]
+        - text: I bought clothes two weeks ago. I bought a white T-shirt and jeans.
+          frame: [언제, 무엇]
+          phrases: [two weeks ago]
+      lv6:
+        - text: The last time I bought clothes was about a month ago. I bought a warm sweater because the weather was getting cold.
+          frame: [언제, 무엇, 이유]
+          phrases: [about a month ago, because]
+        - text: I went shopping for clothes last Saturday with my sister. I bought a pair of running shoes and a gray hoodie.
+          frame: [언제, 누구와, 무엇]
+          phrases: [went shopping for, a pair of]
+      lv7:
+        - text: >-
+            I bought some clothes just last week, actually. I needed a new shirt for a job interview, so I picked a light blue one that
+            looks clean and professional.
+          frame: [언제, 이유, 무엇]
+          phrases: [actually, so I picked]
+        - text: >-
+            The last time I bought clothes was about three weeks ago. I got a long winter coat online because it was on sale for half
+            the regular price.
+          frame: [언제, 무엇, 이유]
+          phrases: [on sale, half the regular price]
+      lv8:
+        - text: >-
+            I think it was about two weeks ago. I was getting ready for my friend's wedding, so I bought a navy suit and a matching tie
+            at a department store near my office.
+          frame: [언제, 상황, 무엇·어디서]
+          phrases: [I think it was, getting ready for, matching]
+        - text: >-
+            Actually, I bought something just yesterday. My old sneakers had a hole in them, so I ordered a new pair online, and I also
+            added a few plain T-shirts for summer.
+          frame: [언제, 이유, 무엇, 덧붙임]
+          phrases: [Actually, had a hole in them, I also added]
+    tip_ko: 언제, 무엇을 샀는지 두 가지를 다 말해요. 15초라 날짜 하나, 물건 하나에 짧은 이유를 붙이면 충분해요.
+  - num: 6
+    type: respond_q
+    question: Do you usually shop for clothes alone or with other people? Why?
+    model:
+      lv5:
+        - text: I usually shop alone. I can take my time and choose slowly.
+          frame: [답, 이유]
+          phrases: [I usually, take my time]
+        - text: I usually shop with my mother. She gives me good advice.
+          frame: [답, 이유]
+          phrases: [I usually, good advice]
+      lv6:
+        - text: I usually shop for clothes alone because I don't like waiting for other people. I can look around as long as I want.
+          frame: [답, 이유, 덧붙임]
+          phrases: [because, as long as I want]
+        - text: I usually go shopping with my best friend. She has good taste, so she helps me choose clothes that look good on me.
+          frame: [답, 이유]
+          phrases: [has good taste, look good on me]
+      lv7:
+        - text: >-
+            I usually shop with my younger sister. She's honest, so she always tells me if something doesn't look good on me. That helps
+            me avoid buying the wrong things.
+          frame: [답, 이유, 결과]
+          phrases: [doesn't look good on me, That helps me]
+        - text: >-
+            Most of the time, I shop for clothes alone. When I go with friends, I end up following their schedule, but alone, I can
+            focus and finish quickly.
+          frame: [답, 비교, 이유]
+          phrases: [Most of the time, I end up]
+      lv8:
+        - text: >-
+            I usually shop for clothes alone, to be honest. I already know what styles suit me, so I can compare prices and try things on without
+            worrying about keeping anyone waiting.
+          frame: [답, 이유, 장점]
+          phrases: [to be honest, suit me, without worrying about]
+        - text: >-
+            I normally go shopping with my girlfriend, since she has a great eye for colors. Plus, shopping together turns into a fun
+            date, and we usually grab dinner together afterward.
+          frame: [답, 이유1, 이유2]
+          phrases: [has a great eye for, Plus, afterward]
+    tip_ko: 혼자인지 누구와인지 먼저 한 문장으로 답하고, 이유를 하나 붙여요. 'good advice'처럼 짧은 이유도 괜찮아요.
+  - num: 7
+    type: respond_q
+    question: Would you rather buy clothes online or at a store? Why?
+    model:
+      lv5:
+        - text: I would rather buy clothes at a store. I can try them on first. Also, I can see the real color. So I like stores.
+          frame: [답, 이유1, 이유2, 마무리]
+          phrases: [I would rather, try them on, Also]
+        - text: I prefer to buy clothes online. It is cheap and easy. I can shop at home at night. The delivery is fast too.
+          frame: [답, 이유1, 이유2, 덧붙임]
+          phrases: [I prefer to, at home]
+      lv6:
+        - text: >-
+            I would rather buy clothes at a store. First, I can try them on, so I know the size is right. Second, I can touch the
+            material. When I buy online, the clothes often look different from the pictures.
+          frame: [답, 이유1, 이유2, 경험]
+          phrases: [First, Second, look different from]
+        - text: >-
+            I prefer buying clothes online because it saves time. I don't have to go to the mall, and I can compare prices on different
+            websites. Also, most shops let me return clothes for free if they don't fit.
+          frame: [답, 이유1, 이유2, 덧붙임]
+          phrases: [saves time, compare prices, for free]
+      lv7:
+        - text: >-
+            I'd rather buy clothes at a store. The main reason is the size. Every brand's sizes are a little different, so I need to try
+            things on. Last month, I ordered pants online, but they were too short, and returning them was a hassle. Since then, I've
+            mostly shopped in person.
+          frame: [답, 이유, 예시, 마무리]
+          phrases: [The main reason is, was a hassle, Since then]
+        - text: >-
+            I'd rather shop online for a couple of reasons. First, there's a much wider selection than in local stores. Second, I can read
+            other customers' reviews, which helps me choose the right size. For example, I bought a jacket online last winter after
+            reading the reviews, and it fit perfectly.
+          frame: [답, 이유1, 이유2, 예시]
+          phrases: [for a couple of reasons, which helps me, fit perfectly]
+      lv8:
+        - text: >-
+            Personally, I'd rather buy clothes at a store. Online shopping is convenient, but I've been disappointed too many times when
+            the fabric felt cheap or the color looked different in person. When I shop at a store, I can check the quality, try on a few
+            sizes, and walk out with something I know I'll actually wear. It might take more time, but it's worth it.
+          frame: [답, 반대쪽 단점, 이유, 마무리]
+          phrases: [Personally, in person, walk out with, it's worth it]
+        - text: >-
+            I'd definitely choose online shopping. I work long hours, so it's hard to visit the mall on weekdays, and on weekends it's way
+            too crowded. Online, I can browse whenever I have a few free minutes, like on the subway. Plus, many stores now offer free
+            returns, so if something doesn't fit, I just send it back without any extra cost.
+          frame: [답, 상황, 이유1, 이유2]
+          phrases: [I'd definitely choose, way too crowded, Plus, send it back]
+    tip_ko: 30초 문항이에요. 답 → 이유 두 개 → 짧은 경험 순서로 말하면 시간이 알맞게 차요. 사이즈, 가격, 시간처럼 구체적인 이유를 골라요.
+  - num: 8
+    type: info_based
+    caller_intro: >-
+      Hi, I'm interested in taking some cooking classes at the community center this spring. I don't have the schedule with me, so
+      could you answer a few questions?
+    info:
+      title: "Oakwood Community Center — Spring Cooking Classes"
+      subtitle: "March 3 – April 28 · $90 per class (ingredients included) · Max. 12 students per class"
+      rows:
+        - ["Mon 6:30–8:30 p.m.", "Korean Home Cooking — Chef Min-ji Song (first class: March 3)"]
+        - ["Tue 10:00 a.m.–12:00 p.m.", "Healthy Breakfasts — Chef Maria Lopez"]
+        - ["Wed 7:00–9:00 p.m.", "Italian Pasta Basics — Chef Paolo Rossi"]
+        - ["Thu 6:30–8:30 p.m.", "Baking Bread at Home — Chef Maria Lopez"]
+        - ["Sat 1:00–3:00 p.m.", "Cooking for Kids (ages 8–12) — Chef Grace Hall"]
+        - ["Note", "Aprons provided · Register at the front desk or online"]
+    question: When does the first class of the season start, and how much does each class cost?
+    model:
+      lv5:
+        - text: The first class is on Monday, March 3, at 6:30 p.m. Each class costs 90 dollars.
+          frame: [첫 수업, 요금]
+          phrases: [Each class costs]
+        - text: The first class starts on March 3 at 6:30 in the evening. It is 90 dollars.
+          frame: [첫 수업, 요금]
+          phrases: [starts on]
+      lv6:
+        - text: The first class is Korean Home Cooking. It starts on Monday, March 3, at 6:30 p.m., and each class costs 90 dollars.
+          frame: [첫 수업, 날짜·시간, 요금]
+          phrases: [It starts on]
+        - text: The season starts on Monday, March 3. The fee is 90 dollars per class, and ingredients are included.
+          frame: [날짜, 요금, 덧붙임]
+          phrases: [per class, are included]
+      lv7:
+        - text: >-
+            Sure. The first class is Korean Home Cooking, which starts on Monday, March 3, at 6:30 p.m. Each class is 90 dollars, and that
+            includes ingredients.
+          frame: [첫 수업, 날짜·시간, 요금, 덧붙임]
+          phrases: [which starts on, that includes]
+        - text: >-
+            The spring season begins on Monday, March 3, with the Korean Home Cooking class at 6:30 in the evening. The registration fee
+            is 90 dollars per class.
+          frame: [날짜·시간, 첫 수업, 요금]
+          phrases: [begins on, registration fee]
+      lv8:
+        - text: >-
+            Sure. The spring season kicks off on Monday, March 3, with Korean Home Cooking at 6:30 p.m. Registration is 90 dollars per
+            class, and all the ingredients are included, so there are no extra costs.
+          frame: [날짜·시간, 첫 수업, 요금, 덧붙임]
+          phrases: [kicks off, all the ingredients are included, no extra costs]
+        - text: >-
+            Of course. The first class is on Monday, March 3, from 6:30 to 8:30 p.m. It's Korean Home Cooking with Chef Min-ji Song. Each
+            class costs 90 dollars, including ingredients.
+          frame: [날짜·시간, 수업·강사, 요금]
+          phrases: [Of course, including ingredients]
+    tip_ko: 시작 날짜와 요금, 두 가지를 묻고 있어요. 첫 줄의 March 3과 제목 아래 줄의 $90을 찾아 바로 답해요. 달러는 '90 dollars'로 읽어요.
+  - num: 9
+    type: info_based
+    question: I heard the Italian pasta class is on Saturday afternoons. Is that right?
+    model:
+      lv5:
+        - text: No, that is not right. The Italian pasta class is on Wednesday, from 7 to 9 p.m.
+          frame: [정정, 바른 정보]
+          phrases: [that is not right]
+        - text: Sorry, no. The pasta class is on Wednesday evening. It starts at 7 p.m.
+          frame: [정정, 바른 정보]
+          phrases: ["Sorry, no"]
+      lv6:
+        - text: I'm sorry, but that's not correct. The Italian Pasta Basics class is on Wednesday evenings, from 7 to 9 p.m.
+          frame: [정정, 바른 정보]
+          phrases: ["I'm sorry, but that's not correct"]
+        - text: >-
+            Actually, no. The pasta class meets on Wednesdays from 7 to 9 p.m. On Saturday afternoons, there is a cooking class for kids.
+          frame: [정정, 바른 정보, 덧붙임]
+          phrases: [Actually, meets on]
+      lv7:
+        - text: >-
+            I'm afraid that's not right. Italian Pasta Basics meets on Wednesday evenings from 7 to 9 p.m. The Saturday afternoon class
+            is Cooking for Kids.
+          frame: [정정, 바른 정보, 헷갈린 이유]
+          phrases: ["I'm afraid", meets on]
+        - text: >-
+            Actually, there's been a little confusion. The Italian pasta class is held on Wednesdays from 7 to 9 p.m., and Chef Paolo
+            Rossi teaches it.
+          frame: [정정, 바른 정보, 강사]
+          phrases: ["there's been a little confusion", is held on]
+      lv8:
+        - text: >-
+            I'm afraid that's not quite right. The Italian Pasta Basics class is on Wednesday evenings from 7 to 9 p.m., taught by Chef
+            Paolo Rossi. The Saturday afternoon class is actually Cooking for Kids.
+          frame: [정정, 바른 정보·강사, 헷갈린 이유]
+          phrases: [not quite right, taught by, actually]
+        - text: >-
+            Actually, you may be thinking of a different class. Italian Pasta Basics meets on Wednesdays from 7 to 9 in the evening. On
+            Saturday afternoons, we only have Cooking for Kids, for ages 8 to 12.
+          frame: [정정, 바른 정보, 헷갈린 이유]
+          phrases: [you may be thinking of, we only have]
+    tip_ko: 틀린 정보를 확인하는 문항이에요. 'No'로 먼저 분명히 답하고 바른 요일과 시간을 알려 줘요. 토요일 수업이 무엇인지 덧붙이면 더 좋아요.
+  - num: 10
+    type: info_based
+    question: Could you tell me about all the classes taught by Chef Maria Lopez?
+    model:
+      lv5:
+        - text: >-
+            Chef Maria Lopez teaches two classes. The first is Healthy Breakfasts on Tuesday at 10 a.m. The second is Baking Bread at Home
+            on Thursday at 6:30 p.m.
+          frame: [개수, 수업1, 수업2]
+          phrases: [The first is, The second is]
+        - text: >-
+            Sure. There are two classes. Healthy Breakfasts is on Tuesday morning, from 10 to 12. Baking Bread at Home is on Thursday
+            evening, from 6:30 to 8:30.
+          frame: [개수, 수업1, 수업2]
+          phrases: [There are two classes]
+      lv6:
+        - text: >-
+            Sure. Chef Maria Lopez teaches two classes. First, Healthy Breakfasts is on Tuesdays from 10 a.m. to noon. Second, Baking
+            Bread at Home is on Thursdays from 6:30 to 8:30 p.m. Each class costs 90 dollars.
+          frame: [개수, 수업1, 수업2, 요금]
+          phrases: [First, Second]
+        - text: >-
+            Chef Maria Lopez has two classes this spring. On Tuesday mornings, she teaches Healthy Breakfasts from 10 to 12. On Thursday
+            evenings, she teaches Baking Bread at Home from 6:30 to 8:30.
+          frame: [개수, 수업1, 수업2]
+          phrases: [On Tuesday mornings, On Thursday evenings]
+      lv7:
+        - text: >-
+            Sure. Chef Maria Lopez teaches two classes this spring. The first one is Healthy Breakfasts, which meets on Tuesdays from 10
+            a.m. to 12 p.m. The second one is Baking Bread at Home, on Thursdays from 6:30 to 8:30 in the evening. Both classes are 90
+            dollars, including ingredients.
+          frame: [개수, 수업1, 수업2, 요금]
+          phrases: [The first one is, which meets on, Both classes are]
+        - text: >-
+            Of course. Chef Maria Lopez is teaching two classes. If you're free in the morning, there's Healthy Breakfasts on Tuesdays
+            from 10 to noon. If you prefer evenings, she also teaches Baking Bread at Home on Thursdays from 6:30 to 8:30. Each one costs
+            90 dollars.
+          frame: [개수, 오전 수업, 저녁 수업, 요금]
+          phrases: ["If you're free in the morning", If you prefer evenings]
+      lv8:
+        - text: >-
+            Sure. Chef Maria Lopez is teaching two classes this spring. The first is Healthy Breakfasts, which is held on Tuesday mornings
+            from 10 a.m. to noon. The second is Baking Bread at Home, on Thursday evenings from 6:30 to 8:30. Both classes cost 90
+            dollars, ingredients included, and each one is limited to 12 students, so I'd recommend signing up soon.
+          frame: [개수, 수업1, 수업2, 요금·정원, 권유]
+          phrases: [which is held on, is limited to, "I'd recommend"]
+        - text: >-
+            Of course. Chef Maria Lopez actually has two classes, one in the morning and one in the evening. Healthy Breakfasts meets on
+            Tuesdays from 10 to 12, and Baking Bread at Home meets on Thursdays from 6:30 to 8:30 p.m. If you work during the day, the
+            Thursday class might be easier to fit into your schedule.
+          frame: [개수, 수업1, 수업2, 제안]
+          phrases: [one in the morning and one in the evening, might be easier to fit into]
+    tip_ko: 강사 이름으로 표를 훑어 두 줄을 찾아요. 'two classes'처럼 개수부터 말하고 수업 이름, 요일, 시간을 차례로 말하면 빠뜨리지 않아요.
+  - num: 11
+    type: opinion
+    question: >-
+      Which is more important when choosing a job: a high salary or good relationships with coworkers? Give specific reasons and
+      examples to support your opinion.
+    model:
+      lv5:
+        - text: >-
+            I think good coworkers are more important. I have two reasons. First, I see my coworkers every day. Second, work is easier
+            when people help me. For example, at my part-time job, my coworkers were very kind. I was happy at work. So I think coworkers
+            are more important.
+          frame: [의견, 이유1, 이유2, 예시, 마무리]
+          phrases: [I have two reasons, First, Second, For example]
+        - text: >-
+            I think a high salary is more important. First, I need money to live. Rent and food are expensive. Second, I want to save
+            money for the future. For example, my friend got a job with a high salary. He bought a car last year. So I choose a high
+            salary.
+          frame: [의견, 이유1, 이유2, 예시, 마무리]
+          phrases: [First, Second, For example]
+      lv6:
+        - text: >-
+            In my opinion, good relationships with coworkers are more important than a high salary. There are two reasons. First, I spend
+            more time with my coworkers than with my family on weekdays, so a friendly team makes every day better. Second, good coworkers
+            help me learn faster. For example, at my first job, a senior coworker taught me how to use our sales program, and I got used
+            to my work in just two weeks. For these reasons, I think coworkers matter more.
+          frame: [의견, 이유1, 이유2, 예시, 마무리]
+          phrases: [In my opinion, There are two reasons, For these reasons]
+        - text: >-
+            I think a high salary is more important when choosing a job. First, money gives me more choices in life. I can travel, take
+            classes, and help my parents. Second, relationships can change, because people often move to other teams or companies. But a
+            salary stays with me. For example, my cousin left a friendly company for a job with a higher salary. Now she can save money
+            every month, and she is much less stressed. That's why I prefer a high salary.
+          frame: [의견, 이유1, 이유2, 예시, 마무리]
+          phrases: [First, Second, "That's why"]
+      lv7:
+        - text: >-
+            Personally, I think good relationships with coworkers are more important than a high salary. The first reason is stress. Even
+            if the pay is great, going to work every day feels terrible when people don't get along. The second reason is growth. When
+            coworkers trust each other, they share tips and give honest feedback, so everyone improves faster. For example, I worked at a
+            small design company a few years ago. The salary wasn't very high, but my team always helped each other with deadlines, and I
+            learned more there than anywhere else. Looking back, I'd choose a team like that again. So, for me, coworkers come first.
+          frame: [의견, 이유1, 이유2, 예시, 마무리]
+          phrases: [Personally, The first reason is, The second reason is, Looking back]
+        - text: >-
+            I'd say a high salary is more important, especially at the start of a career. First of all, a good salary lets you pay off
+            student loans and start saving early, which reduces a lot of stress. On top of that, salary is something you can actually
+            compare before you accept a job, while relationships with coworkers are hard to predict. For instance, my friend chose a
+            company because the interviewers seemed friendly, but half of his team quit within six months. If he had chosen the
+            higher-paying offer, he would at least have had financial security. That's why I'd focus on the salary first.
+          frame: [의견, 이유1, 이유2, 예시, 마무리]
+          phrases: [First of all, On top of that, For instance, If he had chosen]
+      lv8:
+        - text: >-
+            Honestly, I believe good relationships with coworkers matter more than a high salary in the long run. To begin with, we spend
+            around forty hours a week at work, and a tense atmosphere can make even a well-paid job feel exhausting. A raise might make
+            you happy for a month, but daily conflicts wear you down for years. Moreover, supportive coworkers can actually boost your
+            career. They introduce you to new projects, cover for you when you're sick, and give you honest feedback. I experienced this
+            myself when I joined a marketing team where everyone shared ideas openly. My salary was average, but I was promoted within two
+            years because my teammates recommended me for a major project. So if I had to choose, I'd pick a great team over a bigger
+            paycheck, because a good team often helps the paycheck grow later anyway.
+          frame: [의견, 이유1, 이유2, 경험, 마무리]
+          phrases: [in the long run, To begin with, Moreover, if I had to choose]
+        - text: >-
+            While good coworkers are important, I'd argue that a high salary should come first when choosing a job. The biggest reason is
+            that a salary affects every part of your life, not just the hours you spend at the office. It decides where you can live, how
+            much you can save, and whether you can support your family. Another reason is that relationships at work are unpredictable.
+            Your favorite manager might move to another branch next month, and a new team member could completely change the atmosphere.
+            A contract, on the other hand, is something you can rely on. My older brother is a good example. He turned down a friendly
+            startup for a better-paying job at a large company, and that extra income allowed him to buy his first apartment three years
+            earlier than he expected. That's why I'd prioritize the salary.
+          frame: [양보, 의견, 이유1, 이유2, 예시, 마무리]
+          phrases: ["I'd argue that", The biggest reason is, on the other hand, is a good example]
+    tip_ko: 둘 중 하나를 첫 문장에서 분명히 골라요. 이유 두 개에 내 경험이나 주변 사람 이야기를 하나 붙이면 60초가 자연스럽게 채워져요.
